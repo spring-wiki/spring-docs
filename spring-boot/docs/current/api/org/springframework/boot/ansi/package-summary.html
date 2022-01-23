@@ -1,0 +1,235 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>org.springframework.boot.ansi (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="org.springframework.boot.ansi (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="package-summary.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../admin/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="../autoconfigure/package-summary.html">Next&nbsp;Package</a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fansi%252Fpackage-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+<div class="header">
+<h1 title="Package" class="title">Package&nbsp;org.springframework.boot.ansi</h1>
+<div class="docSummary">
+<div class="block">Support classes to provide ANSI color output.</div>
+</div>
+<p>See:&nbsp;<a href="package-summary.html#package.description">Description</a></p>
+</div>
+<div class="contentContainer">
+<ul class="blockList">
+<li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Interface Summary table, listing interfaces, and an explanation">
+<caption><span>Interface Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="AnsiElement.html" title="interface in org.springframework.boot.ansi">AnsiElement</a></td>
+<td class="colLast">
+<div class="block">An ANSI encodable element.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Class Summary table, listing classes, and an explanation">
+<caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="Ansi8BitColor.html" title="class in org.springframework.boot.ansi">Ansi8BitColor</a></td>
+<td class="colLast">
+<div class="block"><a href="AnsiElement.html" title="interface in org.springframework.boot.ansi"><code>AnsiElement</code></a> implementation for ANSI 8-bit foreground or background color codes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="AnsiColors.html" title="class in org.springframework.boot.ansi">AnsiColors</a></td>
+<td class="colLast">
+<div class="block">Utility for working with <a href="AnsiColor.html" title="enum in org.springframework.boot.ansi"><code>AnsiColor</code></a> in the context of <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt"><code>AWT Colors</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="AnsiOutput.html" title="class in org.springframework.boot.ansi">AnsiOutput</a></td>
+<td class="colLast">
+<div class="block">Generates ANSI encoded output, automatically attempting to detect if the terminal
+supports ANSI.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="AnsiPropertySource.html" title="class in org.springframework.boot.ansi">AnsiPropertySource</a></td>
+<td class="colLast">
+<div class="block"><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/env/PropertyResolver.html?is-external=true" title="class or interface in org.springframework.core.env"><code>PropertyResolver</code></a> for <a href="AnsiStyle.html" title="enum in org.springframework.boot.ansi"><code>AnsiStyle</code></a>, <a href="AnsiColor.html" title="enum in org.springframework.boot.ansi"><code>AnsiColor</code></a>,
+<a href="AnsiBackground.html" title="enum in org.springframework.boot.ansi"><code>AnsiBackground</code></a> and <a href="Ansi8BitColor.html" title="class in org.springframework.boot.ansi"><code>Ansi8BitColor</code></a> elements.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Enum Summary table, listing enums, and an explanation">
+<caption><span>Enum Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Enum</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="AnsiBackground.html" title="enum in org.springframework.boot.ansi">AnsiBackground</a></td>
+<td class="colLast">
+<div class="block"><a href="AnsiElement.html" title="interface in org.springframework.boot.ansi"><code>Ansi</code></a> background colors.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="AnsiColor.html" title="enum in org.springframework.boot.ansi">AnsiColor</a></td>
+<td class="colLast">
+<div class="block"><a href="AnsiElement.html" title="interface in org.springframework.boot.ansi"><code>Ansi</code></a> colors.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="AnsiColors.BitDepth.html" title="enum in org.springframework.boot.ansi">AnsiColors.BitDepth</a></td>
+<td class="colLast">
+<div class="block">Bit depths supported by this class.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="AnsiOutput.Enabled.html" title="enum in org.springframework.boot.ansi">AnsiOutput.Enabled</a></td>
+<td class="colLast">
+<div class="block">Possible values to pass to <a href="AnsiOutput.html#setEnabled-org.springframework.boot.ansi.AnsiOutput.Enabled-"><code>AnsiOutput.setEnabled(org.springframework.boot.ansi.AnsiOutput.Enabled)</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="AnsiStyle.html" title="enum in org.springframework.boot.ansi">AnsiStyle</a></td>
+<td class="colLast">
+<div class="block"><a href="AnsiElement.html" title="interface in org.springframework.boot.ansi"><code>Ansi</code></a> styles.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<a name="package.description">
+
+</a>
+<h2 title="Package org.springframework.boot.ansi Description">Package org.springframework.boot.ansi Description</h2>
+<div class="block">Support classes to provide ANSI color output.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="AnsiOutput.html" title="class in org.springframework.boot.ansi"><code>AnsiOutput</code></a></dd>
+</dl>
+</div>
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="package-summary.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../admin/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="../autoconfigure/package-summary.html">Next&nbsp;Package</a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fansi%252Fpackage-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1fd874eaa57c27","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,2179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.12">
+<title>Deploying Spring Boot Applications</title>
+<link rel="stylesheet" href="css/site.css">
+<script src="js/setup.js"></script><script defer src="js/site.js"></script>
+<script type="application/json" id="anchor-rewrite">
+{
+"actuator-properties":"application-properties.actuator",
+"auto-configuration-classes-from-actuator":"auto-configuration-classes.actuator",
+"auto-configuration-classes-from-autoconfigure-module":"auto-configuration-classes.core",
+"boot-documentation":"documentation",
+"boot-documentation-about":"documentation.about",
+"boot-documentation-advanced":"documentation.advanced",
+"boot-documentation-first-steps":"documentation.first-steps",
+"boot-documentation-getting-help":"documentation.getting-help",
+"boot-documentation-learning":"documentation.features",
+"boot-documentation-production":"documentation.actuator",
+"boot-documentation-upgrading":"documentation.upgrading",
+"boot-documentation-workingwith":"documentation.using",
+"boot-features":"features",
+"boot-features-activemq":"features.messaging.jms.activemq",
+"boot-features-adding-active-profiles":"features.profiles.adding-active-profiles",
+"boot-features-amqp":"features.messaging.amqp",
+"boot-features-application-admin":"features.spring-application.admin",
+"boot-features-application-arguments":"features.spring-application.application-arguments",
+"boot-features-application-availability":"features.spring-application.application-availability",
+"boot-features-application-availability-liveness-state":"features.spring-application.application-availability.liveness",
+"boot-features-application-availability-managing":"features.spring-application.application-availability.managing",
+"boot-features-application-availability-readiness-state":"features.spring-application.application-availability.readiness",
+"boot-features-application-events-and-listeners":"features.spring-application.application-events-and-listeners",
+"boot-features-application-exit":"features.spring-application.application-exit",
+"boot-features-application-startup-tracking":"features.spring-application.startup-tracking",
+"boot-features-artemis":"features.messaging.jms.artemis",
+"boot-features-banner":"features.spring-application.banner",
+"boot-features-bean-conditions":"features.developing-auto-configuration.condition-annotations.bean-conditions",
+"boot-features-caching":"features.caching",
+"boot-features-caching-provider":"features.caching.provider",
+"boot-features-caching-provider-caffeine":"features.caching.provider.caffeine",
+"boot-features-caching-provider-couchbase":"features.caching.provider.couchbase",
+"boot-features-caching-provider-ehcache2":"features.caching.provider.ehcache2",
+"boot-features-caching-provider-generic":"features.caching.provider.generic",
+"boot-features-caching-provider-hazelcast":"features.caching.provider.hazelcast",
+"boot-features-caching-provider-infinispan":"features.caching.provider.infinispan",
+"boot-features-caching-provider-jcache":"features.caching.provider.jcache",
+"boot-features-caching-provider-none":"features.caching.provider.none",
+"boot-features-caching-provider-redis":"features.caching.provider.redis",
+"boot-features-caching-provider-simple":"features.caching.provider.simple",
+"boot-features-cassandra":"features.nosql.cassandra",
+"boot-features-class-conditions":"features.developing-auto-configuration.condition-annotations.class-conditions",
+"boot-features-command-line-runner":"features.spring-application.command-line-runner",
+"boot-features-condition-annotations":"features.developing-auto-configuration.condition-annotations",
+"boot-features-configfileapplicationcontextinitializer-test-utility":"features.testing.utilities.config-data-application-context-initializer",
+"boot-features-configure-datasource":"features.sql.datasource",
+"boot-features-connect-to-production-database":"features.sql.datasource.production",
+"boot-features-connect-to-production-database-configuration":"features.sql.datasource.configuration",
+"boot-features-connect-to-production-database-connection-pool":"features.sql.datasource.connection-pool",
+"boot-features-connecting-to-a-jndi-datasource":"features.sql.datasource.jndi",
+"boot-features-connecting-to-cassandra":"features.nosql.cassandra.connecting",
+"boot-features-connecting-to-couchbase":"features.nosql.couchbase.connecting",
+"boot-features-connecting-to-elasticsearch-reactive-rest":"features.nosql.elasticsearch.connecting-using-reactive-rest",
+"boot-features-connecting-to-elasticsearch-rest":"features.nosql.elasticsearch.connecting-using-rest",
+"boot-features-connecting-to-elasticsearch-spring-data":"features.nosql.elasticsearch.connecting-using-spring-data",
+"boot-features-connecting-to-influxdb":"features.nosql.influxdb.connecting",
+"boot-features-connecting-to-mongodb":"features.nosql.mongodb.connecting",
+"boot-features-connecting-to-neo4j":"features.nosql.neo4j.connecting",
+"boot-features-connecting-to-redis":"features.nosql.redis.connecting",
+"boot-features-connecting-to-solr":"features.nosql.solr.connecting",
+"boot-features-container-images":"features.container-images",
+"boot-features-container-images-building":"features.container-images.building",
+"boot-features-container-images-buildpacks":"features.container-images.building.buildpacks",
+"boot-features-container-images-docker":"features.container-images.building.dockerfiles",
+"boot-features-cors":"features.developing-web-applications.spring-mvc.cors",
+"boot-features-couchbase":"features.nosql.couchbase",
+"boot-features-creating-and-dropping-jpa-databases":"features.sql.jpa-and-spring-data.creating-and-dropping",
+"boot-features-custom-log-configuration":"features.logging.custom-log-configuration",
+"boot-features-custom-log-groups":"features.logging.log-groups",
+"boot-features-custom-log-levels":"features.logging.log-levels",
+"boot-features-custom-starter":"features.developing-auto-configuration.custom-starter",
+"boot-features-custom-starter-configuration-keys":"features.developing-auto-configuration.custom-starter.configuration-keys",
+"boot-features-custom-starter-module-autoconfigure":"features.developing-auto-configuration.custom-starter.autoconfigure-module",
+"boot-features-custom-starter-module-starter":"features.developing-auto-configuration.custom-starter.starter-module",
+"boot-features-custom-starter-naming":"features.developing-auto-configuration.custom-starter.naming",
+"boot-features-customizing-configurableservletwebserverfactory-directly":"features.developing-web-applications.embedded-container.customizing.direct",
+"boot-features-customizing-embedded-containers":"features.developing-web-applications.embedded-container.customizing",
+"boot-features-customizing-spring-application":"features.spring-application.customizing-spring-application",
+"boot-features-data-jdbc":"features.sql.jdbc",
+"boot-features-developing-auto-configuration":"features.developing-auto-configuration",
+"boot-features-developing-web-applications":"features.developing-web-applications",
+"boot-features-elasticsearch":"features.nosql.elasticsearch",
+"boot-features-email":"features.email",
+"boot-features-embedded-container":"features.developing-web-applications.embedded-container",
+"boot-features-embedded-container-application-context":"features.developing-web-applications.embedded-container.application-context",
+"boot-features-embedded-container-context-initializer":"features.developing-web-applications.embedded-container.context-initializer",
+"boot-features-embedded-container-servlets-filters-listeners":"features.developing-web-applications.embedded-container.servlets-filters-listeners",
+"boot-features-embedded-container-servlets-filters-listeners-beans":"features.developing-web-applications.embedded-container.servlets-filters-listeners.beans",
+"boot-features-embedded-container-servlets-filters-listeners-scanning":"features.developing-web-applications.embedded-container.context-initializer.scanning",
+"boot-features-embedded-database-support":"features.sql.datasource.embedded",
+"boot-features-embedded-kafka":"features.messaging.kafka.embedded",
+"boot-features-encrypting-properties":"features.external-config.encrypting",
+"boot-features-entity-classes":"features.sql.jpa-and-spring-data.entity-classes",
+"boot-features-error-handling":"features.developing-web-applications.spring-mvc.error-handling",
+"boot-features-error-handling-custom-error-pages":"features.developing-web-applications.spring-mvc.error-handling.error-pages",
+"boot-features-error-handling-mapping-error-pages-without-mvc":"features.developing-web-applications.spring-mvc.error-handling.error-pages-without-spring-mvc",
+"boot-features-error-handling-war-deployment":"features.developing-web-applications.spring-mvc.error-handling.in-a-war-deployment",
+"boot-features-external-config":"features.external-config",
+"boot-features-external-config-3rd-party-configuration":"features.external-config.typesafe-configuration-properties.third-party-configuration",
+"boot-features-external-config-application-json":"features.external-config.application-json",
+"boot-features-external-config-application-property-files":"features.external-config.files",
+"boot-features-external-config-command-line-args":"features.external-config.command-line-args",
+"boot-features-external-config-complex-type-merge":"features.external-config.typesafe-configuration-properties.merging-complex-types",
+"boot-features-external-config-constructor-binding":"features.external-config.typesafe-configuration-properties.constructor-binding",
+"boot-features-external-config-conversion":"features.external-config.typesafe-configuration-properties.conversion",
+"boot-features-external-config-conversion-datasize":"features.external-config.typesafe-configuration-properties.conversion.data-sizes",
+"boot-features-external-config-conversion-duration":"features.external-config.typesafe-configuration-properties.conversion.durations",
+"boot-features-external-config-conversion-period":"features.external-config.typesafe-configuration-properties.conversion.periods",
+"boot-features-external-config-enabling":"features.external-config.typesafe-configuration-properties.enabling-annotated-types",
+"boot-features-external-config-exposing-yaml-to-spring":"features.external-config.yaml.directly-loading",
+"boot-features-external-config-file-activation-properties":"features.external-config.files.activation-properties",
+"boot-features-external-config-files":"features.external-config.files",
+"boot-features-external-config-files-configtree":"features.external-config.files.configtree",
+"boot-features-external-config-files-importing":"features.external-config.files.importing",
+"boot-features-external-config-files-importing-extensionless":"features.external-config.file.importing-extensionless",
+"boot-features-external-config-files-multi-document":"features.external-config.files.multi-document",
+"boot-features-external-config-files-profile-specific":"features.external-config.files.profile-specific",
+"boot-features-external-config-files-wildcards":"features.external-config.files.wildcard-locations",
+"boot-features-external-config-java-bean-binding":"features.external-config.typesafe-configuration-properties.java-bean-binding",
+"boot-features-external-config-loading-yaml":"features.external-config.yaml.directly-loading",
+"boot-features-external-config-optional-prefix":"features.external-config.files.optional-prefix",
+"boot-features-external-config-placeholders-in-properties":"features.external-config.files.property-placeholders",
+"boot-features-external-config-random-values":"features.external-config.random-values",
+"boot-features-external-config-relaxed-binding":"features.external-config.typesafe-configuration-properties.relaxed-binding",
+"boot-features-external-config-relaxed-binding-from-environment-variables":"features.external-config.typesafe-configuration-properties.relaxed-binding.environment-variables",
+"boot-features-external-config-relaxed-binding-maps":"features.external-config.typesafe-configuration-properties.relaxed-binding.maps",
+"boot-features-external-config-system-environment":"features.external-config.system-environment",
+"boot-features-external-config-typesafe-configuration-properties":"features.external-config.typesafe-configuration-properties",
+"boot-features-external-config-using":"features.external-config.typesafe-configuration-properties.using-annotated-types",
+"boot-features-external-config-validation":"features.external-config.typesafe-configuration-properties.validation",
+"boot-features-external-config-vs-value":"features.external-config.typesafe-configuration-properties.vs-value-annotation",
+"boot-features-external-config-yaml":"features.external-config.yaml",
+"boot-features-external-config-yaml-to-properties":"features.external-config.yaml.mapping-to-properties",
+"boot-features-fluent-builder-api":"features.spring-application.fluent-builder-api",
+"boot-features-graceful-shutdown":"features.graceful-shutdown",
+"boot-features-hazelcast":"features.hazelcast",
+"boot-features-influxdb":"features.nosql.influxdb",
+"boot-features-integration":"features.spring-integration",
+"boot-features-internationalization":"features.internationalization",
+"boot-features-jersey":"features.developing-web-applications.jersey",
+"boot-features-jms":"features.messaging.jms",
+"boot-features-jms-jndi":"features.messaging.jms.jndi",
+"boot-features-jmx":"features.jmx",
+"boot-features-jooq":"features.sql.jooq",
+"boot-features-jooq-codegen":"features.sql.jooq.codegen",
+"boot-features-jooq-customizing":"features.sql.jooq.customizing",
+"boot-features-jooq-dslcontext":"features.sql.jooq.dslcontext",
+"boot-features-jooq-sqldialect":"features.sql.jooq.sqldialect",
+"boot-features-jpa-and-spring-data":"features.sql.jpa-and-spring-data",
+"boot-features-jpa-in-web-environment":"features.sql.jpa-and-spring-data.open-entity-manager-in-view",
+"boot-features-json":"features.json",
+"boot-features-json-components":"features.developing-web-applications.spring-mvc.json",
+"boot-features-json-gson":"features.json.gson",
+"boot-features-json-jackson":"features.json.jackson",
+"boot-features-json-json-b":"features.json.json-b",
+"boot-features-jsp-limitations":"features.developing-web-applications.embedded-container.jsp-limitations",
+"boot-features-jta":"features.jta",
+"boot-features-jta-atomikos":"features.jta.atomikos",
+"boot-features-jta-javaee":"features.jta.javaee",
+"boot-features-jta-mixed-jms":"features.jta.mixing-xa-and-non-xa-connections",
+"boot-features-jta-supporting-alternative-embedded":"features.jta.supporting-alternative-embedded-transaction-manager",
+"boot-features-kafka":"features.messaging.kafka",
+"boot-features-kafka-extra-props":"features.messaging.kafka.additional-properties",
+"boot-features-kafka-receiving-a-message":"features.messaging.kafka.receiving",
+"boot-features-kafka-sending-a-message":"features.messaging.kafka.sending",
+"boot-features-kafka-streams":"features.messaging.kafka.streams",
+"boot-features-kotlin":"features.kotlin",
+"boot-features-kotlin-api":"features.kotlin.api",
+"boot-features-kotlin-api-extensions":"features.kotlin.api.extensions",
+"boot-features-kotlin-api-runapplication":"features.kotlin.api.run-application",
+"boot-features-kotlin-configuration-properties":"features.kotlin.configuration-properties",
+"boot-features-kotlin-dependency-management":"features.kotlin.dependency-management",
+"boot-features-kotlin-null-safety":"features.kotlin.null-safety",
+"boot-features-kotlin-requirements":"features.kotlin.requirements",
+"boot-features-kotlin-resources":"features.kotlin.resources",
+"boot-features-kotlin-resources-examples":"features.kotlin.resources.examples",
+"boot-features-kotlin-resources-further-reading":"features.kotlin.resources.further-reading",
+"boot-features-kotlin-testing":"features.kotlin.testing",
+"boot-features-lazy-initialization":"features.spring-application.lazy-initialization",
+"boot-features-ldap":"features.nosql.ldap",
+"boot-features-ldap-connecting":"features.nosql.ldap.connecting",
+"boot-features-ldap-embedded":"features.nosql.ldap.embedded",
+"boot-features-ldap-spring-data-repositories":"features.nosql.ldap.repositories",
+"boot-features-locating-auto-configuration-candidates":"features.developing-auto-configuration.locating-auto-configuration-candidates",
+"boot-features-log-shutdown-hook":"features.logging.shutdown-hook",
+"boot-features-logback-environment-properties":"features.logging.logback-extensions.environment-properties",
+"boot-features-logback-extensions":"features.logging.logback-extensions",
+"boot-features-logback-extensions-profile-specific":"features.logging.logback-extensions.profile-specific",
+"boot-features-logging":"features.logging",
+"boot-features-logging-color-coded-output":"features.logging.console-output.color-coded",
+"boot-features-logging-console-output":"features.logging.console-output",
+"boot-features-logging-file-output":"features.logging.file-output",
+"boot-features-logging-file-rotation":"features.logging.file-rotation",
+"boot-features-logging-format":"features.logging.log-format",
+"boot-features-messaging":"features.messaging",
+"boot-features-mongo-embedded":"features.nosql.mongodb.embedded",
+"boot-features-mongo-template":"features.nosql.mongodb.template",
+"boot-features-mongodb":"features.nosql.mongodb",
+"boot-features-neo4j":"features.nosql.neo4j",
+"boot-features-nosql":"features.nosql",
+"boot-features-output-capture-test-utility":"features.testing.utilities.output-capture",
+"boot-features-profile-specific-configuration":"features.profiles.profile-specific-configuration-files",
+"boot-features-profiles":"features.profiles",
+"boot-features-profiles-groups":"features.profiles.groups",
+"boot-features-programmatic-embedded-container-customization":"features.developing-web-applications.embedded-container.customizing.programmatic",
+"boot-features-programmatically-setting-profiles":"features.profiles.programmatically-setting-profiles",
+"boot-features-property-conditions":"features.developing-auto-configuration.condition-annotations.property-conditions",
+"boot-features-quartz":"features.quartz",
+"boot-features-r2dbc":"features.sql.r2dbc",
+"boot-features-r2dbc-embedded-database":"features.sql.r2dbc.embedded",
+"boot-features-r2dbc-using-database-client":"features.sql.r2dbc.using-database-client",
+"boot-features-rabbitmq":"features.messaging.amqp.rabbitmq",
+"boot-features-reactive-server":"features.developing-web-applications.reactive-server",
+"boot-features-reactive-server-resources":"features.developing-web-applications.reactive-server-resources-configuration",
+"boot-features-redis":"features.nosql.redis",
+"boot-features-resource-conditions":"features.developing-auto-configuration.condition-annotations.resource-conditions",
+"boot-features-rest-templates-test-utility":"features.testing.utilities.test-rest-template",
+"boot-features-resttemplate":"features.resttemplate",
+"boot-features-resttemplate-customization":"features.resttemplate.customization",
+"boot-features-rsocket":"features.rsocket",
+"boot-features-rsocket-messaging":"features.rsocket.messaging",
+"boot-features-rsocket-requester":"features.rsocket.requester",
+"boot-features-rsocket-server-auto-configuration":"features.rsocket.server-auto-configuration",
+"boot-features-rsocket-strategies-auto-configuration":"features.rsocket.strategies-auto-configuration",
+"boot-features-security":"features.security",
+"boot-features-security-actuator":"features.security.actuator",
+"boot-features-security-authorization-server":"features.security.oauth2.authorization-server",
+"boot-features-security-csrf":"features.security.actuator.csrf",
+"boot-features-security-mvc":"features.security.spring-mvc",
+"boot-features-security-oauth2":"features.security.oauth2",
+"boot-features-security-oauth2-client":"features.security.oauth2.client",
+"boot-features-security-oauth2-common-providers":"features.security.oauth2.client.common-providers",
+"boot-features-security-oauth2-server":"features.security.oauth2.server",
+"boot-features-security-saml":"features.security.saml2",
+"boot-features-security-saml2-relying-party":"features.security.saml2.relying-party",
+"boot-features-security-webflux":"features.security.spring-webflux",
+"boot-features-session":"features.spring-session",
+"boot-features-solr":"features.nosql.solr",
+"boot-features-spel-conditions":"features.developing-auto-configuration.condition-annotations.spel-conditions",
+"boot-features-spring-application":"features.spring-application",
+"boot-features-spring-data-cassandra-repositories":"features.nosql.cassandra.repositories",
+"boot-features-spring-data-couchbase-repositories":"features.nosql.couchbase.repositories",
+"boot-features-spring-data-elasticsearch-repositories":"features.nosql.elasticsearch.repositories",
+"boot-features-spring-data-jpa-repositories":"features.sql.jpa-and-spring-data.repositories",
+"boot-features-spring-data-mongo-repositories":"features.nosql.mongodb.repositories",
+"boot-features-spring-data-mongodb-repositories":"features.nosql.mongodb.repositories",
+"boot-features-spring-data-neo4j-repositories":"features.nosql.neo4j.repositories",
+"boot-features-spring-data-r2dbc-repositories":"features.sql.r2dbc.repositories",
+"boot-features-spring-hateoas":"features.developing-web-applications.spring-mvc.spring-hateoas",
+"boot-features-spring-message-codes":"features.developing-web-applications.spring-mvc.message-codes",
+"boot-features-spring-mvc":"features.developing-web-applications.spring-mvc",
+"boot-features-spring-mvc-auto-configuration":"features.developing-web-applications.spring-mvc.auto-configuration",
+"boot-features-spring-mvc-message-converters":"features.developing-web-applications.spring-mvc.message-converters",
+"boot-features-spring-mvc-pathmatch":"features.developing-web-applications.spring-mvc.content-negotiation",
+"boot-features-spring-mvc-static-content":"features.developing-web-applications.spring-mvc.static-content",
+"boot-features-spring-mvc-template-engines":"features.developing-web-applications.spring-mvc.template-engines",
+"boot-features-spring-mvc-web-binding-initializer":"features.developing-web-applications.spring-mvc.binding-initializer",
+"boot-features-spring-mvc-welcome-page":"features.developing-web-applications.spring-mvc.welcome-page",
+"boot-features-sql":"features.sql",
+"boot-features-sql-h2-console":"features.sql.h2-web-console",
+"boot-features-sql-h2-console-custom-path":"features.sql.h2-web-console.custom-path",
+"boot-features-startup-failure":"features.spring-application.startup-failure",
+"boot-features-task-execution-scheduling":"features.task-execution-and-scheduling",
+"boot-features-test-autoconfig":"features.developing-auto-configuration.testing",
+"boot-features-test-autoconfig-overriding-classpath":"features.developing-auto-configuration.testing.overriding-classpath",
+"boot-features-test-autoconfig-simulating-web-context":"features.developing-auto-configuration.testing.simulating-a-web-context",
+"boot-features-test-property-values":"features.testing.utilities.test-property-values",
+"boot-features-test-scope-dependencies":"features.testing.test-scope-dependencies",
+"boot-features-test-utilities":"features.testing.utilities",
+"boot-features-testing":"features.testing",
+"boot-features-testing-spring-applications":"features.testing.spring-applications",
+"boot-features-testing-spring-boot-application-arguments":"features.testing.spring-boot-applications.using-application-arguments",
+"boot-features-testing-spring-boot-applications":"features.testing.spring-boot-applications",
+"boot-features-testing-spring-boot-applications-customizing-web-test-client":"features.testing.spring-boot-applications.customizing-web-test-client",
+"boot-features-testing-spring-boot-applications-detecting-config":"features.testing.spring-boot-applications.detecting-configuration",
+"boot-features-testing-spring-boot-applications-detecting-web-app-type":"features.testing.spring-boot-applications.detecting-web-app-type",
+"boot-features-testing-spring-boot-applications-excluding-config":"features.testing.spring-boot-applications.excluding-configuration",
+"boot-features-testing-spring-boot-applications-jmx":"features.testing.spring-boot-applications.jmx",
+"boot-features-testing-spring-boot-applications-metrics":"features.testing.spring-boot-applications.metrics",
+"boot-features-testing-spring-boot-applications-mocking-beans":"features.testing.spring-boot-applications.mocking-beans",
+"boot-features-testing-spring-boot-applications-testing-auto-configured-additional-auto-config":"features.testing.spring-boot-applications.additional-autoconfiguration-and-slicing",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-cassandra-test":"features.testing.spring-boot-applications.autoconfigured-spring-data-cassandra",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-data-jdbc-test":"features.testing.spring-boot-applications.autoconfigured-spring-data-jdbc",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-jdbc-test":"features.testing.spring-boot-applications.autoconfigured-jdbc",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-jooq-test":"features.testing.spring-boot-applications.autoconfigured-jooq",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-jpa-test":"features.testing.spring-boot-applications.autoconfigured-spring-data-jpa",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-json-tests":"features.testing.spring-boot-applications.json-tests",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-ldap-test":"features.testing.spring-boot-applications.autoconfigured-spring-data-ldap",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-mongo-test":"features.testing.spring-boot-applications.autoconfigured-spring-data-mongodb",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-mvc-tests":"features.testing.spring-boot-applications.spring-mvc-tests",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-neo4j-test":"features.testing.spring-boot-applications.autoconfigured-spring-data-neo4j",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-redis-test":"features.testing.spring-boot-applications.autoconfigured-spring-data-redis",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-rest-client":"features.testing.spring-boot-applications.autoconfigured-rest-client",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-rest-docs":"features.testing.spring-boot-applications.autoconfigured-spring-restdocs",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-rest-docs-mock-mvc":"features.testing.spring-boot-applications.autoconfigured-spring-restdocs.with-mock-mvc",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-rest-docs-rest-assured":"features.testing.spring-boot-applications.autoconfigured-spring-restdocs.with-rest-assured",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-rest-docs-web-test-client":"features.testing.spring-boot-applications.autoconfigured-spring-restdocs.with-web-test-client",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-tests":"features.testing.spring-boot-applications.autoconfigured-tests",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-webflux-tests":"features.testing.spring-boot-applications.spring-webflux-tests",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-webservices":"features.testing.spring-boot-applications.autoconfigured-webservices",
+"boot-features-testing-spring-boot-applications-testing-user-configuration":"features.testing.spring-boot-applications.user-configuration-and-slicing",
+"boot-features-testing-spring-boot-applications-testing-with-mock-environment":"features.testing.spring-boot-applications.with-mock-environment",
+"boot-features-testing-spring-boot-applications-testing-with-running-server":"features.testing.spring-boot-applications.with-running-server",
+"boot-features-testing-spring-boot-applications-with-spock":"features.testing.spring-boot-applications.spock",
+"boot-features-understanding-auto-configured-beans":"features.developing-auto-configuration.understanding-auto-configured-beans",
+"boot-features-using-amqp-receiving":"features.messaging.amqp.receiving",
+"boot-features-using-amqp-sending":"features.messaging.amqp.sending",
+"boot-features-using-jdbc-template":"features.sql.jdbc-template",
+"boot-features-using-jms-receiving":"features.messaging.jms.receiving",
+"boot-features-using-jms-sending":"features.messaging.jms.sending",
+"boot-features-validation":"features.validation",
+"boot-features-web-application-conditions":"features.developing-auto-configuration.condition-annotations.web-application-conditions",
+"boot-features-web-environment":"features.spring-application.web-environment",
+"boot-features-webclient":"features.webclient",
+"boot-features-webclient-customization":"features.webclient.customization",
+"boot-features-webclient-runtime":"features.webclient.runtime",
+"boot-features-webflux":"features.developing-web-applications.spring-webflux",
+"boot-features-webflux-auto-configuration":"features.developing-web-applications.spring-webflux.auto-configuration",
+"boot-features-webflux-error-handling":"features.developing-web-applications.spring-webflux.error-handling",
+"boot-features-webflux-error-handling-custom-error-pages":"features.developing-web-applications.spring-webflux.error-handling.error-pages",
+"boot-features-webflux-httpcodecs":"features.developing-web-applications.spring-webflux.httpcodecs",
+"boot-features-webflux-static-content":"features.developing-web-applications.spring-webflux.static-content",
+"boot-features-webflux-template-engines":"features.developing-web-applications.spring-webflux.template-engines",
+"boot-features-webflux-web-filters":"features.developing-web-applications.spring-webflux.web-filters",
+"boot-features-webflux-welcome-page":"features.developing-web-applications.spring-webflux.welcome-page",
+"boot-features-webservices":"features.webservices",
+"boot-features-webservices-template":"features.webservices.template",
+"boot-features-websockets":"features.websockets",
+"boot-features-whats-next":"features.whats-next",
+"boot-layering-docker-images":"features.container-images.layering",
+"build-tool-plugins-antlib":"build-tool-plugins.antlib",
+"build-tool-plugins-find-a-main-class":"build-tool-plugins.other-build-systems.finding-main-class",
+"build-tool-plugins-gradle-plugin":"build-tool-plugins.gradle",
+"build-tool-plugins-maven-plugin":"build-tool-plugins.maven",
+"build-tool-plugins-nested-libraries":"build-tool-plugins.other-build-systems.nested-libraries",
+"build-tool-plugins-other-build-systems":"build-tool-plugins.other-build-systems",
+"build-tool-plugins-repackage-implementation":"build-tool-plugins.other-build-systems.example-repackage-implementation",
+"build-tool-plugins-repackaging-archives":"build-tool-plugins.other-build-systems.repackaging-archives",
+"build-tool-plugins-whats-next":"build-tool-plugins.whats-next",
+"cache-properties":"application-properties.cache",
+"cli-automatic-main-method":"cli.using-the-cli.run.automatic-main-method",
+"cli-deduced-grab-annotations":"cli.using-the-cli.run.deduced-grab-annotations",
+"cli-default-grab-deduced-coordinates":"cli.using-the-cli.run.deduced-grab-coordinates",
+"cli-default-grab-deduced-coordinates-custom-dependency-management":"cli.using-the-cli.run.custom-dependency-management",
+"cli-default-import-statements":"cli.using-the-cli.run.default-import-statements",
+"cli-groovy-beans-dsl":"cli.groovy-beans-dsl",
+"cli-init":"cli.using-the-cli.initialize-new-project",
+"cli-install-uninstall":"cli.using-the-cli.extensions",
+"cli-installation":"cli.installation",
+"cli-jar":"cli.using-the-cli.packaging",
+"cli-maven-settings":"cli.maven-setting",
+"cli-multiple-source-files":"cli.using-the-cli.multiple-source-files",
+"cli-run":"cli.using-the-cli.run",
+"cli-shell":"cli.using-the-cli.embedded-shell",
+"cli-using-the-cli":"cli.using-the-cli",
+"cli-whats-next":"cli.whats-next",
+"cloud-deployment":"deployment.cloud",
+"cloud-deployment-aws":"deployment.cloud.aws",
+"cloud-deployment-aws-beanstalk":"deployment.cloud.aws.beanstalk",
+"cloud-deployment-aws-java-se-platform":"deployment.cloud.aws.beanstalk.java-se-platform",
+"cloud-deployment-aws-summary":"deployment.cloud.aws.summary",
+"cloud-deployment-aws-tomcat-platform":"deployment.cloud.aws.beanstalk.tomcat-platform",
+"cloud-deployment-boxfuse":"deployment.cloud.boxfuse",
+"cloud-deployment-cloud-foundry":"deployment.cloud.cloud-foundry",
+"cloud-deployment-cloud-foundry-services":"deployment.cloud.cloud-foundry.binding-to-services",
+"cloud-deployment-gae":"deployment.cloud.google",
+"cloud-deployment-heroku":"deployment.cloud.heroku",
+"cloud-deployment-kubernetes":"deployment.cloud.kubernetes",
+"cloud-deployment-kubernetes-container-lifecycle":"deployment.cloud.kubernetes.container-lifecycle",
+"cloud-deployment-openshift":"deployment.cloud.openshift",
+"common-application-properties":"application-properties",
+"common-application-properties-actuator":"application-properties.actuator",
+"common-application-properties-cache":"application-properties.cache",
+"common-application-properties-core":"application-properties.core",
+"common-application-properties-data":"application-properties.data",
+"common-application-properties-data-migration":"application-properties.data-migration",
+"common-application-properties-devtools":"application-properties.devtools",
+"common-application-properties-integration":"application-properties.integration",
+"common-application-properties-json":"application-properties.json",
+"common-application-properties-mail":"application-properties.mail",
+"common-application-properties-rsocket":"application-properties.rsocket",
+"common-application-properties-security":"application-properties.security",
+"common-application-properties-server":"application-properties.server",
+"common-application-properties-templating":"application-properties.templating",
+"common-application-properties-testing":"application-properties.testing",
+"common-application-properties-transaction":"application-properties.transaction",
+"common-application-properties-web":"application-properties.web",
+"configuration-metadata-additional-metadata":"configuration-metadata.annotation-processor.adding-additional-metadata",
+"configuration-metadata-annotation-processor":"configuration-metadata.annotation-processor",
+"configuration-metadata-annotation-processor-metadata-generation":"configuration-metadata.annotation-processor.automatic-metadata-generation",
+"configuration-metadata-annotation-processor-metadata-generation-nested":"configuration-metadata.annotation-processor.automatic-metadata-generation.nested-properties",
+"configuration-metadata-annotation-processor-setup":"configuration-metadata.annotation-processor.configuring",
+"configuration-metadata-format":"configuration-metadata.format",
+"configuration-metadata-group-attributes":"configuration-metadata.format.group",
+"configuration-metadata-hints-attributes":"configuration-metadata.format.hints",
+"configuration-metadata-property-attributes":"configuration-metadata.format.property",
+"configuration-metadata-providing-manual-hints":"configuration-metadata.manual-hints",
+"configuration-metadata-providing-manual-hints-any":"configuration-metadata.manual-hints.value-providers.any",
+"configuration-metadata-providing-manual-hints-class-reference":"configuration-metadata.manual-hints.value-providers.class-reference",
+"configuration-metadata-providing-manual-hints-handle-as":"configuration-metadata.manual-hints.value-providers.handle-as",
+"configuration-metadata-providing-manual-hints-logger-name":"configuration-metadata.manual-hints.value-providers.logger-name",
+"configuration-metadata-providing-manual-hints-spring-bean-reference":"configuration-metadata.manual-hints.value-providers.spring-bean-reference",
+"configuration-metadata-providing-manual-hints-spring-profile-name":"configuration-metadata.manual-hints.value-providers.spring-profile-name",
+"configuration-metadata-providing-manual-hints-value-hint":"configuration-metadata.manual-hints.value-hint",
+"configuration-metadata-providing-manual-hints-value-providers":"configuration-metadata.manual-hints.value-providers",
+"configuration-metadata-repeated-items":"configuration-metadata.format.repeated-items",
+"configuring-file-system-watcher":"using.devtools.globalsettings.configuring-file-system-watcher",
+"containers-deployment":"deployment.containers",
+"core-properties":"application-properties.core",
+"data-migration-properties":"application-properties.data-migration",
+"data-properties":"application-properties.data",
+"dependency-versions-coordinates":"dependency-versions.coordinates",
+"dependency-versions-properties":"dependency-versions.properties",
+"deployment-initd-service":"deployment.installing.nix-services.init-d",
+"deployment-initd-service-securing":"deployment.installing.nix-services.init-d.securing",
+"deployment-install":"deployment.installing",
+"deployment-install-supported-operating-systems":"deployment.installing.supported-operating-systems",
+"deployment-script-customization":"deployment.installing.nix-services.script-customization",
+"deployment-script-customization-when-it-runs":"deployment.installing.nix-services.script-customization.when-running",
+"deployment-script-customization-when-it-written":"deployment.installing.nix-services.script-customization.when-written",
+"deployment-service":"deployment.installing.nix-services",
+"deployment-systemd-service":"deployment.installing.nix-services.system-d",
+"deployment-whats-next":"deployment.whats-next",
+"deployment-windows":"deployment.installing.windows-services",
+"deployment.containers":"container-images.efficient-images.unpacking",
+"devtools-properties":"application-properties.devtools",
+"executable-jar-alternatives":"executable-jar.alternatives",
+"executable-jar-jar-file-structure":"executable-jar.nested-jars.jar-structure",
+"executable-jar-jarfile":"executable-jar.jarfile-class",
+"executable-jar-jarfile-compatibility":"executable-jar.jarfile-class.compatibility",
+"executable-jar-launcher-manifest":"executable-jar.launching.manifest",
+"executable-jar-launching":"executable-jar.launching",
+"executable-jar-nested-jars":"executable-jar.nested-jars",
+"executable-jar-property-launcher-features":"executable-jar.property-launcher",
+"executable-jar-restrictions":"executable-jar.restrictions",
+"executable-jar-war-file-structure":"executable-jar.nested-jars.war-structure",
+"executable-jar-war-index-files":"executable-jar.nested-jars.index-files",
+"executable-jar-war-index-files-classpath":"executable-jar.nested-jars.classpath-index",
+"executable-jar-war-index-files-layers":"executable-jar.nested-jars.layer-index",
+"features.caching":"io.caching",
+"features.caching.provider":"io.caching.provider",
+"features.caching.provider.caffeine":"io.caching.provider.caffeine",
+"features.caching.provider.couchbase":"io.caching.provider.couchbase",
+"features.caching.provider.ehcache2":"io.caching.provider.ehcache2",
+"features.caching.provider.generic":"io.caching.provider.generic",
+"features.caching.provider.hazelcast":"io.caching.provider.hazelcast",
+"features.caching.provider.infinispan":"io.caching.provider.infinispan",
+"features.caching.provider.jcache":"io.caching.provider.jcache",
+"features.caching.provider.none":"io.caching.provider.none",
+"features.caching.provider.redis":"io.caching.provider.redis",
+"features.caching.provider.simple":"io.caching.provider.simple",
+"features.container-images":"container-images.efficient-images",
+"features.container-images.building":"container-images.efficient-images",
+"features.container-images.building.buildpacks":"container-images.buildpacks",
+"features.container-images.building.dockerfiles":"container-images.dockerfiles",
+"features.container-images.layering":"container-images.efficient-images.layering",
+"features.developing-web-applications":"web",
+"features.developing-web-applications.embedded-container":"web.servlet.embedded-container",
+"features.developing-web-applications.embedded-container.application-context":"web.servlet.embedded-container.application-context",
+"features.developing-web-applications.embedded-container.context-initializer":"web.servlet.embedded-container.context-initializer",
+"features.developing-web-applications.embedded-container.context-initializer.scanning":"web.servlet.embedded-container.context-initializer.scanning",
+"features.developing-web-applications.embedded-container.customizing":"web.servlet.embedded-container.customizing",
+"features.developing-web-applications.embedded-container.customizing.direct":"web.servlet.embedded-container.customizing.direct",
+"features.developing-web-applications.embedded-container.customizing.programmatic":"web.servlet.embedded-container.customizing.programmatic",
+"features.developing-web-applications.embedded-container.jsp-limitations":"web.servlet.embedded-container.jsp-limitations",
+"features.developing-web-applications.embedded-container.servlets-filters-listeners":"web.servlet.embedded-container.servlets-filters-listeners",
+"features.developing-web-applications.embedded-container.servlets-filters-listeners.beans":"web.servlet.embedded-container.servlets-filters-listeners.beans",
+"features.developing-web-applications.jersey":"web.servlet.jersey",
+"features.developing-web-applications.reactive-server":"web.reactive.reactive-server",
+"features.developing-web-applications.reactive-server-resources-configuration":"web.reactive.reactive-server-resources-configuration",
+"features.developing-web-applications.spring-mvc":"web.servlet.spring-mvc",
+"features.developing-web-applications.spring-mvc.auto-configuration":"web.servlet.spring-mvc.auto-configuration",
+"features.developing-web-applications.spring-mvc.binding-initializer":"web.servlet.spring-mvc.binding-initializer",
+"features.developing-web-applications.spring-mvc.content-negotiation":"web.servlet.spring-mvc.content-negotiation",
+"features.developing-web-applications.spring-mvc.cors":"web.servlet.spring-mvc.cors",
+"features.developing-web-applications.spring-mvc.error-handling":"web.servlet.spring-mvc.error-handling",
+"features.developing-web-applications.spring-mvc.error-handling.error-pages":"web.servlet.spring-mvc.error-handling.error-pages",
+"features.developing-web-applications.spring-mvc.error-handling.error-pages-without-spring-mvc":"web.servlet.spring-mvc.error-handling.error-pages-without-spring-mvc",
+"features.developing-web-applications.spring-mvc.error-handling.in-a-war-deployment":"web.servlet.spring-mvc.error-handling.in-a-war-deployment",
+"features.developing-web-applications.spring-mvc.json":"web.servlet.spring-mvc.json",
+"features.developing-web-applications.spring-mvc.message-codes":"web.servlet.spring-mvc.message-codes",
+"features.developing-web-applications.spring-mvc.message-converters":"web.servlet.spring-mvc.message-converters",
+"features.developing-web-applications.spring-mvc.static-content":"web.servlet.spring-mvc.static-content",
+"features.developing-web-applications.spring-mvc.template-engines":"web.servlet.spring-mvc.template-engines",
+"features.developing-web-applications.spring-mvc.welcome-page":"web.servlet.spring-mvc.welcome-page",
+"features.developing-web-applications.spring-webflux":"web.reactive.webflux",
+"features.developing-web-applications.spring-webflux.auto-configuration":"web.reactive.webflux.auto-configuration",
+"features.developing-web-applications.spring-webflux.error-handling":"web.reactive.webflux.error-handling",
+"features.developing-web-applications.spring-webflux.error-pages":"web.reactive.webflux.error-handling.error-pages",
+"features.developing-web-applications.spring-webflux.httpcodecs":"web.reactive.webflux.httpcodecs",
+"features.developing-web-applications.spring-webflux.static-context":"web.reactive.webflux.static-content",
+"features.developing-web-applications.spring-webflux.template-engines":"web.reactive.webflux.template-engines",
+"features.developing-web-applications.spring-webflux.web-filters":"web.reactive.webflux.web-filters",
+"features.developing-web-applications.spring-webflux.welcome-page":"web.reactive.webflux.welcome-page",
+"features.email":"io.email",
+"features.graceful-shutdown":"web.graceful-shutdown",
+"features.jmx":"actuator.jmx",
+"features.jta":"io.jta",
+"features.jta.atomikos":"io.jta.atomikos",
+"features.jta.javaee":"io.jta.javaee",
+"features.jta.mixing-xa-and-non-xa-connections":"io.jta.mixing-xa-and-non-xa-connections",
+"features.jta.supporting-alternative-embedded-transaction-manager":"io.jta.supporting-alternative-embedded-transaction-manager",
+"features.messaging":"messaging",
+"features.messaging.amqp":"messaging.amqp",
+"features.messaging.amqp.rabbit":"messaging.amqp.rabbit",
+"features.messaging.amqp.receiving":"messaging.amqp.receiving",
+"features.messaging.amqp.sending":"messaging.amqp.sending",
+"features.messaging.jms.activemq":"messaging.jms.activemq",
+"features.messaging.jms.artemis":"messaging.jms.artemis",
+"features.messaging.jms.jndi":"messaging.jms.jndi",
+"features.messaging.jms.receiving":"messaging.jms.receiving",
+"features.messaging.jms.sending":"messaging.jms.sending",
+"features.messaging.kafka":"messaging.kafka",
+"features.messaging.kafka.additional-properties":"messaging.kafka.additional-properties",
+"features.messaging.kafka.embedded":"messaging.kafka.embedded",
+"features.messaging.kafka.receiving":"messaging.kafka.receiving",
+"features.messaging.kafka.sending":"messaging.kafka.sending",
+"features.messaging.kafka.streams":"messaging.kafka.streams",
+"features.nosql":"data.nosql",
+"features.nosql.cassandra":"data.nosql.cassandra",
+"features.nosql.cassandra.connecting":"data.nosql.cassandra.connecting",
+"features.nosql.cassandra.repositories":"data.nosql.cassandra.repositories",
+"features.nosql.couchbase":"data.nosql.couchbase",
+"features.nosql.couchbase.connecting":"data.nosql.couchbase.connecting",
+"features.nosql.couchbase.repositories":"data.nosql.couchbase.repositories",
+"features.nosql.elasticsearch":"data.nosql.elasticsearch",
+"features.nosql.elasticsearch.connecting-using-reactive-rest":"data.nosql.elasticsearch.connecting-using-reactive-rest",
+"features.nosql.elasticsearch.connecting-using-rest":"data.nosql.elasticsearch.connecting-using-rest",
+"features.nosql.elasticsearch.connecting-using-spring-data":"data.nosql.elasticsearch.connecting-using-spring-data",
+"features.nosql.elasticsearch.repositories":"data.nosql.elasticsearch.repositories",
+"features.nosql.influxdb":"data.nosql.influxdb",
+"features.nosql.influxdb.connecting":"data.nosql.influxdb.connecting",
+"features.nosql.ldap":"data.nosql.ldap",
+"features.nosql.ldap.connecting":"data.nosql.ldap.connecting",
+"features.nosql.ldap.embedded":"data.nosql.ldap.embedded",
+"features.nosql.ldap.repositories":"data.nosql.ldap.repositories",
+"features.nosql.mongodb":"data.nosql.mongodb",
+"features.nosql.mongodb.connecting":"data.nosql.mongodb.connecting",
+"features.nosql.mongodb.embedded":"data.nosql.mongodb.embedded",
+"features.nosql.mongodb.repositories":"data.nosql.mongodb.repositories",
+"features.nosql.mongodb.template":"data.nosql.mongodb.template",
+"features.nosql.neo4j":"data.nosql.neo4j",
+"features.nosql.neo4j.connecting":"data.nosql.neo4j.connecting",
+"features.nosql.neo4j.repositories":"data.nosql.neo4j.repositories",
+"features.nosql.redis":"data.nosql.redis",
+"features.nosql.redis.connecting":"data.nosql.redis.connecting",
+"features.nosql.solr":"data.nosql.solr",
+"features.nosql.solr.connecting":"data.nosql.solr.connecting",
+"features.quartz":"io.quartz",
+"features.resttemplate":"io.rest-client.resttemplate",
+"features.resttemplate.customization":"io.rest-client.resttemplate.customization",
+"features.rsocket":"messaging.rsocket",
+"features.rsocket.messaging":"messaging.rsocket.messaging",
+"features.rsocket.requester":"messaging.rsocket.requester",
+"features.rsocket.server-auto-configuration":"messaging.rsocket.server-auto-configuration",
+"features.rsocket.strategies-auto-configuration":"messaging.rsocket.strategies-auto-configuration",
+"features.security":"web.security",
+"features.security.actuator":"actuator.endpoints.security",
+"features.security.actuator.csrf":"actuator.endpoints.security.csrf",
+"features.security.authorization-server":"web.security.oauth2.authorization-server",
+"features.security.oauth2":"web.security.oauth2",
+"features.security.oauth2.client":"web.security.oauth2.client",
+"features.security.oauth2.client.common-providers":"web.security.oauth2.client.common-providers",
+"features.security.oauth2.server":"web.security.oauth2.server",
+"features.security.saml2":"web.security.saml2",
+"features.security.saml2.relying-party":"web.security.saml2.relying-party",
+"features.security.spring-mvc":"web.security.spring-mvc",
+"features.security.spring-webflux":"web.security.spring-webflux",
+"features.spring-hateoas":"web.spring-hateoas",
+"features.spring-integration":"messaging.spring-integration",
+"features.spring-session":"web.spring-session",
+"features.sql":"data.sql",
+"features.sql.datasource":"data.sql.datasource",
+"features.sql.datasource.configuration":"data.sql.datasource.configuration",
+"features.sql.datasource.connection-pool":"data.sql.datasource.connection-pool",
+"features.sql.datasource.embedded":"data.sql.datasource.embedded",
+"features.sql.datasource.jndi":"data.sql.datasource.jndi",
+"features.sql.datasource.production":"data.sql.datasource.production",
+"features.sql.h2-web-console":"data.sql.h2-web-console",
+"features.sql.h2-web-console.custom-path":"data.sql.h2-web-console.custom-path",
+"features.sql.jdbc":"data.sql.jdbc",
+"features.sql.jdbc-template":"data.sql.jdbc-template",
+"features.sql.jooq":"data.sql.jooq",
+"features.sql.jooq.codegen":"data.sql.jooq.codegen",
+"features.sql.jooq.customizing":"data.sql.jooq.customizing",
+"features.sql.jooq.dslcontext":"data.sql.jooq.dslcontext",
+"features.sql.jooq.sqldialect":"data.sql.jooq.sqldialect",
+"features.sql.jpa-and-spring-data":"data.sql.jpa-and-spring-data",
+"features.sql.jpa-and-spring-data.creating-and-dropping":"data.sql.jpa-and-spring-data.creating-and-dropping",
+"features.sql.jpa-and-spring-data.entity-classes":"data.sql.jpa-and-spring-data.entity-classes",
+"features.sql.jpa-and-spring-data.envers-repositories":"data.sql.jpa-and-spring-data.envers-repositories",
+"features.sql.jpa-and-spring-data.open-entity-manager-in-view":"data.sql.jpa-and-spring-data.open-entity-manager-in-view",
+"features.sql.jpa-and-spring-data.repositories":"data.sql.jpa-and-spring-data.repositories",
+"features.sql.r2dbc":"data.sql.r2dbc",
+"features.sql.r2dbc.embedded":"data.sql.r2dbc.embedded",
+"features.sql.r2dbc.repositories":"data.sql.r2dbc.repositories",
+"features.sql.r2dbc.using-database-client":"data.sql.r2dbc.using-database-client",
+"features.validation":"io.validation",
+"features.webclient":"io.rest-client.webclient",
+"features.webclient.customization":"io.rest-client.webclient.customization",
+"features.webclient.runtime":"io.rest-client.webclient.runtime",
+"features.webservices":"io.webservices",
+"features.webservices.template":"io.webservices.template",
+"features.websockets":"messaging.websockets",
+"getting-started-cli-command-line-completion":"getting-started.installing.cli.completion",
+"getting-started-cli-example":"getting-started.installing.cli.quick-start",
+"getting-started-first-application":"getting-started.first-application",
+"getting-started-first-application-annotations":"getting-started.first-application.code.mvc-annotations",
+"getting-started-first-application-auto-configuration":"getting-started.first-application.code.enable-auto-configuration",
+"getting-started-first-application-code":"getting-started.first-application.code",
+"getting-started-first-application-dependencies":"getting-started.first-application.dependencies",
+"getting-started-first-application-executable-jar":"getting-started.first-application.executable-jar",
+"getting-started-first-application-main-method":"getting-started.first-application.code.main-method",
+"getting-started-first-application-pom":"getting-started.first-application.pom",
+"getting-started-first-application-run":"getting-started.first-application.run",
+"getting-started-gradle-installation":"getting-started.installing.java.gradle",
+"getting-started-homebrew-cli-installation":"getting-started.installing.cli.homebrew",
+"getting-started-installation-instructions-for-java":"getting-started.installing.java",
+"getting-started-installing-spring-boot":"getting-started.installing",
+"getting-started-installing-the-cli":"getting-started.installing.cli",
+"getting-started-introducing-spring-boot":"getting-started.introducing-spring-boot",
+"getting-started-macports-cli-installation":"getting-started.installing.cli.macports",
+"getting-started-manual-cli-installation":"getting-started.installing.cli.manual-installation",
+"getting-started-maven-installation":"getting-started.installing.java.maven",
+"getting-started-scoop-cli-installation":"getting-started.installing.cli.scoop",
+"getting-started-sdkman-cli-installation":"getting-started.installing.cli.sdkman",
+"getting-started-system-requirements":"getting-started.system-requirements",
+"getting-started-system-requirements-servlet-containers":"getting-started.system-requirements.servlet-containers",
+"getting-started-upgrading-from-an-earlier-version":"getting-started.installing.upgrading",
+"getting-started-whats-next":"getting-started.whats-next",
+"how-to-enable-http-response-compression":"howto.webserver.enable-response-compression",
+"howto-actuator":"howto.actuator",
+"howto-add-a-servlet-filter-or-listener":"howto.webserver.add-servlet-filter-listener",
+"howto-add-a-servlet-filter-or-listener-as-spring-bean":"howto.webserver.add-servlet-filter-listener.spring-bean",
+"howto-add-a-servlet-filter-or-listener-using-scanning":"howto.webserver.add-servlet-filter-listener.using-scanning",
+"howto-automatic-expansion":"howto.properties-and-configuration.expand-properties",
+"howto-automatic-expansion-gradle":"howto.properties-and-configuration.expand-properties.gradle",
+"howto-automatic-expansion-maven":"howto.properties-and-configuration.expand-properties.maven",
+"howto-batch-applications":"howto.batch",
+"howto-build":"howto.build",
+"howto-build-an-application-context-hierarchy":"howto.application.context-hierarchy",
+"howto-build-an-executable-archive-with-ant":"howto.build.build-an-executable-archive-with-ant-without-using-spring-boot-antlib",
+"howto-build-info":"howto.build.generate-info",
+"howto-change-configuration-depending-on-the-environment":"howto.properties-and-configuration.change-configuration-depending-on-the-environment",
+"howto-change-the-http-port":"howto.webserver.change-port",
+"howto-change-the-http-port-or-address-of-the-actuator-endpoints":"howto.actuator.change-http-port-or-address",
+"howto-change-the-location-of-external-properties":"howto.properties-and-configuration.external-properties-location",
+"howto-change-the-user-details-service-and-add-user-accounts":"howto.security.change-user-details-service-and-add-user-accounts",
+"howto-configure-a-component-that-is-used-by-JPA":"howto.data-access.configure-a-component-that-is-used-by-jpa",
+"howto-configure-a-datasource":"howto.data-access.configure-custom-datasource",
+"howto-configure-accesslogs":"howto.webserver.configure-access-logs",
+"howto-configure-hibernate-naming-strategy":"howto.data-access.configure-hibernate-naming-strategy",
+"howto-configure-hibernate-second-level-caching":"howto.data-access.configure-hibernate-second-level-caching",
+"howto-configure-http2":"howto.webserver.configure-http2",
+"howto-configure-http2-jetty":"howto.webserver.configure-http2.jetty",
+"howto-configure-http2-netty":"howto.webserver.configure-http2.netty",
+"howto-configure-http2-tomcat":"howto.webserver.configure-http2.tomcat",
+"howto-configure-http2-undertow":"howto.webserver.configure-http2.undertow",
+"howto-configure-jOOQ-with-multiple-datasources":"howto.data-access.configure-jooq-with-multiple-datasources",
+"howto-configure-jpa-properties":"howto.data-access.jpa-properties",
+"howto-configure-log4j-for-logging":"howto.logging.log4j",
+"howto-configure-log4j-for-logging-yaml-or-json-config":"howto.logging.log4j.yaml-or-json-config",
+"howto-configure-logback-for-logging":"howto.logging.logback",
+"howto-configure-logback-for-logging-fileonly":"howto.logging.logback.file-only-output",
+"howto-configure-ssl":"howto.webserver.configure-ssl",
+"howto-configure-webserver":"howto.webserver.configure",
+"howto-convert-an-existing-application-to-spring-boot":"howto.traditional-deployment.convert-existing-application",
+"howto-create-a-deployable-war-file":"howto.traditional-deployment.war",
+"howto-create-a-non-web-application":"howto.application.non-web-application",
+"howto-create-a-nonexecutable-jar":"howto.build.create-a-nonexecutable-jar",
+"howto-create-an-additional-executable-jar":"howto.build.use-a-spring-boot-application-as-dependency",
+"howto-create-an-executable-jar-with-maven":"howto.build.create-an-executable-jar-with-maven",
+"howto-create-websocket-endpoints-using-serverendpoint":"howto.webserver.create-websocket-endpoints-using-serverendpoint",
+"howto-customize-dependency-versions":"howto.build.customize-dependency-versions",
+"howto-customize-the-environment-or-application-context":"howto.application.customize-the-environment-or-application-context",
+"howto-customize-the-jackson-objectmapper":"howto.spring-mvc.customize-jackson-objectmapper",
+"howto-customize-the-responsebody-rendering":"howto.spring-mvc.customize-responsebody-rendering",
+"howto-customize-the-whitelabel-error-page":"howto.actuator.customize-whitelabel-error-page",
+"howto-customize-tomcat-behind-a-proxy-server":"howto.webserver.use-behind-a-proxy-server.tomcat",
+"howto-customize-view-resolvers":"howto.spring-mvc.customize-view-resolvers",
+"howto-data-access":"howto.data-access",
+"howto-database-initialization":"howto.data-initialization",
+"howto-disable-registration-of-a-servlet-or-filter":"howto.webserver.add-servlet-filter-listener.spring-bean.disable",
+"howto-disable-web-server":"howto.webserver.disable",
+"howto-discover-build-in-options-for-external-properties":"howto.properties-and-configuration.discover-build-in-options-for-external-properties",
+"howto-discover-the-http-port-at-runtime":"howto.webserver.discover-port",
+"howto-embedded-web-servers":"howto.webserver",
+"howto-enable-https":"howto.security.enable-https",
+"howto-enable-multiple-connectors-in-tomcat":"howto.webserver.enable-multiple-connectors-in-tomcat",
+"howto-enable-multiple-listeners-in-undertow":"howto.webserver.enable-multiple-listeners-in-undertow",
+"howto-enable-tomcat-mbean-registry":"howto.webserver.enable-tomcat-mbean-registry",
+"howto-execute-flyway-database-migrations-on-startup":"howto.data-initialization.migration-tool.flyway",
+"howto-execute-liquibase-database-migrations-on-startup":"howto.data-initialization.migration-tool.liquibase",
+"howto-externalize-configuration":"howto.properties-and-configuration.externalize-configuration",
+"howto-extract-specific-libraries-when-an-executable-jar-runs":"howto.build.extract-specific-libraries-when-an-executable-jar-runs",
+"howto-failure-analyzer":"howto.application.failure-analyzer",
+"howto-git-info":"howto.build.generate-git-info",
+"howto-hotswapping":"howto.hotswapping",
+"howto-http-clients":"howto.http-clients",
+"howto-http-clients-proxy-configuration":"howto.http-clients.rest-template-proxy-configuration",
+"howto-initialize-a-database-configuring-dependencies":"howto.data-initialization.dependencies",
+"howto-initialize-a-database-configuring-dependencies-depends-on-initialization-detection":"howto.data-initialization.dependencies.depends-on-initialization-detection",
+"howto-initialize-a-database-configuring-dependencies-initializer-detection":"howto.data-initialization.dependencies.initializer-detection",
+"howto-initialize-a-database-using-basic-scripts":"howto.data-initialization.using-basic-sql-scripts",
+"howto-initialize-a-database-using-hibernate":"howto.data-initialization.using-hibernate",
+"howto-initialize-a-database-using-jpa":"howto.data-initialization.using-jpa",
+"howto-initialize-a-spring-batch-database":"howto.data-initialization.batch",
+"howto-jersey":"howto.jersey",
+"howto-jersey-alongside-another-web-framework":"howto.jersey.alongside-another-web-framework",
+"howto-jersey-spring-security":"howto.jersey.spring-security",
+"howto-jms-disable-transaction":"howto.messaging.disable-transacted-jms-session",
+"howto-logging":"howto.logging",
+"howto-map-health-indicators-to-metrics":"howto.actuator.map-health-indicators-to-metrics",
+"howto-messaging":"howto.messaging",
+"howto-multipart-file-upload-configuration":"howto.spring-mvc.multipart-file-uploads",
+"howto-properties-and-configuration":"howto.properties-and-configuration",
+"howto-reload-fast-restart":"howto.hotswapping.fast-application-restarts",
+"howto-reload-freemarker-content":"howto.hotswapping.reload-templates.freemarker",
+"howto-reload-groovy-template-content":"howto.hotswapping.reload-templates.groovy",
+"howto-reload-java-classes-without-restarting":"howto.hotswapping.reload-java-classes-without-restarting",
+"howto-reload-static-content":"howto.hotswapping.reload-static-content",
+"howto-reload-thymeleaf-content":"howto.hotswapping.reload-templates.thymeleaf",
+"howto-reload-thymeleaf-template-content":"howto.hotswapping.reload-templates",
+"howto-remote-debug-maven-run":"howto.build.remote-debug-maven",
+"howto-sanitize-sensible-values":"howto.actuator.sanitize-sensitive-values",
+"howto-sanitize-sensitive-values":"howto.actuator.sanitize-sensitive-values",
+"howto-security":"howto.security",
+"howto-separate-entity-definitions-from-spring-configuration":"howto.data-access.separate-entity-definitions-from-spring-configuration",
+"howto-set-active-spring-profiles":"howto.properties-and-configuration.set-active-spring-profiles",
+"howto-spring-batch-running-command-line":"howto.batch.running-from-the-command-line",
+"howto-spring-batch-running-jobs-on-startup":"howto.batch.running-jobs-on-startup",
+"howto-spring-batch-specifying-a-data-source":"howto.batch.specifying-a-data-source",
+"howto-spring-batch-storing-job-repository":"howto.batch.storing-job-repository",
+"howto-spring-boot-application":"howto.application",
+"howto-spring-mvc":"howto.spring-mvc",
+"howto-switch-off-default-mvc-configuration":"howto.spring-mvc.switch-off-default-configuration",
+"howto-switch-off-spring-boot-security-configuration":"howto.security.switch-off-spring-boot-configuration",
+"howto-switch-off-the-spring-mvc-dispatcherservlet":"howto.spring-mvc.switch-off-dispatcherservlet",
+"howto-testcontainers":"howto.testing.testcontainers",
+"howto-traditional-deployment":"howto.traditional-deployment",
+"howto-troubleshoot-auto-configuration":"howto.application.troubleshoot-auto-configuration",
+"howto-two-datasources":"howto.data-access.configure-two-datasources",
+"howto-use-a-higher-level-database-migration-tool":"howto.data-initialization.migration-tool",
+"howto-use-another-web-server":"howto.webserver.use-another",
+"howto-use-behind-a-proxy-server":"howto.webserver.use-behind-a-proxy-server",
+"howto-use-custom-entity-manager":"howto.data-access.use-custom-entity-manager",
+"howto-use-customize-spring-datas-web-support":"howto.data-access.customize-spring-data-web-support",
+"howto-use-dependency-injection-hibernate-components":"howto.data-access.dependency-injection-in-hibernate-components",
+"howto-use-exposing-spring-data-repositories-rest-endpoint":"howto.data-access.exposing-spring-data-repositories-as-rest",
+"howto-use-jedis-instead-of-lettuce":"howto.nosql.jedis-instead-of-lettuce",
+"howto-use-multiple-entity-managers":"howto.data-access.use-multiple-entity-managers",
+"howto-use-short-command-line-arguments":"howto.properties-and-configuration.short-command-line-arguments",
+"howto-use-spring-data-jpa--and-mongo-repositories":"howto.data-access.use-spring-data-jpa-and-mongo-repositories",
+"howto-use-spring-data-repositories":"howto.data-access.spring-data-repositories",
+"howto-use-test-with-spring-security":"howto.spring-mvc.testing.with-spring-security",
+"howto-use-tomcat-legacycookieprocessor":"howto.webserver.use-tomcat-legacycookieprocessor",
+"howto-use-traditional-persistence-xml":"howto.data-access.use-traditional-persistence-xml",
+"howto-use-two-entity-managers":"howto.data-access.use-multiple-entity-managers",
+"howto-use-yaml-for-external-properties":"howto.properties-and-configuration.yaml",
+"howto-user-a-random-unassigned-http-port":"howto.webserver.use-random-port",
+"howto-webclient-reactor-netty-customization":"howto.http-clients.webclient-reactor-netty-customization",
+"howto-weblogic":"howto.traditional-deployment.weblogic",
+"howto-write-a-json-rest-service":"howto.spring-mvc.write-json-rest-service",
+"howto-write-an-xml-rest-service":"howto.spring-mvc.write-xml-rest-service",
+"integration-properties":"application-properties.integration",
+"json-properties":"application-properties.json",
+"mail-properties":"application-properties.mail",
+"production-ready":"actuator",
+"production-ready-application-info":"actuator.endpoints.info",
+"production-ready-application-info-autoconfigure":"actuator.endpoints.info.auto-configured-info-contributors",
+"production-ready-application-info-build":"actuator.endpoints.info.build-information",
+"production-ready-application-info-custom":"actuator.endpoints.info.writing-custom-info-contributors",
+"production-ready-application-info-env":"actuator.endpoints.info.custom-application-information",
+"production-ready-application-info-git":"actuator.endpoints.info.git-commit-information",
+"production-ready-auditing":"actuator.auditing",
+"production-ready-auditing-custom":"actuator.auditing.custom",
+"production-ready-cloudfoundry":"actuator.cloud-foundry",
+"production-ready-cloudfoundry-disable":"actuator.cloud-foundry.disable",
+"production-ready-cloudfoundry-ssl":"actuator.cloud-foundry.ssl",
+"production-ready-custom-context-path":"actuator.cloud-foundry.custom-context-path",
+"production-ready-custom-mbean-names":"actuator.jmx.custom-mbean-names",
+"production-ready-customizing-jolokia":"actuator.jmx.jolokia.customizing",
+"production-ready-customizing-management-server-address":"actuator.monitoring.customizing-management-server-address",
+"production-ready-customizing-management-server-context-path":"actuator.monitoring.customizing-management-server-context-path",
+"production-ready-customizing-management-server-port":"actuator.monitoring.customizing-management-server-port",
+"production-ready-disable-jmx-endpoints":"actuator.jmx.disable-jmx-endpoints",
+"production-ready-disabling-http-endpoints":"actuator.monitoring.disabling-http-endpoints",
+"production-ready-disabling-jolokia":"actuator.jmx.jolokia.disabling",
+"production-ready-enabling":"actuator.enabling",
+"production-ready-endpoints":"actuator.endpoints",
+"production-ready-endpoints-caching":"actuator.endpoints.caching",
+"production-ready-endpoints-cors":"actuator.endpoints.cors",
+"production-ready-endpoints-custom":"actuator.endpoints.implementing-custom",
+"production-ready-endpoints-custom-controller":"actuator.endpoints.implementing-custom.controller",
+"production-ready-endpoints-custom-input":"actuator.endpoints.implementing-custom.input",
+"production-ready-endpoints-custom-input-conversion":"actuator.endpoints.implementing-custom.input.conversion",
+"production-ready-endpoints-custom-servlet":"actuator.endpoints.implementing-custom.servlet",
+"production-ready-endpoints-custom-web":"actuator.endpoints.implementing-custom.web",
+"production-ready-endpoints-custom-web-predicate":"actuator.endpoints.implementing-custom.web.request-predicates",
+"production-ready-endpoints-custom-web-predicate-consumes":"actuator.endpoints.implementing-custom.web.consumes-predicates",
+"production-ready-endpoints-custom-web-predicate-http-method":"actuator.endpoints.implementing-custom.web.method-predicates",
+"production-ready-endpoints-custom-web-predicate-path":"actuator.endpoints.implementing-custom.web.path-predicates",
+"production-ready-endpoints-custom-web-predicate-produces":"actuator.endpoints.implementing-custom.web.produces-predicates",
+"production-ready-endpoints-custom-web-range-requests":"actuator.endpoints.implementing-custom.web.range-requests",
+"production-ready-endpoints-custom-web-response-status":"actuator.endpoints.implementing-custom.web.response-status",
+"production-ready-endpoints-custom-web-security":"actuator.endpoints.implementing-custom.web.security",
+"production-ready-endpoints-enabling-endpoints":"actuator.endpoints.enabling",
+"production-ready-endpoints-exposing-endpoints":"actuator.endpoints.exposing",
+"production-ready-endpoints-hypermedia":"actuator.endpoints.hypermedia",
+"production-ready-endpoints-security":"actuator.endpoints.security",
+"production-ready-health":"actuator.endpoints.health",
+"production-ready-health-datasource":"actuator.endpoints.health.datasource",
+"production-ready-health-groups":"actuator.endpoints.health.groups",
+"production-ready-health-indicators":"actuator.endpoints.health.auto-configured-health-indicators",
+"production-ready-health-indicators-writing":"actuator.endpoints.health.writing-custom-health-indicators",
+"production-ready-http-tracing":"actuator.tracing",
+"production-ready-http-tracing-custom":"actuator.tracing.custom",
+"production-ready-jmx":"actuator.jmx",
+"production-ready-jolokia":"actuator.jmx.jolokia",
+"production-ready-kubernetes-probes":"actuator.endpoints.kubernetes-probes",
+"production-ready-kubernetes-probes-external-state":"actuator.endpoints.kubernetes-probes.external-state",
+"production-ready-kubernetes-probes-lifecycle":"actuator.endpoints.kubernetes-probes.lifecycle",
+"production-ready-logger-configuration":"actuator.loggers.configure",
+"production-ready-loggers":"actuator.loggers",
+"production-ready-management-specific-ssl":"actuator.monitoring.management-specific-ssl",
+"production-ready-metrics":"actuator.metrics",
+"production-ready-metrics-cache":"actuator.metrics.supported.cache",
+"production-ready-metrics-common-tags":"actuator.metrics.customizing.common-tags",
+"production-ready-metrics-custom":"actuator.metrics.registering-custom",
+"production-ready-metrics-customizing":"actuator.metrics.customizing",
+"production-ready-metrics-data-repository":"actuator.metrics.supported.spring-data-repository",
+"production-ready-metrics-endpoint":"actuator.metrics.endpoint",
+"production-ready-metrics-export":"actuator.metrics.export",
+"production-ready-metrics-export-appoptics":"actuator.metrics.export.appoptics",
+"production-ready-metrics-export-atlas":"actuator.metrics.export.atlas",
+"production-ready-metrics-export-datadog":"actuator.metrics.export.datadog",
+"production-ready-metrics-export-dynatrace":"actuator.metrics.export.dynatrace",
+"production-ready-metrics-export-elastic":"actuator.metrics.export.elastic",
+"production-ready-metrics-export-ganglia":"actuator.metrics.export.ganglia",
+"production-ready-metrics-export-graphite":"actuator.metrics.export.graphite",
+"production-ready-metrics-export-humio":"actuator.metrics.export.humio",
+"production-ready-metrics-export-influx":"actuator.metrics.export.influx",
+"production-ready-metrics-export-jmx":"actuator.metrics.export.jmx",
+"production-ready-metrics-export-kairos":"actuator.metrics.export.kairos",
+"production-ready-metrics-export-newrelic":"actuator.metrics.export.newrelic",
+"production-ready-metrics-export-prometheus":"actuator.metrics.export.prometheus",
+"production-ready-metrics-export-signalfx":"actuator.metrics.export.signalfx",
+"production-ready-metrics-export-simple":"actuator.metrics.export.simple",
+"production-ready-metrics-export-stackdriver":"actuator.metrics.export.stackdriver",
+"production-ready-metrics-export-statsd":"actuator.metrics.export.statsd",
+"production-ready-metrics-export-wavefront":"actuator.metrics.export.wavefront",
+"production-ready-metrics-getting-started":"actuator.metrics.getting-started",
+"production-ready-metrics-hibernate":"actuator.metrics.supported.hibernate",
+"production-ready-metrics-http-clients":"actuator.metrics.supported.http-clients",
+"production-ready-metrics-integration":"actuator.metrics.supported.spring-integration",
+"production-ready-metrics-jdbc":"actuator.metrics.supported.jdbc",
+"production-ready-metrics-jersey-server":"actuator.metrics.supported.jersey",
+"production-ready-metrics-jvm":"actuator.metrics.supported.jvm",
+"production-ready-metrics-kafka":"actuator.metrics.supported.kafka",
+"production-ready-metrics-logger":"actuator.metrics.supported.logger",
+"production-ready-metrics-meter":"actuator.metrics.supported",
+"production-ready-metrics-mongodb":"actuator.metrics.supported.mongodb",
+"production-ready-metrics-mongodb-command":"actuator.metrics.supported.mongodb.command",
+"production-ready-metrics-mongodb-connectionpool":"actuator.metrics.supported.mongodb.connection-pool",
+"production-ready-metrics-per-meter-properties":"actuator.metrics.customizing.per-meter-properties",
+"production-ready-metrics-rabbitmq":"actuator.metrics.supported.rabbitmq",
+"production-ready-metrics-spring-mvc":"actuator.metrics.supported.spring-mvc",
+"production-ready-metrics-system":"actuator.metrics.supported.system",
+"production-ready-metrics-timed-annotation":"actuator.metrics.supported.timed-annotation",
+"production-ready-metrics-tomcat":"actuator.metrics.supported.tomcat",
+"production-ready-metrics-web-flux":"actuator.metrics.supported.spring-webflux",
+"production-ready-monitoring":"actuator.monitoring",
+"production-ready-process-monitoring":"actuator.process-monitoring",
+"production-ready-process-monitoring-configuration":"actuator.process-monitoring.configuration",
+"production-ready-process-monitoring-programmatically":"actuator.process-monitoring.programmatically",
+"production-ready-whats-next":"actuator.whats-next",
+"reactive-health-indicators":"actuator.endpoints.health.reactive-health-indicators",
+"reactive-health-indicators-autoconfigured":"actuator.endpoints.health.auto-configured-reactive-health-indicators",
+"rsocket-properties":"application-properties.rsocket",
+"running-remote-client-application":"using.devtools.remote-applications.client",
+"security-properties":"application-properties.security",
+"server-properties":"application-properties.server",
+"spring-boot-ant-exejar":"build-tool-plugins.antlib.tasks.exejar",
+"spring-boot-ant-exejar-examples":"build-tool-plugins.antlib.tasks.examples",
+"spring-boot-ant-findmainclass":"build-tool-plugins.antlib.findmainclass",
+"spring-boot-ant-findmainclass-examples":"build-tool-plugins.antlib.findmainclass.examples",
+"spring-boot-ant-tasks":"build-tool-plugins.antlib.tasks",
+"spring-boot-reference-documentation":"index",
+"templating-properties":"application-properties.templating",
+"test-auto-configuration-slices":"test-auto-configuration.slices",
+"testing-properties":"application-properties.testing",
+"transaction-properties":"application-properties.transaction",
+"using-boot":"using",
+"using-boot-ant":"using.build-systems.ant",
+"using-boot-auto-configuration":"using.auto-configuration",
+"using-boot-build-systems":"using.build-systems",
+"using-boot-configuration-classes":"using.configuration-classes",
+"using-boot-dependency-management":"using.build-systems.dependency-management",
+"using-boot-devtools":"using.devtools",
+"using-boot-devtools-customizing-classload":"using.devtools.restart.customizing-the-classload",
+"using-boot-devtools-globalsettings":"using.devtools.globalsettings",
+"using-boot-devtools-known-restart-limitations":"using.devtools.restart.limitations",
+"using-boot-devtools-livereload":"using.devtools.livereload",
+"using-boot-devtools-property-defaults":"using.devtools.property-defaults",
+"using-boot-devtools-remote":"using.devtools.remote-applications",
+"using-boot-devtools-remote-update":"using.devtools.remote-applications.update",
+"using-boot-devtools-restart":"using.devtools.restart",
+"using-boot-devtools-restart-additional-paths":"using.devtools.restart.watching-additional-paths",
+"using-boot-devtools-restart-disable":"using.devtools.restart.disable",
+"using-boot-devtools-restart-exclude":"using.devtools.restart.excluding-resources",
+"using-boot-devtools-restart-logging-condition-delta":"using.devtools.restart.logging-condition-delta",
+"using-boot-devtools-restart-triggerfile":"using.devtools.restart.triggerfile",
+"using-boot-disabling-specific-auto-configuration":"using.auto-configuration.disabling-specific",
+"using-boot-gradle":"using.build-systems.gradle",
+"using-boot-hot-swapping":"using.running-your-application.hot-swapping",
+"using-boot-importing-configuration":"using.configuration-classes.importing-additional-configuration",
+"using-boot-importing-xml-configuration":"using.configuration-classes.importing-xml-configuration",
+"using-boot-locating-the-main-class":"using.structuring-your-code.locating-the-main-class",
+"using-boot-maven":"using.build-systems.maven",
+"using-boot-packaging-for-production":"using.packaging-for-production",
+"using-boot-replacing-auto-configuration":"using.auto-configuration.replacing",
+"using-boot-running-as-a-packaged-application":"using.running-your-application.as-a-packaged-application",
+"using-boot-running-from-an-ide":"using.running-your-application.from-an-ide",
+"using-boot-running-with-the-gradle-plugin":"using.running-your-application.with-the-gradle-plugin",
+"using-boot-running-with-the-maven-plugin":"using.running-your-application.with-the-maven-plugin",
+"using-boot-running-your-application":"using.running-your-application",
+"using-boot-spring-beans-and-dependency-injection":"using.spring-beans-and-dependency-injection",
+"using-boot-starter":"using.build-systems.starters",
+"using-boot-structuring-your-code":"using.structuring-your-code",
+"using-boot-using-springbootapplication-annotation":"using.using-the-springbootapplication-annotation",
+"using-boot-using-the-default-package":"using.structuring-your-code.using-the-default-package",
+"using-boot-whats-next":"using.whats-next",
+"using-spring-boot-restart-vs-reload":"using.devtools.restart.restart-vs-reload",
+"web-properties":"application-properties.web"
+}
+</script>
+</head>
+<body id="deployment" class="book toc2 toc-left"><div id="banner-container" class="container" role="banner">
+<div id="banner" class="contained" role="banner">
+<div id="switch-theme">
+<input type="checkbox" id="switch-theme-checkbox" />
+<label for="switch-theme-checkbox">Dark Theme</label>
+</div>
+</div>
+</div>
+<div id="tocbar-container" class="container" role="navigation">
+<div id="tocbar" class="contained" role="navigation">
+<button id="toggle-toc"></button>
+</div>
+</div>
+<div id="main-container" class="container">
+<div id="main" class="contained">
+<div id="doc" class="doc">
+<div id="header">
+<h1>Deploying Spring Boot Applications</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<span id="back-to-index"><a href="index.html">Back to index</a></span><ul class="sectlevel1">
+<li><a href="deployment.html#deployment.cloud">1. Deploying to the Cloud</a>
+<ul class="sectlevel2">
+<li><a href="deployment.html#deployment.cloud.cloud-foundry">1.1. Cloud Foundry</a>
+<ul class="sectlevel3">
+<li><a href="deployment.html#deployment.cloud.cloud-foundry.binding-to-services">1.1.1. Binding to Services</a></li>
+</ul>
+</li>
+<li><a href="deployment.html#deployment.cloud.kubernetes">1.2. Kubernetes</a>
+<ul class="sectlevel3">
+<li><a href="deployment.html#deployment.cloud.kubernetes.container-lifecycle">1.2.1. Kubernetes Container Lifecycle</a></li>
+</ul>
+</li>
+<li><a href="deployment.html#deployment.cloud.heroku">1.3. Heroku</a></li>
+<li><a href="deployment.html#deployment.cloud.openshift">1.4. OpenShift</a></li>
+<li><a href="deployment.html#deployment.cloud.aws">1.5. Amazon Web Services (AWS)</a>
+<ul class="sectlevel3">
+<li><a href="deployment.html#deployment.cloud.aws.beanstalk">1.5.1. AWS Elastic Beanstalk</a>
+<ul class="sectlevel4">
+<li><a href="deployment.html#deployment.cloud.aws.beanstalk.tomcat-platform">Using the Tomcat Platform</a></li>
+<li><a href="deployment.html#deployment.cloud.aws.beanstalk.java-se-platform">Using the Java SE Platform</a></li>
+</ul>
+</li>
+<li><a href="deployment.html#deployment.cloud.aws.summary">1.5.2. Summary</a></li>
+</ul>
+</li>
+<li><a href="deployment.html#deployment.cloud.boxfuse">1.6. Boxfuse and Amazon Web Services</a></li>
+<li><a href="deployment.html#deployment.cloud.azure">1.7. Azure</a></li>
+<li><a href="deployment.html#deployment.cloud.google">1.8. Google Cloud</a></li>
+</ul>
+</li>
+<li><a href="deployment.html#deployment.installing">2. Installing Spring Boot Applications</a>
+<ul class="sectlevel2">
+<li><a href="deployment.html#deployment.installing.supported-operating-systems">2.1. Supported Operating Systems</a></li>
+<li><a href="deployment.html#deployment.installing.nix-services">2.2. Unix/Linux Services</a>
+<ul class="sectlevel3">
+<li><a href="deployment.html#deployment.installing.nix-services.init-d">2.2.1. Installation as an init.d Service (System V)</a>
+<ul class="sectlevel4">
+<li><a href="deployment.html#deployment.installing.nix-services.init-d.securing">Securing an init.d Service</a></li>
+</ul>
+</li>
+<li><a href="deployment.html#deployment.installing.nix-services.system-d">2.2.2. Installation as a systemd Service</a></li>
+<li><a href="deployment.html#deployment.installing.nix-services.script-customization">2.2.3. Customizing the Startup Script</a>
+<ul class="sectlevel4">
+<li><a href="deployment.html#deployment.installing.nix-services.script-customization.when-written">Customizing the Start Script When It Is Written</a></li>
+<li><a href="deployment.html#deployment.installing.nix-services.script-customization.when-running">Customizing a Script When It Runs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="deployment.html#deployment.installing.windows-services">2.3. Microsoft Windows Services</a></li>
+</ul>
+</li>
+<li><a href="deployment.html#deployment.whats-next">3. What to Read Next</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Spring Boot&#8217;s flexible packaging options provide a great deal of choice when it comes to deploying your application.
+You can deploy Spring Boot applications to a variety of cloud platforms, to virtual/real machines, or make them fully executable for Unix systems.</p>
+</div>
+<div class="paragraph">
+<p>This section covers some of the more common deployment scenarios.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="deployment.cloud"><a class="anchor" href="deployment.html#deployment.cloud"></a>1. Deploying to the Cloud</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Spring Boot&#8217;s executable jars are ready-made for most popular cloud PaaS (Platform-as-a-Service) providers.
+These providers tend to require that you &#8220;bring your own container&#8221;.
+They manage application processes (not Java applications specifically), so they need an intermediary layer that adapts <em>your</em> application to the <em>cloud&#8217;s</em> notion of a running process.</p>
+</div>
+<div class="paragraph">
+<p>Two popular cloud providers, Heroku and Cloud Foundry, employ a &#8220;buildpack&#8221; approach.
+The buildpack wraps your deployed code in whatever is needed to <em>start</em> your application.
+It might be a JDK and a call to <code>java</code>, an embedded web server, or a full-fledged application server.
+A buildpack is pluggable, but ideally you should be able to get by with as few customizations to it as possible.
+This reduces the footprint of functionality that is not under your control.
+It minimizes divergence between development and production environments.</p>
+</div>
+<div class="paragraph">
+<p>Ideally, your application, like a Spring Boot executable jar, has everything that it needs to run packaged within it.</p>
+</div>
+<div class="paragraph">
+<p>In this section, we look at what it takes to get the <a href="getting-started.html#getting-started.first-application">application that we developed</a> in the &#8220;Getting Started&#8221; section up and running in the Cloud.</p>
+</div>
+<div class="sect2">
+<h3 id="deployment.cloud.cloud-foundry"><a class="anchor" href="deployment.html#deployment.cloud.cloud-foundry"></a>1.1. Cloud Foundry</h3>
+<div class="paragraph">
+<p>Cloud Foundry provides default buildpacks that come into play if no other buildpack is specified.
+The Cloud Foundry <a href="https://github.com/cloudfoundry/java-buildpack">Java buildpack</a> has excellent support for Spring applications, including Spring Boot.
+You can deploy stand-alone executable jar applications as well as traditional <code>.war</code> packaged applications.</p>
+</div>
+<div class="paragraph">
+<p>Once you have built your application (by using, for example, <code>mvn clean package</code>) and have <a href="https://docs.cloudfoundry.org/cf-cli/install-go-cli.html">installed the <code>cf</code> command line tool</a>, deploy your application by using the <code>cf push</code> command, substituting the path to your compiled <code>.jar</code>.
+Be sure to have <a href="https://docs.cloudfoundry.org/cf-cli/getting-started.html#login">logged in with your <code>cf</code> command line client</a> before pushing an application.
+The following line shows using the <code>cf push</code> command to deploy an application:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">$ cf push acloudyspringtime -p target/demo-0.0.1-SNAPSHOT.jar</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In the preceding example, we substitute <code>acloudyspringtime</code> for whatever value you give <code>cf</code> as the name of your application.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>See the <a href="https://docs.cloudfoundry.org/cf-cli/getting-started.html#push"><code>cf push</code> documentation</a> for more options.
+If there is a Cloud Foundry <a href="https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html"><code>manifest.yml</code></a> file present in the same directory, it is considered.</p>
+</div>
+<div class="paragraph">
+<p>At this point, <code>cf</code> starts uploading your application, producing output similar to the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Uploading acloudyspringtime... <strong>OK</strong>
+Preparing to start acloudyspringtime... <strong>OK</strong>
+-----&gt; Downloaded app package (<strong>8.9M</strong>)
+-----&gt; Java Buildpack Version: v3.12 (offline) | https://github.com/cloudfoundry/java-buildpack.git#6f25b7e
+-----&gt; Downloading Open Jdk JRE 1.8.0_121 from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_121.tar.gz (found in cache)
+       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.6s)
+-----&gt; Downloading Open JDK Like Memory Calculator 2.0.2_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-2.0.2_RELEASE.tar.gz (found in cache)
+       Memory Settings: -Xss349K -Xmx681574K -XX:MaxMetaspaceSize=104857K -Xms681574K -XX:MetaspaceSize=104857K
+-----&gt; Downloading Container Certificate Trust Store 1.0.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-certificate-trust-store/container-certificate-trust-store-1.0.0_RELEASE.jar (found in cache)
+       Adding certificates to .java-buildpack/container_certificate_trust_store/truststore.jks (0.6s)
+-----&gt; Downloading Spring Auto Reconfiguration 1.10.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-1.10.0_RELEASE.jar (found in cache)
+Checking status of app 'acloudyspringtime'...
+  0 of 1 instances running (1 starting)
+  ...
+  0 of 1 instances running (1 starting)
+  ...
+  0 of 1 instances running (1 starting)
+  ...
+  1 of 1 instances running (1 running)
+
+App started</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Congratulations! The application is now live!</p>
+</div>
+<div class="paragraph">
+<p>Once your application is live, you can verify the status of the deployed application by using the <code>cf apps</code> command, as shown in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">$ cf apps
+Getting applications in ...
+OK
+
+name                 requested state   instances   memory   disk   urls
+...
+acloudyspringtime    started           1/1         512M     1G     acloudyspringtime.cfapps.io
+...</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once Cloud Foundry acknowledges that your application has been deployed, you should be able to find the application at the URI given.
+In the preceding example, you could find it at <code>https://acloudyspringtime.cfapps.io/</code>.</p>
+</div>
+<div class="sect3">
+<h4 id="deployment.cloud.cloud-foundry.binding-to-services"><a class="anchor" href="deployment.html#deployment.cloud.cloud-foundry.binding-to-services"></a>1.1.1. Binding to Services</h4>
+<div class="paragraph">
+<p>By default, metadata about the running application as well as service connection information is exposed to the application as environment variables (for example: <code>$VCAP_SERVICES</code>).
+This architecture decision is due to Cloud Foundry&#8217;s polyglot (any language and platform can be supported as a buildpack) nature.
+Process-scoped environment variables are language agnostic.</p>
+</div>
+<div class="paragraph">
+<p>Environment variables do not always make for the easiest API, so Spring Boot automatically extracts them and flattens the data into properties that can be accessed through Spring&#8217;s <code>Environment</code> abstraction, as shown in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java"><span class="fold-block hide-when-folded">import org.springframework.context.EnvironmentAware;
+import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
+
+</span><span class="fold-block">@Component
+public class MyBean implements EnvironmentAware {
+
+    private String instanceId;
+
+    @Override
+    public void setEnvironment(Environment environment) {
+        this.instanceId = environment.getProperty("vcap.application.instance_id");
+    }
+
+    // ...
+
+}
+</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>All Cloud Foundry properties are prefixed with <code>vcap</code>.
+You can use <code>vcap</code> properties to access application information (such as the public URL of the application) and service information (such as database credentials).
+See the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/cloud/CloudFoundryVcapEnvironmentPostProcessor.html">&#8216;CloudFoundryVcapEnvironmentPostProcessor&#8217;</a> Javadoc for complete details.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The <a href="https://github.com/pivotal-cf/java-cfenv/">Java CFEnv</a> project is a better fit for tasks such as configuring a DataSource.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deployment.cloud.kubernetes"><a class="anchor" href="deployment.html#deployment.cloud.kubernetes"></a>1.2. Kubernetes</h3>
+<div class="paragraph">
+<p>Spring Boot auto-detects Kubernetes deployment environments by checking the environment for <code>"*_SERVICE_HOST"</code> and <code>"*_SERVICE_PORT"</code> variables.
+You can override this detection with the <code>spring.main.cloud-platform</code> configuration property.</p>
+</div>
+<div class="paragraph">
+<p>Spring Boot helps you to <a href="features.html#features.spring-application.application-availability">manage the state of your application</a> and export it with <a href="actuator.html#actuator.endpoints.kubernetes-probes">HTTP Kubernetes Probes using Actuator</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="deployment.cloud.kubernetes.container-lifecycle"><a class="anchor" href="deployment.html#deployment.cloud.kubernetes.container-lifecycle"></a>1.2.1. Kubernetes Container Lifecycle</h4>
+<div class="paragraph">
+<p>When Kubernetes deletes an application instance, the shutdown process involves several subsystems concurrently: shutdown hooks, unregistering the service, removing the instance from the load-balancer&#8230;&#8203;
+Because this shutdown processing happens in parallel (and due to the nature of distributed systems), there is a window during which traffic can be routed to a pod that has also begun its shutdown processing.</p>
+</div>
+<div class="paragraph">
+<p>You can configure a sleep execution in a preStop handler to avoid requests being routed to a pod that has already begun shutting down.
+This sleep should be long enough for new requests to stop being routed to the pod and its duration will vary from deployment to deployment.
+The preStop handler can be configured by using the PodSpec in the pod&#8217;s configuration file as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spec:
+  containers:
+  - name: "example-container"
+    image: "example-image"
+    lifecycle:
+      preStop:
+        exec:
+          command: ["sh", "-c", "sleep 10"]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once the pre-stop hook has completed, SIGTERM will be sent to the container and <a href="web.html#web.graceful-shutdown">graceful shutdown</a> will begin, allowing any remaining in-flight requests to complete.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+When Kubernetes sends a SIGTERM signal to the pod, it waits for a specified time called the termination grace period (the default for which is 30 seconds).
+If the containers are still running after the grace period, they are sent the SIGKILL signal and forcibly removed.
+If the pod takes longer than 30 seconds to shut down, which could be because you have increased <code>spring.lifecycle.timeout-per-shutdown-phase</code>, make sure to increase the termination grace period by setting the <code>terminationGracePeriodSeconds</code> option in the Pod YAML.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deployment.cloud.heroku"><a class="anchor" href="deployment.html#deployment.cloud.heroku"></a>1.3. Heroku</h3>
+<div class="paragraph">
+<p>Heroku is another popular PaaS platform.
+To customize Heroku builds, you provide a <code>Procfile</code>, which provides the incantation required to deploy an application.
+Heroku assigns a <code>port</code> for the Java application to use and then ensures that routing to the external URI works.</p>
+</div>
+<div class="paragraph">
+<p>You must configure your application to listen on the correct port.
+The following example shows the <code>Procfile</code> for our starter REST application:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>web: java -Dserver.port=$PORT -jar target/demo-0.0.1-SNAPSHOT.jar</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Spring Boot makes <code>-D</code> arguments available as properties accessible from a Spring <code>Environment</code> instance.
+The <code>server.port</code> configuration property is fed to the embedded Tomcat, Jetty, or Undertow instance, which then uses the port when it starts up.
+The <code>$PORT</code> environment variable is assigned to us by the Heroku PaaS.</p>
+</div>
+<div class="paragraph">
+<p>This should be everything you need.
+The most common deployment workflow for Heroku deployments is to <code>git push</code> the code to production, as shown in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">$ git push heroku main</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Which will result in the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Initializing repository, <strong>done</strong>.
+Counting objects: 95, <strong>done</strong>.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (78/78), <strong>done</strong>.
+Writing objects: 100% (95/95), 8.66 MiB | 606.00 KiB/s, <strong>done</strong>.
+Total 95 (delta 31), reused 0 (delta 0)
+
+-----&gt; Java app detected
+-----&gt; Installing OpenJDK 1.8... <strong>done</strong>
+-----&gt; Installing Maven 3.3.1... <strong>done</strong>
+-----&gt; Installing settings.xml... <strong>done</strong>
+-----&gt; Executing: mvn -B -DskipTests=true clean install
+
+       [INFO] Scanning for projects...
+       Downloading: https://repo.spring.io/...
+       Downloaded: https://repo.spring.io/... (818 B at 1.8 KB/sec)
+        ....
+       Downloaded: https://s3pository.heroku.com/jvm/... (152 KB at 595.3 KB/sec)
+       [INFO] Installing /tmp/build_0c35a5d2-a067-4abc-a232-14b1fb7a8229/target/...
+       [INFO] Installing /tmp/build_0c35a5d2-a067-4abc-a232-14b1fb7a8229/pom.xml ...
+       [INFO] ------------------------------------------------------------------------
+       [INFO] <strong>BUILD SUCCESS</strong>
+       [INFO] ------------------------------------------------------------------------
+       [INFO] Total time: 59.358s
+       [INFO] Finished at: Fri Mar 07 07:28:25 UTC 2014
+       [INFO] Final Memory: 20M/493M
+       [INFO] ------------------------------------------------------------------------
+
+-----&gt; Discovering process types
+       Procfile declares types -&gt; <strong>web</strong>
+
+-----&gt; Compressing... <strong>done</strong>, 70.4MB
+-----&gt; Launching... <strong>done</strong>, v6
+       https://agile-sierra-1405.herokuapp.com/ <strong>deployed to Heroku</strong>
+
+To <a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ee9e7facee6ebfce1e5fba0ede1e3">[email&#160;protected]</a>:agile-sierra-1405.git
+ * [new branch]      main -&gt; main</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Your application should now be up and running on Heroku.
+For more details, see <a href="https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku">Deploying Spring Boot Applications to Heroku</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deployment.cloud.openshift"><a class="anchor" href="deployment.html#deployment.cloud.openshift"></a>1.4. OpenShift</h3>
+<div class="paragraph">
+<p><a href="https://www.openshift.com/">OpenShift</a> has many resources describing how to deploy Spring Boot applications, including:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://blog.openshift.com/using-openshift-enterprise-grade-spring-boot-deployments/">Using the S2I builder</a></p>
+</li>
+<li>
+<p><a href="https://access.redhat.com/documentation/en-us/reference_architectures/2017/html-single/spring_boot_microservices_on_red_hat_openshift_container_platform_3/">Architecture guide</a></p>
+</li>
+<li>
+<p><a href="https://blog.openshift.com/using-spring-boot-on-openshift/">Running as a traditional web application on Wildfly</a></p>
+</li>
+<li>
+<p><a href="https://blog.openshift.com/openshift-commons-briefing-96-cloud-native-applications-spring-rhoar/">OpenShift Commons Briefing</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deployment.cloud.aws"><a class="anchor" href="deployment.html#deployment.cloud.aws"></a>1.5. Amazon Web Services (AWS)</h3>
+<div class="paragraph">
+<p>Amazon Web Services offers multiple ways to install Spring Boot-based applications, either as traditional web applications (war) or as executable jar files with an embedded web server.
+The options include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>AWS Elastic Beanstalk</p>
+</li>
+<li>
+<p>AWS Code Deploy</p>
+</li>
+<li>
+<p>AWS OPS Works</p>
+</li>
+<li>
+<p>AWS Cloud Formation</p>
+</li>
+<li>
+<p>AWS Container Registry</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Each has different features and pricing models.
+In this document, we describe to approach using AWS Elastic Beanstalk.</p>
+</div>
+<div class="sect3">
+<h4 id="deployment.cloud.aws.beanstalk"><a class="anchor" href="deployment.html#deployment.cloud.aws.beanstalk"></a>1.5.1. AWS Elastic Beanstalk</h4>
+<div class="paragraph">
+<p>As described in the official <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Java.html">Elastic Beanstalk Java guide</a>, there are two main options to deploy a Java application.
+You can either use the &#8220;Tomcat Platform&#8221; or the &#8220;Java SE platform&#8221;.</p>
+</div>
+<div class="sect4">
+<h5 id="deployment.cloud.aws.beanstalk.tomcat-platform"><a class="anchor" href="deployment.html#deployment.cloud.aws.beanstalk.tomcat-platform"></a>Using the Tomcat Platform</h5>
+<div class="paragraph">
+<p>This option applies to Spring Boot projects that produce a war file.
+No special configuration is required.
+You need only follow the official guide.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="deployment.cloud.aws.beanstalk.java-se-platform"><a class="anchor" href="deployment.html#deployment.cloud.aws.beanstalk.java-se-platform"></a>Using the Java SE Platform</h5>
+<div class="paragraph">
+<p>This option applies to Spring Boot projects that produce a jar file and run an embedded web container.
+Elastic Beanstalk environments run an nginx instance on port 80 to proxy the actual application, running on port 5000.
+To configure it, add the following line to your <code>application.properties</code> file:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>server.port=5000</pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title">Upload binaries instead of sources</div>
+<div class="paragraph">
+<p>By default, Elastic Beanstalk uploads sources and compiles them in AWS.
+However, it is best to upload the binaries instead.
+To do so, add lines similar to the following to your <code>.elasticbeanstalk/config.yml</code> file:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">deploy:
+    artifact: target/demo-0.0.1-SNAPSHOT.jar</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title">Reduce costs by setting the environment type</div>
+<div class="paragraph">
+<p>By default an Elastic Beanstalk environment is load balanced.
+The load balancer has a significant cost.
+To avoid that cost, set the environment type to &#8220;Single instance&#8221;, as described in <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-create-wizard.html#environments-create-wizard-capacity">the Amazon documentation</a>.
+You can also create single instance environments by using the CLI and the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>eb create -s</pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="deployment.cloud.aws.summary"><a class="anchor" href="deployment.html#deployment.cloud.aws.summary"></a>1.5.2. Summary</h4>
+<div class="paragraph">
+<p>This is one of the easiest ways to get to AWS, but there are more things to cover, such as how to integrate Elastic Beanstalk into any CI / CD tool, use the Elastic Beanstalk Maven plugin instead of the CLI, and others.
+There is a <a href="https://exampledriven.wordpress.com/2017/01/09/spring-boot-aws-elastic-beanstalk-example/">blog post</a> covering these topics more in detail.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deployment.cloud.boxfuse"><a class="anchor" href="deployment.html#deployment.cloud.boxfuse"></a>1.6. Boxfuse and Amazon Web Services</h3>
+<div class="paragraph">
+<p><a href="https://boxfuse.com/">Boxfuse</a> works by turning your Spring Boot executable jar or war into a minimal VM image that can be deployed unchanged either on VirtualBox or on AWS.
+Boxfuse comes with deep integration for Spring Boot and uses the information from your Spring Boot configuration file to automatically configure ports and health check URLs.
+Boxfuse leverages this information both for the images it produces as well as for all the resources it provisions (instances, security groups, elastic load balancers, and so on).</p>
+</div>
+<div class="paragraph">
+<p>Once you have created a <a href="https://console.boxfuse.com">Boxfuse account</a>, connected it to your AWS account, installed the latest version of the Boxfuse Client, and ensured that the application has been built by Maven or Gradle (by using, for example, <code>mvn clean package</code>), you can deploy your Spring Boot application to AWS with a command similar to the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">$ boxfuse run myapp-1.0.jar -env=prod</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>See the <a href="https://boxfuse.com/docs/commandline/run.html"><code>boxfuse run</code> documentation</a> for more options.
+If there is a <a href="https://boxfuse.com/docs/commandline/#configuration"><code>boxfuse.conf</code></a> file present in the current directory, it is considered.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+By default, Boxfuse activates a Spring profile named <code>boxfuse</code> on startup.
+If your executable jar or war contains an <a href="https://boxfuse.com/docs/payloads/springboot.html#configuration"><code>application-boxfuse.properties</code></a> file, Boxfuse bases its configuration on the properties it contains.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>At this point, <code>boxfuse</code> creates an image for your application, uploads it, and configures and starts the necessary resources on AWS, resulting in output similar to the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Fusing Image for myapp-1.0.jar ...
+Image fused in 00:06.838s (53937 K) -&gt; axelfontaine/myapp:1.0
+Creating axelfontaine/myapp ...
+Pushing axelfontaine/myapp:1.0 ...
+Verifying axelfontaine/myapp:1.0 ...
+Creating Elastic IP ...
+Mapping myapp-axelfontaine.boxfuse.io to 52.28.233.167 ...
+Waiting for AWS to create an AMI for axelfontaine/myapp:1.0 in eu-central-1 (this may take up to 50 seconds) ...
+AMI created in 00:23.557s -&gt; ami-d23f38cf
+Creating security group boxfuse-sg_axelfontaine/myapp:1.0 ...
+Launching t2.micro instance of axelfontaine/myapp:1.0 (ami-d23f38cf) in eu-central-1 ...
+Instance launched in 00:30.306s -&gt; i-92ef9f53
+Waiting for AWS to boot Instance i-92ef9f53 and Payload to start at https://52.28.235.61/ ...
+Payload started in 00:29.266s -&gt; https://52.28.235.61/
+Remapping Elastic IP 52.28.233.167 to i-92ef9f53 ...
+Waiting 15s for AWS to complete Elastic IP Zero Downtime transition ...
+Deployment completed successfully. axelfontaine/myapp:1.0 is up and running at https://myapp-axelfontaine.boxfuse.io/</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Your application should now be up and running on AWS.</p>
+</div>
+<div class="paragraph">
+<p>See the blog post on <a href="https://boxfuse.com/blog/spring-boot-ec2.html">deploying Spring Boot apps on EC2</a> as well as the <a href="https://boxfuse.com/docs/payloads/springboot.html">documentation for the Boxfuse Spring Boot integration</a> to get started with a Maven build to run the app.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deployment.cloud.azure"><a class="anchor" href="deployment.html#deployment.cloud.azure"></a>1.7. Azure</h3>
+<div class="paragraph">
+<p>This <a href="https://spring.io/guides/gs/spring-boot-for-azure/">Getting Started guide</a> walks you through deploying your Spring Boot application to either <a href="https://azure.microsoft.com/en-us/services/spring-cloud/">Azure Spring Cloud</a> or <a href="https://docs.microsoft.com/en-us/azure/app-service/overview">Azure App Service</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deployment.cloud.google"><a class="anchor" href="deployment.html#deployment.cloud.google"></a>1.8. Google Cloud</h3>
+<div class="paragraph">
+<p>Google Cloud has several options that can be used to launch Spring Boot applications.
+The easiest to get started with is probably App Engine, but you could also find ways to run Spring Boot in a container with Container Engine or on a virtual machine with Compute Engine.</p>
+</div>
+<div class="paragraph">
+<p>To run in App Engine, you can create a project in the UI first, which sets up a unique identifier for you and also sets up HTTP routes.
+Add a Java app to the project and leave it empty and then use the <a href="https://cloud.google.com/sdk/install">Google Cloud SDK</a> to push your Spring Boot app into that slot from the command line or CI build.</p>
+</div>
+<div class="paragraph">
+<p>App Engine Standard requires you to use WAR packaging.
+Follow <a href="https://github.com/GoogleCloudPlatform/java-docs-samples/tree/master/appengine-java8/springboot-helloworld/README.md">these steps</a> to deploy App Engine Standard application to Google Cloud.</p>
+</div>
+<div class="paragraph">
+<p>Alternatively, App Engine Flex requires you to create an <code>app.yaml</code> file to describe the resources your app requires.
+Normally, you put this file in <code>src/main/appengine</code>, and it should resemble the following file:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">service: "default"
+
+runtime: "java"
+env: "flex"
+
+runtime_config:
+  jdk: "openjdk8"
+
+handlers:
+- url: "/.*"
+  script: "this field is required, but ignored"
+
+manual_scaling:
+  instances: 1
+
+health_check:
+  enable_health_check: false
+
+env_variables:
+  ENCRYPT_KEY: "your_encryption_key_here"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can deploy the app (for example, with a Maven plugin) by adding the project ID to the build configuration, as shown in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;plugin&gt;
+    &lt;groupId&gt;com.google.cloud.tools&lt;/groupId&gt;
+    &lt;artifactId&gt;appengine-maven-plugin&lt;/artifactId&gt;
+    &lt;version&gt;1.3.0&lt;/version&gt;
+    &lt;configuration&gt;
+        &lt;project&gt;myproject&lt;/project&gt;
+    &lt;/configuration&gt;
+&lt;/plugin&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Then deploy with <code>mvn appengine:deploy</code> (if you need to authenticate first, the build fails).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="deployment.installing"><a class="anchor" href="deployment.html#deployment.installing"></a>2. Installing Spring Boot Applications</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In addition to running Spring Boot applications by using <code>java -jar</code>, it is also possible to make fully executable applications for Unix systems.
+A fully executable jar can be executed like any other executable binary or it can be <a href="deployment.html#deployment.installing.nix-services">registered with <code>init.d</code> or <code>systemd</code></a>.
+This helps when installing and managing Spring Boot applications in common production environments.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+Fully executable jars work by embedding an extra script at the front of the file.
+Currently, some tools do not accept this format, so you may not always be able to use this technique.
+For example, <code>jar -xf</code> may silently fail to extract a jar or war that has been made fully executable.
+It is recommended that you make your jar or war fully executable only if you intend to execute it directly, rather than running it with <code>java -jar</code> or deploying it to a servlet container.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+A zip64-format jar file cannot be made fully executable.
+Attempting to do so will result in a jar file that is reported as corrupt when executed directly or with <code>java -jar</code>.
+A standard-format jar file that contains one or more zip64-format nested jars can be fully executable.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To create a &#8216;fully executable&#8217; jar with Maven, use the following plugin configuration:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;plugin&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+    &lt;configuration&gt;
+        &lt;executable&gt;true&lt;/executable&gt;
+    &lt;/configuration&gt;
+&lt;/plugin&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following example shows the equivalent Gradle configuration:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-gradle" data-lang="gradle">bootJar {
+    launchScript()
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can then run your application by typing <code>./my-application.jar</code> (where <code>my-application</code> is the name of your artifact).
+The directory containing the jar is used as your application&#8217;s working directory.</p>
+</div>
+<div class="sect2">
+<h3 id="deployment.installing.supported-operating-systems"><a class="anchor" href="deployment.html#deployment.installing.supported-operating-systems"></a>2.1. Supported Operating Systems</h3>
+<div class="paragraph">
+<p>The default script supports most Linux distributions and is tested on CentOS and Ubuntu.
+Other platforms, such as OS X and FreeBSD, require the use of a custom <code>embeddedLaunchScript</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deployment.installing.nix-services"><a class="anchor" href="deployment.html#deployment.installing.nix-services"></a>2.2. Unix/Linux Services</h3>
+<div class="paragraph">
+<p>Spring Boot application can be easily started as Unix/Linux services by using either <code>init.d</code> or <code>systemd</code>.</p>
+</div>
+<div class="sect3">
+<h4 id="deployment.installing.nix-services.init-d"><a class="anchor" href="deployment.html#deployment.installing.nix-services.init-d"></a>2.2.1. Installation as an init.d Service (System V)</h4>
+<div class="paragraph">
+<p>If you configured Spring Boot&#8217;s Maven or Gradle plugin to generate a <a href="deployment.html#deployment.installing">fully executable jar</a>, and you do not use a custom <code>embeddedLaunchScript</code>, your application can be used as an <code>init.d</code> service.
+To do so, symlink the jar to <code>init.d</code> to support the standard <code>start</code>, <code>stop</code>, <code>restart</code>, and <code>status</code> commands.</p>
+</div>
+<div class="paragraph">
+<p>The script supports the following features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Starts the services as the user that owns the jar file</p>
+</li>
+<li>
+<p>Tracks the application&#8217;s PID by using <code>/var/run/&lt;appname&gt;/&lt;appname&gt;.pid</code></p>
+</li>
+<li>
+<p>Writes console logs to <code>/var/log/&lt;appname&gt;.log</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Assuming that you have a Spring Boot application installed in <code>/var/myapp</code>, to install a Spring Boot application as an <code>init.d</code> service, create a symlink, as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">$ sudo ln -s /var/myapp/myapp.jar /etc/init.d/myapp</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once installed, you can start and stop the service in the usual way.
+For example, on a Debian-based system, you could start it with the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">$ service myapp start</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+If your application fails to start, check the log file written to <code>/var/log/&lt;appname&gt;.log</code> for errors.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You can also flag the application to start automatically by using your standard operating system tools.
+For example, on Debian, you could use the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">$ update-rc.d myapp defaults &lt;priority&gt;</code></pre>
+</div>
+</div>
+<div class="sect4">
+<h5 id="deployment.installing.nix-services.init-d.securing"><a class="anchor" href="deployment.html#deployment.installing.nix-services.init-d.securing"></a>Securing an init.d Service</h5>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The following is a set of guidelines on how to secure a Spring Boot application that runs as an init.d service.
+It is not intended to be an exhaustive list of everything that should be done to harden an application and the environment in which it runs.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>When executed as root, as is the case when root is being used to start an init.d service, the default executable script runs the application as the user specified in the <code>RUN_AS_USER</code> environment variable.
+When the environment variable is not set, the user who owns the jar file is used instead.
+You should never run a Spring Boot application as <code>root</code>, so <code>RUN_AS_USER</code> should never be root and your application&#8217;s jar file should never be owned by root.
+Instead, create a specific user to run your application and set the <code>RUN_AS_USER</code> environment variable or use <code>chown</code> to make it the owner of the jar file, as shown in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">$ chown bootapp:bootapp your-app.jar</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this case, the default executable script runs the application as the <code>bootapp</code> user.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+To reduce the chances of the application&#8217;s user account being compromised, you should consider preventing it from using a login shell.
+For example, you can set the account&#8217;s shell to <code>/usr/sbin/nologin</code>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You should also take steps to prevent the modification of your application&#8217;s jar file.
+Firstly, configure its permissions so that it cannot be written and can only be read or executed by its owner, as shown in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">$ chmod 500 your-app.jar</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Second, you should also take steps to limit the damage if your application or the account that is running it is compromised.
+If an attacker does gain access, they could make the jar file writable and change its contents.
+One way to protect against this is to make it immutable by using <code>chattr</code>, as shown in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">$ sudo chattr +i your-app.jar</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This will prevent any user, including root, from modifying the jar.</p>
+</div>
+<div class="paragraph">
+<p>If root is used to control the application&#8217;s service and you <a href="deployment.html#deployment.installing.nix-services.script-customization.when-running.conf-file">use a <code>.conf</code> file</a> to customize its startup, the <code>.conf</code> file is read and evaluated by the root user.
+It should be secured accordingly.
+Use <code>chmod</code> so that the file can only be read by the owner and use <code>chown</code> to make root the owner, as shown in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">$ chmod 400 your-app.conf
+$ sudo chown root:root your-app.conf</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="deployment.installing.nix-services.system-d"><a class="anchor" href="deployment.html#deployment.installing.nix-services.system-d"></a>2.2.2. Installation as a systemd Service</h4>
+<div class="paragraph">
+<p><code>systemd</code> is the successor of the System V init system and is now being used by many modern Linux distributions.
+Although you can continue to use <code>init.d</code> scripts with <code>systemd</code>, it is also possible to launch Spring Boot applications by using <code>systemd</code> &#8216;service&#8217; scripts.</p>
+</div>
+<div class="paragraph">
+<p>Assuming that you have a Spring Boot application installed in <code>/var/myapp</code>, to install a Spring Boot application as a <code>systemd</code> service, create a script named <code>myapp.service</code> and place it in <code>/etc/systemd/system</code> directory.
+The following script offers an example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>[Unit]
+Description=myapp
+After=syslog.target
+
+[Service]
+User=myapp
+ExecStart=/var/myapp/myapp.jar
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target</pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Remember to change the <code>Description</code>, <code>User</code>, and <code>ExecStart</code> fields for your application.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The <code>ExecStart</code> field does not declare the script action command, which means that the <code>run</code> command is used by default.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Note that, unlike when running as an <code>init.d</code> service, the user that runs the application, the PID file, and the console log file are managed by <code>systemd</code> itself and therefore must be configured by using appropriate fields in the &#8216;service&#8217; script.
+Consult the <a href="https://www.freedesktop.org/software/systemd/man/systemd.service.html">service unit configuration man page</a> for more details.</p>
+</div>
+<div class="paragraph">
+<p>To flag the application to start automatically on system boot, use the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">$ systemctl enable myapp.service</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Run <code>man systemctl</code> for more details.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="deployment.installing.nix-services.script-customization"><a class="anchor" href="deployment.html#deployment.installing.nix-services.script-customization"></a>2.2.3. Customizing the Startup Script</h4>
+<div class="paragraph">
+<p>The default embedded startup script written by the Maven or Gradle plugin can be customized in a number of ways.
+For most people, using the default script along with a few customizations is usually enough.
+If you find you cannot customize something that you need to, use the <code>embeddedLaunchScript</code> option to write your own file entirely.</p>
+</div>
+<div class="sect4">
+<h5 id="deployment.installing.nix-services.script-customization.when-written"><a class="anchor" href="deployment.html#deployment.installing.nix-services.script-customization.when-written"></a>Customizing the Start Script When It Is Written</h5>
+<div class="paragraph">
+<p>It often makes sense to customize elements of the start script as it is written into the jar file.
+For example, init.d scripts can provide a &#8220;description&#8221;.
+Since you know the description up front (and it need not change), you may as well provide it when the jar is generated.</p>
+</div>
+<div class="paragraph">
+<p>To customize written elements, use the <code>embeddedLaunchScriptProperties</code> option of the Spring Boot Maven plugin or the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/reference/htmlsingle/#packaging-executable-configuring-launch-script"><code>properties</code> property of the Spring Boot Gradle plugin&#8217;s <code>launchScript</code></a>.</p>
+</div>
+<div class="paragraph">
+<p>The following property substitutions are supported with the default script:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 30%;">
+<col style="width: 30%;">
+<col style="width: 30%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Gradle default</th>
+<th class="tableblock halign-left valign-top">Maven default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>mode</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The script mode.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>auto</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>auto</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>initInfoProvides</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <code>Provides</code> section of &#8220;INIT INFO&#8221;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>${task.baseName}</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>${project.artifactId}</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>initInfoRequiredStart</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Required-Start</code> section of &#8220;INIT INFO&#8221;.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>$remote_fs $syslog $network</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>$remote_fs $syslog $network</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>initInfoRequiredStop</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Required-Stop</code> section of &#8220;INIT INFO&#8221;.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>$remote_fs $syslog $network</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>$remote_fs $syslog $network</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>initInfoDefaultStart</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Default-Start</code> section of &#8220;INIT INFO&#8221;.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>2 3 4 5</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>2 3 4 5</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>initInfoDefaultStop</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Default-Stop</code> section of &#8220;INIT INFO&#8221;.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0 1 6</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0 1 6</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>initInfoShortDescription</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Short-Description</code> section of &#8220;INIT INFO&#8221;.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Single-line version of <code>${project.description}</code> (falling back to <code>${task.baseName}</code>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>${project.name}</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>initInfoDescription</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Description</code> section of &#8220;INIT INFO&#8221;.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>${project.description}</code> (falling back to <code>${task.baseName}</code>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>${project.description}</code> (falling back to <code>${project.name}</code>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>initInfoChkconfig</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>chkconfig</code> section of &#8220;INIT INFO&#8221;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>2345 99 01</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>2345 99 01</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>confFolder</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The default value for <code>CONF_FOLDER</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Folder containing the jar</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Folder containing the jar</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>inlinedConfScript</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reference to a file script that should be inlined in the default launch script.
+This can be used to set environmental variables such as <code>JAVA_OPTS</code> before any external config files are loaded</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>logFolder</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default value for <code>LOG_FOLDER</code>.
+Only valid for an <code>init.d</code> service</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>logFilename</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default value for <code>LOG_FILENAME</code>.
+Only valid for an <code>init.d</code> service</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>pidFolder</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default value for <code>PID_FOLDER</code>.
+Only valid for an <code>init.d</code> service</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>pidFilename</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default value for the name of the PID file in <code>PID_FOLDER</code>.
+Only valid for an <code>init.d</code> service</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>useStartStopDaemon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether the <code>start-stop-daemon</code> command, when it is available, should be used to control the process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>stopWaitTime</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default value for <code>STOP_WAIT_TIME</code> in seconds.
+Only valid for an <code>init.d</code> service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">60</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">60</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="deployment.installing.nix-services.script-customization.when-running"><a class="anchor" href="deployment.html#deployment.installing.nix-services.script-customization.when-running"></a>Customizing a Script When It Runs</h5>
+<div class="paragraph">
+<p>For items of the script that need to be customized <em>after</em> the jar has been written, you can use environment variables or a <a href="deployment.html#deployment.installing.nix-services.script-customization.when-running.conf-file">config file</a>.</p>
+</div>
+<div class="paragraph">
+<p>The following environment properties are supported with the default script:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 85.7143%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Variable</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>MODE</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The &#8220;mode&#8221; of operation.
+The default depends on the way the jar was built but is usually <code>auto</code> (meaning it tries to guess if it is an init script by checking if it is a symlink in a directory called <code>init.d</code>).
+You can explicitly set it to <code>service</code> so that the <code>stop|start|status|restart</code> commands work or to <code>run</code> if you want to run the script in the foreground.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RUN_AS_USER</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The user that will be used to run the application.
+When not set, the user that owns the jar file will be used.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>USE_START_STOP_DAEMON</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether the <code>start-stop-daemon</code> command, when it is available, should be used to control the process.
+Defaults to <code>true</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>PID_FOLDER</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The root name of the pid folder (<code>/var/run</code> by default).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOG_FOLDER</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the folder in which to put log files (<code>/var/log</code> by default).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>CONF_FOLDER</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the folder from which to read .conf files (same folder as jar-file by default).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOG_FILENAME</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the log file in the <code>LOG_FOLDER</code> (<code>&lt;appname&gt;.log</code> by default).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>APP_NAME</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the app.
+If the jar is run from a symlink, the script guesses the app name.
+If it is not a symlink or you want to explicitly set the app name, this can be useful.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RUN_ARGS</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The arguments to pass to the program (the Spring Boot app).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>JAVA_HOME</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The location of the <code>java</code> executable is discovered by using the <code>PATH</code> by default, but you can set it explicitly if there is an executable file at <code>$JAVA_HOME/bin/java</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>JAVA_OPTS</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Options that are passed to the JVM when it is launched.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>JARFILE</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The explicit location of the jar file, in case the script is being used to launch a jar that it is not actually embedded.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DEBUG</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If not empty, sets the <code>-x</code> flag on the shell process, allowing you to see the logic in the script.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>STOP_WAIT_TIME</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The time in seconds to wait when stopping the application before forcing a shutdown (<code>60</code> by default).</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The <code>PID_FOLDER</code>, <code>LOG_FOLDER</code>, and <code>LOG_FILENAME</code> variables are only valid for an <code>init.d</code> service.
+For <code>systemd</code>, the equivalent customizations are made by using the &#8216;service&#8217; script.
+See the <a href="https://www.freedesktop.org/software/systemd/man/systemd.service.html">service unit configuration man page</a> for more details.
+</td>
+</tr>
+</table>
+</div>
+<div id="deployment.installing.nix-services.script-customization.when-running.conf-file" class="paragraph">
+<p>With the exception of <code>JARFILE</code> and <code>APP_NAME</code>, the settings listed in the preceding section can be configured by using a <code>.conf</code> file.
+The file is expected to be next to the jar file and have the same name but suffixed with <code>.conf</code> rather than <code>.jar</code>.
+For example, a jar named <code>/var/myapp/myapp.jar</code> uses the configuration file named <code>/var/myapp/myapp.conf</code>, as shown in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="title">myapp.conf</div>
+<div class="content">
+<pre>JAVA_OPTS=-Xmx1024M
+LOG_FOLDER=/custom/log/folder</pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+If you do not like having the config file next to the jar file, you can set a <code>CONF_FOLDER</code> environment variable to customize the location of the config file.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To learn about securing this file appropriately, see <a href="deployment.html#deployment.installing.nix-services.init-d.securing">the guidelines for securing an init.d service</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deployment.installing.windows-services"><a class="anchor" href="deployment.html#deployment.installing.windows-services"></a>2.3. Microsoft Windows Services</h3>
+<div class="paragraph">
+<p>A Spring Boot application can be started as a Windows service by using <a href="https://github.com/kohsuke/winsw"><code>winsw</code></a>.</p>
+</div>
+<div class="paragraph">
+<p>A (<a href="https://github.com/snicoll/spring-boot-daemon">separately maintained sample</a>) describes step-by-step how you can create a Windows service for your Spring Boot application.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="deployment.whats-next"><a class="anchor" href="deployment.html#deployment.whats-next"></a>3. What to Read Next</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>See the <a href="https://www.cloudfoundry.org/">Cloud Foundry</a>, <a href="https://www.heroku.com/">Heroku</a>, <a href="https://www.openshift.com">OpenShift</a>, and <a href="https://boxfuse.com">Boxfuse</a> web sites for more information about the kinds of features that a PaaS can offer.
+These are just four of the most popular Java PaaS providers.
+Since Spring Boot is so amenable to cloud-based deployment, you can freely consider other providers as well.</p>
+</div>
+<div class="paragraph">
+<p>The next section goes on to cover the <em><a href="cli.html#cli">Spring Boot CLI</a></em>, or you can jump ahead to read about <em><a href="build-tool-plugins.html#build-tool-plugins">build tool plugins</a></em>.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2022-01-20 14:11:26 UTC
+</div>
+</div>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1fdec5ca447c65","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

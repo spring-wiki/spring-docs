@@ -1,0 +1,1462 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>Serialized Form (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="spring-javadoc.css" title="Style">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="Serialized Form (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="serialized-form.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="overview-summary.html">Overview</a></li>
+<li>Package</li>
+<li>Class</li>
+<li>Use</li>
+<li><a href="overview-tree.html">Tree</a></li>
+<li><a href="deprecated-list.html">Deprecated</a></li>
+<li><a href="index-files/index-1.html">Index</a></li>
+<li><a href="help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="index.html%3Fserialized-form.html" target="_top">Frames</a></li>
+<li><a href="serialized-form.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+<div class="header">
+<h1 title="Serialized Form" class="title">Serialized Form</h1>
+</div>
+<div class="serializedFormContainer">
+<ul class="blockList">
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.BootstrapContextClosedEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/BootstrapContextClosedEvent.html" title="class in org.springframework.boot">org.springframework.boot.BootstrapContextClosedEvent</a> extends <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationEvent.html?is-external=true" title="class or interface in org.springframework.context">ApplicationEvent</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>applicationContext</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ConfigurableApplicationContext.html?is-external=true" title="class or interface in org.springframework.context">ConfigurableApplicationContext</a> applicationContext</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.ExitCodeEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/ExitCodeEvent.html" title="class in org.springframework.boot">org.springframework.boot.ExitCodeEvent</a> extends <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationEvent.html?is-external=true" title="class or interface in org.springframework.context">ApplicationEvent</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>exitCode</h4>
+<pre>int exitCode</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.actuate.audit</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.actuate.audit.AuditEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/actuate/audit/AuditEvent.html" title="class in org.springframework.boot.actuate.audit">org.springframework.boot.actuate.audit.AuditEvent</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>timestamp</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html?is-external=true" title="class or interface in java.time">Instant</a> timestamp</pre>
+</li>
+<li class="blockList">
+<h4>principal</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> principal</pre>
+</li>
+<li class="blockList">
+<h4>type</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> type</pre>
+</li>
+<li class="blockListLast">
+<h4>data</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">K</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">V</a>&gt; data</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.actuate.audit.listener</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.actuate.audit.listener.AuditApplicationEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/actuate/audit/listener/AuditApplicationEvent.html" title="class in org.springframework.boot.actuate.audit.listener">org.springframework.boot.actuate.audit.listener.AuditApplicationEvent</a> extends <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationEvent.html?is-external=true" title="class or interface in org.springframework.context">ApplicationEvent</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>auditEvent</h4>
+<pre><a href="org/springframework/boot/actuate/audit/AuditEvent.html" title="class in org.springframework.boot.actuate.audit">AuditEvent</a> auditEvent</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.actuate.autoconfigure.cloudfoundry</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.cloudfoundry.CloudFoundryAuthorizationException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/actuate/autoconfigure/cloudfoundry/CloudFoundryAuthorizationException.html" title="class in org.springframework.boot.actuate.autoconfigure.cloudfoundry">org.springframework.boot.actuate.autoconfigure.cloudfoundry.CloudFoundryAuthorizationException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>reason</h4>
+<pre><a href="org/springframework/boot/actuate/autoconfigure/cloudfoundry/CloudFoundryAuthorizationException.Reason.html" title="enum in org.springframework.boot.actuate.autoconfigure.cloudfoundry">CloudFoundryAuthorizationException.Reason</a> reason</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.actuate.cache</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.actuate.cache.NonUniqueCacheException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/actuate/cache/NonUniqueCacheException.html" title="class in org.springframework.boot.actuate.cache">org.springframework.boot.actuate.cache.NonUniqueCacheException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>cacheName</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> cacheName</pre>
+</li>
+<li class="blockListLast">
+<h4>cacheManagerNames</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">E</a>&gt; cacheManagerNames</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.actuate.endpoint</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.actuate.endpoint.InvalidEndpointRequestException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/actuate/endpoint/InvalidEndpointRequestException.html" title="class in org.springframework.boot.actuate.endpoint">org.springframework.boot.actuate.endpoint.InvalidEndpointRequestException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>reason</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> reason</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.actuate.endpoint.invoke</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.actuate.endpoint.invoke.MissingParametersException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/actuate/endpoint/invoke/MissingParametersException.html" title="class in org.springframework.boot.actuate.endpoint.invoke">org.springframework.boot.actuate.endpoint.invoke.MissingParametersException</a> extends <a href="org/springframework/boot/actuate/endpoint/InvalidEndpointRequestException.html" title="class in org.springframework.boot.actuate.endpoint">InvalidEndpointRequestException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>missingParameters</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">E</a>&gt; missingParameters</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.endpoint.invoke.ParameterMappingException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/actuate/endpoint/invoke/ParameterMappingException.html" title="class in org.springframework.boot.actuate.endpoint.invoke">org.springframework.boot.actuate.endpoint.invoke.ParameterMappingException</a> extends <a href="org/springframework/boot/actuate/endpoint/InvalidEndpointRequestException.html" title="class in org.springframework.boot.actuate.endpoint">InvalidEndpointRequestException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>parameter</h4>
+<pre><a href="org/springframework/boot/actuate/endpoint/invoke/OperationParameter.html" title="interface in org.springframework.boot.actuate.endpoint.invoke">OperationParameter</a> parameter</pre>
+</li>
+<li class="blockListLast">
+<h4>value</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> value</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.actuate.management</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.actuate.management.HeapDumpWebEndpoint.HeapDumperUnavailableException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/actuate/management/HeapDumpWebEndpoint.HeapDumperUnavailableException.html" title="class in org.springframework.boot.actuate.management">org.springframework.boot.actuate.management.HeapDumpWebEndpoint.HeapDumperUnavailableException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.actuate.metrics.web.reactive.server</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.actuate.metrics.web.reactive.server.CancelledServerWebExchangeException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/actuate/metrics/web/reactive/server/CancelledServerWebExchangeException.html" title="class in org.springframework.boot.actuate.metrics.web.reactive.server">org.springframework.boot.actuate.metrics.web.reactive.server.CancelledServerWebExchangeException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.autoconfigure</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.AutoConfigurationImportEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/autoconfigure/AutoConfigurationImportEvent.html" title="class in org.springframework.boot.autoconfigure">org.springframework.boot.autoconfigure.AutoConfigurationImportEvent</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/EventObject.html?is-external=true" title="class or interface in java.util">EventObject</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>candidateConfigurations</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; candidateConfigurations</pre>
+</li>
+<li class="blockListLast">
+<h4>exclusions</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">E</a>&gt; exclusions</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.autoconfigure.batch</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.batch.JobExecutionEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/autoconfigure/batch/JobExecutionEvent.html" title="class in org.springframework.boot.autoconfigure.batch">org.springframework.boot.autoconfigure.batch.JobExecutionEvent</a> extends <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationEvent.html?is-external=true" title="class or interface in org.springframework.context">ApplicationEvent</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>execution</h4>
+<pre>org.springframework.batch.core.JobExecution execution</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.autoconfigure.flyway</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.flyway.FlywayMigrationScriptMissingException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/autoconfigure/flyway/FlywayMigrationScriptMissingException.html" title="class in org.springframework.boot.autoconfigure.flyway">org.springframework.boot.autoconfigure.flyway.FlywayMigrationScriptMissingException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>locations</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; locations</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.autoconfigure.jdbc</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.jdbc.DataSourceSchemaCreatedEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/autoconfigure/jdbc/DataSourceSchemaCreatedEvent.html" title="class in org.springframework.boot.autoconfigure.jdbc">org.springframework.boot.autoconfigure.jdbc.DataSourceSchemaCreatedEvent</a> extends <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationEvent.html?is-external=true" title="class or interface in org.springframework.context">ApplicationEvent</a> implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.autoconfigure.jooq</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.jooq.JooqExceptionTranslator">
+
+</a>
+<h3>Class <a href="org/springframework/boot/autoconfigure/jooq/JooqExceptionTranslator.html" title="class in org.springframework.boot.autoconfigure.jooq">org.springframework.boot.autoconfigure.jooq.JooqExceptionTranslator</a> extends org.jooq.impl.DefaultExecuteListener implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.autoconfigure.session</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.session.NonUniqueSessionRepositoryException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/autoconfigure/session/NonUniqueSessionRepositoryException.html" title="class in org.springframework.boot.autoconfigure.session">org.springframework.boot.autoconfigure.session.NonUniqueSessionRepositoryException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>availableCandidates</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; availableCandidates</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.session.SessionRepositoryUnavailableException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/autoconfigure/session/SessionRepositoryUnavailableException.html" title="class in org.springframework.boot.autoconfigure.session">org.springframework.boot.autoconfigure.session.SessionRepositoryUnavailableException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>storeType</h4>
+<pre><a href="org/springframework/boot/autoconfigure/session/StoreType.html" title="enum in org.springframework.boot.autoconfigure.session">StoreType</a> storeType</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.availability</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.availability.AvailabilityChangeEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/availability/AvailabilityChangeEvent.html" title="class in org.springframework.boot.availability">org.springframework.boot.availability.AvailabilityChangeEvent</a> extends <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/PayloadApplicationEvent.html?is-external=true" title="class or interface in org.springframework.context">PayloadApplicationEvent</a>&lt;<a href="org/springframework/boot/availability/AvailabilityChangeEvent.html" title="type parameter in AvailabilityChangeEvent">S</a> extends <a href="org/springframework/boot/availability/AvailabilityState.html" title="interface in org.springframework.boot.availability">AvailabilityState</a>&gt; implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.builder</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.builder.ParentContextApplicationContextInitializer.ParentContextAvailableEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/builder/ParentContextApplicationContextInitializer.ParentContextAvailableEvent.html" title="class in org.springframework.boot.builder">org.springframework.boot.builder.ParentContextApplicationContextInitializer.ParentContextAvailableEvent</a> extends <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationEvent.html?is-external=true" title="class or interface in org.springframework.context">ApplicationEvent</a> implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.buildpack.platform.build</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.buildpack.platform.build.BuilderException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/buildpack/platform/build/BuilderException.html" title="class in org.springframework.boot.buildpack.platform.build">org.springframework.boot.buildpack.platform.build.BuilderException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>operation</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> operation</pre>
+</li>
+<li class="blockListLast">
+<h4>statusCode</h4>
+<pre>int statusCode</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.buildpack.platform.docker.transport</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.buildpack.platform.docker.transport.DockerConnectionException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/buildpack/platform/docker/transport/DockerConnectionException.html" title="class in org.springframework.boot.buildpack.platform.docker.transport">org.springframework.boot.buildpack.platform.docker.transport.DockerConnectionException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+</li>
+<li class="blockList"><a name="org.springframework.boot.buildpack.platform.docker.transport.DockerEngineException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/buildpack/platform/docker/transport/DockerEngineException.html" title="class in org.springframework.boot.buildpack.platform.docker.transport">org.springframework.boot.buildpack.platform.docker.transport.DockerEngineException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>statusCode</h4>
+<pre>int statusCode</pre>
+</li>
+<li class="blockList">
+<h4>reasonPhrase</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> reasonPhrase</pre>
+</li>
+<li class="blockList">
+<h4>errors</h4>
+<pre><a href="org/springframework/boot/buildpack/platform/docker/transport/Errors.html" title="class in org.springframework.boot.buildpack.platform.docker.transport">Errors</a> errors</pre>
+</li>
+<li class="blockListLast">
+<h4>responseMessage</h4>
+<pre><a href="org/springframework/boot/buildpack/platform/docker/transport/Message.html" title="class in org.springframework.boot.buildpack.platform.docker.transport">Message</a> responseMessage</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.cli.command</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.cli.command.CommandException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/cli/command/CommandException.html" title="class in org.springframework.boot.cli.command">org.springframework.boot.cli.command.CommandException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>0L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>options</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/EnumSet.html?is-external=true" title="class or interface in java.util">EnumSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/EnumSet.html?is-external=true" title="class or interface in java.util">E</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/EnumSet.html?is-external=true" title="class or interface in java.util">E</a>&gt;&gt; options</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.cli.command.NoHelpCommandArgumentsException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/cli/command/NoHelpCommandArgumentsException.html" title="class in org.springframework.boot.cli.command">org.springframework.boot.cli.command.NoHelpCommandArgumentsException</a> extends <a href="org/springframework/boot/cli/command/CommandException.html" title="class in org.springframework.boot.cli.command">CommandException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+<li class="blockList"><a name="org.springframework.boot.cli.command.NoSuchCommandException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/cli/command/NoSuchCommandException.html" title="class in org.springframework.boot.cli.command">org.springframework.boot.cli.command.NoSuchCommandException</a> extends <a href="org/springframework/boot/cli/command/CommandException.html" title="class in org.springframework.boot.cli.command">CommandException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.cli.command.init</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.cli.command.init.ReportableException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/cli/command/init/ReportableException.html" title="class in org.springframework.boot.cli.command.init">org.springframework.boot.cli.command.init.ReportableException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.cli.command.shell</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.cli.command.shell.ShellExitException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/cli/command/shell/ShellExitException.html" title="class in org.springframework.boot.cli.command.shell">org.springframework.boot.cli.command.shell.ShellExitException</a> extends <a href="org/springframework/boot/cli/command/CommandException.html" title="class in org.springframework.boot.cli.command">CommandException</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.cli.compiler.grape</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.cli.compiler.grape.DependencyResolutionFailedException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/cli/compiler/grape/DependencyResolutionFailedException.html" title="class in org.springframework.boot.cli.compiler.grape">org.springframework.boot.cli.compiler.grape.DependencyResolutionFailedException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.context.config</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.context.config.ConfigDataException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/config/ConfigDataException.html" title="class in org.springframework.boot.context.config">org.springframework.boot.context.config.ConfigDataException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.config.ConfigDataLocationNotFoundException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/config/ConfigDataLocationNotFoundException.html" title="class in org.springframework.boot.context.config">org.springframework.boot.context.config.ConfigDataLocationNotFoundException</a> extends <a href="org/springframework/boot/context/config/ConfigDataNotFoundException.html" title="class in org.springframework.boot.context.config">ConfigDataNotFoundException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>location</h4>
+<pre><a href="org/springframework/boot/context/config/ConfigDataLocation.html" title="class in org.springframework.boot.context.config">ConfigDataLocation</a> location</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.config.ConfigDataNotFoundException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/config/ConfigDataNotFoundException.html" title="class in org.springframework.boot.context.config">org.springframework.boot.context.config.ConfigDataNotFoundException</a> extends <a href="org/springframework/boot/context/config/ConfigDataException.html" title="class in org.springframework.boot.context.config">ConfigDataException</a> implements Serializable</h3>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.config.ConfigDataResourceNotFoundException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/config/ConfigDataResourceNotFoundException.html" title="class in org.springframework.boot.context.config">org.springframework.boot.context.config.ConfigDataResourceNotFoundException</a> extends <a href="org/springframework/boot/context/config/ConfigDataNotFoundException.html" title="class in org.springframework.boot.context.config">ConfigDataNotFoundException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>resource</h4>
+<pre><a href="org/springframework/boot/context/config/ConfigDataResource.html" title="class in org.springframework.boot.context.config">ConfigDataResource</a> resource</pre>
+</li>
+<li class="blockListLast">
+<h4>location</h4>
+<pre><a href="org/springframework/boot/context/config/ConfigDataLocation.html" title="class in org.springframework.boot.context.config">ConfigDataLocation</a> location</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.config.InactiveConfigDataAccessException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/config/InactiveConfigDataAccessException.html" title="class in org.springframework.boot.context.config">org.springframework.boot.context.config.InactiveConfigDataAccessException</a> extends <a href="org/springframework/boot/context/config/ConfigDataException.html" title="class in org.springframework.boot.context.config">ConfigDataException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>propertySource</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/env/PropertySource.html?is-external=true" title="class or interface in org.springframework.core.env">PropertySource</a>&lt;<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/env/PropertySource.html?is-external=true" title="class or interface in org.springframework.core.env">T</a>&gt; propertySource</pre>
+</li>
+<li class="blockList">
+<h4>location</h4>
+<pre><a href="org/springframework/boot/context/config/ConfigDataResource.html" title="class in org.springframework.boot.context.config">ConfigDataResource</a> location</pre>
+</li>
+<li class="blockList">
+<h4>propertyName</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> propertyName</pre>
+</li>
+<li class="blockListLast">
+<h4>origin</h4>
+<pre><a href="org/springframework/boot/origin/Origin.html" title="interface in org.springframework.boot.origin">Origin</a> origin</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.config.InvalidConfigDataPropertyException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/config/InvalidConfigDataPropertyException.html" title="class in org.springframework.boot.context.config">org.springframework.boot.context.config.InvalidConfigDataPropertyException</a> extends <a href="org/springframework/boot/context/config/ConfigDataException.html" title="class in org.springframework.boot.context.config">ConfigDataException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>property</h4>
+<pre><a href="org/springframework/boot/context/properties/source/ConfigurationProperty.html" title="class in org.springframework.boot.context.properties.source">ConfigurationProperty</a> property</pre>
+</li>
+<li class="blockList">
+<h4>replacement</h4>
+<pre><a href="org/springframework/boot/context/properties/source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a> replacement</pre>
+</li>
+<li class="blockListLast">
+<h4>location</h4>
+<pre><a href="org/springframework/boot/context/config/ConfigDataResource.html" title="class in org.springframework.boot.context.config">ConfigDataResource</a> location</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.config.UnsupportedConfigDataLocationException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/config/UnsupportedConfigDataLocationException.html" title="class in org.springframework.boot.context.config">org.springframework.boot.context.config.UnsupportedConfigDataLocationException</a> extends <a href="org/springframework/boot/context/config/ConfigDataException.html" title="class in org.springframework.boot.context.config">ConfigDataException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>location</h4>
+<pre><a href="org/springframework/boot/context/config/ConfigDataLocation.html" title="class in org.springframework.boot.context.config">ConfigDataLocation</a> location</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.context.event</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.context.event.ApplicationContextInitializedEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/event/ApplicationContextInitializedEvent.html" title="class in org.springframework.boot.context.event">org.springframework.boot.context.event.ApplicationContextInitializedEvent</a> extends <a href="org/springframework/boot/context/event/SpringApplicationEvent.html" title="class in org.springframework.boot.context.event">SpringApplicationEvent</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>context</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ConfigurableApplicationContext.html?is-external=true" title="class or interface in org.springframework.context">ConfigurableApplicationContext</a> context</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/event/ApplicationEnvironmentPreparedEvent.html" title="class in org.springframework.boot.context.event">org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent</a> extends <a href="org/springframework/boot/context/event/SpringApplicationEvent.html" title="class in org.springframework.boot.context.event">SpringApplicationEvent</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>bootstrapContext</h4>
+<pre><a href="org/springframework/boot/ConfigurableBootstrapContext.html" title="interface in org.springframework.boot">ConfigurableBootstrapContext</a> bootstrapContext</pre>
+</li>
+<li class="blockListLast">
+<h4>environment</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/env/ConfigurableEnvironment.html?is-external=true" title="class or interface in org.springframework.core.env">ConfigurableEnvironment</a> environment</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.event.ApplicationFailedEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/event/ApplicationFailedEvent.html" title="class in org.springframework.boot.context.event">org.springframework.boot.context.event.ApplicationFailedEvent</a> extends <a href="org/springframework/boot/context/event/SpringApplicationEvent.html" title="class in org.springframework.boot.context.event">SpringApplicationEvent</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>context</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ConfigurableApplicationContext.html?is-external=true" title="class or interface in org.springframework.context">ConfigurableApplicationContext</a> context</pre>
+</li>
+<li class="blockListLast">
+<h4>exception</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a> exception</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.event.ApplicationPreparedEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/event/ApplicationPreparedEvent.html" title="class in org.springframework.boot.context.event">org.springframework.boot.context.event.ApplicationPreparedEvent</a> extends <a href="org/springframework/boot/context/event/SpringApplicationEvent.html" title="class in org.springframework.boot.context.event">SpringApplicationEvent</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>context</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ConfigurableApplicationContext.html?is-external=true" title="class or interface in org.springframework.context">ConfigurableApplicationContext</a> context</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.event.ApplicationReadyEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/event/ApplicationReadyEvent.html" title="class in org.springframework.boot.context.event">org.springframework.boot.context.event.ApplicationReadyEvent</a> extends <a href="org/springframework/boot/context/event/SpringApplicationEvent.html" title="class in org.springframework.boot.context.event">SpringApplicationEvent</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>context</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ConfigurableApplicationContext.html?is-external=true" title="class or interface in org.springframework.context">ConfigurableApplicationContext</a> context</pre>
+</li>
+<li class="blockListLast">
+<h4>timeTaken</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a> timeTaken</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.event.ApplicationStartedEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/event/ApplicationStartedEvent.html" title="class in org.springframework.boot.context.event">org.springframework.boot.context.event.ApplicationStartedEvent</a> extends <a href="org/springframework/boot/context/event/SpringApplicationEvent.html" title="class in org.springframework.boot.context.event">SpringApplicationEvent</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>context</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ConfigurableApplicationContext.html?is-external=true" title="class or interface in org.springframework.context">ConfigurableApplicationContext</a> context</pre>
+</li>
+<li class="blockListLast">
+<h4>timeTaken</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a> timeTaken</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.event.ApplicationStartingEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/event/ApplicationStartingEvent.html" title="class in org.springframework.boot.context.event">org.springframework.boot.context.event.ApplicationStartingEvent</a> extends <a href="org/springframework/boot/context/event/SpringApplicationEvent.html" title="class in org.springframework.boot.context.event">SpringApplicationEvent</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>bootstrapContext</h4>
+<pre><a href="org/springframework/boot/ConfigurableBootstrapContext.html" title="interface in org.springframework.boot">ConfigurableBootstrapContext</a> bootstrapContext</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.event.SpringApplicationEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/event/SpringApplicationEvent.html" title="class in org.springframework.boot.context.event">org.springframework.boot.context.event.SpringApplicationEvent</a> extends <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationEvent.html?is-external=true" title="class or interface in org.springframework.context">ApplicationEvent</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>args</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[] args</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.context.properties</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.context.properties.ConfigurationPropertiesBindException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/properties/ConfigurationPropertiesBindException.html" title="class in org.springframework.boot.context.properties">org.springframework.boot.context.properties.ConfigurationPropertiesBindException</a> extends <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/beans/factory/BeanCreationException.html?is-external=true" title="class or interface in org.springframework.beans.factory">BeanCreationException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>bean</h4>
+<pre><a href="org/springframework/boot/context/properties/ConfigurationPropertiesBean.html" title="class in org.springframework.boot.context.properties">ConfigurationPropertiesBean</a> bean</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.properties.IncompatibleConfigurationException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/properties/IncompatibleConfigurationException.html" title="class in org.springframework.boot.context.properties">org.springframework.boot.context.properties.IncompatibleConfigurationException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>incompatibleKeys</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; incompatibleKeys</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.context.properties.bind</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.context.properties.bind.BindException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/properties/bind/BindException.html" title="class in org.springframework.boot.context.properties.bind">org.springframework.boot.context.properties.bind.BindException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>target</h4>
+<pre><a href="org/springframework/boot/context/properties/bind/Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;<a href="org/springframework/boot/context/properties/bind/Bindable.html" title="type parameter in Bindable">T</a>&gt; target</pre>
+</li>
+<li class="blockList">
+<h4>property</h4>
+<pre><a href="org/springframework/boot/context/properties/source/ConfigurationProperty.html" title="class in org.springframework.boot.context.properties.source">ConfigurationProperty</a> property</pre>
+</li>
+<li class="blockListLast">
+<h4>name</h4>
+<pre><a href="org/springframework/boot/context/properties/source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a> name</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.properties.bind.UnboundConfigurationPropertiesException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/properties/bind/UnboundConfigurationPropertiesException.html" title="class in org.springframework.boot.context.properties.bind">org.springframework.boot.context.properties.bind.UnboundConfigurationPropertiesException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>unboundProperties</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">E</a>&gt; unboundProperties</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.context.properties.bind.validation</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.context.properties.bind.validation.BindValidationException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/properties/bind/validation/BindValidationException.html" title="class in org.springframework.boot.context.properties.bind.validation">org.springframework.boot.context.properties.bind.validation.BindValidationException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>validationErrors</h4>
+<pre><a href="org/springframework/boot/context/properties/bind/validation/ValidationErrors.html" title="class in org.springframework.boot.context.properties.bind.validation">ValidationErrors</a> validationErrors</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.context.properties.source</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.context.properties.source.InvalidConfigurationPropertyNameException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/properties/source/InvalidConfigurationPropertyNameException.html" title="class in org.springframework.boot.context.properties.source">org.springframework.boot.context.properties.source.InvalidConfigurationPropertyNameException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>name</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a> name</pre>
+</li>
+<li class="blockListLast">
+<h4>invalidCharacters</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; invalidCharacters</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.properties.source.InvalidConfigurationPropertyValueException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/properties/source/InvalidConfigurationPropertyValueException.html" title="class in org.springframework.boot.context.properties.source">org.springframework.boot.context.properties.source.InvalidConfigurationPropertyValueException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>name</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> name</pre>
+</li>
+<li class="blockList">
+<h4>value</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> value</pre>
+</li>
+<li class="blockListLast">
+<h4>reason</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> reason</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.properties.source.MutuallyExclusiveConfigurationPropertiesException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/context/properties/source/MutuallyExclusiveConfigurationPropertiesException.html" title="class in org.springframework.boot.context.properties.source">org.springframework.boot.context.properties.source.MutuallyExclusiveConfigurationPropertiesException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>configuredNames</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">E</a>&gt; configuredNames</pre>
+</li>
+<li class="blockListLast">
+<h4>mutuallyExclusiveNames</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">E</a>&gt; mutuallyExclusiveNames</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.devtools.classpath</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.devtools.classpath.ClassPathChangedEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/devtools/classpath/ClassPathChangedEvent.html" title="class in org.springframework.boot.devtools.classpath">org.springframework.boot.devtools.classpath.ClassPathChangedEvent</a> extends <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationEvent.html?is-external=true" title="class or interface in org.springframework.context">ApplicationEvent</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>changeSet</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">E</a>&gt; changeSet</pre>
+</li>
+<li class="blockListLast">
+<h4>restartRequired</h4>
+<pre>boolean restartRequired</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.devtools.restart.classloader</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.devtools.restart.classloader.ClassLoaderFile">
+
+</a>
+<h3>Class <a href="org/springframework/boot/devtools/restart/classloader/ClassLoaderFile.html" title="class in org.springframework.boot.devtools.restart.classloader">org.springframework.boot.devtools.restart.classloader.ClassLoaderFile</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>kind</h4>
+<pre><a href="org/springframework/boot/devtools/restart/classloader/ClassLoaderFile.Kind.html" title="enum in org.springframework.boot.devtools.restart.classloader">ClassLoaderFile.Kind</a> kind</pre>
+</li>
+<li class="blockList">
+<h4>contents</h4>
+<pre>byte[] contents</pre>
+</li>
+<li class="blockListLast">
+<h4>lastModified</h4>
+<pre>long lastModified</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.devtools.restart.classloader.ClassLoaderFiles">
+
+</a>
+<h3>Class <a href="org/springframework/boot/devtools/restart/classloader/ClassLoaderFiles.html" title="class in org.springframework.boot.devtools.restart.classloader">org.springframework.boot.devtools.restart.classloader.ClassLoaderFiles</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>sourceDirectories</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">K</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">V</a>&gt; sourceDirectories</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.devtools.restart.classloader.ClassLoaderFiles.SourceDirectory">
+
+</a>
+<h3>Class <a href="org/springframework/boot/devtools/restart/classloader/ClassLoaderFiles.SourceDirectory.html" title="class in org.springframework.boot.devtools.restart.classloader">org.springframework.boot.devtools.restart.classloader.ClassLoaderFiles.SourceDirectory</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>name</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> name</pre>
+</li>
+<li class="blockListLast">
+<h4>files</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">K</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">V</a>&gt; files</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.jackson</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.jackson.JsonComponentModule">
+
+</a>
+<h3>Class <a href="org/springframework/boot/jackson/JsonComponentModule.html" title="class in org.springframework.boot.jackson">org.springframework.boot.jackson.JsonComponentModule</a> extends com.fasterxml.jackson.databind.module.SimpleModule implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>beanFactory</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/beans/factory/BeanFactory.html?is-external=true" title="class or interface in org.springframework.beans.factory">BeanFactory</a> beanFactory</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.jdbc</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.jdbc.UnsupportedDataSourcePropertyException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/jdbc/UnsupportedDataSourcePropertyException.html" title="class in org.springframework.boot.jdbc">org.springframework.boot.jdbc.UnsupportedDataSourcePropertyException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.json</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.json.JsonParseException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/json/JsonParseException.html" title="class in org.springframework.boot.json">org.springframework.boot.json.JsonParseException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a> implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.jta.atomikos</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.jta.atomikos.AtomikosConnectionFactoryBean">
+
+</a>
+<h3>Class <a href="org/springframework/boot/jta/atomikos/AtomikosConnectionFactoryBean.html" title="class in org.springframework.boot.jta.atomikos">org.springframework.boot.jta.atomikos.AtomikosConnectionFactoryBean</a> extends com.atomikos.jms.AtomikosConnectionFactoryBean implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>beanName</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> beanName</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.jta.atomikos.AtomikosDataSourceBean">
+
+</a>
+<h3>Class <a href="org/springframework/boot/jta/atomikos/AtomikosDataSourceBean.html" title="class in org.springframework.boot.jta.atomikos">org.springframework.boot.jta.atomikos.AtomikosDataSourceBean</a> extends com.atomikos.jdbc.AtomikosDataSourceBean implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>beanName</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> beanName</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.loader.tools</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.loader.tools.BuildPropertiesWriter.NullAdditionalPropertyValueException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/loader/tools/BuildPropertiesWriter.NullAdditionalPropertyValueException.html" title="class in org.springframework.boot.loader.tools">org.springframework.boot.loader.tools.BuildPropertiesWriter.NullAdditionalPropertyValueException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a> implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.orm.jpa.hibernate</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy">
+
+</a>
+<h3>Class <a href="org/springframework/boot/orm/jpa/hibernate/SpringImplicitNamingStrategy.html" title="class in org.springframework.boot.orm.jpa.hibernate">org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</a> extends org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl implements Serializable</h3>
+</li>
+<li class="blockList"><a name="org.springframework.boot.orm.jpa.hibernate.SpringJtaPlatform">
+
+</a>
+<h3>Class <a href="org/springframework/boot/orm/jpa/hibernate/SpringJtaPlatform.html" title="class in org.springframework.boot.orm.jpa.hibernate">org.springframework.boot.orm.jpa.hibernate.SpringJtaPlatform</a> extends org.hibernate.engine.transaction.jta.platform.internal.AbstractJtaPlatform implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>transactionManager</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/transaction/jta/JtaTransactionManager.html?is-external=true" title="class or interface in org.springframework.transaction.jta">JtaTransactionManager</a> transactionManager</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.rsocket.context</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.rsocket.context.RSocketServerInitializedEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/rsocket/context/RSocketServerInitializedEvent.html" title="class in org.springframework.boot.rsocket.context">org.springframework.boot.rsocket.context.RSocketServerInitializedEvent</a> extends <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationEvent.html?is-external=true" title="class or interface in org.springframework.context">ApplicationEvent</a> implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.rsocket.server</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.rsocket.server.RSocketServerException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/rsocket/server/RSocketServerException.html" title="class in org.springframework.boot.rsocket.server">org.springframework.boot.rsocket.server.RSocketServerException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.test.context</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.test.context.ReactiveWebMergedContextConfiguration">
+
+</a>
+<h3>Class <a href="org/springframework/boot/test/context/ReactiveWebMergedContextConfiguration.html" title="class in org.springframework.boot.test.context">org.springframework.boot.test.context.ReactiveWebMergedContextConfiguration</a> extends <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/test/context/MergedContextConfiguration.html?is-external=true" title="class or interface in org.springframework.test.context">MergedContextConfiguration</a> implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.test.web.htmlunit</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.test.web.htmlunit.LocalHostWebClient">
+
+</a>
+<h3>Class <a href="org/springframework/boot/test/web/htmlunit/LocalHostWebClient.html" title="class in org.springframework.boot.test.web.htmlunit">org.springframework.boot.test.web.htmlunit.LocalHostWebClient</a> extends com.gargoylesoftware.htmlunit.WebClient implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>environment</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/env/Environment.html?is-external=true" title="class or interface in org.springframework.core.env">Environment</a> environment</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.validation.beanvalidation</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.validation.beanvalidation.FilteredMethodValidationPostProcessor">
+
+</a>
+<h3>Class <a href="org/springframework/boot/validation/beanvalidation/FilteredMethodValidationPostProcessor.html" title="class in org.springframework.boot.validation.beanvalidation">org.springframework.boot.validation.beanvalidation.FilteredMethodValidationPostProcessor</a> extends <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/validation/beanvalidation/MethodValidationPostProcessor.html?is-external=true" title="class or interface in org.springframework.validation.beanvalidation">MethodValidationPostProcessor</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>excludeFilters</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">E</a>&gt; excludeFilters</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.web.context</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.web.context.WebServerInitializedEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/web/context/WebServerInitializedEvent.html" title="class in org.springframework.boot.web.context">org.springframework.boot.web.context.WebServerInitializedEvent</a> extends <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationEvent.html?is-external=true" title="class or interface in org.springframework.context">ApplicationEvent</a> implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.web.embedded.tomcat</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.web.embedded.tomcat.ConnectorStartFailedException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/web/embedded/tomcat/ConnectorStartFailedException.html" title="class in org.springframework.boot.web.embedded.tomcat">org.springframework.boot.web.embedded.tomcat.ConnectorStartFailedException</a> extends <a href="org/springframework/boot/web/server/WebServerException.html" title="class in org.springframework.boot.web.server">WebServerException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>port</h4>
+<pre>int port</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.web.reactive.context</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.web.reactive.context.ReactiveWebServerInitializedEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/web/reactive/context/ReactiveWebServerInitializedEvent.html" title="class in org.springframework.boot.web.reactive.context">org.springframework.boot.web.reactive.context.ReactiveWebServerInitializedEvent</a> extends <a href="org/springframework/boot/web/context/WebServerInitializedEvent.html" title="class in org.springframework.boot.web.context">WebServerInitializedEvent</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>applicationContext</h4>
+<pre><a href="org/springframework/boot/web/reactive/context/ReactiveWebServerApplicationContext.html" title="class in org.springframework.boot.web.reactive.context">ReactiveWebServerApplicationContext</a> applicationContext</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.web.server</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.web.server.PortInUseException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/web/server/PortInUseException.html" title="class in org.springframework.boot.web.server">org.springframework.boot.web.server.PortInUseException</a> extends <a href="org/springframework/boot/web/server/WebServerException.html" title="class in org.springframework.boot.web.server">WebServerException</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>port</h4>
+<pre>int port</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.springframework.boot.web.server.WebServerException">
+
+</a>
+<h3>Class <a href="org/springframework/boot/web/server/WebServerException.html" title="class in org.springframework.boot.web.server">org.springframework.boot.web.server.WebServerException</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a> implements Serializable</h3>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;org.springframework.boot.web.servlet.context</h2>
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.web.servlet.context.ServletWebServerInitializedEvent">
+
+</a>
+<h3>Class <a href="org/springframework/boot/web/servlet/context/ServletWebServerInitializedEvent.html" title="class in org.springframework.boot.web.servlet.context">org.springframework.boot.web.servlet.context.ServletWebServerInitializedEvent</a> extends <a href="org/springframework/boot/web/context/WebServerInitializedEvent.html" title="class in org.springframework.boot.web.context">WebServerInitializedEvent</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>applicationContext</h4>
+<pre><a href="org/springframework/boot/web/servlet/context/ServletWebServerApplicationContext.html" title="class in org.springframework.boot.web.servlet.context">ServletWebServerApplicationContext</a> applicationContext</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="serialized-form.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="overview-summary.html">Overview</a></li>
+<li>Package</li>
+<li>Class</li>
+<li>Use</li>
+<li><a href="overview-tree.html">Tree</a></li>
+<li><a href="deprecated-list.html">Deprecated</a></li>
+<li><a href="index-files/index-1.html">Index</a></li>
+<li><a href="help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="index.html%3Fserialized-form.html" target="_top">Frames</a></li>
+<li><a href="serialized-form.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1fe649eb277c65","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

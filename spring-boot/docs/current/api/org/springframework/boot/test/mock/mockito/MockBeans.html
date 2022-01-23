@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>MockBeans (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="MockBeans (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="MockBeans.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MockBeans.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="MockBean.html" title="annotation in org.springframework.boot.test.mock.mockito"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="MockitoPostProcessor.html" title="class in org.springframework.boot.test.mock.mockito"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Ftest%252Fmock%252Fmockito%252FMockBeans.html" target="_top">Frames</a></li>
+<li><a href="MockBeans.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="MockBeans.html#annotation.type.required.element.summary">Required</a>&nbsp;|&nbsp;</li>
+<li>Optional</li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="MockBeans.html#annotation.type.element.detail">Element</a></li>
+</ul>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+
+<div class="header">
+<div class="subTitle">org.springframework.boot.test.mock.mockito</div>
+<h2 title="Annotation Type MockBeans" class="title">Annotation Type MockBeans</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#RUNTIME" title="class or interface in java.lang.annotation">RUNTIME</a>)
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#TYPE" title="class or interface in java.lang.annotation">TYPE</a>)
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Documented.html?is-external=true" title="class or interface in java.lang.annotation">@Documented</a>
+public @interface <span class="memberNameLabel">MockBeans</span></pre>
+<div class="block">Container annotation that aggregates several <a href="MockBean.html" title="annotation in org.springframework.boot.test.mock.mockito"><code>@MockBean</code></a> annotations.
+<p>
+Can be used natively, declaring several nested <a href="MockBean.html" title="annotation in org.springframework.boot.test.mock.mockito"><code>@MockBean</code></a> annotations.
+Can also be used in conjunction with Java 8's support for <em>repeatable
+annotations</em>, where <a href="MockBean.html" title="annotation in org.springframework.boot.test.mock.mockito"><code>@MockBean</code></a> can simply be declared several times
+on the same <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#TYPE" title="class or interface in java.lang.annotation">type</a>, implicitly generating this container
+annotation.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.4.0</dd>
+<dt><span class="simpleTagLabel">Author:</span></dt>
+<dd>Phillip Webb</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="annotation.type.required.element.summary">
+
+</a>
+<h3>Required Element Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Required Element Summary table, listing required elements, and an explanation">
+<caption><span>Required Elements</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Required Element and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="MockBean.html" title="annotation in org.springframework.boot.test.mock.mockito">MockBean</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="MockBeans.html#value--">value</a></span></code>
+<div class="block">Return the contained <a href="MockBean.html" title="annotation in org.springframework.boot.test.mock.mockito"><code>@MockBean</code></a> annotations.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="annotation.type.element.detail">
+
+</a>
+<h3>Element Detail</h3>
+<a name="value--">
+
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>value</h4>
+<pre>public abstract&nbsp;<a href="MockBean.html" title="annotation in org.springframework.boot.test.mock.mockito">MockBean</a>[]&nbsp;value</pre>
+<div class="block">Return the contained <a href="MockBean.html" title="annotation in org.springframework.boot.test.mock.mockito"><code>@MockBean</code></a> annotations.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the mock beans</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="MockBeans.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MockBeans.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="MockBean.html" title="annotation in org.springframework.boot.test.mock.mockito"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="MockitoPostProcessor.html" title="class in org.springframework.boot.test.mock.mockito"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Ftest%252Fmock%252Fmockito%252FMockBeans.html" target="_top">Frames</a></li>
+<li><a href="MockBeans.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="MockBeans.html#annotation.type.required.element.summary">Required</a>&nbsp;|&nbsp;</li>
+<li>Optional</li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="MockBeans.html#annotation.type.element.detail">Element</a></li>
+</ul>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1fb28019635313","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

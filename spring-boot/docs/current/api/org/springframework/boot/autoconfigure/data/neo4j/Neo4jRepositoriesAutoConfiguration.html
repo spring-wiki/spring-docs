@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>Neo4jRepositoriesAutoConfiguration (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="Neo4jRepositoriesAutoConfiguration (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="Neo4jRepositoriesAutoConfiguration.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Neo4jRepositoriesAutoConfiguration.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="Neo4jReactiveRepositoriesAutoConfiguration.html" title="class in org.springframework.boot.autoconfigure.data.neo4j"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fautoconfigure%252Fdata%252Fneo4j%252FNeo4jRepositoriesAutoConfiguration.html" target="_top">Frames</a></li>
+<li><a href="Neo4jRepositoriesAutoConfiguration.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="Neo4jRepositoriesAutoConfiguration.html#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="Neo4jRepositoriesAutoConfiguration.html#methods.inherited.from.class.java.lang.Object">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="Neo4jRepositoriesAutoConfiguration.html#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Method</li>
+</ul>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+
+<div class="header">
+<div class="subTitle">org.springframework.boot.autoconfigure.data.neo4j</div>
+<h2 title="Class Neo4jRepositoriesAutoConfiguration" class="title">Class Neo4jRepositoriesAutoConfiguration</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.springframework.boot.autoconfigure.data.neo4j.Neo4jRepositoriesAutoConfiguration</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Configuration.html?is-external=true" title="class or interface in org.springframework.context.annotation">@Configuration</a>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Configuration.html?is-external=true#proxyBeanMethods--" title="class or interface in org.springframework.context.annotation">proxyBeanMethods</a>=false)
+ <a href="../../condition/ConditionalOnClass.html" title="annotation in org.springframework.boot.autoconfigure.condition">@ConditionalOnClass</a>(<a href="../../condition/ConditionalOnClass.html#value--">value</a>={org.neo4j.driver.Driver.class,org.springframework.data.neo4j.repository.Neo4jRepository.class})
+ <a href="../../condition/ConditionalOnMissingBean.html" title="annotation in org.springframework.boot.autoconfigure.condition">@ConditionalOnMissingBean</a>(<a href="../../condition/ConditionalOnMissingBean.html#value--">value</a>={org.springframework.data.neo4j.repository.support.Neo4jRepositoryFactoryBean.class,org.springframework.data.neo4j.repository.config.Neo4jRepositoryConfigurationExtension.class})
+ <a href="../ConditionalOnRepositoryType.html" title="annotation in org.springframework.boot.autoconfigure.data">@ConditionalOnRepositoryType</a>(<a href="../ConditionalOnRepositoryType.html#store--">store</a>="neo4j",
+                             <a href="../ConditionalOnRepositoryType.html#type--">type</a>=<a href="../RepositoryType.html#IMPERATIVE">IMPERATIVE</a>)
+ <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Import.html?is-external=true" title="class or interface in org.springframework.context.annotation">@Import</a>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Import.html?is-external=true#value--" title="class or interface in org.springframework.context.annotation">value</a>=org.springframework.boot.autoconfigure.data.neo4j.Neo4jRepositoriesRegistrar.class)
+ <a href="../../AutoConfigureAfter.html" title="annotation in org.springframework.boot.autoconfigure">@AutoConfigureAfter</a>(<a href="../../AutoConfigureAfter.html#value--">value</a>=<a href="Neo4jDataAutoConfiguration.html" title="class in org.springframework.boot.autoconfigure.data.neo4j">Neo4jDataAutoConfiguration.class</a>)
+public class <span class="typeNameLabel">Neo4jRepositoriesAutoConfiguration</span>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block"><a href="../../EnableAutoConfiguration.html" title="annotation in org.springframework.boot.autoconfigure"><code>Auto-configuration</code></a> for Spring Data's Neo4j
+Repositories.
+<p>
+Activates when there is no bean of type <code>Neo4jRepositoryFactoryBean</code> or
+<code>Neo4jRepositoryConfigurationExtension</code> configured in the context, the Spring
+Data Neo4j <code>Neo4jRepository</code> type is on the classpath, the Neo4j client driver
+API is on the classpath, and there is no other configured <code>Neo4jRepository</code>.
+<p>
+Once in effect, the auto-configuration is the equivalent of enabling Neo4j repositories
+using the <code>@EnableNeo4jRepositories</code> annotation.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.4.0</dd>
+<dt><span class="simpleTagLabel">Author:</span></dt>
+<dd>Dave Syer, Oliver Gierke, Josh Long, Michael J. Simons</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><code>EnableNeo4jRepositories</code></dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="Neo4jRepositoriesAutoConfiguration.html#Neo4jRepositoriesAutoConfiguration--">Neo4jRepositoriesAutoConfiguration</a></span>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+
+<ul class="blockList">
+<li class="blockList"><a name="method.summary">
+
+</a>
+<h3>Method Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+
+</a>
+<h3>Constructor Detail</h3>
+<a name="Neo4jRepositoriesAutoConfiguration--">
+
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Neo4jRepositoriesAutoConfiguration</h4>
+<pre>public&nbsp;Neo4jRepositoriesAutoConfiguration()</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="Neo4jRepositoriesAutoConfiguration.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Neo4jRepositoriesAutoConfiguration.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="Neo4jReactiveRepositoriesAutoConfiguration.html" title="class in org.springframework.boot.autoconfigure.data.neo4j"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fautoconfigure%252Fdata%252Fneo4j%252FNeo4jRepositoriesAutoConfiguration.html" target="_top">Frames</a></li>
+<li><a href="Neo4jRepositoriesAutoConfiguration.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="Neo4jRepositoriesAutoConfiguration.html#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="Neo4jRepositoriesAutoConfiguration.html#methods.inherited.from.class.java.lang.Object">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="Neo4jRepositoriesAutoConfiguration.html#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Method</li>
+</ul>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1fb599895d5313","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

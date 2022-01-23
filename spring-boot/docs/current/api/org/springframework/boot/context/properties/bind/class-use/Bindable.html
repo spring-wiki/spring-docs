@@ -1,0 +1,569 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>Uses of Class org.springframework.boot.context.properties.bind.Bindable (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="Uses of Class org.springframework.boot.context.properties.bind.Bindable (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="Bindable.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../../../../../../../overview-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fcontext%252Fproperties%252Fbind%252Fclass-use%252FBindable.html" target="_top">Frames</a></li>
+<li><a href="Bindable.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+<div class="header">
+<h2 title="Uses of Class org.springframework.boot.context.properties.bind.Bindable" class="title">Uses of Class<br>org.springframework.boot.context.properties.bind.Bindable</h2>
+</div>
+<div class="classUseContainer">
+<ul class="blockList">
+<li class="blockList">
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing packages, and an explanation">
+<caption><span>Packages that use <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Package</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="Bindable.html#org.springframework.boot.context.properties">org.springframework.boot.context.properties</a></td>
+<td class="colLast">
+<div class="block">Support for external configuration properties.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="Bindable.html#org.springframework.boot.context.properties.bind">org.springframework.boot.context.properties.bind</a></td>
+<td class="colLast">
+<div class="block">Support for <code>@ConfigurationProperties</code> binding.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="Bindable.html#org.springframework.boot.context.properties.bind.handler">org.springframework.boot.context.properties.bind.handler</a></td>
+<td class="colLast">
+<div class="block">General <a href="../BindHandler.html" title="interface in org.springframework.boot.context.properties.bind"><code>BindHandler</code></a> implementations.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="Bindable.html#org.springframework.boot.context.properties.bind.validation">org.springframework.boot.context.properties.bind.validation</a></td>
+<td class="colLast">
+<div class="block">Binding validation support.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.context.properties">
+
+</a>
+<h3>Uses of <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a> in <a href="../../package-summary.html">org.springframework.boot.context.properties</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../package-summary.html">org.springframework.boot.context.properties</a> that return <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">ConfigurationPropertiesBean.</span><code><span class="memberNameLink"><a href="../../ConfigurationPropertiesBean.html#asBindTarget--">asBindTarget</a></span>()</code>
+<div class="block">Return a <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> instance suitable that can be used as a target for the
+<a href="../Binder.html" title="class in org.springframework.boot.context.properties.bind"><code>Binder</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.properties.bind">
+
+</a>
+<h3>Uses of <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a> in <a href="../package-summary.html">org.springframework.boot.context.properties.bind</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../package-summary.html">org.springframework.boot.context.properties.bind</a> that return <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">BindException.</span><code><span class="memberNameLink"><a href="../BindException.html#getTarget--">getTarget</a></span>()</code>
+<div class="block">Return the target being bound.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;E&gt;&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Bindable.</span><code><span class="memberNameLink"><a href="../Bindable.html#listOf-java.lang.Class-">listOf</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;E&gt;&nbsp;elementType)</code>
+<div class="block">Create a new <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> of the specified element type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;K,V&gt;&nbsp;<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;K,V&gt;&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Bindable.</span><code><span class="memberNameLink"><a href="../Bindable.html#mapOf-java.lang.Class-java.lang.Class-">mapOf</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;K&gt;&nbsp;keyType,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;V&gt;&nbsp;valueType)</code>
+<div class="block">Create a new <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> of the specified key and value type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Bindable.</span><code><span class="memberNameLink"><a href="../Bindable.html#of-java.lang.Class-">of</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type)</code>
+<div class="block">Create a new <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> of the specified type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Bindable.</span><code><span class="memberNameLink"><a href="../Bindable.html#of-org.springframework.core.ResolvableType-">of</a></span>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/ResolvableType.html?is-external=true" title="class or interface in org.springframework.core">ResolvableType</a>&nbsp;type)</code>
+<div class="block">Create a new <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> of the specified type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Bindable.</span><code><span class="memberNameLink"><a href="../Bindable.html#ofInstance-T-">ofInstance</a></span>(T&nbsp;instance)</code>
+<div class="block">Create a new <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> of the type of the specified instance with an
+existing value equal to the instance.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractBindHandler.</span><code><span class="memberNameLink"><a href="../AbstractBindHandler.html#onStart-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-">onStart</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>default &lt;T&gt;&nbsp;<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">BindHandler.</span><code><span class="memberNameLink"><a href="../BindHandler.html#onStart-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-">onStart</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context)</code>
+<div class="block">Called when binding of an element starts but before any result has been determined.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;E&gt;&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Bindable.</span><code><span class="memberNameLink"><a href="../Bindable.html#setOf-java.lang.Class-">setOf</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;E&gt;&nbsp;elementType)</code>
+<div class="block">Create a new <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util"><code>Set</code></a> of the specified element type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;<a href="../Bindable.html" title="type parameter in Bindable">T</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Bindable.</span><code><span class="memberNameLink"><a href="../Bindable.html#withAnnotations-java.lang.annotation.Annotation...-">withAnnotations</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</a>...&nbsp;annotations)</code>
+<div class="block">Create an updated <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> instance with the specified annotations.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;<a href="../Bindable.html" title="type parameter in Bindable">T</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Bindable.</span><code><span class="memberNameLink"><a href="../Bindable.html#withBindRestrictions-org.springframework.boot.context.properties.bind.Bindable.BindRestriction...-">withBindRestrictions</a></span>(<a href="../Bindable.BindRestriction.html" title="enum in org.springframework.boot.context.properties.bind">Bindable.BindRestriction</a>...&nbsp;additionalRestrictions)</code>
+<div class="block">Create an updated <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> instance with additional bind restrictions.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;<a href="../Bindable.html" title="type parameter in Bindable">T</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Bindable.</span><code><span class="memberNameLink"><a href="../Bindable.html#withExistingValue-T-">withExistingValue</a></span>(<a href="../Bindable.html" title="type parameter in Bindable">T</a>&nbsp;existingValue)</code>
+<div class="block">Create an updated <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> instance with an existing value.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;<a href="../Bindable.html" title="type parameter in Bindable">T</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Bindable.</span><code><span class="memberNameLink"><a href="../Bindable.html#withSuppliedValue-java.util.function.Supplier-">withSuppliedValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;<a href="../Bindable.html" title="type parameter in Bindable">T</a>&gt;&nbsp;suppliedValue)</code>
+<div class="block">Create an updated <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> instance with a value supplier.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../package-summary.html">org.springframework.boot.context.properties.bind</a> with parameters of type <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../BindResult.html" title="class in org.springframework.boot.context.properties.bind">BindResult</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Binder.</span><code><span class="memberNameLink"><a href="../Binder.html#bind-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-">bind</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;&nbsp;target)</code>
+<div class="block">Bind the specified target <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> using this binder's
+<a href="../../source/ConfigurationPropertySource.html" title="interface in org.springframework.boot.context.properties.source"><code>property sources</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../BindResult.html" title="class in org.springframework.boot.context.properties.bind">BindResult</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Binder.</span><code><span class="memberNameLink"><a href="../Binder.html#bind-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindHandler-">bind</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;&nbsp;target,
+<a href="../BindHandler.html" title="interface in org.springframework.boot.context.properties.bind">BindHandler</a>&nbsp;handler)</code>
+<div class="block">Bind the specified target <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> using this binder's
+<a href="../../source/ConfigurationPropertySource.html" title="interface in org.springframework.boot.context.properties.source"><code>property sources</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../BindResult.html" title="class in org.springframework.boot.context.properties.bind">BindResult</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Binder.</span><code><span class="memberNameLink"><a href="../Binder.html#bind-java.lang.String-org.springframework.boot.context.properties.bind.Bindable-">bind</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;&nbsp;target)</code>
+<div class="block">Bind the specified target <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> using this binder's
+<a href="../../source/ConfigurationPropertySource.html" title="interface in org.springframework.boot.context.properties.source"><code>property sources</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../BindResult.html" title="class in org.springframework.boot.context.properties.bind">BindResult</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Binder.</span><code><span class="memberNameLink"><a href="../Binder.html#bind-java.lang.String-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindHandler-">bind</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;&nbsp;target,
+<a href="../BindHandler.html" title="interface in org.springframework.boot.context.properties.bind">BindHandler</a>&nbsp;handler)</code>
+<div class="block">Bind the specified target <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> using this binder's
+<a href="../../source/ConfigurationPropertySource.html" title="interface in org.springframework.boot.context.properties.source"><code>property sources</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><span class="typeNameLabel">Binder.</span><code><span class="memberNameLink"><a href="../Binder.html#bindOrCreate-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindHandler-">bindOrCreate</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;&nbsp;target,
+<a href="../BindHandler.html" title="interface in org.springframework.boot.context.properties.bind">BindHandler</a>&nbsp;handler)</code>
+<div class="block">Bind the specified target <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> using this binder's
+<a href="../../source/ConfigurationPropertySource.html" title="interface in org.springframework.boot.context.properties.source"><code>property sources</code></a> or create a new instance using
+the type of the <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> if the result of the binding is <code>null</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><span class="typeNameLabel">Binder.</span><code><span class="memberNameLink"><a href="../Binder.html#bindOrCreate-java.lang.String-org.springframework.boot.context.properties.bind.Bindable-">bindOrCreate</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;&nbsp;target)</code>
+<div class="block">Bind the specified target <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> using this binder's
+<a href="../../source/ConfigurationPropertySource.html" title="interface in org.springframework.boot.context.properties.source"><code>property sources</code></a> or create a new instance using
+the type of the <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> if the result of the binding is <code>null</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><span class="typeNameLabel">Binder.</span><code><span class="memberNameLink"><a href="../Binder.html#bindOrCreate-java.lang.String-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindHandler-">bindOrCreate</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;&nbsp;target,
+<a href="../BindHandler.html" title="interface in org.springframework.boot.context.properties.bind">BindHandler</a>&nbsp;handler)</code>
+<div class="block">Bind the specified target <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> using this binder's
+<a href="../../source/ConfigurationPropertySource.html" title="interface in org.springframework.boot.context.properties.source"><code>property sources</code></a> or create a new instance using
+the type of the <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind"><code>Bindable</code></a> if the result of the binding is <code>null</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html?is-external=true" title="class or interface in java.lang.reflect">Constructor</a>&lt;?&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">BindConstructorProvider.</span><code><span class="memberNameLink"><a href="../BindConstructorProvider.html#getBindConstructor-org.springframework.boot.context.properties.bind.Bindable-boolean-">getBindConstructor</a></span>(<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;bindable,
+boolean&nbsp;isNestedConstructorBinding)</code>
+<div class="block">Return the bind constructor to use for the given bindable, or <code>null</code> if
+constructor binding is not supported.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BindHandler.</span><code><span class="memberNameLink"><a href="../BindHandler.html#onCreate-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Object-">onCreate</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result)</code>
+<div class="block">Called when binding of an element ends with an unbound result and a newly created
+instance is about to be returned.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractBindHandler.</span><code><span class="memberNameLink"><a href="../AbstractBindHandler.html#onFailure-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Exception-">onFailure</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;error)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BindHandler.</span><code><span class="memberNameLink"><a href="../BindHandler.html#onFailure-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Exception-">onFailure</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;error)</code>
+<div class="block">Called when binding fails for any reason (including failures from
+<a href="../BindHandler.html#onSuccess-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Object-"><code>BindHandler.onSuccess(org.springframework.boot.context.properties.source.ConfigurationPropertyName, org.springframework.boot.context.properties.bind.Bindable&lt;?&gt;, org.springframework.boot.context.properties.bind.BindContext, java.lang.Object)</code></a> or <a href="../BindHandler.html#onCreate-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Object-"><code>BindHandler.onCreate(org.springframework.boot.context.properties.source.ConfigurationPropertyName, org.springframework.boot.context.properties.bind.Bindable&lt;?&gt;, org.springframework.boot.context.properties.bind.BindContext, java.lang.Object)</code></a> calls).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractBindHandler.</span><code><span class="memberNameLink"><a href="../AbstractBindHandler.html#onFinish-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Object-">onFinish</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default void</code></td>
+<td class="colLast"><span class="typeNameLabel">BindHandler.</span><code><span class="memberNameLink"><a href="../BindHandler.html#onFinish-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Object-">onFinish</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result)</code>
+<div class="block">Called when binding finishes with either bound or unbound result.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractBindHandler.</span><code><span class="memberNameLink"><a href="../AbstractBindHandler.html#onStart-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-">onStart</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default &lt;T&gt;&nbsp;<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">BindHandler.</span><code><span class="memberNameLink"><a href="../BindHandler.html#onStart-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-">onStart</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context)</code>
+<div class="block">Called when binding of an element starts but before any result has been determined.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractBindHandler.</span><code><span class="memberNameLink"><a href="../AbstractBindHandler.html#onSuccess-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Object-">onSuccess</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BindHandler.</span><code><span class="memberNameLink"><a href="../BindHandler.html#onSuccess-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Object-">onSuccess</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result)</code>
+<div class="block">Called when binding of an element ends with a successful result.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BoundPropertiesTrackingBindHandler.</span><code><span class="memberNameLink"><a href="../BoundPropertiesTrackingBindHandler.html#onSuccess-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Object-">onSuccess</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.properties.bind.handler">
+
+</a>
+<h3>Uses of <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a> in <a href="../handler/package-summary.html">org.springframework.boot.context.properties.bind.handler</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../handler/package-summary.html">org.springframework.boot.context.properties.bind.handler</a> that return <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">NoUnboundElementsBindHandler.</span><code><span class="memberNameLink"><a href="../handler/NoUnboundElementsBindHandler.html#onStart-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-">onStart</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../handler/package-summary.html">org.springframework.boot.context.properties.bind.handler</a> with parameters of type <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><span class="typeNameLabel">NoUnboundElementsBindHandler.</span><code><span class="memberNameLink"><a href="../handler/NoUnboundElementsBindHandler.html#onFailure-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Exception-">onFailure</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;error)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><span class="typeNameLabel">IgnoreErrorsBindHandler.</span><code><span class="memberNameLink"><a href="../handler/IgnoreErrorsBindHandler.html#onFailure-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Exception-">onFailure</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;error)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><span class="typeNameLabel">IgnoreTopLevelConverterNotFoundBindHandler.</span><code><span class="memberNameLink"><a href="../handler/IgnoreTopLevelConverterNotFoundBindHandler.html#onFailure-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Exception-">onFailure</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;error)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">NoUnboundElementsBindHandler.</span><code><span class="memberNameLink"><a href="../handler/NoUnboundElementsBindHandler.html#onFinish-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Object-">onFinish</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">NoUnboundElementsBindHandler.</span><code><span class="memberNameLink"><a href="../handler/NoUnboundElementsBindHandler.html#onStart-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-">onStart</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><span class="typeNameLabel">NoUnboundElementsBindHandler.</span><code><span class="memberNameLink"><a href="../handler/NoUnboundElementsBindHandler.html#onSuccess-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Object-">onSuccess</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.properties.bind.validation">
+
+</a>
+<h3>Uses of <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a> in <a href="../validation/package-summary.html">org.springframework.boot.context.properties.bind.validation</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../validation/package-summary.html">org.springframework.boot.context.properties.bind.validation</a> that return <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">ValidationBindHandler.</span><code><span class="memberNameLink"><a href="../validation/ValidationBindHandler.html#onStart-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-">onStart</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../validation/package-summary.html">org.springframework.boot.context.properties.bind.validation</a> with parameters of type <a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ValidationBindHandler.</span><code><span class="memberNameLink"><a href="../validation/ValidationBindHandler.html#onFailure-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Exception-">onFailure</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;error)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">ValidationBindHandler.</span><code><span class="memberNameLink"><a href="../validation/ValidationBindHandler.html#onFinish-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Object-">onFinish</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">ValidationBindHandler.</span><code><span class="memberNameLink"><a href="../validation/ValidationBindHandler.html#onStart-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-">onStart</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;T&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ValidationBindHandler.</span><code><span class="memberNameLink"><a href="../validation/ValidationBindHandler.html#onSuccess-org.springframework.boot.context.properties.source.ConfigurationPropertyName-org.springframework.boot.context.properties.bind.Bindable-org.springframework.boot.context.properties.bind.BindContext-java.lang.Object-">onSuccess</a></span>(<a href="../../source/ConfigurationPropertyName.html" title="class in org.springframework.boot.context.properties.source">ConfigurationPropertyName</a>&nbsp;name,
+<a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Bindable</a>&lt;?&gt;&nbsp;target,
+<a href="../BindContext.html" title="interface in org.springframework.boot.context.properties.bind">BindContext</a>&nbsp;context,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="Bindable.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../Bindable.html" title="class in org.springframework.boot.context.properties.bind">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../../../../../../../overview-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fcontext%252Fproperties%252Fbind%252Fclass-use%252FBindable.html" target="_top">Frames</a></li>
+<li><a href="Bindable.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1feb6508bd7c65","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>Uses of Class org.springframework.boot.actuate.health.Health (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="Uses of Class org.springframework.boot.actuate.health.Health (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="Health.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../Health.html" title="class in org.springframework.boot.actuate.health">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../../../../../../overview-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Factuate%252Fhealth%252Fclass-use%252FHealth.html" target="_top">Frames</a></li>
+<li><a href="Health.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+<div class="header">
+<h2 title="Uses of Class org.springframework.boot.actuate.health.Health" class="title">Uses of Class<br>org.springframework.boot.actuate.health.Health</h2>
+</div>
+<div class="classUseContainer">
+<ul class="blockList">
+<li class="blockList">
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing packages, and an explanation">
+<caption><span>Packages that use <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Package</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="Health.html#org.springframework.boot.actuate.cassandra">org.springframework.boot.actuate.cassandra</a></td>
+<td class="colLast">
+<div class="block">Actuator support for Cassandra.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="Health.html#org.springframework.boot.actuate.couchbase">org.springframework.boot.actuate.couchbase</a></td>
+<td class="colLast">
+<div class="block">Actuator support for Couchbase.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="Health.html#org.springframework.boot.actuate.elasticsearch">org.springframework.boot.actuate.elasticsearch</a></td>
+<td class="colLast">
+<div class="block">Actuator support for Elasticsearch.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="Health.html#org.springframework.boot.actuate.health">org.springframework.boot.actuate.health</a></td>
+<td class="colLast">
+<div class="block">Actuator health indicator and endpoints.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="Health.html#org.springframework.boot.actuate.mongo">org.springframework.boot.actuate.mongo</a></td>
+<td class="colLast">
+<div class="block">Actuator support for Mongo.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="Health.html#org.springframework.boot.actuate.neo4j">org.springframework.boot.actuate.neo4j</a></td>
+<td class="colLast">
+<div class="block">Actuator support for Neo4j.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="Health.html#org.springframework.boot.actuate.r2dbc">org.springframework.boot.actuate.r2dbc</a></td>
+<td class="colLast">
+<div class="block">Actuator support for R2DBC.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="Health.html#org.springframework.boot.actuate.redis">org.springframework.boot.actuate.redis</a></td>
+<td class="colLast">
+<div class="block">Actuator support for Redis.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.actuate.cassandra">
+
+</a>
+<h3>Uses of <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a> in <a href="../../cassandra/package-summary.html">org.springframework.boot.actuate.cassandra</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../cassandra/package-summary.html">org.springframework.boot.actuate.cassandra</a> that return types with arguments of type <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected reactor.core.publisher.Mono&lt;<a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">CassandraDriverReactiveHealthIndicator.</span><code><span class="memberNameLink"><a href="../../cassandra/CassandraDriverReactiveHealthIndicator.html#doHealthCheck-org.springframework.boot.actuate.health.Health.Builder-">doHealthCheck</a></span>(<a href="../Health.Builder.html" title="class in org.springframework.boot.actuate.health">Health.Builder</a>&nbsp;builder)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.couchbase">
+
+</a>
+<h3>Uses of <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a> in <a href="../../couchbase/package-summary.html">org.springframework.boot.actuate.couchbase</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../couchbase/package-summary.html">org.springframework.boot.actuate.couchbase</a> that return types with arguments of type <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected reactor.core.publisher.Mono&lt;<a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">CouchbaseReactiveHealthIndicator.</span><code><span class="memberNameLink"><a href="../../couchbase/CouchbaseReactiveHealthIndicator.html#doHealthCheck-org.springframework.boot.actuate.health.Health.Builder-">doHealthCheck</a></span>(<a href="../Health.Builder.html" title="class in org.springframework.boot.actuate.health">Health.Builder</a>&nbsp;builder)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.elasticsearch">
+
+</a>
+<h3>Uses of <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a> in <a href="../../elasticsearch/package-summary.html">org.springframework.boot.actuate.elasticsearch</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../elasticsearch/package-summary.html">org.springframework.boot.actuate.elasticsearch</a> that return types with arguments of type <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected reactor.core.publisher.Mono&lt;<a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">ElasticsearchReactiveHealthIndicator.</span><code><span class="memberNameLink"><a href="../../elasticsearch/ElasticsearchReactiveHealthIndicator.html#doHealthCheck-org.springframework.boot.actuate.health.Health.Builder-">doHealthCheck</a></span>(<a href="../Health.Builder.html" title="class in org.springframework.boot.actuate.health">Health.Builder</a>&nbsp;builder)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.health">
+
+</a>
+<h3>Uses of <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a> in <a href="../package-summary.html">org.springframework.boot.actuate.health</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../package-summary.html">org.springframework.boot.actuate.health</a> that return <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Health.Builder.</span><code><span class="memberNameLink"><a href="../Health.Builder.html#build--">build</a></span>()</code>
+<div class="block">Create a new <a href="../Health.html" title="class in org.springframework.boot.actuate.health"><code>Health</code></a> instance with the previously specified code and
+details.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>default <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a></code></td>
+<td class="colLast"><span class="typeNameLabel">HealthIndicator.</span><code><span class="memberNameLink"><a href="../HealthIndicator.html#getHealth-boolean-">getHealth</a></span>(boolean&nbsp;includeDetails)</code>
+<div class="block">Return an indication of health.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a></code></td>
+<td class="colLast"><span class="typeNameLabel">HealthIndicator.</span><code><span class="memberNameLink"><a href="../HealthIndicator.html#health--">health</a></span>()</code>
+<div class="block">Return an indication of health.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractHealthIndicator.</span><code><span class="memberNameLink"><a href="../AbstractHealthIndicator.html#health--">health</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../package-summary.html">org.springframework.boot.actuate.health</a> that return types with arguments of type <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract reactor.core.publisher.Mono&lt;<a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractReactiveHealthIndicator.</span><code><span class="memberNameLink"><a href="../AbstractReactiveHealthIndicator.html#doHealthCheck-org.springframework.boot.actuate.health.Health.Builder-">doHealthCheck</a></span>(<a href="../Health.Builder.html" title="class in org.springframework.boot.actuate.health">Health.Builder</a>&nbsp;builder)</code>
+<div class="block">Actual health check logic.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>default reactor.core.publisher.Mono&lt;<a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">ReactiveHealthIndicator.</span><code><span class="memberNameLink"><a href="../ReactiveHealthIndicator.html#getHealth-boolean-">getHealth</a></span>(boolean&nbsp;includeDetails)</code>
+<div class="block">Provide the indicator of health.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>reactor.core.publisher.Mono&lt;<a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">ReactiveHealthIndicator.</span><code><span class="memberNameLink"><a href="../ReactiveHealthIndicator.html#health--">health</a></span>()</code>
+<div class="block">Provide the indicator of health.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>reactor.core.publisher.Mono&lt;<a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractReactiveHealthIndicator.</span><code><span class="memberNameLink"><a href="../AbstractReactiveHealthIndicator.html#health--">health</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.mongo">
+
+</a>
+<h3>Uses of <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a> in <a href="../../mongo/package-summary.html">org.springframework.boot.actuate.mongo</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../mongo/package-summary.html">org.springframework.boot.actuate.mongo</a> that return types with arguments of type <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected reactor.core.publisher.Mono&lt;<a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">MongoReactiveHealthIndicator.</span><code><span class="memberNameLink"><a href="../../mongo/MongoReactiveHealthIndicator.html#doHealthCheck-org.springframework.boot.actuate.health.Health.Builder-">doHealthCheck</a></span>(<a href="../Health.Builder.html" title="class in org.springframework.boot.actuate.health">Health.Builder</a>&nbsp;builder)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.neo4j">
+
+</a>
+<h3>Uses of <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a> in <a href="../../neo4j/package-summary.html">org.springframework.boot.actuate.neo4j</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../neo4j/package-summary.html">org.springframework.boot.actuate.neo4j</a> that return types with arguments of type <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected reactor.core.publisher.Mono&lt;<a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Neo4jReactiveHealthIndicator.</span><code><span class="memberNameLink"><a href="../../neo4j/Neo4jReactiveHealthIndicator.html#doHealthCheck-org.springframework.boot.actuate.health.Health.Builder-">doHealthCheck</a></span>(<a href="../Health.Builder.html" title="class in org.springframework.boot.actuate.health">Health.Builder</a>&nbsp;builder)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.r2dbc">
+
+</a>
+<h3>Uses of <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a> in <a href="../../r2dbc/package-summary.html">org.springframework.boot.actuate.r2dbc</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../r2dbc/package-summary.html">org.springframework.boot.actuate.r2dbc</a> that return types with arguments of type <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected reactor.core.publisher.Mono&lt;<a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">ConnectionFactoryHealthIndicator.</span><code><span class="memberNameLink"><a href="../../r2dbc/ConnectionFactoryHealthIndicator.html#doHealthCheck-org.springframework.boot.actuate.health.Health.Builder-">doHealthCheck</a></span>(<a href="../Health.Builder.html" title="class in org.springframework.boot.actuate.health">Health.Builder</a>&nbsp;builder)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.redis">
+
+</a>
+<h3>Uses of <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a> in <a href="../../redis/package-summary.html">org.springframework.boot.actuate.redis</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../redis/package-summary.html">org.springframework.boot.actuate.redis</a> that return types with arguments of type <a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected reactor.core.publisher.Mono&lt;<a href="../Health.html" title="class in org.springframework.boot.actuate.health">Health</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">RedisReactiveHealthIndicator.</span><code><span class="memberNameLink"><a href="../../redis/RedisReactiveHealthIndicator.html#doHealthCheck-org.springframework.boot.actuate.health.Health.Builder-">doHealthCheck</a></span>(<a href="../Health.Builder.html" title="class in org.springframework.boot.actuate.health">Health.Builder</a>&nbsp;builder)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="Health.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../Health.html" title="class in org.springframework.boot.actuate.health">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../../../../../../overview-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Factuate%252Fhealth%252Fclass-use%252FHealth.html" target="_top">Frames</a></li>
+<li><a href="Health.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d2006a95e9b0cf3","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,612 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>Uses of Class org.springframework.boot.test.json.JsonContentAssert (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="Uses of Class org.springframework.boot.test.json.JsonContentAssert (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="JsonContentAssert.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../../../../../../overview-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Ftest%252Fjson%252Fclass-use%252FJsonContentAssert.html" target="_top">Frames</a></li>
+<li><a href="JsonContentAssert.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+<div class="header">
+<h2 title="Uses of Class org.springframework.boot.test.json.JsonContentAssert" class="title">Uses of Class<br>org.springframework.boot.test.json.JsonContentAssert</h2>
+</div>
+<div class="classUseContainer">
+<ul class="blockList">
+<li class="blockList">
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing packages, and an explanation">
+<caption><span>Packages that use <a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Package</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="JsonContentAssert.html#org.springframework.boot.test.json">org.springframework.boot.test.json</a></td>
+<td class="colLast">
+<div class="block">Support for testing JSON.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.test.json">
+
+</a>
+<h3>Uses of <a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a> in <a href="../package-summary.html">org.springframework.boot.test.json</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../package-summary.html">org.springframework.boot.test.json</a> that return <a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContent.</span><code><span class="memberNameLink"><a href="../JsonContent.html#assertThat--">assertThat</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">to prevent accidental use. Prefer standard AssertJ
+<code>assertThat(context)...</code> calls instead.</span></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#doesNotHaveEmptyJsonPathValue-java.lang.CharSequence-java.lang.Object...-">doesNotHaveEmptyJsonPathValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expression,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Verify that the actual value at the given JSON path does not produce an
+<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/util/ObjectUtils.html?is-external=true#isEmpty-java.lang.Object-" title="class or interface in org.springframework.util"><code>empty</code></a> result.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#doesNotHaveJsonPath-java.lang.CharSequence-java.lang.Object...-">doesNotHaveJsonPath</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expression,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Verify that the JSON path is not present, even if it has a <code>null</code> value.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#doesNotHaveJsonPathValue-java.lang.CharSequence-java.lang.Object...-">doesNotHaveJsonPathValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expression,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Verify that the actual value at the given JSON path produces no result.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#hasEmptyJsonPathValue-java.lang.CharSequence-java.lang.Object...-">hasEmptyJsonPathValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expression,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Verify that the actual value at the given JSON path produces an
+<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/util/ObjectUtils.html?is-external=true#isEmpty-java.lang.Object-" title="class or interface in org.springframework.util"><code>empty</code></a> result.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#hasJsonPath-java.lang.CharSequence-java.lang.Object...-">hasJsonPath</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expression,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Verify that the JSON path is present without checking if it has a value.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#hasJsonPathArrayValue-java.lang.CharSequence-java.lang.Object...-">hasJsonPathArrayValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expression,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Verify that the actual value at the given JSON path produces a non-null array
+result.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#hasJsonPathBooleanValue-java.lang.CharSequence-java.lang.Object...-">hasJsonPathBooleanValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expression,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Verify that the actual value at the given JSON path produces a non-null boolean
+result.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#hasJsonPathMapValue-java.lang.CharSequence-java.lang.Object...-">hasJsonPathMapValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expression,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Verify that the actual value at the given JSON path produces a non-null map result.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#hasJsonPathNumberValue-java.lang.CharSequence-java.lang.Object...-">hasJsonPathNumberValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expression,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Verify that the actual value at the given JSON path produces a non-null number
+result.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#hasJsonPathStringValue-java.lang.CharSequence-java.lang.Object...-">hasJsonPathStringValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expression,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Verify that the actual value at the given JSON path produces a non-null string
+result.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#hasJsonPathValue-java.lang.CharSequence-java.lang.Object...-">hasJsonPathValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expression,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Verify that the actual value at the given JSON path produces a non-null result.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualTo-java.lang.Object-">isEqualTo</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;expected)</code>
+<div class="block">Overridden version of <code>isEqualTo</code> to perform JSON tests based on the object
+type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-byte:A-">isEqualToJson</a></span>(byte[]&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is <code>leniently</code> equal
+to the specified JSON bytes.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-byte:A-org.skyscreamer.jsonassert.comparator.JSONComparator-">isEqualToJson</a></span>(byte[]&nbsp;expected,
+org.skyscreamer.jsonassert.comparator.JSONComparator&nbsp;comparator)</code>
+<div class="block">Verifies that the actual value is equal to the specified JSON bytes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-byte:A-org.skyscreamer.jsonassert.JSONCompareMode-">isEqualToJson</a></span>(byte[]&nbsp;expected,
+org.skyscreamer.jsonassert.JSONCompareMode&nbsp;compareMode)</code>
+<div class="block">Verifies that the actual value is equal to the specified JSON bytes.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-java.lang.CharSequence-">isEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is <code>leniently</code> equal
+to the specified JSON.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-java.lang.CharSequence-org.skyscreamer.jsonassert.comparator.JSONComparator-">isEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expected,
+org.skyscreamer.jsonassert.comparator.JSONComparator&nbsp;comparator)</code>
+<div class="block">Verifies that the actual value is equal to the specified JSON.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-java.lang.CharSequence-org.skyscreamer.jsonassert.JSONCompareMode-">isEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expected,
+org.skyscreamer.jsonassert.JSONCompareMode&nbsp;compareMode)</code>
+<div class="block">Verifies that the actual value is equal to the specified JSON.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-java.io.File-">isEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is <code>leniently</code> equal
+to the specified JSON file.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-java.io.File-org.skyscreamer.jsonassert.comparator.JSONComparator-">isEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;expected,
+org.skyscreamer.jsonassert.comparator.JSONComparator&nbsp;comparator)</code>
+<div class="block">Verifies that the actual value is equal to the specified JSON file.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-java.io.File-org.skyscreamer.jsonassert.JSONCompareMode-">isEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;expected,
+org.skyscreamer.jsonassert.JSONCompareMode&nbsp;compareMode)</code>
+<div class="block">Verifies that the actual value is equal to the specified JSON file.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-java.io.InputStream-">isEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is <code>leniently</code> equal
+to the specified JSON input stream.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-java.io.InputStream-org.skyscreamer.jsonassert.comparator.JSONComparator-">isEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;expected,
+org.skyscreamer.jsonassert.comparator.JSONComparator&nbsp;comparator)</code>
+<div class="block">Verifies that the actual value is equal to the specified JSON input stream.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-java.io.InputStream-org.skyscreamer.jsonassert.JSONCompareMode-">isEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;expected,
+org.skyscreamer.jsonassert.JSONCompareMode&nbsp;compareMode)</code>
+<div class="block">Verifies that the actual value is equal to the specified JSON input stream.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-org.springframework.core.io.Resource-">isEqualToJson</a></span>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/io/Resource.html?is-external=true" title="class or interface in org.springframework.core.io">Resource</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is <code>leniently</code> equal
+to the specified JSON resource.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-org.springframework.core.io.Resource-org.skyscreamer.jsonassert.comparator.JSONComparator-">isEqualToJson</a></span>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/io/Resource.html?is-external=true" title="class or interface in org.springframework.core.io">Resource</a>&nbsp;expected,
+org.skyscreamer.jsonassert.comparator.JSONComparator&nbsp;comparator)</code>
+<div class="block">Verifies that the actual value is equal to the specified JSON resource.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-org.springframework.core.io.Resource-org.skyscreamer.jsonassert.JSONCompareMode-">isEqualToJson</a></span>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/io/Resource.html?is-external=true" title="class or interface in org.springframework.core.io">Resource</a>&nbsp;expected,
+org.skyscreamer.jsonassert.JSONCompareMode&nbsp;compareMode)</code>
+<div class="block">Verifies that the actual value is equal to the specified JSON resource.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-java.lang.String-java.lang.Class-">isEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;resourceLoadClass)</code>
+<div class="block">Verifies that the actual value is <code>leniently</code> equal
+to the specified JSON resource.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-java.lang.String-java.lang.Class-org.skyscreamer.jsonassert.comparator.JSONComparator-">isEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;resourceLoadClass,
+org.skyscreamer.jsonassert.comparator.JSONComparator&nbsp;comparator)</code>
+<div class="block">Verifies that the actual value is equal to the specified JSON resource.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isEqualToJson-java.lang.String-java.lang.Class-org.skyscreamer.jsonassert.JSONCompareMode-">isEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;resourceLoadClass,
+org.skyscreamer.jsonassert.JSONCompareMode&nbsp;compareMode)</code>
+<div class="block">Verifies that the actual value is equal to the specified JSON resource.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualTo-java.lang.Object-">isNotEqualTo</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;expected)</code>
+<div class="block">Overridden version of <code>isNotEqualTo</code> to perform JSON tests based on the
+object type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-byte:A-">isNotEqualToJson</a></span>(byte[]&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is not <code>leniently</code>
+equal to the specified JSON bytes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-byte:A-org.skyscreamer.jsonassert.comparator.JSONComparator-">isNotEqualToJson</a></span>(byte[]&nbsp;expected,
+org.skyscreamer.jsonassert.comparator.JSONComparator&nbsp;comparator)</code>
+<div class="block">Verifies that the actual value is not equal to the specified JSON bytes.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-byte:A-org.skyscreamer.jsonassert.JSONCompareMode-">isNotEqualToJson</a></span>(byte[]&nbsp;expected,
+org.skyscreamer.jsonassert.JSONCompareMode&nbsp;compareMode)</code>
+<div class="block">Verifies that the actual value is not equal to the specified JSON bytes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-java.lang.CharSequence-">isNotEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is not <code>leniently</code>
+equal to the specified JSON.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-java.lang.CharSequence-org.skyscreamer.jsonassert.comparator.JSONComparator-">isNotEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expected,
+org.skyscreamer.jsonassert.comparator.JSONComparator&nbsp;comparator)</code>
+<div class="block">Verifies that the actual value is not equal to the specified JSON.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-java.lang.CharSequence-org.skyscreamer.jsonassert.JSONCompareMode-">isNotEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expected,
+org.skyscreamer.jsonassert.JSONCompareMode&nbsp;compareMode)</code>
+<div class="block">Verifies that the actual value is not equal to the specified JSON.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-java.io.File-">isNotEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is not <code>leniently</code>
+equal to the specified JSON file.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-java.io.File-org.skyscreamer.jsonassert.comparator.JSONComparator-">isNotEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;expected,
+org.skyscreamer.jsonassert.comparator.JSONComparator&nbsp;comparator)</code>
+<div class="block">Verifies that the actual value is not equal to the specified JSON file.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-java.io.File-org.skyscreamer.jsonassert.JSONCompareMode-">isNotEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;expected,
+org.skyscreamer.jsonassert.JSONCompareMode&nbsp;compareMode)</code>
+<div class="block">Verifies that the actual value is not equal to the specified JSON file.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-java.io.InputStream-">isNotEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is not <code>leniently</code>
+equal to the specified JSON input stream.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-java.io.InputStream-org.skyscreamer.jsonassert.comparator.JSONComparator-">isNotEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;expected,
+org.skyscreamer.jsonassert.comparator.JSONComparator&nbsp;comparator)</code>
+<div class="block">Verifies that the actual value is not equal to the specified JSON input stream.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-java.io.InputStream-org.skyscreamer.jsonassert.JSONCompareMode-">isNotEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;expected,
+org.skyscreamer.jsonassert.JSONCompareMode&nbsp;compareMode)</code>
+<div class="block">Verifies that the actual value is not equal to the specified JSON input stream.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-org.springframework.core.io.Resource-">isNotEqualToJson</a></span>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/io/Resource.html?is-external=true" title="class or interface in org.springframework.core.io">Resource</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is not <code>leniently</code>
+equal to the specified JSON resource.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-org.springframework.core.io.Resource-org.skyscreamer.jsonassert.comparator.JSONComparator-">isNotEqualToJson</a></span>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/io/Resource.html?is-external=true" title="class or interface in org.springframework.core.io">Resource</a>&nbsp;expected,
+org.skyscreamer.jsonassert.comparator.JSONComparator&nbsp;comparator)</code>
+<div class="block">Verifies that the actual value is not equal to the specified JSON resource.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-org.springframework.core.io.Resource-org.skyscreamer.jsonassert.JSONCompareMode-">isNotEqualToJson</a></span>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/io/Resource.html?is-external=true" title="class or interface in org.springframework.core.io">Resource</a>&nbsp;expected,
+org.skyscreamer.jsonassert.JSONCompareMode&nbsp;compareMode)</code>
+<div class="block">Verifies that the actual value is not equal to the specified JSON resource.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-java.lang.String-java.lang.Class-">isNotEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;resourceLoadClass)</code>
+<div class="block">Verifies that the actual value is not <code>leniently</code>
+equal to the specified JSON resource.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-java.lang.String-java.lang.Class-org.skyscreamer.jsonassert.comparator.JSONComparator-">isNotEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;resourceLoadClass,
+org.skyscreamer.jsonassert.comparator.JSONComparator&nbsp;comparator)</code>
+<div class="block">Verifies that the actual value is not equal to the specified JSON resource.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotEqualToJson-java.lang.String-java.lang.Class-org.skyscreamer.jsonassert.JSONCompareMode-">isNotEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;resourceLoadClass,
+org.skyscreamer.jsonassert.JSONCompareMode&nbsp;compareMode)</code>
+<div class="block">Verifies that the actual value is not equal to the specified JSON resource.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotStrictlyEqualToJson-byte:A-">isNotStrictlyEqualToJson</a></span>(byte[]&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is not <code>strictly</code> equal
+to the specified JSON bytes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotStrictlyEqualToJson-java.lang.CharSequence-">isNotStrictlyEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is not <code>strictly</code> equal
+to the specified JSON.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotStrictlyEqualToJson-java.io.File-">isNotStrictlyEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is not <code>strictly</code> equal
+to the specified JSON file.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotStrictlyEqualToJson-java.io.InputStream-">isNotStrictlyEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is not <code>strictly</code> equal
+to the specified JSON input stream.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotStrictlyEqualToJson-org.springframework.core.io.Resource-">isNotStrictlyEqualToJson</a></span>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/io/Resource.html?is-external=true" title="class or interface in org.springframework.core.io">Resource</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is not <code>strictly</code> equal
+to the specified JSON resource.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isNotStrictlyEqualToJson-java.lang.String-java.lang.Class-">isNotStrictlyEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;resourceLoadClass)</code>
+<div class="block">Verifies that the actual value is not <code>strictly</code> equal
+to the specified JSON resource.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isStrictlyEqualToJson-byte:A-">isStrictlyEqualToJson</a></span>(byte[]&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is <code>strictly</code> equal to
+the specified JSON bytes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isStrictlyEqualToJson-java.lang.CharSequence-">isStrictlyEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is <code>strictly</code> equal to
+the specified JSON.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isStrictlyEqualToJson-java.io.File-">isStrictlyEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is <code>strictly</code> equal to
+the specified JSON file.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isStrictlyEqualToJson-java.io.InputStream-">isStrictlyEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is <code>strictly</code> equal to
+the specified JSON input stream.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isStrictlyEqualToJson-org.springframework.core.io.Resource-">isStrictlyEqualToJson</a></span>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/io/Resource.html?is-external=true" title="class or interface in org.springframework.core.io">Resource</a>&nbsp;expected)</code>
+<div class="block">Verifies that the actual value is <code>strictly</code> equal to
+the specified JSON resource.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">JsonContentAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonContentAssert.</span><code><span class="memberNameLink"><a href="../JsonContentAssert.html#isStrictlyEqualToJson-java.lang.String-java.lang.Class-">isStrictlyEqualToJson</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;resourceLoadClass)</code>
+<div class="block">Verifies that the actual value is <code>strictly</code> equal to
+the specified JSON resource.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="JsonContentAssert.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../JsonContentAssert.html" title="class in org.springframework.boot.test.json">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../../../../../../overview-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Ftest%252Fjson%252Fclass-use%252FJsonContentAssert.html" target="_top">Frames</a></li>
+<li><a href="JsonContentAssert.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d200e86fac00cf3","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

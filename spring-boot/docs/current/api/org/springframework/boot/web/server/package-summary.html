@@ -1,0 +1,352 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>org.springframework.boot.web.server (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="org.springframework.boot.web.server (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="package-summary.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../reactive/server/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="../servlet/package-summary.html">Next&nbsp;Package</a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fweb%252Fserver%252Fpackage-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+<div class="header">
+<h1 title="Package" class="title">Package&nbsp;org.springframework.boot.web.server</h1>
+<div class="docSummary">
+<div class="block">Support for embedded web servers.</div>
+</div>
+<p>See:&nbsp;<a href="package-summary.html#package.description">Description</a></p>
+</div>
+<div class="contentContainer">
+<ul class="blockList">
+<li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Interface Summary table, listing interfaces, and an explanation">
+<caption><span>Interface Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurableWebServerFactory.html" title="interface in org.springframework.boot.web.server">ConfigurableWebServerFactory</a></td>
+<td class="colLast">
+<div class="block">A configurable <a href="WebServerFactory.html" title="interface in org.springframework.boot.web.server"><code>WebServerFactory</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ErrorPageRegistrar.html" title="interface in org.springframework.boot.web.server">ErrorPageRegistrar</a></td>
+<td class="colLast">
+<div class="block">Interface to be implemented by types that register <a href="ErrorPage.html" title="class in org.springframework.boot.web.server"><code>ErrorPages</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ErrorPageRegistry.html" title="interface in org.springframework.boot.web.server">ErrorPageRegistry</a></td>
+<td class="colLast">
+<div class="block">Interface for a registry that holds <a href="ErrorPage.html" title="class in org.springframework.boot.web.server"><code>ErrorPages</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="GracefulShutdownCallback.html" title="interface in org.springframework.boot.web.server">GracefulShutdownCallback</a></td>
+<td class="colLast">
+<div class="block">A callback for the result of a graceful shutdown request.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="SslStoreProvider.html" title="interface in org.springframework.boot.web.server">SslStoreProvider</a></td>
+<td class="colLast">
+<div class="block">Interface to provide SSL key stores for an <a href="WebServer.html" title="interface in org.springframework.boot.web.server"><code>WebServer</code></a> to use.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="WebServer.html" title="interface in org.springframework.boot.web.server">WebServer</a></td>
+<td class="colLast">
+<div class="block">Simple interface that represents a fully configured web server (for example Tomcat,
+Jetty, Netty).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="WebServerFactory.html" title="interface in org.springframework.boot.web.server">WebServerFactory</a></td>
+<td class="colLast">
+<div class="block">Tagging interface for factories that create a <a href="WebServer.html" title="interface in org.springframework.boot.web.server"><code>WebServer</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="WebServerFactoryCustomizer.html" title="interface in org.springframework.boot.web.server">WebServerFactoryCustomizer</a>&lt;T extends <a href="WebServerFactory.html" title="interface in org.springframework.boot.web.server">WebServerFactory</a>&gt;</td>
+<td class="colLast">
+<div class="block">Strategy interface for customizing <a href="WebServerFactory.html" title="interface in org.springframework.boot.web.server"><code>web server factories</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Class Summary table, listing classes, and an explanation">
+<caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="AbstractConfigurableWebServerFactory.html" title="class in org.springframework.boot.web.server">AbstractConfigurableWebServerFactory</a></td>
+<td class="colLast">
+<div class="block">Abstract base class for <a href="ConfigurableWebServerFactory.html" title="interface in org.springframework.boot.web.server"><code>ConfigurableWebServerFactory</code></a> implementations.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="Compression.html" title="class in org.springframework.boot.web.server">Compression</a></td>
+<td class="colLast">
+<div class="block">Simple server-independent abstraction for compression configuration.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="Cookie.html" title="class in org.springframework.boot.web.server">Cookie</a></td>
+<td class="colLast">
+<div class="block">Cookie properties.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ErrorPage.html" title="class in org.springframework.boot.web.server">ErrorPage</a></td>
+<td class="colLast">
+<div class="block">Simple server-independent abstraction for error pages.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ErrorPageRegistrarBeanPostProcessor.html" title="class in org.springframework.boot.web.server">ErrorPageRegistrarBeanPostProcessor</a></td>
+<td class="colLast">
+<div class="block"><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/beans/factory/config/BeanPostProcessor.html?is-external=true" title="class or interface in org.springframework.beans.factory.config"><code>BeanPostProcessor</code></a> that applies all <a href="ErrorPageRegistrar.html" title="interface in org.springframework.boot.web.server"><code>ErrorPageRegistrar</code></a>s from the bean
+factory to <a href="ErrorPageRegistry.html" title="interface in org.springframework.boot.web.server"><code>ErrorPageRegistry</code></a> beans.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="Http2.html" title="class in org.springframework.boot.web.server">Http2</a></td>
+<td class="colLast">
+<div class="block">Simple server-independent abstraction for HTTP/2 configuration.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="MimeMappings.html" title="class in org.springframework.boot.web.server">MimeMappings</a></td>
+<td class="colLast">
+<div class="block">Simple server-independent abstraction for mime mappings.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="MimeMappings.Mapping.html" title="class in org.springframework.boot.web.server">MimeMappings.Mapping</a></td>
+<td class="colLast">
+<div class="block">A single mime mapping.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="Ssl.html" title="class in org.springframework.boot.web.server">Ssl</a></td>
+<td class="colLast">
+<div class="block">Simple server-independent abstraction for SSL configuration.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="SslConfigurationValidator.html" title="class in org.springframework.boot.web.server">SslConfigurationValidator</a></td>
+<td class="colLast">
+<div class="block">Provides utilities around SSL.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="WebServerFactoryCustomizerBeanPostProcessor.html" title="class in org.springframework.boot.web.server">WebServerFactoryCustomizerBeanPostProcessor</a></td>
+<td class="colLast">
+<div class="block"><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/beans/factory/config/BeanPostProcessor.html?is-external=true" title="class or interface in org.springframework.beans.factory.config"><code>BeanPostProcessor</code></a> that applies all <a href="WebServerFactoryCustomizer.html" title="interface in org.springframework.boot.web.server"><code>WebServerFactoryCustomizer</code></a> beans
+from the bean factory to <a href="WebServerFactory.html" title="interface in org.springframework.boot.web.server"><code>WebServerFactory</code></a> beans.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Enum Summary table, listing enums, and an explanation">
+<caption><span>Enum Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Enum</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="Cookie.SameSite.html" title="enum in org.springframework.boot.web.server">Cookie.SameSite</a></td>
+<td class="colLast">
+<div class="block">SameSite values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="GracefulShutdownResult.html" title="enum in org.springframework.boot.web.server">GracefulShutdownResult</a></td>
+<td class="colLast">
+<div class="block">The result of a graceful shutdown request.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="Shutdown.html" title="enum in org.springframework.boot.web.server">Shutdown</a></td>
+<td class="colLast">
+<div class="block">Configuration for shutting down a <a href="WebServer.html" title="interface in org.springframework.boot.web.server"><code>WebServer</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="Ssl.ClientAuth.html" title="enum in org.springframework.boot.web.server">Ssl.ClientAuth</a></td>
+<td class="colLast">
+<div class="block">Client authentication types.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Exception Summary table, listing exceptions, and an explanation">
+<caption><span>Exception Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Exception</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="PortInUseException.html" title="class in org.springframework.boot.web.server">PortInUseException</a></td>
+<td class="colLast">
+<div class="block">A <code>PortInUseException</code> is thrown when a web server fails to start due to a port
+already being in use.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="WebServerException.html" title="class in org.springframework.boot.web.server">WebServerException</a></td>
+<td class="colLast">
+<div class="block">Exceptions thrown by a web server.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Annotation Types Summary table, listing annotation types, and an explanation">
+<caption><span>Annotation Types Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Annotation Type</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="LocalServerPort.html" title="annotation in org.springframework.boot.web.server">LocalServerPort</a></td>
+<td class="colLast">
+<div class="block">Annotation at the field or method/constructor parameter level that injects the HTTP
+port that got allocated at runtime.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<a name="package.description">
+
+</a>
+<h2 title="Package org.springframework.boot.web.server Description">Package org.springframework.boot.web.server Description</h2>
+<div class="block">Support for embedded web servers.</div>
+</div>
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="package-summary.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../reactive/server/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="../servlet/package-summary.html">Next&nbsp;Package</a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fweb%252Fserver%252Fpackage-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1fdda00d9d7c65","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

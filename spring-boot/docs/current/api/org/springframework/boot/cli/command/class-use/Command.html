@@ -1,0 +1,535 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>Uses of Interface org.springframework.boot.cli.command.Command (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="Uses of Interface org.springframework.boot.cli.command.Command (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="Command.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../Command.html" title="interface in org.springframework.boot.cli.command">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../../../../../../overview-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fcli%252Fcommand%252Fclass-use%252FCommand.html" target="_top">Frames</a></li>
+<li><a href="Command.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+<div class="header">
+<h2 title="Uses of Interface org.springframework.boot.cli.command.Command" class="title">Uses of Interface<br>org.springframework.boot.cli.command.Command</h2>
+</div>
+<div class="classUseContainer">
+<ul class="blockList">
+<li class="blockList">
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing packages, and an explanation">
+<caption><span>Packages that use <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Package</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="Command.html#org.springframework.boot.cli">org.springframework.boot.cli</a></td>
+<td class="colLast">
+<div class="block">Main entry point of the Spring Boot CLI.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="Command.html#org.springframework.boot.cli.command">org.springframework.boot.cli.command</a></td>
+<td class="colLast">
+<div class="block">Command infrastructure for the CLI.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="Command.html#org.springframework.boot.cli.command.archive">org.springframework.boot.cli.command.archive</a></td>
+<td class="colLast">
+<div class="block">CLI commands for creating jars and wars.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="Command.html#org.springframework.boot.cli.command.core">org.springframework.boot.cli.command.core</a></td>
+<td class="colLast">
+<div class="block">Core CLI commands.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="Command.html#org.springframework.boot.cli.command.encodepassword">org.springframework.boot.cli.command.encodepassword</a></td>
+<td class="colLast">
+<div class="block">CLI command for password encoding.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="Command.html#org.springframework.boot.cli.command.grab">org.springframework.boot.cli.command.grab</a></td>
+<td class="colLast">
+<div class="block">CLI command for grabbing dependencies.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="Command.html#org.springframework.boot.cli.command.init">org.springframework.boot.cli.command.init</a></td>
+<td class="colLast">
+<div class="block">CLI command for initializing a new application using Spring Initializr.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="Command.html#org.springframework.boot.cli.command.install">org.springframework.boot.cli.command.install</a></td>
+<td class="colLast">
+<div class="block">CLI commands for installing and uninstalling CLI dependencies.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="Command.html#org.springframework.boot.cli.command.run">org.springframework.boot.cli.command.run</a></td>
+<td class="colLast">
+<div class="block">Classes for running CLI applications.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="Command.html#org.springframework.boot.cli.command.shell">org.springframework.boot.cli.command.shell</a></td>
+<td class="colLast">
+<div class="block">Classes for running a nested shell in the CLI.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.cli">
+
+</a>
+<h3>Uses of <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a> in <a href="../../package-summary.html">org.springframework.boot.cli</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../package-summary.html">org.springframework.boot.cli</a> that return types with arguments of type <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">DefaultCommandFactory.</span><code><span class="memberNameLink"><a href="../../DefaultCommandFactory.html#getCommands--">getCommands</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.cli.command">
+
+</a>
+<h3>Uses of <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a> in <a href="../package-summary.html">org.springframework.boot.cli.command</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../package-summary.html">org.springframework.boot.cli.command</a> that implement <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../AbstractCommand.html" title="class in org.springframework.boot.cli.command">AbstractCommand</a></span></code>
+<div class="block">Abstract <a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a> implementation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../OptionParsingCommand.html" title="class in org.springframework.boot.cli.command">OptionParsingCommand</a></span></code>
+<div class="block">Base class for a <a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a> that parse options using an <a href="../options/OptionHandler.html" title="class in org.springframework.boot.cli.command.options"><code>OptionHandler</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../package-summary.html">org.springframework.boot.cli.command</a> that return <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CommandRunner.</span><code><span class="memberNameLink"><a href="../CommandRunner.html#findCommand-java.lang.String-">findCommand</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
+<div class="block">Find a command by name.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../package-summary.html">org.springframework.boot.cli.command</a> that return types with arguments of type <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">CommandFactory.</span><code><span class="memberNameLink"><a href="../CommandFactory.html#getCommands--">getCommands</a></span>()</code>
+<div class="block">Returns the CLI <a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a>s.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">CommandRunner.</span><code><span class="memberNameLink"><a href="../CommandRunner.html#getCommands--">getCommands</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;<a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">CommandRunner.</span><code><span class="memberNameLink"><a href="../CommandRunner.html#iterator--">iterator</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../package-summary.html">org.springframework.boot.cli.command</a> with parameters of type <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">CommandRunner.</span><code><span class="memberNameLink"><a href="../CommandRunner.html#addCommand-org.springframework.boot.cli.command.Command-">addCommand</a></span>(<a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a>&nbsp;command)</code>
+<div class="block">Add the specified command.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><span class="typeNameLabel">CommandRunner.</span><code><span class="memberNameLink"><a href="../CommandRunner.html#afterRun-org.springframework.boot.cli.command.Command-">afterRun</a></span>(<a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a>&nbsp;command)</code>
+<div class="block">Subclass hook called after a command has run.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><span class="typeNameLabel">CommandRunner.</span><code><span class="memberNameLink"><a href="../CommandRunner.html#beforeRun-org.springframework.boot.cli.command.Command-">beforeRun</a></span>(<a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a>&nbsp;command)</code>
+<div class="block">Subclass hook called before a command is run.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">CommandRunner.</span><code><span class="memberNameLink"><a href="../CommandRunner.html#isOptionCommand-org.springframework.boot.cli.command.Command-">isOptionCommand</a></span>(<a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a>&nbsp;command)</code>
+<div class="block">Returns if the specified command is an option command.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Method parameters in <a href="../package-summary.html">org.springframework.boot.cli.command</a> with type arguments of type <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">CommandRunner.</span><code><span class="memberNameLink"><a href="../CommandRunner.html#addCommands-java.lang.Iterable-">addCommands</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a>&gt;&nbsp;commands)</code>
+<div class="block">Add the specified commands.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.cli.command.archive">
+
+</a>
+<h3>Uses of <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a> in <a href="../archive/package-summary.html">org.springframework.boot.cli.command.archive</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../archive/package-summary.html">org.springframework.boot.cli.command.archive</a> that implement <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../archive/JarCommand.html" title="class in org.springframework.boot.cli.command.archive">JarCommand</a></span></code>
+<div class="block"><a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a> to create a self-contained executable jar file from a CLI application.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../archive/WarCommand.html" title="class in org.springframework.boot.cli.command.archive">WarCommand</a></span></code>
+<div class="block"><a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a> to create a self-contained executable jar file from a CLI application.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.cli.command.core">
+
+</a>
+<h3>Uses of <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a> in <a href="../core/package-summary.html">org.springframework.boot.cli.command.core</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../core/package-summary.html">org.springframework.boot.cli.command.core</a> that implement <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../core/HelpCommand.html" title="class in org.springframework.boot.cli.command.core">HelpCommand</a></span></code>
+<div class="block">Internal <a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a> used for 'help' requests.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../core/HintCommand.html" title="class in org.springframework.boot.cli.command.core">HintCommand</a></span></code>
+<div class="block">Internal <a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a> to provide hints for shell auto-completion.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../core/VersionCommand.html" title="class in org.springframework.boot.cli.command.core">VersionCommand</a></span></code>
+<div class="block"><a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a> to display the 'version' number.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.cli.command.encodepassword">
+
+</a>
+<h3>Uses of <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a> in <a href="../encodepassword/package-summary.html">org.springframework.boot.cli.command.encodepassword</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../encodepassword/package-summary.html">org.springframework.boot.cli.command.encodepassword</a> that implement <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../encodepassword/EncodePasswordCommand.html" title="class in org.springframework.boot.cli.command.encodepassword">EncodePasswordCommand</a></span></code>
+<div class="block"><a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a> to encode passwords for use with Spring Security.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.cli.command.grab">
+
+</a>
+<h3>Uses of <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a> in <a href="../grab/package-summary.html">org.springframework.boot.cli.command.grab</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../grab/package-summary.html">org.springframework.boot.cli.command.grab</a> that implement <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../grab/GrabCommand.html" title="class in org.springframework.boot.cli.command.grab">GrabCommand</a></span></code>
+<div class="block"><a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a> to grab the dependencies of one or more Groovy scripts.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.cli.command.init">
+
+</a>
+<h3>Uses of <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a> in <a href="../init/package-summary.html">org.springframework.boot.cli.command.init</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../init/package-summary.html">org.springframework.boot.cli.command.init</a> that implement <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../init/InitCommand.html" title="class in org.springframework.boot.cli.command.init">InitCommand</a></span></code>
+<div class="block"><a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a> that initializes a project using Spring initializr.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.cli.command.install">
+
+</a>
+<h3>Uses of <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a> in <a href="../install/package-summary.html">org.springframework.boot.cli.command.install</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../install/package-summary.html">org.springframework.boot.cli.command.install</a> that implement <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../install/InstallCommand.html" title="class in org.springframework.boot.cli.command.install">InstallCommand</a></span></code>
+<div class="block"><a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a> to install additional dependencies into the CLI.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../install/UninstallCommand.html" title="class in org.springframework.boot.cli.command.install">UninstallCommand</a></span></code>
+<div class="block"><a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a> to uninstall dependencies from the CLI's lib/ext directory.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.cli.command.run">
+
+</a>
+<h3>Uses of <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a> in <a href="../run/package-summary.html">org.springframework.boot.cli.command.run</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../run/package-summary.html">org.springframework.boot.cli.command.run</a> that implement <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../run/RunCommand.html" title="class in org.springframework.boot.cli.command.run">RunCommand</a></span></code>
+<div class="block"><a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a> to 'run' a groovy script or scripts.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.cli.command.shell">
+
+</a>
+<h3>Uses of <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a> in <a href="../shell/package-summary.html">org.springframework.boot.cli.command.shell</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../shell/package-summary.html">org.springframework.boot.cli.command.shell</a> that implement <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../shell/PromptCommand.html" title="class in org.springframework.boot.cli.command.shell">PromptCommand</a></span></code>
+<div class="block"><a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a> to change the <a href="../shell/Shell.html" title="class in org.springframework.boot.cli.command.shell"><code>Shell</code></a> prompt.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../shell/ShellCommand.html" title="class in org.springframework.boot.cli.command.shell">ShellCommand</a></span></code>
+<div class="block"><a href="../Command.html" title="interface in org.springframework.boot.cli.command"><code>Command</code></a> to start a nested REPL shell.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructor parameters in <a href="../shell/package-summary.html">org.springframework.boot.cli.command.shell</a> with type arguments of type <a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../shell/CommandCompleter.html#CommandCompleter-jline.console.ConsoleReader-jline.console.completer.ArgumentCompleter.ArgumentDelimiter-java.lang.Iterable-">CommandCompleter</a></span>(jline.console.ConsoleReader&nbsp;consoleReader,
+jline.console.completer.ArgumentCompleter.ArgumentDelimiter&nbsp;argumentDelimiter,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../Command.html" title="interface in org.springframework.boot.cli.command">Command</a>&gt;&nbsp;commands)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="Command.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../Command.html" title="interface in org.springframework.boot.cli.command">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../../../../../../overview-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fcli%252Fcommand%252Fclass-use%252FCommand.html" target="_top">Frames</a></li>
+<li><a href="Command.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1ff0682ca07c65","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

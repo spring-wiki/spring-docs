@@ -1,0 +1,8 @@
+User-agent: *
+crawl-delay: 1
+
+User-agent: *
+Disallow: /autorepo/
+
+Sitemap: https://docs.spring.io/sitemap_index.xml
+

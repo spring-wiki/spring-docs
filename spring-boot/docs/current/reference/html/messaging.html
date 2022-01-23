@@ -1,0 +1,2334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.12">
+<title>Messaging</title>
+<link rel="stylesheet" href="css/site.css">
+<script src="js/setup.js"></script><script defer src="js/site.js"></script>
+<script type="application/json" id="anchor-rewrite">
+{
+"actuator-properties":"application-properties.actuator",
+"auto-configuration-classes-from-actuator":"auto-configuration-classes.actuator",
+"auto-configuration-classes-from-autoconfigure-module":"auto-configuration-classes.core",
+"boot-documentation":"documentation",
+"boot-documentation-about":"documentation.about",
+"boot-documentation-advanced":"documentation.advanced",
+"boot-documentation-first-steps":"documentation.first-steps",
+"boot-documentation-getting-help":"documentation.getting-help",
+"boot-documentation-learning":"documentation.features",
+"boot-documentation-production":"documentation.actuator",
+"boot-documentation-upgrading":"documentation.upgrading",
+"boot-documentation-workingwith":"documentation.using",
+"boot-features":"features",
+"boot-features-activemq":"features.messaging.jms.activemq",
+"boot-features-adding-active-profiles":"features.profiles.adding-active-profiles",
+"boot-features-amqp":"features.messaging.amqp",
+"boot-features-application-admin":"features.spring-application.admin",
+"boot-features-application-arguments":"features.spring-application.application-arguments",
+"boot-features-application-availability":"features.spring-application.application-availability",
+"boot-features-application-availability-liveness-state":"features.spring-application.application-availability.liveness",
+"boot-features-application-availability-managing":"features.spring-application.application-availability.managing",
+"boot-features-application-availability-readiness-state":"features.spring-application.application-availability.readiness",
+"boot-features-application-events-and-listeners":"features.spring-application.application-events-and-listeners",
+"boot-features-application-exit":"features.spring-application.application-exit",
+"boot-features-application-startup-tracking":"features.spring-application.startup-tracking",
+"boot-features-artemis":"features.messaging.jms.artemis",
+"boot-features-banner":"features.spring-application.banner",
+"boot-features-bean-conditions":"features.developing-auto-configuration.condition-annotations.bean-conditions",
+"boot-features-caching":"features.caching",
+"boot-features-caching-provider":"features.caching.provider",
+"boot-features-caching-provider-caffeine":"features.caching.provider.caffeine",
+"boot-features-caching-provider-couchbase":"features.caching.provider.couchbase",
+"boot-features-caching-provider-ehcache2":"features.caching.provider.ehcache2",
+"boot-features-caching-provider-generic":"features.caching.provider.generic",
+"boot-features-caching-provider-hazelcast":"features.caching.provider.hazelcast",
+"boot-features-caching-provider-infinispan":"features.caching.provider.infinispan",
+"boot-features-caching-provider-jcache":"features.caching.provider.jcache",
+"boot-features-caching-provider-none":"features.caching.provider.none",
+"boot-features-caching-provider-redis":"features.caching.provider.redis",
+"boot-features-caching-provider-simple":"features.caching.provider.simple",
+"boot-features-cassandra":"features.nosql.cassandra",
+"boot-features-class-conditions":"features.developing-auto-configuration.condition-annotations.class-conditions",
+"boot-features-command-line-runner":"features.spring-application.command-line-runner",
+"boot-features-condition-annotations":"features.developing-auto-configuration.condition-annotations",
+"boot-features-configfileapplicationcontextinitializer-test-utility":"features.testing.utilities.config-data-application-context-initializer",
+"boot-features-configure-datasource":"features.sql.datasource",
+"boot-features-connect-to-production-database":"features.sql.datasource.production",
+"boot-features-connect-to-production-database-configuration":"features.sql.datasource.configuration",
+"boot-features-connect-to-production-database-connection-pool":"features.sql.datasource.connection-pool",
+"boot-features-connecting-to-a-jndi-datasource":"features.sql.datasource.jndi",
+"boot-features-connecting-to-cassandra":"features.nosql.cassandra.connecting",
+"boot-features-connecting-to-couchbase":"features.nosql.couchbase.connecting",
+"boot-features-connecting-to-elasticsearch-reactive-rest":"features.nosql.elasticsearch.connecting-using-reactive-rest",
+"boot-features-connecting-to-elasticsearch-rest":"features.nosql.elasticsearch.connecting-using-rest",
+"boot-features-connecting-to-elasticsearch-spring-data":"features.nosql.elasticsearch.connecting-using-spring-data",
+"boot-features-connecting-to-influxdb":"features.nosql.influxdb.connecting",
+"boot-features-connecting-to-mongodb":"features.nosql.mongodb.connecting",
+"boot-features-connecting-to-neo4j":"features.nosql.neo4j.connecting",
+"boot-features-connecting-to-redis":"features.nosql.redis.connecting",
+"boot-features-connecting-to-solr":"features.nosql.solr.connecting",
+"boot-features-container-images":"features.container-images",
+"boot-features-container-images-building":"features.container-images.building",
+"boot-features-container-images-buildpacks":"features.container-images.building.buildpacks",
+"boot-features-container-images-docker":"features.container-images.building.dockerfiles",
+"boot-features-cors":"features.developing-web-applications.spring-mvc.cors",
+"boot-features-couchbase":"features.nosql.couchbase",
+"boot-features-creating-and-dropping-jpa-databases":"features.sql.jpa-and-spring-data.creating-and-dropping",
+"boot-features-custom-log-configuration":"features.logging.custom-log-configuration",
+"boot-features-custom-log-groups":"features.logging.log-groups",
+"boot-features-custom-log-levels":"features.logging.log-levels",
+"boot-features-custom-starter":"features.developing-auto-configuration.custom-starter",
+"boot-features-custom-starter-configuration-keys":"features.developing-auto-configuration.custom-starter.configuration-keys",
+"boot-features-custom-starter-module-autoconfigure":"features.developing-auto-configuration.custom-starter.autoconfigure-module",
+"boot-features-custom-starter-module-starter":"features.developing-auto-configuration.custom-starter.starter-module",
+"boot-features-custom-starter-naming":"features.developing-auto-configuration.custom-starter.naming",
+"boot-features-customizing-configurableservletwebserverfactory-directly":"features.developing-web-applications.embedded-container.customizing.direct",
+"boot-features-customizing-embedded-containers":"features.developing-web-applications.embedded-container.customizing",
+"boot-features-customizing-spring-application":"features.spring-application.customizing-spring-application",
+"boot-features-data-jdbc":"features.sql.jdbc",
+"boot-features-developing-auto-configuration":"features.developing-auto-configuration",
+"boot-features-developing-web-applications":"features.developing-web-applications",
+"boot-features-elasticsearch":"features.nosql.elasticsearch",
+"boot-features-email":"features.email",
+"boot-features-embedded-container":"features.developing-web-applications.embedded-container",
+"boot-features-embedded-container-application-context":"features.developing-web-applications.embedded-container.application-context",
+"boot-features-embedded-container-context-initializer":"features.developing-web-applications.embedded-container.context-initializer",
+"boot-features-embedded-container-servlets-filters-listeners":"features.developing-web-applications.embedded-container.servlets-filters-listeners",
+"boot-features-embedded-container-servlets-filters-listeners-beans":"features.developing-web-applications.embedded-container.servlets-filters-listeners.beans",
+"boot-features-embedded-container-servlets-filters-listeners-scanning":"features.developing-web-applications.embedded-container.context-initializer.scanning",
+"boot-features-embedded-database-support":"features.sql.datasource.embedded",
+"boot-features-embedded-kafka":"features.messaging.kafka.embedded",
+"boot-features-encrypting-properties":"features.external-config.encrypting",
+"boot-features-entity-classes":"features.sql.jpa-and-spring-data.entity-classes",
+"boot-features-error-handling":"features.developing-web-applications.spring-mvc.error-handling",
+"boot-features-error-handling-custom-error-pages":"features.developing-web-applications.spring-mvc.error-handling.error-pages",
+"boot-features-error-handling-mapping-error-pages-without-mvc":"features.developing-web-applications.spring-mvc.error-handling.error-pages-without-spring-mvc",
+"boot-features-error-handling-war-deployment":"features.developing-web-applications.spring-mvc.error-handling.in-a-war-deployment",
+"boot-features-external-config":"features.external-config",
+"boot-features-external-config-3rd-party-configuration":"features.external-config.typesafe-configuration-properties.third-party-configuration",
+"boot-features-external-config-application-json":"features.external-config.application-json",
+"boot-features-external-config-application-property-files":"features.external-config.files",
+"boot-features-external-config-command-line-args":"features.external-config.command-line-args",
+"boot-features-external-config-complex-type-merge":"features.external-config.typesafe-configuration-properties.merging-complex-types",
+"boot-features-external-config-constructor-binding":"features.external-config.typesafe-configuration-properties.constructor-binding",
+"boot-features-external-config-conversion":"features.external-config.typesafe-configuration-properties.conversion",
+"boot-features-external-config-conversion-datasize":"features.external-config.typesafe-configuration-properties.conversion.data-sizes",
+"boot-features-external-config-conversion-duration":"features.external-config.typesafe-configuration-properties.conversion.durations",
+"boot-features-external-config-conversion-period":"features.external-config.typesafe-configuration-properties.conversion.periods",
+"boot-features-external-config-enabling":"features.external-config.typesafe-configuration-properties.enabling-annotated-types",
+"boot-features-external-config-exposing-yaml-to-spring":"features.external-config.yaml.directly-loading",
+"boot-features-external-config-file-activation-properties":"features.external-config.files.activation-properties",
+"boot-features-external-config-files":"features.external-config.files",
+"boot-features-external-config-files-configtree":"features.external-config.files.configtree",
+"boot-features-external-config-files-importing":"features.external-config.files.importing",
+"boot-features-external-config-files-importing-extensionless":"features.external-config.file.importing-extensionless",
+"boot-features-external-config-files-multi-document":"features.external-config.files.multi-document",
+"boot-features-external-config-files-profile-specific":"features.external-config.files.profile-specific",
+"boot-features-external-config-files-wildcards":"features.external-config.files.wildcard-locations",
+"boot-features-external-config-java-bean-binding":"features.external-config.typesafe-configuration-properties.java-bean-binding",
+"boot-features-external-config-loading-yaml":"features.external-config.yaml.directly-loading",
+"boot-features-external-config-optional-prefix":"features.external-config.files.optional-prefix",
+"boot-features-external-config-placeholders-in-properties":"features.external-config.files.property-placeholders",
+"boot-features-external-config-random-values":"features.external-config.random-values",
+"boot-features-external-config-relaxed-binding":"features.external-config.typesafe-configuration-properties.relaxed-binding",
+"boot-features-external-config-relaxed-binding-from-environment-variables":"features.external-config.typesafe-configuration-properties.relaxed-binding.environment-variables",
+"boot-features-external-config-relaxed-binding-maps":"features.external-config.typesafe-configuration-properties.relaxed-binding.maps",
+"boot-features-external-config-system-environment":"features.external-config.system-environment",
+"boot-features-external-config-typesafe-configuration-properties":"features.external-config.typesafe-configuration-properties",
+"boot-features-external-config-using":"features.external-config.typesafe-configuration-properties.using-annotated-types",
+"boot-features-external-config-validation":"features.external-config.typesafe-configuration-properties.validation",
+"boot-features-external-config-vs-value":"features.external-config.typesafe-configuration-properties.vs-value-annotation",
+"boot-features-external-config-yaml":"features.external-config.yaml",
+"boot-features-external-config-yaml-to-properties":"features.external-config.yaml.mapping-to-properties",
+"boot-features-fluent-builder-api":"features.spring-application.fluent-builder-api",
+"boot-features-graceful-shutdown":"features.graceful-shutdown",
+"boot-features-hazelcast":"features.hazelcast",
+"boot-features-influxdb":"features.nosql.influxdb",
+"boot-features-integration":"features.spring-integration",
+"boot-features-internationalization":"features.internationalization",
+"boot-features-jersey":"features.developing-web-applications.jersey",
+"boot-features-jms":"features.messaging.jms",
+"boot-features-jms-jndi":"features.messaging.jms.jndi",
+"boot-features-jmx":"features.jmx",
+"boot-features-jooq":"features.sql.jooq",
+"boot-features-jooq-codegen":"features.sql.jooq.codegen",
+"boot-features-jooq-customizing":"features.sql.jooq.customizing",
+"boot-features-jooq-dslcontext":"features.sql.jooq.dslcontext",
+"boot-features-jooq-sqldialect":"features.sql.jooq.sqldialect",
+"boot-features-jpa-and-spring-data":"features.sql.jpa-and-spring-data",
+"boot-features-jpa-in-web-environment":"features.sql.jpa-and-spring-data.open-entity-manager-in-view",
+"boot-features-json":"features.json",
+"boot-features-json-components":"features.developing-web-applications.spring-mvc.json",
+"boot-features-json-gson":"features.json.gson",
+"boot-features-json-jackson":"features.json.jackson",
+"boot-features-json-json-b":"features.json.json-b",
+"boot-features-jsp-limitations":"features.developing-web-applications.embedded-container.jsp-limitations",
+"boot-features-jta":"features.jta",
+"boot-features-jta-atomikos":"features.jta.atomikos",
+"boot-features-jta-javaee":"features.jta.javaee",
+"boot-features-jta-mixed-jms":"features.jta.mixing-xa-and-non-xa-connections",
+"boot-features-jta-supporting-alternative-embedded":"features.jta.supporting-alternative-embedded-transaction-manager",
+"boot-features-kafka":"features.messaging.kafka",
+"boot-features-kafka-extra-props":"features.messaging.kafka.additional-properties",
+"boot-features-kafka-receiving-a-message":"features.messaging.kafka.receiving",
+"boot-features-kafka-sending-a-message":"features.messaging.kafka.sending",
+"boot-features-kafka-streams":"features.messaging.kafka.streams",
+"boot-features-kotlin":"features.kotlin",
+"boot-features-kotlin-api":"features.kotlin.api",
+"boot-features-kotlin-api-extensions":"features.kotlin.api.extensions",
+"boot-features-kotlin-api-runapplication":"features.kotlin.api.run-application",
+"boot-features-kotlin-configuration-properties":"features.kotlin.configuration-properties",
+"boot-features-kotlin-dependency-management":"features.kotlin.dependency-management",
+"boot-features-kotlin-null-safety":"features.kotlin.null-safety",
+"boot-features-kotlin-requirements":"features.kotlin.requirements",
+"boot-features-kotlin-resources":"features.kotlin.resources",
+"boot-features-kotlin-resources-examples":"features.kotlin.resources.examples",
+"boot-features-kotlin-resources-further-reading":"features.kotlin.resources.further-reading",
+"boot-features-kotlin-testing":"features.kotlin.testing",
+"boot-features-lazy-initialization":"features.spring-application.lazy-initialization",
+"boot-features-ldap":"features.nosql.ldap",
+"boot-features-ldap-connecting":"features.nosql.ldap.connecting",
+"boot-features-ldap-embedded":"features.nosql.ldap.embedded",
+"boot-features-ldap-spring-data-repositories":"features.nosql.ldap.repositories",
+"boot-features-locating-auto-configuration-candidates":"features.developing-auto-configuration.locating-auto-configuration-candidates",
+"boot-features-log-shutdown-hook":"features.logging.shutdown-hook",
+"boot-features-logback-environment-properties":"features.logging.logback-extensions.environment-properties",
+"boot-features-logback-extensions":"features.logging.logback-extensions",
+"boot-features-logback-extensions-profile-specific":"features.logging.logback-extensions.profile-specific",
+"boot-features-logging":"features.logging",
+"boot-features-logging-color-coded-output":"features.logging.console-output.color-coded",
+"boot-features-logging-console-output":"features.logging.console-output",
+"boot-features-logging-file-output":"features.logging.file-output",
+"boot-features-logging-file-rotation":"features.logging.file-rotation",
+"boot-features-logging-format":"features.logging.log-format",
+"boot-features-messaging":"features.messaging",
+"boot-features-mongo-embedded":"features.nosql.mongodb.embedded",
+"boot-features-mongo-template":"features.nosql.mongodb.template",
+"boot-features-mongodb":"features.nosql.mongodb",
+"boot-features-neo4j":"features.nosql.neo4j",
+"boot-features-nosql":"features.nosql",
+"boot-features-output-capture-test-utility":"features.testing.utilities.output-capture",
+"boot-features-profile-specific-configuration":"features.profiles.profile-specific-configuration-files",
+"boot-features-profiles":"features.profiles",
+"boot-features-profiles-groups":"features.profiles.groups",
+"boot-features-programmatic-embedded-container-customization":"features.developing-web-applications.embedded-container.customizing.programmatic",
+"boot-features-programmatically-setting-profiles":"features.profiles.programmatically-setting-profiles",
+"boot-features-property-conditions":"features.developing-auto-configuration.condition-annotations.property-conditions",
+"boot-features-quartz":"features.quartz",
+"boot-features-r2dbc":"features.sql.r2dbc",
+"boot-features-r2dbc-embedded-database":"features.sql.r2dbc.embedded",
+"boot-features-r2dbc-using-database-client":"features.sql.r2dbc.using-database-client",
+"boot-features-rabbitmq":"features.messaging.amqp.rabbitmq",
+"boot-features-reactive-server":"features.developing-web-applications.reactive-server",
+"boot-features-reactive-server-resources":"features.developing-web-applications.reactive-server-resources-configuration",
+"boot-features-redis":"features.nosql.redis",
+"boot-features-resource-conditions":"features.developing-auto-configuration.condition-annotations.resource-conditions",
+"boot-features-rest-templates-test-utility":"features.testing.utilities.test-rest-template",
+"boot-features-resttemplate":"features.resttemplate",
+"boot-features-resttemplate-customization":"features.resttemplate.customization",
+"boot-features-rsocket":"features.rsocket",
+"boot-features-rsocket-messaging":"features.rsocket.messaging",
+"boot-features-rsocket-requester":"features.rsocket.requester",
+"boot-features-rsocket-server-auto-configuration":"features.rsocket.server-auto-configuration",
+"boot-features-rsocket-strategies-auto-configuration":"features.rsocket.strategies-auto-configuration",
+"boot-features-security":"features.security",
+"boot-features-security-actuator":"features.security.actuator",
+"boot-features-security-authorization-server":"features.security.oauth2.authorization-server",
+"boot-features-security-csrf":"features.security.actuator.csrf",
+"boot-features-security-mvc":"features.security.spring-mvc",
+"boot-features-security-oauth2":"features.security.oauth2",
+"boot-features-security-oauth2-client":"features.security.oauth2.client",
+"boot-features-security-oauth2-common-providers":"features.security.oauth2.client.common-providers",
+"boot-features-security-oauth2-server":"features.security.oauth2.server",
+"boot-features-security-saml":"features.security.saml2",
+"boot-features-security-saml2-relying-party":"features.security.saml2.relying-party",
+"boot-features-security-webflux":"features.security.spring-webflux",
+"boot-features-session":"features.spring-session",
+"boot-features-solr":"features.nosql.solr",
+"boot-features-spel-conditions":"features.developing-auto-configuration.condition-annotations.spel-conditions",
+"boot-features-spring-application":"features.spring-application",
+"boot-features-spring-data-cassandra-repositories":"features.nosql.cassandra.repositories",
+"boot-features-spring-data-couchbase-repositories":"features.nosql.couchbase.repositories",
+"boot-features-spring-data-elasticsearch-repositories":"features.nosql.elasticsearch.repositories",
+"boot-features-spring-data-jpa-repositories":"features.sql.jpa-and-spring-data.repositories",
+"boot-features-spring-data-mongo-repositories":"features.nosql.mongodb.repositories",
+"boot-features-spring-data-mongodb-repositories":"features.nosql.mongodb.repositories",
+"boot-features-spring-data-neo4j-repositories":"features.nosql.neo4j.repositories",
+"boot-features-spring-data-r2dbc-repositories":"features.sql.r2dbc.repositories",
+"boot-features-spring-hateoas":"features.developing-web-applications.spring-mvc.spring-hateoas",
+"boot-features-spring-message-codes":"features.developing-web-applications.spring-mvc.message-codes",
+"boot-features-spring-mvc":"features.developing-web-applications.spring-mvc",
+"boot-features-spring-mvc-auto-configuration":"features.developing-web-applications.spring-mvc.auto-configuration",
+"boot-features-spring-mvc-message-converters":"features.developing-web-applications.spring-mvc.message-converters",
+"boot-features-spring-mvc-pathmatch":"features.developing-web-applications.spring-mvc.content-negotiation",
+"boot-features-spring-mvc-static-content":"features.developing-web-applications.spring-mvc.static-content",
+"boot-features-spring-mvc-template-engines":"features.developing-web-applications.spring-mvc.template-engines",
+"boot-features-spring-mvc-web-binding-initializer":"features.developing-web-applications.spring-mvc.binding-initializer",
+"boot-features-spring-mvc-welcome-page":"features.developing-web-applications.spring-mvc.welcome-page",
+"boot-features-sql":"features.sql",
+"boot-features-sql-h2-console":"features.sql.h2-web-console",
+"boot-features-sql-h2-console-custom-path":"features.sql.h2-web-console.custom-path",
+"boot-features-startup-failure":"features.spring-application.startup-failure",
+"boot-features-task-execution-scheduling":"features.task-execution-and-scheduling",
+"boot-features-test-autoconfig":"features.developing-auto-configuration.testing",
+"boot-features-test-autoconfig-overriding-classpath":"features.developing-auto-configuration.testing.overriding-classpath",
+"boot-features-test-autoconfig-simulating-web-context":"features.developing-auto-configuration.testing.simulating-a-web-context",
+"boot-features-test-property-values":"features.testing.utilities.test-property-values",
+"boot-features-test-scope-dependencies":"features.testing.test-scope-dependencies",
+"boot-features-test-utilities":"features.testing.utilities",
+"boot-features-testing":"features.testing",
+"boot-features-testing-spring-applications":"features.testing.spring-applications",
+"boot-features-testing-spring-boot-application-arguments":"features.testing.spring-boot-applications.using-application-arguments",
+"boot-features-testing-spring-boot-applications":"features.testing.spring-boot-applications",
+"boot-features-testing-spring-boot-applications-customizing-web-test-client":"features.testing.spring-boot-applications.customizing-web-test-client",
+"boot-features-testing-spring-boot-applications-detecting-config":"features.testing.spring-boot-applications.detecting-configuration",
+"boot-features-testing-spring-boot-applications-detecting-web-app-type":"features.testing.spring-boot-applications.detecting-web-app-type",
+"boot-features-testing-spring-boot-applications-excluding-config":"features.testing.spring-boot-applications.excluding-configuration",
+"boot-features-testing-spring-boot-applications-jmx":"features.testing.spring-boot-applications.jmx",
+"boot-features-testing-spring-boot-applications-metrics":"features.testing.spring-boot-applications.metrics",
+"boot-features-testing-spring-boot-applications-mocking-beans":"features.testing.spring-boot-applications.mocking-beans",
+"boot-features-testing-spring-boot-applications-testing-auto-configured-additional-auto-config":"features.testing.spring-boot-applications.additional-autoconfiguration-and-slicing",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-cassandra-test":"features.testing.spring-boot-applications.autoconfigured-spring-data-cassandra",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-data-jdbc-test":"features.testing.spring-boot-applications.autoconfigured-spring-data-jdbc",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-jdbc-test":"features.testing.spring-boot-applications.autoconfigured-jdbc",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-jooq-test":"features.testing.spring-boot-applications.autoconfigured-jooq",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-jpa-test":"features.testing.spring-boot-applications.autoconfigured-spring-data-jpa",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-json-tests":"features.testing.spring-boot-applications.json-tests",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-ldap-test":"features.testing.spring-boot-applications.autoconfigured-spring-data-ldap",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-mongo-test":"features.testing.spring-boot-applications.autoconfigured-spring-data-mongodb",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-mvc-tests":"features.testing.spring-boot-applications.spring-mvc-tests",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-neo4j-test":"features.testing.spring-boot-applications.autoconfigured-spring-data-neo4j",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-redis-test":"features.testing.spring-boot-applications.autoconfigured-spring-data-redis",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-rest-client":"features.testing.spring-boot-applications.autoconfigured-rest-client",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-rest-docs":"features.testing.spring-boot-applications.autoconfigured-spring-restdocs",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-rest-docs-mock-mvc":"features.testing.spring-boot-applications.autoconfigured-spring-restdocs.with-mock-mvc",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-rest-docs-rest-assured":"features.testing.spring-boot-applications.autoconfigured-spring-restdocs.with-rest-assured",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-rest-docs-web-test-client":"features.testing.spring-boot-applications.autoconfigured-spring-restdocs.with-web-test-client",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-tests":"features.testing.spring-boot-applications.autoconfigured-tests",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-webflux-tests":"features.testing.spring-boot-applications.spring-webflux-tests",
+"boot-features-testing-spring-boot-applications-testing-autoconfigured-webservices":"features.testing.spring-boot-applications.autoconfigured-webservices",
+"boot-features-testing-spring-boot-applications-testing-user-configuration":"features.testing.spring-boot-applications.user-configuration-and-slicing",
+"boot-features-testing-spring-boot-applications-testing-with-mock-environment":"features.testing.spring-boot-applications.with-mock-environment",
+"boot-features-testing-spring-boot-applications-testing-with-running-server":"features.testing.spring-boot-applications.with-running-server",
+"boot-features-testing-spring-boot-applications-with-spock":"features.testing.spring-boot-applications.spock",
+"boot-features-understanding-auto-configured-beans":"features.developing-auto-configuration.understanding-auto-configured-beans",
+"boot-features-using-amqp-receiving":"features.messaging.amqp.receiving",
+"boot-features-using-amqp-sending":"features.messaging.amqp.sending",
+"boot-features-using-jdbc-template":"features.sql.jdbc-template",
+"boot-features-using-jms-receiving":"features.messaging.jms.receiving",
+"boot-features-using-jms-sending":"features.messaging.jms.sending",
+"boot-features-validation":"features.validation",
+"boot-features-web-application-conditions":"features.developing-auto-configuration.condition-annotations.web-application-conditions",
+"boot-features-web-environment":"features.spring-application.web-environment",
+"boot-features-webclient":"features.webclient",
+"boot-features-webclient-customization":"features.webclient.customization",
+"boot-features-webclient-runtime":"features.webclient.runtime",
+"boot-features-webflux":"features.developing-web-applications.spring-webflux",
+"boot-features-webflux-auto-configuration":"features.developing-web-applications.spring-webflux.auto-configuration",
+"boot-features-webflux-error-handling":"features.developing-web-applications.spring-webflux.error-handling",
+"boot-features-webflux-error-handling-custom-error-pages":"features.developing-web-applications.spring-webflux.error-handling.error-pages",
+"boot-features-webflux-httpcodecs":"features.developing-web-applications.spring-webflux.httpcodecs",
+"boot-features-webflux-static-content":"features.developing-web-applications.spring-webflux.static-content",
+"boot-features-webflux-template-engines":"features.developing-web-applications.spring-webflux.template-engines",
+"boot-features-webflux-web-filters":"features.developing-web-applications.spring-webflux.web-filters",
+"boot-features-webflux-welcome-page":"features.developing-web-applications.spring-webflux.welcome-page",
+"boot-features-webservices":"features.webservices",
+"boot-features-webservices-template":"features.webservices.template",
+"boot-features-websockets":"features.websockets",
+"boot-features-whats-next":"features.whats-next",
+"boot-layering-docker-images":"features.container-images.layering",
+"build-tool-plugins-antlib":"build-tool-plugins.antlib",
+"build-tool-plugins-find-a-main-class":"build-tool-plugins.other-build-systems.finding-main-class",
+"build-tool-plugins-gradle-plugin":"build-tool-plugins.gradle",
+"build-tool-plugins-maven-plugin":"build-tool-plugins.maven",
+"build-tool-plugins-nested-libraries":"build-tool-plugins.other-build-systems.nested-libraries",
+"build-tool-plugins-other-build-systems":"build-tool-plugins.other-build-systems",
+"build-tool-plugins-repackage-implementation":"build-tool-plugins.other-build-systems.example-repackage-implementation",
+"build-tool-plugins-repackaging-archives":"build-tool-plugins.other-build-systems.repackaging-archives",
+"build-tool-plugins-whats-next":"build-tool-plugins.whats-next",
+"cache-properties":"application-properties.cache",
+"cli-automatic-main-method":"cli.using-the-cli.run.automatic-main-method",
+"cli-deduced-grab-annotations":"cli.using-the-cli.run.deduced-grab-annotations",
+"cli-default-grab-deduced-coordinates":"cli.using-the-cli.run.deduced-grab-coordinates",
+"cli-default-grab-deduced-coordinates-custom-dependency-management":"cli.using-the-cli.run.custom-dependency-management",
+"cli-default-import-statements":"cli.using-the-cli.run.default-import-statements",
+"cli-groovy-beans-dsl":"cli.groovy-beans-dsl",
+"cli-init":"cli.using-the-cli.initialize-new-project",
+"cli-install-uninstall":"cli.using-the-cli.extensions",
+"cli-installation":"cli.installation",
+"cli-jar":"cli.using-the-cli.packaging",
+"cli-maven-settings":"cli.maven-setting",
+"cli-multiple-source-files":"cli.using-the-cli.multiple-source-files",
+"cli-run":"cli.using-the-cli.run",
+"cli-shell":"cli.using-the-cli.embedded-shell",
+"cli-using-the-cli":"cli.using-the-cli",
+"cli-whats-next":"cli.whats-next",
+"cloud-deployment":"deployment.cloud",
+"cloud-deployment-aws":"deployment.cloud.aws",
+"cloud-deployment-aws-beanstalk":"deployment.cloud.aws.beanstalk",
+"cloud-deployment-aws-java-se-platform":"deployment.cloud.aws.beanstalk.java-se-platform",
+"cloud-deployment-aws-summary":"deployment.cloud.aws.summary",
+"cloud-deployment-aws-tomcat-platform":"deployment.cloud.aws.beanstalk.tomcat-platform",
+"cloud-deployment-boxfuse":"deployment.cloud.boxfuse",
+"cloud-deployment-cloud-foundry":"deployment.cloud.cloud-foundry",
+"cloud-deployment-cloud-foundry-services":"deployment.cloud.cloud-foundry.binding-to-services",
+"cloud-deployment-gae":"deployment.cloud.google",
+"cloud-deployment-heroku":"deployment.cloud.heroku",
+"cloud-deployment-kubernetes":"deployment.cloud.kubernetes",
+"cloud-deployment-kubernetes-container-lifecycle":"deployment.cloud.kubernetes.container-lifecycle",
+"cloud-deployment-openshift":"deployment.cloud.openshift",
+"common-application-properties":"application-properties",
+"common-application-properties-actuator":"application-properties.actuator",
+"common-application-properties-cache":"application-properties.cache",
+"common-application-properties-core":"application-properties.core",
+"common-application-properties-data":"application-properties.data",
+"common-application-properties-data-migration":"application-properties.data-migration",
+"common-application-properties-devtools":"application-properties.devtools",
+"common-application-properties-integration":"application-properties.integration",
+"common-application-properties-json":"application-properties.json",
+"common-application-properties-mail":"application-properties.mail",
+"common-application-properties-rsocket":"application-properties.rsocket",
+"common-application-properties-security":"application-properties.security",
+"common-application-properties-server":"application-properties.server",
+"common-application-properties-templating":"application-properties.templating",
+"common-application-properties-testing":"application-properties.testing",
+"common-application-properties-transaction":"application-properties.transaction",
+"common-application-properties-web":"application-properties.web",
+"configuration-metadata-additional-metadata":"configuration-metadata.annotation-processor.adding-additional-metadata",
+"configuration-metadata-annotation-processor":"configuration-metadata.annotation-processor",
+"configuration-metadata-annotation-processor-metadata-generation":"configuration-metadata.annotation-processor.automatic-metadata-generation",
+"configuration-metadata-annotation-processor-metadata-generation-nested":"configuration-metadata.annotation-processor.automatic-metadata-generation.nested-properties",
+"configuration-metadata-annotation-processor-setup":"configuration-metadata.annotation-processor.configuring",
+"configuration-metadata-format":"configuration-metadata.format",
+"configuration-metadata-group-attributes":"configuration-metadata.format.group",
+"configuration-metadata-hints-attributes":"configuration-metadata.format.hints",
+"configuration-metadata-property-attributes":"configuration-metadata.format.property",
+"configuration-metadata-providing-manual-hints":"configuration-metadata.manual-hints",
+"configuration-metadata-providing-manual-hints-any":"configuration-metadata.manual-hints.value-providers.any",
+"configuration-metadata-providing-manual-hints-class-reference":"configuration-metadata.manual-hints.value-providers.class-reference",
+"configuration-metadata-providing-manual-hints-handle-as":"configuration-metadata.manual-hints.value-providers.handle-as",
+"configuration-metadata-providing-manual-hints-logger-name":"configuration-metadata.manual-hints.value-providers.logger-name",
+"configuration-metadata-providing-manual-hints-spring-bean-reference":"configuration-metadata.manual-hints.value-providers.spring-bean-reference",
+"configuration-metadata-providing-manual-hints-spring-profile-name":"configuration-metadata.manual-hints.value-providers.spring-profile-name",
+"configuration-metadata-providing-manual-hints-value-hint":"configuration-metadata.manual-hints.value-hint",
+"configuration-metadata-providing-manual-hints-value-providers":"configuration-metadata.manual-hints.value-providers",
+"configuration-metadata-repeated-items":"configuration-metadata.format.repeated-items",
+"configuring-file-system-watcher":"using.devtools.globalsettings.configuring-file-system-watcher",
+"containers-deployment":"deployment.containers",
+"core-properties":"application-properties.core",
+"data-migration-properties":"application-properties.data-migration",
+"data-properties":"application-properties.data",
+"dependency-versions-coordinates":"dependency-versions.coordinates",
+"dependency-versions-properties":"dependency-versions.properties",
+"deployment-initd-service":"deployment.installing.nix-services.init-d",
+"deployment-initd-service-securing":"deployment.installing.nix-services.init-d.securing",
+"deployment-install":"deployment.installing",
+"deployment-install-supported-operating-systems":"deployment.installing.supported-operating-systems",
+"deployment-script-customization":"deployment.installing.nix-services.script-customization",
+"deployment-script-customization-when-it-runs":"deployment.installing.nix-services.script-customization.when-running",
+"deployment-script-customization-when-it-written":"deployment.installing.nix-services.script-customization.when-written",
+"deployment-service":"deployment.installing.nix-services",
+"deployment-systemd-service":"deployment.installing.nix-services.system-d",
+"deployment-whats-next":"deployment.whats-next",
+"deployment-windows":"deployment.installing.windows-services",
+"deployment.containers":"container-images.efficient-images.unpacking",
+"devtools-properties":"application-properties.devtools",
+"executable-jar-alternatives":"executable-jar.alternatives",
+"executable-jar-jar-file-structure":"executable-jar.nested-jars.jar-structure",
+"executable-jar-jarfile":"executable-jar.jarfile-class",
+"executable-jar-jarfile-compatibility":"executable-jar.jarfile-class.compatibility",
+"executable-jar-launcher-manifest":"executable-jar.launching.manifest",
+"executable-jar-launching":"executable-jar.launching",
+"executable-jar-nested-jars":"executable-jar.nested-jars",
+"executable-jar-property-launcher-features":"executable-jar.property-launcher",
+"executable-jar-restrictions":"executable-jar.restrictions",
+"executable-jar-war-file-structure":"executable-jar.nested-jars.war-structure",
+"executable-jar-war-index-files":"executable-jar.nested-jars.index-files",
+"executable-jar-war-index-files-classpath":"executable-jar.nested-jars.classpath-index",
+"executable-jar-war-index-files-layers":"executable-jar.nested-jars.layer-index",
+"features.caching":"io.caching",
+"features.caching.provider":"io.caching.provider",
+"features.caching.provider.caffeine":"io.caching.provider.caffeine",
+"features.caching.provider.couchbase":"io.caching.provider.couchbase",
+"features.caching.provider.ehcache2":"io.caching.provider.ehcache2",
+"features.caching.provider.generic":"io.caching.provider.generic",
+"features.caching.provider.hazelcast":"io.caching.provider.hazelcast",
+"features.caching.provider.infinispan":"io.caching.provider.infinispan",
+"features.caching.provider.jcache":"io.caching.provider.jcache",
+"features.caching.provider.none":"io.caching.provider.none",
+"features.caching.provider.redis":"io.caching.provider.redis",
+"features.caching.provider.simple":"io.caching.provider.simple",
+"features.container-images":"container-images.efficient-images",
+"features.container-images.building":"container-images.efficient-images",
+"features.container-images.building.buildpacks":"container-images.buildpacks",
+"features.container-images.building.dockerfiles":"container-images.dockerfiles",
+"features.container-images.layering":"container-images.efficient-images.layering",
+"features.developing-web-applications":"web",
+"features.developing-web-applications.embedded-container":"web.servlet.embedded-container",
+"features.developing-web-applications.embedded-container.application-context":"web.servlet.embedded-container.application-context",
+"features.developing-web-applications.embedded-container.context-initializer":"web.servlet.embedded-container.context-initializer",
+"features.developing-web-applications.embedded-container.context-initializer.scanning":"web.servlet.embedded-container.context-initializer.scanning",
+"features.developing-web-applications.embedded-container.customizing":"web.servlet.embedded-container.customizing",
+"features.developing-web-applications.embedded-container.customizing.direct":"web.servlet.embedded-container.customizing.direct",
+"features.developing-web-applications.embedded-container.customizing.programmatic":"web.servlet.embedded-container.customizing.programmatic",
+"features.developing-web-applications.embedded-container.jsp-limitations":"web.servlet.embedded-container.jsp-limitations",
+"features.developing-web-applications.embedded-container.servlets-filters-listeners":"web.servlet.embedded-container.servlets-filters-listeners",
+"features.developing-web-applications.embedded-container.servlets-filters-listeners.beans":"web.servlet.embedded-container.servlets-filters-listeners.beans",
+"features.developing-web-applications.jersey":"web.servlet.jersey",
+"features.developing-web-applications.reactive-server":"web.reactive.reactive-server",
+"features.developing-web-applications.reactive-server-resources-configuration":"web.reactive.reactive-server-resources-configuration",
+"features.developing-web-applications.spring-mvc":"web.servlet.spring-mvc",
+"features.developing-web-applications.spring-mvc.auto-configuration":"web.servlet.spring-mvc.auto-configuration",
+"features.developing-web-applications.spring-mvc.binding-initializer":"web.servlet.spring-mvc.binding-initializer",
+"features.developing-web-applications.spring-mvc.content-negotiation":"web.servlet.spring-mvc.content-negotiation",
+"features.developing-web-applications.spring-mvc.cors":"web.servlet.spring-mvc.cors",
+"features.developing-web-applications.spring-mvc.error-handling":"web.servlet.spring-mvc.error-handling",
+"features.developing-web-applications.spring-mvc.error-handling.error-pages":"web.servlet.spring-mvc.error-handling.error-pages",
+"features.developing-web-applications.spring-mvc.error-handling.error-pages-without-spring-mvc":"web.servlet.spring-mvc.error-handling.error-pages-without-spring-mvc",
+"features.developing-web-applications.spring-mvc.error-handling.in-a-war-deployment":"web.servlet.spring-mvc.error-handling.in-a-war-deployment",
+"features.developing-web-applications.spring-mvc.json":"web.servlet.spring-mvc.json",
+"features.developing-web-applications.spring-mvc.message-codes":"web.servlet.spring-mvc.message-codes",
+"features.developing-web-applications.spring-mvc.message-converters":"web.servlet.spring-mvc.message-converters",
+"features.developing-web-applications.spring-mvc.static-content":"web.servlet.spring-mvc.static-content",
+"features.developing-web-applications.spring-mvc.template-engines":"web.servlet.spring-mvc.template-engines",
+"features.developing-web-applications.spring-mvc.welcome-page":"web.servlet.spring-mvc.welcome-page",
+"features.developing-web-applications.spring-webflux":"web.reactive.webflux",
+"features.developing-web-applications.spring-webflux.auto-configuration":"web.reactive.webflux.auto-configuration",
+"features.developing-web-applications.spring-webflux.error-handling":"web.reactive.webflux.error-handling",
+"features.developing-web-applications.spring-webflux.error-pages":"web.reactive.webflux.error-handling.error-pages",
+"features.developing-web-applications.spring-webflux.httpcodecs":"web.reactive.webflux.httpcodecs",
+"features.developing-web-applications.spring-webflux.static-context":"web.reactive.webflux.static-content",
+"features.developing-web-applications.spring-webflux.template-engines":"web.reactive.webflux.template-engines",
+"features.developing-web-applications.spring-webflux.web-filters":"web.reactive.webflux.web-filters",
+"features.developing-web-applications.spring-webflux.welcome-page":"web.reactive.webflux.welcome-page",
+"features.email":"io.email",
+"features.graceful-shutdown":"web.graceful-shutdown",
+"features.jmx":"actuator.jmx",
+"features.jta":"io.jta",
+"features.jta.atomikos":"io.jta.atomikos",
+"features.jta.javaee":"io.jta.javaee",
+"features.jta.mixing-xa-and-non-xa-connections":"io.jta.mixing-xa-and-non-xa-connections",
+"features.jta.supporting-alternative-embedded-transaction-manager":"io.jta.supporting-alternative-embedded-transaction-manager",
+"features.messaging":"messaging",
+"features.messaging.amqp":"messaging.amqp",
+"features.messaging.amqp.rabbit":"messaging.amqp.rabbit",
+"features.messaging.amqp.receiving":"messaging.amqp.receiving",
+"features.messaging.amqp.sending":"messaging.amqp.sending",
+"features.messaging.jms.activemq":"messaging.jms.activemq",
+"features.messaging.jms.artemis":"messaging.jms.artemis",
+"features.messaging.jms.jndi":"messaging.jms.jndi",
+"features.messaging.jms.receiving":"messaging.jms.receiving",
+"features.messaging.jms.sending":"messaging.jms.sending",
+"features.messaging.kafka":"messaging.kafka",
+"features.messaging.kafka.additional-properties":"messaging.kafka.additional-properties",
+"features.messaging.kafka.embedded":"messaging.kafka.embedded",
+"features.messaging.kafka.receiving":"messaging.kafka.receiving",
+"features.messaging.kafka.sending":"messaging.kafka.sending",
+"features.messaging.kafka.streams":"messaging.kafka.streams",
+"features.nosql":"data.nosql",
+"features.nosql.cassandra":"data.nosql.cassandra",
+"features.nosql.cassandra.connecting":"data.nosql.cassandra.connecting",
+"features.nosql.cassandra.repositories":"data.nosql.cassandra.repositories",
+"features.nosql.couchbase":"data.nosql.couchbase",
+"features.nosql.couchbase.connecting":"data.nosql.couchbase.connecting",
+"features.nosql.couchbase.repositories":"data.nosql.couchbase.repositories",
+"features.nosql.elasticsearch":"data.nosql.elasticsearch",
+"features.nosql.elasticsearch.connecting-using-reactive-rest":"data.nosql.elasticsearch.connecting-using-reactive-rest",
+"features.nosql.elasticsearch.connecting-using-rest":"data.nosql.elasticsearch.connecting-using-rest",
+"features.nosql.elasticsearch.connecting-using-spring-data":"data.nosql.elasticsearch.connecting-using-spring-data",
+"features.nosql.elasticsearch.repositories":"data.nosql.elasticsearch.repositories",
+"features.nosql.influxdb":"data.nosql.influxdb",
+"features.nosql.influxdb.connecting":"data.nosql.influxdb.connecting",
+"features.nosql.ldap":"data.nosql.ldap",
+"features.nosql.ldap.connecting":"data.nosql.ldap.connecting",
+"features.nosql.ldap.embedded":"data.nosql.ldap.embedded",
+"features.nosql.ldap.repositories":"data.nosql.ldap.repositories",
+"features.nosql.mongodb":"data.nosql.mongodb",
+"features.nosql.mongodb.connecting":"data.nosql.mongodb.connecting",
+"features.nosql.mongodb.embedded":"data.nosql.mongodb.embedded",
+"features.nosql.mongodb.repositories":"data.nosql.mongodb.repositories",
+"features.nosql.mongodb.template":"data.nosql.mongodb.template",
+"features.nosql.neo4j":"data.nosql.neo4j",
+"features.nosql.neo4j.connecting":"data.nosql.neo4j.connecting",
+"features.nosql.neo4j.repositories":"data.nosql.neo4j.repositories",
+"features.nosql.redis":"data.nosql.redis",
+"features.nosql.redis.connecting":"data.nosql.redis.connecting",
+"features.nosql.solr":"data.nosql.solr",
+"features.nosql.solr.connecting":"data.nosql.solr.connecting",
+"features.quartz":"io.quartz",
+"features.resttemplate":"io.rest-client.resttemplate",
+"features.resttemplate.customization":"io.rest-client.resttemplate.customization",
+"features.rsocket":"messaging.rsocket",
+"features.rsocket.messaging":"messaging.rsocket.messaging",
+"features.rsocket.requester":"messaging.rsocket.requester",
+"features.rsocket.server-auto-configuration":"messaging.rsocket.server-auto-configuration",
+"features.rsocket.strategies-auto-configuration":"messaging.rsocket.strategies-auto-configuration",
+"features.security":"web.security",
+"features.security.actuator":"actuator.endpoints.security",
+"features.security.actuator.csrf":"actuator.endpoints.security.csrf",
+"features.security.authorization-server":"web.security.oauth2.authorization-server",
+"features.security.oauth2":"web.security.oauth2",
+"features.security.oauth2.client":"web.security.oauth2.client",
+"features.security.oauth2.client.common-providers":"web.security.oauth2.client.common-providers",
+"features.security.oauth2.server":"web.security.oauth2.server",
+"features.security.saml2":"web.security.saml2",
+"features.security.saml2.relying-party":"web.security.saml2.relying-party",
+"features.security.spring-mvc":"web.security.spring-mvc",
+"features.security.spring-webflux":"web.security.spring-webflux",
+"features.spring-hateoas":"web.spring-hateoas",
+"features.spring-integration":"messaging.spring-integration",
+"features.spring-session":"web.spring-session",
+"features.sql":"data.sql",
+"features.sql.datasource":"data.sql.datasource",
+"features.sql.datasource.configuration":"data.sql.datasource.configuration",
+"features.sql.datasource.connection-pool":"data.sql.datasource.connection-pool",
+"features.sql.datasource.embedded":"data.sql.datasource.embedded",
+"features.sql.datasource.jndi":"data.sql.datasource.jndi",
+"features.sql.datasource.production":"data.sql.datasource.production",
+"features.sql.h2-web-console":"data.sql.h2-web-console",
+"features.sql.h2-web-console.custom-path":"data.sql.h2-web-console.custom-path",
+"features.sql.jdbc":"data.sql.jdbc",
+"features.sql.jdbc-template":"data.sql.jdbc-template",
+"features.sql.jooq":"data.sql.jooq",
+"features.sql.jooq.codegen":"data.sql.jooq.codegen",
+"features.sql.jooq.customizing":"data.sql.jooq.customizing",
+"features.sql.jooq.dslcontext":"data.sql.jooq.dslcontext",
+"features.sql.jooq.sqldialect":"data.sql.jooq.sqldialect",
+"features.sql.jpa-and-spring-data":"data.sql.jpa-and-spring-data",
+"features.sql.jpa-and-spring-data.creating-and-dropping":"data.sql.jpa-and-spring-data.creating-and-dropping",
+"features.sql.jpa-and-spring-data.entity-classes":"data.sql.jpa-and-spring-data.entity-classes",
+"features.sql.jpa-and-spring-data.envers-repositories":"data.sql.jpa-and-spring-data.envers-repositories",
+"features.sql.jpa-and-spring-data.open-entity-manager-in-view":"data.sql.jpa-and-spring-data.open-entity-manager-in-view",
+"features.sql.jpa-and-spring-data.repositories":"data.sql.jpa-and-spring-data.repositories",
+"features.sql.r2dbc":"data.sql.r2dbc",
+"features.sql.r2dbc.embedded":"data.sql.r2dbc.embedded",
+"features.sql.r2dbc.repositories":"data.sql.r2dbc.repositories",
+"features.sql.r2dbc.using-database-client":"data.sql.r2dbc.using-database-client",
+"features.validation":"io.validation",
+"features.webclient":"io.rest-client.webclient",
+"features.webclient.customization":"io.rest-client.webclient.customization",
+"features.webclient.runtime":"io.rest-client.webclient.runtime",
+"features.webservices":"io.webservices",
+"features.webservices.template":"io.webservices.template",
+"features.websockets":"messaging.websockets",
+"getting-started-cli-command-line-completion":"getting-started.installing.cli.completion",
+"getting-started-cli-example":"getting-started.installing.cli.quick-start",
+"getting-started-first-application":"getting-started.first-application",
+"getting-started-first-application-annotations":"getting-started.first-application.code.mvc-annotations",
+"getting-started-first-application-auto-configuration":"getting-started.first-application.code.enable-auto-configuration",
+"getting-started-first-application-code":"getting-started.first-application.code",
+"getting-started-first-application-dependencies":"getting-started.first-application.dependencies",
+"getting-started-first-application-executable-jar":"getting-started.first-application.executable-jar",
+"getting-started-first-application-main-method":"getting-started.first-application.code.main-method",
+"getting-started-first-application-pom":"getting-started.first-application.pom",
+"getting-started-first-application-run":"getting-started.first-application.run",
+"getting-started-gradle-installation":"getting-started.installing.java.gradle",
+"getting-started-homebrew-cli-installation":"getting-started.installing.cli.homebrew",
+"getting-started-installation-instructions-for-java":"getting-started.installing.java",
+"getting-started-installing-spring-boot":"getting-started.installing",
+"getting-started-installing-the-cli":"getting-started.installing.cli",
+"getting-started-introducing-spring-boot":"getting-started.introducing-spring-boot",
+"getting-started-macports-cli-installation":"getting-started.installing.cli.macports",
+"getting-started-manual-cli-installation":"getting-started.installing.cli.manual-installation",
+"getting-started-maven-installation":"getting-started.installing.java.maven",
+"getting-started-scoop-cli-installation":"getting-started.installing.cli.scoop",
+"getting-started-sdkman-cli-installation":"getting-started.installing.cli.sdkman",
+"getting-started-system-requirements":"getting-started.system-requirements",
+"getting-started-system-requirements-servlet-containers":"getting-started.system-requirements.servlet-containers",
+"getting-started-upgrading-from-an-earlier-version":"getting-started.installing.upgrading",
+"getting-started-whats-next":"getting-started.whats-next",
+"how-to-enable-http-response-compression":"howto.webserver.enable-response-compression",
+"howto-actuator":"howto.actuator",
+"howto-add-a-servlet-filter-or-listener":"howto.webserver.add-servlet-filter-listener",
+"howto-add-a-servlet-filter-or-listener-as-spring-bean":"howto.webserver.add-servlet-filter-listener.spring-bean",
+"howto-add-a-servlet-filter-or-listener-using-scanning":"howto.webserver.add-servlet-filter-listener.using-scanning",
+"howto-automatic-expansion":"howto.properties-and-configuration.expand-properties",
+"howto-automatic-expansion-gradle":"howto.properties-and-configuration.expand-properties.gradle",
+"howto-automatic-expansion-maven":"howto.properties-and-configuration.expand-properties.maven",
+"howto-batch-applications":"howto.batch",
+"howto-build":"howto.build",
+"howto-build-an-application-context-hierarchy":"howto.application.context-hierarchy",
+"howto-build-an-executable-archive-with-ant":"howto.build.build-an-executable-archive-with-ant-without-using-spring-boot-antlib",
+"howto-build-info":"howto.build.generate-info",
+"howto-change-configuration-depending-on-the-environment":"howto.properties-and-configuration.change-configuration-depending-on-the-environment",
+"howto-change-the-http-port":"howto.webserver.change-port",
+"howto-change-the-http-port-or-address-of-the-actuator-endpoints":"howto.actuator.change-http-port-or-address",
+"howto-change-the-location-of-external-properties":"howto.properties-and-configuration.external-properties-location",
+"howto-change-the-user-details-service-and-add-user-accounts":"howto.security.change-user-details-service-and-add-user-accounts",
+"howto-configure-a-component-that-is-used-by-JPA":"howto.data-access.configure-a-component-that-is-used-by-jpa",
+"howto-configure-a-datasource":"howto.data-access.configure-custom-datasource",
+"howto-configure-accesslogs":"howto.webserver.configure-access-logs",
+"howto-configure-hibernate-naming-strategy":"howto.data-access.configure-hibernate-naming-strategy",
+"howto-configure-hibernate-second-level-caching":"howto.data-access.configure-hibernate-second-level-caching",
+"howto-configure-http2":"howto.webserver.configure-http2",
+"howto-configure-http2-jetty":"howto.webserver.configure-http2.jetty",
+"howto-configure-http2-netty":"howto.webserver.configure-http2.netty",
+"howto-configure-http2-tomcat":"howto.webserver.configure-http2.tomcat",
+"howto-configure-http2-undertow":"howto.webserver.configure-http2.undertow",
+"howto-configure-jOOQ-with-multiple-datasources":"howto.data-access.configure-jooq-with-multiple-datasources",
+"howto-configure-jpa-properties":"howto.data-access.jpa-properties",
+"howto-configure-log4j-for-logging":"howto.logging.log4j",
+"howto-configure-log4j-for-logging-yaml-or-json-config":"howto.logging.log4j.yaml-or-json-config",
+"howto-configure-logback-for-logging":"howto.logging.logback",
+"howto-configure-logback-for-logging-fileonly":"howto.logging.logback.file-only-output",
+"howto-configure-ssl":"howto.webserver.configure-ssl",
+"howto-configure-webserver":"howto.webserver.configure",
+"howto-convert-an-existing-application-to-spring-boot":"howto.traditional-deployment.convert-existing-application",
+"howto-create-a-deployable-war-file":"howto.traditional-deployment.war",
+"howto-create-a-non-web-application":"howto.application.non-web-application",
+"howto-create-a-nonexecutable-jar":"howto.build.create-a-nonexecutable-jar",
+"howto-create-an-additional-executable-jar":"howto.build.use-a-spring-boot-application-as-dependency",
+"howto-create-an-executable-jar-with-maven":"howto.build.create-an-executable-jar-with-maven",
+"howto-create-websocket-endpoints-using-serverendpoint":"howto.webserver.create-websocket-endpoints-using-serverendpoint",
+"howto-customize-dependency-versions":"howto.build.customize-dependency-versions",
+"howto-customize-the-environment-or-application-context":"howto.application.customize-the-environment-or-application-context",
+"howto-customize-the-jackson-objectmapper":"howto.spring-mvc.customize-jackson-objectmapper",
+"howto-customize-the-responsebody-rendering":"howto.spring-mvc.customize-responsebody-rendering",
+"howto-customize-the-whitelabel-error-page":"howto.actuator.customize-whitelabel-error-page",
+"howto-customize-tomcat-behind-a-proxy-server":"howto.webserver.use-behind-a-proxy-server.tomcat",
+"howto-customize-view-resolvers":"howto.spring-mvc.customize-view-resolvers",
+"howto-data-access":"howto.data-access",
+"howto-database-initialization":"howto.data-initialization",
+"howto-disable-registration-of-a-servlet-or-filter":"howto.webserver.add-servlet-filter-listener.spring-bean.disable",
+"howto-disable-web-server":"howto.webserver.disable",
+"howto-discover-build-in-options-for-external-properties":"howto.properties-and-configuration.discover-build-in-options-for-external-properties",
+"howto-discover-the-http-port-at-runtime":"howto.webserver.discover-port",
+"howto-embedded-web-servers":"howto.webserver",
+"howto-enable-https":"howto.security.enable-https",
+"howto-enable-multiple-connectors-in-tomcat":"howto.webserver.enable-multiple-connectors-in-tomcat",
+"howto-enable-multiple-listeners-in-undertow":"howto.webserver.enable-multiple-listeners-in-undertow",
+"howto-enable-tomcat-mbean-registry":"howto.webserver.enable-tomcat-mbean-registry",
+"howto-execute-flyway-database-migrations-on-startup":"howto.data-initialization.migration-tool.flyway",
+"howto-execute-liquibase-database-migrations-on-startup":"howto.data-initialization.migration-tool.liquibase",
+"howto-externalize-configuration":"howto.properties-and-configuration.externalize-configuration",
+"howto-extract-specific-libraries-when-an-executable-jar-runs":"howto.build.extract-specific-libraries-when-an-executable-jar-runs",
+"howto-failure-analyzer":"howto.application.failure-analyzer",
+"howto-git-info":"howto.build.generate-git-info",
+"howto-hotswapping":"howto.hotswapping",
+"howto-http-clients":"howto.http-clients",
+"howto-http-clients-proxy-configuration":"howto.http-clients.rest-template-proxy-configuration",
+"howto-initialize-a-database-configuring-dependencies":"howto.data-initialization.dependencies",
+"howto-initialize-a-database-configuring-dependencies-depends-on-initialization-detection":"howto.data-initialization.dependencies.depends-on-initialization-detection",
+"howto-initialize-a-database-configuring-dependencies-initializer-detection":"howto.data-initialization.dependencies.initializer-detection",
+"howto-initialize-a-database-using-basic-scripts":"howto.data-initialization.using-basic-sql-scripts",
+"howto-initialize-a-database-using-hibernate":"howto.data-initialization.using-hibernate",
+"howto-initialize-a-database-using-jpa":"howto.data-initialization.using-jpa",
+"howto-initialize-a-spring-batch-database":"howto.data-initialization.batch",
+"howto-jersey":"howto.jersey",
+"howto-jersey-alongside-another-web-framework":"howto.jersey.alongside-another-web-framework",
+"howto-jersey-spring-security":"howto.jersey.spring-security",
+"howto-jms-disable-transaction":"howto.messaging.disable-transacted-jms-session",
+"howto-logging":"howto.logging",
+"howto-map-health-indicators-to-metrics":"howto.actuator.map-health-indicators-to-metrics",
+"howto-messaging":"howto.messaging",
+"howto-multipart-file-upload-configuration":"howto.spring-mvc.multipart-file-uploads",
+"howto-properties-and-configuration":"howto.properties-and-configuration",
+"howto-reload-fast-restart":"howto.hotswapping.fast-application-restarts",
+"howto-reload-freemarker-content":"howto.hotswapping.reload-templates.freemarker",
+"howto-reload-groovy-template-content":"howto.hotswapping.reload-templates.groovy",
+"howto-reload-java-classes-without-restarting":"howto.hotswapping.reload-java-classes-without-restarting",
+"howto-reload-static-content":"howto.hotswapping.reload-static-content",
+"howto-reload-thymeleaf-content":"howto.hotswapping.reload-templates.thymeleaf",
+"howto-reload-thymeleaf-template-content":"howto.hotswapping.reload-templates",
+"howto-remote-debug-maven-run":"howto.build.remote-debug-maven",
+"howto-sanitize-sensible-values":"howto.actuator.sanitize-sensitive-values",
+"howto-sanitize-sensitive-values":"howto.actuator.sanitize-sensitive-values",
+"howto-security":"howto.security",
+"howto-separate-entity-definitions-from-spring-configuration":"howto.data-access.separate-entity-definitions-from-spring-configuration",
+"howto-set-active-spring-profiles":"howto.properties-and-configuration.set-active-spring-profiles",
+"howto-spring-batch-running-command-line":"howto.batch.running-from-the-command-line",
+"howto-spring-batch-running-jobs-on-startup":"howto.batch.running-jobs-on-startup",
+"howto-spring-batch-specifying-a-data-source":"howto.batch.specifying-a-data-source",
+"howto-spring-batch-storing-job-repository":"howto.batch.storing-job-repository",
+"howto-spring-boot-application":"howto.application",
+"howto-spring-mvc":"howto.spring-mvc",
+"howto-switch-off-default-mvc-configuration":"howto.spring-mvc.switch-off-default-configuration",
+"howto-switch-off-spring-boot-security-configuration":"howto.security.switch-off-spring-boot-configuration",
+"howto-switch-off-the-spring-mvc-dispatcherservlet":"howto.spring-mvc.switch-off-dispatcherservlet",
+"howto-testcontainers":"howto.testing.testcontainers",
+"howto-traditional-deployment":"howto.traditional-deployment",
+"howto-troubleshoot-auto-configuration":"howto.application.troubleshoot-auto-configuration",
+"howto-two-datasources":"howto.data-access.configure-two-datasources",
+"howto-use-a-higher-level-database-migration-tool":"howto.data-initialization.migration-tool",
+"howto-use-another-web-server":"howto.webserver.use-another",
+"howto-use-behind-a-proxy-server":"howto.webserver.use-behind-a-proxy-server",
+"howto-use-custom-entity-manager":"howto.data-access.use-custom-entity-manager",
+"howto-use-customize-spring-datas-web-support":"howto.data-access.customize-spring-data-web-support",
+"howto-use-dependency-injection-hibernate-components":"howto.data-access.dependency-injection-in-hibernate-components",
+"howto-use-exposing-spring-data-repositories-rest-endpoint":"howto.data-access.exposing-spring-data-repositories-as-rest",
+"howto-use-jedis-instead-of-lettuce":"howto.nosql.jedis-instead-of-lettuce",
+"howto-use-multiple-entity-managers":"howto.data-access.use-multiple-entity-managers",
+"howto-use-short-command-line-arguments":"howto.properties-and-configuration.short-command-line-arguments",
+"howto-use-spring-data-jpa--and-mongo-repositories":"howto.data-access.use-spring-data-jpa-and-mongo-repositories",
+"howto-use-spring-data-repositories":"howto.data-access.spring-data-repositories",
+"howto-use-test-with-spring-security":"howto.spring-mvc.testing.with-spring-security",
+"howto-use-tomcat-legacycookieprocessor":"howto.webserver.use-tomcat-legacycookieprocessor",
+"howto-use-traditional-persistence-xml":"howto.data-access.use-traditional-persistence-xml",
+"howto-use-two-entity-managers":"howto.data-access.use-multiple-entity-managers",
+"howto-use-yaml-for-external-properties":"howto.properties-and-configuration.yaml",
+"howto-user-a-random-unassigned-http-port":"howto.webserver.use-random-port",
+"howto-webclient-reactor-netty-customization":"howto.http-clients.webclient-reactor-netty-customization",
+"howto-weblogic":"howto.traditional-deployment.weblogic",
+"howto-write-a-json-rest-service":"howto.spring-mvc.write-json-rest-service",
+"howto-write-an-xml-rest-service":"howto.spring-mvc.write-xml-rest-service",
+"integration-properties":"application-properties.integration",
+"json-properties":"application-properties.json",
+"mail-properties":"application-properties.mail",
+"production-ready":"actuator",
+"production-ready-application-info":"actuator.endpoints.info",
+"production-ready-application-info-autoconfigure":"actuator.endpoints.info.auto-configured-info-contributors",
+"production-ready-application-info-build":"actuator.endpoints.info.build-information",
+"production-ready-application-info-custom":"actuator.endpoints.info.writing-custom-info-contributors",
+"production-ready-application-info-env":"actuator.endpoints.info.custom-application-information",
+"production-ready-application-info-git":"actuator.endpoints.info.git-commit-information",
+"production-ready-auditing":"actuator.auditing",
+"production-ready-auditing-custom":"actuator.auditing.custom",
+"production-ready-cloudfoundry":"actuator.cloud-foundry",
+"production-ready-cloudfoundry-disable":"actuator.cloud-foundry.disable",
+"production-ready-cloudfoundry-ssl":"actuator.cloud-foundry.ssl",
+"production-ready-custom-context-path":"actuator.cloud-foundry.custom-context-path",
+"production-ready-custom-mbean-names":"actuator.jmx.custom-mbean-names",
+"production-ready-customizing-jolokia":"actuator.jmx.jolokia.customizing",
+"production-ready-customizing-management-server-address":"actuator.monitoring.customizing-management-server-address",
+"production-ready-customizing-management-server-context-path":"actuator.monitoring.customizing-management-server-context-path",
+"production-ready-customizing-management-server-port":"actuator.monitoring.customizing-management-server-port",
+"production-ready-disable-jmx-endpoints":"actuator.jmx.disable-jmx-endpoints",
+"production-ready-disabling-http-endpoints":"actuator.monitoring.disabling-http-endpoints",
+"production-ready-disabling-jolokia":"actuator.jmx.jolokia.disabling",
+"production-ready-enabling":"actuator.enabling",
+"production-ready-endpoints":"actuator.endpoints",
+"production-ready-endpoints-caching":"actuator.endpoints.caching",
+"production-ready-endpoints-cors":"actuator.endpoints.cors",
+"production-ready-endpoints-custom":"actuator.endpoints.implementing-custom",
+"production-ready-endpoints-custom-controller":"actuator.endpoints.implementing-custom.controller",
+"production-ready-endpoints-custom-input":"actuator.endpoints.implementing-custom.input",
+"production-ready-endpoints-custom-input-conversion":"actuator.endpoints.implementing-custom.input.conversion",
+"production-ready-endpoints-custom-servlet":"actuator.endpoints.implementing-custom.servlet",
+"production-ready-endpoints-custom-web":"actuator.endpoints.implementing-custom.web",
+"production-ready-endpoints-custom-web-predicate":"actuator.endpoints.implementing-custom.web.request-predicates",
+"production-ready-endpoints-custom-web-predicate-consumes":"actuator.endpoints.implementing-custom.web.consumes-predicates",
+"production-ready-endpoints-custom-web-predicate-http-method":"actuator.endpoints.implementing-custom.web.method-predicates",
+"production-ready-endpoints-custom-web-predicate-path":"actuator.endpoints.implementing-custom.web.path-predicates",
+"production-ready-endpoints-custom-web-predicate-produces":"actuator.endpoints.implementing-custom.web.produces-predicates",
+"production-ready-endpoints-custom-web-range-requests":"actuator.endpoints.implementing-custom.web.range-requests",
+"production-ready-endpoints-custom-web-response-status":"actuator.endpoints.implementing-custom.web.response-status",
+"production-ready-endpoints-custom-web-security":"actuator.endpoints.implementing-custom.web.security",
+"production-ready-endpoints-enabling-endpoints":"actuator.endpoints.enabling",
+"production-ready-endpoints-exposing-endpoints":"actuator.endpoints.exposing",
+"production-ready-endpoints-hypermedia":"actuator.endpoints.hypermedia",
+"production-ready-endpoints-security":"actuator.endpoints.security",
+"production-ready-health":"actuator.endpoints.health",
+"production-ready-health-datasource":"actuator.endpoints.health.datasource",
+"production-ready-health-groups":"actuator.endpoints.health.groups",
+"production-ready-health-indicators":"actuator.endpoints.health.auto-configured-health-indicators",
+"production-ready-health-indicators-writing":"actuator.endpoints.health.writing-custom-health-indicators",
+"production-ready-http-tracing":"actuator.tracing",
+"production-ready-http-tracing-custom":"actuator.tracing.custom",
+"production-ready-jmx":"actuator.jmx",
+"production-ready-jolokia":"actuator.jmx.jolokia",
+"production-ready-kubernetes-probes":"actuator.endpoints.kubernetes-probes",
+"production-ready-kubernetes-probes-external-state":"actuator.endpoints.kubernetes-probes.external-state",
+"production-ready-kubernetes-probes-lifecycle":"actuator.endpoints.kubernetes-probes.lifecycle",
+"production-ready-logger-configuration":"actuator.loggers.configure",
+"production-ready-loggers":"actuator.loggers",
+"production-ready-management-specific-ssl":"actuator.monitoring.management-specific-ssl",
+"production-ready-metrics":"actuator.metrics",
+"production-ready-metrics-cache":"actuator.metrics.supported.cache",
+"production-ready-metrics-common-tags":"actuator.metrics.customizing.common-tags",
+"production-ready-metrics-custom":"actuator.metrics.registering-custom",
+"production-ready-metrics-customizing":"actuator.metrics.customizing",
+"production-ready-metrics-data-repository":"actuator.metrics.supported.spring-data-repository",
+"production-ready-metrics-endpoint":"actuator.metrics.endpoint",
+"production-ready-metrics-export":"actuator.metrics.export",
+"production-ready-metrics-export-appoptics":"actuator.metrics.export.appoptics",
+"production-ready-metrics-export-atlas":"actuator.metrics.export.atlas",
+"production-ready-metrics-export-datadog":"actuator.metrics.export.datadog",
+"production-ready-metrics-export-dynatrace":"actuator.metrics.export.dynatrace",
+"production-ready-metrics-export-elastic":"actuator.metrics.export.elastic",
+"production-ready-metrics-export-ganglia":"actuator.metrics.export.ganglia",
+"production-ready-metrics-export-graphite":"actuator.metrics.export.graphite",
+"production-ready-metrics-export-humio":"actuator.metrics.export.humio",
+"production-ready-metrics-export-influx":"actuator.metrics.export.influx",
+"production-ready-metrics-export-jmx":"actuator.metrics.export.jmx",
+"production-ready-metrics-export-kairos":"actuator.metrics.export.kairos",
+"production-ready-metrics-export-newrelic":"actuator.metrics.export.newrelic",
+"production-ready-metrics-export-prometheus":"actuator.metrics.export.prometheus",
+"production-ready-metrics-export-signalfx":"actuator.metrics.export.signalfx",
+"production-ready-metrics-export-simple":"actuator.metrics.export.simple",
+"production-ready-metrics-export-stackdriver":"actuator.metrics.export.stackdriver",
+"production-ready-metrics-export-statsd":"actuator.metrics.export.statsd",
+"production-ready-metrics-export-wavefront":"actuator.metrics.export.wavefront",
+"production-ready-metrics-getting-started":"actuator.metrics.getting-started",
+"production-ready-metrics-hibernate":"actuator.metrics.supported.hibernate",
+"production-ready-metrics-http-clients":"actuator.metrics.supported.http-clients",
+"production-ready-metrics-integration":"actuator.metrics.supported.spring-integration",
+"production-ready-metrics-jdbc":"actuator.metrics.supported.jdbc",
+"production-ready-metrics-jersey-server":"actuator.metrics.supported.jersey",
+"production-ready-metrics-jvm":"actuator.metrics.supported.jvm",
+"production-ready-metrics-kafka":"actuator.metrics.supported.kafka",
+"production-ready-metrics-logger":"actuator.metrics.supported.logger",
+"production-ready-metrics-meter":"actuator.metrics.supported",
+"production-ready-metrics-mongodb":"actuator.metrics.supported.mongodb",
+"production-ready-metrics-mongodb-command":"actuator.metrics.supported.mongodb.command",
+"production-ready-metrics-mongodb-connectionpool":"actuator.metrics.supported.mongodb.connection-pool",
+"production-ready-metrics-per-meter-properties":"actuator.metrics.customizing.per-meter-properties",
+"production-ready-metrics-rabbitmq":"actuator.metrics.supported.rabbitmq",
+"production-ready-metrics-spring-mvc":"actuator.metrics.supported.spring-mvc",
+"production-ready-metrics-system":"actuator.metrics.supported.system",
+"production-ready-metrics-timed-annotation":"actuator.metrics.supported.timed-annotation",
+"production-ready-metrics-tomcat":"actuator.metrics.supported.tomcat",
+"production-ready-metrics-web-flux":"actuator.metrics.supported.spring-webflux",
+"production-ready-monitoring":"actuator.monitoring",
+"production-ready-process-monitoring":"actuator.process-monitoring",
+"production-ready-process-monitoring-configuration":"actuator.process-monitoring.configuration",
+"production-ready-process-monitoring-programmatically":"actuator.process-monitoring.programmatically",
+"production-ready-whats-next":"actuator.whats-next",
+"reactive-health-indicators":"actuator.endpoints.health.reactive-health-indicators",
+"reactive-health-indicators-autoconfigured":"actuator.endpoints.health.auto-configured-reactive-health-indicators",
+"rsocket-properties":"application-properties.rsocket",
+"running-remote-client-application":"using.devtools.remote-applications.client",
+"security-properties":"application-properties.security",
+"server-properties":"application-properties.server",
+"spring-boot-ant-exejar":"build-tool-plugins.antlib.tasks.exejar",
+"spring-boot-ant-exejar-examples":"build-tool-plugins.antlib.tasks.examples",
+"spring-boot-ant-findmainclass":"build-tool-plugins.antlib.findmainclass",
+"spring-boot-ant-findmainclass-examples":"build-tool-plugins.antlib.findmainclass.examples",
+"spring-boot-ant-tasks":"build-tool-plugins.antlib.tasks",
+"spring-boot-reference-documentation":"index",
+"templating-properties":"application-properties.templating",
+"test-auto-configuration-slices":"test-auto-configuration.slices",
+"testing-properties":"application-properties.testing",
+"transaction-properties":"application-properties.transaction",
+"using-boot":"using",
+"using-boot-ant":"using.build-systems.ant",
+"using-boot-auto-configuration":"using.auto-configuration",
+"using-boot-build-systems":"using.build-systems",
+"using-boot-configuration-classes":"using.configuration-classes",
+"using-boot-dependency-management":"using.build-systems.dependency-management",
+"using-boot-devtools":"using.devtools",
+"using-boot-devtools-customizing-classload":"using.devtools.restart.customizing-the-classload",
+"using-boot-devtools-globalsettings":"using.devtools.globalsettings",
+"using-boot-devtools-known-restart-limitations":"using.devtools.restart.limitations",
+"using-boot-devtools-livereload":"using.devtools.livereload",
+"using-boot-devtools-property-defaults":"using.devtools.property-defaults",
+"using-boot-devtools-remote":"using.devtools.remote-applications",
+"using-boot-devtools-remote-update":"using.devtools.remote-applications.update",
+"using-boot-devtools-restart":"using.devtools.restart",
+"using-boot-devtools-restart-additional-paths":"using.devtools.restart.watching-additional-paths",
+"using-boot-devtools-restart-disable":"using.devtools.restart.disable",
+"using-boot-devtools-restart-exclude":"using.devtools.restart.excluding-resources",
+"using-boot-devtools-restart-logging-condition-delta":"using.devtools.restart.logging-condition-delta",
+"using-boot-devtools-restart-triggerfile":"using.devtools.restart.triggerfile",
+"using-boot-disabling-specific-auto-configuration":"using.auto-configuration.disabling-specific",
+"using-boot-gradle":"using.build-systems.gradle",
+"using-boot-hot-swapping":"using.running-your-application.hot-swapping",
+"using-boot-importing-configuration":"using.configuration-classes.importing-additional-configuration",
+"using-boot-importing-xml-configuration":"using.configuration-classes.importing-xml-configuration",
+"using-boot-locating-the-main-class":"using.structuring-your-code.locating-the-main-class",
+"using-boot-maven":"using.build-systems.maven",
+"using-boot-packaging-for-production":"using.packaging-for-production",
+"using-boot-replacing-auto-configuration":"using.auto-configuration.replacing",
+"using-boot-running-as-a-packaged-application":"using.running-your-application.as-a-packaged-application",
+"using-boot-running-from-an-ide":"using.running-your-application.from-an-ide",
+"using-boot-running-with-the-gradle-plugin":"using.running-your-application.with-the-gradle-plugin",
+"using-boot-running-with-the-maven-plugin":"using.running-your-application.with-the-maven-plugin",
+"using-boot-running-your-application":"using.running-your-application",
+"using-boot-spring-beans-and-dependency-injection":"using.spring-beans-and-dependency-injection",
+"using-boot-starter":"using.build-systems.starters",
+"using-boot-structuring-your-code":"using.structuring-your-code",
+"using-boot-using-springbootapplication-annotation":"using.using-the-springbootapplication-annotation",
+"using-boot-using-the-default-package":"using.structuring-your-code.using-the-default-package",
+"using-boot-whats-next":"using.whats-next",
+"using-spring-boot-restart-vs-reload":"using.devtools.restart.restart-vs-reload",
+"web-properties":"application-properties.web"
+}
+</script>
+</head>
+<body id="messaging" class="book toc2 toc-left"><div id="banner-container" class="container" role="banner">
+<div id="banner" class="contained" role="banner">
+<div id="switch-theme">
+<input type="checkbox" id="switch-theme-checkbox" />
+<label for="switch-theme-checkbox">Dark Theme</label>
+</div>
+</div>
+</div>
+<div id="tocbar-container" class="container" role="navigation">
+<div id="tocbar" class="contained" role="navigation">
+<button id="toggle-toc"></button>
+</div>
+</div>
+<div id="main-container" class="container">
+<div id="main" class="contained">
+<div id="doc" class="doc">
+<div id="header">
+<h1>Messaging</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<span id="back-to-index"><a href="index.html">Back to index</a></span><ul class="sectlevel1">
+<li><a href="messaging.html#messaging.jms">1. JMS</a>
+<ul class="sectlevel2">
+<li><a href="messaging.html#messaging.jms.activemq">1.1. ActiveMQ Support</a></li>
+<li><a href="messaging.html#messaging.jms.artemis">1.2. ActiveMQ Artemis Support</a></li>
+<li><a href="messaging.html#messaging.jms.jndi">1.3. Using a JNDI ConnectionFactory</a></li>
+<li><a href="messaging.html#messaging.jms.sending">1.4. Sending a Message</a></li>
+<li><a href="messaging.html#messaging.jms.receiving">1.5. Receiving a Message</a></li>
+</ul>
+</li>
+<li><a href="messaging.html#messaging.amqp">2. AMQP</a>
+<ul class="sectlevel2">
+<li><a href="messaging.html#messaging.amqp.rabbitmq">2.1. RabbitMQ support</a></li>
+<li><a href="messaging.html#messaging.amqp.sending">2.2. Sending a Message</a></li>
+<li><a href="messaging.html#messaging.amqp.receiving">2.3. Receiving a Message</a></li>
+</ul>
+</li>
+<li><a href="messaging.html#messaging.kafka">3. Apache Kafka Support</a>
+<ul class="sectlevel2">
+<li><a href="messaging.html#messaging.kafka.sending">3.1. Sending a Message</a></li>
+<li><a href="messaging.html#messaging.kafka.receiving">3.2. Receiving a Message</a></li>
+<li><a href="messaging.html#messaging.kafka.streams">3.3. Kafka Streams</a></li>
+<li><a href="messaging.html#messaging.kafka.additional-properties">3.4. Additional Kafka Properties</a></li>
+<li><a href="messaging.html#messaging.kafka.embedded">3.5. Testing with Embedded Kafka</a></li>
+</ul>
+</li>
+<li><a href="messaging.html#messaging.rsocket">4. RSocket</a>
+<ul class="sectlevel2">
+<li><a href="messaging.html#messaging.rsocket.strategies-auto-configuration">4.1. RSocket Strategies Auto-configuration</a></li>
+<li><a href="messaging.html#messaging.rsocket.server-auto-configuration">4.2. RSocket server Auto-configuration</a></li>
+<li><a href="messaging.html#messaging.rsocket.messaging">4.3. Spring Messaging RSocket support</a></li>
+<li><a href="messaging.html#messaging.rsocket.requester">4.4. Calling RSocket Services with RSocketRequester</a></li>
+</ul>
+</li>
+<li><a href="messaging.html#messaging.spring-integration">5. Spring Integration</a></li>
+<li><a href="messaging.html#messaging.whats-next">6. What to Read Next</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Spring Framework provides extensive support for integrating with messaging systems, from simplified use of the JMS API using <code>JmsTemplate</code> to a complete infrastructure to receive messages asynchronously.
+Spring AMQP provides a similar feature set for the Advanced Message Queuing Protocol.
+Spring Boot also provides auto-configuration options for <code>RabbitTemplate</code> and RabbitMQ.
+Spring WebSocket natively includes support for STOMP messaging, and Spring Boot has support for that through starters and a small amount of auto-configuration.
+Spring Boot also has support for Apache Kafka.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="messaging.jms"><a class="anchor" href="messaging.html#messaging.jms"></a>1. JMS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>javax.jms.ConnectionFactory</code> interface provides a standard method of creating a <code>javax.jms.Connection</code> for interacting with a JMS broker.
+Although Spring needs a <code>ConnectionFactory</code> to work with JMS, you generally need not use it directly yourself and can instead rely on higher level messaging abstractions.
+(See the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/integration.html#jms">relevant section</a> of the Spring Framework reference documentation for details.)
+Spring Boot also auto-configures the necessary infrastructure to send and receive messages.</p>
+</div>
+<div class="sect2">
+<h3 id="messaging.jms.activemq"><a class="anchor" href="messaging.html#messaging.jms.activemq"></a>1.1. ActiveMQ Support</h3>
+<div class="paragraph">
+<p>When <a href="https://activemq.apache.org/">ActiveMQ</a> is available on the classpath, Spring Boot can also configure a <code>ConnectionFactory</code>.
+If the broker is present, an embedded broker is automatically started and configured (provided no broker URL is specified through configuration and the embedded broker is not disabled in the configuration).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If you use <code>spring-boot-starter-activemq</code>, the necessary dependencies to connect or embed an ActiveMQ instance are provided, as is the Spring infrastructure to integrate with JMS.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>ActiveMQ configuration is controlled by external configuration properties in <code>spring.activemq.*</code>.</p>
+</div>
+<div class="paragraph">
+<p>By default, ActiveMQ is auto-configured to use the <a href="https://activemq.apache.org/vm-transport-reference.html">VM transport</a>, which starts a broker embedded in the same JVM instance.</p>
+</div>
+<div class="paragraph">
+<p>You can disable the embedded broker by configuring the <code>spring.activemq.in-memory</code> property, as shown in the following example:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.activemq.in-memory=false</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  activemq:
+    in-memory: false</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The embedded broker will also be disabled if you configure the broker URL, as shown in the following example:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.activemq.broker-url=tcp://192.168.1.210:9876
+spring.activemq.user=admin
+spring.activemq.password=secret</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  activemq:
+    broker-url: "tcp://192.168.1.210:9876"
+    user: "admin"
+    password: "secret"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you want to take full control over the embedded broker, see <a href="https://activemq.apache.org/how-do-i-embed-a-broker-inside-a-connection.html">the ActiveMQ documentation</a> for further information.</p>
+</div>
+<div class="paragraph">
+<p>By default, a <code>CachingConnectionFactory</code> wraps the native <code>ConnectionFactory</code> with sensible settings that you can control by external configuration properties in <code>spring.jms.*</code>:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.jms.cache.session-cache-size=5</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  jms:
+    cache:
+      session-cache-size: 5</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you&#8217;d rather use native pooling, you can do so by adding a dependency to <code>org.messaginghub:pooled-jms</code> and configuring the <code>JmsPoolConnectionFactory</code> accordingly, as shown in the following example:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.activemq.pool.enabled=true
+spring.activemq.pool.max-connections=50</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  activemq:
+    pool:
+      enabled: true
+      max-connections: 50</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+See <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jms/activemq/ActiveMQProperties.java"><code>ActiveMQProperties</code></a> for more of the supported options.
+You can also register an arbitrary number of beans that implement <code>ActiveMQConnectionFactoryCustomizer</code> for more advanced customizations.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>By default, ActiveMQ creates a destination if it does not yet exist so that destinations are resolved against their provided names.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="messaging.jms.artemis"><a class="anchor" href="messaging.html#messaging.jms.artemis"></a>1.2. ActiveMQ Artemis Support</h3>
+<div class="paragraph">
+<p>Spring Boot can auto-configure a <code>ConnectionFactory</code> when it detects that <a href="https://activemq.apache.org/components/artemis/">ActiveMQ Artemis</a> is available on the classpath.
+If the broker is present, an embedded broker is automatically started and configured (unless the mode property has been explicitly set).
+The supported modes are <code>embedded</code> (to make explicit that an embedded broker is required and that an error should occur if the broker is not available on the classpath) and <code>native</code> (to connect to a broker using the <code>netty</code> transport protocol).
+When the latter is configured, Spring Boot configures a <code>ConnectionFactory</code> that connects to a broker running on the local machine with the default settings.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If you use <code>spring-boot-starter-artemis</code>, the necessary dependencies to connect to an existing ActiveMQ Artemis instance are provided, as well as the Spring infrastructure to integrate with JMS.
+Adding <code>org.apache.activemq:artemis-jms-server</code> to your application lets you use embedded mode.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>ActiveMQ Artemis configuration is controlled by external configuration properties in <code>spring.artemis.*</code>.
+For example, you might declare the following section in <code>application.properties</code>:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.artemis.mode=native
+spring.artemis.broker-url=tcp://192.168.1.210:9876
+spring.artemis.user=admin
+spring.artemis.password=secret</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  artemis:
+    mode: native
+    broker-url: "tcp://192.168.1.210:9876"
+    user: "admin"
+    password: "secret"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When embedding the broker, you can choose if you want to enable persistence and list the destinations that should be made available.
+These can be specified as a comma-separated list to create them with the default options, or you can define bean(s) of type <code>org.apache.activemq.artemis.jms.server.config.JMSQueueConfiguration</code> or <code>org.apache.activemq.artemis.jms.server.config.TopicConfiguration</code>, for advanced queue and topic configurations, respectively.</p>
+</div>
+<div class="paragraph">
+<p>By default, a <code>CachingConnectionFactory</code> wraps the native <code>ConnectionFactory</code> with sensible settings that you can control by external configuration properties in <code>spring.jms.*</code>:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.jms.cache.session-cache-size=5</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  jms:
+    cache:
+      session-cache-size: 5</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you&#8217;d rather use native pooling, you can do so by adding a dependency to <code>org.messaginghub:pooled-jms</code> and configuring the <code>JmsPoolConnectionFactory</code> accordingly, as shown in the following example:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.artemis.pool.enabled=true
+spring.artemis.pool.max-connections=50</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  artemis:
+    pool:
+      enabled: true
+      max-connections: 50</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>See <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jms/artemis/ArtemisProperties.java"><code>ArtemisProperties</code></a> for more supported options.</p>
+</div>
+<div class="paragraph">
+<p>No JNDI lookup is involved, and destinations are resolved against their names, using either the <code>name</code> attribute in the Artemis configuration or the names provided through configuration.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="messaging.jms.jndi"><a class="anchor" href="messaging.html#messaging.jms.jndi"></a>1.3. Using a JNDI ConnectionFactory</h3>
+<div class="paragraph">
+<p>If you are running your application in an application server, Spring Boot tries to locate a JMS <code>ConnectionFactory</code> by using JNDI.
+By default, the <code>java:/JmsXA</code> and <code>java:/XAConnectionFactory</code> location are checked.
+You can use the <code>spring.jms.jndi-name</code> property if you need to specify an alternative location, as shown in the following example:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.jms.jndi-name=java:/MyConnectionFactory</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  jms:
+    jndi-name: "java:/MyConnectionFactory"</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="messaging.jms.sending"><a class="anchor" href="messaging.html#messaging.jms.sending"></a>1.4. Sending a Message</h3>
+<div class="paragraph">
+<p>Spring&#8217;s <code>JmsTemplate</code> is auto-configured, and you can autowire it directly into your own beans, as shown in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java"><span class="fold-block hide-when-folded">import org.springframework.jms.core.JmsTemplate;
+import org.springframework.stereotype.Component;
+
+</span><span class="fold-block">@Component
+public class MyBean {
+
+    private final JmsTemplate jmsTemplate;
+
+    public MyBean(JmsTemplate jmsTemplate) {
+        this.jmsTemplate = jmsTemplate;
+    }
+
+</span><span class="fold-block hide-when-unfolded">    // ...
+
+</span><span class="fold-block hide-when-folded">    public void someMethod() {
+        this.jmsTemplate.convertAndSend("hello");
+    }
+
+</span><span class="fold-block">}
+</span></code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/jms/core/JmsMessagingTemplate.html"><code>JmsMessagingTemplate</code></a> can be injected in a similar manner.
+If a <code>DestinationResolver</code> or a <code>MessageConverter</code> bean is defined, it is associated automatically to the auto-configured <code>JmsTemplate</code>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="messaging.jms.receiving"><a class="anchor" href="messaging.html#messaging.jms.receiving"></a>1.5. Receiving a Message</h3>
+<div class="paragraph">
+<p>When the JMS infrastructure is present, any bean can be annotated with <code>@JmsListener</code> to create a listener endpoint.
+If no <code>JmsListenerContainerFactory</code> has been defined, a default one is configured automatically.
+If a <code>DestinationResolver</code>, a <code>MessageConverter</code>, or a <code>javax.jms.ExceptionListener</code> beans are defined, they are associated automatically with the default factory.</p>
+</div>
+<div class="paragraph">
+<p>By default, the default factory is transactional.
+If you run in an infrastructure where a <code>JtaTransactionManager</code> is present, it is associated to the listener container by default.
+If not, the <code>sessionTransacted</code> flag is enabled.
+In that latter scenario, you can associate your local data store transaction to the processing of an incoming message by adding <code>@Transactional</code> on your listener method (or a delegate thereof).
+This ensures that the incoming message is acknowledged, once the local transaction has completed.
+This also includes sending response messages that have been performed on the same JMS session.</p>
+</div>
+<div class="paragraph">
+<p>The following component creates a listener endpoint on the <code>someQueue</code> destination:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java"><span class="fold-block hide-when-folded">import org.springframework.jms.annotation.JmsListener;
+import org.springframework.stereotype.Component;
+
+</span><span class="fold-block">@Component
+public class MyBean {
+
+    @JmsListener(destination = "someQueue")
+    public void processMessage(String content) {
+        // ...
+    }
+
+}
+</span></code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+See <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/jms/annotation/EnableJms.html">the Javadoc of <code>@EnableJms</code></a> for more details.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If you need to create more <code>JmsListenerContainerFactory</code> instances or if you want to override the default, Spring Boot provides a <code>DefaultJmsListenerContainerFactoryConfigurer</code> that you can use to initialize a <code>DefaultJmsListenerContainerFactory</code> with the same settings as the one that is auto-configured.</p>
+</div>
+<div class="paragraph">
+<p>For instance, the following example exposes another factory that uses a specific <code>MessageConverter</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java"><span class="fold-block hide-when-folded">import javax.jms.ConnectionFactory;
+
+import org.springframework.boot.autoconfigure.jms.DefaultJmsListenerContainerFactoryConfigurer;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
+
+</span><span class="fold-block">@Configuration(proxyBeanMethods = false)
+public class MyJmsConfiguration {
+
+    @Bean
+    public DefaultJmsListenerContainerFactory myFactory(DefaultJmsListenerContainerFactoryConfigurer configurer) {
+        DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
+        ConnectionFactory connectionFactory = getCustomConnectionFactory();
+        configurer.configure(factory, connectionFactory);
+        factory.setMessageConverter(new MyMessageConverter());
+        return factory;
+    }
+
+    private ConnectionFactory getCustomConnectionFactory() {
+        return ...
+    }
+
+}
+</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Then you can use the factory in any <code>@JmsListener</code>-annotated method as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java"><span class="fold-block hide-when-folded">import org.springframework.jms.annotation.JmsListener;
+import org.springframework.stereotype.Component;
+
+</span><span class="fold-block">@Component
+public class MyBean {
+
+    @JmsListener(destination = "someQueue", containerFactory = "myFactory")
+    public void processMessage(String content) {
+        // ...
+    }
+
+}
+</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="messaging.amqp"><a class="anchor" href="messaging.html#messaging.amqp"></a>2. AMQP</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Advanced Message Queuing Protocol (AMQP) is a platform-neutral, wire-level protocol for message-oriented middleware.
+The Spring AMQP project applies core Spring concepts to the development of AMQP-based messaging solutions.
+Spring Boot offers several conveniences for working with AMQP through RabbitMQ, including the <code>spring-boot-starter-amqp</code> &#8220;Starter&#8221;.</p>
+</div>
+<div class="sect2">
+<h3 id="messaging.amqp.rabbitmq"><a class="anchor" href="messaging.html#messaging.amqp.rabbitmq"></a>2.1. RabbitMQ support</h3>
+<div class="paragraph">
+<p><a href="https://www.rabbitmq.com/">RabbitMQ</a> is a lightweight, reliable, scalable, and portable message broker based on the AMQP protocol.
+Spring uses <code>RabbitMQ</code> to communicate through the AMQP protocol.</p>
+</div>
+<div class="paragraph">
+<p>RabbitMQ configuration is controlled by external configuration properties in <code>spring.rabbitmq.*</code>.
+For example, you might declare the following section in <code>application.properties</code>:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.rabbitmq.host=localhost
+spring.rabbitmq.port=5672
+spring.rabbitmq.username=admin
+spring.rabbitmq.password=secret</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "admin"
+    password: "secret"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Alternatively, you could configure the same connection using the <code>addresses</code> attribute:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.rabbitmq.addresses=amqp://admin:<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="27544244554253674b4844464b4f485453">[email&#160;protected]</a></code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  rabbitmq:
+    addresses: "amqp://admin:<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c8bbadabbaadbc88a4a7aba9a4a0a7bbbc">[email&#160;protected]</a>"</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+When specifying addresses that way, the <code>host</code> and <code>port</code> properties are ignored.
+If the address uses the <code>amqps</code> protocol, SSL support is enabled automatically.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>See <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/amqp/RabbitProperties.java"><code>RabbitProperties</code></a> for more of the supported property-based configuration options.
+To configure lower-level details of the RabbitMQ <code>ConnectionFactory</code> that is used by Spring AMQP, define a <code>ConnectionFactoryCustomizer</code> bean.</p>
+</div>
+<div class="paragraph">
+<p>If a <code>ConnectionNameStrategy</code> bean exists in the context, it will be automatically used to name connections created by the auto-configured <code>CachingConnectionFactory</code>.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+See <a href="https://spring.io/blog/2010/06/14/understanding-amqp-the-protocol-used-by-rabbitmq/">Understanding AMQP, the protocol used by RabbitMQ</a> for more details.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="messaging.amqp.sending"><a class="anchor" href="messaging.html#messaging.amqp.sending"></a>2.2. Sending a Message</h3>
+<div class="paragraph">
+<p>Spring&#8217;s <code>AmqpTemplate</code> and <code>AmqpAdmin</code> are auto-configured, and you can autowire them directly into your own beans, as shown in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java"><span class="fold-block hide-when-folded">import org.springframework.amqp.core.AmqpAdmin;
+import org.springframework.amqp.core.AmqpTemplate;
+import org.springframework.stereotype.Component;
+
+</span><span class="fold-block">@Component
+public class MyBean {
+
+    private final AmqpAdmin amqpAdmin;
+
+    private final AmqpTemplate amqpTemplate;
+
+    public MyBean(AmqpAdmin amqpAdmin, AmqpTemplate amqpTemplate) {
+        this.amqpAdmin = amqpAdmin;
+        this.amqpTemplate = amqpTemplate;
+    }
+
+</span><span class="fold-block hide-when-unfolded">    // ...
+
+</span><span class="fold-block hide-when-folded">    public void someMethod() {
+        this.amqpAdmin.getQueueInfo("someQueue");
+    }
+
+    public void someOtherMethod() {
+        this.amqpTemplate.convertAndSend("hello");
+    }
+
+</span><span class="fold-block">}
+</span></code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<a href="https://docs.spring.io/spring-amqp/docs/2.4.2/api/org/springframework/amqp/rabbit/core/RabbitMessagingTemplate.html"><code>RabbitMessagingTemplate</code></a> can be injected in a similar manner.
+If a <code>MessageConverter</code> bean is defined, it is associated automatically to the auto-configured <code>AmqpTemplate</code>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If necessary, any <code>org.springframework.amqp.core.Queue</code> that is defined as a bean is automatically used to declare a corresponding queue on the RabbitMQ instance.</p>
+</div>
+<div class="paragraph">
+<p>To retry operations, you can enable retries on the <code>AmqpTemplate</code> (for example, in the event that the broker connection is lost):</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.rabbitmq.template.retry.enabled=true
+spring.rabbitmq.template.retry.initial-interval=2s</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  rabbitmq:
+    template:
+      retry:
+        enabled: true
+        initial-interval: "2s"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Retries are disabled by default.
+You can also customize the <code>RetryTemplate</code> programmatically by declaring a <code>RabbitRetryTemplateCustomizer</code> bean.</p>
+</div>
+<div class="paragraph">
+<p>If you need to create more <code>RabbitTemplate</code> instances or if you want to override the default, Spring Boot provides a <code>RabbitTemplateConfigurer</code> bean that you can use to initialize a <code>RabbitTemplate</code> with the same settings as the factories used by the auto-configuration.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="messaging.amqp.receiving"><a class="anchor" href="messaging.html#messaging.amqp.receiving"></a>2.3. Receiving a Message</h3>
+<div class="paragraph">
+<p>When the Rabbit infrastructure is present, any bean can be annotated with <code>@RabbitListener</code> to create a listener endpoint.
+If no <code>RabbitListenerContainerFactory</code> has been defined, a default <code>SimpleRabbitListenerContainerFactory</code> is automatically configured and you can switch to a direct container using the <code>spring.rabbitmq.listener.type</code> property.
+If a <code>MessageConverter</code> or a <code>MessageRecoverer</code> bean is defined, it is automatically associated with the default factory.</p>
+</div>
+<div class="paragraph">
+<p>The following sample component creates a listener endpoint on the <code>someQueue</code> queue:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java"><span class="fold-block hide-when-folded">import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.stereotype.Component;
+
+</span><span class="fold-block">@Component
+public class MyBean {
+
+    @RabbitListener(queues = "someQueue")
+    public void processMessage(String content) {
+        // ...
+    }
+
+}
+</span></code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+See <a href="https://docs.spring.io/spring-amqp/docs/2.4.2/api/org/springframework/amqp/rabbit/annotation/EnableRabbit.html">the Javadoc of <code>@EnableRabbit</code></a> for more details.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If you need to create more <code>RabbitListenerContainerFactory</code> instances or if you want to override the default, Spring Boot provides a <code>SimpleRabbitListenerContainerFactoryConfigurer</code> and a <code>DirectRabbitListenerContainerFactoryConfigurer</code> that you can use to initialize a <code>SimpleRabbitListenerContainerFactory</code> and a <code>DirectRabbitListenerContainerFactory</code> with the same settings as the factories used by the auto-configuration.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+It does not matter which container type you chose.
+Those two beans are exposed by the auto-configuration.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For instance, the following configuration class exposes another factory that uses a specific <code>MessageConverter</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java"><span class="fold-block hide-when-folded">import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory;
+import org.springframework.amqp.rabbit.connection.ConnectionFactory;
+import org.springframework.boot.autoconfigure.amqp.SimpleRabbitListenerContainerFactoryConfigurer;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+</span><span class="fold-block">@Configuration(proxyBeanMethods = false)
+public class MyRabbitConfiguration {
+
+    @Bean
+    public SimpleRabbitListenerContainerFactory myFactory(SimpleRabbitListenerContainerFactoryConfigurer configurer) {
+        SimpleRabbitListenerContainerFactory factory = new SimpleRabbitListenerContainerFactory();
+        ConnectionFactory connectionFactory = getCustomConnectionFactory();
+        configurer.configure(factory, connectionFactory);
+        factory.setMessageConverter(new MyMessageConverter());
+        return factory;
+    }
+
+    private ConnectionFactory getCustomConnectionFactory() {
+        return ...
+    }
+
+}
+</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Then you can use the factory in any <code>@RabbitListener</code>-annotated method, as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java"><span class="fold-block hide-when-folded">import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.stereotype.Component;
+
+</span><span class="fold-block">@Component
+public class MyBean {
+
+    @RabbitListener(queues = "someQueue", containerFactory = "myFactory")
+    public void processMessage(String content) {
+        // ...
+    }
+
+}
+</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can enable retries to handle situations where your listener throws an exception.
+By default, <code>RejectAndDontRequeueRecoverer</code> is used, but you can define a <code>MessageRecoverer</code> of your own.
+When retries are exhausted, the message is rejected and either dropped or routed to a dead-letter exchange if the broker is configured to do so.
+By default, retries are disabled.
+You can also customize the <code>RetryTemplate</code> programmatically by declaring a <code>RabbitRetryTemplateCustomizer</code> bean.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+By default, if retries are disabled and the listener throws an exception, the delivery is retried indefinitely.
+You can modify this behavior in two ways: Set the <code>defaultRequeueRejected</code> property to <code>false</code> so that zero re-deliveries are attempted or throw an <code>AmqpRejectAndDontRequeueException</code> to signal the message should be rejected.
+The latter is the mechanism used when retries are enabled and the maximum number of delivery attempts is reached.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="messaging.kafka"><a class="anchor" href="messaging.html#messaging.kafka"></a>3. Apache Kafka Support</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://kafka.apache.org/">Apache Kafka</a> is supported by providing auto-configuration of the <code>spring-kafka</code> project.</p>
+</div>
+<div class="paragraph">
+<p>Kafka configuration is controlled by external configuration properties in <code>spring.kafka.*</code>.
+For example, you might declare the following section in <code>application.properties</code>:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.kafka.bootstrap-servers=localhost:9092
+spring.kafka.consumer.group-id=myGroup</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  kafka:
+    bootstrap-servers: "localhost:9092"
+    consumer:
+      group-id: "myGroup"</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+To create a topic on startup, add a bean of type <code>NewTopic</code>.
+If the topic already exists, the bean is ignored.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>See <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/kafka/KafkaProperties.java"><code>KafkaProperties</code></a> for more supported options.</p>
+</div>
+<div class="sect2">
+<h3 id="messaging.kafka.sending"><a class="anchor" href="messaging.html#messaging.kafka.sending"></a>3.1. Sending a Message</h3>
+<div class="paragraph">
+<p>Spring&#8217;s <code>KafkaTemplate</code> is auto-configured, and you can autowire it directly in your own beans, as shown in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java"><span class="fold-block hide-when-folded">import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.stereotype.Component;
+
+</span><span class="fold-block">@Component
+public class MyBean {
+
+    private final KafkaTemplate&lt;String, String&gt; kafkaTemplate;
+
+    public MyBean(KafkaTemplate&lt;String, String&gt; kafkaTemplate) {
+        this.kafkaTemplate = kafkaTemplate;
+    }
+
+</span><span class="fold-block hide-when-unfolded">    // ...
+
+</span><span class="fold-block hide-when-folded">    public void someMethod() {
+        this.kafkaTemplate.send("someTopic", "Hello");
+    }
+
+</span><span class="fold-block">}
+</span></code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If the property <code>spring.kafka.producer.transaction-id-prefix</code> is defined, a <code>KafkaTransactionManager</code> is automatically configured.
+Also, if a <code>RecordMessageConverter</code> bean is defined, it is automatically associated to the auto-configured <code>KafkaTemplate</code>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="messaging.kafka.receiving"><a class="anchor" href="messaging.html#messaging.kafka.receiving"></a>3.2. Receiving a Message</h3>
+<div class="paragraph">
+<p>When the Apache Kafka infrastructure is present, any bean can be annotated with <code>@KafkaListener</code> to create a listener endpoint.
+If no <code>KafkaListenerContainerFactory</code> has been defined, a default one is automatically configured with keys defined in <code>spring.kafka.listener.*</code>.</p>
+</div>
+<div class="paragraph">
+<p>The following component creates a listener endpoint on the <code>someTopic</code> topic:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java"><span class="fold-block hide-when-folded">import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Component;
+
+</span><span class="fold-block">@Component
+public class MyBean {
+
+    @KafkaListener(topics = "someTopic")
+    public void processMessage(String content) {
+        // ...
+    }
+
+}
+</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If a <code>KafkaTransactionManager</code> bean is defined, it is automatically associated to the container factory.
+Similarly, if a <code>RecordFilterStrategy</code>, <code>ErrorHandler</code>, <code>CommonErrorHandler</code>, <code>AfterRollbackProcessor</code> or <code>ConsumerAwareRebalanceListener</code> bean is defined, it is automatically associated to the default factory.</p>
+</div>
+<div class="paragraph">
+<p>Depending on the listener type, a <code>RecordMessageConverter</code> or <code>BatchMessageConverter</code> bean is associated to the default factory.
+If only a <code>RecordMessageConverter</code> bean is present for a batch listener, it is wrapped in a <code>BatchMessageConverter</code>.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+A custom <code>ChainedKafkaTransactionManager</code> must be marked <code>@Primary</code> as it usually references the auto-configured <code>KafkaTransactionManager</code> bean.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="messaging.kafka.streams"><a class="anchor" href="messaging.html#messaging.kafka.streams"></a>3.3. Kafka Streams</h3>
+<div class="paragraph">
+<p>Spring for Apache Kafka provides a factory bean to create a <code>StreamsBuilder</code> object and manage the lifecycle of its streams.
+Spring Boot auto-configures the required <code>KafkaStreamsConfiguration</code> bean as long as <code>kafka-streams</code> is on the classpath and Kafka Streams is enabled by the <code>@EnableKafkaStreams</code> annotation.</p>
+</div>
+<div class="paragraph">
+<p>Enabling Kafka Streams means that the application id and bootstrap servers must be set.
+The former can be configured using <code>spring.kafka.streams.application-id</code>, defaulting to <code>spring.application.name</code> if not set.
+The latter can be set globally or specifically overridden only for streams.</p>
+</div>
+<div class="paragraph">
+<p>Several additional properties are available using dedicated properties; other arbitrary Kafka properties can be set using the <code>spring.kafka.streams.properties</code> namespace.
+See also <a href="features.html#messaging.kafka.additional-properties">features.html</a> for more information.</p>
+</div>
+<div class="paragraph">
+<p>To use the factory bean, wire <code>StreamsBuilder</code> into your <code>@Bean</code> as shown in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java"><span class="fold-block hide-when-folded">import org.apache.kafka.common.serialization.Serdes;
+import org.apache.kafka.streams.KeyValue;
+import org.apache.kafka.streams.StreamsBuilder;
+import org.apache.kafka.streams.kstream.KStream;
+import org.apache.kafka.streams.kstream.Produced;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.kafka.annotation.EnableKafkaStreams;
+import org.springframework.kafka.support.serializer.JsonSerde;
+
+</span><span class="fold-block">@Configuration(proxyBeanMethods = false)
+@EnableKafkaStreams
+public class MyKafkaStreamsConfiguration {
+
+    @Bean
+    public KStream&lt;Integer, String&gt; kStream(StreamsBuilder streamsBuilder) {
+        KStream&lt;Integer, String&gt; stream = streamsBuilder.stream("ks1In");
+        stream.map(this::uppercaseValue).to("ks1Out", Produced.with(Serdes.Integer(), new JsonSerde&lt;&gt;()));
+        return stream;
+    }
+
+    private KeyValue&lt;Integer, String&gt; uppercaseValue(Integer key, String value) {
+        return new KeyValue&lt;&gt;(key, value.toUpperCase());
+    }
+
+}
+</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>By default, the streams managed by the <code>StreamBuilder</code> object it creates are started automatically.
+You can customize this behavior using the <code>spring.kafka.streams.auto-startup</code> property.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="messaging.kafka.additional-properties"><a class="anchor" href="messaging.html#messaging.kafka.additional-properties"></a>3.4. Additional Kafka Properties</h3>
+<div class="paragraph">
+<p>The properties supported by auto configuration are shown in <a href="application-properties.html#application-properties">application-properties.html</a>.
+Note that, for the most part, these properties (hyphenated or camelCase) map directly to the Apache Kafka dotted properties.
+See the Apache Kafka documentation for details.</p>
+</div>
+<div class="paragraph">
+<p>The first few of these properties apply to all components (producers, consumers, admins, and streams) but can be specified at the component level if you wish to use different values.
+Apache Kafka designates properties with an importance of HIGH, MEDIUM, or LOW.
+Spring Boot auto-configuration supports all HIGH importance properties, some selected MEDIUM and LOW properties, and any properties that do not have a default value.</p>
+</div>
+<div class="paragraph">
+<p>Only a subset of the properties supported by Kafka are available directly through the <code>KafkaProperties</code> class.
+If you wish to configure the producer or consumer with additional properties that are not directly supported, use the following properties:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.kafka.properties[prop.one]=first
+spring.kafka.admin.properties[prop.two]=second
+spring.kafka.consumer.properties[prop.three]=third
+spring.kafka.producer.properties[prop.four]=fourth
+spring.kafka.streams.properties[prop.five]=fifth</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  kafka:
+    properties:
+      "[prop.one]": "first"
+    admin:
+      properties:
+        "[prop.two]": "second"
+    consumer:
+      properties:
+        "[prop.three]": "third"
+    producer:
+      properties:
+        "[prop.four]": "fourth"
+    streams:
+      properties:
+        "[prop.five]": "fifth"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This sets the common <code>prop.one</code> Kafka property to <code>first</code> (applies to producers, consumers and admins), the <code>prop.two</code> admin property to <code>second</code>, the <code>prop.three</code> consumer property to <code>third</code>, the <code>prop.four</code> producer property to <code>fourth</code> and the <code>prop.five</code> streams property to <code>fifth</code>.</p>
+</div>
+<div class="paragraph">
+<p>You can also configure the Spring Kafka <code>JsonDeserializer</code> as follows:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.kafka.consumer.value-deserializer=org.springframework.kafka.support.serializer.JsonDeserializer
+spring.kafka.consumer.properties[spring.json.value.default.type]=com.example.Invoice
+spring.kafka.consumer.properties[spring.json.trusted.packages]=com.example.main,com.example.another</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  kafka:
+    consumer:
+      value-deserializer: "org.springframework.kafka.support.serializer.JsonDeserializer"
+      properties:
+        "[spring.json.value.default.type]": "com.example.Invoice"
+        "[spring.json.trusted.packages]": "com.example.main,com.example.another"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Similarly, you can disable the <code>JsonSerializer</code> default behavior of sending type information in headers:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.kafka.producer.value-serializer=org.springframework.kafka.support.serializer.JsonSerializer
+spring.kafka.producer.properties[spring.json.add.type.headers]=false</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  kafka:
+    producer:
+      value-serializer: "org.springframework.kafka.support.serializer.JsonSerializer"
+      properties:
+        "[spring.json.add.type.headers]": false</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Properties set in this way override any configuration item that Spring Boot explicitly supports.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="messaging.kafka.embedded"><a class="anchor" href="messaging.html#messaging.kafka.embedded"></a>3.5. Testing with Embedded Kafka</h3>
+<div class="paragraph">
+<p>Spring for Apache Kafka provides a convenient way to test projects with an embedded Apache Kafka broker.
+To use this feature, annotate a test class with <code>@EmbeddedKafka</code> from the <code>spring-kafka-test</code> module.
+For more information, please see the Spring for Apache Kafka <a href="https://docs.spring.io/spring-kafka/docs/2.8.2/reference/html/#embedded-kafka-annotation">reference manual</a>.</p>
+</div>
+<div class="paragraph">
+<p>To make Spring Boot auto-configuration work with the aforementioned embedded Apache Kafka broker, you need to remap a system property for embedded broker addresses (populated by the <code>EmbeddedKafkaBroker</code>) into the Spring Boot configuration property for Apache Kafka.
+There are several ways to do that:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Provide a system property to map embedded broker addresses into <code>spring.kafka.bootstrap-servers</code> in the test class:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">static {
+    System.setProperty(EmbeddedKafkaBroker.BROKER_LIST_PROPERTY, "spring.kafka.bootstrap-servers");
+}
+</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Configure a property name on the <code>@EmbeddedKafka</code> annotation:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java"><span class="fold-block hide-when-folded">import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.kafka.test.context.EmbeddedKafka;
+
+</span><span class="fold-block">@SpringBootTest
+@EmbeddedKafka(topics = "someTopic", bootstrapServersProperty = "spring.kafka.bootstrap-servers")
+class MyTest {
+
+    // ...
+
+}
+</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use a placeholder in configuration properties:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.kafka.bootstrap-servers=${spring.embedded.kafka.brokers}</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  kafka:
+    bootstrap-servers: "${spring.embedded.kafka.brokers}"</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="messaging.rsocket"><a class="anchor" href="messaging.html#messaging.rsocket"></a>4. RSocket</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://rsocket.io">RSocket</a> is a binary protocol for use on byte stream transports.
+It enables symmetric interaction models through async message passing over a single connection.</p>
+</div>
+<div class="paragraph">
+<p>The <code>spring-messaging</code> module of the Spring Framework provides support for RSocket requesters and responders, both on the client and on the server side.
+See the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html#rsocket-spring">RSocket section</a> of the Spring Framework reference for more details, including an overview of the RSocket protocol.</p>
+</div>
+<div class="sect2">
+<h3 id="messaging.rsocket.strategies-auto-configuration"><a class="anchor" href="messaging.html#messaging.rsocket.strategies-auto-configuration"></a>4.1. RSocket Strategies Auto-configuration</h3>
+<div class="paragraph">
+<p>Spring Boot auto-configures an <code>RSocketStrategies</code> bean that provides all the required infrastructure for encoding and decoding RSocket payloads.
+By default, the auto-configuration will try to configure the following (in order):</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="https://cbor.io/">CBOR</a> codecs with Jackson</p>
+</li>
+<li>
+<p>JSON codecs with Jackson</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The <code>spring-boot-starter-rsocket</code> starter provides both dependencies.
+See the <a href="features.html#features.json.jackson">Jackson support section</a> to know more about customization possibilities.</p>
+</div>
+<div class="paragraph">
+<p>Developers can customize the <code>RSocketStrategies</code> component by creating beans that implement the <code>RSocketStrategiesCustomizer</code> interface.
+Note that their <code>@Order</code> is important, as it determines the order of codecs.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="messaging.rsocket.server-auto-configuration"><a class="anchor" href="messaging.html#messaging.rsocket.server-auto-configuration"></a>4.2. RSocket server Auto-configuration</h3>
+<div class="paragraph">
+<p>Spring Boot provides RSocket server auto-configuration.
+The required dependencies are provided by the <code>spring-boot-starter-rsocket</code>.</p>
+</div>
+<div class="paragraph">
+<p>Spring Boot allows exposing RSocket over WebSocket from a WebFlux server, or standing up an independent RSocket server.
+This depends on the type of application and its configuration.</p>
+</div>
+<div class="paragraph">
+<p>For WebFlux application (that is of type <code>WebApplicationType.REACTIVE</code>), the RSocket server will be plugged into the Web Server only if the following properties match:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.rsocket.server.mapping-path=/rsocket
+spring.rsocket.server.transport=websocket</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  rsocket:
+    server:
+      mapping-path: "/rsocket"
+      transport: "websocket"</code></pre>
+</div>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Plugging RSocket into a web server is only supported with Reactor Netty, as RSocket itself is built with that library.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Alternatively, an RSocket TCP or websocket server is started as an independent, embedded server.
+Besides the dependency requirements, the only required configuration is to define a port for that server:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.rsocket.server.port=9898</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  rsocket:
+    server:
+      port: 9898</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="messaging.rsocket.messaging"><a class="anchor" href="messaging.html#messaging.rsocket.messaging"></a>4.3. Spring Messaging RSocket support</h3>
+<div class="paragraph">
+<p>Spring Boot will auto-configure the Spring Messaging infrastructure for RSocket.</p>
+</div>
+<div class="paragraph">
+<p>This means that Spring Boot will create a <code>RSocketMessageHandler</code> bean that will handle RSocket requests to your application.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="messaging.rsocket.requester"><a class="anchor" href="messaging.html#messaging.rsocket.requester"></a>4.4. Calling RSocket Services with RSocketRequester</h3>
+<div class="paragraph">
+<p>Once the <code>RSocket</code> channel is established between server and client, any party can send or receive requests to the other.</p>
+</div>
+<div class="paragraph">
+<p>As a server, you can get injected with an <code>RSocketRequester</code> instance on any handler method of an RSocket <code>@Controller</code>.
+As a client, you need to configure and establish an RSocket connection first.
+Spring Boot auto-configures an <code>RSocketRequester.Builder</code> for such cases with the expected codecs and applies any <code>RSocketConnectorConfigurer</code> bean.</p>
+</div>
+<div class="paragraph">
+<p>The <code>RSocketRequester.Builder</code> instance is a prototype bean, meaning each injection point will provide you with a new instance .
+This is done on purpose since this builder is stateful and you should not create requesters with different setups using the same instance.</p>
+</div>
+<div class="paragraph">
+<p>The following code shows a typical example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java"><span class="fold-block hide-when-folded">import reactor.core.publisher.Mono;
+
+import org.springframework.messaging.rsocket.RSocketRequester;
+import org.springframework.stereotype.Service;
+
+</span><span class="fold-block">@Service
+public class MyService {
+
+    private final RSocketRequester rsocketRequester;
+
+    public MyService(RSocketRequester.Builder rsocketRequesterBuilder) {
+        this.rsocketRequester = rsocketRequesterBuilder.tcp("example.org", 9898);
+    }
+
+    public Mono&lt;User&gt; someRSocketCall(String name) {
+        return this.rsocketRequester.route("user").data(name).retrieveMono(User.class);
+    }
+
+}
+</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="messaging.spring-integration"><a class="anchor" href="messaging.html#messaging.spring-integration"></a>5. Spring Integration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Spring Boot offers several conveniences for working with <a href="https://spring.io/projects/spring-integration">Spring Integration</a>, including the <code>spring-boot-starter-integration</code> &#8220;Starter&#8221;.
+Spring Integration provides abstractions over messaging and also other transports such as HTTP, TCP, and others.
+If Spring Integration is available on your classpath, it is initialized through the <code>@EnableIntegration</code> annotation.</p>
+</div>
+<div class="paragraph">
+<p>Spring Integration polling logic relies <a href="features.html#features.task-execution-and-scheduling">on the auto-configured <code>TaskScheduler</code></a>.
+The default <code>PollerMetadata</code> (poll unbounded number of messages every second) can be customized with <code>spring.integration.poller.*</code> configuration properties.</p>
+</div>
+<div class="paragraph">
+<p>Spring Boot also configures some features that are triggered by the presence of additional Spring Integration modules.
+If <code>spring-integration-jmx</code> is also on the classpath, message processing statistics are published over JMX.
+If <code>spring-integration-jdbc</code> is available, the default database schema can be created on startup, as shown in the following line:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties">spring.integration.jdbc.initialize-schema=always</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">spring:
+  integration:
+    jdbc:
+      initialize-schema: "always"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If <code>spring-integration-rsocket</code> is available, developers can configure an RSocket server using <code>"spring.rsocket.server.*"</code> properties and let it use <code>IntegrationRSocketEndpoint</code> or <code>RSocketOutboundGateway</code> components to handle incoming RSocket messages.
+This infrastructure can handle Spring Integration RSocket channel adapters and <code>@MessageMapping</code> handlers (given <code>"spring.integration.rsocket.server.message-mapping-enabled"</code> is configured).</p>
+</div>
+<div class="paragraph">
+<p>Spring Boot can also auto-configure an <code>ClientRSocketConnector</code> using configuration properties:</p>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties"># Connecting to a RSocket server over TCP
+spring.integration.rsocket.client.host=example.org
+spring.integration.rsocket.client.port=9898</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml"># Connecting to a RSocket server over TCP
+spring:
+  integration:
+    rsocket:
+      client:
+        host: "example.org"
+        port: 9898</code></pre>
+</div>
+</div>
+<div class="listingblock primary">
+<div class="title">Properties</div>
+<div class="content">
+<pre class="highlight"><code class="language-properties" data-lang="properties"># Connecting to a RSocket Server over WebSocket
+spring.integration.rsocket.client.uri=ws://example.org</code></pre>
+</div>
+</div>
+<div class="listingblock secondary">
+<div class="title">Yaml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml"># Connecting to a RSocket Server over WebSocket
+spring:
+  integration:
+    rsocket:
+      client:
+        uri: "ws://example.org"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>See the <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/integration/IntegrationAutoConfiguration.java"><code>IntegrationAutoConfiguration</code></a> and <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/integration/IntegrationProperties.java"><code>IntegrationProperties</code></a> classes for more details.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="messaging.whats-next"><a class="anchor" href="messaging.html#messaging.whats-next"></a>6. What to Read Next</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The next section describes how to enable <a href="io.html#io">IO capabilities</a> in your application.
+You can read about <a href="io.html#io.caching">caching</a>, <a href="io.html#io.email">mail</a>, <a href="io.html#io.validation">validation</a>, <a href="io.html#io.rest-client">rest clients</a> and more in this section.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2022-01-20 14:11:26 UTC
+</div>
+</div>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1fdeabda777c65","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

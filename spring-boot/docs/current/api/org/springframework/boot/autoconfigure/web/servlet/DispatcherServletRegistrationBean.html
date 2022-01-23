@@ -1,0 +1,415 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>DispatcherServletRegistrationBean (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="DispatcherServletRegistrationBean (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var methods = {"i0":10,"i1":10,"i2":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="DispatcherServletRegistrationBean.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/DispatcherServletRegistrationBean.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="DispatcherServletPath.html" title="interface in org.springframework.boot.autoconfigure.web.servlet"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="HttpEncodingAutoConfiguration.html" title="class in org.springframework.boot.autoconfigure.web.servlet"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fautoconfigure%252Fweb%252Fservlet%252FDispatcherServletRegistrationBean.html" target="_top">Frames</a></li>
+<li><a href="DispatcherServletRegistrationBean.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="DispatcherServletRegistrationBean.html#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="DispatcherServletRegistrationBean.html#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="DispatcherServletRegistrationBean.html#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="DispatcherServletRegistrationBean.html#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+
+<div class="header">
+<div class="subTitle">org.springframework.boot.autoconfigure.web.servlet</div>
+<h2 title="Class DispatcherServletRegistrationBean" class="title">Class DispatcherServletRegistrationBean</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../web/servlet/RegistrationBean.html" title="class in org.springframework.boot.web.servlet">org.springframework.boot.web.servlet.RegistrationBean</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../web/servlet/DynamicRegistrationBean.html" title="class in org.springframework.boot.web.servlet">org.springframework.boot.web.servlet.DynamicRegistrationBean</a>&lt;<a href="https://docs.oracle.com/javaee/7/api/javax/servlet/ServletRegistration.Dynamic.html?is-external=true" title="class or interface in javax.servlet">ServletRegistration.Dynamic</a>&gt;</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../web/servlet/ServletRegistrationBean.html" title="class in org.springframework.boot.web.servlet">org.springframework.boot.web.servlet.ServletRegistrationBean</a>&lt;<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/servlet/DispatcherServlet.html?is-external=true" title="class or interface in org.springframework.web.servlet">DispatcherServlet</a>&gt;</li>
+<li>
+<ul class="inheritance">
+<li>org.springframework.boot.autoconfigure.web.servlet.DispatcherServletRegistrationBean</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="DispatcherServletPath.html" title="interface in org.springframework.boot.autoconfigure.web.servlet">DispatcherServletPath</a>, <a href="../../../web/servlet/ServletContextInitializer.html" title="interface in org.springframework.boot.web.servlet">ServletContextInitializer</a>, <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/Ordered.html?is-external=true" title="class or interface in org.springframework.core">Ordered</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="typeNameLabel">DispatcherServletRegistrationBean</span>
+extends <a href="../../../web/servlet/ServletRegistrationBean.html" title="class in org.springframework.boot.web.servlet">ServletRegistrationBean</a>&lt;<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/servlet/DispatcherServlet.html?is-external=true" title="class or interface in org.springframework.web.servlet">DispatcherServlet</a>&gt;
+implements <a href="DispatcherServletPath.html" title="interface in org.springframework.boot.autoconfigure.web.servlet">DispatcherServletPath</a></pre>
+<div class="block"><a href="../../../web/servlet/ServletRegistrationBean.html" title="class in org.springframework.boot.web.servlet"><code>ServletRegistrationBean</code></a> for the auto-configured <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/servlet/DispatcherServlet.html?is-external=true" title="class or interface in org.springframework.web.servlet"><code>DispatcherServlet</code></a>. Both
+registers the servlet and exposes <a href="DispatcherServletPath.html" title="interface in org.springframework.boot.autoconfigure.web.servlet"><code>DispatcherServletPath</code></a> information.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.0.4</dd>
+<dt><span class="simpleTagLabel">Author:</span></dt>
+<dd>Phillip Webb</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.org.springframework.core.Ordered">
+
+</a>
+<h3>Fields inherited from interface&nbsp;org.springframework.core.<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/Ordered.html?is-external=true" title="class or interface in org.springframework.core">Ordered</a></h3>
+<code><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/Ordered.html?is-external=true#HIGHEST_PRECEDENCE" title="class or interface in org.springframework.core">HIGHEST_PRECEDENCE</a>, <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/Ordered.html?is-external=true#LOWEST_PRECEDENCE" title="class or interface in org.springframework.core">LOWEST_PRECEDENCE</a></code></li>
+</ul>
+</li>
+</ul>
+
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="DispatcherServletRegistrationBean.html#DispatcherServletRegistrationBean-org.springframework.web.servlet.DispatcherServlet-java.lang.String-">DispatcherServletRegistrationBean</a></span>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/servlet/DispatcherServlet.html?is-external=true" title="class or interface in org.springframework.web.servlet">DispatcherServlet</a>&nbsp;servlet,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</code>
+<div class="block">Create a new <a href="DispatcherServletRegistrationBean.html" title="class in org.springframework.boot.autoconfigure.web.servlet"><code>DispatcherServletRegistrationBean</code></a> instance for the given
+servlet and path.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+
+<ul class="blockList">
+<li class="blockList"><a name="method.summary">
+
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="DispatcherServletRegistrationBean.html#addUrlMappings-java.lang.String...-">addUrlMappings</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>...&nbsp;urlMappings)</code>
+<div class="block">Add URL mappings, as defined in the Servlet specification, for the servlet.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="DispatcherServletRegistrationBean.html#getPath--">getPath</a></span>()</code>
+<div class="block">Returns the configured path of the dispatcher servlet.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="DispatcherServletRegistrationBean.html#setUrlMappings-java.util.Collection-">setUrlMappings</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;urlMappings)</code>
+<div class="block">Set the URL mappings for the servlet.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.org.springframework.boot.web.servlet.ServletRegistrationBean">
+
+</a>
+<h3>Methods inherited from class&nbsp;org.springframework.boot.web.servlet.<a href="../../../web/servlet/ServletRegistrationBean.html" title="class in org.springframework.boot.web.servlet">ServletRegistrationBean</a></h3>
+<code><a href="../../../web/servlet/ServletRegistrationBean.html#addRegistration-java.lang.String-javax.servlet.ServletContext-">addRegistration</a>, <a href="../../../web/servlet/ServletRegistrationBean.html#configure-javax.servlet.ServletRegistration.Dynamic-">configure</a>, <a href="../../../web/servlet/ServletRegistrationBean.html#getDescription--">getDescription</a>, <a href="../../../web/servlet/ServletRegistrationBean.html#getMultipartConfig--">getMultipartConfig</a>, <a href="../../../web/servlet/ServletRegistrationBean.html#getServlet--">getServlet</a>, <a href="../../../web/servlet/ServletRegistrationBean.html#getServletName--">getServletName</a>, <a href="../../../web/servlet/ServletRegistrationBean.html#getUrlMappings--">getUrlMappings</a>, <a href="../../../web/servlet/ServletRegistrationBean.html#setLoadOnStartup-int-">setLoadOnStartup</a>, <a href="../../../web/servlet/ServletRegistrationBean.html#setMultipartConfig-javax.servlet.MultipartConfigElement-">setMultipartConfig</a>, <a href="../../../web/servlet/ServletRegistrationBean.html#setServlet-T-">setServlet</a>, <a href="../../../web/servlet/ServletRegistrationBean.html#toString--">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.org.springframework.boot.web.servlet.DynamicRegistrationBean">
+
+</a>
+<h3>Methods inherited from class&nbsp;org.springframework.boot.web.servlet.<a href="../../../web/servlet/DynamicRegistrationBean.html" title="class in org.springframework.boot.web.servlet">DynamicRegistrationBean</a></h3>
+<code><a href="../../../web/servlet/DynamicRegistrationBean.html#addInitParameter-java.lang.String-java.lang.String-">addInitParameter</a>, <a href="../../../web/servlet/DynamicRegistrationBean.html#getInitParameters--">getInitParameters</a>, <a href="../../../web/servlet/DynamicRegistrationBean.html#getOrDeduceName-java.lang.Object-">getOrDeduceName</a>, <a href="../../../web/servlet/DynamicRegistrationBean.html#isAsyncSupported--">isAsyncSupported</a>, <a href="../../../web/servlet/DynamicRegistrationBean.html#register-java.lang.String-javax.servlet.ServletContext-">register</a>, <a href="../../../web/servlet/DynamicRegistrationBean.html#setAsyncSupported-boolean-">setAsyncSupported</a>, <a href="../../../web/servlet/DynamicRegistrationBean.html#setInitParameters-java.util.Map-">setInitParameters</a>, <a href="../../../web/servlet/DynamicRegistrationBean.html#setName-java.lang.String-">setName</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.org.springframework.boot.web.servlet.RegistrationBean">
+
+</a>
+<h3>Methods inherited from class&nbsp;org.springframework.boot.web.servlet.<a href="../../../web/servlet/RegistrationBean.html" title="class in org.springframework.boot.web.servlet">RegistrationBean</a></h3>
+<code><a href="../../../web/servlet/RegistrationBean.html#getOrder--">getOrder</a>, <a href="../../../web/servlet/RegistrationBean.html#isEnabled--">isEnabled</a>, <a href="../../../web/servlet/RegistrationBean.html#onStartup-javax.servlet.ServletContext-">onStartup</a>, <a href="../../../web/servlet/RegistrationBean.html#setEnabled-boolean-">setEnabled</a>, <a href="../../../web/servlet/RegistrationBean.html#setOrder-int-">setOrder</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath">
+
+</a>
+<h3>Methods inherited from interface&nbsp;org.springframework.boot.autoconfigure.web.servlet.<a href="DispatcherServletPath.html" title="interface in org.springframework.boot.autoconfigure.web.servlet">DispatcherServletPath</a></h3>
+<code><a href="DispatcherServletPath.html#getPrefix--">getPrefix</a>, <a href="DispatcherServletPath.html#getRelativePath-java.lang.String-">getRelativePath</a>, <a href="DispatcherServletPath.html#getServletUrlMapping--">getServletUrlMapping</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+
+</a>
+<h3>Constructor Detail</h3>
+<a name="DispatcherServletRegistrationBean-org.springframework.web.servlet.DispatcherServlet-java.lang.String-">
+
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>DispatcherServletRegistrationBean</h4>
+<pre>public&nbsp;DispatcherServletRegistrationBean(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/servlet/DispatcherServlet.html?is-external=true" title="class or interface in org.springframework.web.servlet">DispatcherServlet</a>&nbsp;servlet,
+                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path)</pre>
+<div class="block">Create a new <a href="DispatcherServletRegistrationBean.html" title="class in org.springframework.boot.autoconfigure.web.servlet"><code>DispatcherServletRegistrationBean</code></a> instance for the given
+servlet and path.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>servlet</code> - the dispatcher servlet</dd>
+<dd><code>path</code> - the dispatcher servlet path</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+
+</a>
+<h3>Method Detail</h3>
+<a name="getPath--">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPath</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPath()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="DispatcherServletPath.html#getPath--">DispatcherServletPath</a></code></span></div>
+<div class="block">Returns the configured path of the dispatcher servlet.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="DispatcherServletPath.html#getPath--">getPath</a></code>&nbsp;in interface&nbsp;<code><a href="DispatcherServletPath.html" title="interface in org.springframework.boot.autoconfigure.web.servlet">DispatcherServletPath</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the configured path</dd>
+</dl>
+</li>
+</ul>
+<a name="setUrlMappings-java.util.Collection-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setUrlMappings</h4>
+<pre>public&nbsp;void&nbsp;setUrlMappings(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;urlMappings)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../web/servlet/ServletRegistrationBean.html#setUrlMappings-java.util.Collection-">ServletRegistrationBean</a></code></span></div>
+<div class="block">Set the URL mappings for the servlet. If not specified the mapping will default to
+'/'. This will replace any previously specified mappings.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../web/servlet/ServletRegistrationBean.html#setUrlMappings-java.util.Collection-">setUrlMappings</a></code>&nbsp;in class&nbsp;<code><a href="../../../web/servlet/ServletRegistrationBean.html" title="class in org.springframework.boot.web.servlet">ServletRegistrationBean</a>&lt;<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/servlet/DispatcherServlet.html?is-external=true" title="class or interface in org.springframework.web.servlet">DispatcherServlet</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>urlMappings</code> - the mappings to set</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../web/servlet/ServletRegistrationBean.html#addUrlMappings-java.lang.String...-"><code>ServletRegistrationBean.addUrlMappings(String...)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="addUrlMappings-java.lang.String...-">
+
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>addUrlMappings</h4>
+<pre>public&nbsp;void&nbsp;addUrlMappings(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>...&nbsp;urlMappings)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../web/servlet/ServletRegistrationBean.html#addUrlMappings-java.lang.String...-">ServletRegistrationBean</a></code></span></div>
+<div class="block">Add URL mappings, as defined in the Servlet specification, for the servlet.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../web/servlet/ServletRegistrationBean.html#addUrlMappings-java.lang.String...-">addUrlMappings</a></code>&nbsp;in class&nbsp;<code><a href="../../../web/servlet/ServletRegistrationBean.html" title="class in org.springframework.boot.web.servlet">ServletRegistrationBean</a>&lt;<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/servlet/DispatcherServlet.html?is-external=true" title="class or interface in org.springframework.web.servlet">DispatcherServlet</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>urlMappings</code> - the mappings to add</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../web/servlet/ServletRegistrationBean.html#setUrlMappings-java.util.Collection-"><code>ServletRegistrationBean.setUrlMappings(Collection)</code></a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="DispatcherServletRegistrationBean.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/DispatcherServletRegistrationBean.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="DispatcherServletPath.html" title="interface in org.springframework.boot.autoconfigure.web.servlet"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="HttpEncodingAutoConfiguration.html" title="class in org.springframework.boot.autoconfigure.web.servlet"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fautoconfigure%252Fweb%252Fservlet%252FDispatcherServletRegistrationBean.html" target="_top">Frames</a></li>
+<li><a href="DispatcherServletRegistrationBean.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="DispatcherServletRegistrationBean.html#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="DispatcherServletRegistrationBean.html#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="DispatcherServletRegistrationBean.html#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="DispatcherServletRegistrationBean.html#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1f991ddc0d5313","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

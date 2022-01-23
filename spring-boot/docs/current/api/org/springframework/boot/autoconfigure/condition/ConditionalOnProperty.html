@@ -1,0 +1,403 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>ConditionalOnProperty (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="ConditionalOnProperty (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="ConditionalOnProperty.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ConditionalOnProperty.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="ConditionalOnNotWebApplication.html" title="annotation in org.springframework.boot.autoconfigure.condition"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="ConditionalOnResource.html" title="annotation in org.springframework.boot.autoconfigure.condition"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fautoconfigure%252Fcondition%252FConditionalOnProperty.html" target="_top">Frames</a></li>
+<li><a href="ConditionalOnProperty.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Required&nbsp;|&nbsp;</li>
+<li><a href="ConditionalOnProperty.html#annotation.type.optional.element.summary">Optional</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="ConditionalOnProperty.html#annotation.type.element.detail">Element</a></li>
+</ul>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+
+<div class="header">
+<div class="subTitle">org.springframework.boot.autoconfigure.condition</div>
+<h2 title="Annotation Type ConditionalOnProperty" class="title">Annotation Type ConditionalOnProperty</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#RUNTIME" title="class or interface in java.lang.annotation">RUNTIME</a>)
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>={<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#TYPE" title="class or interface in java.lang.annotation">TYPE</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#METHOD" title="class or interface in java.lang.annotation">METHOD</a>})
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Documented.html?is-external=true" title="class or interface in java.lang.annotation">@Documented</a>
+ <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Conditional.html?is-external=true" title="class or interface in org.springframework.context.annotation">@Conditional</a>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Conditional.html?is-external=true#value--" title="class or interface in org.springframework.context.annotation">value</a>=org.springframework.boot.autoconfigure.condition.OnPropertyCondition.class)
+public @interface <span class="memberNameLabel">ConditionalOnProperty</span></pre>
+<div class="block"><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Conditional.html?is-external=true" title="class or interface in org.springframework.context.annotation"><code>@Conditional</code></a> that checks if the specified properties have a
+specific value. By default the properties must be present in the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/env/Environment.html?is-external=true" title="class or interface in org.springframework.core.env"><code>Environment</code></a>
+and <strong>not</strong> equal to <code>false</code>. The <a href="ConditionalOnProperty.html#havingValue--"><code>havingValue()</code></a> and
+<a href="ConditionalOnProperty.html#matchIfMissing--"><code>matchIfMissing()</code></a> attributes allow further customizations.
+<p>
+The <a href="ConditionalOnProperty.html#havingValue--"><code>havingValue()</code></a> attribute can be used to specify the value that the property
+should have. The table below shows when a condition matches according to the property
+value and the <a href="ConditionalOnProperty.html#havingValue--"><code>havingValue()</code></a> attribute:
+<table border="1">
+<caption>Having values</caption>
+<tr>
+<th>Property Value</th>
+<th><code>havingValue=""</code></th>
+<th><code>havingValue="true"</code></th>
+<th><code>havingValue="false"</code></th>
+<th><code>havingValue="foo"</code></th>
+</tr>
+<tr>
+<td><code>"true"</code></td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td><code>"false"</code></td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td><code>"foo"</code></td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+</table>
+<p>
+If the property is not contained in the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/env/Environment.html?is-external=true" title="class or interface in org.springframework.core.env"><code>Environment</code></a> at all, the
+<a href="ConditionalOnProperty.html#matchIfMissing--"><code>matchIfMissing()</code></a> attribute is consulted. By default missing attributes do not
+match.
+<p>
+This condition cannot be reliably used for matching collection properties. For example,
+in the following configuration, the condition matches if <code>spring.example.values</code>
+is present in the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/env/Environment.html?is-external=true" title="class or interface in org.springframework.core.env"><code>Environment</code></a> but does not match if
+<code>spring.example.values[0]</code> is present.
+<pre class="code"> &#064;ConditionalOnProperty(prefix = "spring", name = "example.values")
+ class ExampleAutoConfiguration {
+ }
+ </pre>
+It is better to use a custom condition for such cases.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.1.0</dd>
+<dt><span class="simpleTagLabel">Author:</span></dt>
+<dd>Maciej Walkowiak, Stephane Nicoll, Phillip Webb</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="annotation.type.optional.element.summary">
+
+</a>
+<h3>Optional Element Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Optional Element Summary table, listing optional elements, and an explanation">
+<caption><span>Optional Elements</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Optional Element and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="ConditionalOnProperty.html#havingValue--">havingValue</a></span></code>
+<div class="block">The string representation of the expected value for the properties.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="ConditionalOnProperty.html#matchIfMissing--">matchIfMissing</a></span></code>
+<div class="block">Specify if the condition should match if the property is not set.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="ConditionalOnProperty.html#name--">name</a></span></code>
+<div class="block">The name of the properties to test.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="ConditionalOnProperty.html#prefix--">prefix</a></span></code>
+<div class="block">A prefix that should be applied to each property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="ConditionalOnProperty.html#value--">value</a></span></code>
+<div class="block">Alias for <a href="ConditionalOnProperty.html#name--"><code>name()</code></a>.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="annotation.type.element.detail">
+
+</a>
+<h3>Element Detail</h3>
+<a name="value--">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>value</h4>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;value</pre>
+<div class="block">Alias for <a href="ConditionalOnProperty.html#name--"><code>name()</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the names</dd>
+</dl>
+<dl>
+<dt>Default:</dt>
+<dd>{}</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="prefix--">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>prefix</h4>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix</pre>
+<div class="block">A prefix that should be applied to each property. The prefix automatically ends
+with a dot if not specified. A valid prefix is defined by one or more words
+separated with dots (e.g. <code>"acme.system.feature"</code>).</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the prefix</dd>
+</dl>
+<dl>
+<dt>Default:</dt>
+<dd>""</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="name--">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>name</h4>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;name</pre>
+<div class="block">The name of the properties to test. If a prefix has been defined, it is applied to
+compute the full key of each property. For instance if the prefix is
+<code>app.config</code> and one value is <code>my-value</code>, the full key would be
+<code>app.config.my-value</code>
+<p>
+Use the dashed notation to specify each property, that is all lower case with a "-"
+to separate words (e.g. <code>my-long-property</code>).</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the names</dd>
+</dl>
+<dl>
+<dt>Default:</dt>
+<dd>{}</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="havingValue--">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>havingValue</h4>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;havingValue</pre>
+<div class="block">The string representation of the expected value for the properties. If not
+specified, the property must <strong>not</strong> be equal to <code>false</code>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the expected value</dd>
+</dl>
+<dl>
+<dt>Default:</dt>
+<dd>""</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="matchIfMissing--">
+
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>matchIfMissing</h4>
+<pre>public abstract&nbsp;boolean&nbsp;matchIfMissing</pre>
+<div class="block">Specify if the condition should match if the property is not set. Defaults to
+<code>false</code>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>if the condition should match if the property is missing</dd>
+</dl>
+<dl>
+<dt>Default:</dt>
+<dd>false</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="ConditionalOnProperty.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ConditionalOnProperty.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="ConditionalOnNotWebApplication.html" title="annotation in org.springframework.boot.autoconfigure.condition"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="ConditionalOnResource.html" title="annotation in org.springframework.boot.autoconfigure.condition"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fautoconfigure%252Fcondition%252FConditionalOnProperty.html" target="_top">Frames</a></li>
+<li><a href="ConditionalOnProperty.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Required&nbsp;|&nbsp;</li>
+<li><a href="ConditionalOnProperty.html#annotation.type.optional.element.summary">Optional</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="ConditionalOnProperty.html#annotation.type.element.detail">Element</a></li>
+</ul>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1f8eaa0b307d8c","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

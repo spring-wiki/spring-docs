@@ -1,0 +1,2829 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>Uses of Class org.springframework.boot.context.properties.ConfigurationProperties (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="Uses of Class org.springframework.boot.context.properties.ConfigurationProperties (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="ConfigurationProperties.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../../../../../../overview-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fcontext%252Fproperties%252Fclass-use%252FConfigurationProperties.html" target="_top">Frames</a></li>
+<li><a href="ConfigurationProperties.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+<div class="header">
+<h2 title="Uses of Class org.springframework.boot.context.properties.ConfigurationProperties" class="title">Uses of Class<br>org.springframework.boot.context.properties.ConfigurationProperties</h2>
+</div>
+<div class="classUseContainer">
+<ul class="blockList">
+<li class="blockList">
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing packages, and an explanation">
+<caption><span>Packages that use <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Package</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.context.properties">org.springframework.boot.actuate.autoconfigure.context.properties</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for actuator property concerns.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.endpoint.jmx">org.springframework.boot.actuate.autoconfigure.endpoint.jmx</a></td>
+<td class="colLast">
+<div class="block">Actuator JMX endpoint auto-configuration.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.endpoint.web">org.springframework.boot.actuate.autoconfigure.endpoint.web</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for the Actuator's web endpoints.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.env">org.springframework.boot.actuate.autoconfigure.env</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for actuator Spring Environment concerns.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.health">org.springframework.boot.actuate.autoconfigure.health</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for actuator health concerns.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.info">org.springframework.boot.actuate.autoconfigure.info</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for actuator info concerns.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.jdbc">org.springframework.boot.actuate.autoconfigure.jdbc</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for actuator JDBC concerns.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.jolokia">org.springframework.boot.actuate.autoconfigure.jolokia</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for actuator Jolokia support.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.logging">org.springframework.boot.actuate.autoconfigure.logging</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for actuator logging concerns.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics">org.springframework.boot.actuate.autoconfigure.metrics</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for actuator metrics and Micrometer.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.appoptics">org.springframework.boot.actuate.autoconfigure.metrics.export.appoptics</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to AppOptics.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.atlas">org.springframework.boot.actuate.autoconfigure.metrics.export.atlas</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to Atlas.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.datadog">org.springframework.boot.actuate.autoconfigure.metrics.export.datadog</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to Datadog.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.dynatrace">org.springframework.boot.actuate.autoconfigure.metrics.export.dynatrace</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to Dynatrace.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.elastic">org.springframework.boot.actuate.autoconfigure.metrics.export.elastic</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to Elastic.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.ganglia">org.springframework.boot.actuate.autoconfigure.metrics.export.ganglia</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to Ganglia.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.graphite">org.springframework.boot.actuate.autoconfigure.metrics.export.graphite</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to Graphite.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.humio">org.springframework.boot.actuate.autoconfigure.metrics.export.humio</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to Humio.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.influx">org.springframework.boot.actuate.autoconfigure.metrics.export.influx</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to InfluxDB.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.jmx">org.springframework.boot.actuate.autoconfigure.metrics.export.jmx</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to JMX.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.kairos">org.springframework.boot.actuate.autoconfigure.metrics.export.kairos</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to KairosDB.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.newrelic">org.springframework.boot.actuate.autoconfigure.metrics.export.newrelic</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to New Relic.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.prometheus">org.springframework.boot.actuate.autoconfigure.metrics.export.prometheus</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to Prometheus.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.signalfx">org.springframework.boot.actuate.autoconfigure.metrics.export.signalfx</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to SignalFX.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.simple">org.springframework.boot.actuate.autoconfigure.metrics.export.simple</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to a simple in-memory store.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.stackdriver">org.springframework.boot.actuate.autoconfigure.metrics.export.stackdriver</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to Stackdriver.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.statsd">org.springframework.boot.actuate.autoconfigure.metrics.export.statsd</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to StatsD.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront">org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront</a></td>
+<td class="colLast">
+<div class="block">Support for exporting actuator metrics to Wavefront.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.system">org.springframework.boot.actuate.autoconfigure.system</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for actuator system concerns.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.trace.http">org.springframework.boot.actuate.autoconfigure.trace.http</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for actuator HTTP tracing concerns.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.actuate.autoconfigure.web.server">org.springframework.boot.actuate.autoconfigure.web.server</a></td>
+<td class="colLast">
+<div class="block">Actuator web server support.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.amqp">org.springframework.boot.autoconfigure.amqp</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for RabbitMQ.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.batch">org.springframework.boot.autoconfigure.batch</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Spring Batch.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.cache">org.springframework.boot.autoconfigure.cache</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for the cache abstraction.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.cassandra">org.springframework.boot.autoconfigure.cassandra</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Cassandra.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.codec">org.springframework.boot.autoconfigure.codec</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for reactive codecs.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.context">org.springframework.boot.autoconfigure.context</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for the Spring context.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.couchbase">org.springframework.boot.autoconfigure.couchbase</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Couchbase.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.data.couchbase">org.springframework.boot.autoconfigure.data.couchbase</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Spring Data Couchbase.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.data.elasticsearch">org.springframework.boot.autoconfigure.data.elasticsearch</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Spring Data Elasticsearch.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.data.neo4j">org.springframework.boot.autoconfigure.data.neo4j</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Spring Data Neo4j.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.data.redis">org.springframework.boot.autoconfigure.data.redis</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Spring Data Redis.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.data.rest">org.springframework.boot.autoconfigure.data.rest</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Spring Data REST.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.data.web">org.springframework.boot.autoconfigure.data.web</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Spring Data's Web Support.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.elasticsearch">org.springframework.boot.autoconfigure.elasticsearch</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Elasticsearch client.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.flyway">org.springframework.boot.autoconfigure.flyway</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Flyway.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.freemarker">org.springframework.boot.autoconfigure.freemarker</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for FreeMarker.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.groovy.template">org.springframework.boot.autoconfigure.groovy.template</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Groovy templates.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.gson">org.springframework.boot.autoconfigure.gson</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for GSON.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.h2">org.springframework.boot.autoconfigure.h2</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for H2's Console.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.hateoas">org.springframework.boot.autoconfigure.hateoas</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Spring HATEOAS.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.hazelcast">org.springframework.boot.autoconfigure.hazelcast</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Hazelcast.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.influx">org.springframework.boot.autoconfigure.influx</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for InfluxDB.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.info">org.springframework.boot.autoconfigure.info</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for project information.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.integration">org.springframework.boot.autoconfigure.integration</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Spring Integration.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.jackson">org.springframework.boot.autoconfigure.jackson</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Jackson.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.jdbc">org.springframework.boot.autoconfigure.jdbc</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for JDBC.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.jersey">org.springframework.boot.autoconfigure.jersey</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Jersey.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.jms">org.springframework.boot.autoconfigure.jms</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for JMS.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.jms.activemq">org.springframework.boot.autoconfigure.jms.activemq</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for ActiveMQ.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.jms.artemis">org.springframework.boot.autoconfigure.jms.artemis</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Artemis.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.jooq">org.springframework.boot.autoconfigure.jooq</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for JOOQ.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.kafka">org.springframework.boot.autoconfigure.kafka</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Apache Kafka.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.ldap">org.springframework.boot.autoconfigure.ldap</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for LDAP.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.ldap.embedded">org.springframework.boot.autoconfigure.ldap.embedded</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for embedded LDAP.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.liquibase">org.springframework.boot.autoconfigure.liquibase</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Liquibase.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.mail">org.springframework.boot.autoconfigure.mail</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for email support.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.mongo">org.springframework.boot.autoconfigure.mongo</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for MongoDB.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.mongo.embedded">org.springframework.boot.autoconfigure.mongo.embedded</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for embedded MongoDB.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.mustache">org.springframework.boot.autoconfigure.mustache</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Mustache.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.neo4j">org.springframework.boot.autoconfigure.neo4j</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Neo4j.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.netty">org.springframework.boot.autoconfigure.netty</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for the Netty library.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.orm.jpa">org.springframework.boot.autoconfigure.orm.jpa</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for JPA and Spring ORM.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.quartz">org.springframework.boot.autoconfigure.quartz</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Quartz Scheduler.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.r2dbc">org.springframework.boot.autoconfigure.r2dbc</a></td>
+<td class="colLast">
+<div class="block">Auto-Configuration for R2DBC.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.rsocket">org.springframework.boot.autoconfigure.rsocket</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for RSocket.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.security">org.springframework.boot.autoconfigure.security</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Spring Security.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.security.oauth2.client">org.springframework.boot.autoconfigure.security.oauth2.client</a></td>
+<td class="colLast">
+<div class="block">Support for Spring Security's OAuth 2 client.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.security.oauth2.resource">org.springframework.boot.autoconfigure.security.oauth2.resource</a></td>
+<td class="colLast">
+<div class="block">Support for Spring Security's OAuth2 resource server.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.security.saml2">org.springframework.boot.autoconfigure.security.saml2</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Spring Security's SAML 2.0.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.sendgrid">org.springframework.boot.autoconfigure.sendgrid</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for SendGrid.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.session">org.springframework.boot.autoconfigure.session</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Spring Session.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.solr">org.springframework.boot.autoconfigure.solr</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Solr.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.sql.init">org.springframework.boot.autoconfigure.sql.init</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for basic script-based initialization of an SQL database.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.task">org.springframework.boot.autoconfigure.task</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for task execution and scheduling.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.thymeleaf">org.springframework.boot.autoconfigure.thymeleaf</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Thymeleaf.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.transaction">org.springframework.boot.autoconfigure.transaction</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for transaction support.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.transaction.jta">org.springframework.boot.autoconfigure.transaction.jta</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for JTA.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.web">org.springframework.boot.autoconfigure.web</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for common web concerns.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.web.reactive">org.springframework.boot.autoconfigure.web.reactive</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for reactive web servers and Spring WebFlux.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.web.servlet">org.springframework.boot.autoconfigure.web.servlet</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for servlet web servers and Spring MVC.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.autoconfigure.webservices">org.springframework.boot.autoconfigure.webservices</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Spring Web Services.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.context.properties">org.springframework.boot.context.properties</a></td>
+<td class="colLast">
+<div class="block">Support for external configuration properties.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.devtools.autoconfigure">org.springframework.boot.devtools.autoconfigure</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for <code>spring-boot-devtools</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.jta.atomikos">org.springframework.boot.jta.atomikos</a></td>
+<td class="colLast">
+<div class="block">Support classes for Atomikos JTA.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.test.autoconfigure.restdocs">org.springframework.boot.test.autoconfigure.restdocs</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for tests using Spring REST Docs.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.test.autoconfigure.web.reactive">org.springframework.boot.test.autoconfigure.web.reactive</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for reactive web tests.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ConfigurationProperties.html#org.springframework.boot.test.autoconfigure.web.servlet">org.springframework.boot.test.autoconfigure.web.servlet</a></td>
+<td class="colLast">
+<div class="block">Auto-configuration for Spring MVC tests.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<ul class="blockList">
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.context.properties">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/context/properties/package-summary.html">org.springframework.boot.actuate.autoconfigure.context.properties</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/context/properties/package-summary.html">org.springframework.boot.actuate.autoconfigure.context.properties</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/context/properties/ConfigurationPropertiesReportEndpointProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.context.properties">ConfigurationPropertiesReportEndpointProperties</a></span></code>
+<div class="block">Configuration properties for <a href="../../../actuate/context/properties/ConfigurationPropertiesReportEndpoint.html" title="class in org.springframework.boot.actuate.context.properties"><code>ConfigurationPropertiesReportEndpoint</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.endpoint.jmx">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/endpoint/jmx/package-summary.html">org.springframework.boot.actuate.autoconfigure.endpoint.jmx</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/endpoint/jmx/package-summary.html">org.springframework.boot.actuate.autoconfigure.endpoint.jmx</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/endpoint/jmx/JmxEndpointProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.endpoint.jmx">JmxEndpointProperties</a></span></code>
+<div class="block">Configuration properties for JMX export of endpoints.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.endpoint.web">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/endpoint/web/package-summary.html">org.springframework.boot.actuate.autoconfigure.endpoint.web</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/endpoint/web/package-summary.html">org.springframework.boot.actuate.autoconfigure.endpoint.web</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/endpoint/web/CorsEndpointProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.endpoint.web">CorsEndpointProperties</a></span></code>
+<div class="block">Configuration properties for web endpoints' CORS support.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/endpoint/web/WebEndpointProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.endpoint.web">WebEndpointProperties</a></span></code>
+<div class="block">Configuration properties for web management endpoints.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.env">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/env/package-summary.html">org.springframework.boot.actuate.autoconfigure.env</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/env/package-summary.html">org.springframework.boot.actuate.autoconfigure.env</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/env/EnvironmentEndpointProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.env">EnvironmentEndpointProperties</a></span></code>
+<div class="block">Configuration properties for <a href="../../../actuate/env/EnvironmentEndpoint.html" title="class in org.springframework.boot.actuate.env"><code>EnvironmentEndpoint</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.health">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/health/package-summary.html">org.springframework.boot.actuate.autoconfigure.health</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/health/package-summary.html">org.springframework.boot.actuate.autoconfigure.health</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/health/HealthEndpointProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.health">HealthEndpointProperties</a></span></code>
+<div class="block">Configuration properties for <a href="../../../actuate/health/HealthEndpoint.html" title="class in org.springframework.boot.actuate.health"><code>HealthEndpoint</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.info">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/info/package-summary.html">org.springframework.boot.actuate.autoconfigure.info</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/info/package-summary.html">org.springframework.boot.actuate.autoconfigure.info</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/info/InfoContributorProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.info">InfoContributorProperties</a></span></code>
+<div class="block">Configuration properties for core info contributors.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.jdbc">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/jdbc/package-summary.html">org.springframework.boot.actuate.autoconfigure.jdbc</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/jdbc/package-summary.html">org.springframework.boot.actuate.autoconfigure.jdbc</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/jdbc/DataSourceHealthIndicatorProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.jdbc">DataSourceHealthIndicatorProperties</a></span></code>
+<div class="block">External configuration properties for <a href="../../../actuate/jdbc/DataSourceHealthIndicator.html" title="class in org.springframework.boot.actuate.jdbc"><code>DataSourceHealthIndicator</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.jolokia">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/jolokia/package-summary.html">org.springframework.boot.actuate.autoconfigure.jolokia</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/jolokia/package-summary.html">org.springframework.boot.actuate.autoconfigure.jolokia</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/jolokia/JolokiaProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.jolokia">JolokiaProperties</a></span></code>
+<div class="block">Configuration properties for Jolokia.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.logging">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/logging/package-summary.html">org.springframework.boot.actuate.autoconfigure.logging</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/logging/package-summary.html">org.springframework.boot.actuate.autoconfigure.logging</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/logging/LogFileWebEndpointProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.logging">LogFileWebEndpointProperties</a></span></code>
+<div class="block">Configuration properties for <a href="../../../actuate/logging/LogFileWebEndpoint.html" title="class in org.springframework.boot.actuate.logging"><code>LogFileWebEndpoint</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/MetricsProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics">MetricsProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring
+Micrometer-based metrics.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.appoptics">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/appoptics/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.appoptics</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/appoptics/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.appoptics</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/appoptics/AppOpticsProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.appoptics">AppOpticsProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring AppOptics
+metrics export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.atlas">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/atlas/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.atlas</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/atlas/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.atlas</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/atlas/AtlasProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.atlas">AtlasProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring Atlas metrics
+export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.datadog">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/datadog/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.datadog</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/datadog/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.datadog</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/datadog/DatadogProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.datadog">DatadogProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring Datadog
+metrics export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.dynatrace">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/dynatrace/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.dynatrace</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/dynatrace/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.dynatrace</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/dynatrace/DynatraceProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.dynatrace">DynatraceProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring Dynatrace
+metrics export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.elastic">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/elastic/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.elastic</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/elastic/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.elastic</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/elastic/ElasticProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.elastic">ElasticProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring Elastic
+metrics export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.ganglia">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/ganglia/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.ganglia</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/ganglia/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.ganglia</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/ganglia/GangliaProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.ganglia">GangliaProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring Ganglia
+metrics export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.graphite">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/graphite/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.graphite</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/graphite/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.graphite</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/graphite/GraphiteProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.graphite">GraphiteProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring Graphite
+metrics export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.humio">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/humio/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.humio</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/humio/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.humio</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/humio/HumioProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.humio">HumioProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring Humio metrics
+export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.influx">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/influx/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.influx</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/influx/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.influx</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/influx/InfluxProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.influx">InfluxProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring Influx metrics
+export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.jmx">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/jmx/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.jmx</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/jmx/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.jmx</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/jmx/JmxProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.jmx">JmxProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring JMX metrics
+export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.kairos">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/kairos/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.kairos</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/kairos/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.kairos</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/kairos/KairosProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.kairos">KairosProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring KairosDB
+metrics export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.newrelic">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/newrelic/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.newrelic</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/newrelic/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.newrelic</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/newrelic/NewRelicProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.newrelic">NewRelicProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring New Relic
+metrics export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.prometheus">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/prometheus/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.prometheus</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/prometheus/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.prometheus</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/prometheus/PrometheusProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.prometheus">PrometheusProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring metrics export
+to Prometheus.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.signalfx">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/signalfx/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.signalfx</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/signalfx/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.signalfx</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/signalfx/SignalFxProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.signalfx">SignalFxProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring metrics export
+to SignalFX.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.simple">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/simple/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.simple</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/simple/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.simple</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/simple/SimpleProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.simple">SimpleProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring metrics export
+to a <code>SimpleMeterRegistry</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.stackdriver">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/stackdriver/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.stackdriver</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/stackdriver/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.stackdriver</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/stackdriver/StackdriverProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.stackdriver">StackdriverProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring Stackdriver
+metrics export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.statsd">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/statsd/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.statsd</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/statsd/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.statsd</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/statsd/StatsdProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.statsd">StatsdProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring StatsD metrics
+export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/metrics/export/wavefront/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/metrics/export/wavefront/package-summary.html">org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/metrics/export/wavefront/WavefrontProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront">WavefrontProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring Wavefront
+metrics export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.system">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/system/package-summary.html">org.springframework.boot.actuate.autoconfigure.system</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/system/package-summary.html">org.springframework.boot.actuate.autoconfigure.system</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/system/DiskSpaceHealthIndicatorProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.system">DiskSpaceHealthIndicatorProperties</a></span></code>
+<div class="block">External configuration properties for <a href="../../../actuate/system/DiskSpaceHealthIndicator.html" title="class in org.springframework.boot.actuate.system"><code>DiskSpaceHealthIndicator</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.trace.http">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/trace/http/package-summary.html">org.springframework.boot.actuate.autoconfigure.trace.http</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/trace/http/package-summary.html">org.springframework.boot.actuate.autoconfigure.trace.http</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/trace/http/HttpTraceProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.trace.http">HttpTraceProperties</a></span></code>
+<div class="block">Configuration properties for HTTP tracing.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.actuate.autoconfigure.web.server">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../actuate/autoconfigure/web/server/package-summary.html">org.springframework.boot.actuate.autoconfigure.web.server</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../actuate/autoconfigure/web/server/package-summary.html">org.springframework.boot.actuate.autoconfigure.web.server</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../actuate/autoconfigure/web/server/ManagementServerProperties.html" title="class in org.springframework.boot.actuate.autoconfigure.web.server">ManagementServerProperties</a></span></code>
+<div class="block">Properties for the management server (e.g.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.amqp">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/amqp/package-summary.html">org.springframework.boot.autoconfigure.amqp</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/amqp/package-summary.html">org.springframework.boot.autoconfigure.amqp</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/amqp/RabbitProperties.html" title="class in org.springframework.boot.autoconfigure.amqp">RabbitProperties</a></span></code>
+<div class="block">Configuration properties for Rabbit.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.batch">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/batch/package-summary.html">org.springframework.boot.autoconfigure.batch</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/batch/package-summary.html">org.springframework.boot.autoconfigure.batch</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/batch/BatchProperties.html" title="class in org.springframework.boot.autoconfigure.batch">BatchProperties</a></span></code>
+<div class="block">Configuration properties for Spring Batch.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.cache">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/cache/package-summary.html">org.springframework.boot.autoconfigure.cache</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/cache/package-summary.html">org.springframework.boot.autoconfigure.cache</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/cache/CacheProperties.html" title="class in org.springframework.boot.autoconfigure.cache">CacheProperties</a></span></code>
+<div class="block">Configuration properties for the cache abstraction.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.cassandra">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/cassandra/package-summary.html">org.springframework.boot.autoconfigure.cassandra</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/cassandra/package-summary.html">org.springframework.boot.autoconfigure.cassandra</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/cassandra/CassandraProperties.html" title="class in org.springframework.boot.autoconfigure.cassandra">CassandraProperties</a></span></code>
+<div class="block">Configuration properties for Cassandra.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.codec">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/codec/package-summary.html">org.springframework.boot.autoconfigure.codec</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/codec/package-summary.html">org.springframework.boot.autoconfigure.codec</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/codec/CodecProperties.html" title="class in org.springframework.boot.autoconfigure.codec">CodecProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>properties</code></a> for reactive codecs.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.context">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/context/package-summary.html">org.springframework.boot.autoconfigure.context</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/context/package-summary.html">org.springframework.boot.autoconfigure.context</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/context/LifecycleProperties.html" title="class in org.springframework.boot.autoconfigure.context">LifecycleProperties</a></span></code>
+<div class="block">Configuration properties for lifecycle processing.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../autoconfigure/context/package-summary.html">org.springframework.boot.autoconfigure.context</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../autoconfigure/context/MessageSourceProperties.html" title="class in org.springframework.boot.autoconfigure.context">MessageSourceProperties</a></code></td>
+<td class="colLast"><span class="typeNameLabel">MessageSourceAutoConfiguration.</span><code><span class="memberNameLink"><a href="../../../autoconfigure/context/MessageSourceAutoConfiguration.html#messageSourceProperties--">messageSourceProperties</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.couchbase">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/couchbase/package-summary.html">org.springframework.boot.autoconfigure.couchbase</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/couchbase/package-summary.html">org.springframework.boot.autoconfigure.couchbase</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/couchbase/CouchbaseProperties.html" title="class in org.springframework.boot.autoconfigure.couchbase">CouchbaseProperties</a></span></code>
+<div class="block">Configuration properties for Couchbase.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.data.couchbase">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/data/couchbase/package-summary.html">org.springframework.boot.autoconfigure.data.couchbase</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/data/couchbase/package-summary.html">org.springframework.boot.autoconfigure.data.couchbase</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/data/couchbase/CouchbaseDataProperties.html" title="class in org.springframework.boot.autoconfigure.data.couchbase">CouchbaseDataProperties</a></span></code>
+<div class="block">Configuration properties for Spring Data Couchbase.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.data.elasticsearch">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/data/elasticsearch/package-summary.html">org.springframework.boot.autoconfigure.data.elasticsearch</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/data/elasticsearch/package-summary.html">org.springframework.boot.autoconfigure.data.elasticsearch</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/data/elasticsearch/ReactiveElasticsearchRestClientProperties.html" title="class in org.springframework.boot.autoconfigure.data.elasticsearch">ReactiveElasticsearchRestClientProperties</a></span></code>
+<div class="block">Configuration properties for Elasticsearch Reactive REST clients.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.data.neo4j">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/data/neo4j/package-summary.html">org.springframework.boot.autoconfigure.data.neo4j</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/data/neo4j/package-summary.html">org.springframework.boot.autoconfigure.data.neo4j</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/data/neo4j/Neo4jDataProperties.html" title="class in org.springframework.boot.autoconfigure.data.neo4j">Neo4jDataProperties</a></span></code>
+<div class="block">Configuration properties for Spring Data Neo4j.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.data.redis">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/data/redis/package-summary.html">org.springframework.boot.autoconfigure.data.redis</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/data/redis/package-summary.html">org.springframework.boot.autoconfigure.data.redis</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/data/redis/RedisProperties.html" title="class in org.springframework.boot.autoconfigure.data.redis">RedisProperties</a></span></code>
+<div class="block">Configuration properties for Redis.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.data.rest">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/data/rest/package-summary.html">org.springframework.boot.autoconfigure.data.rest</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/data/rest/package-summary.html">org.springframework.boot.autoconfigure.data.rest</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/data/rest/RepositoryRestProperties.html" title="class in org.springframework.boot.autoconfigure.data.rest">RepositoryRestProperties</a></span></code>
+<div class="block">Configuration properties for Spring Data REST.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.data.web">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/data/web/package-summary.html">org.springframework.boot.autoconfigure.data.web</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/data/web/package-summary.html">org.springframework.boot.autoconfigure.data.web</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/data/web/SpringDataWebProperties.html" title="class in org.springframework.boot.autoconfigure.data.web">SpringDataWebProperties</a></span></code>
+<div class="block">Configuration properties for Spring Data Web.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.elasticsearch">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/elasticsearch/package-summary.html">org.springframework.boot.autoconfigure.elasticsearch</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/elasticsearch/package-summary.html">org.springframework.boot.autoconfigure.elasticsearch</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/elasticsearch/ElasticsearchProperties.html" title="class in org.springframework.boot.autoconfigure.elasticsearch">ElasticsearchProperties</a></span></code>
+<div class="block">Configuration properties for Elasticsearch.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/elasticsearch/ElasticsearchRestClientProperties.html" title="class in org.springframework.boot.autoconfigure.elasticsearch">ElasticsearchRestClientProperties</a></span></code>
+<div class="block">Configuration properties specific to Elasticsearch's <code>RestClient</code> and
+<code>RestHighLevelClient</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.flyway">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/flyway/package-summary.html">org.springframework.boot.autoconfigure.flyway</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/flyway/package-summary.html">org.springframework.boot.autoconfigure.flyway</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/flyway/FlywayProperties.html" title="class in org.springframework.boot.autoconfigure.flyway">FlywayProperties</a></span></code>
+<div class="block">Configuration properties for Flyway database migrations.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.freemarker">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/freemarker/package-summary.html">org.springframework.boot.autoconfigure.freemarker</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/freemarker/package-summary.html">org.springframework.boot.autoconfigure.freemarker</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/freemarker/FreeMarkerProperties.html" title="class in org.springframework.boot.autoconfigure.freemarker">FreeMarkerProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring FreeMarker.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.groovy.template">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/groovy/template/package-summary.html">org.springframework.boot.autoconfigure.groovy.template</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/groovy/template/package-summary.html">org.springframework.boot.autoconfigure.groovy.template</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/groovy/template/GroovyTemplateProperties.html" title="class in org.springframework.boot.autoconfigure.groovy.template">GroovyTemplateProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for configuring Groovy
+templates.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../autoconfigure/groovy/template/package-summary.html">org.springframework.boot.autoconfigure.groovy.template</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/servlet/view/groovy/GroovyMarkupConfigurer.html?is-external=true" title="class or interface in org.springframework.web.servlet.view.groovy">GroovyMarkupConfigurer</a></code></td>
+<td class="colLast"><span class="typeNameLabel">GroovyTemplateAutoConfiguration.GroovyMarkupConfiguration.</span><code><span class="memberNameLink"><a href="../../../autoconfigure/groovy/template/GroovyTemplateAutoConfiguration.GroovyMarkupConfiguration.html#groovyMarkupConfigurer-org.springframework.beans.factory.ObjectProvider-">groovyMarkupConfigurer</a></span>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/beans/factory/ObjectProvider.html?is-external=true" title="class or interface in org.springframework.beans.factory">ObjectProvider</a>&lt;groovy.text.markup.MarkupTemplateEngine&gt;&nbsp;templateEngine)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.gson">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/gson/package-summary.html">org.springframework.boot.autoconfigure.gson</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/gson/package-summary.html">org.springframework.boot.autoconfigure.gson</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/gson/GsonProperties.html" title="class in org.springframework.boot.autoconfigure.gson">GsonProperties</a></span></code>
+<div class="block">Configuration properties to configure <code>Gson</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.h2">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/h2/package-summary.html">org.springframework.boot.autoconfigure.h2</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/h2/package-summary.html">org.springframework.boot.autoconfigure.h2</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/h2/H2ConsoleProperties.html" title="class in org.springframework.boot.autoconfigure.h2">H2ConsoleProperties</a></span></code>
+<div class="block">Configuration properties for H2's console.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.hateoas">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/hateoas/package-summary.html">org.springframework.boot.autoconfigure.hateoas</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/hateoas/package-summary.html">org.springframework.boot.autoconfigure.hateoas</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/hateoas/HateoasProperties.html" title="class in org.springframework.boot.autoconfigure.hateoas">HateoasProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>properties</code></a> for Spring HATEOAS.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.hazelcast">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/hazelcast/package-summary.html">org.springframework.boot.autoconfigure.hazelcast</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/hazelcast/package-summary.html">org.springframework.boot.autoconfigure.hazelcast</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/hazelcast/HazelcastProperties.html" title="class in org.springframework.boot.autoconfigure.hazelcast">HazelcastProperties</a></span></code>
+<div class="block">Configuration properties for the hazelcast integration.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.influx">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/influx/package-summary.html">org.springframework.boot.autoconfigure.influx</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/influx/package-summary.html">org.springframework.boot.autoconfigure.influx</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/influx/InfluxDbProperties.html" title="class in org.springframework.boot.autoconfigure.influx">InfluxDbProperties</a></span></code>
+<div class="block">Configuration properties for InfluxDB.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.info">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/info/package-summary.html">org.springframework.boot.autoconfigure.info</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/info/package-summary.html">org.springframework.boot.autoconfigure.info</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/info/ProjectInfoProperties.html" title="class in org.springframework.boot.autoconfigure.info">ProjectInfoProperties</a></span></code>
+<div class="block">Configuration properties for project information.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.integration">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/integration/package-summary.html">org.springframework.boot.autoconfigure.integration</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/integration/package-summary.html">org.springframework.boot.autoconfigure.integration</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/integration/IntegrationProperties.html" title="class in org.springframework.boot.autoconfigure.integration">IntegrationProperties</a></span></code>
+<div class="block">Configuration properties for Spring Integration.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.jackson">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/jackson/package-summary.html">org.springframework.boot.autoconfigure.jackson</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/jackson/package-summary.html">org.springframework.boot.autoconfigure.jackson</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/jackson/JacksonProperties.html" title="class in org.springframework.boot.autoconfigure.jackson">JacksonProperties</a></span></code>
+<div class="block">Configuration properties to configure Jackson.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.jdbc">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/jdbc/package-summary.html">org.springframework.boot.autoconfigure.jdbc</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/jdbc/package-summary.html">org.springframework.boot.autoconfigure.jdbc</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/jdbc/DataSourceProperties.html" title="class in org.springframework.boot.autoconfigure.jdbc">DataSourceProperties</a></span></code>
+<div class="block">Base class for configuration of a data source.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/jdbc/JdbcProperties.html" title="class in org.springframework.boot.autoconfigure.jdbc">JdbcProperties</a></span></code>
+<div class="block">Configuration properties for JDBC.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.jersey">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/jersey/package-summary.html">org.springframework.boot.autoconfigure.jersey</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/jersey/package-summary.html">org.springframework.boot.autoconfigure.jersey</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/jersey/JerseyProperties.html" title="class in org.springframework.boot.autoconfigure.jersey">JerseyProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for Jersey.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.jms">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/jms/package-summary.html">org.springframework.boot.autoconfigure.jms</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/jms/package-summary.html">org.springframework.boot.autoconfigure.jms</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/jms/JmsProperties.html" title="class in org.springframework.boot.autoconfigure.jms">JmsProperties</a></span></code>
+<div class="block">Configuration properties for JMS.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.jms.activemq">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/jms/activemq/package-summary.html">org.springframework.boot.autoconfigure.jms.activemq</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/jms/activemq/package-summary.html">org.springframework.boot.autoconfigure.jms.activemq</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/jms/activemq/ActiveMQProperties.html" title="class in org.springframework.boot.autoconfigure.jms.activemq">ActiveMQProperties</a></span></code>
+<div class="block">Configuration properties for ActiveMQ.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.jms.artemis">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/jms/artemis/package-summary.html">org.springframework.boot.autoconfigure.jms.artemis</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/jms/artemis/package-summary.html">org.springframework.boot.autoconfigure.jms.artemis</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/jms/artemis/ArtemisProperties.html" title="class in org.springframework.boot.autoconfigure.jms.artemis">ArtemisProperties</a></span></code>
+<div class="block">Configuration properties for Artemis.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.jooq">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/jooq/package-summary.html">org.springframework.boot.autoconfigure.jooq</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/jooq/package-summary.html">org.springframework.boot.autoconfigure.jooq</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/jooq/JooqProperties.html" title="class in org.springframework.boot.autoconfigure.jooq">JooqProperties</a></span></code>
+<div class="block">Configuration properties for the JOOQ database library.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.kafka">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/kafka/package-summary.html">org.springframework.boot.autoconfigure.kafka</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/kafka/package-summary.html">org.springframework.boot.autoconfigure.kafka</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/kafka/KafkaProperties.html" title="class in org.springframework.boot.autoconfigure.kafka">KafkaProperties</a></span></code>
+<div class="block">Configuration properties for Spring for Apache Kafka.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.ldap">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/ldap/package-summary.html">org.springframework.boot.autoconfigure.ldap</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/ldap/package-summary.html">org.springframework.boot.autoconfigure.ldap</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/ldap/LdapProperties.html" title="class in org.springframework.boot.autoconfigure.ldap">LdapProperties</a></span></code>
+<div class="block">Configuration properties for LDAP.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.ldap.embedded">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/ldap/embedded/package-summary.html">org.springframework.boot.autoconfigure.ldap.embedded</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/ldap/embedded/package-summary.html">org.springframework.boot.autoconfigure.ldap.embedded</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/ldap/embedded/EmbeddedLdapProperties.html" title="class in org.springframework.boot.autoconfigure.ldap.embedded">EmbeddedLdapProperties</a></span></code>
+<div class="block">Configuration properties for Embedded LDAP.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.liquibase">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/liquibase/package-summary.html">org.springframework.boot.autoconfigure.liquibase</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/liquibase/package-summary.html">org.springframework.boot.autoconfigure.liquibase</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/liquibase/LiquibaseProperties.html" title="class in org.springframework.boot.autoconfigure.liquibase">LiquibaseProperties</a></span></code>
+<div class="block">Configuration properties to configure <code>SpringLiquibase</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.mail">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/mail/package-summary.html">org.springframework.boot.autoconfigure.mail</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/mail/package-summary.html">org.springframework.boot.autoconfigure.mail</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/mail/MailProperties.html" title="class in org.springframework.boot.autoconfigure.mail">MailProperties</a></span></code>
+<div class="block">Configuration properties for email support.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.mongo">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/mongo/package-summary.html">org.springframework.boot.autoconfigure.mongo</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/mongo/package-summary.html">org.springframework.boot.autoconfigure.mongo</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/mongo/MongoProperties.html" title="class in org.springframework.boot.autoconfigure.mongo">MongoProperties</a></span></code>
+<div class="block">Configuration properties for Mongo.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.mongo.embedded">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/mongo/embedded/package-summary.html">org.springframework.boot.autoconfigure.mongo.embedded</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/mongo/embedded/package-summary.html">org.springframework.boot.autoconfigure.mongo.embedded</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/mongo/embedded/EmbeddedMongoProperties.html" title="class in org.springframework.boot.autoconfigure.mongo.embedded">EmbeddedMongoProperties</a></span></code>
+<div class="block">Configuration properties for Embedded Mongo.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.mustache">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/mustache/package-summary.html">org.springframework.boot.autoconfigure.mustache</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/mustache/package-summary.html">org.springframework.boot.autoconfigure.mustache</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/mustache/MustacheProperties.html" title="class in org.springframework.boot.autoconfigure.mustache">MustacheProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for Mustache.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.neo4j">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/neo4j/package-summary.html">org.springframework.boot.autoconfigure.neo4j</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/neo4j/package-summary.html">org.springframework.boot.autoconfigure.neo4j</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/neo4j/Neo4jProperties.html" title="class in org.springframework.boot.autoconfigure.neo4j">Neo4jProperties</a></span></code>
+<div class="block">Configuration properties for Neo4j.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.netty">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/netty/package-summary.html">org.springframework.boot.autoconfigure.netty</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/netty/package-summary.html">org.springframework.boot.autoconfigure.netty</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/netty/NettyProperties.html" title="class in org.springframework.boot.autoconfigure.netty">NettyProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for the Netty engine.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.orm.jpa">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/orm/jpa/package-summary.html">org.springframework.boot.autoconfigure.orm.jpa</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/orm/jpa/package-summary.html">org.springframework.boot.autoconfigure.orm.jpa</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/orm/jpa/HibernateProperties.html" title="class in org.springframework.boot.autoconfigure.orm.jpa">HibernateProperties</a></span></code>
+<div class="block">Configuration properties for Hibernate.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/orm/jpa/JpaProperties.html" title="class in org.springframework.boot.autoconfigure.orm.jpa">JpaProperties</a></span></code>
+<div class="block">External configuration properties for a JPA EntityManagerFactory created by Spring.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.quartz">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/quartz/package-summary.html">org.springframework.boot.autoconfigure.quartz</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/quartz/package-summary.html">org.springframework.boot.autoconfigure.quartz</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/quartz/QuartzProperties.html" title="class in org.springframework.boot.autoconfigure.quartz">QuartzProperties</a></span></code>
+<div class="block">Configuration properties for the Quartz Scheduler integration.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.r2dbc">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/r2dbc/package-summary.html">org.springframework.boot.autoconfigure.r2dbc</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/r2dbc/package-summary.html">org.springframework.boot.autoconfigure.r2dbc</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/r2dbc/R2dbcProperties.html" title="class in org.springframework.boot.autoconfigure.r2dbc">R2dbcProperties</a></span></code>
+<div class="block">Configuration properties for R2DBC.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.rsocket">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/rsocket/package-summary.html">org.springframework.boot.autoconfigure.rsocket</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/rsocket/package-summary.html">org.springframework.boot.autoconfigure.rsocket</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/rsocket/RSocketProperties.html" title="class in org.springframework.boot.autoconfigure.rsocket">RSocketProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>properties</code></a> for RSocket support.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.security">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/security/package-summary.html">org.springframework.boot.autoconfigure.security</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/security/package-summary.html">org.springframework.boot.autoconfigure.security</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/security/SecurityProperties.html" title="class in org.springframework.boot.autoconfigure.security">SecurityProperties</a></span></code>
+<div class="block">Configuration properties for Spring Security.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.security.oauth2.client">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/security/oauth2/client/package-summary.html">org.springframework.boot.autoconfigure.security.oauth2.client</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/security/oauth2/client/package-summary.html">org.springframework.boot.autoconfigure.security.oauth2.client</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/security/oauth2/client/OAuth2ClientProperties.html" title="class in org.springframework.boot.autoconfigure.security.oauth2.client">OAuth2ClientProperties</a></span></code>
+<div class="block">OAuth 2.0 client properties.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.security.oauth2.resource">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/security/oauth2/resource/package-summary.html">org.springframework.boot.autoconfigure.security.oauth2.resource</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/security/oauth2/resource/package-summary.html">org.springframework.boot.autoconfigure.security.oauth2.resource</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/security/oauth2/resource/OAuth2ResourceServerProperties.html" title="class in org.springframework.boot.autoconfigure.security.oauth2.resource">OAuth2ResourceServerProperties</a></span></code>
+<div class="block">OAuth 2.0 resource server properties.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.security.saml2">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/security/saml2/package-summary.html">org.springframework.boot.autoconfigure.security.saml2</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/security/saml2/package-summary.html">org.springframework.boot.autoconfigure.security.saml2</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/security/saml2/Saml2RelyingPartyProperties.html" title="class in org.springframework.boot.autoconfigure.security.saml2">Saml2RelyingPartyProperties</a></span></code>
+<div class="block">SAML2 relying party properties.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.sendgrid">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/sendgrid/package-summary.html">org.springframework.boot.autoconfigure.sendgrid</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/sendgrid/package-summary.html">org.springframework.boot.autoconfigure.sendgrid</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/sendgrid/SendGridProperties.html" title="class in org.springframework.boot.autoconfigure.sendgrid">SendGridProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for SendGrid.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.session">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/session/package-summary.html">org.springframework.boot.autoconfigure.session</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/session/package-summary.html">org.springframework.boot.autoconfigure.session</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/session/HazelcastSessionProperties.html" title="class in org.springframework.boot.autoconfigure.session">HazelcastSessionProperties</a></span></code>
+<div class="block">Configuration properties for Hazelcast backed Spring Session.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/session/JdbcSessionProperties.html" title="class in org.springframework.boot.autoconfigure.session">JdbcSessionProperties</a></span></code>
+<div class="block">Configuration properties for JDBC backed Spring Session.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/session/MongoSessionProperties.html" title="class in org.springframework.boot.autoconfigure.session">MongoSessionProperties</a></span></code>
+<div class="block">Configuration properties for Mongo-backed Spring Session.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/session/RedisSessionProperties.html" title="class in org.springframework.boot.autoconfigure.session">RedisSessionProperties</a></span></code>
+<div class="block">Configuration properties for Redis backed Spring Session.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/session/SessionProperties.html" title="class in org.springframework.boot.autoconfigure.session">SessionProperties</a></span></code>
+<div class="block">Configuration properties for Spring Session.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.solr">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/solr/package-summary.html">org.springframework.boot.autoconfigure.solr</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/solr/package-summary.html">org.springframework.boot.autoconfigure.solr</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/solr/SolrProperties.html" title="class in org.springframework.boot.autoconfigure.solr">SolrProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for Solr.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.sql.init">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/sql/init/package-summary.html">org.springframework.boot.autoconfigure.sql.init</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/sql/init/package-summary.html">org.springframework.boot.autoconfigure.sql.init</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/sql/init/SqlInitializationProperties.html" title="class in org.springframework.boot.autoconfigure.sql.init">SqlInitializationProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>Configuration properties</code></a> for initializing an SQL
+database.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.task">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/task/package-summary.html">org.springframework.boot.autoconfigure.task</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/task/package-summary.html">org.springframework.boot.autoconfigure.task</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/task/TaskExecutionProperties.html" title="class in org.springframework.boot.autoconfigure.task">TaskExecutionProperties</a></span></code>
+<div class="block">Configuration properties for task execution.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/task/TaskSchedulingProperties.html" title="class in org.springframework.boot.autoconfigure.task">TaskSchedulingProperties</a></span></code>
+<div class="block">Configuration properties for task scheduling.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.thymeleaf">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/thymeleaf/package-summary.html">org.springframework.boot.autoconfigure.thymeleaf</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/thymeleaf/package-summary.html">org.springframework.boot.autoconfigure.thymeleaf</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/thymeleaf/ThymeleafProperties.html" title="class in org.springframework.boot.autoconfigure.thymeleaf">ThymeleafProperties</a></span></code>
+<div class="block">Properties for Thymeleaf.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.transaction">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/transaction/package-summary.html">org.springframework.boot.autoconfigure.transaction</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/transaction/package-summary.html">org.springframework.boot.autoconfigure.transaction</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/transaction/TransactionProperties.html" title="class in org.springframework.boot.autoconfigure.transaction">TransactionProperties</a></span></code>
+<div class="block">Configuration properties that can be applied to an
+<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/transaction/support/AbstractPlatformTransactionManager.html?is-external=true" title="class or interface in org.springframework.transaction.support"><code>AbstractPlatformTransactionManager</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.transaction.jta">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/transaction/jta/package-summary.html">org.springframework.boot.autoconfigure.transaction.jta</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/transaction/jta/package-summary.html">org.springframework.boot.autoconfigure.transaction.jta</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/transaction/jta/JtaProperties.html" title="class in org.springframework.boot.autoconfigure.transaction.jta">JtaProperties</a></span></code>
+<div class="block">External configuration properties for a <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/transaction/jta/JtaTransactionManager.html?is-external=true" title="class or interface in org.springframework.transaction.jta"><code>JtaTransactionManager</code></a> created by
+Spring.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.web">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/web/package-summary.html">org.springframework.boot.autoconfigure.web</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/web/package-summary.html">org.springframework.boot.autoconfigure.web</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/web/ServerProperties.html" title="class in org.springframework.boot.autoconfigure.web">ServerProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for a web server (e.g.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/web/WebProperties.html" title="class in org.springframework.boot.autoconfigure.web">WebProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>Configuration properties</code></a> for general web concerns.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.web.reactive">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/web/reactive/package-summary.html">org.springframework.boot.autoconfigure.web.reactive</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/web/reactive/package-summary.html">org.springframework.boot.autoconfigure.web.reactive</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/web/reactive/ReactiveMultipartProperties.html" title="class in org.springframework.boot.autoconfigure.web.reactive">ReactiveMultipartProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>Configuration properties</code></a> for configuring multipart
+support in Spring Webflux.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/web/reactive/WebFluxProperties.html" title="class in org.springframework.boot.autoconfigure.web.reactive">WebFluxProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>properties</code></a> for Spring WebFlux.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.web.servlet">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/web/servlet/package-summary.html">org.springframework.boot.autoconfigure.web.servlet</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/web/servlet/package-summary.html">org.springframework.boot.autoconfigure.web.servlet</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/web/servlet/MultipartProperties.html" title="class in org.springframework.boot.autoconfigure.web.servlet">MultipartProperties</a></span></code>
+<div class="block">Properties to be used in configuring a <a href="https://docs.oracle.com/javaee/7/api/javax/servlet/MultipartConfigElement.html?is-external=true" title="class or interface in javax.servlet"><code>MultipartConfigElement</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/web/servlet/WebMvcProperties.html" title="class in org.springframework.boot.autoconfigure.web.servlet">WebMvcProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>properties</code></a> for Spring MVC.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.autoconfigure.webservices">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../autoconfigure/webservices/package-summary.html">org.springframework.boot.autoconfigure.webservices</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../autoconfigure/webservices/package-summary.html">org.springframework.boot.autoconfigure.webservices</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../autoconfigure/webservices/WebServicesProperties.html" title="class in org.springframework.boot.autoconfigure.webservices">WebServicesProperties</a></span></code>
+<div class="block"><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>@ConfigurationProperties</code></a> for Spring Web Services.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.context.properties">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../package-summary.html">org.springframework.boot.context.properties</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../package-summary.html">org.springframework.boot.context.properties</a> that return <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ConfigurationPropertiesBean.</span><code><span class="memberNameLink"><a href="../ConfigurationPropertiesBean.html#getAnnotation--">getAnnotation</a></span>()</code>
+<div class="block">Return the <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties"><code>ConfigurationProperties</code></a> annotation for the bean.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ConfigurationPropertiesBindException.</span><code><span class="memberNameLink"><a href="../ConfigurationPropertiesBindException.html#getAnnotation--">getAnnotation</a></span>()</code>
+<div class="block">Return the configuration properties annotation that triggered the binding.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.devtools.autoconfigure">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../devtools/autoconfigure/package-summary.html">org.springframework.boot.devtools.autoconfigure</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../devtools/autoconfigure/package-summary.html">org.springframework.boot.devtools.autoconfigure</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../devtools/autoconfigure/DevToolsProperties.html" title="class in org.springframework.boot.devtools.autoconfigure">DevToolsProperties</a></span></code>
+<div class="block">Configuration properties for developer tools.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.jta.atomikos">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../jta/atomikos/package-summary.html">org.springframework.boot.jta.atomikos</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../jta/atomikos/package-summary.html">org.springframework.boot.jta.atomikos</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../jta/atomikos/AtomikosConnectionFactoryBean.html" title="class in org.springframework.boot.jta.atomikos">AtomikosConnectionFactoryBean</a></span></code>
+<div class="block">Spring friendly version of <code>AtomikosConnectionFactoryBean</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../jta/atomikos/AtomikosDataSourceBean.html" title="class in org.springframework.boot.jta.atomikos">AtomikosDataSourceBean</a></span></code>
+<div class="block">Spring friendly version of <code>AtomikosDataSourceBean</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../jta/atomikos/AtomikosProperties.html" title="class in org.springframework.boot.jta.atomikos">AtomikosProperties</a></span></code>
+<div class="block">Bean friendly variant of
+<a href="https://www.atomikos.com/Documentation/JtaProperties">Atomikos configuration
+properties</a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.test.autoconfigure.restdocs">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../test/autoconfigure/restdocs/package-summary.html">org.springframework.boot.test.autoconfigure.restdocs</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../test/autoconfigure/restdocs/package-summary.html">org.springframework.boot.test.autoconfigure.restdocs</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../test/autoconfigure/restdocs/RestDocsProperties.html" title="class in org.springframework.boot.test.autoconfigure.restdocs">RestDocsProperties</a></span></code>
+<div class="block">Configuration properties for Spring REST Docs.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.test.autoconfigure.web.reactive">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../test/autoconfigure/web/reactive/package-summary.html">org.springframework.boot.test.autoconfigure.web.reactive</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../test/autoconfigure/web/reactive/package-summary.html">org.springframework.boot.test.autoconfigure.web.reactive</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../test/autoconfigure/web/reactive/SpringBootWebTestClientBuilderCustomizer.html" title="class in org.springframework.boot.test.autoconfigure.web.reactive">SpringBootWebTestClientBuilderCustomizer</a></code></td>
+<td class="colLast"><span class="typeNameLabel">WebTestClientAutoConfiguration.</span><code><span class="memberNameLink"><a href="../../../test/autoconfigure/web/reactive/WebTestClientAutoConfiguration.html#springBootWebTestClientBuilderCustomizer-org.springframework.beans.factory.ObjectProvider-">springBootWebTestClientBuilderCustomizer</a></span>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/beans/factory/ObjectProvider.html?is-external=true" title="class or interface in org.springframework.beans.factory">ObjectProvider</a>&lt;<a href="../../../web/codec/CodecCustomizer.html" title="interface in org.springframework.boot.web.codec">CodecCustomizer</a>&gt;&nbsp;codecCustomizers)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.springframework.boot.test.autoconfigure.web.servlet">
+
+</a>
+<h3>Uses of <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a> in <a href="../../../test/autoconfigure/web/servlet/package-summary.html">org.springframework.boot.test.autoconfigure.web.servlet</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../test/autoconfigure/web/servlet/package-summary.html">org.springframework.boot.test.autoconfigure.web.servlet</a> with annotations of type <a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">ConfigurationProperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../test/autoconfigure/web/servlet/SpringBootMockMvcBuilderCustomizer.html" title="class in org.springframework.boot.test.autoconfigure.web.servlet">SpringBootMockMvcBuilderCustomizer</a></code></td>
+<td class="colLast"><span class="typeNameLabel">MockMvcAutoConfiguration.</span><code><span class="memberNameLink"><a href="../../../test/autoconfigure/web/servlet/MockMvcAutoConfiguration.html#springBootMockMvcBuilderCustomizer--">springBootMockMvcBuilderCustomizer</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="ConfigurationProperties.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../ConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../../../../../../overview-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fcontext%252Fproperties%252Fclass-use%252FConfigurationProperties.html" target="_top">Frames</a></li>
+<li><a href="ConfigurationProperties.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1ff4f2bc427be9","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

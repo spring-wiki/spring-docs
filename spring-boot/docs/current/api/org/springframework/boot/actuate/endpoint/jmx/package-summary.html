@@ -1,0 +1,214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>org.springframework.boot.actuate.endpoint.jmx (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="org.springframework.boot.actuate.endpoint.jmx (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="package-summary.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../invoker/cache/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="annotation/package-summary.html">Next&nbsp;Package</a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Factuate%252Fendpoint%252Fjmx%252Fpackage-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+<div class="header">
+<h1 title="Package" class="title">Package&nbsp;org.springframework.boot.actuate.endpoint.jmx</h1>
+<div class="docSummary">
+<div class="block">JMX support for actuator endpoints.</div>
+</div>
+<p>See:&nbsp;<a href="package-summary.html#package.description">Description</a></p>
+</div>
+<div class="contentContainer">
+<ul class="blockList">
+<li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Interface Summary table, listing interfaces, and an explanation">
+<caption><span>Interface Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="EndpointObjectNameFactory.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">EndpointObjectNameFactory</a></td>
+<td class="colLast">
+<div class="block">A factory to create an <a href="https://docs.oracle.com/javase/8/docs/api/javax/management/ObjectName.html?is-external=true" title="class or interface in javax.management"><code>ObjectName</code></a> for an <a href="EndpointMBean.html" title="class in org.springframework.boot.actuate.endpoint.jmx"><code>EndpointMBean</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="ExposableJmxEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">ExposableJmxEndpoint</a></td>
+<td class="colLast">
+<div class="block">Information describing an endpoint that can be exposed over JMX.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="JmxEndpointsSupplier.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxEndpointsSupplier</a></td>
+<td class="colLast">
+<div class="block"><a href="../EndpointsSupplier.html" title="interface in org.springframework.boot.actuate.endpoint"><code>EndpointsSupplier</code></a> for <a href="ExposableJmxEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.jmx"><code>JMX endpoints</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="JmxOperation.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxOperation</a></td>
+<td class="colLast">
+<div class="block">An operation on a JMX endpoint.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="JmxOperationParameter.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxOperationParameter</a></td>
+<td class="colLast">
+<div class="block">Describes the parameters of an operation on a JMX endpoint.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="JmxOperationResponseMapper.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxOperationResponseMapper</a></td>
+<td class="colLast">
+<div class="block">Maps an operation's response to a JMX-friendly form.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Class Summary table, listing classes, and an explanation">
+<caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="EndpointMBean.html" title="class in org.springframework.boot.actuate.endpoint.jmx">EndpointMBean</a></td>
+<td class="colLast">
+<div class="block">Adapter to expose a <a href="ExposableJmxEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.jmx"><code>JMX endpoint</code></a> as a
+<a href="https://docs.oracle.com/javase/8/docs/api/javax/management/DynamicMBean.html?is-external=true" title="class or interface in javax.management"><code>DynamicMBean</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="JacksonJmxOperationResponseMapper.html" title="class in org.springframework.boot.actuate.endpoint.jmx">JacksonJmxOperationResponseMapper</a></td>
+<td class="colLast">
+<div class="block"><a href="JmxOperationResponseMapper.html" title="interface in org.springframework.boot.actuate.endpoint.jmx"><code>JmxOperationResponseMapper</code></a> that delegates to a Jackson <code>ObjectMapper</code> to
+return a JSON response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="JmxEndpointExporter.html" title="class in org.springframework.boot.actuate.endpoint.jmx">JmxEndpointExporter</a></td>
+<td class="colLast">
+<div class="block">Exports <a href="ExposableJmxEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.jmx"><code>JMX endpoints</code></a> to a <a href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServer.html?is-external=true" title="class or interface in javax.management"><code>MBeanServer</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<a name="package.description">
+
+</a>
+<h2 title="Package org.springframework.boot.actuate.endpoint.jmx Description">Package org.springframework.boot.actuate.endpoint.jmx Description</h2>
+<div class="block">JMX support for actuator endpoints.</div>
+</div>
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="package-summary.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../invoker/cache/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="annotation/package-summary.html">Next&nbsp;Package</a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Factuate%252Fendpoint%252Fjmx%252Fpackage-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1fd756ce3c7c27","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

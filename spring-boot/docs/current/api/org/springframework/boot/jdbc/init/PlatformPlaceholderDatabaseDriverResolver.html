@@ -1,0 +1,380 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>PlatformPlaceholderDatabaseDriverResolver (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="PlatformPlaceholderDatabaseDriverResolver (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var methods = {"i0":10,"i1":10,"i2":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="PlatformPlaceholderDatabaseDriverResolver.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/PlatformPlaceholderDatabaseDriverResolver.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="DataSourceScriptDatabaseInitializer.html" title="class in org.springframework.boot.jdbc.init"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fjdbc%252Finit%252FPlatformPlaceholderDatabaseDriverResolver.html" target="_top">Frames</a></li>
+<li><a href="PlatformPlaceholderDatabaseDriverResolver.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="PlatformPlaceholderDatabaseDriverResolver.html#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="PlatformPlaceholderDatabaseDriverResolver.html#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="PlatformPlaceholderDatabaseDriverResolver.html#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="PlatformPlaceholderDatabaseDriverResolver.html#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+
+<div class="header">
+<div class="subTitle">org.springframework.boot.jdbc.init</div>
+<h2 title="Class PlatformPlaceholderDatabaseDriverResolver" class="title">Class PlatformPlaceholderDatabaseDriverResolver</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.springframework.boot.jdbc.init.PlatformPlaceholderDatabaseDriverResolver</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="typeNameLabel">PlatformPlaceholderDatabaseDriverResolver</span>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block">Utility class that can resolve placeholder text with the actual <a href="../DatabaseDriver.html" title="enum in org.springframework.boot.jdbc"><code>DatabaseDriver</code></a>
+platform.
+<p>
+By default, the name of the platform is the <a href="../DatabaseDriver.html#getId--"><code>ID of the
+driver</code></a>. This mapping can be customized by
+<a href="PlatformPlaceholderDatabaseDriverResolver.html#withDriverPlatform-org.springframework.boot.jdbc.DatabaseDriver-java.lang.String-"><code>withDriverPlatform(DatabaseDriver, String)</code></a> registering custom
+<code>DatabaseDriver</code> to platform mappings.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.6.0</dd>
+<dt><span class="simpleTagLabel">Author:</span></dt>
+<dd>Phillip Webb, Andy Wilkinson</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="PlatformPlaceholderDatabaseDriverResolver.html#PlatformPlaceholderDatabaseDriverResolver--">PlatformPlaceholderDatabaseDriverResolver</a></span>()</code>
+<div class="block">Creates a new resolver that will use the default <code>"@@<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cdbda1acb9aba2bfa08d">[email&#160;protected]</a>@"</code>
+placeholder.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="PlatformPlaceholderDatabaseDriverResolver.html#PlatformPlaceholderDatabaseDriverResolver-java.lang.String-">PlatformPlaceholderDatabaseDriverResolver</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;placeholder)</code>
+<div class="block">Creates a new resolver that will use the given <code>placeholder</code>.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+
+<ul class="blockList">
+<li class="blockList"><a name="method.summary">
+
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="PlatformPlaceholderDatabaseDriverResolver.html#resolveAll-javax.sql.DataSource-java.lang.String...-">resolveAll</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/DataSource.html?is-external=true" title="class or interface in javax.sql">DataSource</a>&nbsp;dataSource,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>...&nbsp;values)</code>
+<div class="block">Resolves the placeholders in the given <code>values</code>, replacing them with the
+platform derived from the <a href="../DatabaseDriver.html" title="enum in org.springframework.boot.jdbc"><code>DatabaseDriver</code></a> of the given <code>dataSource</code>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="PlatformPlaceholderDatabaseDriverResolver.html#resolveAll-java.lang.String-java.lang.String...-">resolveAll</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;platform,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>...&nbsp;values)</code>
+<div class="block">Resolves the placeholders in the given <code>values</code>, replacing them with the
+given platform.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="PlatformPlaceholderDatabaseDriverResolver.html" title="class in org.springframework.boot.jdbc.init">PlatformPlaceholderDatabaseDriverResolver</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="PlatformPlaceholderDatabaseDriverResolver.html#withDriverPlatform-org.springframework.boot.jdbc.DatabaseDriver-java.lang.String-">withDriverPlatform</a></span>(<a href="../DatabaseDriver.html" title="enum in org.springframework.boot.jdbc">DatabaseDriver</a>&nbsp;driver,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;platform)</code>
+<div class="block">Creates a new <a href="PlatformPlaceholderDatabaseDriverResolver.html" title="class in org.springframework.boot.jdbc.init"><code>PlatformPlaceholderDatabaseDriverResolver</code></a> that will map the
+given <code>driver</code> to the given <code>platform</code>.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+
+</a>
+<h3>Constructor Detail</h3>
+<a name="PlatformPlaceholderDatabaseDriverResolver--">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PlatformPlaceholderDatabaseDriverResolver</h4>
+<pre>public&nbsp;PlatformPlaceholderDatabaseDriverResolver()</pre>
+<div class="block">Creates a new resolver that will use the default <code>"@@<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2b5b474a5f4d4459466b">[email&#160;protected]</a>@"</code>
+placeholder.</div>
+</li>
+</ul>
+<a name="PlatformPlaceholderDatabaseDriverResolver-java.lang.String-">
+
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>PlatformPlaceholderDatabaseDriverResolver</h4>
+<pre>public&nbsp;PlatformPlaceholderDatabaseDriverResolver(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;placeholder)</pre>
+<div class="block">Creates a new resolver that will use the given <code>placeholder</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>placeholder</code> - the placeholder to use</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+
+</a>
+<h3>Method Detail</h3>
+<a name="withDriverPlatform-org.springframework.boot.jdbc.DatabaseDriver-java.lang.String-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withDriverPlatform</h4>
+<pre>public&nbsp;<a href="PlatformPlaceholderDatabaseDriverResolver.html" title="class in org.springframework.boot.jdbc.init">PlatformPlaceholderDatabaseDriverResolver</a>&nbsp;withDriverPlatform(<a href="../DatabaseDriver.html" title="enum in org.springframework.boot.jdbc">DatabaseDriver</a>&nbsp;driver,
+                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;platform)</pre>
+<div class="block">Creates a new <a href="PlatformPlaceholderDatabaseDriverResolver.html" title="class in org.springframework.boot.jdbc.init"><code>PlatformPlaceholderDatabaseDriverResolver</code></a> that will map the
+given <code>driver</code> to the given <code>platform</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>driver</code> - the driver</dd>
+<dd><code>platform</code> - the platform</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new resolver</dd>
+</dl>
+</li>
+</ul>
+<a name="resolveAll-javax.sql.DataSource-java.lang.String...-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>resolveAll</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;resolveAll(<a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/DataSource.html?is-external=true" title="class or interface in javax.sql">DataSource</a>&nbsp;dataSource,
+                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>...&nbsp;values)</pre>
+<div class="block">Resolves the placeholders in the given <code>values</code>, replacing them with the
+platform derived from the <a href="../DatabaseDriver.html" title="enum in org.springframework.boot.jdbc"><code>DatabaseDriver</code></a> of the given <code>dataSource</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>dataSource</code> - the DataSource from which the <a href="../DatabaseDriver.html" title="enum in org.springframework.boot.jdbc"><code>DatabaseDriver</code></a> is derived</dd>
+<dd><code>values</code> - the values in which placeholders are resolved</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the values with their placeholders resolved</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../DatabaseDriver.html#fromDataSource-javax.sql.DataSource-"><code>DatabaseDriver.fromDataSource(DataSource)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="resolveAll-java.lang.String-java.lang.String...-">
+
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>resolveAll</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;resolveAll(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;platform,
+                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>...&nbsp;values)</pre>
+<div class="block">Resolves the placeholders in the given <code>values</code>, replacing them with the
+given platform.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>platform</code> - the platform to use</dd>
+<dd><code>values</code> - the values in which placeholders are resolved</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the values with their placeholders resolved</dd>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.6.2</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="PlatformPlaceholderDatabaseDriverResolver.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/PlatformPlaceholderDatabaseDriverResolver.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="DataSourceScriptDatabaseInitializer.html" title="class in org.springframework.boot.jdbc.init"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fjdbc%252Finit%252FPlatformPlaceholderDatabaseDriverResolver.html" target="_top">Frames</a></li>
+<li><a href="PlatformPlaceholderDatabaseDriverResolver.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script data-cfasync="false" src="../../../../../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="PlatformPlaceholderDatabaseDriverResolver.html#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="PlatformPlaceholderDatabaseDriverResolver.html#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="PlatformPlaceholderDatabaseDriverResolver.html#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="PlatformPlaceholderDatabaseDriverResolver.html#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1fbb29bd925313","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

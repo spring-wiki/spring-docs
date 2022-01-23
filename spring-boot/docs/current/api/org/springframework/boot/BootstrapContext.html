@@ -1,0 +1,371 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>BootstrapContext (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="BootstrapContext (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="BootstrapContext.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/BootstrapContext.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="Banner.Mode.html" title="enum in org.springframework.boot"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="BootstrapContextClosedEvent.html" title="class in org.springframework.boot"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html%3Forg%252Fspringframework%252Fboot%252FBootstrapContext.html" target="_top">Frames</a></li>
+<li><a href="BootstrapContext.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="BootstrapContext.html#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="BootstrapContext.html#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+
+<div class="header">
+<div class="subTitle">org.springframework.boot</div>
+<h2 title="Interface BootstrapContext" class="title">Interface BootstrapContext</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Known Subinterfaces:</dt>
+<dd><a href="ConfigurableBootstrapContext.html" title="interface in org.springframework.boot">ConfigurableBootstrapContext</a></dd>
+</dl>
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><a href="DefaultBootstrapContext.html" title="class in org.springframework.boot">DefaultBootstrapContext</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public interface <span class="typeNameLabel">BootstrapContext</span></pre>
+<div class="block">A simple bootstrap context that is available during startup and <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/core/env/Environment.html?is-external=true" title="class or interface in org.springframework.core.env"><code>Environment</code></a>
+post-processing up to the point that the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationContext.html?is-external=true" title="class or interface in org.springframework.context"><code>ApplicationContext</code></a> is prepared.
+<p>
+Provides lazy access to singletons that may be expensive to create, or need to be
+shared before the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationContext.html?is-external=true" title="class or interface in org.springframework.context"><code>ApplicationContext</code></a> is available.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.4.0</dd>
+<dt><span class="simpleTagLabel">Author:</span></dt>
+<dd>Phillip Webb</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="method.summary">
+
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="BootstrapContext.html#get-java.lang.Class-">get</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type)</code>
+<div class="block">Return an instance from the context if the type has been registered.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="BootstrapContext.html#getOrElse-java.lang.Class-T-">getOrElse</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type,
+T&nbsp;other)</code>
+<div class="block">Return an instance from the context if the type has been registered.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="BootstrapContext.html#getOrElseSupply-java.lang.Class-java.util.function.Supplier-">getOrElseSupply</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;T&gt;&nbsp;other)</code>
+<div class="block">Return an instance from the context if the type has been registered.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>&lt;T,X extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;<br>T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="BootstrapContext.html#getOrElseThrow-java.lang.Class-java.util.function.Supplier-">getOrElseThrow</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;? extends X&gt;&nbsp;exceptionSupplier)</code>
+<div class="block">Return an instance from the context if the type has been registered.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="BootstrapContext.html#isRegistered-java.lang.Class-">isRegistered</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type)</code>
+<div class="block">Return if a registration exists for the given type.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+
+</a>
+<h3>Method Detail</h3>
+<a name="get-java.lang.Class-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>&lt;T&gt;&nbsp;T&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type)
+   throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></pre>
+<div class="block">Return an instance from the context if the type has been registered. The instance
+will be created it if it hasn't been accessed previously.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the instance type</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the instance type</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the instance managed by the context</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the type has not been registered</dd>
+</dl>
+</li>
+</ul>
+<a name="getOrElse-java.lang.Class-java.lang.Object-">
+
+</a><a name="getOrElse-java.lang.Class-T-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOrElse</h4>
+<pre>&lt;T&gt;&nbsp;T&nbsp;getOrElse(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type,
+                T&nbsp;other)</pre>
+<div class="block">Return an instance from the context if the type has been registered. The instance
+will be created it if it hasn't been accessed previously.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the instance type</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the instance type</dd>
+<dd><code>other</code> - the instance to use if the type has not been registered</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the instance</dd>
+</dl>
+</li>
+</ul>
+<a name="getOrElseSupply-java.lang.Class-java.util.function.Supplier-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOrElseSupply</h4>
+<pre>&lt;T&gt;&nbsp;T&nbsp;getOrElseSupply(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;T&gt;&nbsp;other)</pre>
+<div class="block">Return an instance from the context if the type has been registered. The instance
+will be created it if it hasn't been accessed previously.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the instance type</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the instance type</dd>
+<dd><code>other</code> - a supplier for the instance to use if the type has not been registered</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the instance</dd>
+</dl>
+</li>
+</ul>
+<a name="getOrElseThrow-java.lang.Class-java.util.function.Supplier-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOrElseThrow</h4>
+<pre>&lt;T,X extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;T&nbsp;getOrElseThrow(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type,
+                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;? extends X&gt;&nbsp;exceptionSupplier)
+                                  throws X extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a></pre>
+<div class="block">Return an instance from the context if the type has been registered. The instance
+will be created it if it hasn't been accessed previously.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the instance type</dd>
+<dd><code>X</code> - the exception to throw if the type is not registered</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the instance type</dd>
+<dd><code>exceptionSupplier</code> - the supplier which will return the exception to be thrown</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the instance managed by the context</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>X</code> - if the type has not been registered</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the type has not been registered</dd>
+<dd><code>X extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="isRegistered-java.lang.Class-">
+
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isRegistered</h4>
+<pre>&lt;T&gt;&nbsp;boolean&nbsp;isRegistered(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type)</pre>
+<div class="block">Return if a registration exists for the given type.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the instance type</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the instance type</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if the type has already been registered</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="BootstrapContext.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/BootstrapContext.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="Banner.Mode.html" title="enum in org.springframework.boot"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="BootstrapContextClosedEvent.html" title="class in org.springframework.boot"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html%3Forg%252Fspringframework%252Fboot%252FBootstrapContext.html" target="_top">Frames</a></li>
+<li><a href="BootstrapContext.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="BootstrapContext.html#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="BootstrapContext.html#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1f8ba37ec97d8c","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

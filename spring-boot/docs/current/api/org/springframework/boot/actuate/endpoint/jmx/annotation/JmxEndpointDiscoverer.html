@@ -1,0 +1,410 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>JmxEndpointDiscoverer (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="JmxEndpointDiscoverer (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var methods = {"i0":10,"i1":10,"i2":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="JmxEndpointDiscoverer.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/JmxEndpointDiscoverer.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="JmxEndpoint.html" title="annotation in org.springframework.boot.actuate.endpoint.jmx.annotation"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Factuate%252Fendpoint%252Fjmx%252Fannotation%252FJmxEndpointDiscoverer.html" target="_top">Frames</a></li>
+<li><a href="JmxEndpointDiscoverer.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="JmxEndpointDiscoverer.html#nested.classes.inherited.from.class.org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer">Nested</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="JmxEndpointDiscoverer.html#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="JmxEndpointDiscoverer.html#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="JmxEndpointDiscoverer.html#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="JmxEndpointDiscoverer.html#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+
+<div class="header">
+<div class="subTitle">org.springframework.boot.actuate.endpoint.jmx.annotation</div>
+<h2 title="Class JmxEndpointDiscoverer" class="title">Class JmxEndpointDiscoverer</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../annotation/EndpointDiscoverer.html" title="class in org.springframework.boot.actuate.endpoint.annotation">org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer</a>&lt;<a href="../ExposableJmxEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">ExposableJmxEndpoint</a>,<a href="../JmxOperation.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxOperation</a>&gt;</li>
+<li>
+<ul class="inheritance">
+<li>org.springframework.boot.actuate.endpoint.jmx.annotation.JmxEndpointDiscoverer</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../EndpointsSupplier.html" title="interface in org.springframework.boot.actuate.endpoint">EndpointsSupplier</a>&lt;<a href="../ExposableJmxEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">ExposableJmxEndpoint</a>&gt;, <a href="../JmxEndpointsSupplier.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxEndpointsSupplier</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="typeNameLabel">JmxEndpointDiscoverer</span>
+extends <a href="../../annotation/EndpointDiscoverer.html" title="class in org.springframework.boot.actuate.endpoint.annotation">EndpointDiscoverer</a>&lt;<a href="../ExposableJmxEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">ExposableJmxEndpoint</a>,<a href="../JmxOperation.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxOperation</a>&gt;
+implements <a href="../JmxEndpointsSupplier.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxEndpointsSupplier</a></pre>
+<div class="block"><a href="../../annotation/EndpointDiscoverer.html" title="class in org.springframework.boot.actuate.endpoint.annotation"><code>EndpointDiscoverer</code></a> for <a href="../ExposableJmxEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.jmx"><code>JMX endpoints</code></a>.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.0.0</dd>
+<dt><span class="simpleTagLabel">Author:</span></dt>
+<dd>Phillip Webb</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+
+</a>
+<h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer">
+
+</a>
+<h3>Nested classes/interfaces inherited from class&nbsp;org.springframework.boot.actuate.endpoint.annotation.<a href="../../annotation/EndpointDiscoverer.html" title="class in org.springframework.boot.actuate.endpoint.annotation">EndpointDiscoverer</a></h3>
+<code><a href="../../annotation/EndpointDiscoverer.OperationKey.html" title="class in org.springframework.boot.actuate.endpoint.annotation">EndpointDiscoverer.OperationKey</a></code></li>
+</ul>
+</li>
+</ul>
+
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="JmxEndpointDiscoverer.html#JmxEndpointDiscoverer-org.springframework.context.ApplicationContext-org.springframework.boot.actuate.endpoint.invoke.ParameterValueMapper-java.util.Collection-java.util.Collection-">JmxEndpointDiscoverer</a></span>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationContext.html?is-external=true" title="class or interface in org.springframework.context">ApplicationContext</a>&nbsp;applicationContext,
+<a href="../../invoke/ParameterValueMapper.html" title="interface in org.springframework.boot.actuate.endpoint.invoke">ParameterValueMapper</a>&nbsp;parameterValueMapper,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../invoke/OperationInvokerAdvisor.html" title="interface in org.springframework.boot.actuate.endpoint.invoke">OperationInvokerAdvisor</a>&gt;&nbsp;invokerAdvisors,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../EndpointFilter.html" title="interface in org.springframework.boot.actuate.endpoint">EndpointFilter</a>&lt;<a href="../ExposableJmxEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">ExposableJmxEndpoint</a>&gt;&gt;&nbsp;filters)</code>
+<div class="block">Create a new <a href="JmxEndpointDiscoverer.html" title="class in org.springframework.boot.actuate.endpoint.jmx.annotation"><code>JmxEndpointDiscoverer</code></a> instance.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+
+<ul class="blockList">
+<li class="blockList"><a name="method.summary">
+
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>protected <a href="../ExposableJmxEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">ExposableJmxEndpoint</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="JmxEndpointDiscoverer.html#createEndpoint-java.lang.Object-org.springframework.boot.actuate.endpoint.EndpointId-boolean-java.util.Collection-">createEndpoint</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;endpointBean,
+<a href="../../EndpointId.html" title="class in org.springframework.boot.actuate.endpoint">EndpointId</a>&nbsp;id,
+boolean&nbsp;enabledByDefault,
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../JmxOperation.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxOperation</a>&gt;&nbsp;operations)</code>
+<div class="block">Factory method called to create the <a href="../../ExposableEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint"><code>endpoint</code></a>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected <a href="../JmxOperation.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxOperation</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="JmxEndpointDiscoverer.html#createOperation-org.springframework.boot.actuate.endpoint.EndpointId-org.springframework.boot.actuate.endpoint.annotation.DiscoveredOperationMethod-org.springframework.boot.actuate.endpoint.invoke.OperationInvoker-">createOperation</a></span>(<a href="../../EndpointId.html" title="class in org.springframework.boot.actuate.endpoint">EndpointId</a>&nbsp;endpointId,
+<a href="../../annotation/DiscoveredOperationMethod.html" title="class in org.springframework.boot.actuate.endpoint.annotation">DiscoveredOperationMethod</a>&nbsp;operationMethod,
+<a href="../../invoke/OperationInvoker.html" title="interface in org.springframework.boot.actuate.endpoint.invoke">OperationInvoker</a>&nbsp;invoker)</code>
+<div class="block">Factory method to create an <a href="../../Operation.html" title="interface in org.springframework.boot.actuate.endpoint"><code>endpoint operation</code></a>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected <a href="../../annotation/EndpointDiscoverer.OperationKey.html" title="class in org.springframework.boot.actuate.endpoint.annotation">EndpointDiscoverer.OperationKey</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="JmxEndpointDiscoverer.html#createOperationKey-org.springframework.boot.actuate.endpoint.jmx.JmxOperation-">createOperationKey</a></span>(<a href="../JmxOperation.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxOperation</a>&nbsp;operation)</code>
+<div class="block">Create an <a href="../../annotation/EndpointDiscoverer.OperationKey.html" title="class in org.springframework.boot.actuate.endpoint.annotation"><code>EndpointDiscoverer.OperationKey</code></a> for the given operation.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer">
+
+</a>
+<h3>Methods inherited from class&nbsp;org.springframework.boot.actuate.endpoint.annotation.<a href="../../annotation/EndpointDiscoverer.html" title="class in org.springframework.boot.actuate.endpoint.annotation">EndpointDiscoverer</a></h3>
+<code><a href="../../annotation/EndpointDiscoverer.html#getEndpoints--">getEndpoints</a>, <a href="../../annotation/EndpointDiscoverer.html#getEndpointType--">getEndpointType</a>, <a href="../../annotation/EndpointDiscoverer.html#isEndpointTypeExposed-java.lang.Class-">isEndpointTypeExposed</a>, <a href="../../annotation/EndpointDiscoverer.html#isExtensionTypeExposed-java.lang.Class-">isExtensionTypeExposed</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.org.springframework.boot.actuate.endpoint.EndpointsSupplier">
+
+</a>
+<h3>Methods inherited from interface&nbsp;org.springframework.boot.actuate.endpoint.<a href="../../EndpointsSupplier.html" title="interface in org.springframework.boot.actuate.endpoint">EndpointsSupplier</a></h3>
+<code><a href="../../EndpointsSupplier.html#getEndpoints--">getEndpoints</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+
+</a>
+<h3>Constructor Detail</h3>
+<a name="JmxEndpointDiscoverer-org.springframework.context.ApplicationContext-org.springframework.boot.actuate.endpoint.invoke.ParameterValueMapper-java.util.Collection-java.util.Collection-">
+
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>JmxEndpointDiscoverer</h4>
+<pre>public&nbsp;JmxEndpointDiscoverer(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationContext.html?is-external=true" title="class or interface in org.springframework.context">ApplicationContext</a>&nbsp;applicationContext,
+                             <a href="../../invoke/ParameterValueMapper.html" title="interface in org.springframework.boot.actuate.endpoint.invoke">ParameterValueMapper</a>&nbsp;parameterValueMapper,
+                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../invoke/OperationInvokerAdvisor.html" title="interface in org.springframework.boot.actuate.endpoint.invoke">OperationInvokerAdvisor</a>&gt;&nbsp;invokerAdvisors,
+                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../EndpointFilter.html" title="interface in org.springframework.boot.actuate.endpoint">EndpointFilter</a>&lt;<a href="../ExposableJmxEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">ExposableJmxEndpoint</a>&gt;&gt;&nbsp;filters)</pre>
+<div class="block">Create a new <a href="JmxEndpointDiscoverer.html" title="class in org.springframework.boot.actuate.endpoint.jmx.annotation"><code>JmxEndpointDiscoverer</code></a> instance.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>applicationContext</code> - the source application context</dd>
+<dd><code>parameterValueMapper</code> - the parameter value mapper</dd>
+<dd><code>invokerAdvisors</code> - invoker advisors to apply</dd>
+<dd><code>filters</code> - filters to apply</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+
+</a>
+<h3>Method Detail</h3>
+<a name="createEndpoint-java.lang.Object-org.springframework.boot.actuate.endpoint.EndpointId-boolean-java.util.Collection-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createEndpoint</h4>
+<pre>protected&nbsp;<a href="../ExposableJmxEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">ExposableJmxEndpoint</a>&nbsp;createEndpoint(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;endpointBean,
+                                              <a href="../../EndpointId.html" title="class in org.springframework.boot.actuate.endpoint">EndpointId</a>&nbsp;id,
+                                              boolean&nbsp;enabledByDefault,
+                                              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../JmxOperation.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxOperation</a>&gt;&nbsp;operations)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../annotation/EndpointDiscoverer.html#createEndpoint-java.lang.Object-org.springframework.boot.actuate.endpoint.EndpointId-boolean-java.util.Collection-">EndpointDiscoverer</a></code></span></div>
+<div class="block">Factory method called to create the <a href="../../ExposableEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint"><code>endpoint</code></a>.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../annotation/EndpointDiscoverer.html#createEndpoint-java.lang.Object-org.springframework.boot.actuate.endpoint.EndpointId-boolean-java.util.Collection-">createEndpoint</a></code>&nbsp;in class&nbsp;<code><a href="../../annotation/EndpointDiscoverer.html" title="class in org.springframework.boot.actuate.endpoint.annotation">EndpointDiscoverer</a>&lt;<a href="../ExposableJmxEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">ExposableJmxEndpoint</a>,<a href="../JmxOperation.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxOperation</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>endpointBean</code> - the source endpoint bean</dd>
+<dd><code>id</code> - the ID of the endpoint</dd>
+<dd><code>enabledByDefault</code> - if the endpoint is enabled by default</dd>
+<dd><code>operations</code> - the endpoint operations</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a created endpoint (a <a href="../../annotation/DiscoveredEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.annotation"><code>DiscoveredEndpoint</code></a> is recommended)</dd>
+</dl>
+</li>
+</ul>
+<a name="createOperation-org.springframework.boot.actuate.endpoint.EndpointId-org.springframework.boot.actuate.endpoint.annotation.DiscoveredOperationMethod-org.springframework.boot.actuate.endpoint.invoke.OperationInvoker-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createOperation</h4>
+<pre>protected&nbsp;<a href="../JmxOperation.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxOperation</a>&nbsp;createOperation(<a href="../../EndpointId.html" title="class in org.springframework.boot.actuate.endpoint">EndpointId</a>&nbsp;endpointId,
+                                       <a href="../../annotation/DiscoveredOperationMethod.html" title="class in org.springframework.boot.actuate.endpoint.annotation">DiscoveredOperationMethod</a>&nbsp;operationMethod,
+                                       <a href="../../invoke/OperationInvoker.html" title="interface in org.springframework.boot.actuate.endpoint.invoke">OperationInvoker</a>&nbsp;invoker)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../annotation/EndpointDiscoverer.html#createOperation-org.springframework.boot.actuate.endpoint.EndpointId-org.springframework.boot.actuate.endpoint.annotation.DiscoveredOperationMethod-org.springframework.boot.actuate.endpoint.invoke.OperationInvoker-">EndpointDiscoverer</a></code></span></div>
+<div class="block">Factory method to create an <a href="../../Operation.html" title="interface in org.springframework.boot.actuate.endpoint"><code>endpoint operation</code></a>.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../annotation/EndpointDiscoverer.html#createOperation-org.springframework.boot.actuate.endpoint.EndpointId-org.springframework.boot.actuate.endpoint.annotation.DiscoveredOperationMethod-org.springframework.boot.actuate.endpoint.invoke.OperationInvoker-">createOperation</a></code>&nbsp;in class&nbsp;<code><a href="../../annotation/EndpointDiscoverer.html" title="class in org.springframework.boot.actuate.endpoint.annotation">EndpointDiscoverer</a>&lt;<a href="../ExposableJmxEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">ExposableJmxEndpoint</a>,<a href="../JmxOperation.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxOperation</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>endpointId</code> - the endpoint id</dd>
+<dd><code>operationMethod</code> - the operation method</dd>
+<dd><code>invoker</code> - the invoker to use</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a created operation</dd>
+</dl>
+</li>
+</ul>
+<a name="createOperationKey-org.springframework.boot.actuate.endpoint.jmx.JmxOperation-">
+
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>createOperationKey</h4>
+<pre>protected&nbsp;<a href="../../annotation/EndpointDiscoverer.OperationKey.html" title="class in org.springframework.boot.actuate.endpoint.annotation">EndpointDiscoverer.OperationKey</a>&nbsp;createOperationKey(<a href="../JmxOperation.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxOperation</a>&nbsp;operation)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../annotation/EndpointDiscoverer.html#createOperationKey-O-">EndpointDiscoverer</a></code></span></div>
+<div class="block">Create an <a href="../../annotation/EndpointDiscoverer.OperationKey.html" title="class in org.springframework.boot.actuate.endpoint.annotation"><code>EndpointDiscoverer.OperationKey</code></a> for the given operation.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../annotation/EndpointDiscoverer.html#createOperationKey-O-">createOperationKey</a></code>&nbsp;in class&nbsp;<code><a href="../../annotation/EndpointDiscoverer.html" title="class in org.springframework.boot.actuate.endpoint.annotation">EndpointDiscoverer</a>&lt;<a href="../ExposableJmxEndpoint.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">ExposableJmxEndpoint</a>,<a href="../JmxOperation.html" title="interface in org.springframework.boot.actuate.endpoint.jmx">JmxOperation</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>operation</code> - the source operation</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the operation key</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="JmxEndpointDiscoverer.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/JmxEndpointDiscoverer.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="JmxEndpoint.html" title="annotation in org.springframework.boot.actuate.endpoint.jmx.annotation"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Factuate%252Fendpoint%252Fjmx%252Fannotation%252FJmxEndpointDiscoverer.html" target="_top">Frames</a></li>
+<li><a href="JmxEndpointDiscoverer.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="JmxEndpointDiscoverer.html#nested.classes.inherited.from.class.org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer">Nested</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="JmxEndpointDiscoverer.html#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="JmxEndpointDiscoverer.html#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="JmxEndpointDiscoverer.html#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="JmxEndpointDiscoverer.html#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1fa6254a6b5313","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

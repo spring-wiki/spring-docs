@@ -1,0 +1,298 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>AbstractReactiveWebServerFactory (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="AbstractReactiveWebServerFactory (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="AbstractReactiveWebServerFactory.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AbstractReactiveWebServerFactory.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev&nbsp;Class</li>
+<li><a href="ConfigurableReactiveWebServerFactory.html" title="interface in org.springframework.boot.web.reactive.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fweb%252Freactive%252Fserver%252FAbstractReactiveWebServerFactory.html" target="_top">Frames</a></li>
+<li><a href="AbstractReactiveWebServerFactory.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="AbstractReactiveWebServerFactory.html#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="AbstractReactiveWebServerFactory.html#methods.inherited.from.class.org.springframework.boot.web.server.AbstractConfigurableWebServerFactory">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="AbstractReactiveWebServerFactory.html#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Method</li>
+</ul>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+
+<div class="header">
+<div class="subTitle">org.springframework.boot.web.reactive.server</div>
+<h2 title="Class AbstractReactiveWebServerFactory" class="title">Class AbstractReactiveWebServerFactory</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../server/AbstractConfigurableWebServerFactory.html" title="class in org.springframework.boot.web.server">org.springframework.boot.web.server.AbstractConfigurableWebServerFactory</a></li>
+<li>
+<ul class="inheritance">
+<li>org.springframework.boot.web.reactive.server.AbstractReactiveWebServerFactory</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="ConfigurableReactiveWebServerFactory.html" title="interface in org.springframework.boot.web.reactive.server">ConfigurableReactiveWebServerFactory</a>, <a href="ReactiveWebServerFactory.html" title="interface in org.springframework.boot.web.reactive.server">ReactiveWebServerFactory</a>, <a href="../../server/ConfigurableWebServerFactory.html" title="interface in org.springframework.boot.web.server">ConfigurableWebServerFactory</a>, <a href="../../server/ErrorPageRegistry.html" title="interface in org.springframework.boot.web.server">ErrorPageRegistry</a>, <a href="../../server/WebServerFactory.html" title="interface in org.springframework.boot.web.server">WebServerFactory</a></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../embedded/jetty/JettyReactiveWebServerFactory.html" title="class in org.springframework.boot.web.embedded.jetty">JettyReactiveWebServerFactory</a>, <a href="../../embedded/netty/NettyReactiveWebServerFactory.html" title="class in org.springframework.boot.web.embedded.netty">NettyReactiveWebServerFactory</a>, <a href="../../embedded/tomcat/TomcatReactiveWebServerFactory.html" title="class in org.springframework.boot.web.embedded.tomcat">TomcatReactiveWebServerFactory</a>, <a href="../../embedded/undertow/UndertowReactiveWebServerFactory.html" title="class in org.springframework.boot.web.embedded.undertow">UndertowReactiveWebServerFactory</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public abstract class <span class="typeNameLabel">AbstractReactiveWebServerFactory</span>
+extends <a href="../../server/AbstractConfigurableWebServerFactory.html" title="class in org.springframework.boot.web.server">AbstractConfigurableWebServerFactory</a>
+implements <a href="ConfigurableReactiveWebServerFactory.html" title="interface in org.springframework.boot.web.reactive.server">ConfigurableReactiveWebServerFactory</a></pre>
+<div class="block">Abstract base class for <a href="ReactiveWebServerFactory.html" title="interface in org.springframework.boot.web.reactive.server"><code>ReactiveWebServerFactory</code></a> implementations.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.0.0</dd>
+<dt><span class="simpleTagLabel">Author:</span></dt>
+<dd>Brian Clozel</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="AbstractReactiveWebServerFactory.html#AbstractReactiveWebServerFactory--">AbstractReactiveWebServerFactory</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="AbstractReactiveWebServerFactory.html#AbstractReactiveWebServerFactory-int-">AbstractReactiveWebServerFactory</a></span>(int&nbsp;port)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+
+<ul class="blockList">
+<li class="blockList"><a name="method.summary">
+
+</a>
+<h3>Method Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.org.springframework.boot.web.server.AbstractConfigurableWebServerFactory">
+
+</a>
+<h3>Methods inherited from class&nbsp;org.springframework.boot.web.server.<a href="../../server/AbstractConfigurableWebServerFactory.html" title="class in org.springframework.boot.web.server">AbstractConfigurableWebServerFactory</a></h3>
+<code><a href="../../server/AbstractConfigurableWebServerFactory.html#addErrorPages-org.springframework.boot.web.server.ErrorPage...-">addErrorPages</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#createTempDir-java.lang.String-">createTempDir</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#getAddress--">getAddress</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#getCompression--">getCompression</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#getErrorPages--">getErrorPages</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#getHttp2--">getHttp2</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#getPort--">getPort</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#getServerHeader--">getServerHeader</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#getShutdown--">getShutdown</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#getSsl--">getSsl</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#getSslStoreProvider--">getSslStoreProvider</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#setAddress-java.net.InetAddress-">setAddress</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#setCompression-org.springframework.boot.web.server.Compression-">setCompression</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#setErrorPages-java.util.Set-">setErrorPages</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#setHttp2-org.springframework.boot.web.server.Http2-">setHttp2</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#setPort-int-">setPort</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#setServerHeader-java.lang.String-">setServerHeader</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#setShutdown-org.springframework.boot.web.server.Shutdown-">setShutdown</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#setSsl-org.springframework.boot.web.server.Ssl-">setSsl</a>, <a href="../../server/AbstractConfigurableWebServerFactory.html#setSslStoreProvider-org.springframework.boot.web.server.SslStoreProvider-">setSslStoreProvider</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.org.springframework.boot.web.server.ConfigurableWebServerFactory">
+
+</a>
+<h3>Methods inherited from interface&nbsp;org.springframework.boot.web.server.<a href="../../server/ConfigurableWebServerFactory.html" title="interface in org.springframework.boot.web.server">ConfigurableWebServerFactory</a></h3>
+<code><a href="../../server/ConfigurableWebServerFactory.html#setAddress-java.net.InetAddress-">setAddress</a>, <a href="../../server/ConfigurableWebServerFactory.html#setCompression-org.springframework.boot.web.server.Compression-">setCompression</a>, <a href="../../server/ConfigurableWebServerFactory.html#setErrorPages-java.util.Set-">setErrorPages</a>, <a href="../../server/ConfigurableWebServerFactory.html#setHttp2-org.springframework.boot.web.server.Http2-">setHttp2</a>, <a href="../../server/ConfigurableWebServerFactory.html#setPort-int-">setPort</a>, <a href="../../server/ConfigurableWebServerFactory.html#setServerHeader-java.lang.String-">setServerHeader</a>, <a href="../../server/ConfigurableWebServerFactory.html#setShutdown-org.springframework.boot.web.server.Shutdown-">setShutdown</a>, <a href="../../server/ConfigurableWebServerFactory.html#setSsl-org.springframework.boot.web.server.Ssl-">setSsl</a>, <a href="../../server/ConfigurableWebServerFactory.html#setSslStoreProvider-org.springframework.boot.web.server.SslStoreProvider-">setSslStoreProvider</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.org.springframework.boot.web.server.ErrorPageRegistry">
+
+</a>
+<h3>Methods inherited from interface&nbsp;org.springframework.boot.web.server.<a href="../../server/ErrorPageRegistry.html" title="interface in org.springframework.boot.web.server">ErrorPageRegistry</a></h3>
+<code><a href="../../server/ErrorPageRegistry.html#addErrorPages-org.springframework.boot.web.server.ErrorPage...-">addErrorPages</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.org.springframework.boot.web.reactive.server.ReactiveWebServerFactory">
+
+</a>
+<h3>Methods inherited from interface&nbsp;org.springframework.boot.web.reactive.server.<a href="ReactiveWebServerFactory.html" title="interface in org.springframework.boot.web.reactive.server">ReactiveWebServerFactory</a></h3>
+<code><a href="ReactiveWebServerFactory.html#getWebServer-org.springframework.http.server.reactive.HttpHandler-">getWebServer</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+
+</a>
+<h3>Constructor Detail</h3>
+<a name="AbstractReactiveWebServerFactory--">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AbstractReactiveWebServerFactory</h4>
+<pre>public&nbsp;AbstractReactiveWebServerFactory()</pre>
+</li>
+</ul>
+<a name="AbstractReactiveWebServerFactory-int-">
+
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>AbstractReactiveWebServerFactory</h4>
+<pre>public&nbsp;AbstractReactiveWebServerFactory(int&nbsp;port)</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="AbstractReactiveWebServerFactory.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AbstractReactiveWebServerFactory.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev&nbsp;Class</li>
+<li><a href="ConfigurableReactiveWebServerFactory.html" title="interface in org.springframework.boot.web.reactive.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fweb%252Freactive%252Fserver%252FAbstractReactiveWebServerFactory.html" target="_top">Frames</a></li>
+<li><a href="AbstractReactiveWebServerFactory.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="AbstractReactiveWebServerFactory.html#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="AbstractReactiveWebServerFactory.html#methods.inherited.from.class.org.springframework.boot.web.server.AbstractConfigurableWebServerFactory">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="AbstractReactiveWebServerFactory.html#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Method</li>
+</ul>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1f886b1dc57d8c","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>Neo4jDataAutoConfiguration (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="Neo4jDataAutoConfiguration (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="Neo4jDataAutoConfiguration.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Neo4jDataAutoConfiguration.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev&nbsp;Class</li>
+<li><a href="Neo4jDataProperties.html" title="class in org.springframework.boot.autoconfigure.data.neo4j"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fautoconfigure%252Fdata%252Fneo4j%252FNeo4jDataAutoConfiguration.html" target="_top">Frames</a></li>
+<li><a href="Neo4jDataAutoConfiguration.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="Neo4jDataAutoConfiguration.html#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="Neo4jDataAutoConfiguration.html#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="Neo4jDataAutoConfiguration.html#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="Neo4jDataAutoConfiguration.html#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+
+<div class="header">
+<div class="subTitle">org.springframework.boot.autoconfigure.data.neo4j</div>
+<h2 title="Class Neo4jDataAutoConfiguration" class="title">Class Neo4jDataAutoConfiguration</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.springframework.boot.autoconfigure.data.neo4j.Neo4jDataAutoConfiguration</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Configuration.html?is-external=true" title="class or interface in org.springframework.context.annotation">@Configuration</a>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Configuration.html?is-external=true#proxyBeanMethods--" title="class or interface in org.springframework.context.annotation">proxyBeanMethods</a>=false)
+ <a href="../../condition/ConditionalOnClass.html" title="annotation in org.springframework.boot.autoconfigure.condition">@ConditionalOnClass</a>(<a href="../../condition/ConditionalOnClass.html#value--">value</a>={org.neo4j.driver.Driver.class,org.springframework.data.neo4j.core.transaction.Neo4jTransactionManager.class,<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/transaction/PlatformTransactionManager.html?is-external=true" title="class or interface in org.springframework.transaction">org.springframework.transaction.PlatformTransactionManager.class</a>})
+ <a href="../../../context/properties/EnableConfigurationProperties.html" title="annotation in org.springframework.boot.context.properties">@EnableConfigurationProperties</a>(<a href="../../../context/properties/EnableConfigurationProperties.html#value--">value</a>=<a href="Neo4jDataProperties.html" title="class in org.springframework.boot.autoconfigure.data.neo4j">Neo4jDataProperties.class</a>)
+ <a href="../../condition/ConditionalOnBean.html" title="annotation in org.springframework.boot.autoconfigure.condition">@ConditionalOnBean</a>(<a href="../../condition/ConditionalOnBean.html#value--">value</a>=org.neo4j.driver.Driver.class)
+ <a href="../../AutoConfigureBefore.html" title="annotation in org.springframework.boot.autoconfigure">@AutoConfigureBefore</a>(<a href="../../AutoConfigureBefore.html#value--">value</a>=<a href="../../transaction/TransactionAutoConfiguration.html" title="class in org.springframework.boot.autoconfigure.transaction">TransactionAutoConfiguration.class</a>)
+ <a href="../../AutoConfigureAfter.html" title="annotation in org.springframework.boot.autoconfigure">@AutoConfigureAfter</a>(<a href="../../AutoConfigureAfter.html#value--">value</a>=<a href="../../neo4j/Neo4jAutoConfiguration.html" title="class in org.springframework.boot.autoconfigure.neo4j">Neo4jAutoConfiguration.class</a>)
+public class <span class="typeNameLabel">Neo4jDataAutoConfiguration</span>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block"><a href="../../EnableAutoConfiguration.html" title="annotation in org.springframework.boot.autoconfigure"><code>Auto-configuration</code></a> for Spring Data Neo4j.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.4.0</dd>
+<dt><span class="simpleTagLabel">Author:</span></dt>
+<dd>Michael Hunger, Josh Long, Vince Bickers, Stephane Nicoll, Kazuki Shimizu, Michael J. Simons</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="Neo4jDataAutoConfiguration.html#Neo4jDataAutoConfiguration--">Neo4jDataAutoConfiguration</a></span>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+
+<ul class="blockList">
+<li class="blockList"><a name="method.summary">
+
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>org.springframework.data.neo4j.core.DatabaseSelectionProvider</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="Neo4jDataAutoConfiguration.html#databaseSelectionProvider-org.springframework.boot.autoconfigure.data.neo4j.Neo4jDataProperties-">databaseSelectionProvider</a></span>(<a href="Neo4jDataProperties.html" title="class in org.springframework.boot.autoconfigure.data.neo4j">Neo4jDataProperties</a>&nbsp;properties)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>org.springframework.data.neo4j.core.Neo4jClient</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="Neo4jDataAutoConfiguration.html#neo4jClient-org.neo4j.driver.Driver-org.springframework.data.neo4j.core.DatabaseSelectionProvider-">neo4jClient</a></span>(org.neo4j.driver.Driver&nbsp;driver,
+org.springframework.data.neo4j.core.DatabaseSelectionProvider&nbsp;databaseNameProvider)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>org.springframework.data.neo4j.core.convert.Neo4jConversions</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="Neo4jDataAutoConfiguration.html#neo4jConversions--">neo4jConversions</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>org.springframework.data.neo4j.core.mapping.Neo4jMappingContext</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="Neo4jDataAutoConfiguration.html#neo4jMappingContext-org.springframework.context.ApplicationContext-org.springframework.data.neo4j.core.convert.Neo4jConversions-">neo4jMappingContext</a></span>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationContext.html?is-external=true" title="class or interface in org.springframework.context">ApplicationContext</a>&nbsp;applicationContext,
+org.springframework.data.neo4j.core.convert.Neo4jConversions&nbsp;neo4jConversions)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>org.springframework.data.neo4j.core.Neo4jTemplate</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="Neo4jDataAutoConfiguration.html#neo4jTemplate-org.springframework.data.neo4j.core.Neo4jClient-org.springframework.data.neo4j.core.mapping.Neo4jMappingContext-">neo4jTemplate</a></span>(org.springframework.data.neo4j.core.Neo4jClient&nbsp;neo4jClient,
+org.springframework.data.neo4j.core.mapping.Neo4jMappingContext&nbsp;neo4jMappingContext)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>org.springframework.data.neo4j.core.transaction.Neo4jTransactionManager</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="Neo4jDataAutoConfiguration.html#transactionManager-org.neo4j.driver.Driver-org.springframework.data.neo4j.core.DatabaseSelectionProvider-org.springframework.beans.factory.ObjectProvider-">transactionManager</a></span>(org.neo4j.driver.Driver&nbsp;driver,
+org.springframework.data.neo4j.core.DatabaseSelectionProvider&nbsp;databaseNameProvider,
+<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/beans/factory/ObjectProvider.html?is-external=true" title="class or interface in org.springframework.beans.factory">ObjectProvider</a>&lt;<a href="../../transaction/TransactionManagerCustomizers.html" title="class in org.springframework.boot.autoconfigure.transaction">TransactionManagerCustomizers</a>&gt;&nbsp;optionalCustomizers)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+
+</a>
+<h3>Constructor Detail</h3>
+<a name="Neo4jDataAutoConfiguration--">
+
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Neo4jDataAutoConfiguration</h4>
+<pre>public&nbsp;Neo4jDataAutoConfiguration()</pre>
+</li>
+</ul>
+</li>
+</ul>
+
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+
+</a>
+<h3>Method Detail</h3>
+<a name="neo4jConversions--">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>neo4jConversions</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Bean.html?is-external=true" title="class or interface in org.springframework.context.annotation">@Bean</a>
+ <a href="../../condition/ConditionalOnMissingBean.html" title="annotation in org.springframework.boot.autoconfigure.condition">@ConditionalOnMissingBean</a>
+public&nbsp;org.springframework.data.neo4j.core.convert.Neo4jConversions&nbsp;neo4jConversions()</pre>
+</li>
+</ul>
+<a name="neo4jMappingContext-org.springframework.context.ApplicationContext-org.springframework.data.neo4j.core.convert.Neo4jConversions-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>neo4jMappingContext</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Bean.html?is-external=true" title="class or interface in org.springframework.context.annotation">@Bean</a>
+ <a href="../../condition/ConditionalOnMissingBean.html" title="annotation in org.springframework.boot.autoconfigure.condition">@ConditionalOnMissingBean</a>
+public&nbsp;org.springframework.data.neo4j.core.mapping.Neo4jMappingContext&nbsp;neo4jMappingContext(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/ApplicationContext.html?is-external=true" title="class or interface in org.springframework.context">ApplicationContext</a>&nbsp;applicationContext,
+                                                                                                                            org.springframework.data.neo4j.core.convert.Neo4jConversions&nbsp;neo4jConversions)
+                                                                                                                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="databaseSelectionProvider-org.springframework.boot.autoconfigure.data.neo4j.Neo4jDataProperties-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>databaseSelectionProvider</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Bean.html?is-external=true" title="class or interface in org.springframework.context.annotation">@Bean</a>
+ <a href="../../condition/ConditionalOnMissingBean.html" title="annotation in org.springframework.boot.autoconfigure.condition">@ConditionalOnMissingBean</a>
+public&nbsp;org.springframework.data.neo4j.core.DatabaseSelectionProvider&nbsp;databaseSelectionProvider(<a href="Neo4jDataProperties.html" title="class in org.springframework.boot.autoconfigure.data.neo4j">Neo4jDataProperties</a>&nbsp;properties)</pre>
+</li>
+</ul>
+<a name="neo4jClient-org.neo4j.driver.Driver-org.springframework.data.neo4j.core.DatabaseSelectionProvider-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>neo4jClient</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Bean.html?is-external=true" title="class or interface in org.springframework.context.annotation">@Bean</a>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Bean.html?is-external=true#value--" title="class or interface in org.springframework.context.annotation">value</a>="neo4jClient")
+ <a href="../../condition/ConditionalOnMissingBean.html" title="annotation in org.springframework.boot.autoconfigure.condition">@ConditionalOnMissingBean</a>
+public&nbsp;org.springframework.data.neo4j.core.Neo4jClient&nbsp;neo4jClient(org.neo4j.driver.Driver&nbsp;driver,
+                                                                                                                         org.springframework.data.neo4j.core.DatabaseSelectionProvider&nbsp;databaseNameProvider)</pre>
+</li>
+</ul>
+<a name="neo4jTemplate-org.springframework.data.neo4j.core.Neo4jClient-org.springframework.data.neo4j.core.mapping.Neo4jMappingContext-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>neo4jTemplate</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Bean.html?is-external=true" title="class or interface in org.springframework.context.annotation">@Bean</a>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Bean.html?is-external=true#value--" title="class or interface in org.springframework.context.annotation">value</a>="neo4jTemplate")
+ <a href="../../condition/ConditionalOnMissingBean.html" title="annotation in org.springframework.boot.autoconfigure.condition">@ConditionalOnMissingBean</a>(<a href="../../condition/ConditionalOnMissingBean.html#value--">value</a>=org.springframework.data.neo4j.core.Neo4jOperations.class)
+public&nbsp;org.springframework.data.neo4j.core.Neo4jTemplate&nbsp;neo4jTemplate(org.springframework.data.neo4j.core.Neo4jClient&nbsp;neo4jClient,
+                                                                                                                                                                                                org.springframework.data.neo4j.core.mapping.Neo4jMappingContext&nbsp;neo4jMappingContext)</pre>
+</li>
+</ul>
+<a name="transactionManager-org.neo4j.driver.Driver-org.springframework.data.neo4j.core.DatabaseSelectionProvider-org.springframework.beans.factory.ObjectProvider-">
+
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>transactionManager</h4>
+<pre><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Bean.html?is-external=true" title="class or interface in org.springframework.context.annotation">@Bean</a>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/Bean.html?is-external=true#value--" title="class or interface in org.springframework.context.annotation">value</a>="transactionManager")
+ <a href="../../condition/ConditionalOnMissingBean.html" title="annotation in org.springframework.boot.autoconfigure.condition">@ConditionalOnMissingBean</a>(<a href="../../condition/ConditionalOnMissingBean.html#value--">value</a>=<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/transaction/TransactionManager.html?is-external=true" title="class or interface in org.springframework.transaction">org.springframework.transaction.TransactionManager.class</a>)
+public&nbsp;org.springframework.data.neo4j.core.transaction.Neo4jTransactionManager&nbsp;transactionManager(org.neo4j.driver.Driver&nbsp;driver,
+                                                                                                                                                                                                                               org.springframework.data.neo4j.core.DatabaseSelectionProvider&nbsp;databaseNameProvider,
+                                                                                                                                                                                                                               <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/beans/factory/ObjectProvider.html?is-external=true" title="class or interface in org.springframework.beans.factory">ObjectProvider</a>&lt;<a href="../../transaction/TransactionManagerCustomizers.html" title="class in org.springframework.boot.autoconfigure.transaction">TransactionManagerCustomizers</a>&gt;&nbsp;optionalCustomizers)</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="Neo4jDataAutoConfiguration.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Neo4jDataAutoConfiguration.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev&nbsp;Class</li>
+<li><a href="Neo4jDataProperties.html" title="class in org.springframework.boot.autoconfigure.data.neo4j"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Fautoconfigure%252Fdata%252Fneo4j%252FNeo4jDataAutoConfiguration.html" target="_top">Frames</a></li>
+<li><a href="Neo4jDataAutoConfiguration.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="Neo4jDataAutoConfiguration.html#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="Neo4jDataAutoConfiguration.html#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="Neo4jDataAutoConfiguration.html#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="Neo4jDataAutoConfiguration.html#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1fb51c48975313","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+
+<title>ConfigurableRSocketServerFactory (Spring Boot 2.6.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../spring-javadoc.css" title="Style">
+<script type="text/javascript" src="../../../../../script.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="ConfigurableRSocketServerFactory (Spring Boot 2.6.3 API)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+
+<div class="topNav"><a name="navbar.top">
+
+</a>
+<div class="skipNav"><a href="ConfigurableRSocketServerFactory.html#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.top.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ConfigurableRSocketServerFactory.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev&nbsp;Class</li>
+<li><a href="RSocketServer.html" title="interface in org.springframework.boot.rsocket.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Frsocket%252Fserver%252FConfigurableRSocketServerFactory.html" target="_top">Frames</a></li>
+<li><a href="ConfigurableRSocketServerFactory.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="ConfigurableRSocketServerFactory.html#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="ConfigurableRSocketServerFactory.html#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.top">
+
+</a></div>
+
+
+<div class="header">
+<div class="subTitle">org.springframework.boot.rsocket.server</div>
+<h2 title="Interface ConfigurableRSocketServerFactory" class="title">Interface ConfigurableRSocketServerFactory</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><a href="../netty/NettyRSocketServerFactory.html" title="class in org.springframework.boot.rsocket.netty">NettyRSocketServerFactory</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public interface <span class="typeNameLabel">ConfigurableRSocketServerFactory</span></pre>
+<div class="block">A configurable <a href="RSocketServerFactory.html" title="interface in org.springframework.boot.rsocket.server"><code>RSocketServerFactory</code></a>.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.2.0</dd>
+<dt><span class="simpleTagLabel">Author:</span></dt>
+<dd>Brian Clozel</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="method.summary">
+
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="ConfigurableRSocketServerFactory.html#setAddress-java.net.InetAddress-">setAddress</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/net/InetAddress.html?is-external=true" title="class or interface in java.net">InetAddress</a>&nbsp;address)</code>
+<div class="block">Set the specific network address that the server should bind to.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="ConfigurableRSocketServerFactory.html#setFragmentSize-org.springframework.util.unit.DataSize-">setFragmentSize</a></span>(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/util/unit/DataSize.html?is-external=true" title="class or interface in org.springframework.util.unit">DataSize</a>&nbsp;fragmentSize)</code>
+<div class="block">Specify the maximum transmission unit.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="ConfigurableRSocketServerFactory.html#setPort-int-">setPort</a></span>(int&nbsp;port)</code>
+<div class="block">Set the port that the server should listen on.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="ConfigurableRSocketServerFactory.html#setSsl-org.springframework.boot.web.server.Ssl-">setSsl</a></span>(<a href="../../web/server/Ssl.html" title="class in org.springframework.boot.web.server">Ssl</a>&nbsp;ssl)</code>
+<div class="block">Sets the SSL configuration that will be applied to the server's default connector.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="ConfigurableRSocketServerFactory.html#setSslStoreProvider-org.springframework.boot.web.server.SslStoreProvider-">setSslStoreProvider</a></span>(<a href="../../web/server/SslStoreProvider.html" title="interface in org.springframework.boot.web.server">SslStoreProvider</a>&nbsp;sslStoreProvider)</code>
+<div class="block">Sets a provider that will be used to obtain SSL stores.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="ConfigurableRSocketServerFactory.html#setTransport-org.springframework.boot.rsocket.server.RSocketServer.Transport-">setTransport</a></span>(<a href="RSocketServer.Transport.html" title="enum in org.springframework.boot.rsocket.server">RSocketServer.Transport</a>&nbsp;transport)</code>
+<div class="block">Set the transport that the RSocket server should use.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+
+</a>
+<h3>Method Detail</h3>
+<a name="setPort-int-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPort</h4>
+<pre>void&nbsp;setPort(int&nbsp;port)</pre>
+<div class="block">Set the port that the server should listen on. If not specified port '9898' will be
+used.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>port</code> - the port to set</dd>
+</dl>
+</li>
+</ul>
+<a name="setFragmentSize-org.springframework.util.unit.DataSize-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setFragmentSize</h4>
+<pre>void&nbsp;setFragmentSize(<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/util/unit/DataSize.html?is-external=true" title="class or interface in org.springframework.util.unit">DataSize</a>&nbsp;fragmentSize)</pre>
+<div class="block">Specify the maximum transmission unit. Frames larger than the specified
+<code>fragmentSize</code> are fragmented.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>fragmentSize</code> - the fragment size</dd>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.4.0</dd>
+</dl>
+</li>
+</ul>
+<a name="setAddress-java.net.InetAddress-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAddress</h4>
+<pre>void&nbsp;setAddress(<a href="https://docs.oracle.com/javase/8/docs/api/java/net/InetAddress.html?is-external=true" title="class or interface in java.net">InetAddress</a>&nbsp;address)</pre>
+<div class="block">Set the specific network address that the server should bind to.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>address</code> - the address to set (defaults to <code>null</code>)</dd>
+</dl>
+</li>
+</ul>
+<a name="setTransport-org.springframework.boot.rsocket.server.RSocketServer.Transport-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTransport</h4>
+<pre>void&nbsp;setTransport(<a href="RSocketServer.Transport.html" title="enum in org.springframework.boot.rsocket.server">RSocketServer.Transport</a>&nbsp;transport)</pre>
+<div class="block">Set the transport that the RSocket server should use.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>transport</code> - the transport protocol to use</dd>
+</dl>
+</li>
+</ul>
+<a name="setSsl-org.springframework.boot.web.server.Ssl-">
+
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSsl</h4>
+<pre>void&nbsp;setSsl(<a href="../../web/server/Ssl.html" title="class in org.springframework.boot.web.server">Ssl</a>&nbsp;ssl)</pre>
+<div class="block">Sets the SSL configuration that will be applied to the server's default connector.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ssl</code> - the SSL configuration</dd>
+</dl>
+</li>
+</ul>
+<a name="setSslStoreProvider-org.springframework.boot.web.server.SslStoreProvider-">
+
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setSslStoreProvider</h4>
+<pre>void&nbsp;setSslStoreProvider(<a href="../../web/server/SslStoreProvider.html" title="interface in org.springframework.boot.web.server">SslStoreProvider</a>&nbsp;sslStoreProvider)</pre>
+<div class="block">Sets a provider that will be used to obtain SSL stores.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sslStoreProvider</code> - the SSL store provider</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div class="bottomNav"><a name="navbar.bottom">
+
+</a>
+<div class="skipNav"><a href="ConfigurableRSocketServerFactory.html#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a name="navbar.bottom.firstrow">
+
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ConfigurableRSocketServerFactory.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev&nbsp;Class</li>
+<li><a href="RSocketServer.html" title="interface in org.springframework.boot.rsocket.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html%3Forg%252Fspringframework%252Fboot%252Frsocket%252Fserver%252FConfigurableRSocketServerFactory.html" target="_top">Frames</a></li>
+<li><a href="ConfigurableRSocketServerFactory.html" target="_top">No&nbsp;Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="ConfigurableRSocketServerFactory.html#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="ConfigurableRSocketServerFactory.html#method.detail">Method</a></li>
+</ul>
+</div>
+<a name="skip.navbar.bottom">
+
+</a></div>
+
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1f8fd5eaab7d8c","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
