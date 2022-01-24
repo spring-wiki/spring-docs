@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.12">
-<title>Upgrading Spring Boot</title>
+<title>升级 Spring Boot</title>
 <link rel="stylesheet" href="css/site.css">
 <script src="js/setup.js"></script><script defer="" src="js/site.js"></script>
 <script type="application/json" id="anchor-rewrite">
@@ -962,20 +962,25 @@
 <div id="main" class="contained">
 <div id="doc" class="doc">
 <div id="header">
+<h1 translation-result="on">升级 Spring Boot</h1>
 <h1 translation-origin="off">Upgrading Spring Boot</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">目录</div>
 <span id="back-to-index"><a href="index.html">返回索引页</a></span><ul class="sectlevel1">
 <li>
+  <p translation-result="on"><a href="upgrading.html#upgrading.from-1x">1.从1.x升级</a></p>
   <p translation-origin="off"><a href="upgrading.html#upgrading.from-1x">1. Upgrading from 1.x</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="upgrading.html#upgrading.to-feature">2. 升级到新功能版本</a></p>
   <p translation-origin="off"><a href="upgrading.html#upgrading.to-feature">2. Upgrading to a new feature release</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="upgrading.html#upgrading.cli">3. 升级 Spring Boot CLI</a></p>
   <p translation-origin="off"><a href="upgrading.html#upgrading.cli">3. Upgrading the Spring Boot CLI</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="upgrading.html#upgrading.whats-next">4.接下来要读什么</a></p>
   <p translation-origin="off"><a href="upgrading.html#upgrading.whats-next">4. What to Read Next</a></p>
 </li>
 </ul>
@@ -985,28 +990,34 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">项目<a href="https://github.com/spring-projects/spring-boot/wiki">wiki</a>上提供了有关如何从早期版本的 Spring Boot 升级的说明。按照<a href="https://github.com/spring-projects/spring-boot/wiki#release-notes">发行说明</a>部分中的链接查找要升级到的版本。</p>
 <p translation-origin="off">Instructions for how to upgrade from earlier versions of Spring Boot are provided on the project <a href="https://github.com/spring-projects/spring-boot/wiki">wiki</a>.
 Follow the links in the <a href="https://github.com/spring-projects/spring-boot/wiki#release-notes">release notes</a> section to find the version that you want to upgrade to.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">升级说明始终是发行说明中的第一项。如果您落后多个版本，请确保您还查看了您跳过的版本的发行说明。</p>
 <p translation-origin="off">Upgrading instructions are always the first item in the release notes.
 If you are more than one release behind, please make sure that you also review the release notes of the versions that you jumped.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="upgrading.from-1x" translation-origin="off"><a class="anchor" href="upgrading.html#upgrading.from-1x"></a>1. Upgrading from 1.x</h2>
+<h2 id="upgrading.from-1x" translation-result="on"><a href="upgrading.html#upgrading.from-1x"></a>1.从1.x升级</h2>
+<h2 translation-origin="off"><a class="anchor" href="upgrading.html#upgrading.from-1x"></a>1. Upgrading from 1.x</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">如果您是从 Spring Boot 的<code>1.x</code>版本升级，请查看<a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0-Migration-Guide">项目 wiki 上提供详细升级说明的“迁移指南”</a> 。另请查看<a href="https://github.com/spring-projects/spring-boot/wiki">“发行说明”</a>以获取每个版本的“新的和值得注意的”功能列表。</p>
 <p translation-origin="off">If you are upgrading from the <code>1.x</code> release of Spring Boot, check the <a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0-Migration-Guide">“migration guide” on the project wiki</a> that provides detailed upgrade instructions.
 Check also the <a href="https://github.com/spring-projects/spring-boot/wiki">“release notes”</a> for a list of “new and noteworthy” features for each release.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="upgrading.to-feature" translation-origin="off"><a class="anchor" href="upgrading.html#upgrading.to-feature"></a>2. Upgrading to a new feature release</h2>
+<h2 id="upgrading.to-feature" translation-result="on"><a href="upgrading.html#upgrading.to-feature"></a>2. 升级到新功能版本</h2>
+<h2 translation-origin="off"><a class="anchor" href="upgrading.html#upgrading.to-feature"></a>2. Upgrading to a new feature release</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">升级到新功能版本时，某些属性可能已重命名或删除。 Spring Boot 提供了一种在启动时分析应用程序环境和打印诊断信息的方法，还可以在运行时为您临时迁移属性。要启用该功能，请将以下依赖项添加到您的项目中：</p>
 <p translation-origin="off">When upgrading to a new feature release, some properties may have been renamed or removed.
 Spring Boot provides a way to analyze your application’s environment and print diagnostics at startup, but also temporarily migrate properties at runtime for you.
 To enable that feature, add the following dependency to your project:</p>
@@ -1027,6 +1038,7 @@ To enable that feature, add the following dependency to your project:</p>
 <i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
+<p translation-result="on">后期添加到环境中的属性（例如使用<code>@PropertySource</code>时）将不会被考虑在内。</p>
 <p translation-origin="off">Properties that are added late to the environment, such as when using <code>@PropertySource</code>, will not be taken into account.</p>
 </td>
 </tr>
@@ -1039,6 +1051,7 @@ To enable that feature, add the following dependency to your project:</p>
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
+<p translation-result="on">完成迁移后，请确保从项目的依赖项中删除此模块。</p>
 <p translation-origin="off">Once you finish the migration, please make sure to remove this module from your project’s dependencies.</p>
 </td>
 </tr>
@@ -1047,21 +1060,26 @@ To enable that feature, add the following dependency to your project:</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="upgrading.cli" translation-origin="off"><a class="anchor" href="upgrading.html#upgrading.cli"></a>3. Upgrading the Spring Boot CLI</h2>
+<h2 id="upgrading.cli" translation-result="on"><a href="upgrading.html#upgrading.cli"></a>3. 升级 Spring Boot CLI</h2>
+<h2 translation-origin="off"><a class="anchor" href="upgrading.html#upgrading.cli"></a>3. Upgrading the Spring Boot CLI</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">要升级现有 CLI 安装，请使用适当的包管理器命令（例如<code>brew upgrade</code> ）。如果您手动安装了 CLI，请按照<a href="getting-started.html#getting-started.installing.cli.manual-installation">标准说明</a>进行操作，请记住更新<code>PATH</code>环境变量以删除任何较旧的引用。</p>
 <p translation-origin="off">To upgrade an existing CLI installation, use the appropriate package manager command (for example, <code>brew upgrade</code>).
 If you manually installed the CLI, follow the <a href="getting-started.html#getting-started.installing.cli.manual-installation">standard instructions</a>, remembering to update your <code>PATH</code> environment variable to remove any older references.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="upgrading.whats-next" translation-origin="off"><a class="anchor" href="upgrading.html#upgrading.whats-next"></a>4. What to Read Next</h2>
+<h2 id="upgrading.whats-next" translation-result="on"><a href="upgrading.html#upgrading.whats-next"></a>4.接下来要读什么</h2>
+<h2 translation-origin="off"><a class="anchor" href="upgrading.html#upgrading.whats-next"></a>4. What to Read Next</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">一旦您决定升级您的应用程序，您可以在文档的其余部分找到有关特定功能的详细信息。</p>
 <p translation-origin="off">Once you’ve decided to upgrade your application, you can find detailed information regarding specific features in the rest of the document.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">Spring Boot 的文档特定于该版本，因此您在此处找到的任何信息都将包含该版本中的最新更改。</p>
 <p translation-origin="off">Spring Boot’s documentation is specific to that version, so any information that you find in here will contain the most up-to-date changes that are in that version.</p>
 </div>
 </div>
@@ -1076,6 +1094,8 @@ If you manually installed the CLI, follow the <a href="getting-started.html#gett
 </div>
 </div>
 <script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6d1fde63ec287c65&quot;,&quot;token&quot;:&quot;bffcb8a918ae4755926f76178bfbd26b&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
 
 
 </body></html>

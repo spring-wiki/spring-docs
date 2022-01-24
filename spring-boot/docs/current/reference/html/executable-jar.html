@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.12">
-<title>The Executable Jar Format</title>
+<title>可执行的 Jar 格式</title>
 <link rel="stylesheet" href="css/site.css">
 <script src="js/setup.js"></script><script defer="" src="js/site.js"></script>
 <script type="application/json" id="anchor-rewrite">
@@ -962,53 +962,67 @@
 <div id="main" class="contained">
 <div id="doc" class="doc">
 <div id="header">
+<h1 translation-result="on">可执行的 Jar 格式</h1>
 <h1 translation-origin="off">The Executable Jar Format</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">目录</div>
 <span id="back-to-index"><a href="index.html">返回索引页</a></span><ul class="sectlevel1">
 <li>
+  <p translation-result="on"><a href="executable-jar.html#executable-jar.nested-jars">1. 嵌套的 JAR</a></p>
   <p translation-origin="off"><a href="executable-jar.html#executable-jar.nested-jars">1. Nested JARs</a></p>
 <ul class="sectlevel2">
 <li>
+  <p translation-result="on"><a href="executable-jar.html#executable-jar.nested-jars.jar-structure">1.1。可执行 Jar 文件结构</a></p>
   <p translation-origin="off"><a href="executable-jar.html#executable-jar.nested-jars.jar-structure">1.1. The Executable Jar File Structure</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="executable-jar.html#executable-jar.nested-jars.war-structure">1.2.可执行的战争文件结构</a></p>
   <p translation-origin="off"><a href="executable-jar.html#executable-jar.nested-jars.war-structure">1.2. The Executable War File Structure</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="executable-jar.html#executable-jar.nested-jars.index-files">1.3.索引文件</a></p>
   <p translation-origin="off"><a href="executable-jar.html#executable-jar.nested-jars.index-files">1.3. Index Files</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="executable-jar.html#executable-jar.nested-jars.classpath-index">1.4.类路径索引</a></p>
   <p translation-origin="off"><a href="executable-jar.html#executable-jar.nested-jars.classpath-index">1.4. Classpath Index</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="executable-jar.html#executable-jar.nested-jars.layer-index">1.5。图层索引</a></p>
   <p translation-origin="off"><a href="executable-jar.html#executable-jar.nested-jars.layer-index">1.5. Layer Index</a></p>
 </li>
 </ul>
 </li>
 <li>
+  <p translation-result="on"><a href="executable-jar.html#executable-jar.jarfile-class">2. Spring Boot 的“JarFile”类</a></p>
   <p translation-origin="off"><a href="executable-jar.html#executable-jar.jarfile-class">2. Spring Boot’s “JarFile” Class</a></p>
 <ul class="sectlevel2">
 <li>
+  <p translation-result="on"><a href="executable-jar.html#executable-jar.jarfile-class.compatibility">2.1。与标准 Java “JarFile”的兼容性</a></p>
   <p translation-origin="off"><a href="executable-jar.html#executable-jar.jarfile-class.compatibility">2.1. Compatibility with the Standard Java “JarFile”</a></p>
 </li>
 </ul>
 </li>
 <li>
+  <p translation-result="on"><a href="executable-jar.html#executable-jar.launching">3. 启动可执行罐子</a></p>
   <p translation-origin="off"><a href="executable-jar.html#executable-jar.launching">3. Launching Executable Jars</a></p>
 <ul class="sectlevel2">
 <li>
+  <p translation-result="on"><a href="executable-jar.html#executable-jar.launching.manifest">3.1。启动器清单</a></p>
   <p translation-origin="off"><a href="executable-jar.html#executable-jar.launching.manifest">3.1. Launcher Manifest</a></p>
 </li>
 </ul>
 </li>
 <li>
+  <p translation-result="on"><a href="executable-jar.html#executable-jar.property-launcher">4.PropertiesLauncher 功能</a></p>
   <p translation-origin="off"><a href="executable-jar.html#executable-jar.property-launcher">4. PropertiesLauncher Features</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="executable-jar.html#executable-jar.restrictions">5. 可执行 Jar 限制</a></p>
   <p translation-origin="off"><a href="executable-jar.html#executable-jar.restrictions">5. Executable Jar Restrictions</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="executable-jar.html#executable-jar.alternatives">6. 替代单罐解决方案</a></p>
   <p translation-origin="off"><a href="executable-jar.html#executable-jar.alternatives">6. Alternative Single Jar Solutions</a></p>
 </li>
 </ul>
@@ -1018,22 +1032,27 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on"><code>spring-boot-loader</code>模块让 Spring Boot 支持可执行的 jar 和 war 文件。如果您使用 Maven 插件或 Gradle 插件，可执行 jar 会自动生成，您通常不需要了解它们的工作原理。</p>
 <p translation-origin="off">The <code>spring-boot-loader</code> modules lets Spring Boot support executable jar and war files.
 If you use the Maven plugin or the Gradle plugin, executable jars are automatically generated, and you generally do not need to know the details of how they work.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">如果您需要从不同的构建系统创建可执行 jar，或者您只是对底层技术感到好奇，本附录提供了一些背景知识。</p>
 <p translation-origin="off">If you need to create executable jars from a different build system or if you are just curious about the underlying technology, this appendix provides some background.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="executable-jar.nested-jars" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars"></a>1. Nested JARs</h2>
+<h2 id="executable-jar.nested-jars" translation-result="on"><a href="executable-jar.html#executable-jar.nested-jars"></a>1. 嵌套的 JAR</h2>
+<h2 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars"></a>1. Nested JARs</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">Java 不提供任何标准方法来加载嵌套的 jar 文件（即，本身包含在 jar 中的 jar 文件）。如果您需要分发可以从命令行运行而无需解包的独立应用程序，这可能会出现问题。</p>
 <p translation-origin="off">Java does not provide any standard way to load nested jar files (that is, jar files that are themselves contained within a jar).
 This can be problematic if you need to distribute a self-contained application that can be run from the command line without unpacking.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">为了解决这个问题，许多开发人员使用“阴影”罐子。带阴影的 jar 将所有 jar 中的所有类打包到一个“uber jar”中。带阴影的 jar 的问题是很难看出哪些库实际上在您的应用程序中。如果在多个 jar 中使用相同的文件名（但内容不同），也可能会出现问题。 Spring Boot 采用了不同的方法，让您实际上可以直接嵌套 jar。</p>
 <p translation-origin="off">To solve this problem, many developers use “shaded” jars.
 A shaded jar packages all classes, from all jars, into a single “uber jar”.
 The problem with shaded jars is that it becomes hard to see which libraries are actually in your application.
@@ -1041,8 +1060,10 @@ It can also be problematic if the same filename is used (but with different cont
 Spring Boot takes a different approach and lets you actually nest jars directly.</p>
 </div>
 <div class="sect2">
-<h3 id="executable-jar.nested-jars.jar-structure" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.jar-structure"></a>1.1. The Executable Jar File Structure</h3>
+<h3 id="executable-jar.nested-jars.jar-structure" translation-result="on"><a href="executable-jar.html#executable-jar.nested-jars.jar-structure"></a>1.1。可执行 Jar 文件结构</h3>
+<h3 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.jar-structure"></a>1.1. The Executable Jar File Structure</h3>
 <div class="paragraph">
+<p translation-result="on">与 Spring Boot Loader 兼容的 jar 文件应按以下方式构造：</p>
 <p translation-origin="off">Spring Boot Loader-compatible jar files should be structured in the following way:</p>
 </div>
 <div class="listingblock">
@@ -1067,13 +1088,16 @@ Spring Boot takes a different approach and lets you actually nest jars directly.
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">应用程序类应放置在嵌套的<code>BOOT-INF/classes</code>目录中。依赖项应该放在嵌套的<code>BOOT-INF/lib</code>目录中。</p>
 <p translation-origin="off">Application classes should be placed in a nested <code>BOOT-INF/classes</code> directory.
 Dependencies should be placed in a nested <code>BOOT-INF/lib</code> directory.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="executable-jar.nested-jars.war-structure" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.war-structure"></a>1.2. The Executable War File Structure</h3>
+<h3 id="executable-jar.nested-jars.war-structure" translation-result="on"><a href="executable-jar.html#executable-jar.nested-jars.war-structure"></a>1.2.可执行的战争文件结构</h3>
+<h3 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.war-structure"></a>1.2. The Executable War File Structure</h3>
 <div class="paragraph">
+<p translation-result="on">与 Spring Boot Loader 兼容的 war 文件应按以下方式构建：</p>
 <p translation-origin="off">Spring Boot Loader-compatible war files should be structured in the following way:</p>
 </div>
 <div class="listingblock">
@@ -1102,30 +1126,37 @@ Dependencies should be placed in a nested <code>BOOT-INF/lib</code> directory.</
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">依赖项应该放在嵌套的<code>WEB-INF/lib</code>目录中。运行嵌入式时需要但部署到传统 Web 容器时不需要的任何依赖项都应放在<code>WEB-INF/lib-provided</code>中。</p>
 <p translation-origin="off">Dependencies should be placed in a nested <code>WEB-INF/lib</code> directory.
 Any dependencies that are required when running embedded but are not required when deploying to a traditional web container should be placed in <code>WEB-INF/lib-provided</code>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="executable-jar.nested-jars.index-files" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.index-files"></a>1.3. Index Files</h3>
+<h3 id="executable-jar.nested-jars.index-files" translation-result="on"><a href="executable-jar.html#executable-jar.nested-jars.index-files"></a>1.3.索引文件</h3>
+<h3 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.index-files"></a>1.3. Index Files</h3>
 <div class="paragraph">
+<p translation-result="on">Spring Boot Loader 兼容的 jar 和 war 档案可以在<code>BOOT-INF/</code>目录下包含其他索引文件。可以为 jars 和 wars 提供一个<code>classpath.idx</code>文件，它提供了将 jars 添加到类路径中的顺序。 <code>layers.idx</code>文件只能用于 jar，它允许将 jar 拆分为逻辑层以创建 Docker/OCI 映像。</p>
 <p translation-origin="off">Spring Boot Loader-compatible jar and war archives can include additional index files under the <code>BOOT-INF/</code> directory.
 A <code>classpath.idx</code> file can be provided for both jars and wars, and it provides the ordering that jars should be added to the classpath.
 The <code>layers.idx</code> file can be used only for jars, and it allows a jar to be split into logical layers for Docker/OCI image creation.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">索引文件遵循 YAML 兼容的语法，因此它们可以很容易地被第三方工具解析。但是，这些文件<em nt__marker="*">不会</em>在内部被解析为 YAML，它们必须完全按照下面描述的格式编写才能使用。</p>
 <p translation-origin="off">Index files follow a YAML compatible syntax so that they can be easily parsed by third-party tools.
 These files, however, are <em>not</em> parsed internally as YAML and they must be written in exactly the formats described below in order to be used.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="executable-jar.nested-jars.classpath-index" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.classpath-index"></a>1.4. Classpath Index</h3>
+<h3 id="executable-jar.nested-jars.classpath-index" translation-result="on"><a href="executable-jar.html#executable-jar.nested-jars.classpath-index"></a>1.4.类路径索引</h3>
+<h3 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.classpath-index"></a>1.4. Classpath Index</h3>
 <div class="paragraph">
+<p translation-result="on">可以在<code>BOOT-INF/classpath.idx</code>中提供类路径索引文件。它提供了一个 jar 名称列表（包括目录），按照它们应该添加到类路径的顺序。每行必须以破折号空格 ( <code>"-·"</code> ) 开头，并且名称必须用双引号引起来。</p>
 <p translation-origin="off">The classpath index file can be provided in <code>BOOT-INF/classpath.idx</code>.
 It provides a list of jar names (including the directory) in the order that they should be added to the classpath.
 Each line must start with dash space (<code>"-·"</code>) and names must be in double quotes.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">例如，给定以下 jar：</p>
 <p translation-origin="off">For example, given the following jar:</p>
 </div>
 <div class="listingblock">
@@ -1143,6 +1174,7 @@ Each line must start with dash space (<code>"-·"</code>) and names must be in d
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">索引文件如下所示：</p>
 <p translation-origin="off">The index file would look like this:</p>
 </div>
 <div class="listingblock">
@@ -1153,8 +1185,10 @@ Each line must start with dash space (<code>"-·"</code>) and names must be in d
 </div>
 </div>
 <div class="sect2">
-<h3 id="executable-jar.nested-jars.layer-index" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.layer-index"></a>1.5. Layer Index</h3>
+<h3 id="executable-jar.nested-jars.layer-index" translation-result="on"><a href="executable-jar.html#executable-jar.nested-jars.layer-index"></a>1.5。图层索引</h3>
+<h3 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.layer-index"></a>1.5. Layer Index</h3>
 <div class="paragraph">
+<p translation-result="on">层索引文件可以在<code>BOOT-INF/layers.idx</code>中提供。它提供了层列表和应包含在其中的 jar 的部分。层是按照它们应该添加到 Docker/OCI 映像的顺序编写的。层名称写为带引号的字符串，前缀为破折号空格（ <code>"-·"</code> ）和冒号（ <code>":"</code> ）后缀。图层内容是一个文件或目录名称，写为带引号的字符串，前缀为空格空格破折号空格（ <code>"··-·"</code> ）。目录名以<code>/</code>结尾，文件名不以 / 结尾。当使用目录名称时，这意味着该目录中的所有文件都在同一层中。</p>
 <p translation-origin="off">The layers index file can be provided in <code>BOOT-INF/layers.idx</code>.
 It provides a list of layers and the parts of the jar that should be contained within them.
 Layers are written in the order that they should be added to the Docker/OCI image.
@@ -1164,6 +1198,7 @@ A directory name ends with <code>/</code>, a file name does not.
 When a directory name is used it means that all files inside that directory are in the same layer.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">层索引的典型示例是：</p>
 <p translation-origin="off">A typical example of a layers index would be:</p>
 </div>
 <div class="listingblock">
@@ -1180,9 +1215,11 @@ When a directory name is used it means that all files inside that directory are 
 </div>
 </div>
 <div class="sect1">
-<h2 id="executable-jar.jarfile-class" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.jarfile-class"></a>2. Spring Boot’s “JarFile” Class</h2>
+<h2 id="executable-jar.jarfile-class" translation-result="on"><a href="executable-jar.html#executable-jar.jarfile-class"></a>2. Spring Boot 的“JarFile”类</h2>
+<h2 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.jarfile-class"></a>2. Spring Boot’s “JarFile” Class</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">用于支持加载嵌套 jar 的核心类是<code>org.springframework.boot.loader.jar.JarFile</code> 。它允许您从标准 jar 文件或嵌套的子 jar 数据加载 jar 内容。首次加载时，每个<code>JarEntry</code>的位置都会映射到外部 jar 的物理文件偏移量，如下例所示：</p>
 <p translation-origin="off">The core class used to support loading nested jars is <code>org.springframework.boot.loader.jar.JarFile</code>.
 It lets you load jar content from a standard jar file or from nested child jar data.
 When first loaded, the location of each <code>JarEntry</code> is mapped to a physical file offset of the outer jar, as shown in the following example:</p>
@@ -1201,16 +1238,20 @@ When first loaded, the location of each <code>JarEntry</code> is mapped to a phy
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">前面的示例显示了如何在<code>myapp.jar</code>的<code>/BOOT-INF/classes</code>中的<code>0063</code>位置找到<code>A.class</code> 。嵌套 jar 中的<code>B.class</code>实际上可以在<code>myapp.jar</code>的<code>3452</code>位置找到，而<code>C.class</code>位于<code>3980</code>位置。</p>
 <p translation-origin="off">The preceding example shows how <code>A.class</code> can be found in <code>/BOOT-INF/classes</code> in <code>myapp.jar</code> at position <code>0063</code>.
 <code>B.class</code> from the nested jar can actually be found in <code>myapp.jar</code> at position <code>3452</code>, and <code>C.class</code> is at position <code>3980</code>.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">有了这些信息，我们可以通过寻找外部 jar 的适当部分来加载特定的嵌套条目。我们不需要解压存档，也不需要将所有条目数据读入内存。</p>
 <p translation-origin="off">Armed with this information, we can load specific nested entries by seeking to the appropriate part of the outer jar.
 We do not need to unpack the archive, and we do not need to read all entry data into memory.</p>
 </div>
 <div class="sect2">
-<h3 id="executable-jar.jarfile-class.compatibility" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.jarfile-class.compatibility"></a>2.1. Compatibility with the Standard Java “JarFile”</h3>
+<h3 id="executable-jar.jarfile-class.compatibility" translation-result="on"><a href="executable-jar.html#executable-jar.jarfile-class.compatibility"></a>2.1。与标准 Java “JarFile”的兼容性</h3>
+<h3 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.jarfile-class.compatibility"></a>2.1. Compatibility with the Standard Java “JarFile”</h3>
 <div class="paragraph">
+<p translation-result="on">Spring Boot Loader 力求与现有代码和库保持兼容。 <code>org.springframework.boot.loader.jar.JarFile</code>从<code>java.util.jar.JarFile</code>扩展而来，应该可以作为替代品使用。 <code>getURL()</code>方法返回一个<code>URL</code> ，该 URL 打开一个与<code>java.net.JarURLConnection</code>兼容的连接，并且可以与 Java 的<code>URLClassLoader</code>一起使用。</p>
 <p translation-origin="off">Spring Boot Loader strives to remain compatible with existing code and libraries.
 <code>org.springframework.boot.loader.jar.JarFile</code> extends from <code>java.util.jar.JarFile</code> and should work as a drop-in replacement.
 The <code>getURL()</code> method returns a <code>URL</code> that opens a connection compatible with <code>java.net.JarURLConnection</code> and can be used with Java’s <code>URLClassLoader</code>.</p>
@@ -1219,13 +1260,16 @@ The <code>getURL()</code> method returns a <code>URL</code> that opens a connect
 </div>
 </div>
 <div class="sect1">
-<h2 id="executable-jar.launching" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.launching"></a>3. Launching Executable Jars</h2>
+<h2 id="executable-jar.launching" translation-result="on"><a href="executable-jar.html#executable-jar.launching"></a>3. 启动可执行罐子</h2>
+<h2 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.launching"></a>3. Launching Executable Jars</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on"><code>org.springframework.boot.loader.Launcher</code>类是一个特殊的引导类，用作可执行 jar 的主要入口点。它是您的 jar 文件中的实际<code>Main-Class</code> ，它用于设置适当的<code>URLClassLoader</code>并最终调用您的<code>main()</code>方法。</p>
 <p translation-origin="off">The <code>org.springframework.boot.loader.Launcher</code> class is a special bootstrap class that is used as an executable jar’s main entry point.
 It is the actual <code>Main-Class</code> in your jar file, and it is used to setup an appropriate <code>URLClassLoader</code> and ultimately call your <code>main()</code> method.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">有三个启动器子类（ <code>JarLauncher</code> 、 <code>WarLauncher</code>和<code>PropertiesLauncher</code> ）。它们的目的是从目录中的嵌套 jar 文件或 war 文件加载资源（ <code>.class</code>文件等）（与那些显式在类路径上的文件相反）。对于<code>JarLauncher</code>和<code>WarLauncher</code> ，嵌套路径是固定的。 <code>JarLauncher</code>在<code>BOOT-INF/lib/</code>中查找，而<code>WarLauncher</code>在<code>WEB-INF/lib/</code>和<code>WEB-INF/lib-provided/</code>中查找。如果你想要更多，你可以在这些位置添加额外的罐子。默认情况下， <code>PropertiesLauncher</code>在应用程序存档中的<code>BOOT-INF/lib/</code>中查找。您可以通过在<code>loader.properties</code>中设置一个名为<code>LOADER_PATH</code>或<code>loader.path</code>的环境变量来添加其他位置（这是一个逗号分隔的目录、档案或档案中的目录的列表）。</p>
 <p translation-origin="off">There are three launcher subclasses (<code>JarLauncher</code>, <code>WarLauncher</code>, and <code>PropertiesLauncher</code>).
 Their purpose is to load resources (<code>.class</code> files and so on) from nested jar files or war files in directories (as opposed to those explicitly on the classpath).
 In the case of <code>JarLauncher</code> and <code>WarLauncher</code>, the nested paths are fixed.
@@ -1235,12 +1279,15 @@ The <code>PropertiesLauncher</code> looks in <code>BOOT-INF/lib/</code> in your 
 You can add additional locations by setting an environment variable called <code>LOADER_PATH</code> or <code>loader.path</code> in <code>loader.properties</code> (which is a comma-separated list of directories, archives, or directories within archives).</p>
 </div>
 <div class="sect2">
-<h3 id="executable-jar.launching.manifest" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.launching.manifest"></a>3.1. Launcher Manifest</h3>
+<h3 id="executable-jar.launching.manifest" translation-result="on"><a href="executable-jar.html#executable-jar.launching.manifest"></a>3.1。启动器清单</h3>
+<h3 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.launching.manifest"></a>3.1. Launcher Manifest</h3>
 <div class="paragraph">
+<p translation-result="on">您需要指定适当的<code>Launcher</code>作为<code>META-INF/MANIFEST.MF</code>的<code>Main-Class</code>属性。您要启动的实际类（即包含<code>main</code>方法的类）应在<code>Start-Class</code>属性中指定。</p>
 <p translation-origin="off">You need to specify an appropriate <code>Launcher</code> as the <code>Main-Class</code> attribute of <code>META-INF/MANIFEST.MF</code>.
 The actual class that you want to launch (that is, the class that contains a <code>main</code> method) should be specified in the <code>Start-Class</code> attribute.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">以下示例显示了可执行 jar 文件的典型<code>MANIFEST.MF</code> ：</p>
 <p translation-origin="off">The following example shows a typical <code>MANIFEST.MF</code> for an executable jar file:</p>
 </div>
 <div class="listingblock">
@@ -1250,6 +1297,7 @@ Start-Class: com.mycompany.project.MyApplication</pre>
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">对于战争文件，它将如下所示：</p>
 <p translation-origin="off">For a war file, it would be as follows:</p>
 </div>
 <div class="listingblock">
@@ -1265,6 +1313,7 @@ Start-Class: com.mycompany.project.MyApplication</pre>
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
+<p translation-result="on">您无需在清单文件中指定<code>Class-Path</code>条目。类路径是从嵌套的 jar 推导出来的。</p>
 <p translation-origin="off">You need not specify <code>Class-Path</code> entries in your manifest file.
 The classpath is deduced from the nested jars.</p>
 </td>
@@ -1275,9 +1324,11 @@ The classpath is deduced from the nested jars.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="executable-jar.property-launcher" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.property-launcher"></a>4. PropertiesLauncher Features</h2>
+<h2 id="executable-jar.property-launcher" translation-result="on"><a href="executable-jar.html#executable-jar.property-launcher"></a>4.PropertiesLauncher 功能</h2>
+<h2 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.property-launcher"></a>4. PropertiesLauncher Features</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on"><code>PropertiesLauncher</code>有一些可以通过外部属性（系统属性、环境变量、清单条目或<code>loader.properties</code> ）启用的特殊功能。下表描述了这些属性：</p>
 <p translation-origin="off"><code>PropertiesLauncher</code> has a few special features that can be enabled with external properties (System properties, environment variables, manifest entries, or <code>loader.properties</code>).
 The following table describes these properties:</p>
 </div>
@@ -1289,51 +1340,54 @@ The following table describes these properties:</p>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">
+  <p translation-result="on">钥匙</p>
   <p translation-origin="off">Key</p>
 </th>
 <th class="tableblock halign-left valign-top">
+  <p translation-result="on">目的</p>
   <p translation-origin="off">Purpose</p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.path</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Comma-separated Classpath, such as <code>lib,${HOME}/app/lib</code>.
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.path</code></p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">逗号分隔的类路径，例如<code>lib,${HOME}/app/lib</code> 。较早的条目优先，例如<code>javac</code>命令行上的常规<code>-classpath</code> 。</p><p class="tableblock" translation-origin="off">Comma-separated Classpath, such as <code>lib,${HOME}/app/lib</code>.
 Earlier entries take precedence, like a regular <code>-classpath</code> on the <code>javac</code> command line.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.home</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Used to resolve relative paths in <code>loader.path</code>.
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.home</code></p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">用于解析<code>loader.path</code>中的相对路径。例如，给定<code>loader.path=lib</code> ，则<code>${loader.home}/lib</code>是一个类路径位置（以及该目录中的所有 jar 文件）。该属性还用于定位<code>loader.properties</code>文件，如下例所示<code>/opt/app</code>它默认为<code>${user.dir}</code> 。</p><p class="tableblock" translation-origin="off">Used to resolve relative paths in <code>loader.path</code>.
 For example, given <code>loader.path=lib</code>, then <code>${loader.home}/lib</code> is a classpath location (along with all jar files in that directory).
 This property is also used to locate a <code>loader.properties</code> file, as in the following example <code><a href="file:///opt/app" class="bare">/opt/app</a></code> It defaults to <code>${user.dir}</code>.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.args</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Default arguments for the main method (space separated).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.args</code></p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">main 方法的默认参数（空格分隔）。</p><p class="tableblock" translation-origin="off">Default arguments for the main method (space separated).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.main</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Name of main class to launch (for example, <code>com.app.Application</code>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.main</code></p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">要启动的主类的名称（例如<code>com.app.Application</code> ）。</p><p class="tableblock" translation-origin="off">Name of main class to launch (for example, <code>com.app.Application</code>).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.config.name</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Name of properties file (for example, <code>launcher</code>).
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.config.name</code></p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">属性文件的名称（例如， <code>launcher</code> ）。它默认为<code>loader</code> 。</p><p class="tableblock" translation-origin="off">Name of properties file (for example, <code>launcher</code>).
 It defaults to <code>loader</code>.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.config.location</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Path to properties file (for example, <code>classpath:loader.properties</code>).
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.config.location</code></p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">属性文件的路径（例如， <code>classpath:loader.properties</code> ）。它默认为<code>loader.properties</code> 。</p><p class="tableblock" translation-origin="off">Path to properties file (for example, <code>classpath:loader.properties</code>).
 It defaults to <code>loader.properties</code>.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.system</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Boolean flag to indicate that all properties should be added to System properties.
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.system</code></p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">布尔标志，指示应将所有属性添加到系统属性。它默认为<code>false</code> 。</p><p class="tableblock" translation-origin="off">Boolean flag to indicate that all properties should be added to System properties.
 It defaults to <code>false</code>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
+<p translation-result="on">当指定为环境变量或清单条目时，应使用以下名称：</p>
 <p translation-origin="off">When specified as environment variables or manifest entries, the following names should be used:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
@@ -1345,46 +1399,49 @@ It defaults to <code>false</code>.</p></td>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">
+  <p translation-result="on">钥匙</p>
   <p translation-origin="off">Key</p>
 </th>
 <th class="tableblock halign-left valign-top">
+  <p translation-result="on">清单条目</p>
   <p translation-origin="off">Manifest entry</p>
 </th>
 <th class="tableblock halign-left valign-top">
+  <p translation-result="on">环境变量</p>
   <p translation-origin="off">Environment variable</p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.path</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>Loader-Path</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>LOADER_PATH</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.path</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Loader-Path</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOADER_PATH</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.home</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>Loader-Home</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>LOADER_HOME</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.home</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Loader-Home</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOADER_HOME</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.args</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>Loader-Args</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>LOADER_ARGS</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.args</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Loader-Args</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOADER_ARGS</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.main</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>Start-Class</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>LOADER_MAIN</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.main</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Start-Class</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOADER_MAIN</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.config.location</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>Loader-Config-Location</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>LOADER_CONFIG_LOCATION</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.config.location</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Loader-Config-Location</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOADER_CONFIG_LOCATION</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.system</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>Loader-System</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>LOADER_SYSTEM</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.system</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Loader-System</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOADER_SYSTEM</code></p></td>
 </tr>
 </tbody>
 </table>
@@ -1395,6 +1452,7 @@ It defaults to <code>false</code>.</p></td>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
+<p translation-result="on">构建 fat jar 时，构建插件会自动将<code>Main-Class</code>属性移动到<code>Start-Class</code> 。如果使用它，请使用<code>Main-Class</code>属性并省略<code>Start-Class</code>来指定要启动的类的名称。</p>
 <p translation-origin="off">Build plugins automatically move the <code>Main-Class</code> attribute to <code>Start-Class</code> when the fat jar is built.
 If you use that, specify the name of the class to launch by using the <code>Main-Class</code> attribute and leaving out <code>Start-Class</code>.</p>
 </td>
@@ -1402,32 +1460,40 @@ If you use that, specify the name of the class to launch by using the <code>Main
 </tbody></table>
 </div>
 <div class="paragraph">
+<p translation-result="on">以下规则适用于使用<code>PropertiesLauncher</code> ：</p>
 <p translation-origin="off">The following rules apply to working with <code>PropertiesLauncher</code>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
+<p translation-result="on"><code>loader.properties</code>在<code>loader.home</code>中搜索，然后在类路径的根目录中，然后在<code>classpath:/BOOT-INF/classes</code>中。使用具有该名称的文件存在的第一个位置。</p>
 <p translation-origin="off"><code>loader.properties</code> is searched for in <code>loader.home</code>, then in the root of the classpath, and then in <code>classpath:/BOOT-INF/classes</code>.
 The first location where a file with that name exists is used.</p>
 </li>
 <li>
+<p translation-result="on"><code>loader.home</code>是附加属性文件的目录位置（覆盖默认值），仅当未指定<code>loader.config.location</code>时。</p>
 <p translation-origin="off"><code>loader.home</code> is the directory location of an additional properties file (overriding the default) only when <code>loader.config.location</code> is not specified.</p>
 </li>
 <li>
+<p translation-result="on"><code>loader.path</code>可以包含目录（递归扫描 jar 和 zip 文件）、存档路径、存档中扫描 jar 文件的目录（例如， <code>dependencies.jar!/lib</code> ）或通配符模式（用于默认 JVM 行为）。存档路径可以相对于<code>loader.home</code>或文件系统中带有<code>jar:file:</code>前缀的任何位置。</p>
 <p translation-origin="off"><code>loader.path</code> can contain directories (which are scanned recursively for jar and zip files), archive paths, a directory within an archive that is scanned for jar files (for example, <code>dependencies.jar!/lib</code>), or wildcard patterns (for the default JVM behavior).
 Archive paths can be relative to <code>loader.home</code> or anywhere in the file system with a <code>jar:file:</code> prefix.</p>
 </li>
 <li>
+<p translation-result="on"><code>loader.path</code> （如果为空）默认为<code>BOOT-INF/lib</code> （表示本地目录或嵌套目录，如果从存档运行）。因此， <code>PropertiesLauncher</code>在没有提供额外配置时的行为与<code>JarLauncher</code>相同。</p>
 <p translation-origin="off"><code>loader.path</code> (if empty) defaults to <code>BOOT-INF/lib</code> (meaning a local directory or a nested one if running from an archive).
 Because of this, <code>PropertiesLauncher</code> behaves the same as <code>JarLauncher</code> when no additional configuration is provided.</p>
 </li>
 <li>
+<p translation-result="on"><code>loader.path</code>不能用于配置<code>loader.properties</code>的位置（用于搜索后者的类路径是启动<code>PropertiesLauncher</code>时的 JVM 类路径）。</p>
 <p translation-origin="off"><code>loader.path</code> can not be used to configure the location of <code>loader.properties</code> (the classpath used to search for the latter is the JVM classpath when <code>PropertiesLauncher</code> is launched).</p>
 </li>
 <li>
+<p translation-result="on">占位符替换是从系统和环境变量以及使用前所有值的属性文件本身完成的。</p>
 <p translation-origin="off">Placeholder replacement is done from System and environment variables plus the properties file itself on all values before use.</p>
 </li>
 <li>
+<p translation-result="on">属性的搜索顺序（在多个地方查找是有意义的）是环境变量、系统属性、 <code>loader.properties</code> 、展开的存档清单和存档清单。</p>
 <p translation-origin="off">The search order for properties (where it makes sense to look in more than one place) is environment variables, system properties, <code>loader.properties</code>, the exploded archive manifest, and the archive manifest.</p>
 </li>
 </ul>
@@ -1435,14 +1501,17 @@ Because of this, <code>PropertiesLauncher</code> behaves the same as <code>JarLa
 </div>
 </div>
 <div class="sect1">
-<h2 id="executable-jar.restrictions" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.restrictions"></a>5. Executable Jar Restrictions</h2>
+<h2 id="executable-jar.restrictions" translation-result="on"><a href="executable-jar.html#executable-jar.restrictions"></a>5. 可执行 Jar 限制</h2>
+<h2 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.restrictions"></a>5. Executable Jar Restrictions</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">在使用 Spring Boot Loader 打包应用程序时，您需要考虑以下限制：</p>
 <p translation-origin="off">You need to consider the following restrictions when working with a Spring Boot Loader packaged application:</p>
 </div>
 <div id="executable-jar-zip-entry-compression" class="ulist">
 <ul>
 <li>
+<p translation-result="on">Zip 条目压缩：嵌套 jar 的<code>ZipEntry</code>必须使用<code>ZipEntry.STORED</code>方法保存。这是必需的，以便我们可以直接查找嵌套 jar 中的各个内容。嵌套 jar 文件本身的内容仍然可以压缩，外部 jar 中的任何其他条目也可以。</p>
 <p translation-origin="off">Zip entry compression:
 The <code>ZipEntry</code> for a nested jar must be saved by using the <code>ZipEntry.STORED</code> method.
 This is required so that we can seek directly to individual content within the nested jar.
@@ -1453,6 +1522,7 @@ The content of the nested jar file itself can still be compressed, as can any ot
 <div id="executable-jar-system-classloader" class="ulist">
 <ul>
 <li>
+<p translation-result="on">系统类加载器：启动的应用程序在加载类时应该使用<code>Thread.getContextClassLoader()</code> （大多数库和框架默认这样做）。尝试使用<code>ClassLoader.getSystemClassLoader()</code>加载嵌套的 jar 类失败。 <code>java.util.Logging</code>始终使用系统类加载器。因此，您应该考虑不同的日志记录实现。</p>
 <p translation-origin="off">System classLoader:
 Launched applications should use <code>Thread.getContextClassLoader()</code> when loading classes (most libraries and frameworks do so by default).
 Trying to load nested jar classes with <code>ClassLoader.getSystemClassLoader()</code> fails.
@@ -1464,23 +1534,29 @@ For this reason, you should consider a different logging implementation.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="executable-jar.alternatives" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.alternatives"></a>6. Alternative Single Jar Solutions</h2>
+<h2 id="executable-jar.alternatives" translation-result="on"><a href="executable-jar.html#executable-jar.alternatives"></a>6. 替代单罐解决方案</h2>
+<h2 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.alternatives"></a>6. Alternative Single Jar Solutions</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">如果上述限制意味着您无法使用 Spring Boot Loader，请考虑以下替代方案：</p>
 <p translation-origin="off">If the preceding restrictions mean that you cannot use Spring Boot Loader, consider the following alternatives:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
+<p translation-result="on"><a href="https://maven.apache.org/plugins/maven-shade-plugin/">Maven 阴影插件</a></p>
 <p translation-origin="off"><a href="https://maven.apache.org/plugins/maven-shade-plugin/">Maven Shade Plugin</a></p>
 </li>
 <li>
+<p translation-result="on"><a href="http://www.jdotsoft.com/JarClassLoader.php">罐子类加载器</a></p>
 <p translation-origin="off"><a href="http://www.jdotsoft.com/JarClassLoader.php">JarClassLoader</a></p>
 </li>
 <li>
+<p translation-result="on"><a href="https://sourceforge.net/projects/one-jar/">一个罐子</a></p>
 <p translation-origin="off"><a href="https://sourceforge.net/projects/one-jar/">OneJar</a></p>
 </li>
 <li>
+<p translation-result="on"><a href="https://imperceptiblethoughts.com/shadow/">Gradle 影子插件</a></p>
 <p translation-origin="off"><a href="https://imperceptiblethoughts.com/shadow/">Gradle Shadow Plugin</a></p>
 </li>
 </ul>
@@ -1497,6 +1573,8 @@ For this reason, you should consider a different logging implementation.</p>
 </div>
 </div>
 <script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6d1fdf2a2d417c65&quot;,&quot;token&quot;:&quot;bffcb8a918ae4755926f76178bfbd26b&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
 
 
 </body></html>

@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.12">
-<title>Test Auto-configuration Annotations</title>
+<title>测试自动配置注释</title>
 <link rel="stylesheet" href="css/site.css">
 <script src="js/setup.js"></script><script defer="" src="js/site.js"></script>
 <script type="application/json" id="anchor-rewrite">
@@ -962,11 +962,13 @@
 <div id="main" class="contained">
 <div id="doc" class="doc">
 <div id="header">
+<h1 translation-result="on">测试自动配置注释</h1>
 <h1 translation-origin="off">Test Auto-configuration Annotations</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">目录</div>
 <span id="back-to-index"><a href="index.html">返回索引页</a></span><ul class="sectlevel1">
 <li>
+  <p translation-result="on"><a href="test-auto-configuration.html#test-auto-configuration.slices">1. 测试切片</a></p>
   <p translation-origin="off"><a href="test-auto-configuration.html#test-auto-configuration.slices">1. Test Slices</a></p>
 </li>
 </ul>
@@ -976,14 +978,17 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">本附录描述了 Spring Boot 提供的<code>@…​Test</code>自动配置注解，用于测试应用程序的切片。</p>
 <p translation-origin="off">This appendix describes the <code>@…​Test</code> auto-configuration annotations that Spring Boot provides to test slices of your application.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="test-auto-configuration.slices" translation-origin="off"><a class="anchor" href="test-auto-configuration.html#test-auto-configuration.slices"></a>1. Test Slices</h2>
+<h2 id="test-auto-configuration.slices" translation-result="on"><a href="test-auto-configuration.html#test-auto-configuration.slices"></a>1. 测试切片</h2>
+<h2 translation-origin="off"><a class="anchor" href="test-auto-configuration.html#test-auto-configuration.slices"></a>1. Test Slices</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">下表列出了可用于测试应用程序切片的各种<code>@…​Test</code>注释以及它们默认导入的自动配置：</p>
 <p translation-origin="off">The following table lists the various <code>@…​Test</code> annotations that can be used to test slices of your application and the auto-configuration that they import by default:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
@@ -994,18 +999,20 @@
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">
+  <p translation-result="on">测试切片</p>
   <p translation-origin="off">Test slice</p>
 </th>
 <th class="tableblock halign-left valign-top">
+  <p translation-result="on">导入的自动配置</p>
   <p translation-origin="off">Imported auto-configuration</p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@DataCassandraTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@DataCassandraTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.cassandra.CassandraAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.cassandra.CassandraDataAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.cassandra.CassandraReactiveDataAutoConfiguration</code>
@@ -1014,9 +1021,9 @@
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@DataJdbcTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@DataJdbcTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration</code>
@@ -1029,9 +1036,9 @@
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@DataJpaTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@DataJpaTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration</code>
@@ -1046,18 +1053,18 @@
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@DataLdapTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@DataLdapTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.ldap.LdapRepositoriesAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.ldap.LdapAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.ldap.embedded.EmbeddedLdapAutoConfiguration</code></p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@DataMongoTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@DataMongoTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.mongo.MongoReactiveDataAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.mongo.MongoReactiveRepositoriesAutoConfiguration</code>
@@ -1069,9 +1076,9 @@
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@DataNeo4jTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@DataNeo4jTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.neo4j.Neo4jDataAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.neo4j.Neo4jReactiveDataAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.neo4j.Neo4jReactiveRepositoriesAutoConfiguration</code>
@@ -1081,9 +1088,9 @@
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@DataR2dbcTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@DataR2dbcTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.data.r2dbc.R2dbcDataAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.data.r2dbc.R2dbcDataAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.r2dbc.R2dbcRepositoriesAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration</code>
@@ -1094,18 +1101,18 @@
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@DataRedisTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@DataRedisTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.redis.RedisReactiveAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.redis.RedisRepositoriesAutoConfiguration</code></p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@JdbcTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@JdbcTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration</code>
@@ -1117,9 +1124,9 @@
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@JooqTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@JooqTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration</code>
@@ -1130,9 +1137,9 @@
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@JsonTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@JsonTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration</code>
@@ -1140,9 +1147,9 @@
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@RestClientTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@RestClientTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration</code>
@@ -1155,9 +1162,9 @@
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@WebFluxTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@WebFluxTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration</code>
@@ -1177,9 +1184,9 @@
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@WebMvcTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@WebMvcTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration</code>
@@ -1209,18 +1216,18 @@
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@WebServiceClientTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@WebServiceClientTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</code>
 <code>org.springframework.boot.autoconfigure.webservices.client.WebServiceTemplateAutoConfiguration</code>
 <code>org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerAutoConfiguration</code>
 <code>org.springframework.boot.test.autoconfigure.webservices.client.WebServiceClientTemplateAutoConfiguration</code></p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>@WebServiceServerTest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@WebServiceServerTest</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p translation-origin="off"><code>org.springframework.boot.autoconfigure.webservices.WebServicesAutoConfiguration</code>
+<p><code>org.springframework.boot.autoconfigure.webservices.WebServicesAutoConfiguration</code>
 <code>org.springframework.boot.test.autoconfigure.webservices.server.MockWebServiceClientAutoConfiguration</code></p>
 </div></div></td>
 </tr>
@@ -1240,5 +1247,6 @@
 <script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6d1fdf1efca57c65&quot;,&quot;token&quot;:&quot;bffcb8a918ae4755926f76178bfbd26b&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
 
 
-</body></html>
 
+
+</body></html>

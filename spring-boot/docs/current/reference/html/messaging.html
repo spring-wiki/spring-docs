@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.12">
-<title>Messaging</title>
+<title>消息传递</title>
 <link rel="stylesheet" href="css/site.css">
 <script src="js/setup.js"></script><script defer="" src="js/site.js"></script>
 <script type="application/json" id="anchor-rewrite">
@@ -962,85 +962,106 @@
 <div id="main" class="contained">
 <div id="doc" class="doc">
 <div id="header">
+<h1 translation-result="on">消息传递</h1>
 <h1 translation-origin="off">Messaging</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">目录</div>
 <span id="back-to-index"><a href="index.html">返回索引页</a></span><ul class="sectlevel1">
 <li>
-  <p translation-origin="off"><a href="messaging.html#messaging.jms">1. JMS</a></p>
+  <p><a href="messaging.html#messaging.jms">1. JMS</a></p>
 <ul class="sectlevel2">
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.jms.activemq">1.1。 ActiveMQ 支持</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.jms.activemq">1.1. ActiveMQ Support</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.jms.artemis">1.2. ActiveMQ Artemis 支持</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.jms.artemis">1.2. ActiveMQ Artemis Support</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.jms.jndi">1.3.使用 JNDI 连接工厂</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.jms.jndi">1.3. Using a JNDI ConnectionFactory</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.jms.sending">1.4.发送消息</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.jms.sending">1.4. Sending a Message</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.jms.receiving">1.5。接收消息</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.jms.receiving">1.5. Receiving a Message</a></p>
 </li>
 </ul>
 </li>
 <li>
-  <p translation-origin="off"><a href="messaging.html#messaging.amqp">2. AMQP</a></p>
+  <p><a href="messaging.html#messaging.amqp">2. AMQP</a></p>
 <ul class="sectlevel2">
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.amqp.rabbitmq">2.1。 RabbitMQ 支持</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.amqp.rabbitmq">2.1. RabbitMQ support</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.amqp.sending">2.2.发送消息</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.amqp.sending">2.2. Sending a Message</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.amqp.receiving">2.3.接收消息</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.amqp.receiving">2.3. Receiving a Message</a></p>
 </li>
 </ul>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.kafka">3. Apache Kafka 支持</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.kafka">3. Apache Kafka Support</a></p>
 <ul class="sectlevel2">
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.kafka.sending">3.1。发送消息</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.kafka.sending">3.1. Sending a Message</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.kafka.receiving">3.2.接收消息</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.kafka.receiving">3.2. Receiving a Message</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.kafka.streams">3.3.卡夫卡流</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.kafka.streams">3.3. Kafka Streams</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.kafka.additional-properties">3.4.其他 Kafka 属性</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.kafka.additional-properties">3.4. Additional Kafka Properties</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.kafka.embedded">3.5.使用嵌入式 Kafka 进行测试</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.kafka.embedded">3.5. Testing with Embedded Kafka</a></p>
 </li>
 </ul>
 </li>
 <li>
-  <p translation-origin="off"><a href="messaging.html#messaging.rsocket">4. RSocket</a></p>
+  <p><a href="messaging.html#messaging.rsocket">4. RSocket</a></p>
 <ul class="sectlevel2">
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.rsocket.strategies-auto-configuration">4.1。 RSocket 策略自动配置</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.rsocket.strategies-auto-configuration">4.1. RSocket Strategies Auto-configuration</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.rsocket.server-auto-configuration">4.2. RSocket 服务器自动配置</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.rsocket.server-auto-configuration">4.2. RSocket server Auto-configuration</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.rsocket.messaging">4.3. Spring 消息传递 RSocket 支持</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.rsocket.messaging">4.3. Spring Messaging RSocket support</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.rsocket.requester">4.4.使用 RSocketRequester 调用 RSocket 服务</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.rsocket.requester">4.4. Calling RSocket Services with RSocketRequester</a></p>
 </li>
 </ul>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.spring-integration">5. 弹簧集成</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.spring-integration">5. Spring Integration</a></p>
 </li>
 <li>
+  <p translation-result="on"><a href="messaging.html#messaging.whats-next">6.接下来要读什么</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.whats-next">6. What to Read Next</a></p>
 </li>
 </ul>
@@ -1050,6 +1071,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">Spring Framework 为与消息传递系统集成提供了广泛的支持，从使用<code>JmsTemplate</code>的 JMS API 的简化使用到异步接收消息的完整基础架构。 Spring AMQP 为高级消息队列协议提供了类似的功能集。 Spring Boot 还为<code>RabbitTemplate</code>和 RabbitMQ 提供了自动配置选项。 Spring WebSocket 原生包括对 STOMP 消息传递的支持，Spring Boot 通过启动器和少量的自动配置来支持它。 Spring Boot 还支持 Apache Kafka。</p>
 <p translation-origin="off">The Spring Framework provides extensive support for integrating with messaging systems, from simplified use of the JMS API using <code>JmsTemplate</code> to a complete infrastructure to receive messages asynchronously.
 Spring AMQP provides a similar feature set for the Advanced Message Queuing Protocol.
 Spring Boot also provides auto-configuration options for <code>RabbitTemplate</code> and RabbitMQ.
@@ -1059,17 +1081,21 @@ Spring Boot also has support for Apache Kafka.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="messaging.jms" translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms"></a>1. JMS</h2>
+<h2 id="messaging.jms" translation-result="on"><a href="messaging.html#messaging.jms"></a>1. JMS</h2>
+<h2 translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms"></a>1. JMS</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on"><code>javax.jms.ConnectionFactory</code>接口提供了一种创建<code>javax.jms.Connection</code>以与 JMS 代理交互的标准方法。尽管 Spring 需要<code>ConnectionFactory</code>来与 JMS 一起工作，但您通常不需要自己直接使用它，而是可以依赖更高级别的消息传递抽象。 （有关详细信息，请参阅 Spring Framework 参考文档的 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/integration.html#jms">相关部分</a>。）Spring Boot 还自动配置必要的基础设施来发送和接收消息。</p>
 <p translation-origin="off">The <code>javax.jms.ConnectionFactory</code> interface provides a standard method of creating a <code>javax.jms.Connection</code> for interacting with a JMS broker.
 Although Spring needs a <code>ConnectionFactory</code> to work with JMS, you generally need not use it directly yourself and can instead rely on higher level messaging abstractions.
 (See the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/integration.html#jms">relevant section</a> of the Spring Framework reference documentation for details.)
 Spring Boot also auto-configures the necessary infrastructure to send and receive messages.</p>
 </div>
 <div class="sect2">
-<h3 id="messaging.jms.activemq" translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms.activemq"></a>1.1. ActiveMQ Support</h3>
+<h3 id="messaging.jms.activemq" translation-result="on"><a href="messaging.html#messaging.jms.activemq"></a>1.1。 ActiveMQ 支持</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms.activemq"></a>1.1. ActiveMQ Support</h3>
 <div class="paragraph">
+<p translation-result="on">当<a href="https://activemq.apache.org/">ActiveMQ</a>在类路径上可用时，Spring Boot 还可以配置<code>ConnectionFactory</code> 。如果存在代理，则会自动启动和配置嵌入式代理（前提是未通过配置指定代理 URL，并且未在配置中禁用嵌入式代理）。</p>
 <p translation-origin="off">When <a href="https://activemq.apache.org/">ActiveMQ</a> is available on the classpath, Spring Boot can also configure a <code>ConnectionFactory</code>.
 If the broker is present, an embedded broker is automatically started and configured (provided no broker URL is specified through configuration and the embedded broker is not disabled in the configuration).</p>
 </div>
@@ -1080,18 +1106,22 @@ If the broker is present, an embedded broker is automatically started and config
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
+<p translation-result="on">如果您使用<code>spring-boot-starter-activemq</code> ，则提供连接或嵌入 ActiveMQ 实例所需的依赖项，以及与 JMS 集成的 Spring 基础架构。</p>
 <p translation-origin="off">If you use <code>spring-boot-starter-activemq</code>, the necessary dependencies to connect or embed an ActiveMQ instance are provided, as is the Spring infrastructure to integrate with JMS.</p>
 </td>
 </tr>
 </tbody></table>
 </div>
 <div class="paragraph">
+<p translation-result="on">ActiveMQ 配置由<code>spring.activemq.*</code>中的外部配置属性控制。</p>
 <p translation-origin="off">ActiveMQ configuration is controlled by external configuration properties in <code>spring.activemq.*</code>.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">默认情况下，ActiveMQ 自动配置为使用<a href="https://activemq.apache.org/vm-transport-reference.html">VM 传输</a>，它启动嵌入在同一 JVM 实例中的代理。</p>
 <p translation-origin="off">By default, ActiveMQ is auto-configured to use the <a href="https://activemq.apache.org/vm-transport-reference.html">VM transport</a>, which starts a broker embedded in the same JVM instance.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">您可以通过配置<code>spring.activemq.in-memory</code>属性来禁用嵌入式代理，如下例所示：</p>
 <p translation-origin="off">You can disable the embedded broker by configuring the <code>spring.activemq.in-memory</code> property, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
@@ -1110,6 +1140,7 @@ If the broker is present, an embedded broker is automatically started and config
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">如果您配置代理 URL，嵌入式代理也将被禁用，如以下示例所示：</p>
 <p translation-origin="off">The embedded broker will also be disabled if you configure the broker URL, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
@@ -1132,9 +1163,11 @@ spring.activemq.password=secret</code></pre>
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">如果您想完全控制嵌入式代理，请参阅<a href="https://activemq.apache.org/how-do-i-embed-a-broker-inside-a-connection.html">ActiveMQ 文档</a>以获取更多信息。</p>
 <p translation-origin="off">If you want to take full control over the embedded broker, see <a href="https://activemq.apache.org/how-do-i-embed-a-broker-inside-a-connection.html">the ActiveMQ documentation</a> for further information.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">默认情况下，a <code>CachingConnectionFactory</code>使用可以通过<code>spring.jms.*</code>中的外部配置属性控制的合理设置包装本机<code>ConnectionFactory</code> ：</p>
 <p translation-origin="off">By default, a <code>CachingConnectionFactory</code> wraps the native <code>ConnectionFactory</code> with sensible settings that you can control by external configuration properties in <code>spring.jms.*</code>:</p>
 </div>
 <div class="listingblock primary">
@@ -1154,6 +1187,7 @@ spring.activemq.password=secret</code></pre>
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">如果您更愿意使用本机池，可以通过向<code>org.messaginghub:pooled-jms</code>添加依赖项并相应地配置<code>JmsPoolConnectionFactory</code> ，如以下示例所示：</p>
 <p translation-origin="off">If you’d rather use native pooling, you can do so by adding a dependency to <code>org.messaginghub:pooled-jms</code> and configuring the <code>JmsPoolConnectionFactory</code> accordingly, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
@@ -1181,6 +1215,7 @@ spring.activemq.pool.max-connections=50</code></pre>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
+<p translation-result="on">有关更多受支持的选项，请参阅<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jms/activemq/ActiveMQProperties.java"><code>ActiveMQProperties</code></a> 。您还可以注册任意数量的实现<code>ActiveMQConnectionFactoryCustomizer</code>的 bean 以进行更高级的自定义。</p>
 <p translation-origin="off">See <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jms/activemq/ActiveMQProperties.java"><code>ActiveMQProperties</code></a> for more of the supported options.
 You can also register an arbitrary number of beans that implement <code>ActiveMQConnectionFactoryCustomizer</code> for more advanced customizations.</p>
 </td>
@@ -1188,12 +1223,15 @@ You can also register an arbitrary number of beans that implement <code>ActiveMQ
 </tbody></table>
 </div>
 <div class="paragraph">
+<p translation-result="on">默认情况下，如果目标尚不存在，ActiveMQ 会创建一个目标，以便根据提供的名称解析目标。</p>
 <p translation-origin="off">By default, ActiveMQ creates a destination if it does not yet exist so that destinations are resolved against their provided names.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="messaging.jms.artemis" translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms.artemis"></a>1.2. ActiveMQ Artemis Support</h3>
+<h3 id="messaging.jms.artemis" translation-result="on"><a href="messaging.html#messaging.jms.artemis"></a>1.2. ActiveMQ Artemis 支持</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms.artemis"></a>1.2. ActiveMQ Artemis Support</h3>
 <div class="paragraph">
+<p translation-result="on">当 Spring Boot 检测到<a href="https://activemq.apache.org/components/artemis/">ActiveMQ Artemis</a>在类路径上可用时，它可以自动配置<code>ConnectionFactory</code> 。如果存在代理，则会自动启动和配置嵌入式代理（除非已显式设置模式属性）。支持的模式是<code>embedded</code>的（明确表示需要嵌入式代理，并且如果代理在类路径上不可用，则应该发生错误）和<code>native</code>模式（使用<code>netty</code>传输协议连接到代理）。配置后者时，Spring Boot 会配置一个<code>ConnectionFactory</code> ，它使用默认设置连接到在本地机器上运行的代理。</p>
 <p translation-origin="off">Spring Boot can auto-configure a <code>ConnectionFactory</code> when it detects that <a href="https://activemq.apache.org/components/artemis/">ActiveMQ Artemis</a> is available on the classpath.
 If the broker is present, an embedded broker is automatically started and configured (unless the mode property has been explicitly set).
 The supported modes are <code>embedded</code> (to make explicit that an embedded broker is required and that an error should occur if the broker is not available on the classpath) and <code>native</code> (to connect to a broker using the <code>netty</code> transport protocol).
@@ -1206,6 +1244,7 @@ When the latter is configured, Spring Boot configures a <code>ConnectionFactory<
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
+<p translation-result="on">如果您使用<code>spring-boot-starter-artemis</code> ，则提供连接到现有 ActiveMQ Artemis 实例的必要依赖项，以及与 JMS 集成的 Spring 基础架构。将<code>org.apache.activemq:artemis-jms-server</code>添加到您的应用程序可让您使用嵌入式模式。</p>
 <p translation-origin="off">If you use <code>spring-boot-starter-artemis</code>, the necessary dependencies to connect to an existing ActiveMQ Artemis instance are provided, as well as the Spring infrastructure to integrate with JMS.
 Adding <code>org.apache.activemq:artemis-jms-server</code> to your application lets you use embedded mode.</p>
 </td>
@@ -1213,6 +1252,7 @@ Adding <code>org.apache.activemq:artemis-jms-server</code> to your application l
 </tbody></table>
 </div>
 <div class="paragraph">
+<p translation-result="on">ActiveMQ Artemis 配置由<code>spring.artemis.*</code>中的外部配置属性控制。例如，您可以在<code>application.properties</code>中声明以下部分：</p>
 <p translation-origin="off">ActiveMQ Artemis configuration is controlled by external configuration properties in <code>spring.artemis.*</code>.
 For example, you might declare the following section in <code>application.properties</code>:</p>
 </div>
@@ -1238,10 +1278,12 @@ spring.artemis.password=secret</code></pre>
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">嵌入代理时，您可以选择是否要启用持久性并列出应该可用的目标。这些可以指定为逗号分隔的列表以使用默认选项创建它们，或者您可以定义<code>org.apache.activemq.artemis.jms.server.config.JMSQueueConfiguration</code>或<code>org.apache.activemq.artemis.jms.server.config.TopicConfiguration</code> ，分别用于高级队列和主题配置。</p>
 <p translation-origin="off">When embedding the broker, you can choose if you want to enable persistence and list the destinations that should be made available.
 These can be specified as a comma-separated list to create them with the default options, or you can define bean(s) of type <code>org.apache.activemq.artemis.jms.server.config.JMSQueueConfiguration</code> or <code>org.apache.activemq.artemis.jms.server.config.TopicConfiguration</code>, for advanced queue and topic configurations, respectively.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">默认情况下，a <code>CachingConnectionFactory</code>使用可以通过<code>spring.jms.*</code>中的外部配置属性控制的合理设置包装本机<code>ConnectionFactory</code> ：</p>
 <p translation-origin="off">By default, a <code>CachingConnectionFactory</code> wraps the native <code>ConnectionFactory</code> with sensible settings that you can control by external configuration properties in <code>spring.jms.*</code>:</p>
 </div>
 <div class="listingblock primary">
@@ -1261,6 +1303,7 @@ These can be specified as a comma-separated list to create them with the default
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">如果您更愿意使用本机池，可以通过向<code>org.messaginghub:pooled-jms</code>添加依赖项并相应地配置<code>JmsPoolConnectionFactory</code> ，如以下示例所示：</p>
 <p translation-origin="off">If you’d rather use native pooling, you can do so by adding a dependency to <code>org.messaginghub:pooled-jms</code> and configuring the <code>JmsPoolConnectionFactory</code> accordingly, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
@@ -1282,15 +1325,19 @@ spring.artemis.pool.max-connections=50</code></pre>
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">有关更多支持的选项，请参阅<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jms/artemis/ArtemisProperties.java"><code>ArtemisProperties</code></a> 。</p>
 <p translation-origin="off">See <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jms/artemis/ArtemisProperties.java"><code>ArtemisProperties</code></a> for more supported options.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">不涉及 JNDI 查找，并且使用 Artemis 配置中的<code>name</code>属性或通过配置提供的名称来根据其名称解析目的地。</p>
 <p translation-origin="off">No JNDI lookup is involved, and destinations are resolved against their names, using either the <code>name</code> attribute in the Artemis configuration or the names provided through configuration.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="messaging.jms.jndi" translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms.jndi"></a>1.3. Using a JNDI ConnectionFactory</h3>
+<h3 id="messaging.jms.jndi" translation-result="on"><a href="messaging.html#messaging.jms.jndi"></a>1.3.使用 JNDI 连接工厂</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms.jndi"></a>1.3. Using a JNDI ConnectionFactory</h3>
 <div class="paragraph">
+<p translation-result="on">如果您在应用程序服务器中运行应用程序，Spring Boot 会尝试使用 JNDI 定位 JMS <code>ConnectionFactory</code> 。默认情况下，检查<code>java:/JmsXA</code>和<code>java:/XAConnectionFactory</code>位置。如果需要指定替代位置，可以使用<code>spring.jms.jndi-name</code>属性，如以下示例所示：</p>
 <p translation-origin="off">If you are running your application in an application server, Spring Boot tries to locate a JMS <code>ConnectionFactory</code> by using JNDI.
 By default, the <code>java:/JmsXA</code> and <code>java:/XAConnectionFactory</code> location are checked.
 You can use the <code>spring.jms.jndi-name</code> property if you need to specify an alternative location, as shown in the following example:</p>
@@ -1312,8 +1359,10 @@ You can use the <code>spring.jms.jndi-name</code> property if you need to specif
 </div>
 </div>
 <div class="sect2">
-<h3 id="messaging.jms.sending" translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms.sending"></a>1.4. Sending a Message</h3>
+<h3 id="messaging.jms.sending" translation-result="on"><a href="messaging.html#messaging.jms.sending"></a>1.4.发送消息</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms.sending"></a>1.4. Sending a Message</h3>
 <div class="paragraph">
+<p translation-result="on">Spring 的<code>JmsTemplate</code>是自动配置的，您可以直接将其自动装配到您自己的 bean 中，如下例所示：</p>
 <p translation-origin="off">Spring’s <code>JmsTemplate</code> is auto-configured, and you can autowire it directly into your own beans, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -1347,6 +1396,7 @@ public class MyBean {
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
+<p translation-result="on"><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/jms/core/JmsMessagingTemplate.html"><code>JmsMessagingTemplate</code></a>可以以类似的方式注入。如果定义了<code>DestinationResolver</code>或<code>MessageConverter</code> bean，它会自动关联到自动配置的<code>JmsTemplate</code> 。</p>
 <p translation-origin="off"><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/jms/core/JmsMessagingTemplate.html"><code>JmsMessagingTemplate</code></a> can be injected in a similar manner.
 If a <code>DestinationResolver</code> or a <code>MessageConverter</code> bean is defined, it is associated automatically to the auto-configured <code>JmsTemplate</code>.</p>
 </td>
@@ -1355,13 +1405,16 @@ If a <code>DestinationResolver</code> or a <code>MessageConverter</code> bean is
 </div>
 </div>
 <div class="sect2">
-<h3 id="messaging.jms.receiving" translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms.receiving"></a>1.5. Receiving a Message</h3>
+<h3 id="messaging.jms.receiving" translation-result="on"><a href="messaging.html#messaging.jms.receiving"></a>1.5。接收消息</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms.receiving"></a>1.5. Receiving a Message</h3>
 <div class="paragraph">
+<p translation-result="on">当 JMS 基础设施存在时，可以使用<code>@JmsListener</code>注释任何 bean 以创建侦听器端点。如果没有定义<code>JmsListenerContainerFactory</code> ，则会自动配置一个默认值。如果定义了<code>DestinationResolver</code> 、 <code>MessageConverter</code>或<code>javax.jms.ExceptionListener</code> bean，它们将自动与默认工厂关联。</p>
 <p translation-origin="off">When the JMS infrastructure is present, any bean can be annotated with <code>@JmsListener</code> to create a listener endpoint.
 If no <code>JmsListenerContainerFactory</code> has been defined, a default one is configured automatically.
 If a <code>DestinationResolver</code>, a <code>MessageConverter</code>, or a <code>javax.jms.ExceptionListener</code> beans are defined, they are associated automatically with the default factory.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">默认情况下，默认工厂是事务性的。如果您在存在<code>JtaTransactionManager</code>的基础架构中运行，则默认情况下它与侦听器容器相关联。如果不是，则启用<code>sessionTransacted</code>标志。在后一种情况下，您可以通过在侦听器方法（或其委托）上添加<code>@Transactional</code>将本地数据存储事务与传入消息的处理相关联。这可确保在本地事务完成后确认传入消息。这还包括发送已在同一 JMS 会话上执行的响应消息。</p>
 <p translation-origin="off">By default, the default factory is transactional.
 If you run in an infrastructure where a <code>JtaTransactionManager</code> is present, it is associated to the listener container by default.
 If not, the <code>sessionTransacted</code> flag is enabled.
@@ -1370,6 +1423,7 @@ This ensures that the incoming message is acknowledged, once the local transacti
 This also includes sending response messages that have been performed on the same JMS session.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">以下组件在<code>someQueue</code>目标上创建侦听器端点：</p>
 <p translation-origin="off">The following component creates a listener endpoint on the <code>someQueue</code> destination:</p>
 </div>
 <div class="listingblock">
@@ -1396,15 +1450,18 @@ public class MyBean {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
+<p translation-result="on">有关更多详细信息，请参阅<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/jms/annotation/EnableJms.html"><code>@EnableJms</code>的 Javadoc</a> 。</p>
 <p translation-origin="off">See <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/jms/annotation/EnableJms.html">the Javadoc of <code>@EnableJms</code></a> for more details.</p>
 </td>
 </tr>
 </tbody></table>
 </div>
 <div class="paragraph">
+<p translation-result="on">如果您需要创建更多<code>JmsListenerContainerFactory</code>实例，或者如果您想要覆盖默认值，Spring Boot 提供了一个<code>DefaultJmsListenerContainerFactoryConfigurer</code> ，您可以使用它来初始化一个<code>DefaultJmsListenerContainerFactory</code> ，其设置与自动配置的设置相同。</p>
 <p translation-origin="off">If you need to create more <code>JmsListenerContainerFactory</code> instances or if you want to override the default, Spring Boot provides a <code>DefaultJmsListenerContainerFactoryConfigurer</code> that you can use to initialize a <code>DefaultJmsListenerContainerFactory</code> with the same settings as the one that is auto-configured.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">例如，以下示例公开了另一个使用特定<code>MessageConverter</code>的工厂：</p>
 <p translation-origin="off">For instance, the following example exposes another factory that uses a specific <code>MessageConverter</code>:</p>
 </div>
 <div class="listingblock">
@@ -1437,6 +1494,7 @@ public class MyJmsConfiguration {
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">然后，您可以在任何<code>@JmsListener</code> -annotated 方法中使用工厂，如下所示：</p>
 <p translation-origin="off">Then you can use the factory in any <code>@JmsListener</code>-annotated method as follows:</p>
 </div>
 <div class="listingblock">
@@ -1460,20 +1518,25 @@ public class MyBean {
 </div>
 </div>
 <div class="sect1">
-<h2 id="messaging.amqp" translation-origin="off"><a class="anchor" href="messaging.html#messaging.amqp"></a>2. AMQP</h2>
+<h2 id="messaging.amqp" translation-result="on"><a href="messaging.html#messaging.amqp"></a>2. AMQP</h2>
+<h2 translation-origin="off"><a class="anchor" href="messaging.html#messaging.amqp"></a>2. AMQP</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">高级消息队列协议 (AMQP) 是面向消息中间件的平台中立、线路级协议。 Spring AMQP 项目将核心 Spring 概念应用于基于 AMQP 的消息传递解决方案的开发。 Spring Boot 为通过 RabbitMQ 使用 AMQP 提供了多种便利，包括<code>spring-boot-starter-amqp</code> “Starter”。</p>
 <p translation-origin="off">The Advanced Message Queuing Protocol (AMQP) is a platform-neutral, wire-level protocol for message-oriented middleware.
 The Spring AMQP project applies core Spring concepts to the development of AMQP-based messaging solutions.
 Spring Boot offers several conveniences for working with AMQP through RabbitMQ, including the <code>spring-boot-starter-amqp</code> “Starter”.</p>
 </div>
 <div class="sect2">
-<h3 id="messaging.amqp.rabbitmq" translation-origin="off"><a class="anchor" href="messaging.html#messaging.amqp.rabbitmq"></a>2.1. RabbitMQ support</h3>
+<h3 id="messaging.amqp.rabbitmq" translation-result="on"><a href="messaging.html#messaging.amqp.rabbitmq"></a>2.1。 RabbitMQ 支持</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.amqp.rabbitmq"></a>2.1. RabbitMQ support</h3>
 <div class="paragraph">
+<p translation-result="on"><a href="https://www.rabbitmq.com/">RabbitMQ</a>是基于 AMQP 协议的轻量级、可靠、可扩展、可移植的消息代理。 Spring 使用<code>RabbitMQ</code>通过 AMQP 协议进行通信。</p>
 <p translation-origin="off"><a href="https://www.rabbitmq.com/">RabbitMQ</a> is a lightweight, reliable, scalable, and portable message broker based on the AMQP protocol.
 Spring uses <code>RabbitMQ</code> to communicate through the AMQP protocol.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">RabbitMQ 配置由<code>spring.rabbitmq.*</code>中的外部配置属性控制。例如，您可以在<code>application.properties</code>中声明以下部分：</p>
 <p translation-origin="off">RabbitMQ configuration is controlled by external configuration properties in <code>spring.rabbitmq.*</code>.
 For example, you might declare the following section in <code>application.properties</code>:</p>
 </div>
@@ -1499,6 +1562,7 @@ spring.rabbitmq.password=secret</code></pre>
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">或者，您可以使用<code>addresses</code>属性配置相同的连接：</p>
 <p translation-origin="off">Alternatively, you could configure the same connection using the <code>addresses</code> attribute:</p>
 </div>
 <div class="listingblock primary">
@@ -1523,6 +1587,7 @@ spring.rabbitmq.password=secret</code></pre>
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
+<p translation-result="on">以这种方式指定地址时，将忽略<code>host</code>和<code>port</code>属性。如果地址使用<code>amqps</code>协议，则会自动启用 SSL 支持。</p>
 <p translation-origin="off">When specifying addresses that way, the <code>host</code> and <code>port</code> properties are ignored.
 If the address uses the <code>amqps</code> protocol, SSL support is enabled automatically.</p>
 </td>
@@ -1530,10 +1595,12 @@ If the address uses the <code>amqps</code> protocol, SSL support is enabled auto
 </tbody></table>
 </div>
 <div class="paragraph">
+<p translation-result="on">有关更多受支持的基于属性的配置选项，请参阅<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/amqp/RabbitProperties.java"><code>RabbitProperties</code></a> 。要配置 Spring AMQP 使用的 RabbitMQ <code>ConnectionFactory</code>的较低级别的详细信息，请定义<code>ConnectionFactoryCustomizer</code> bean。</p>
 <p translation-origin="off">See <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/amqp/RabbitProperties.java"><code>RabbitProperties</code></a> for more of the supported property-based configuration options.
 To configure lower-level details of the RabbitMQ <code>ConnectionFactory</code> that is used by Spring AMQP, define a <code>ConnectionFactoryCustomizer</code> bean.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">如果上下文中存在<code>ConnectionNameStrategy</code> bean，它将自动用于命名由自动配置的<code>CachingConnectionFactory</code>创建的连接。</p>
 <p translation-origin="off">If a <code>ConnectionNameStrategy</code> bean exists in the context, it will be automatically used to name connections created by the auto-configured <code>CachingConnectionFactory</code>.</p>
 </div>
 <div class="admonitionblock tip">
@@ -1543,6 +1610,7 @@ To configure lower-level details of the RabbitMQ <code>ConnectionFactory</code> 
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
+<p translation-result="on">有关更多详细信息，请参阅<a href="https://spring.io/blog/2010/06/14/understanding-amqp-the-protocol-used-by-rabbitmq/">了解 RabbitMQ 使用的协议 AMQP</a> 。</p>
 <p translation-origin="off">See <a href="https://spring.io/blog/2010/06/14/understanding-amqp-the-protocol-used-by-rabbitmq/">Understanding AMQP, the protocol used by RabbitMQ</a> for more details.</p>
 </td>
 </tr>
@@ -1550,8 +1618,10 @@ To configure lower-level details of the RabbitMQ <code>ConnectionFactory</code> 
 </div>
 </div>
 <div class="sect2">
-<h3 id="messaging.amqp.sending" translation-origin="off"><a class="anchor" href="messaging.html#messaging.amqp.sending"></a>2.2. Sending a Message</h3>
+<h3 id="messaging.amqp.sending" translation-result="on"><a href="messaging.html#messaging.amqp.sending"></a>2.2.发送消息</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.amqp.sending"></a>2.2. Sending a Message</h3>
 <div class="paragraph">
+<p translation-result="on">Spring 的<code>AmqpTemplate</code>和<code>AmqpAdmin</code>是自动配置的，您可以将它们直接自动装配到您自己的 bean 中，如下例所示：</p>
 <p translation-origin="off">Spring’s <code>AmqpTemplate</code> and <code>AmqpAdmin</code> are auto-configured, and you can autowire them directly into your own beans, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -1593,6 +1663,7 @@ public class MyBean {
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
+<p translation-result="on"><a href="https://docs.spring.io/spring-amqp/docs/2.4.2/api/org/springframework/amqp/rabbit/core/RabbitMessagingTemplate.html"><code>RabbitMessagingTemplate</code></a>可以以类似的方式注入。如果定义了<code>MessageConverter</code> bean，它会自动关联到自动配置的<code>AmqpTemplate</code> 。</p>
 <p translation-origin="off"><a href="https://docs.spring.io/spring-amqp/docs/2.4.2/api/org/springframework/amqp/rabbit/core/RabbitMessagingTemplate.html"><code>RabbitMessagingTemplate</code></a> can be injected in a similar manner.
 If a <code>MessageConverter</code> bean is defined, it is associated automatically to the auto-configured <code>AmqpTemplate</code>.</p>
 </td>
@@ -1600,9 +1671,11 @@ If a <code>MessageConverter</code> bean is defined, it is associated automatical
 </tbody></table>
 </div>
 <div class="paragraph">
+<p translation-result="on">如有必要，任何定义为 bean 的<code>org.springframework.amqp.core.Queue</code>都会自动用于在 RabbitMQ 实例上声明相应的队列。</p>
 <p translation-origin="off">If necessary, any <code>org.springframework.amqp.core.Queue</code> that is defined as a bean is automatically used to declare a corresponding queue on the RabbitMQ instance.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">要重试操作，您可以在<code>AmqpTemplate</code>上启用重试（例如，在代理连接丢失的情况下）：</p>
 <p translation-origin="off">To retry operations, you can enable retries on the <code>AmqpTemplate</code> (for example, in the event that the broker connection is lost):</p>
 </div>
 <div class="listingblock primary">
@@ -1625,21 +1698,26 @@ spring.rabbitmq.template.retry.initial-interval=2s</code></pre>
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">默认情况下禁用重试。您还可以通过声明<code>RabbitRetryTemplateCustomizer</code> bean 以编程方式自定义<code>RetryTemplate</code> 。</p>
 <p translation-origin="off">Retries are disabled by default.
 You can also customize the <code>RetryTemplate</code> programmatically by declaring a <code>RabbitRetryTemplateCustomizer</code> bean.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">如果你需要创建更多<code>RabbitTemplate</code>实例或者你想覆盖默认值，Spring Boot 提供了一个<code>RabbitTemplateConfigurer</code> bean，你可以使用它来初始化一个<code>RabbitTemplate</code> ，它的设置与自动配置使用的工厂相同。</p>
 <p translation-origin="off">If you need to create more <code>RabbitTemplate</code> instances or if you want to override the default, Spring Boot provides a <code>RabbitTemplateConfigurer</code> bean that you can use to initialize a <code>RabbitTemplate</code> with the same settings as the factories used by the auto-configuration.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="messaging.amqp.receiving" translation-origin="off"><a class="anchor" href="messaging.html#messaging.amqp.receiving"></a>2.3. Receiving a Message</h3>
+<h3 id="messaging.amqp.receiving" translation-result="on"><a href="messaging.html#messaging.amqp.receiving"></a>2.3.接收消息</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.amqp.receiving"></a>2.3. Receiving a Message</h3>
 <div class="paragraph">
+<p translation-result="on">当 Rabbit 基础设施存在时，可以使用<code>@RabbitListener</code>注释任何 bean 以创建侦听器端点。如果未定义<code>RabbitListenerContainerFactory</code> ，则会自动配置默认的<code>SimpleRabbitListenerContainerFactory</code> ，您可以使用<code>spring.rabbitmq.listener.type</code>属性切换到直接容器。如果定义了<code>MessageConverter</code>或<code>MessageRecoverer</code> bean，它会自动与默认工厂关联。</p>
 <p translation-origin="off">When the Rabbit infrastructure is present, any bean can be annotated with <code>@RabbitListener</code> to create a listener endpoint.
 If no <code>RabbitListenerContainerFactory</code> has been defined, a default <code>SimpleRabbitListenerContainerFactory</code> is automatically configured and you can switch to a direct container using the <code>spring.rabbitmq.listener.type</code> property.
 If a <code>MessageConverter</code> or a <code>MessageRecoverer</code> bean is defined, it is automatically associated with the default factory.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">以下示例组件在<code>someQueue</code>队列上创建了一个侦听器端点：</p>
 <p translation-origin="off">The following sample component creates a listener endpoint on the <code>someQueue</code> queue:</p>
 </div>
 <div class="listingblock">
@@ -1666,12 +1744,14 @@ public class MyBean {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
+<p translation-result="on">有关更多详细信息，请参阅<a href="https://docs.spring.io/spring-amqp/docs/2.4.2/api/org/springframework/amqp/rabbit/annotation/EnableRabbit.html"><code>@EnableRabbit</code>的 Javadoc</a> 。</p>
 <p translation-origin="off">See <a href="https://docs.spring.io/spring-amqp/docs/2.4.2/api/org/springframework/amqp/rabbit/annotation/EnableRabbit.html">the Javadoc of <code>@EnableRabbit</code></a> for more details.</p>
 </td>
 </tr>
 </tbody></table>
 </div>
 <div class="paragraph">
+<p translation-result="on">如果你需要创建更多的<code>RabbitListenerContainerFactory</code>实例或者你想要覆盖默认值，Spring Boot 提供了一个<code>SimpleRabbitListenerContainerFactoryConfigurer</code>和一个<code>DirectRabbitListenerContainerFactoryConfigurer</code> ，你可以使用它们来初始化一个<code>SimpleRabbitListenerContainerFactory</code>和一个<code>DirectRabbitListenerContainerFactory</code> ，它们的设置与自动配置使用的工厂相同。</p>
 <p translation-origin="off">If you need to create more <code>RabbitListenerContainerFactory</code> instances or if you want to override the default, Spring Boot provides a <code>SimpleRabbitListenerContainerFactoryConfigurer</code> and a <code>DirectRabbitListenerContainerFactoryConfigurer</code> that you can use to initialize a <code>SimpleRabbitListenerContainerFactory</code> and a <code>DirectRabbitListenerContainerFactory</code> with the same settings as the factories used by the auto-configuration.</p>
 </div>
 <div class="admonitionblock tip">
@@ -1681,6 +1761,7 @@ public class MyBean {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
+<p translation-result="on">您选择哪种容器类型并不重要。这两个 bean 由自动配置公开。</p>
 <p translation-origin="off">It does not matter which container type you chose.
 Those two beans are exposed by the auto-configuration.</p>
 </td>
@@ -1688,6 +1769,7 @@ Those two beans are exposed by the auto-configuration.</p>
 </tbody></table>
 </div>
 <div class="paragraph">
+<p translation-result="on">例如，以下配置类公开了另一个使用特定<code>MessageConverter</code>的工厂：</p>
 <p translation-origin="off">For instance, the following configuration class exposes another factory that uses a specific <code>MessageConverter</code>:</p>
 </div>
 <div class="listingblock">
@@ -1719,6 +1801,7 @@ public class MyRabbitConfiguration {
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">然后您可以在任何<code>@RabbitListener</code> -annotated 方法中使用工厂，如下所示：</p>
 <p translation-origin="off">Then you can use the factory in any <code>@RabbitListener</code>-annotated method, as follows:</p>
 </div>
 <div class="listingblock">
@@ -1739,6 +1822,7 @@ public class MyBean {
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">您可以启用重试以处理侦听器引发异常的情况。默认情况下，使用<code>RejectAndDontRequeueRecoverer</code> ，但您可以定义自己的<code>MessageRecoverer</code> 。当重试用尽时，如果代理配置为这样做，则消息将被拒绝并丢弃或路由到死信交换。默认情况下，重试被禁用。您还可以通过声明<code>RabbitRetryTemplateCustomizer</code> bean 以编程方式自定义<code>RetryTemplate</code> 。</p>
 <p translation-origin="off">You can enable retries to handle situations where your listener throws an exception.
 By default, <code>RejectAndDontRequeueRecoverer</code> is used, but you can define a <code>MessageRecoverer</code> of your own.
 When retries are exhausted, the message is rejected and either dropped or routed to a dead-letter exchange if the broker is configured to do so.
@@ -1752,6 +1836,7 @@ You can also customize the <code>RetryTemplate</code> programmatically by declar
 <i class="fa icon-important" title="重要"></i>
 </td>
 <td class="content">
+<p translation-result="on">默认情况下，如果重试被禁用并且侦听器抛出异常，则会无限期地重试传递。您可以通过两种方式修改此行为：将<code>defaultRequeueRejected</code>属性设置为<code>false</code> ，以便尝试零次重新投递，或抛出<code>AmqpRejectAndDontRequeueException</code>以表明消息应该被拒绝。后者是启用重试并达到最大传递尝试次数时使用的机制。</p>
 <p translation-origin="off">By default, if retries are disabled and the listener throws an exception, the delivery is retried indefinitely.
 You can modify this behavior in two ways: Set the <code>defaultRequeueRejected</code> property to <code>false</code> so that zero re-deliveries are attempted or throw an <code>AmqpRejectAndDontRequeueException</code> to signal the message should be rejected.
 The latter is the mechanism used when retries are enabled and the maximum number of delivery attempts is reached.</p>
@@ -1763,12 +1848,15 @@ The latter is the mechanism used when retries are enabled and the maximum number
 </div>
 </div>
 <div class="sect1">
-<h2 id="messaging.kafka" translation-origin="off"><a class="anchor" href="messaging.html#messaging.kafka"></a>3. Apache Kafka Support</h2>
+<h2 id="messaging.kafka" translation-result="on"><a href="messaging.html#messaging.kafka"></a>3. Apache Kafka 支持</h2>
+<h2 translation-origin="off"><a class="anchor" href="messaging.html#messaging.kafka"></a>3. Apache Kafka Support</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">通过提供<code>spring-kafka</code>项目的自动配置来支持<a href="https://kafka.apache.org/">Apache Kafka</a> 。</p>
 <p translation-origin="off"><a href="https://kafka.apache.org/">Apache Kafka</a> is supported by providing auto-configuration of the <code>spring-kafka</code> project.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">Kafka 配置由<code>spring.kafka.*</code>中的外部配置属性控制。例如，您可以在<code>application.properties</code>中声明以下部分：</p>
 <p translation-origin="off">Kafka configuration is controlled by external configuration properties in <code>spring.kafka.*</code>.
 For example, you might declare the following section in <code>application.properties</code>:</p>
 </div>
@@ -1797,6 +1885,7 @@ spring.kafka.consumer.group-id=myGroup</code></pre>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
+<p translation-result="on">要在启动时创建主题，请添加类型为<code>NewTopic</code>的 bean。如果主题已经存在，则忽略该 bean。</p>
 <p translation-origin="off">To create a topic on startup, add a bean of type <code>NewTopic</code>.
 If the topic already exists, the bean is ignored.</p>
 </td>
@@ -1804,11 +1893,14 @@ If the topic already exists, the bean is ignored.</p>
 </tbody></table>
 </div>
 <div class="paragraph">
+<p translation-result="on">有关更多支持的选项，请参阅<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/kafka/KafkaProperties.java"><code>KafkaProperties</code></a> 。</p>
 <p translation-origin="off">See <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/kafka/KafkaProperties.java"><code>KafkaProperties</code></a> for more supported options.</p>
 </div>
 <div class="sect2">
-<h3 id="messaging.kafka.sending" translation-origin="off"><a class="anchor" href="messaging.html#messaging.kafka.sending"></a>3.1. Sending a Message</h3>
+<h3 id="messaging.kafka.sending" translation-result="on"><a href="messaging.html#messaging.kafka.sending"></a>3.1。发送消息</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.kafka.sending"></a>3.1. Sending a Message</h3>
 <div class="paragraph">
+<p translation-result="on">Spring 的<code>KafkaTemplate</code>是自动配置的，您可以直接在自己的 bean 中自动装配它，如下例所示：</p>
 <p translation-origin="off">Spring’s <code>KafkaTemplate</code> is auto-configured, and you can autowire it directly in your own beans, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -1842,6 +1934,7 @@ public class MyBean {
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
+<p translation-result="on">如果定义了属性<code>spring.kafka.producer.transaction-id-prefix</code> ，则会自动配置<code>KafkaTransactionManager</code> 。此外，如果定义了<code>RecordMessageConverter</code> bean，它会自动关联到自动配置的<code>KafkaTemplate</code> 。</p>
 <p translation-origin="off">If the property <code>spring.kafka.producer.transaction-id-prefix</code> is defined, a <code>KafkaTransactionManager</code> is automatically configured.
 Also, if a <code>RecordMessageConverter</code> bean is defined, it is automatically associated to the auto-configured <code>KafkaTemplate</code>.</p>
 </td>
@@ -1850,12 +1943,15 @@ Also, if a <code>RecordMessageConverter</code> bean is defined, it is automatica
 </div>
 </div>
 <div class="sect2">
-<h3 id="messaging.kafka.receiving" translation-origin="off"><a class="anchor" href="messaging.html#messaging.kafka.receiving"></a>3.2. Receiving a Message</h3>
+<h3 id="messaging.kafka.receiving" translation-result="on"><a href="messaging.html#messaging.kafka.receiving"></a>3.2.接收消息</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.kafka.receiving"></a>3.2. Receiving a Message</h3>
 <div class="paragraph">
+<p translation-result="on">当存在 Apache Kafka 基础架构时，可以使用<code>@KafkaListener</code>注释任何 bean 以创建侦听器端点。如果没有定义<code>KafkaListenerContainerFactory</code> ，则会自动使用<code>spring.kafka.listener.*</code>中定义的键配置默认值。</p>
 <p translation-origin="off">When the Apache Kafka infrastructure is present, any bean can be annotated with <code>@KafkaListener</code> to create a listener endpoint.
 If no <code>KafkaListenerContainerFactory</code> has been defined, a default one is automatically configured with keys defined in <code>spring.kafka.listener.*</code>.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">以下组件在<code>someTopic</code>主题上创建侦听器端点：</p>
 <p translation-origin="off">The following component creates a listener endpoint on the <code>someTopic</code> topic:</p>
 </div>
 <div class="listingblock">
@@ -1876,10 +1972,12 @@ public class MyBean {
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">如果定义了<code>KafkaTransactionManager</code> bean，它会自动关联到容器工厂。同样，如果定义了<code>RecordFilterStrategy</code> 、 <code>ErrorHandler</code> 、 <code>CommonErrorHandler</code> 、 <code>AfterRollbackProcessor</code>或<code>ConsumerAwareRebalanceListener</code> bean，它会自动关联到默认工厂。</p>
 <p translation-origin="off">If a <code>KafkaTransactionManager</code> bean is defined, it is automatically associated to the container factory.
 Similarly, if a <code>RecordFilterStrategy</code>, <code>ErrorHandler</code>, <code>CommonErrorHandler</code>, <code>AfterRollbackProcessor</code> or <code>ConsumerAwareRebalanceListener</code> bean is defined, it is automatically associated to the default factory.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">根据侦听器类型， <code>RecordMessageConverter</code>或<code>BatchMessageConverter</code> bean 与默认工厂相关联。如果批处理侦听器仅存在<code>RecordMessageConverter</code> bean，则将其包装在<code>BatchMessageConverter</code>中。</p>
 <p translation-origin="off">Depending on the listener type, a <code>RecordMessageConverter</code> or <code>BatchMessageConverter</code> bean is associated to the default factory.
 If only a <code>RecordMessageConverter</code> bean is present for a batch listener, it is wrapped in a <code>BatchMessageConverter</code>.</p>
 </div>
@@ -1890,6 +1988,7 @@ If only a <code>RecordMessageConverter</code> bean is present for a batch listen
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
+<p translation-result="on">自定义的<code>ChainedKafkaTransactionManager</code>必须标记为<code>@Primary</code> ，因为它通常引用自动配置的<code>KafkaTransactionManager</code> bean。</p>
 <p translation-origin="off">A custom <code>ChainedKafkaTransactionManager</code> must be marked <code>@Primary</code> as it usually references the auto-configured <code>KafkaTransactionManager</code> bean.</p>
 </td>
 </tr>
@@ -1897,21 +1996,26 @@ If only a <code>RecordMessageConverter</code> bean is present for a batch listen
 </div>
 </div>
 <div class="sect2">
-<h3 id="messaging.kafka.streams" translation-origin="off"><a class="anchor" href="messaging.html#messaging.kafka.streams"></a>3.3. Kafka Streams</h3>
+<h3 id="messaging.kafka.streams" translation-result="on"><a href="messaging.html#messaging.kafka.streams"></a>3.3.卡夫卡流</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.kafka.streams"></a>3.3. Kafka Streams</h3>
 <div class="paragraph">
+<p translation-result="on">Spring for Apache Kafka 提供了一个工厂 bean 来创建<code>StreamsBuilder</code>对象并管理其流的生命周期。只要<code>kafka-streams</code>在类路径上并且 Kafka Streams 由<code>@EnableKafkaStreams</code>注解启用，Spring Boot 就会自动配置所需的<code>KafkaStreamsConfiguration</code> bean。</p>
 <p translation-origin="off">Spring for Apache Kafka provides a factory bean to create a <code>StreamsBuilder</code> object and manage the lifecycle of its streams.
 Spring Boot auto-configures the required <code>KafkaStreamsConfiguration</code> bean as long as <code>kafka-streams</code> is on the classpath and Kafka Streams is enabled by the <code>@EnableKafkaStreams</code> annotation.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">启用 Kafka Streams 意味着必须设置应用程序 ID 和引导服务器。前者可以使用<code>spring.kafka.streams.application-id</code>配置，如果未设置则默认为<code>spring.application.name</code> 。后者可以全局设置或仅针对流专门覆盖。</p>
 <p translation-origin="off">Enabling Kafka Streams means that the application id and bootstrap servers must be set.
 The former can be configured using <code>spring.kafka.streams.application-id</code>, defaulting to <code>spring.application.name</code> if not set.
 The latter can be set globally or specifically overridden only for streams.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">使用专用属性可以使用几个附加属性；可以使用<code>spring.kafka.streams.properties</code>命名空间设置其他任意 Kafka 属性。另请参阅<a href="features.html#messaging.kafka.additional-properties">features.html</a>了解更多信息。</p>
 <p translation-origin="off">Several additional properties are available using dedicated properties; other arbitrary Kafka properties can be set using the <code>spring.kafka.streams.properties</code> namespace.
 See also <a href="features.html#messaging.kafka.additional-properties">features.html</a> for more information.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">要使用工厂 bean， <code>StreamsBuilder</code>到您的<code>@Bean</code>中，如以下示例所示：</p>
 <p translation-origin="off">To use the factory bean, wire <code>StreamsBuilder</code> into your <code>@Bean</code> as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -1947,23 +2051,28 @@ public class MyKafkaStreamsConfiguration {
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">默认情况下，由它创建的<code>StreamBuilder</code>对象管理的流是自动启动的。您可以使用<code>spring.kafka.streams.auto-startup</code>属性自定义此行为。</p>
 <p translation-origin="off">By default, the streams managed by the <code>StreamBuilder</code> object it creates are started automatically.
 You can customize this behavior using the <code>spring.kafka.streams.auto-startup</code> property.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="messaging.kafka.additional-properties" translation-origin="off"><a class="anchor" href="messaging.html#messaging.kafka.additional-properties"></a>3.4. Additional Kafka Properties</h3>
+<h3 id="messaging.kafka.additional-properties" translation-result="on"><a href="messaging.html#messaging.kafka.additional-properties"></a>3.4.其他 Kafka 属性</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.kafka.additional-properties"></a>3.4. Additional Kafka Properties</h3>
 <div class="paragraph">
+<p translation-result="on">自动配置支持的属性显示在<a href="application-properties.html#application-properties">application-properties.html</a>中。请注意，在大多数情况下，这些属性（连字符或驼峰式）直接映射到 Apache Kafka 点属性。有关详细信息，请参阅 Apache Kafka 文档。</p>
 <p translation-origin="off">The properties supported by auto configuration are shown in <a href="application-properties.html#application-properties">application-properties.html</a>.
 Note that, for the most part, these properties (hyphenated or camelCase) map directly to the Apache Kafka dotted properties.
 See the Apache Kafka documentation for details.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">这些属性中的前几个适用于所有组件（生产者、消费者、管理员和流），但如果您希望使用不同的值，可以在组件级别指定。 Apache Kafka 指定具有 HIGH、MEDIUM 或 LOW 重要性的属性。 Spring Boot 自动配置支持所有 HIGH 重要性属性、一些选定的 MEDIUM 和 LOW 属性以及任何没有默认值的属性。</p>
 <p translation-origin="off">The first few of these properties apply to all components (producers, consumers, admins, and streams) but can be specified at the component level if you wish to use different values.
 Apache Kafka designates properties with an importance of HIGH, MEDIUM, or LOW.
 Spring Boot auto-configuration supports all HIGH importance properties, some selected MEDIUM and LOW properties, and any properties that do not have a default value.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">只有 Kafka 支持的属性的一个子集可以直接通过<code>KafkaProperties</code>类获得。如果您希望使用不直接支持的其他属性配置生产者或消费者，请使用以下属性：</p>
 <p translation-origin="off">Only a subset of the properties supported by Kafka are available directly through the <code>KafkaProperties</code> class.
 If you wish to configure the producer or consumer with additional properties that are not directly supported, use the following properties:</p>
 </div>
@@ -2000,9 +2109,11 @@ spring.kafka.streams.properties[prop.five]=fifth</code></pre>
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">这将通用<code>prop.one</code> Kafka 属性设置为<code>first</code> （适用于生产者、消费者和管理员）， <code>prop.two</code>管理属性设置为<code>second</code> ， <code>prop.three</code>消费者属性设置为<code>third</code> ， <code>prop.four</code>生产者属性设置为<code>fourth</code> ， <code>prop.five</code>流属性到<code>fifth</code> 。</p>
 <p translation-origin="off">This sets the common <code>prop.one</code> Kafka property to <code>first</code> (applies to producers, consumers and admins), the <code>prop.two</code> admin property to <code>second</code>, the <code>prop.three</code> consumer property to <code>third</code>, the <code>prop.four</code> producer property to <code>fourth</code> and the <code>prop.five</code> streams property to <code>fifth</code>.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">您还可以配置 Spring Kafka <code>JsonDeserializer</code> ，如下所示：</p>
 <p translation-origin="off">You can also configure the Spring Kafka <code>JsonDeserializer</code> as follows:</p>
 </div>
 <div class="listingblock primary">
@@ -2027,6 +2138,7 @@ spring.kafka.consumer.properties[spring.json.trusted.packages]=com.example.main,
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">同样，您可以禁用<code>JsonSerializer</code>在标头中发送类型信息的默认行为：</p>
 <p translation-origin="off">Similarly, you can disable the <code>JsonSerializer</code> default behavior of sending type information in headers:</p>
 </div>
 <div class="listingblock primary">
@@ -2055,6 +2167,7 @@ spring.kafka.producer.properties[spring.json.add.type.headers]=false</code></pre
 <i class="fa icon-important" title="重要"></i>
 </td>
 <td class="content">
+<p translation-result="on">以这种方式设置的属性会覆盖 Spring Boot 明确支持的任何配置项。</p>
 <p translation-origin="off">Properties set in this way override any configuration item that Spring Boot explicitly supports.</p>
 </td>
 </tr>
@@ -2062,19 +2175,23 @@ spring.kafka.producer.properties[spring.json.add.type.headers]=false</code></pre
 </div>
 </div>
 <div class="sect2">
-<h3 id="messaging.kafka.embedded" translation-origin="off"><a class="anchor" href="messaging.html#messaging.kafka.embedded"></a>3.5. Testing with Embedded Kafka</h3>
+<h3 id="messaging.kafka.embedded" translation-result="on"><a href="messaging.html#messaging.kafka.embedded"></a>3.5.使用嵌入式 Kafka 进行测试</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.kafka.embedded"></a>3.5. Testing with Embedded Kafka</h3>
 <div class="paragraph">
+<p translation-result="on">Spring for Apache Kafka 提供了一种使用嵌入式 Apache Kafka 代理测试项目的便捷方式。要使用此功能，请使用<code>spring-kafka-test</code>模块中的<code>@EmbeddedKafka</code>注释测试类。有关更多信息，请参阅 Spring for Apache Kafka <a href="https://docs.spring.io/spring-kafka/docs/2.8.2/reference/html/#embedded-kafka-annotation">参考手册</a>。</p>
 <p translation-origin="off">Spring for Apache Kafka provides a convenient way to test projects with an embedded Apache Kafka broker.
 To use this feature, annotate a test class with <code>@EmbeddedKafka</code> from the <code>spring-kafka-test</code> module.
 For more information, please see the Spring for Apache Kafka <a href="https://docs.spring.io/spring-kafka/docs/2.8.2/reference/html/#embedded-kafka-annotation">reference manual</a>.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">要使 Spring Boot 自动配置与上述嵌入式 Apache Kafka 代理一起工作，您需要将嵌入式代理地址（由<code>EmbeddedKafkaBroker</code>填充）的系统属性重新映射到 Apache Kafka 的 Spring Boot 配置属性中。有几种方法可以做到这一点：</p>
 <p translation-origin="off">To make Spring Boot auto-configuration work with the aforementioned embedded Apache Kafka broker, you need to remap a system property for embedded broker addresses (populated by the <code>EmbeddedKafkaBroker</code>) into the Spring Boot configuration property for Apache Kafka.
 There are several ways to do that:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
+<p translation-result="on">提供一个系统属性来将嵌入式代理地址映射到测试类中的<code>spring.kafka.bootstrap-servers</code>中：</p>
 <p translation-origin="off">Provide a system property to map embedded broker addresses into <code>spring.kafka.bootstrap-servers</code> in the test class:</p>
 </li>
 </ul>
@@ -2090,6 +2207,7 @@ There are several ways to do that:</p>
 <div class="ulist">
 <ul>
 <li>
+<p translation-result="on">在<code>@EmbeddedKafka</code>注解上配置属性名称：</p>
 <p translation-origin="off">Configure a property name on the <code>@EmbeddedKafka</code> annotation:</p>
 </li>
 </ul>
@@ -2112,6 +2230,7 @@ class MyTest {
 <div class="ulist">
 <ul>
 <li>
+<p translation-result="on">在配置属性中使用占位符：</p>
 <p translation-origin="off">Use a placeholder in configuration properties:</p>
 </li>
 </ul>
@@ -2135,52 +2254,65 @@ class MyTest {
 </div>
 </div>
 <div class="sect1">
-<h2 id="messaging.rsocket" translation-origin="off"><a class="anchor" href="messaging.html#messaging.rsocket"></a>4. RSocket</h2>
+<h2 id="messaging.rsocket" translation-result="on"><a href="messaging.html#messaging.rsocket"></a>4.RSocket</h2>
+<h2 translation-origin="off"><a class="anchor" href="messaging.html#messaging.rsocket"></a>4. RSocket</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on"><a href="https://rsocket.io">RSocket</a>是用于字节流传输的二进制协议。它通过通过单个连接传递的异步消息启用对称交互模型。</p>
 <p translation-origin="off"><a href="https://rsocket.io">RSocket</a> is a binary protocol for use on byte stream transports.
 It enables symmetric interaction models through async message passing over a single connection.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">Spring Framework 的<code>spring-messaging</code>模块为客户端和服务器端的 RSocket 请求者和响应者提供支持。有关更多详细信息，请参阅 Spring Framework 参考的<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html#rsocket-spring">RSocket 部分</a>，包括 RSocket 协议的概述。</p>
 <p translation-origin="off">The <code>spring-messaging</code> module of the Spring Framework provides support for RSocket requesters and responders, both on the client and on the server side.
 See the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html#rsocket-spring">RSocket section</a> of the Spring Framework reference for more details, including an overview of the RSocket protocol.</p>
 </div>
 <div class="sect2">
-<h3 id="messaging.rsocket.strategies-auto-configuration" translation-origin="off"><a class="anchor" href="messaging.html#messaging.rsocket.strategies-auto-configuration"></a>4.1. RSocket Strategies Auto-configuration</h3>
+<h3 id="messaging.rsocket.strategies-auto-configuration" translation-result="on"><a href="messaging.html#messaging.rsocket.strategies-auto-configuration"></a>4.1。 RSocket 策略自动配置</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.rsocket.strategies-auto-configuration"></a>4.1. RSocket Strategies Auto-configuration</h3>
 <div class="paragraph">
+<p translation-result="on">Spring Boot 自动配置一个<code>RSocketStrategies</code> bean，该 bean 提供编码和解码 RSocket 有效负载所需的所有基础设施。默认情况下，自动配置将尝试配置以下内容（按顺序）：</p>
 <p translation-origin="off">Spring Boot auto-configures an <code>RSocketStrategies</code> bean that provides all the required infrastructure for encoding and decoding RSocket payloads.
 By default, the auto-configuration will try to configure the following (in order):</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
+<p translation-result="on">Jackson 的<a href="https://cbor.io/">CBOR</a>编解码器</p>
 <p translation-origin="off"><a href="https://cbor.io/">CBOR</a> codecs with Jackson</p>
 </li>
 <li>
+<p translation-result="on">杰克逊的 JSON 编解码器</p>
 <p translation-origin="off">JSON codecs with Jackson</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
+<p translation-result="on"><code>spring-boot-starter-rsocket</code>启动器提供了这两个依赖项。请参阅<a href="features.html#features.json.jackson">Jackson 支持部分</a>以了解有关自定义可能性的更多信息。</p>
 <p translation-origin="off">The <code>spring-boot-starter-rsocket</code> starter provides both dependencies.
 See the <a href="features.html#features.json.jackson">Jackson support section</a> to know more about customization possibilities.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">开发人员可以通过创建实现<code>RSocketStrategiesCustomizer</code>接口的 bean 来自定义<code>RSocketStrategies</code>组件。请注意，它们的<code>@Order</code>很重要，因为它决定了编解码器的顺序。</p>
 <p translation-origin="off">Developers can customize the <code>RSocketStrategies</code> component by creating beans that implement the <code>RSocketStrategiesCustomizer</code> interface.
 Note that their <code>@Order</code> is important, as it determines the order of codecs.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="messaging.rsocket.server-auto-configuration" translation-origin="off"><a class="anchor" href="messaging.html#messaging.rsocket.server-auto-configuration"></a>4.2. RSocket server Auto-configuration</h3>
+<h3 id="messaging.rsocket.server-auto-configuration" translation-result="on"><a href="messaging.html#messaging.rsocket.server-auto-configuration"></a>4.2. RSocket 服务器自动配置</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.rsocket.server-auto-configuration"></a>4.2. RSocket server Auto-configuration</h3>
 <div class="paragraph">
+<p translation-result="on">Spring Boot 提供 RSocket 服务器自动配置。所需的依赖项由<code>spring-boot-starter-rsocket</code> 。</p>
 <p translation-origin="off">Spring Boot provides RSocket server auto-configuration.
 The required dependencies are provided by the <code>spring-boot-starter-rsocket</code>.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">Spring Boot 允许从 WebFlux 服务器通过 WebSocket 公开 RSocket，或者建立一个独立的 RSocket 服务器。这取决于应用程序的类型及其配置。</p>
 <p translation-origin="off">Spring Boot allows exposing RSocket over WebSocket from a WebFlux server, or standing up an independent RSocket server.
 This depends on the type of application and its configuration.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">对于 WebFlux 应用程序（即<code>WebApplicationType.REACTIVE</code>类型），仅当以下属性匹配时，RSocket 服务器才会插入 Web 服务器：</p>
 <p translation-origin="off">For WebFlux application (that is of type <code>WebApplicationType.REACTIVE</code>), the RSocket server will be plugged into the Web Server only if the following properties match:</p>
 </div>
 <div class="listingblock primary">
@@ -2208,12 +2340,14 @@ spring.rsocket.server.transport=websocket</code></pre>
 <i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
+<p translation-result="on">仅 Reactor Netty 支持将 RSocket 插入 Web 服务器，因为 RSocket 本身是使用该库构建的。</p>
 <p translation-origin="off">Plugging RSocket into a web server is only supported with Reactor Netty, as RSocket itself is built with that library.</p>
 </td>
 </tr>
 </tbody></table>
 </div>
 <div class="paragraph">
+<p translation-result="on">或者，RSocket TCP 或 websocket 服务器作为独立的嵌入式服务器启动。除了依赖项要求之外，唯一需要的配置是为该服务器定义一个端口：</p>
 <p translation-origin="off">Alternatively, an RSocket TCP or websocket server is started as an independent, embedded server.
 Besides the dependency requirements, the only required configuration is to define a port for that server:</p>
 </div>
@@ -2235,29 +2369,37 @@ Besides the dependency requirements, the only required configuration is to defin
 </div>
 </div>
 <div class="sect2">
-<h3 id="messaging.rsocket.messaging" translation-origin="off"><a class="anchor" href="messaging.html#messaging.rsocket.messaging"></a>4.3. Spring Messaging RSocket support</h3>
+<h3 id="messaging.rsocket.messaging" translation-result="on"><a href="messaging.html#messaging.rsocket.messaging"></a>4.3. Spring 消息传递 RSocket 支持</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.rsocket.messaging"></a>4.3. Spring Messaging RSocket support</h3>
 <div class="paragraph">
+<p translation-result="on">Spring Boot 将为 RSocket 自动配置 Spring Messaging 基础设施。</p>
 <p translation-origin="off">Spring Boot will auto-configure the Spring Messaging infrastructure for RSocket.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">这意味着 Spring Boot 将创建一个<code>RSocketMessageHandler</code> bean，它将处理对应用程序的 RSocket 请求。</p>
 <p translation-origin="off">This means that Spring Boot will create a <code>RSocketMessageHandler</code> bean that will handle RSocket requests to your application.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="messaging.rsocket.requester" translation-origin="off"><a class="anchor" href="messaging.html#messaging.rsocket.requester"></a>4.4. Calling RSocket Services with RSocketRequester</h3>
+<h3 id="messaging.rsocket.requester" translation-result="on"><a href="messaging.html#messaging.rsocket.requester"></a>4.4.使用 RSocketRequester 调用 RSocket 服务</h3>
+<h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.rsocket.requester"></a>4.4. Calling RSocket Services with RSocketRequester</h3>
 <div class="paragraph">
+<p translation-result="on">一旦服务器和客户端之间建立了<code>RSocket</code>通道，任何一方都可以向另一方发送或接收请求。</p>
 <p translation-origin="off">Once the <code>RSocket</code> channel is established between server and client, any party can send or receive requests to the other.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">作为服务器，您可以在 RSocket <code>@Controller</code>的任何处理程序方法上注入<code>RSocketRequester</code>实例。作为客户端，首先需要配置并建立 RSocket 连接。 Spring Boot 使用预期的编解码器为这种情况自动配置<code>RSocketRequester.Builder</code>并应用任何<code>RSocketConnectorConfigurer</code> bean。</p>
 <p translation-origin="off">As a server, you can get injected with an <code>RSocketRequester</code> instance on any handler method of an RSocket <code>@Controller</code>.
 As a client, you need to configure and establish an RSocket connection first.
 Spring Boot auto-configures an <code>RSocketRequester.Builder</code> for such cases with the expected codecs and applies any <code>RSocketConnectorConfigurer</code> bean.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on"><code>RSocketRequester.Builder</code>实例是一个原型 bean，这意味着每个注入点都会为您提供一个新实例。这是故意这样做的，因为此构建器是有状态的，您不应使用同一实例创建具有不同设置的请求者。</p>
 <p translation-origin="off">The <code>RSocketRequester.Builder</code> instance is a prototype bean, meaning each injection point will provide you with a new instance .
 This is done on purpose since this builder is stateful and you should not create requesters with different setups using the same instance.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">下面的代码展示了一个典型的例子：</p>
 <p translation-origin="off">The following code shows a typical example:</p>
 </div>
 <div class="listingblock">
@@ -2288,18 +2430,22 @@ public class MyService {
 </div>
 </div>
 <div class="sect1">
-<h2 id="messaging.spring-integration" translation-origin="off"><a class="anchor" href="messaging.html#messaging.spring-integration"></a>5. Spring Integration</h2>
+<h2 id="messaging.spring-integration" translation-result="on"><a href="messaging.html#messaging.spring-integration"></a>5. 弹簧集成</h2>
+<h2 translation-origin="off"><a class="anchor" href="messaging.html#messaging.spring-integration"></a>5. Spring Integration</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">Spring Boot 为使用<a href="https://spring.io/projects/spring-integration">Spring Integration</a>提供了多种便利，包括<code>spring-boot-starter-integration</code> “Starter”。 Spring Integration 提供了对消息传递以及 HTTP、TCP 等其他传输的抽象。如果 Spring Integration 在您的类路径上可用，则通过<code>@EnableIntegration</code>注释对其进行初始化。</p>
 <p translation-origin="off">Spring Boot offers several conveniences for working with <a href="https://spring.io/projects/spring-integration">Spring Integration</a>, including the <code>spring-boot-starter-integration</code> “Starter”.
 Spring Integration provides abstractions over messaging and also other transports such as HTTP, TCP, and others.
 If Spring Integration is available on your classpath, it is initialized through the <code>@EnableIntegration</code> annotation.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">Spring Integration 轮询逻辑依赖<a href="features.html#features.task-execution-and-scheduling">于自动配置的<code>TaskScheduler</code></a> 。可以使用 spring.integration.poller <code>spring.integration.poller.*</code>配置属性自定义默认<code>PollerMetadata</code> （每秒轮询无限数量的消息）。</p>
 <p translation-origin="off">Spring Integration polling logic relies <a href="features.html#features.task-execution-and-scheduling">on the auto-configured <code>TaskScheduler</code></a>.
 The default <code>PollerMetadata</code> (poll unbounded number of messages every second) can be customized with <code>spring.integration.poller.*</code> configuration properties.</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">Spring Boot 还配置了一些由额外的 Spring Integration 模块触发的特性。如果<code>spring-integration-jmx</code>也在类路径上，则通过 JMX 发布消息处理统计信息。如果<code>spring-integration-jdbc</code>可用，则可以在启动时创建默认数据库模式，如下行所示：</p>
 <p translation-origin="off">Spring Boot also configures some features that are triggered by the presence of additional Spring Integration modules.
 If <code>spring-integration-jmx</code> is also on the classpath, message processing statistics are published over JMX.
 If <code>spring-integration-jdbc</code> is available, the default database schema can be created on startup, as shown in the following line:</p>
@@ -2321,10 +2467,12 @@ If <code>spring-integration-jdbc</code> is available, the default database schem
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">如果<code>spring-integration-rsocket</code>可用，开发人员可以使用<code>"spring.rsocket.server.*"</code>属性配置 RSocket 服务器，并让它使用<code>IntegrationRSocketEndpoint</code>或<code>RSocketOutboundGateway</code>组件来处理传入的 RSocket 消息。此基础设施可以处理 Spring Integration RSocket 通道适配器和<code>@MessageMapping</code>处理程序（已配置<code>"spring.integration.rsocket.server.message-mapping-enabled"</code> ）。</p>
 <p translation-origin="off">If <code>spring-integration-rsocket</code> is available, developers can configure an RSocket server using <code>"spring.rsocket.server.*"</code> properties and let it use <code>IntegrationRSocketEndpoint</code> or <code>RSocketOutboundGateway</code> components to handle incoming RSocket messages.
 This infrastructure can handle Spring Integration RSocket channel adapters and <code>@MessageMapping</code> handlers (given <code>"spring.integration.rsocket.server.message-mapping-enabled"</code> is configured).</p>
 </div>
 <div class="paragraph">
+<p translation-result="on">Spring Boot 还可以使用配置属性自动配置<code>ClientRSocketConnector</code> ：</p>
 <p translation-origin="off">Spring Boot can also auto-configure an <code>ClientRSocketConnector</code> using configuration properties:</p>
 </div>
 <div class="listingblock primary">
@@ -2368,14 +2516,17 @@ spring:
 </div>
 </div>
 <div class="paragraph">
+<p translation-result="on">有关更多详细信息，请参阅<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/integration/IntegrationAutoConfiguration.java"><code>IntegrationAutoConfiguration</code></a>和<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/integration/IntegrationProperties.java"><code>IntegrationProperties</code></a>类。</p>
 <p translation-origin="off">See the <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/integration/IntegrationAutoConfiguration.java"><code>IntegrationAutoConfiguration</code></a> and <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/integration/IntegrationProperties.java"><code>IntegrationProperties</code></a> classes for more details.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="messaging.whats-next" translation-origin="off"><a class="anchor" href="messaging.html#messaging.whats-next"></a>6. What to Read Next</h2>
+<h2 id="messaging.whats-next" translation-result="on"><a href="messaging.html#messaging.whats-next"></a>6.接下来要读什么</h2>
+<h2 translation-origin="off"><a class="anchor" href="messaging.html#messaging.whats-next"></a>6. What to Read Next</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p translation-result="on">下一节将介绍如何在您的应用程序中启用<a href="io.html#io">IO 功能</a>。您可以在本节中阅读有关<a href="io.html#io.caching">缓存</a>、<a href="io.html#io.email">邮件</a>、<a href="io.html#io.validation">验证</a>、<a href="io.html#io.rest-client">休息客户端</a>等内容的信息。</p>
 <p translation-origin="off">The next section describes how to enable <a href="io.html#io">IO capabilities</a> in your application.
 You can read about <a href="io.html#io.caching">caching</a>, <a href="io.html#io.email">mail</a>, <a href="io.html#io.validation">validation</a>, <a href="io.html#io.rest-client">rest clients</a> and more in this section.</p>
 </div>
@@ -2391,6 +2542,8 @@ You can read about <a href="io.html#io.caching">caching</a>, <a href="io.html#io
 </div>
 </div>
 <script data-cfasync="false" src="../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6d1fdeabda777c65&quot;,&quot;token&quot;:&quot;bffcb8a918ae4755926f76178bfbd26b&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
 
 
 </body></html>
