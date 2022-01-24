@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +6,7 @@
 <meta name="author" content="Andy Wilkinson, Scott Frederick">
 <title>Spring Boot Gradle Plugin Reference Guide</title>
 <link rel="stylesheet" href="css/site.css">
-<script src="js/setup.js"></script><script defer src="js/site.js"></script>
+<script src="js/setup.js"></script><script defer="" src="js/site.js"></script>
 <script type="application/json" id="anchor-rewrite">
 {
 "build-image-customization":"build-image.customization",
@@ -58,7 +56,7 @@
 <body id="spring-boot-gradle-plugin-documentation" class="book toc2 toc-left"><div id="banner-container" class="container" role="banner">
 <div id="banner" class="contained" role="banner">
 <div id="switch-theme">
-<input type="checkbox" id="switch-theme-checkbox" />
+<input type="checkbox" id="switch-theme-checkbox">
 <label for="switch-theme-checkbox">Dark Theme</label>
 </div>
 </div>
@@ -72,7 +70,7 @@
 <div id="main" class="contained">
 <div id="doc" class="doc">
 <div id="header">
-<h1>Spring Boot Gradle Plugin Reference Guide</h1>
+<h1 translation-origin="off">Spring Boot Gradle Plugin Reference Guide</h1>
 <div class="details">
 <span id="author" class="author">Andy Wilkinson</span><br>
 <span id="author2" class="author">Scott Frederick</span><br>
@@ -81,95 +79,186 @@
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="index.html#introduction">1. Introduction</a></li>
-<li><a href="index.html#getting-started">2. Getting Started</a></li>
-<li><a href="index.html#managing-dependencies">3. Managing Dependencies</a>
+<li>
+  <p translation-origin="off"><a href="index.html#introduction">1. Introduction</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#getting-started">2. Getting Started</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#managing-dependencies">3. Managing Dependencies</a></p>
 <ul class="sectlevel2">
-<li><a href="index.html#managing-dependencies.dependency-management-plugin">3.1. Managing Dependencies with the Dependency Management Plugin</a>
+<li>
+  <p translation-origin="off"><a href="index.html#managing-dependencies.dependency-management-plugin">3.1. Managing Dependencies with the Dependency Management Plugin</a></p>
 <ul class="sectlevel3">
-<li><a href="index.html#managing-dependencies.dependency-management-plugin.customizing">3.1.1. Customizing Managed Versions</a></li>
-<li><a href="index.html#managing-dependencies.dependency-management-plugin.using-in-isolation">3.1.2. Using Spring Boot&#8217;s Dependency Management in Isolation</a></li>
-<li><a href="index.html#managing-dependencies.dependency-management-plugin.learning-more">3.1.3. Learning More</a></li>
+<li>
+  <p translation-origin="off"><a href="index.html#managing-dependencies.dependency-management-plugin.customizing">3.1.1. Customizing Managed Versions</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#managing-dependencies.dependency-management-plugin.using-in-isolation">3.1.2. Using Spring Boot’s Dependency Management in Isolation</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#managing-dependencies.dependency-management-plugin.learning-more">3.1.3. Learning More</a></p>
+</li>
 </ul>
 </li>
-<li><a href="index.html#managing-dependencies.gradle-bom-support">3.2. Managing Dependencies with Gradle&#8217;s Bom Support</a>
+<li>
+  <p translation-origin="off"><a href="index.html#managing-dependencies.gradle-bom-support">3.2. Managing Dependencies with Gradle’s Bom Support</a></p>
 <ul class="sectlevel3">
-<li><a href="index.html#managing-dependencies.gradle-bom-support.customizing">3.2.1. Customizing Managed Versions</a></li>
-</ul>
+<li>
+  <p translation-origin="off"><a href="index.html#managing-dependencies.gradle-bom-support.customizing">3.2.1. Customizing Managed Versions</a></p>
 </li>
 </ul>
 </li>
-<li><a href="index.html#packaging-executable">4. Packaging Executable Archives</a>
+</ul>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#packaging-executable">4. Packaging Executable Archives</a></p>
 <ul class="sectlevel2">
-<li><a href="index.html#packaging-executable.jars">4.1. Packaging Executable Jars</a></li>
-<li><a href="index.html#packaging-executable.wars">4.2. Packaging Executable Wars</a>
+<li>
+  <p translation-origin="off"><a href="index.html#packaging-executable.jars">4.1. Packaging Executable Jars</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#packaging-executable.wars">4.2. Packaging Executable Wars</a></p>
 <ul class="sectlevel3">
-<li><a href="index.html#packaging-executable.wars.deployable">4.2.1. Packaging Executable and Deployable Wars</a></li>
+<li>
+  <p translation-origin="off"><a href="index.html#packaging-executable.wars.deployable">4.2.1. Packaging Executable and Deployable Wars</a></p>
+</li>
 </ul>
 </li>
-<li><a href="index.html#packaging-executable.and-plain-archives">4.3. Packaging Executable and Plain Archives</a></li>
-<li><a href="index.html#packaging-executable.configuring">4.4. Configuring Executable Archive Packaging</a>
+<li>
+  <p translation-origin="off"><a href="index.html#packaging-executable.and-plain-archives">4.3. Packaging Executable and Plain Archives</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#packaging-executable.configuring">4.4. Configuring Executable Archive Packaging</a></p>
 <ul class="sectlevel3">
-<li><a href="index.html#packaging-executable.configuring.main-class">4.4.1. Configuring the Main Class</a></li>
-<li><a href="index.html#packaging-executable.configuring.including-development-only-dependencies">4.4.2. Including Development-only Dependencies</a></li>
-<li><a href="index.html#packaging-executable.configuring.unpacking">4.4.3. Configuring Libraries that Require Unpacking</a></li>
-<li><a href="index.html#packaging-executable.configuring.launch-script">4.4.4. Making an Archive Fully Executable</a></li>
-<li><a href="index.html#packaging-executable.configuring.properties-launcher">4.4.5. Using the PropertiesLauncher</a></li>
-<li><a href="index.html#packaging-executable.configuring.layered-archives">4.4.6. Packaging Layered Jar or War</a>
+<li>
+  <p translation-origin="off"><a href="index.html#packaging-executable.configuring.main-class">4.4.1. Configuring the Main Class</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#packaging-executable.configuring.including-development-only-dependencies">4.4.2. Including Development-only Dependencies</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#packaging-executable.configuring.unpacking">4.4.3. Configuring Libraries that Require Unpacking</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#packaging-executable.configuring.launch-script">4.4.4. Making an Archive Fully Executable</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#packaging-executable.configuring.properties-launcher">4.4.5. Using the PropertiesLauncher</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#packaging-executable.configuring.layered-archives">4.4.6. Packaging Layered Jar or War</a></p>
 <ul class="sectlevel4">
-<li><a href="index.html#packaging-executable.configuring.layered-archives.configuration">Custom Layers Configuration</a></li>
-</ul>
+<li>
+  <p translation-origin="off"><a href="index.html#packaging-executable.configuring.layered-archives.configuration">Custom Layers Configuration</a></p>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="index.html#build-image">5. Packaging OCI Images</a>
+</ul>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#build-image">5. Packaging OCI Images</a></p>
 <ul class="sectlevel2">
-<li><a href="index.html#build-image.docker-daemon">5.1. Docker Daemon</a></li>
-<li><a href="index.html#build-image.docker-registry">5.2. Docker Registry</a></li>
-<li><a href="index.html#build-image.customization">5.3. Image Customizations</a></li>
-<li><a href="index.html#build-image.examples">5.4. Examples</a>
+<li>
+  <p translation-origin="off"><a href="index.html#build-image.docker-daemon">5.1. Docker Daemon</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#build-image.docker-registry">5.2. Docker Registry</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#build-image.customization">5.3. Image Customizations</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#build-image.examples">5.4. Examples</a></p>
 <ul class="sectlevel3">
-<li><a href="index.html#build-image.examples.custom-image-builder">5.4.1. Custom Image Builder and Run Image</a></li>
-<li><a href="index.html#build-image.examples.builder-configuration">5.4.2. Builder Configuration</a></li>
-<li><a href="index.html#build-image.examples.runtime-jvm-configuration">5.4.3. Runtime JVM Configuration</a></li>
-<li><a href="index.html#build-image.examples.custom-image-name">5.4.4. Custom Image Name</a></li>
-<li><a href="index.html#build-image.examples.buildpacks">5.4.5. Buildpacks</a></li>
-<li><a href="index.html#build-image.examples.publish">5.4.6. Image Publishing</a></li>
-<li><a href="index.html#build-image.examples.caches">5.4.7. Builder Cache Configuration</a></li>
-<li><a href="index.html#build-image.examples.docker">5.4.8. Docker Configuration</a></li>
-</ul>
+<li>
+  <p translation-origin="off"><a href="index.html#build-image.examples.custom-image-builder">5.4.1. Custom Image Builder and Run Image</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#build-image.examples.builder-configuration">5.4.2. Builder Configuration</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#build-image.examples.runtime-jvm-configuration">5.4.3. Runtime JVM Configuration</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#build-image.examples.custom-image-name">5.4.4. Custom Image Name</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#build-image.examples.buildpacks">5.4.5. Buildpacks</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#build-image.examples.publish">5.4.6. Image Publishing</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#build-image.examples.caches">5.4.7. Builder Cache Configuration</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#build-image.examples.docker">5.4.8. Docker Configuration</a></p>
 </li>
 </ul>
 </li>
-<li><a href="index.html#publishing-your-application">6. Publishing your Application</a>
+</ul>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#publishing-your-application">6. Publishing your Application</a></p>
 <ul class="sectlevel2">
-<li><a href="index.html#publishing-your-application.maven-publish">6.1. Publishing with the Maven-publish Plugin</a></li>
-<li><a href="index.html#publishing-your-application.maven">6.2. Publishing with the Maven Plugin</a></li>
-<li><a href="index.html#publishing-your-application.distribution">6.3. Distributing with the Application Plugin</a></li>
+<li>
+  <p translation-origin="off"><a href="index.html#publishing-your-application.maven-publish">6.1. Publishing with the Maven-publish Plugin</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#publishing-your-application.maven">6.2. Publishing with the Maven Plugin</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#publishing-your-application.distribution">6.3. Distributing with the Application Plugin</a></p>
+</li>
 </ul>
 </li>
-<li><a href="index.html#running-your-application">7. Running your Application with Gradle</a>
+<li>
+  <p translation-origin="off"><a href="index.html#running-your-application">7. Running your Application with Gradle</a></p>
 <ul class="sectlevel2">
-<li><a href="index.html#running-your-application.passing-arguments">7.1. Passing Arguments to your Application</a></li>
-<li><a href="index.html#running-your-application.passing-system-properties">7.2. Passing System properties to your application</a></li>
-<li><a href="index.html#running-your-application.reloading-resources">7.3. Reloading Resources</a></li>
+<li>
+  <p translation-origin="off"><a href="index.html#running-your-application.passing-arguments">7.1. Passing Arguments to your Application</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#running-your-application.passing-system-properties">7.2. Passing System properties to your application</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#running-your-application.reloading-resources">7.3. Reloading Resources</a></p>
+</li>
 </ul>
 </li>
-<li><a href="index.html#integrating-with-actuator">8. Integrating with Actuator</a>
+<li>
+  <p translation-origin="off"><a href="index.html#integrating-with-actuator">8. Integrating with Actuator</a></p>
 <ul class="sectlevel2">
-<li><a href="index.html#integrating-with-actuator.build-info">8.1. Generating Build Information</a></li>
+<li>
+  <p translation-origin="off"><a href="index.html#integrating-with-actuator.build-info">8.1. Generating Build Information</a></p>
+</li>
 </ul>
 </li>
-<li><a href="index.html#reacting-to-other-plugins">9. Reacting to Other Plugins</a>
+<li>
+  <p translation-origin="off"><a href="index.html#reacting-to-other-plugins">9. Reacting to Other Plugins</a></p>
 <ul class="sectlevel2">
-<li><a href="index.html#reacting-to-other-plugins.java">9.1. Reacting to the Java Plugin</a></li>
-<li><a href="index.html#reacting-to-other-plugins.kotlin">9.2. Reacting to the Kotlin Plugin</a></li>
-<li><a href="index.html#reacting-to-other-plugins.war">9.3. Reacting to the War Plugin</a></li>
-<li><a href="index.html#reacting-to-other-plugins.dependency-management">9.4. Reacting to the Dependency Management Plugin</a></li>
-<li><a href="index.html#reacting-to-other-plugins.application">9.5. Reacting to the Application Plugin</a></li>
-<li><a href="index.html#reacting-to-other-plugins.maven">9.6. Reacting to the Maven plugin</a></li>
+<li>
+  <p translation-origin="off"><a href="index.html#reacting-to-other-plugins.java">9.1. Reacting to the Java Plugin</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#reacting-to-other-plugins.kotlin">9.2. Reacting to the Kotlin Plugin</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#reacting-to-other-plugins.war">9.3. Reacting to the War Plugin</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#reacting-to-other-plugins.dependency-management">9.4. Reacting to the Dependency Management Plugin</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#reacting-to-other-plugins.application">9.5. Reacting to the Application Plugin</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="index.html#reacting-to-other-plugins.maven">9.6. Reacting to the Maven plugin</a></p>
+</li>
 </ul>
 </li>
 </ul>
@@ -177,26 +266,26 @@
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="introduction"><a class="anchor" href="index.html#introduction"></a>1. Introduction</h2>
+<h2 id="introduction" translation-origin="off"><a class="anchor" href="index.html#introduction"></a>1. Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Spring Boot Gradle Plugin provides Spring Boot support in <a href="https://gradle.org">Gradle</a>.
+<p translation-origin="off">The Spring Boot Gradle Plugin provides Spring Boot support in <a href="https://gradle.org">Gradle</a>.
 It allows you to package executable jar or war archives, run Spring Boot applications, and use the dependency management provided by <code>spring-boot-dependencies</code>.
-Spring Boot&#8217;s Gradle plugin requires Gradle 6.8, 6.9, or 7.x and can be used with Gradle&#8217;s <a href="https://docs.gradle.org/current/userguide/configuration_cache.html">configuration cache</a>.</p>
+Spring Boot’s Gradle plugin requires Gradle 6.8, 6.9, or 7.x and can be used with Gradle’s <a href="https://docs.gradle.org/current/userguide/configuration_cache.html">configuration cache</a>.</p>
 </div>
 <div class="paragraph">
-<p>In addition to this user guide, <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api">API documentation</a> is also available.</p>
+<p translation-origin="off">In addition to this user guide, <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api">API documentation</a> is also available.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="getting-started"><a class="anchor" href="index.html#getting-started"></a>2. Getting Started</h2>
+<h2 id="getting-started" translation-origin="off"><a class="anchor" href="index.html#getting-started"></a>2. Getting Started</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To get started with the plugin it needs to be applied to your project.</p>
+<p translation-origin="off">To get started with the plugin it needs to be applied to your project.</p>
 </div>
 <div class="paragraph">
-<p>The plugin is <a href="https://plugins.gradle.org/plugin/org.springframework.boot">published to Gradle&#8217;s plugin portal</a> and can be applied using the <code>plugins</code> block:</p>
+<p translation-origin="off">The plugin is <a href="https://plugins.gradle.org/plugin/org.springframework.boot">published to Gradle’s plugin portal</a> and can be applied using the <code>plugins</code> block:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -215,10 +304,10 @@ Spring Boot&#8217;s Gradle plugin requires Gradle 6.8, 6.9, or 7.x and can be us
 </div>
 </div>
 <div class="paragraph">
-<p>Applied in isolation the plugin makes few changes to a project.
+<p translation-origin="off">Applied in isolation the plugin makes few changes to a project.
 Instead, the plugin detects when certain other plugins are applied and reacts accordingly.
 For example, when the <code>java</code> plugin is applied a task for building an executable jar is automatically configured.
-A typical Spring Boot project will apply the <a href="https://docs.gradle.org/current/userguide/groovy_plugin.html"><code>groovy</code></a>, <a href="https://docs.gradle.org/current/userguide/java_plugin.html"><code>java</code></a>, or <a href="https://kotlinlang.org/docs/reference/using-gradle.html"><code>org.jetbrains.kotlin.jvm</code></a> plugin as a minimum and also use the <a href="https://github.com/spring-gradle-plugins/dependency-management-plugin"><code>io.spring.dependency-management</code></a> plugin or Gradle&#8217;s native bom support for dependency management.
+A typical Spring Boot project will apply the <a href="https://docs.gradle.org/current/userguide/groovy_plugin.html"><code>groovy</code></a>, <a href="https://docs.gradle.org/current/userguide/java_plugin.html"><code>java</code></a>, or <a href="https://kotlinlang.org/docs/reference/using-gradle.html"><code>org.jetbrains.kotlin.jvm</code></a> plugin as a minimum and also use the <a href="https://github.com/spring-gradle-plugins/dependency-management-plugin"><code>io.spring.dependency-management</code></a> plugin or Gradle’s native bom support for dependency management.
 For example:</p>
 </div>
 <div class="listingblock primary">
@@ -240,22 +329,22 @@ apply(plugin = "io.spring.dependency-management")</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>To learn more about how the Spring Boot plugin behaves when other plugins are applied please see the section on <a href="index.html#reacting-to-other-plugins">reacting to other plugins</a>.</p>
+<p translation-origin="off">To learn more about how the Spring Boot plugin behaves when other plugins are applied please see the section on <a href="index.html#reacting-to-other-plugins">reacting to other plugins</a>.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="managing-dependencies"><a class="anchor" href="index.html#managing-dependencies"></a>3. Managing Dependencies</h2>
+<h2 id="managing-dependencies" translation-origin="off"><a class="anchor" href="index.html#managing-dependencies"></a>3. Managing Dependencies</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To manage dependencies in your Spring Boot application, you can either apply the <a href="https://github.com/spring-gradle-plugins/dependency-management-plugin"><code>io.spring.dependency-management</code></a> plugin or use Gradle&#8217;s native bom support.
+<p translation-origin="off">To manage dependencies in your Spring Boot application, you can either apply the <a href="https://github.com/spring-gradle-plugins/dependency-management-plugin"><code>io.spring.dependency-management</code></a> plugin or use Gradle’s native bom support.
 The primary benefit of the former is that it offers property-based customization of managed versions, while using the latter will likely result in faster builds.</p>
 </div>
 <div class="sect2">
-<h3 id="managing-dependencies.dependency-management-plugin"><a class="anchor" href="index.html#managing-dependencies.dependency-management-plugin"></a>3.1. Managing Dependencies with the Dependency Management Plugin</h3>
+<h3 id="managing-dependencies.dependency-management-plugin" translation-origin="off"><a class="anchor" href="index.html#managing-dependencies.dependency-management-plugin"></a>3.1. Managing Dependencies with the Dependency Management Plugin</h3>
 <div class="paragraph">
-<p>When you apply the <a href="https://github.com/spring-gradle-plugins/dependency-management-plugin"><code>io.spring.dependency-management</code></a> plugin, Spring Boot&#8217;s plugin will automatically <a href="index.html#reacting-to-other-plugins.dependency-management">import the <code>spring-boot-dependencies</code> bom</a> from the version of Spring Boot that you are using.
-This provides a similar dependency management experience to the one that&#8217;s enjoyed by Maven users.
+<p translation-origin="off">When you apply the <a href="https://github.com/spring-gradle-plugins/dependency-management-plugin"><code>io.spring.dependency-management</code></a> plugin, Spring Boot’s plugin will automatically <a href="index.html#reacting-to-other-plugins.dependency-management">import the <code>spring-boot-dependencies</code> bom</a> from the version of Spring Boot that you are using.
+This provides a similar dependency management experience to the one that’s enjoyed by Maven users.
 For example, it allows you to omit version numbers when declaring dependencies that are managed in the bom.
 To make use of this functionality, declare dependencies in the usual way but omit the version number:</p>
 </div>
@@ -278,13 +367,13 @@ To make use of this functionality, declare dependencies in the usual way but omi
 </div>
 </div>
 <div class="sect3">
-<h4 id="managing-dependencies.dependency-management-plugin.customizing"><a class="anchor" href="index.html#managing-dependencies.dependency-management-plugin.customizing"></a>3.1.1. Customizing Managed Versions</h4>
+<h4 id="managing-dependencies.dependency-management-plugin.customizing" translation-origin="off"><a class="anchor" href="index.html#managing-dependencies.dependency-management-plugin.customizing"></a>3.1.1. Customizing Managed Versions</h4>
 <div class="paragraph">
-<p>The <code>spring-boot-dependencies</code> bom that is automatically imported when the dependency management plugin is applied uses properties to control the versions of the dependencies that it manages.
+<p translation-origin="off">The <code>spring-boot-dependencies</code> bom that is automatically imported when the dependency management plugin is applied uses properties to control the versions of the dependencies that it manages.
 Browse the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/reference/htmlsingle/#dependency-versions-properties"><code>Dependency versions Appendix</code></a> in the Spring Boot reference for a complete list of these properties.</p>
 </div>
 <div class="paragraph">
-<p>To customize a managed version you set its corresponding property.
+<p translation-origin="off">To customize a managed version you set its corresponding property.
 For example, to customize the version of SLF4J which is controlled by the <code>slf4j.version</code> property:</p>
 </div>
 <div class="listingblock primary">
@@ -301,26 +390,26 @@ For example, to customize the version of SLF4J which is controlled by the <code>
 </div>
 <div class="admonitionblock warning">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-Each Spring Boot release is designed and tested against a specific set of third-party dependencies.
-Overriding versions may cause compatibility issues and should be done with care.
+<p translation-origin="off">Each Spring Boot release is designed and tested against a specific set of third-party dependencies.
+Overriding versions may cause compatibility issues and should be done with care.</p>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 </div>
 <div class="sect3">
-<h4 id="managing-dependencies.dependency-management-plugin.using-in-isolation"><a class="anchor" href="index.html#managing-dependencies.dependency-management-plugin.using-in-isolation"></a>3.1.2. Using Spring Boot&#8217;s Dependency Management in Isolation</h4>
+<h4 id="managing-dependencies.dependency-management-plugin.using-in-isolation" translation-origin="off"><a class="anchor" href="index.html#managing-dependencies.dependency-management-plugin.using-in-isolation"></a>3.1.2. Using Spring Boot’s Dependency Management in Isolation</h4>
 <div class="paragraph">
-<p>Spring Boot&#8217;s dependency management can be used in a project without applying Spring Boot&#8217;s plugin to that project.
+<p translation-origin="off">Spring Boot’s dependency management can be used in a project without applying Spring Boot’s plugin to that project.
 The <code>SpringBootPlugin</code> class provides a <code>BOM_COORDINATES</code> constant that can be used to import the bom without having to know its group ID, artifact ID, or version.</p>
 </div>
 <div class="paragraph">
-<p>First, configure the project to depend on the Spring Boot plugin but do not apply it:</p>
+<p translation-origin="off">First, configure the project to depend on the Spring Boot plugin but do not apply it:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -339,11 +428,11 @@ The <code>SpringBootPlugin</code> class provides a <code>BOM_COORDINATES</code> 
 </div>
 </div>
 <div class="paragraph">
-<p>The Spring Boot plugin&#8217;s dependency on the dependency management plugin means that you can use the dependency management plugin without having to declare a dependency on it.
+<p translation-origin="off">The Spring Boot plugin’s dependency on the dependency management plugin means that you can use the dependency management plugin without having to declare a dependency on it.
 This also means that you will automatically use the same version of the dependency management plugin as Spring Boot uses.</p>
 </div>
 <div class="paragraph">
-<p>Apply the dependency management plugin and then configure it to import Spring Boot&#8217;s bom:</p>
+<p translation-origin="off">Apply the dependency management plugin and then configure it to import Spring Boot’s bom:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -370,11 +459,11 @@ the&lt;DependencyManagementExtension&gt;().apply {
 </div>
 </div>
 <div class="paragraph">
-<p>The Kotlin code above is a bit awkward.
-That&#8217;s because we&#8217;re using the imperative way of applying the dependency management plugin.</p>
+<p translation-origin="off">The Kotlin code above is a bit awkward.
+That’s because we’re using the imperative way of applying the dependency management plugin.</p>
 </div>
 <div class="paragraph">
-<p>We can make the code less awkward by applying the plugin from the root parent project, or by using the <code>plugins</code> block as we&#8217;re doing for the Spring Boot plugin.
+<p translation-origin="off">We can make the code less awkward by applying the plugin from the root parent project, or by using the <code>plugins</code> block as we’re doing for the Spring Boot plugin.
 A downside of this method is that it forces us to specify the version of the dependency management plugin:</p>
 </div>
 <div class="listingblock">
@@ -394,21 +483,21 @@ dependencyManagement {
 </div>
 </div>
 <div class="sect3">
-<h4 id="managing-dependencies.dependency-management-plugin.learning-more"><a class="anchor" href="index.html#managing-dependencies.dependency-management-plugin.learning-more"></a>3.1.3. Learning More</h4>
+<h4 id="managing-dependencies.dependency-management-plugin.learning-more" translation-origin="off"><a class="anchor" href="index.html#managing-dependencies.dependency-management-plugin.learning-more"></a>3.1.3. Learning More</h4>
 <div class="paragraph">
-<p>To learn more about the capabilities of the dependency management plugin, please refer to its <a href="https://docs.spring.io/dependency-management-plugin/docs/current/reference/html/">documentation</a>.</p>
+<p translation-origin="off">To learn more about the capabilities of the dependency management plugin, please refer to its <a href="https://docs.spring.io/dependency-management-plugin/docs/current/reference/html/">documentation</a>.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="managing-dependencies.gradle-bom-support"><a class="anchor" href="index.html#managing-dependencies.gradle-bom-support"></a>3.2. Managing Dependencies with Gradle&#8217;s Bom Support</h3>
+<h3 id="managing-dependencies.gradle-bom-support" translation-origin="off"><a class="anchor" href="index.html#managing-dependencies.gradle-bom-support"></a>3.2. Managing Dependencies with Gradle’s Bom Support</h3>
 <div class="paragraph">
-<p>Gradle allows a bom to be used to manage a project&#8217;s versions by declaring it as a <code>platform</code> or <code>enforcedPlatform</code> dependency.
+<p translation-origin="off">Gradle allows a bom to be used to manage a project’s versions by declaring it as a <code>platform</code> or <code>enforcedPlatform</code> dependency.
 A <code>platform</code> dependency treats the versions in the bom as recommendations and other versions and constraints in the dependency graph may cause a version of a dependency other than that declared in the bom to be used.
 An <code>enforcedPlatform</code> dependency treats the versions in the bom as requirements and they will override any other version found in the dependency graph.</p>
 </div>
 <div class="paragraph">
-<p>The <code>SpringBootPlugin</code> class provides a <code>BOM_COORDINATES</code> constant that can be used to declare a dependency upon Spring Boot&#8217;s bom without having to know its group ID, artifact ID, or version, as shown in the following example:</p>
+<p translation-origin="off">The <code>SpringBootPlugin</code> class provides a <code>BOM_COORDINATES</code> constant that can be used to declare a dependency upon Spring Boot’s bom without having to know its group ID, artifact ID, or version, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -427,16 +516,16 @@ An <code>enforcedPlatform</code> dependency treats the versions in the bom as re
 </div>
 </div>
 <div class="paragraph">
-<p>A platform or enforced platform will only constrain the versions of the configuration in which it has been declared or that extend from the configuration in which it has been declared.
+<p translation-origin="off">A platform or enforced platform will only constrain the versions of the configuration in which it has been declared or that extend from the configuration in which it has been declared.
 As a result, in may be necessary to declare the same dependency in more than one configuration.</p>
 </div>
 <div class="sect3">
-<h4 id="managing-dependencies.gradle-bom-support.customizing"><a class="anchor" href="index.html#managing-dependencies.gradle-bom-support.customizing"></a>3.2.1. Customizing Managed Versions</h4>
+<h4 id="managing-dependencies.gradle-bom-support.customizing" translation-origin="off"><a class="anchor" href="index.html#managing-dependencies.gradle-bom-support.customizing"></a>3.2.1. Customizing Managed Versions</h4>
 <div class="paragraph">
-<p>When using Gradle&#8217;s bom support, you cannot use the properties from <code>spring-boot-dependencies</code> to control the versions of the dependencies that it manages.
+<p translation-origin="off">When using Gradle’s bom support, you cannot use the properties from <code>spring-boot-dependencies</code> to control the versions of the dependencies that it manages.
 Instead, you must use one of the mechanisms that Gradle provides.
 One such mechanism is a resolution strategy.
-SLF4J&#8217;s modules are all in the <code>org.slf4j</code> group so their version can be controlled by configuring every dependency in that group to use a particular version, as shown in the following example:</p>
+SLF4J’s modules are all in the <code>org.slf4j</code> group so their version can be controlled by configuring every dependency in that group to use a particular version, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -464,46 +553,46 @@ SLF4J&#8217;s modules are all in the <code>org.slf4j</code> group so their versi
 </div>
 <div class="admonitionblock warning">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-Each Spring Boot release is designed and tested against a specific set of third-party dependencies.
-Overriding versions may cause compatibility issues and should be done with care.
+<p translation-origin="off">Each Spring Boot release is designed and tested against a specific set of third-party dependencies.
+Overriding versions may cause compatibility issues and should be done with care.</p>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="packaging-executable"><a class="anchor" href="index.html#packaging-executable"></a>4. Packaging Executable Archives</h2>
+<h2 id="packaging-executable" translation-origin="off"><a class="anchor" href="index.html#packaging-executable"></a>4. Packaging Executable Archives</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The plugin can create executable archives (jar files and war files) that contain all of an application&#8217;s dependencies and can then be run with <code>java -jar</code>.</p>
+<p translation-origin="off">The plugin can create executable archives (jar files and war files) that contain all of an application’s dependencies and can then be run with <code>java -jar</code>.</p>
 </div>
 <div class="sect2">
-<h3 id="packaging-executable.jars"><a class="anchor" href="index.html#packaging-executable.jars"></a>4.1. Packaging Executable Jars</h3>
+<h3 id="packaging-executable.jars" translation-origin="off"><a class="anchor" href="index.html#packaging-executable.jars"></a>4.1. Packaging Executable Jars</h3>
 <div class="paragraph">
-<p>Executable jars can be built using the <code>bootJar</code> task.
+<p translation-origin="off">Executable jars can be built using the <code>bootJar</code> task.
 The task is automatically created when the <code>java</code> plugin is applied and is an instance of <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/bundling/BootJar.html"><code>BootJar</code></a>.
 The <code>assemble</code> task is automatically configured to depend upon the <code>bootJar</code> task so running <code>assemble</code> (or <code>build</code>) will also run the <code>bootJar</code> task.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="packaging-executable.wars"><a class="anchor" href="index.html#packaging-executable.wars"></a>4.2. Packaging Executable Wars</h3>
+<h3 id="packaging-executable.wars" translation-origin="off"><a class="anchor" href="index.html#packaging-executable.wars"></a>4.2. Packaging Executable Wars</h3>
 <div class="paragraph">
-<p>Executable wars can be built using the <code>bootWar</code> task.
+<p translation-origin="off">Executable wars can be built using the <code>bootWar</code> task.
 The task is automatically created when the <code>war</code> plugin is applied and is an instance of <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/bundling/BootWar.html"><code>BootWar</code></a>.
 The <code>assemble</code> task is automatically configured to depend upon the <code>bootWar</code> task so running <code>assemble</code> (or <code>build</code>) will also run the <code>bootWar</code> task.</p>
 </div>
 <div class="sect3">
-<h4 id="packaging-executable.wars.deployable"><a class="anchor" href="index.html#packaging-executable.wars.deployable"></a>4.2.1. Packaging Executable and Deployable Wars</h4>
+<h4 id="packaging-executable.wars.deployable" translation-origin="off"><a class="anchor" href="index.html#packaging-executable.wars.deployable"></a>4.2.1. Packaging Executable and Deployable Wars</h4>
 <div class="paragraph">
-<p>A war file can be packaged such that it can be executed using <code>java -jar</code> and deployed to an external container.
+<p translation-origin="off">A war file can be packaged such that it can be executed using <code>java -jar</code> and deployed to an external container.
 To do so, the embedded servlet container dependencies should be added to the <code>providedRuntime</code> configuration, for example:</p>
 </div>
 <div class="listingblock primary">
@@ -525,30 +614,30 @@ To do so, the embedded servlet container dependencies should be added to the <co
 </div>
 </div>
 <div class="paragraph">
-<p>This ensures that they are package in the war file&#8217;s <code>WEB-INF/lib-provided</code> directory from where they will not conflict with the external container&#8217;s own classes.</p>
+<p translation-origin="off">This ensures that they are package in the war file’s <code>WEB-INF/lib-provided</code> directory from where they will not conflict with the external container’s own classes.</p>
 </div>
 <div class="admonitionblock note">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-<code>providedRuntime</code> is preferred to Gradle&#8217;s <code>compileOnly</code> configuration as, among other limitations, <code>compileOnly</code> dependencies are not on the test classpath so any web-based integration tests will fail.
+<p translation-origin="off"><code>providedRuntime</code> is preferred to Gradle’s <code>compileOnly</code> configuration as, among other limitations, <code>compileOnly</code> dependencies are not on the test classpath so any web-based integration tests will fail.</p>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="packaging-executable.and-plain-archives"><a class="anchor" href="index.html#packaging-executable.and-plain-archives"></a>4.3. Packaging Executable and Plain Archives</h3>
+<h3 id="packaging-executable.and-plain-archives" translation-origin="off"><a class="anchor" href="index.html#packaging-executable.and-plain-archives"></a>4.3. Packaging Executable and Plain Archives</h3>
 <div class="paragraph">
-<p>By default, when the <code>bootJar</code> or <code>bootWar</code> tasks are configured, the <code>jar</code> or <code>war</code> tasks are configured to use <code>plain</code> as the convention for their archive classifier.
+<p translation-origin="off">By default, when the <code>bootJar</code> or <code>bootWar</code> tasks are configured, the <code>jar</code> or <code>war</code> tasks are configured to use <code>plain</code> as the convention for their archive classifier.
 This ensures that <code>bootJar</code> and <code>jar</code> or <code>bootWar</code> and <code>war</code> have different output locations, allowing both the executable archive and the plain archive to be built at the same time.</p>
 </div>
 <div class="paragraph">
-<p>If you prefer that the executable archive, rather than the plain archive, uses a classifier, configure the classifiers as shown in the following example for the <code>jar</code> and <code>bootJar</code> tasks:</p>
+<p translation-origin="off">If you prefer that the executable archive, rather than the plain archive, uses a classifier, configure the classifiers as shown in the following example for the <code>jar</code> and <code>bootJar</code> tasks:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -575,7 +664,7 @@ tasks.getByName&lt;Jar&gt;("jar") {
 </div>
 </div>
 <div class="paragraph">
-<p>Alternatively, if you prefer that the plain archive isn&#8217;t built at all, disable its task as shown in the following example for the <code>jar</code> task:</p>
+<p translation-origin="off">Alternatively, if you prefer that the plain archive isn’t built at all, disable its task as shown in the following example for the <code>jar</code> task:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -595,19 +684,19 @@ tasks.getByName&lt;Jar&gt;("jar") {
 </div>
 </div>
 <div class="sect2">
-<h3 id="packaging-executable.configuring"><a class="anchor" href="index.html#packaging-executable.configuring"></a>4.4. Configuring Executable Archive Packaging</h3>
+<h3 id="packaging-executable.configuring" translation-origin="off"><a class="anchor" href="index.html#packaging-executable.configuring"></a>4.4. Configuring Executable Archive Packaging</h3>
 <div class="paragraph">
-<p>The <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/bundling/BootJar.html"><code>BootJar</code></a> and <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/bundling/BootWar.html"><code>BootWar</code></a> tasks are subclasses of Gradle&#8217;s <code>Jar</code> and <code>War</code> tasks respectively.
+<p translation-origin="off">The <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/bundling/BootJar.html"><code>BootJar</code></a> and <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/bundling/BootWar.html"><code>BootWar</code></a> tasks are subclasses of Gradle’s <code>Jar</code> and <code>War</code> tasks respectively.
 As a result, all of the standard configuration options that are available when packaging a jar or war are also available when packaging an executable jar or war.
 A number of configuration options that are specific to executable jars and wars are also provided.</p>
 </div>
 <div class="sect3">
-<h4 id="packaging-executable.configuring.main-class"><a class="anchor" href="index.html#packaging-executable.configuring.main-class"></a>4.4.1. Configuring the Main Class</h4>
+<h4 id="packaging-executable.configuring.main-class" translation-origin="off"><a class="anchor" href="index.html#packaging-executable.configuring.main-class"></a>4.4.1. Configuring the Main Class</h4>
 <div class="paragraph">
-<p>By default, the executable archive&#8217;s main class will be configured automatically by looking for a class with a <code>public static void main(String[])</code> method in directories on the task&#8217;s classpath.</p>
+<p translation-origin="off">By default, the executable archive’s main class will be configured automatically by looking for a class with a <code>public static void main(String[])</code> method in directories on the task’s classpath.</p>
 </div>
 <div class="paragraph">
-<p>The main class can also be configured explicitly using the task&#8217;s <code>mainClass</code> property:</p>
+<p translation-origin="off">The main class can also be configured explicitly using the task’s <code>mainClass</code> property:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -626,7 +715,7 @@ A number of configuration options that are specific to executable jars and wars 
 </div>
 </div>
 <div class="paragraph">
-<p>Alternatively, the main class name can be configured project-wide using the <code>mainClass</code> property of the Spring Boot DSL:</p>
+<p translation-origin="off">Alternatively, the main class name can be configured project-wide using the <code>mainClass</code> property of the Spring Boot DSL:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -645,7 +734,7 @@ A number of configuration options that are specific to executable jars and wars 
 </div>
 </div>
 <div class="paragraph">
-<p>If the <a href="https://docs.gradle.org/current/userguide/application_plugin.html"><code>application</code> plugin</a> has been applied its <code>mainClass</code> property must be configured and can be used for the same purpose:</p>
+<p translation-origin="off">If the <a href="https://docs.gradle.org/current/userguide/application_plugin.html"><code>application</code> plugin</a> has been applied its <code>mainClass</code> property must be configured and can be used for the same purpose:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -664,7 +753,7 @@ A number of configuration options that are specific to executable jars and wars 
 </div>
 </div>
 <div class="paragraph">
-<p>Lastly, the <code>Start-Class</code> attribute can be configured on the task&#8217;s manifest:</p>
+<p translation-origin="off">Lastly, the <code>Start-Class</code> attribute can be configured on the task’s manifest:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -688,27 +777,27 @@ A number of configuration options that are specific to executable jars and wars 
 </div>
 <div class="admonitionblock note">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-If the main class is written in Kotlin, the name of the generated Java class should be used.
+<p translation-origin="off">If the main class is written in Kotlin, the name of the generated Java class should be used.
 By default, this is the name of the Kotlin class with the <code>Kt</code> suffix added.
 For example, <code>ExampleApplication</code> becomes <code>ExampleApplicationKt</code>.
-If another name is defined using <code>@JvmName</code> then that name should be used.
+If another name is defined using <code>@JvmName</code> then that name should be used.</p>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 </div>
 <div class="sect3">
-<h4 id="packaging-executable.configuring.including-development-only-dependencies"><a class="anchor" href="index.html#packaging-executable.configuring.including-development-only-dependencies"></a>4.4.2. Including Development-only Dependencies</h4>
+<h4 id="packaging-executable.configuring.including-development-only-dependencies" translation-origin="off"><a class="anchor" href="index.html#packaging-executable.configuring.including-development-only-dependencies"></a>4.4.2. Including Development-only Dependencies</h4>
 <div class="paragraph">
-<p>By default all dependencies declared in the <code>developmentOnly</code> configuration will be excluded from an executable jar or war.</p>
+<p translation-origin="off">By default all dependencies declared in the <code>developmentOnly</code> configuration will be excluded from an executable jar or war.</p>
 </div>
 <div class="paragraph">
-<p>If you want to include dependencies declared in the <code>developmentOnly</code> configuration in your archive, configure the classpath of its task to include the configuration, as shown in the following example for the <code>bootWar</code> task:</p>
+<p translation-origin="off">If you want to include dependencies declared in the <code>developmentOnly</code> configuration in your archive, configure the classpath of its task to include the configuration, as shown in the following example for the <code>bootWar</code> task:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -728,13 +817,13 @@ If another name is defined using <code>@JvmName</code> then that name should be 
 </div>
 </div>
 <div class="sect3">
-<h4 id="packaging-executable.configuring.unpacking"><a class="anchor" href="index.html#packaging-executable.configuring.unpacking"></a>4.4.3. Configuring Libraries that Require Unpacking</h4>
+<h4 id="packaging-executable.configuring.unpacking" translation-origin="off"><a class="anchor" href="index.html#packaging-executable.configuring.unpacking"></a>4.4.3. Configuring Libraries that Require Unpacking</h4>
 <div class="paragraph">
-<p>Most libraries can be used directly when nested in an executable archive, however certain libraries can have problems.
+<p translation-origin="off">Most libraries can be used directly when nested in an executable archive, however certain libraries can have problems.
 For example, JRuby includes its own nested jar support which assumes that <code>jruby-complete.jar</code> is always directly available on the file system.</p>
 </div>
 <div class="paragraph">
-<p>To deal with any problematic libraries, an executable archive can be configured to unpack specific nested jars to a temporary directory when the executable archive is run.
+<p translation-origin="off">To deal with any problematic libraries, an executable archive can be configured to unpack specific nested jars to a temporary directory when the executable archive is run.
 Libraries can be identified as requiring unpacking using Ant-style patterns that match against the absolute path of the source jar file:</p>
 </div>
 <div class="listingblock primary">
@@ -754,33 +843,33 @@ Libraries can be identified as requiring unpacking using Ant-style patterns that
 </div>
 </div>
 <div class="paragraph">
-<p>For more control a closure can also be used.
+<p translation-origin="off">For more control a closure can also be used.
 The closure is passed a <code>FileTreeElement</code> and should return a <code>boolean</code> indicating whether or not unpacking is required.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="packaging-executable.configuring.launch-script"><a class="anchor" href="index.html#packaging-executable.configuring.launch-script"></a>4.4.4. Making an Archive Fully Executable</h4>
+<h4 id="packaging-executable.configuring.launch-script" translation-origin="off"><a class="anchor" href="index.html#packaging-executable.configuring.launch-script"></a>4.4.4. Making an Archive Fully Executable</h4>
 <div class="paragraph">
-<p>Spring Boot provides support for fully executable archives.
+<p translation-origin="off">Spring Boot provides support for fully executable archives.
 An archive is made fully executable by prepending a shell script that knows how to launch the application.
 On Unix-like platforms, this launch script allows the archive to be run directly like any other executable or to be installed as a service.</p>
 </div>
 <div class="admonitionblock note">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Currently, some tools do not accept this format so you may not always be able to use this technique.
+<p translation-origin="off">Currently, some tools do not accept this format so you may not always be able to use this technique.
 For example, <code>jar -xf</code> may silently fail to extract a jar or war that has been made fully-executable.
-It is recommended that you only enable this option if you intend to execute it directly, rather than running it with <code>java -jar</code> or deploying it to a servlet container.
+It is recommended that you only enable this option if you intend to execute it directly, rather than running it with <code>java -jar</code> or deploying it to a servlet container.</p>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 <div class="paragraph">
-<p>To use this feature, the inclusion of the launch script must be enabled:</p>
+<p translation-origin="off">To use this feature, the inclusion of the launch script must be enabled:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -799,7 +888,7 @@ It is recommended that you only enable this option if you intend to execute it d
 </div>
 </div>
 <div class="paragraph">
-<p>This will add Spring Boot&#8217;s default launch script to the archive.
+<p translation-origin="off">This will add Spring Boot’s default launch script to the archive.
 The default launch script includes several properties with sensible default values.
 The values can be customized using the <code>properties</code> property:</p>
 </div>
@@ -824,7 +913,7 @@ The values can be customized using the <code>properties</code> property:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>If the default launch script does not meet your needs, the <code>script</code> property can be used to provide a custom launch script:</p>
+<p translation-origin="off">If the default launch script does not meet your needs, the <code>script</code> property can be used to provide a custom launch script:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -848,9 +937,9 @@ The values can be customized using the <code>properties</code> property:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="packaging-executable.configuring.properties-launcher"><a class="anchor" href="index.html#packaging-executable.configuring.properties-launcher"></a>4.4.5. Using the PropertiesLauncher</h4>
+<h4 id="packaging-executable.configuring.properties-launcher" translation-origin="off"><a class="anchor" href="index.html#packaging-executable.configuring.properties-launcher"></a>4.4.5. Using the PropertiesLauncher</h4>
 <div class="paragraph">
-<p>To use the <code>PropertiesLauncher</code> to launch an executable jar or war, configure the task&#8217;s manifest to set the <code>Main-Class</code> attribute:</p>
+<p translation-origin="off">To use the <code>PropertiesLauncher</code> to launch an executable jar or war, configure the task’s manifest to set the <code>Main-Class</code> attribute:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -874,41 +963,41 @@ The values can be customized using the <code>properties</code> property:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="packaging-executable.configuring.layered-archives"><a class="anchor" href="index.html#packaging-executable.configuring.layered-archives"></a>4.4.6. Packaging Layered Jar or War</h4>
+<h4 id="packaging-executable.configuring.layered-archives" translation-origin="off"><a class="anchor" href="index.html#packaging-executable.configuring.layered-archives"></a>4.4.6. Packaging Layered Jar or War</h4>
 <div class="paragraph">
-<p>By default, the <code>bootJar</code> task builds an archive that contains the application&#8217;s classes and dependencies in <code>BOOT-INF/classes</code> and <code>BOOT-INF/lib</code> respectively.
-Similarly, <code>bootWar</code> builds an archive that contains the application&#8217;s classes in <code>WEB-INF/classes</code> and dependencies in <code>WEB-INF/lib</code> and <code>WEB-INF/lib-provided</code>.
-For cases where a docker image needs to be built from the contents of the jar, it&#8217;s useful to be able to separate these directories further so that they can be written into distinct layers.</p>
+<p translation-origin="off">By default, the <code>bootJar</code> task builds an archive that contains the application’s classes and dependencies in <code>BOOT-INF/classes</code> and <code>BOOT-INF/lib</code> respectively.
+Similarly, <code>bootWar</code> builds an archive that contains the application’s classes in <code>WEB-INF/classes</code> and dependencies in <code>WEB-INF/lib</code> and <code>WEB-INF/lib-provided</code>.
+For cases where a docker image needs to be built from the contents of the jar, it’s useful to be able to separate these directories further so that they can be written into distinct layers.</p>
 </div>
 <div class="paragraph">
-<p>Layered jars use the same layout as regular boot packaged jars, but include an additional meta-data file that describes each layer.</p>
+<p translation-origin="off">Layered jars use the same layout as regular boot packaged jars, but include an additional meta-data file that describes each layer.</p>
 </div>
 <div class="paragraph">
-<p>By default, the following layers are defined:</p>
+<p translation-origin="off">By default, the following layers are defined:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>dependencies</code> for any non-project dependency whose version does not contain <code>SNAPSHOT</code>.</p>
+<p translation-origin="off"><code>dependencies</code> for any non-project dependency whose version does not contain <code>SNAPSHOT</code>.</p>
 </li>
 <li>
-<p><code>spring-boot-loader</code> for the jar loader classes.</p>
+<p translation-origin="off"><code>spring-boot-loader</code> for the jar loader classes.</p>
 </li>
 <li>
-<p><code>snapshot-dependencies</code> for any non-project dependency whose version contains <code>SNAPSHOT</code>.</p>
+<p translation-origin="off"><code>snapshot-dependencies</code> for any non-project dependency whose version contains <code>SNAPSHOT</code>.</p>
 </li>
 <li>
-<p><code>application</code> for project dependencies, application classes, and resources.</p>
+<p translation-origin="off"><code>application</code> for project dependencies, application classes, and resources.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>The layers order is important as it determines how likely previous layers can be cached when part of the application changes.
+<p translation-origin="off">The layers order is important as it determines how likely previous layers can be cached when part of the application changes.
 The default order is <code>dependencies</code>, <code>spring-boot-loader</code>, <code>snapshot-dependencies</code>, <code>application</code>.
 Content that is least likely to change should be added first, followed by layers that are more likely to change.</p>
 </div>
 <div class="paragraph">
-<p>To disable this feature, you can do so in the following manner:</p>
+<p translation-origin="off">To disable this feature, you can do so in the following manner:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -931,7 +1020,7 @@ Content that is least likely to change should be added first, followed by layers
 </div>
 </div>
 <div class="paragraph">
-<p>When a layered jar or war is created, the <code>spring-boot-jarmode-layertools</code> jar will be added as a dependency to your archive.
+<p translation-origin="off">When a layered jar or war is created, the <code>spring-boot-jarmode-layertools</code> jar will be added as a dependency to your archive.
 With this jar on the classpath, you can launch your application in a special mode which allows the bootstrap code to run something entirely different from your application, for example, something that extracts the layers.
 If you wish to exclude this dependency, you can do so in the following manner:</p>
 </div>
@@ -956,12 +1045,12 @@ If you wish to exclude this dependency, you can do so in the following manner:</
 </div>
 </div>
 <div class="sect4">
-<h5 id="packaging-executable.configuring.layered-archives.configuration"><a class="anchor" href="index.html#packaging-executable.configuring.layered-archives.configuration"></a>Custom Layers Configuration</h5>
+<h5 id="packaging-executable.configuring.layered-archives.configuration" translation-origin="off"><a class="anchor" href="index.html#packaging-executable.configuring.layered-archives.configuration"></a>Custom Layers Configuration</h5>
 <div class="paragraph">
-<p>Depending on your application, you may want to tune how layers are created and add new ones.</p>
+<p translation-origin="off">Depending on your application, you may want to tune how layers are created and add new ones.</p>
 </div>
 <div class="paragraph">
-<p>This can be done using configuration that describes how the jar or war can be separated into layers, and the order of those layers.
+<p translation-origin="off">This can be done using configuration that describes how the jar or war can be separated into layers, and the order of those layers.
 The following example shows how the default ordering described above can be defined explicitly:</p>
 </div>
 <div class="listingblock primary">
@@ -1012,60 +1101,60 @@ The following example shows how the default ordering described above can be defi
 </div>
 </div>
 <div class="paragraph">
-<p>The <code>layered</code> DSL is defined using three parts:</p>
+<p translation-origin="off">The <code>layered</code> DSL is defined using three parts:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The <code>application</code> closure defines how the application classes and resources should be layered.</p>
+<p translation-origin="off">The <code>application</code> closure defines how the application classes and resources should be layered.</p>
 </li>
 <li>
-<p>The <code>dependencies</code> closure defines how dependencies should be layered.</p>
+<p translation-origin="off">The <code>dependencies</code> closure defines how dependencies should be layered.</p>
 </li>
 <li>
-<p>The <code>layerOrder</code> method defines the order that the layers should be written.</p>
+<p translation-origin="off">The <code>layerOrder</code> method defines the order that the layers should be written.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Nested <code>intoLayer</code> closures are used within <code>application</code> and <code>dependencies</code> sections to claim content for a layer.
+<p translation-origin="off">Nested <code>intoLayer</code> closures are used within <code>application</code> and <code>dependencies</code> sections to claim content for a layer.
 These closures are evaluated in the order that they are defined, from top to bottom.
 Any content not claimed by an earlier <code>intoLayer</code> closure remains available for subsequent ones to consider.</p>
 </div>
 <div class="paragraph">
-<p>The <code>intoLayer</code> closure claims content using nested <code>include</code> and <code>exclude</code> calls.
+<p translation-origin="off">The <code>intoLayer</code> closure claims content using nested <code>include</code> and <code>exclude</code> calls.
 The <code>application</code> closure uses Ant-style path matching for include/exclude parameters.
 The <code>dependencies</code> section uses <code>group:artifact[:version]</code> patterns.
 It also provides <code>includeProjectDependencies()</code> and <code>excludeProjectDependencies()</code> methods that can be used to include or exclude project dependencies.</p>
 </div>
 <div class="paragraph">
-<p>If no <code>include</code> call is made, then all content (not claimed by an earlier closure) is considered.</p>
+<p translation-origin="off">If no <code>include</code> call is made, then all content (not claimed by an earlier closure) is considered.</p>
 </div>
 <div class="paragraph">
-<p>If no <code>exclude</code> call is made, then no exclusions are applied.</p>
+<p translation-origin="off">If no <code>exclude</code> call is made, then no exclusions are applied.</p>
 </div>
 <div class="paragraph">
-<p>Looking at the <code>dependencies</code> closure in the example above, we can see that the first <code>intoLayer</code> will claim all project dependencies for the <code>application</code> layer.
+<p translation-origin="off">Looking at the <code>dependencies</code> closure in the example above, we can see that the first <code>intoLayer</code> will claim all project dependencies for the <code>application</code> layer.
 The next <code>intoLayer</code> will claim all SNAPSHOT dependencies for the <code>snapshot-dependencies</code> layer.
 The third and final <code>intoLayer</code> will claim anything left (in this case, any dependency that is not a project dependency or a SNAPSHOT) for the <code>dependencies</code> layer.</p>
 </div>
 <div class="paragraph">
-<p>The <code>application</code> closure has similar rules.
+<p translation-origin="off">The <code>application</code> closure has similar rules.
 First claiming <code>org/springframework/boot/loader/**</code> content for the <code>spring-boot-loader</code> layer.
 Then claiming any remaining classes and resources for the <code>application</code> layer.</p>
 </div>
 <div class="admonitionblock note">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-The order that <code>intoLayer</code> closures are added is often different from the order that the layers are written.
-For this reason the <code>layerOrder</code> method must always be called and <em>must</em> cover all layers referenced by the <code>intoLayer</code> calls.
+<p translation-origin="off">The order that <code>intoLayer</code> closures are added is often different from the order that the layers are written.
+For this reason the <code>layerOrder</code> method must always be called and <em>must</em> cover all layers referenced by the <code>intoLayer</code> calls.</p>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 </div>
 </div>
@@ -1073,37 +1162,37 @@ For this reason the <code>layerOrder</code> method must always be called and <em
 </div>
 </div>
 <div class="sect1">
-<h2 id="build-image"><a class="anchor" href="index.html#build-image"></a>5. Packaging OCI Images</h2>
+<h2 id="build-image" translation-origin="off"><a class="anchor" href="index.html#build-image"></a>5. Packaging OCI Images</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The plugin can create an <a href="https://github.com/opencontainers/image-spec">OCI image</a> from a jar or war file using <a href="https://buildpacks.io">Cloud Native Buildpacks</a> (CNB).
+<p translation-origin="off">The plugin can create an <a href="https://github.com/opencontainers/image-spec">OCI image</a> from a jar or war file using <a href="https://buildpacks.io">Cloud Native Buildpacks</a> (CNB).
 Images can be built using the <code>bootBuildImage</code> task.</p>
 </div>
 <div class="admonitionblock note">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-For security reasons, images build and run as non-root users.
-See the <a href="https://buildpacks.io/docs/reference/spec/platform-api/#users">CNB specification</a> for more details.
+<p translation-origin="off">For security reasons, images build and run as non-root users.
+See the <a href="https://buildpacks.io/docs/reference/spec/platform-api/#users">CNB specification</a> for more details.</p>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 <div class="paragraph">
-<p>The task is automatically created when the <code>java</code> or <code>war</code> plugin is applied and is an instance of <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/bundling/BootBuildImage.html"><code>BootBuildImage</code></a>.</p>
+<p translation-origin="off">The task is automatically created when the <code>java</code> or <code>war</code> plugin is applied and is an instance of <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/bundling/BootBuildImage.html"><code>BootBuildImage</code></a>.</p>
 </div>
 <div class="sect2">
-<h3 id="build-image.docker-daemon"><a class="anchor" href="index.html#build-image.docker-daemon"></a>5.1. Docker Daemon</h3>
+<h3 id="build-image.docker-daemon" translation-origin="off"><a class="anchor" href="index.html#build-image.docker-daemon"></a>5.1. Docker Daemon</h3>
 <div class="paragraph">
-<p>The <code>bootBuildImage</code> task requires access to a Docker daemon.
+<p translation-origin="off">The <code>bootBuildImage</code> task requires access to a Docker daemon.
 By default, it will communicate with a Docker daemon over a local connection.
 This works with <a href="https://docs.docker.com/install/">Docker Engine</a> on all supported platforms without configuration.</p>
 </div>
 <div class="paragraph">
-<p>Environment variables can be set to configure the <code>bootBuildImage</code> task to use the <a href="https://minikube.sigs.k8s.io/docs/tasks/docker_daemon/">Docker daemon provided by minikube</a>.
+<p translation-origin="off">Environment variables can be set to configure the <code>bootBuildImage</code> task to use the <a href="https://minikube.sigs.k8s.io/docs/tasks/docker_daemon/">Docker daemon provided by minikube</a>.
 The following table shows the environment variables and their values:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
@@ -1113,30 +1202,34 @@ The following table shows the environment variables and their values:</p>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Environment variable</th>
-<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Environment variable</p>
+</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Description</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DOCKER_HOST</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">URL containing the host and port for the Docker daemon - for example <code>tcp://192.168.99.100:2376</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">DOCKER_HOST</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">URL containing the host and port for the Docker daemon - for example <code>tcp://192.168.99.100:2376</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DOCKER_TLS_VERIFY</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Enable secure HTTPS protocol when set to <code>1</code> (optional)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">DOCKER_TLS_VERIFY</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Enable secure HTTPS protocol when set to <code>1</code> (optional)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DOCKER_CERT_PATH</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Path to certificate and key files for HTTPS (required if <code>DOCKER_TLS_VERIFY=1</code>, ignored otherwise)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">DOCKER_CERT_PATH</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Path to certificate and key files for HTTPS (required if <code>DOCKER_TLS_VERIFY=1</code>, ignored otherwise)</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>On Linux and macOS, these environment variables can be set using the command <code>eval $(minikube docker-env)</code> after minikube has been started.</p>
+<p translation-origin="off">On Linux and macOS, these environment variables can be set using the command <code>eval $(minikube docker-env)</code> after minikube has been started.</p>
 </div>
 <div class="paragraph">
-<p>Docker daemon connection information can also be provided using <code>docker</code> properties in the plugin configuration.
+<p translation-origin="off">Docker daemon connection information can also be provided using <code>docker</code> properties in the plugin configuration.
 The following table summarizes the available properties:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
@@ -1146,43 +1239,47 @@ The following table summarizes the available properties:</p>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Property</th>
-<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Property</p>
+</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Description</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>host</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">URL containing the host and port for the Docker daemon - for example <code>tcp://192.168.99.100:2376</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>host</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">URL containing the host and port for the Docker daemon - for example <code>tcp://192.168.99.100:2376</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tlsVerify</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Enable secure HTTPS protocol when set to <code>true</code> (optional)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>tlsVerify</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Enable secure HTTPS protocol when set to <code>true</code> (optional)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>certPath</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Path to certificate and key files for HTTPS (required if <code>tlsVerify</code> is <code>true</code>, ignored otherwise)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>certPath</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Path to certificate and key files for HTTPS (required if <code>tlsVerify</code> is <code>true</code>, ignored otherwise)</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>For more details, see also <a href="index.html#build-image.examples.docker">examples</a>.</p>
+<p translation-origin="off">For more details, see also <a href="index.html#build-image.examples.docker">examples</a>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="build-image.docker-registry"><a class="anchor" href="index.html#build-image.docker-registry"></a>5.2. Docker Registry</h3>
+<h3 id="build-image.docker-registry" translation-origin="off"><a class="anchor" href="index.html#build-image.docker-registry"></a>5.2. Docker Registry</h3>
 <div class="paragraph">
-<p>If the Docker images specified by the <code>builder</code> or <code>runImage</code> properties are stored in a private Docker image registry that requires authentication, the authentication credentials can be provided using <code>docker.builderRegistry</code> properties.</p>
+<p translation-origin="off">If the Docker images specified by the <code>builder</code> or <code>runImage</code> properties are stored in a private Docker image registry that requires authentication, the authentication credentials can be provided using <code>docker.builderRegistry</code> properties.</p>
 </div>
 <div class="paragraph">
-<p>If the generated Docker image is to be published to a Docker image registry, the authentication credentials can be provided using <code>docker.publishRegistry</code> properties.</p>
+<p translation-origin="off">If the generated Docker image is to be published to a Docker image registry, the authentication credentials can be provided using <code>docker.publishRegistry</code> properties.</p>
 </div>
 <div class="paragraph">
-<p>Properties are provided for user authentication or identity token authentication.
+<p translation-origin="off">Properties are provided for user authentication or identity token authentication.
 Consult the documentation for the Docker registry being used to store images for further information on supported authentication methods.</p>
 </div>
 <div class="paragraph">
-<p>The following table summarizes the available properties for <code>docker.builderRegistry</code> and <code>docker.publishRegistry</code>:</p>
+<p translation-origin="off">The following table summarizes the available properties for <code>docker.builderRegistry</code> and <code>docker.publishRegistry</code>:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1191,47 +1288,51 @@ Consult the documentation for the Docker registry being used to store images for
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Property</th>
-<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Property</p>
+</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Description</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>username</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Username for the Docker image registry user. Required for user authentication.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>username</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Username for the Docker image registry user. Required for user authentication.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>password</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Password for the Docker image registry user. Required for user authentication.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>password</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Password for the Docker image registry user. Required for user authentication.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>url</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Address of the Docker image registry. Optional for user authentication.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Address of the Docker image registry. Optional for user authentication.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>email</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">E-mail address for the Docker image registry user. Optional for user authentication.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>email</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">E-mail address for the Docker image registry user. Optional for user authentication.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>token</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Identity token for the Docker image registry user. Required for token authentication.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>token</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Identity token for the Docker image registry user. Required for token authentication.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>For more details, see also <a href="index.html#build-image.examples.docker">examples</a>.</p>
+<p translation-origin="off">For more details, see also <a href="index.html#build-image.examples.docker">examples</a>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="build-image.customization"><a class="anchor" href="index.html#build-image.customization"></a>5.3. Image Customizations</h3>
+<h3 id="build-image.customization" translation-origin="off"><a class="anchor" href="index.html#build-image.customization"></a>5.3. Image Customizations</h3>
 <div class="paragraph">
-<p>The plugin invokes a <a href="https://buildpacks.io/docs/concepts/components/builder/">builder</a> to orchestrate the generation of an image.
+<p translation-origin="off">The plugin invokes a <a href="https://buildpacks.io/docs/concepts/components/builder/">builder</a> to orchestrate the generation of an image.
 The builder includes multiple <a href="https://buildpacks.io/docs/concepts/components/buildpack">buildpacks</a> that can inspect the application to influence the generated image.
 By default, the plugin chooses a builder image.
 The name of the generated image is deduced from project properties.</p>
 </div>
 <div class="paragraph">
-<p>Task properties can be used to configure how the builder should operate on the project.
+<p translation-origin="off">Task properties can be used to configure how the builder should operate on the project.
 The following table summarizes the available properties and their default values:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
@@ -1243,172 +1344,180 @@ The following table summarizes the available properties and their default values
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Property</th>
-<th class="tableblock halign-left valign-top">Command-line option</th>
-<th class="tableblock halign-left valign-top">Description</th>
-<th class="tableblock halign-left valign-top">Default value</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Property</p>
+</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Command-line option</p>
+</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Description</p>
+</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Default value</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>builder</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--builder</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the Builder image to use.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>paketobuildpacks/builder:base</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>builder</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>--builder</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Name of the Builder image to use.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>paketobuildpacks/builder:base</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>runImage</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--runImage</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the run image to use.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No default value, indicating the run image specified in Builder metadata should be used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>runImage</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>--runImage</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Name of the run image to use.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">No default value, indicating the run image specified in Builder metadata should be used.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>imageName</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--imageName</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/buildpack/platform/docker/type/ImageReference.html#of-java.lang.String-">Image name</a> for the generated image.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>docker.io/library/${project.name}:${project.version}</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>imageName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>--imageName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/buildpack/platform/docker/type/ImageReference.html#of-java.lang.String-">Image name</a> for the generated image.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>docker.io/library/${project.name}:${project.version}</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>pullPolicy</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--pullPolicy</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/buildpack/platform/build/PullPolicy.html">Policy</a> used to determine when to pull the builder and run images from the registry.
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>pullPolicy</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>--pullPolicy</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/buildpack/platform/build/PullPolicy.html">Policy</a> used to determine when to pull the builder and run images from the registry.
 Acceptable values are <code>ALWAYS</code>, <code>NEVER</code>, and <code>IF_NOT_PRESENT</code>.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ALWAYS</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>ALWAYS</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>environment</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>environment</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Environment variables that should be passed to the builder.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Environment variables that should be passed to the builder.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>buildpacks</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>buildpacks</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Buildpacks that the builder should use when building the image.
+<p translation-origin="off">Buildpacks that the builder should use when building the image.
 Only the specified buildpacks will be used, overriding the default buildpacks included in the builder.
 Buildpack references must be in one of the following forms:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Buildpack in the builder - <code>[urn:cnb:builder:]&lt;buildpack ID&gt;[@&lt;version&gt;]</code></p>
+<p translation-origin="off">Buildpack in the builder - <code>[urn:cnb:builder:]&lt;buildpack ID&gt;[@&lt;version&gt;]</code></p>
 </li>
 <li>
-<p>Buildpack in a directory on the file system - <code>[file://]&lt;path&gt;</code></p>
+<p translation-origin="off">Buildpack in a directory on the file system - <code>[file://]&lt;path&gt;</code></p>
 </li>
 <li>
-<p>Buildpack in a gzipped tar (.tgz) file on the file system - <code>[file://]&lt;path&gt;/&lt;file name&gt;</code></p>
+<p translation-origin="off">Buildpack in a gzipped tar (.tgz) file on the file system - <code>[file://]&lt;path&gt;/&lt;file name&gt;</code></p>
 </li>
 <li>
-<p>Buildpack in an OCI image - <code>[docker://]&lt;host&gt;/&lt;repo&gt;[:&lt;tag&gt;][@&lt;digest&gt;]</code></p>
+<p translation-origin="off">Buildpack in an OCI image - <code>[docker://]&lt;host&gt;/&lt;repo&gt;[:&lt;tag&gt;][@&lt;digest&gt;]</code></p>
 </li>
 </ul>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">None, indicating the builder should use the buildpacks included in it.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">None, indicating the builder should use the buildpacks included in it.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>bindings</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>bindings</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="https://docs.docker.com/storage/bind-mounts/">Volume bind mounts</a> that should be mounted to the builder container when building the image.
+<p translation-origin="off"><a href="https://docs.docker.com/storage/bind-mounts/">Volume bind mounts</a> that should be mounted to the builder container when building the image.
 The bindings will be passed unparsed and unvalidated to Docker when creating the builder container.
 Bindings must be in one of the following forms:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>&lt;host source path&gt;:&lt;container destination path&gt;[:&lt;options&gt;]</code></p>
+<p translation-origin="off"><code>&lt;host source path&gt;:&lt;container destination path&gt;[:&lt;options&gt;]</code></p>
 </li>
 <li>
-<p><code>&lt;host volume name&gt;:&lt;container destination path&gt;[:&lt;options&gt;]</code></p>
+<p translation-origin="off"><code>&lt;host volume name&gt;:&lt;container destination path&gt;[:&lt;options&gt;]</code></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Where <code>&lt;options&gt;</code> can contain:</p>
+<p translation-origin="off">Where <code>&lt;options&gt;</code> can contain:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>ro</code> to mount the volume as read-only in the container</p>
+<p translation-origin="off"><code>ro</code> to mount the volume as read-only in the container</p>
 </li>
 <li>
-<p><code>rw</code> to mount the volume as readable and writable in the container</p>
+<p translation-origin="off"><code>rw</code> to mount the volume as readable and writable in the container</p>
 </li>
 <li>
-<p><code>volume-opt=key=value</code> to specify key-value pairs consisting of an option name and its value</p>
+<p translation-origin="off"><code>volume-opt=key=value</code> to specify key-value pairs consisting of an option name and its value</p>
 </li>
 </ul>
 </div></div></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>network</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--network</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="https://docs.docker.com/network/#network-drivers">network driver</a> the builder container will be configured to use.
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>network</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>--network</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">The <a href="https://docs.docker.com/network/#network-drivers">network driver</a> the builder container will be configured to use.
 The value supplied will be passed unvalidated to Docker when creating the builder container.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cleanCache</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--cleanCache</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Whether to clean the cache before building.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>cleanCache</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>--cleanCache</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Whether to clean the cache before building.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>false</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>verboseLogging</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>verboseLogging</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Enables verbose logging of builder operations.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Enables verbose logging of builder operations.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>false</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>publish</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--publishImage</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Whether to publish the generated image to a Docker registry.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>publish</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>--publishImage</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Whether to publish the generated image to a Docker registry.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>false</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tags</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>tags</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A list of one or more additional tags to apply to the generated image.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">A list of one or more additional tags to apply to the generated image.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>buildCache</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>buildCache</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A cache containing layers created by buildpacks and used by the image building process.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A named volume in the Docker daemon, with a name derived from the image name.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">A cache containing layers created by buildpacks and used by the image building process.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">A named volume in the Docker daemon, with a name derived from the image name.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>launchCache</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>launchCache</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A cache containing layers created by buildpacks and used by the image launching process.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A named volume in the Docker daemon, with a name derived from the image name.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">A cache containing layers created by buildpacks and used by the image launching process.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">A named volume in the Docker daemon, with a name derived from the image name.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="admonitionblock note">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-The plugin detects the target Java compatibility of the project using the JavaPlugin&#8217;s <code>targetCompatibility</code> property.
+<p translation-origin="off">The plugin detects the target Java compatibility of the project using the JavaPlugin’s <code>targetCompatibility</code> property.
 When using the default Paketo builder and buildpacks, the plugin instructs the buildpacks to install the same Java version.
-You can override this behaviour as shown in the <a href="index.html#build-image.examples.builder-configuration">builder configuration</a> examples.
+You can override this behaviour as shown in the <a href="index.html#build-image.examples.builder-configuration">builder configuration</a> examples.</p>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 </div>
 <div class="sect2">
-<h3 id="build-image.examples"><a class="anchor" href="index.html#build-image.examples"></a>5.4. Examples</h3>
+<h3 id="build-image.examples" translation-origin="off"><a class="anchor" href="index.html#build-image.examples"></a>5.4. Examples</h3>
 <div class="sect3">
-<h4 id="build-image.examples.custom-image-builder"><a class="anchor" href="index.html#build-image.examples.custom-image-builder"></a>5.4.1. Custom Image Builder and Run Image</h4>
+<h4 id="build-image.examples.custom-image-builder" translation-origin="off"><a class="anchor" href="index.html#build-image.examples.custom-image-builder"></a>5.4.1. Custom Image Builder and Run Image</h4>
 <div class="paragraph">
-<p>If you need to customize the builder used to create the image or the run image used to launch the built image, configure the task as shown in the following example:</p>
+<p translation-origin="off">If you need to customize the builder used to create the image or the run image used to launch the built image, configure the task as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -1429,10 +1538,10 @@ You can override this behaviour as shown in the <a href="index.html#build-image.
 </div>
 </div>
 <div class="paragraph">
-<p>This configuration will use a builder image with the name <code>mine/java-cnb-builder</code> and the tag <code>latest</code>, and the run image named <code>mine/java-cnb-run</code> and the tag <code>latest</code>.</p>
+<p translation-origin="off">This configuration will use a builder image with the name <code>mine/java-cnb-builder</code> and the tag <code>latest</code>, and the run image named <code>mine/java-cnb-run</code> and the tag <code>latest</code>.</p>
 </div>
 <div class="paragraph">
-<p>The builder and run image can be specified on the command line as well, as shown in this example:</p>
+<p translation-origin="off">The builder and run image can be specified on the command line as well, as shown in this example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1441,12 +1550,12 @@ You can override this behaviour as shown in the <a href="index.html#build-image.
 </div>
 </div>
 <div class="sect3">
-<h4 id="build-image.examples.builder-configuration"><a class="anchor" href="index.html#build-image.examples.builder-configuration"></a>5.4.2. Builder Configuration</h4>
+<h4 id="build-image.examples.builder-configuration" translation-origin="off"><a class="anchor" href="index.html#build-image.examples.builder-configuration"></a>5.4.2. Builder Configuration</h4>
 <div class="paragraph">
-<p>If the builder exposes configuration options, those can be set using the <code>environment</code> property.</p>
+<p translation-origin="off">If the builder exposes configuration options, those can be set using the <code>environment</code> property.</p>
 </div>
 <div class="paragraph">
-<p>The following is an example of <a href="https://paketo.io/docs/buildpacks/language-family-buildpacks/java/#configuring-the-jvm-version">configuring the JVM version</a> used by the Paketo Java buildpacks at build time:</p>
+<p translation-origin="off">The following is an example of <a href="https://paketo.io/docs/buildpacks/language-family-buildpacks/java/#configuring-the-jvm-version">configuring the JVM version</a> used by the Paketo Java buildpacks at build time:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -1465,7 +1574,7 @@ You can override this behaviour as shown in the <a href="index.html#build-image.
 </div>
 </div>
 <div class="paragraph">
-<p>If there is a network proxy between the Docker daemon the builder runs in and network locations that buildpacks download artifacts from, you will need to configure the builder to use the proxy.
+<p translation-origin="off">If there is a network proxy between the Docker daemon the builder runs in and network locations that buildpacks download artifacts from, you will need to configure the builder to use the proxy.
 When using the Paketo builder, this can be accomplished by setting the <code>HTTPS_PROXY</code> and/or <code>HTTP_PROXY</code> environment variables as show in the following example:</p>
 </div>
 <div class="listingblock primary">
@@ -1490,13 +1599,13 @@ When using the Paketo builder, this can be accomplished by setting the <code>HTT
 </div>
 </div>
 <div class="sect3">
-<h4 id="build-image.examples.runtime-jvm-configuration"><a class="anchor" href="index.html#build-image.examples.runtime-jvm-configuration"></a>5.4.3. Runtime JVM Configuration</h4>
+<h4 id="build-image.examples.runtime-jvm-configuration" translation-origin="off"><a class="anchor" href="index.html#build-image.examples.runtime-jvm-configuration"></a>5.4.3. Runtime JVM Configuration</h4>
 <div class="paragraph">
-<p>Paketo Java buildpacks <a href="https://paketo.io/docs/buildpacks/language-family-buildpacks/java/#runtime-jvm-configuration">configure the JVM runtime environment</a> by setting the <code>JAVA_TOOL_OPTIONS</code> environment variable.
+<p translation-origin="off">Paketo Java buildpacks <a href="https://paketo.io/docs/buildpacks/language-family-buildpacks/java/#runtime-jvm-configuration">configure the JVM runtime environment</a> by setting the <code>JAVA_TOOL_OPTIONS</code> environment variable.
 The buildpack-provided <code>JAVA_TOOL_OPTIONS</code> value can be modified to customize JVM runtime behavior when the application image is launched in a container.</p>
 </div>
 <div class="paragraph">
-<p>Environment variable modifications that should be stored in the image and applied to every deployment can be set as described in the <a href="https://paketo.io/docs/buildpacks/configuration/#environment-variables">Paketo documentation</a> and shown in the following example:</p>
+<p translation-origin="off">Environment variable modifications that should be stored in the image and applied to every deployment can be set as described in the <a href="https://paketo.io/docs/buildpacks/configuration/#environment-variables">Paketo documentation</a> and shown in the following example:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -1522,9 +1631,9 @@ The buildpack-provided <code>JAVA_TOOL_OPTIONS</code> value can be modified to c
 </div>
 </div>
 <div class="sect3">
-<h4 id="build-image.examples.custom-image-name"><a class="anchor" href="index.html#build-image.examples.custom-image-name"></a>5.4.4. Custom Image Name</h4>
+<h4 id="build-image.examples.custom-image-name" translation-origin="off"><a class="anchor" href="index.html#build-image.examples.custom-image-name"></a>5.4.4. Custom Image Name</h4>
 <div class="paragraph">
-<p>By default, the image name is inferred from the <code>name</code> and the <code>version</code> of the project, something like <code>docker.io/library/${project.name}:${project.version}</code>.
+<p translation-origin="off">By default, the image name is inferred from the <code>name</code> and the <code>version</code> of the project, something like <code>docker.io/library/${project.name}:${project.version}</code>.
 You can take control over the name by setting task properties, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
@@ -1544,11 +1653,11 @@ You can take control over the name by setting task properties, as shown in the f
 </div>
 </div>
 <div class="paragraph">
-<p>Note that this configuration does not provide an explicit tag so <code>latest</code> is used.
+<p translation-origin="off">Note that this configuration does not provide an explicit tag so <code>latest</code> is used.
 It is possible to specify a tag as well, either using <code>${project.version}</code>, any property available in the build or a hardcoded version.</p>
 </div>
 <div class="paragraph">
-<p>The image name can be specified on the command line as well, as shown in this example:</p>
+<p translation-origin="off">The image name can be specified on the command line as well, as shown in this example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1557,14 +1666,14 @@ It is possible to specify a tag as well, either using <code>${project.version}</
 </div>
 </div>
 <div class="sect3">
-<h4 id="build-image.examples.buildpacks"><a class="anchor" href="index.html#build-image.examples.buildpacks"></a>5.4.5. Buildpacks</h4>
+<h4 id="build-image.examples.buildpacks" translation-origin="off"><a class="anchor" href="index.html#build-image.examples.buildpacks"></a>5.4.5. Buildpacks</h4>
 <div class="paragraph">
-<p>By default, the builder will use buildpacks included in the builder image and apply them in a pre-defined order.
+<p translation-origin="off">By default, the builder will use buildpacks included in the builder image and apply them in a pre-defined order.
 An alternative set of buildpacks can be provided to apply buildpacks that are not included in the builder, or to change the order of included buildpacks.
 When one or more buildpacks are provided, only the specified buildpacks will be applied.</p>
 </div>
 <div class="paragraph">
-<p>The following example instructs the builder to use a custom buildpack packaged in a <code>.tgz</code> file, followed by a buildpack included in the builder.</p>
+<p translation-origin="off">The following example instructs the builder to use a custom buildpack packaged in a <code>.tgz</code> file, followed by a buildpack included in the builder.</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -1583,83 +1692,83 @@ When one or more buildpacks are provided, only the specified buildpacks will be 
 </div>
 </div>
 <div class="paragraph">
-<p>Buildpacks can be specified in any of the forms shown below.</p>
+<p translation-origin="off">Buildpacks can be specified in any of the forms shown below.</p>
 </div>
 <div class="paragraph">
-<p>A buildpack located in a CNB Builder (version may be omitted if there is only one buildpack in the builder matching the <code>buildpack-id</code>):</p>
+<p translation-origin="off">A buildpack located in a CNB Builder (version may be omitted if there is only one buildpack in the builder matching the <code>buildpack-id</code>):</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>urn:cnb:builder:buildpack-id</code></p>
+<p translation-origin="off"><code>urn:cnb:builder:buildpack-id</code></p>
 </li>
 <li>
-<p><code>urn:cnb:builder:<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="187a6d71747c68797b7335717c582836283629">[email&#160;protected]</a></code></p>
+<p translation-origin="off"><code>urn:cnb:builder:<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="187a6d71747c68797b7335717c582836283629">[email&nbsp;protected]</a></code></p>
 </li>
 <li>
-<p><code>buildpack-id</code></p>
+<p translation-origin="off"><code>buildpack-id</code></p>
 </li>
 <li>
-<p><code><a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e486918d88809485878fc98d80a4d4cad4cad5">[email&#160;protected]</a></code></p>
+<p translation-origin="off"><code><a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e486918d88809485878fc98d80a4d4cad4cad5">[email&nbsp;protected]</a></code></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>A path to a directory containing buildpack content (not supported on Windows):</p>
+<p translation-origin="off">A path to a directory containing buildpack content (not supported on Windows):</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>file:///path/to/buildpack/</code></p>
+<p translation-origin="off"><code>file:///path/to/buildpack/</code></p>
 </li>
 <li>
-<p><code>/path/to/buildpack/</code></p>
+<p translation-origin="off"><code>/path/to/buildpack/</code></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>A path to a gzipped tar file containing buildpack content:</p>
+<p translation-origin="off">A path to a gzipped tar file containing buildpack content:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>file:///path/to/buildpack.tgz</code></p>
+<p translation-origin="off"><code>file:///path/to/buildpack.tgz</code></p>
 </li>
 <li>
-<p><code>/path/to/buildpack.tgz</code></p>
+<p translation-origin="off"><code>/path/to/buildpack.tgz</code></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>An OCI image containing a <a href="https://buildpacks.io/docs/buildpack-author-guide/package-a-buildpack/">packaged buildpack</a>:</p>
+<p translation-origin="off">An OCI image containing a <a href="https://buildpacks.io/docs/buildpack-author-guide/package-a-buildpack/">packaged buildpack</a>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>docker://example/buildpack</code></p>
+<p translation-origin="off"><code>docker://example/buildpack</code></p>
 </li>
 <li>
-<p><code>docker:///example/buildpack:latest</code></p>
+<p translation-origin="off"><code>docker:///example/buildpack:latest</code></p>
 </li>
 <li>
-<p><code>docker:///example/<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b8dacdd1d4dcc8d9dbd3f8cbd0d98a8d8e">[email&#160;protected]</a>:45b23dee08&#8230;&#8203;</code></p>
+<p translation-origin="off"><code>docker:///example/<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b8dacdd1d4dcc8d9dbd3f8cbd0d98a8d8e">[email&nbsp;protected]</a>:45b23dee08…​</code></p>
 </li>
 <li>
-<p><code>example/buildpack</code></p>
+<p translation-origin="off"><code>example/buildpack</code></p>
 </li>
 <li>
-<p><code>example/buildpack:latest</code></p>
+<p translation-origin="off"><code>example/buildpack:latest</code></p>
 </li>
 <li>
-<p><code>example/<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ddbfa8b4b1b9adbcbeb69daeb5bcefe8eb">[email&#160;protected]</a>:45b23dee08&#8230;&#8203;</code></p>
+<p translation-origin="off"><code>example/<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ddbfa8b4b1b9adbcbeb69daeb5bcefe8eb">[email&nbsp;protected]</a>:45b23dee08…​</code></p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect3">
-<h4 id="build-image.examples.publish"><a class="anchor" href="index.html#build-image.examples.publish"></a>5.4.6. Image Publishing</h4>
+<h4 id="build-image.examples.publish" translation-origin="off"><a class="anchor" href="index.html#build-image.examples.publish"></a>5.4.6. Image Publishing</h4>
 <div class="paragraph">
-<p>The generated image can be published to a Docker registry by enabling a <code>publish</code> option and configuring authentication for the registry using <code>docker.publishRegistry</code> properties.</p>
+<p translation-origin="off">The generated image can be published to a Docker registry by enabling a <code>publish</code> option and configuring authentication for the registry using <code>docker.publishRegistry</code> properties.</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -1672,7 +1781,7 @@ When one or more buildpacks are provided, only the specified buildpacks will be 
 			username = "user"
 			password = "secret"
 			url = "https://docker.example.com/v1/"
-			email = "<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b2c7c1d7c0f2d7cad3dfc2ded79cd1dddf">[email&#160;protected]</a>"
+			email = "<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b2c7c1d7c0f2d7cad3dfc2ded79cd1dddf">[email&nbsp;protected]</a>"
 		}
 	}
 }</code></pre>
@@ -1689,14 +1798,14 @@ When one or more buildpacks are provided, only the specified buildpacks will be 
 			username = "user"
 			password = "secret"
 			url = "https://docker.example.com/v1/"
-			email = "<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="542127312614312c35392438317a373b39">[email&#160;protected]</a>"
+			email = "<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="542127312614312c35392438317a373b39">[email&nbsp;protected]</a>"
 		}
 	}
 }</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>The publish option can be specified on the command line as well, as shown in this example:</p>
+<p translation-origin="off">The publish option can be specified on the command line as well, as shown in this example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1705,14 +1814,14 @@ When one or more buildpacks are provided, only the specified buildpacks will be 
 </div>
 </div>
 <div class="sect3">
-<h4 id="build-image.examples.caches"><a class="anchor" href="index.html#build-image.examples.caches"></a>5.4.7. Builder Cache Configuration</h4>
+<h4 id="build-image.examples.caches" translation-origin="off"><a class="anchor" href="index.html#build-image.examples.caches"></a>5.4.7. Builder Cache Configuration</h4>
 <div class="paragraph">
-<p>The CNB builder caches layers that are used when building and launching an image.
+<p translation-origin="off">The CNB builder caches layers that are used when building and launching an image.
 By default, these caches are stored as named volumes in the Docker daemon with names that are derived from the full name of the target image.
 If the image name changes frequently, for example when the project version is used as a tag in the image name, then the caches can be invalidated frequently.</p>
 </div>
 <div class="paragraph">
-<p>The cache volumes can be configured to use alternative names to give more control over cache lifecycle as shown in the following example:</p>
+<p translation-origin="off">The cache volumes can be configured to use alternative names to give more control over cache lifecycle as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -1750,9 +1859,9 @@ If the image name changes frequently, for example when the project version is us
 </div>
 </div>
 <div class="sect3">
-<h4 id="build-image.examples.docker"><a class="anchor" href="index.html#build-image.examples.docker"></a>5.4.8. Docker Configuration</h4>
+<h4 id="build-image.examples.docker" translation-origin="off"><a class="anchor" href="index.html#build-image.examples.docker"></a>5.4.8. Docker Configuration</h4>
 <div class="paragraph">
-<p>If you need the plugin to communicate with the Docker daemon using a remote connection instead of the default local connection, the connection details can be provided using <code>docker</code> properties as shown in the following example:</p>
+<p translation-origin="off">If you need the plugin to communicate with the Docker daemon using a remote connection instead of the default local connection, the connection details can be provided using <code>docker</code> properties as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -1779,7 +1888,7 @@ If the image name changes frequently, for example when the project version is us
 </div>
 </div>
 <div class="paragraph">
-<p>If the builder or run image are stored in a private Docker registry that supports user authentication, authentication details can be provided using <code>docker.builderRegistry</code> properties as shown in the following example:</p>
+<p translation-origin="off">If the builder or run image are stored in a private Docker registry that supports user authentication, authentication details can be provided using <code>docker.builderRegistry</code> properties as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -1790,7 +1899,7 @@ If the image name changes frequently, for example when the project version is us
 			username = "user"
 			password = "secret"
 			url = "https://docker.example.com/v1/"
-			email = "<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="daafa9bfa89abfa2bbb7aab6bff4b9b5b7">[email&#160;protected]</a>"
+			email = "<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="daafa9bfa89abfa2bbb7aab6bff4b9b5b7">[email&nbsp;protected]</a>"
 		}
 	}
 }</code></pre>
@@ -1805,14 +1914,14 @@ If the image name changes frequently, for example when the project version is us
 			username = "user"
 			password = "secret"
 			url = "https://docker.example.com/v1/"
-			email = "<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0e7b7d6b7c4e6b766f637e626b206d6163">[email&#160;protected]</a>"
+			email = "<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0e7b7d6b7c4e6b766f637e626b206d6163">[email&nbsp;protected]</a>"
 		}
 	}
 }</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>If the builder or run image is stored in a private Docker registry that supports token authentication, the token value can be provided using <code>docker.builderRegistry</code> as shown in the following example:</p>
+<p translation-origin="off">If the builder or run image is stored in a private Docker registry that supports token authentication, the token value can be provided using <code>docker.builderRegistry</code> as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -1843,12 +1952,12 @@ If the image name changes frequently, for example when the project version is us
 </div>
 </div>
 <div class="sect1">
-<h2 id="publishing-your-application"><a class="anchor" href="index.html#publishing-your-application"></a>6. Publishing your Application</h2>
+<h2 id="publishing-your-application" translation-origin="off"><a class="anchor" href="index.html#publishing-your-application"></a>6. Publishing your Application</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="publishing-your-application.maven-publish"><a class="anchor" href="index.html#publishing-your-application.maven-publish"></a>6.1. Publishing with the Maven-publish Plugin</h3>
+<h3 id="publishing-your-application.maven-publish" translation-origin="off"><a class="anchor" href="index.html#publishing-your-application.maven-publish"></a>6.1. Publishing with the Maven-publish Plugin</h3>
 <div class="paragraph">
-<p>To publish your Spring Boot jar or war, add it to the publication using the <code>artifact</code> method on <code>MavenPublication</code>.
+<p translation-origin="off">To publish your Spring Boot jar or war, add it to the publication using the <code>artifact</code> method on <code>MavenPublication</code>.
 Pass the task that produces that artifact that you wish to publish to the <code>artifact</code> method.
 For example, to publish the artifact produced by the default <code>bootJar</code> task:</p>
 </div>
@@ -1888,22 +1997,22 @@ For example, to publish the artifact produced by the default <code>bootJar</code
 </div>
 </div>
 <div class="sect2">
-<h3 id="publishing-your-application.maven"><a class="anchor" href="index.html#publishing-your-application.maven"></a>6.2. Publishing with the Maven Plugin</h3>
+<h3 id="publishing-your-application.maven" translation-origin="off"><a class="anchor" href="index.html#publishing-your-application.maven"></a>6.2. Publishing with the Maven Plugin</h3>
 <div class="admonitionblock warning">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-Due to its deprecation in Gradle 6, this plugin&#8217;s support for publishing with Gradle&#8217;s <code>maven</code> plugin is deprecated and will be removed in a future release.
-Please use the <code>maven-publish</code> plugin instead.
+<p translation-origin="off">Due to its deprecation in Gradle 6, this plugin’s support for publishing with Gradle’s <code>maven</code> plugin is deprecated and will be removed in a future release.
+Please use the <code>maven-publish</code> plugin instead.</p>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 <div class="paragraph">
-<p>When the <a href="https://docs.gradle.org/current/userguide/maven_plugin.html"><code>maven</code> plugin</a> is applied, an <code>Upload</code> task for the <code>bootArchives</code> configuration named <code>uploadBootArchives</code> is automatically created.
+<p translation-origin="off">When the <a href="https://docs.gradle.org/current/userguide/maven_plugin.html"><code>maven</code> plugin</a> is applied, an <code>Upload</code> task for the <code>bootArchives</code> configuration named <code>uploadBootArchives</code> is automatically created.
 By default, the <code>bootArchives</code> configuration contains the archive produced by the <code>bootJar</code> or <code>bootWar</code> task.
 The <code>uploadBootArchives</code> task can be configured to publish the archive to a Maven repository:</p>
 </div>
@@ -1933,21 +2042,21 @@ The <code>uploadBootArchives</code> task can be configured to publish the archiv
 </div>
 </div>
 <div class="sect2">
-<h3 id="publishing-your-application.distribution"><a class="anchor" href="index.html#publishing-your-application.distribution"></a>6.3. Distributing with the Application Plugin</h3>
+<h3 id="publishing-your-application.distribution" translation-origin="off"><a class="anchor" href="index.html#publishing-your-application.distribution"></a>6.3. Distributing with the Application Plugin</h3>
 <div class="paragraph">
-<p>When the <a href="https://docs.gradle.org/current/userguide/application_plugin.html"><code>application</code> plugin</a> is applied a distribution named <code>boot</code> is created.
+<p translation-origin="off">When the <a href="https://docs.gradle.org/current/userguide/application_plugin.html"><code>application</code> plugin</a> is applied a distribution named <code>boot</code> is created.
 This distribution contains the archive produced by the <code>bootJar</code> or <code>bootWar</code> task and scripts to launch it on Unix-like platforms and Windows.
 Zip and tar distributions can be built by the <code>bootDistZip</code> and <code>bootDistTar</code> tasks respectively.
-To use the <code>application</code> plugin, its <code>mainClassName</code> property must be configured with the name of your application&#8217;s main class.</p>
+To use the <code>application</code> plugin, its <code>mainClassName</code> property must be configured with the name of your application’s main class.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="running-your-application"><a class="anchor" href="index.html#running-your-application"></a>7. Running your Application with Gradle</h2>
+<h2 id="running-your-application" translation-origin="off"><a class="anchor" href="index.html#running-your-application"></a>7. Running your Application with Gradle</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To run your application without first building an archive use the <code>bootRun</code> task:</p>
+<p translation-origin="off">To run your application without first building an archive use the <code>bootRun</code> task:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1955,15 +2064,15 @@ To use the <code>application</code> plugin, its <code>mainClassName</code> prope
 </div>
 </div>
 <div class="paragraph">
-<p>The <code>bootRun</code> task is an instance of <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/run/BootRun.html"><code>BootRun</code></a> which is a <code>JavaExec</code> subclass.
+<p translation-origin="off">The <code>bootRun</code> task is an instance of <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/run/BootRun.html"><code>BootRun</code></a> which is a <code>JavaExec</code> subclass.
 As such, all of the <a href="https://docs.gradle.org/current/dsl/org.gradle.api.tasks.JavaExec.html">usual configuration options</a> for executing a Java process in Gradle are available to you.
 The task is automatically configured to use the runtime classpath of the main source set.</p>
 </div>
 <div class="paragraph">
-<p>By default, the main class will be configured automatically by looking for a class with a <code>public static void main(String[])</code> method in directories on the task&#8217;s classpath.</p>
+<p translation-origin="off">By default, the main class will be configured automatically by looking for a class with a <code>public static void main(String[])</code> method in directories on the task’s classpath.</p>
 </div>
 <div class="paragraph">
-<p>The main class can also be configured explicitly using the task&#8217;s <code>main</code> property:</p>
+<p translation-origin="off">The main class can also be configured explicitly using the task’s <code>main</code> property:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -1982,7 +2091,7 @@ The task is automatically configured to use the runtime classpath of the main so
 </div>
 </div>
 <div class="paragraph">
-<p>Alternatively, the main class name can be configured project-wide using the <code>mainClass</code> property of the Spring Boot DSL:</p>
+<p translation-origin="off">Alternatively, the main class name can be configured project-wide using the <code>mainClass</code> property of the Spring Boot DSL:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -2001,7 +2110,7 @@ The task is automatically configured to use the runtime classpath of the main so
 </div>
 </div>
 <div class="paragraph">
-<p>By default, <code>bootRun</code> will configure the JVM to optimize its launch for faster startup during development.
+<p translation-origin="off">By default, <code>bootRun</code> will configure the JVM to optimize its launch for faster startup during development.
 This behavior can be disabled by using the <code>optimizedLaunch</code> property, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
@@ -2021,7 +2130,7 @@ This behavior can be disabled by using the <code>optimizedLaunch</code> property
 </div>
 </div>
 <div class="paragraph">
-<p>If the <a href="https://docs.gradle.org/current/userguide/application_plugin.html"><code>application</code> plugin</a> has been applied, its <code>mainClass</code> property must be configured and can be used for the same purpose:</p>
+<p translation-origin="off">If the <a href="https://docs.gradle.org/current/userguide/application_plugin.html"><code>application</code> plugin</a> has been applied, its <code>mainClass</code> property must be configured and can be used for the same purpose:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -2040,9 +2149,9 @@ This behavior can be disabled by using the <code>optimizedLaunch</code> property
 </div>
 </div>
 <div class="sect2">
-<h3 id="running-your-application.passing-arguments"><a class="anchor" href="index.html#running-your-application.passing-arguments"></a>7.1. Passing Arguments to your Application</h3>
+<h3 id="running-your-application.passing-arguments" translation-origin="off"><a class="anchor" href="index.html#running-your-application.passing-arguments"></a>7.1. Passing Arguments to your Application</h3>
 <div class="paragraph">
-<p>Like all <code>JavaExec</code> tasks, arguments can be passed into <code>bootRun</code> from the command line using <code>--args='&lt;arguments&gt;'</code> when using Gradle 4.9 or later.
+<p translation-origin="off">Like all <code>JavaExec</code> tasks, arguments can be passed into <code>bootRun</code> from the command line using <code>--args='&lt;arguments&gt;'</code> when using Gradle 4.9 or later.
 For example, to run your application with a profile named <code>dev</code> active the following command can be used:</p>
 </div>
 <div class="listingblock">
@@ -2051,13 +2160,13 @@ For example, to run your application with a profile named <code>dev</code> activ
 </div>
 </div>
 <div class="paragraph">
-<p>See <a href="https://docs.gradle.org/current/javadoc/org/gradle/api/tasks/JavaExec.html#setArgsString-java.lang.String-">the javadoc for <code>JavaExec.setArgsString</code></a> for further details.</p>
+<p translation-origin="off">See <a href="https://docs.gradle.org/current/javadoc/org/gradle/api/tasks/JavaExec.html#setArgsString-java.lang.String-">the javadoc for <code>JavaExec.setArgsString</code></a> for further details.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="running-your-application.passing-system-properties"><a class="anchor" href="index.html#running-your-application.passing-system-properties"></a>7.2. Passing System properties to your application</h3>
+<h3 id="running-your-application.passing-system-properties" translation-origin="off"><a class="anchor" href="index.html#running-your-application.passing-system-properties"></a>7.2. Passing System properties to your application</h3>
 <div class="paragraph">
-<p>Since <code>bootRun</code> is a standard <code>JavaExec</code> task, system properties can be passed to the application&#8217;s JVM by specifying them in the build script.
+<p translation-origin="off">Since <code>bootRun</code> is a standard <code>JavaExec</code> task, system properties can be passed to the application’s JVM by specifying them in the build script.
 To make that value of a system property to be configurable set its value using a <a href="https://docs.gradle.org/current/dsl/org.gradle.api.Project.html#N14FE1">project property</a>.
 To allow a project property to be optional, reference it using <code>findProperty</code>.
 Doing so also allows a default value to be provided using the <code>?:</code> Elvis operator, as shown in the following example:</p>
@@ -2079,11 +2188,11 @@ Doing so also allows a default value to be provided using the <code>?:</code> El
 </div>
 </div>
 <div class="paragraph">
-<p>The preceding example sets that <code>com.example.property</code> system property to the value of the <code>example</code> project property.
+<p translation-origin="off">The preceding example sets that <code>com.example.property</code> system property to the value of the <code>example</code> project property.
 If the <code>example</code> project property has not been set, the value of the system property will be <code>default</code>.</p>
 </div>
 <div class="paragraph">
-<p>Gradle allows project properties to be set in a variety of ways, including on the command line using the <code>-P</code> flag, as shown in the following example:</p>
+<p translation-origin="off">Gradle allows project properties to be set in a variety of ways, including on the command line using the <code>-P</code> flag, as shown in the following example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2091,15 +2200,15 @@ If the <code>example</code> project property has not been set, the value of the 
 </div>
 </div>
 <div class="paragraph">
-<p>The preceding example sets the value of the <code>example</code> project property to <code>custom</code>.
+<p translation-origin="off">The preceding example sets the value of the <code>example</code> project property to <code>custom</code>.
 <code>bootRun</code> will then use this as the value of the <code>com.example.property</code> system property.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="running-your-application.reloading-resources"><a class="anchor" href="index.html#running-your-application.reloading-resources"></a>7.3. Reloading Resources</h3>
+<h3 id="running-your-application.reloading-resources" translation-origin="off"><a class="anchor" href="index.html#running-your-application.reloading-resources"></a>7.3. Reloading Resources</h3>
 <div class="paragraph">
-<p>If devtools has been added to your project it will automatically monitor your application for changes.
-Alternatively, you can configure <code>bootRun</code> such that your application&#8217;s static resources are loaded from their source location:</p>
+<p translation-origin="off">If devtools has been added to your project it will automatically monitor your application for changes.
+Alternatively, you can configure <code>bootRun</code> such that your application’s static resources are loaded from their source location:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -2118,20 +2227,20 @@ Alternatively, you can configure <code>bootRun</code> such that your application
 </div>
 </div>
 <div class="paragraph">
-<p>This makes them reloadable in the live application which can be helpful at development time.</p>
+<p translation-origin="off">This makes them reloadable in the live application which can be helpful at development time.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="integrating-with-actuator"><a class="anchor" href="index.html#integrating-with-actuator"></a>8. Integrating with Actuator</h2>
+<h2 id="integrating-with-actuator" translation-origin="off"><a class="anchor" href="index.html#integrating-with-actuator"></a>8. Integrating with Actuator</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="integrating-with-actuator.build-info"><a class="anchor" href="index.html#integrating-with-actuator.build-info"></a>8.1. Generating Build Information</h3>
+<h3 id="integrating-with-actuator.build-info" translation-origin="off"><a class="anchor" href="index.html#integrating-with-actuator.build-info"></a>8.1. Generating Build Information</h3>
 <div class="paragraph">
-<p>Spring Boot Actuator&#8217;s <code>info</code> endpoint automatically publishes information about your build in the presence of a <code>META-INF/build-info.properties</code> file.
+<p translation-origin="off">Spring Boot Actuator’s <code>info</code> endpoint automatically publishes information about your build in the presence of a <code>META-INF/build-info.properties</code> file.
 A <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/buildinfo/BuildInfo.html"><code>BuildInfo</code></a> task is provided to generate this file.
-The easiest way to use the task is via the plugin&#8217;s DSL:</p>
+The easiest way to use the task is via the plugin’s DSL:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -2150,11 +2259,11 @@ The easiest way to use the task is via the plugin&#8217;s DSL:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>This will configure a <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/buildinfo/BuildInfo.html"><code>BuildInfo</code></a> task named <code>bootBuildInfo</code> and, if it exists, make the Java plugin&#8217;s <code>classes</code> task depend upon it.
-The task&#8217;s destination directory will be <code>META-INF</code> in the output directory of the main source set&#8217;s resources (typically <code>build/resources/main</code>).</p>
+<p translation-origin="off">This will configure a <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/buildinfo/BuildInfo.html"><code>BuildInfo</code></a> task named <code>bootBuildInfo</code> and, if it exists, make the Java plugin’s <code>classes</code> task depend upon it.
+The task’s destination directory will be <code>META-INF</code> in the output directory of the main source set’s resources (typically <code>build/resources/main</code>).</p>
 </div>
 <div class="paragraph">
-<p>By default, the generated build information is derived from the project:</p>
+<p translation-origin="off">By default, the generated build information is derived from the project:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -2163,35 +2272,39 @@ The task&#8217;s destination directory will be <code>META-INF</code> in the outp
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Property</th>
-<th class="tableblock halign-left valign-top">Default value</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Property</p>
+</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Default value</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>build.artifact</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The base name of the <code>bootJar</code> or <code>bootWar</code> task</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>build.artifact</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">The base name of the <code>bootJar</code> or <code>bootWar</code> task</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>build.group</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The group of the project</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>build.group</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">The group of the project</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>build.name</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the project</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>build.name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">The name of the project</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>build.version</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The version of the project</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>build.version</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">The version of the project</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>build.time</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The time at which the project is being built</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>build.time</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">The time at which the project is being built</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>The properties can be customized using the DSL:</p>
+<p translation-origin="off">The properties can be customized using the DSL:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -2225,25 +2338,25 @@ The task&#8217;s destination directory will be <code>META-INF</code> in the outp
 </div>
 <div class="admonitionblock note">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-To omit any of the default properties from the generated build information, set its value to <code>null</code>.
+<p translation-origin="off">To omit any of the default properties from the generated build information, set its value to <code>null</code>.</p>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 <div class="paragraph">
-<p>The default value for <code>build.time</code> is the instant at which the project is being built.
+<p translation-origin="off">The default value for <code>build.time</code> is the instant at which the project is being built.
 A side-effect of this is that the task will never be up-to-date.
-As a result, builds will take longer as more tasks, including the project&#8217;s tests, will have to be executed.
-Another side-effect is that the task&#8217;s output will always change and, therefore, the build will not be truly repeatable.
+As a result, builds will take longer as more tasks, including the project’s tests, will have to be executed.
+Another side-effect is that the task’s output will always change and, therefore, the build will not be truly repeatable.
 If you value build performance or repeatability more highly than the accuracy of the <code>build.time</code> property, set <code>time</code> to <code>null</code> or a fixed value.</p>
 </div>
 <div class="paragraph">
-<p>Additional properties can also be added to the build information:</p>
+<p translation-origin="off">Additional properties can also be added to the build information:</p>
 </div>
 <div class="listingblock primary">
 <div class="title">Groovy</div>
@@ -2279,145 +2392,145 @@ If you value build performance or repeatability more highly than the accuracy of
 </div>
 </div>
 <div class="sect1">
-<h2 id="reacting-to-other-plugins"><a class="anchor" href="index.html#reacting-to-other-plugins"></a>9. Reacting to Other Plugins</h2>
+<h2 id="reacting-to-other-plugins" translation-origin="off"><a class="anchor" href="index.html#reacting-to-other-plugins"></a>9. Reacting to Other Plugins</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>When another plugin is applied the Spring Boot plugin reacts by making various changes to the project&#8217;s configuration.
+<p translation-origin="off">When another plugin is applied the Spring Boot plugin reacts by making various changes to the project’s configuration.
 This section describes those changes.</p>
 </div>
 <div class="sect2">
-<h3 id="reacting-to-other-plugins.java"><a class="anchor" href="index.html#reacting-to-other-plugins.java"></a>9.1. Reacting to the Java Plugin</h3>
+<h3 id="reacting-to-other-plugins.java" translation-origin="off"><a class="anchor" href="index.html#reacting-to-other-plugins.java"></a>9.1. Reacting to the Java Plugin</h3>
 <div class="paragraph">
-<p>When Gradle&#8217;s <a href="https://docs.gradle.org/current/userguide/java_plugin.html"><code>java</code> plugin</a> is applied to a project, the Spring Boot plugin:</p>
+<p translation-origin="off">When Gradle’s <a href="https://docs.gradle.org/current/userguide/java_plugin.html"><code>java</code> plugin</a> is applied to a project, the Spring Boot plugin:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Creates a <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/bundling/BootJar.html"><code>BootJar</code></a> task named <code>bootJar</code> that will create an executable, fat jar for the project.
+<p translation-origin="off">Creates a <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/bundling/BootJar.html"><code>BootJar</code></a> task named <code>bootJar</code> that will create an executable, fat jar for the project.
 The jar will contain everything on the runtime classpath of the main source set; classes are packaged in <code>BOOT-INF/classes</code> and jars are packaged in <code>BOOT-INF/lib</code></p>
 </li>
 <li>
-<p>Configures the <code>assemble</code> task to depend on the <code>bootJar</code> task.</p>
+<p translation-origin="off">Configures the <code>assemble</code> task to depend on the <code>bootJar</code> task.</p>
 </li>
 <li>
-<p>Configures the <code>jar</code> task to use <code>plain</code> as the convention for its archive classifier.</p>
+<p translation-origin="off">Configures the <code>jar</code> task to use <code>plain</code> as the convention for its archive classifier.</p>
 </li>
 <li>
-<p>Creates a <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/bundling/BootBuildImage.html"><code>BootBuildImage</code></a> task named <code>bootBuildImage</code> that will create a OCI image using a <a href="https://buildpacks.io">buildpack</a>.</p>
+<p translation-origin="off">Creates a <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/bundling/BootBuildImage.html"><code>BootBuildImage</code></a> task named <code>bootBuildImage</code> that will create a OCI image using a <a href="https://buildpacks.io">buildpack</a>.</p>
 </li>
 <li>
-<p>Creates a <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/run/BootRun.html"><code>BootRun</code></a> task named <code>bootRun</code> that can be used to run your application.</p>
+<p translation-origin="off">Creates a <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/run/BootRun.html"><code>BootRun</code></a> task named <code>bootRun</code> that can be used to run your application.</p>
 </li>
 <li>
-<p>Creates a configuration named <code>bootArchives</code> that contains the artifact produced by the <code>bootJar</code> task.</p>
+<p translation-origin="off">Creates a configuration named <code>bootArchives</code> that contains the artifact produced by the <code>bootJar</code> task.</p>
 </li>
 <li>
-<p>Creates a configuration named <code>developmentOnly</code> for dependencies that are only required at development time, such as Spring Boot&#8217;s Devtools, and should not be packaged in executable jars and wars.</p>
+<p translation-origin="off">Creates a configuration named <code>developmentOnly</code> for dependencies that are only required at development time, such as Spring Boot’s Devtools, and should not be packaged in executable jars and wars.</p>
 </li>
 <li>
-<p>Creates a configuration named <code>productionRuntimeClasspath</code>. It is equivalent to <code>runtimeClasspath</code> minus any dependencies that only appear in the <code>developmentOnly</code> configuration.</p>
+<p translation-origin="off">Creates a configuration named <code>productionRuntimeClasspath</code>. It is equivalent to <code>runtimeClasspath</code> minus any dependencies that only appear in the <code>developmentOnly</code> configuration.</p>
 </li>
 <li>
-<p>Configures any <code>JavaCompile</code> tasks with no configured encoding to use <code>UTF-8</code>.</p>
+<p translation-origin="off">Configures any <code>JavaCompile</code> tasks with no configured encoding to use <code>UTF-8</code>.</p>
 </li>
 <li>
-<p>Configures any <code>JavaCompile</code> tasks to use the <code>-parameters</code> compiler argument.</p>
+<p translation-origin="off">Configures any <code>JavaCompile</code> tasks to use the <code>-parameters</code> compiler argument.</p>
 </li>
 </ol>
 </div>
 </div>
 <div class="sect2">
-<h3 id="reacting-to-other-plugins.kotlin"><a class="anchor" href="index.html#reacting-to-other-plugins.kotlin"></a>9.2. Reacting to the Kotlin Plugin</h3>
+<h3 id="reacting-to-other-plugins.kotlin" translation-origin="off"><a class="anchor" href="index.html#reacting-to-other-plugins.kotlin"></a>9.2. Reacting to the Kotlin Plugin</h3>
 <div class="paragraph">
-<p>When <a href="https://kotlinlang.org/docs/reference/using-gradle.html">Kotlin&#8217;s Gradle plugin</a> is applied to a project, the Spring Boot plugin:</p>
+<p translation-origin="off">When <a href="https://kotlinlang.org/docs/reference/using-gradle.html">Kotlin’s Gradle plugin</a> is applied to a project, the Spring Boot plugin:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Aligns the Kotlin version used in Spring Boot&#8217;s dependency management with the version of the plugin.
+<p translation-origin="off">Aligns the Kotlin version used in Spring Boot’s dependency management with the version of the plugin.
 This is achieved by setting the <code>kotlin.version</code> property with a value that matches the version of the Kotlin plugin.</p>
 </li>
 <li>
-<p>Configures any <code>KotlinCompile</code> tasks to use the <code>-java-parameters</code> compiler argument.</p>
+<p translation-origin="off">Configures any <code>KotlinCompile</code> tasks to use the <code>-java-parameters</code> compiler argument.</p>
 </li>
 </ol>
 </div>
 </div>
 <div class="sect2">
-<h3 id="reacting-to-other-plugins.war"><a class="anchor" href="index.html#reacting-to-other-plugins.war"></a>9.3. Reacting to the War Plugin</h3>
+<h3 id="reacting-to-other-plugins.war" translation-origin="off"><a class="anchor" href="index.html#reacting-to-other-plugins.war"></a>9.3. Reacting to the War Plugin</h3>
 <div class="paragraph">
-<p>When Gradle&#8217;s <a href="https://docs.gradle.org/current/userguide/war_plugin.html"><code>war</code> plugin</a> is applied to a project, the Spring Boot plugin:</p>
+<p translation-origin="off">When Gradle’s <a href="https://docs.gradle.org/current/userguide/war_plugin.html"><code>war</code> plugin</a> is applied to a project, the Spring Boot plugin:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Creates a <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/bundling/BootWar.html"><code>BootWar</code></a> task named <code>bootWar</code> that will create an executable, fat war for the project.
+<p translation-origin="off">Creates a <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/api/org/springframework/boot/gradle/tasks/bundling/BootWar.html"><code>BootWar</code></a> task named <code>bootWar</code> that will create an executable, fat war for the project.
 In addition to the standard packaging, everything in the <code>providedRuntime</code> configuration will be packaged in <code>WEB-INF/lib-provided</code>.</p>
 </li>
 <li>
-<p>Configures the <code>assemble</code> task to depend on the <code>bootWar</code> task.</p>
+<p translation-origin="off">Configures the <code>assemble</code> task to depend on the <code>bootWar</code> task.</p>
 </li>
 <li>
-<p>Configures the <code>war</code> task to use <code>plain</code> as the convention for its archive classifier.</p>
+<p translation-origin="off">Configures the <code>war</code> task to use <code>plain</code> as the convention for its archive classifier.</p>
 </li>
 <li>
-<p>Configures the <code>bootArchives</code> configuration to contain the artifact produced by the <code>bootWar</code> task.</p>
+<p translation-origin="off">Configures the <code>bootArchives</code> configuration to contain the artifact produced by the <code>bootWar</code> task.</p>
 </li>
 </ol>
 </div>
 </div>
 <div class="sect2">
-<h3 id="reacting-to-other-plugins.dependency-management"><a class="anchor" href="index.html#reacting-to-other-plugins.dependency-management"></a>9.4. Reacting to the Dependency Management Plugin</h3>
+<h3 id="reacting-to-other-plugins.dependency-management" translation-origin="off"><a class="anchor" href="index.html#reacting-to-other-plugins.dependency-management"></a>9.4. Reacting to the Dependency Management Plugin</h3>
 <div class="paragraph">
-<p>When the <a href="https://github.com/spring-gradle-plugins/dependency-management-plugin"><code>io.spring.dependency-management</code> plugin</a> is applied to a project, the Spring Boot plugin will automatically import the <code>spring-boot-dependencies</code> bom.</p>
+<p translation-origin="off">When the <a href="https://github.com/spring-gradle-plugins/dependency-management-plugin"><code>io.spring.dependency-management</code> plugin</a> is applied to a project, the Spring Boot plugin will automatically import the <code>spring-boot-dependencies</code> bom.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="reacting-to-other-plugins.application"><a class="anchor" href="index.html#reacting-to-other-plugins.application"></a>9.5. Reacting to the Application Plugin</h3>
+<h3 id="reacting-to-other-plugins.application" translation-origin="off"><a class="anchor" href="index.html#reacting-to-other-plugins.application"></a>9.5. Reacting to the Application Plugin</h3>
 <div class="paragraph">
-<p>When Gradle&#8217;s <a href="https://docs.gradle.org/current/userguide/application_plugin.html"><code>application</code> plugin</a> is applied to a project, the Spring Boot plugin:</p>
+<p translation-origin="off">When Gradle’s <a href="https://docs.gradle.org/current/userguide/application_plugin.html"><code>application</code> plugin</a> is applied to a project, the Spring Boot plugin:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Creates a <code>CreateStartScripts</code> task named <code>bootStartScripts</code> that will create scripts that launch the artifact in the <code>bootArchives</code> configuration using <code>java -jar</code>.
+<p translation-origin="off">Creates a <code>CreateStartScripts</code> task named <code>bootStartScripts</code> that will create scripts that launch the artifact in the <code>bootArchives</code> configuration using <code>java -jar</code>.
 The task is configured to use the <code>applicationDefaultJvmArgs</code> property as a convention for its <code>defaultJvmOpts</code> property.</p>
 </li>
 <li>
-<p>Creates a new distribution named <code>boot</code> and configures it to contain the artifact in the <code>bootArchives</code> configuration in its <code>lib</code> directory and the start scripts in its <code>bin</code> directory.</p>
+<p translation-origin="off">Creates a new distribution named <code>boot</code> and configures it to contain the artifact in the <code>bootArchives</code> configuration in its <code>lib</code> directory and the start scripts in its <code>bin</code> directory.</p>
 </li>
 <li>
-<p>Configures the <code>bootRun</code> task to use the <code>mainClassName</code> property as a convention for its <code>main</code> property.</p>
+<p translation-origin="off">Configures the <code>bootRun</code> task to use the <code>mainClassName</code> property as a convention for its <code>main</code> property.</p>
 </li>
 <li>
-<p>Configures the <code>bootRun</code> task to use the <code>applicationDefaultJvmArgs</code> property as a convention for its <code>jvmArgs</code> property.</p>
+<p translation-origin="off">Configures the <code>bootRun</code> task to use the <code>applicationDefaultJvmArgs</code> property as a convention for its <code>jvmArgs</code> property.</p>
 </li>
 <li>
-<p>Configures the <code>bootJar</code> task to use the <code>mainClassName</code> property as a convention for the <code>Start-Class</code> entry in its manifest.</p>
+<p translation-origin="off">Configures the <code>bootJar</code> task to use the <code>mainClassName</code> property as a convention for the <code>Start-Class</code> entry in its manifest.</p>
 </li>
 <li>
-<p>Configures the <code>bootWar</code> task to use the <code>mainClassName</code> property as a convention for the <code>Start-Class</code> entry in its manifest.</p>
+<p translation-origin="off">Configures the <code>bootWar</code> task to use the <code>mainClassName</code> property as a convention for the <code>Start-Class</code> entry in its manifest.</p>
 </li>
 </ol>
 </div>
 </div>
 <div class="sect2">
-<h3 id="reacting-to-other-plugins.maven"><a class="anchor" href="index.html#reacting-to-other-plugins.maven"></a>9.6. Reacting to the Maven plugin</h3>
+<h3 id="reacting-to-other-plugins.maven" translation-origin="off"><a class="anchor" href="index.html#reacting-to-other-plugins.maven"></a>9.6. Reacting to the Maven plugin</h3>
 <div class="admonitionblock warning">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-Support for reacting to Gradle&#8217;s <code>maven</code> plugin is deprecated and will be removed in a future release.
-Please use the <code>maven-publish</code> plugin instead.
+<p translation-origin="off">Support for reacting to Gradle’s <code>maven</code> plugin is deprecated and will be removed in a future release.
+Please use the <code>maven-publish</code> plugin instead.</p>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 <div class="paragraph">
-<p>When Gradle&#8217;s <a href="https://docs.gradle.org/current/userguide/maven_plugin.html"><code>maven</code> plugin</a> is applied to a project, the Spring Boot plugin will configure the <code>uploadBootArchives</code> <code>Upload</code> task to ensure that no dependencies are declared in the pom that it generates.</p>
+<p translation-origin="off">When Gradle’s <a href="https://docs.gradle.org/current/userguide/maven_plugin.html"><code>maven</code> plugin</a> is applied to a project, the Spring Boot plugin will configure the <code>uploadBootArchives</code> <code>Upload</code> task to ensure that no dependencies are declared in the pom that it generates.</p>
 </div>
 </div>
 </div>
@@ -2432,6 +2545,6 @@ Last updated 2022-01-20 14:02:40 UTC
 </div>
 </div>
 </div>
-<script data-cfasync="false" src="../../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1fddffe9987c65","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
-</body>
-</html>
+<script data-cfasync="false" src="../../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6d1fddffe9987c65&quot;,&quot;token&quot;:&quot;bffcb8a918ae4755926f76178bfbd26b&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+</body></html>

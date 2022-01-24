@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.12">
 <title>The Executable Jar Format</title>
 <link rel="stylesheet" href="css/site.css">
-<script src="js/setup.js"></script><script defer src="js/site.js"></script>
+<script src="js/setup.js"></script><script defer="" src="js/site.js"></script>
 <script type="application/json" id="anchor-rewrite">
 {
 "actuator-properties":"application-properties.actuator",
@@ -950,7 +948,7 @@
 <body id="executable-jar" class="book toc2 toc-left"><div id="banner-container" class="container" role="banner">
 <div id="banner" class="contained" role="banner">
 <div id="switch-theme">
-<input type="checkbox" id="switch-theme-checkbox" />
+<input type="checkbox" id="switch-theme-checkbox">
 <label for="switch-theme-checkbox">Dark Theme</label>
 </div>
 </div>
@@ -964,32 +962,55 @@
 <div id="main" class="contained">
 <div id="doc" class="doc">
 <div id="header">
-<h1>The Executable Jar Format</h1>
+<h1 translation-origin="off">The Executable Jar Format</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <span id="back-to-index"><a href="index.html">Back to index</a></span><ul class="sectlevel1">
-<li><a href="executable-jar.html#executable-jar.nested-jars">1. Nested JARs</a>
+<li>
+  <p translation-origin="off"><a href="executable-jar.html#executable-jar.nested-jars">1. Nested JARs</a></p>
 <ul class="sectlevel2">
-<li><a href="executable-jar.html#executable-jar.nested-jars.jar-structure">1.1. The Executable Jar File Structure</a></li>
-<li><a href="executable-jar.html#executable-jar.nested-jars.war-structure">1.2. The Executable War File Structure</a></li>
-<li><a href="executable-jar.html#executable-jar.nested-jars.index-files">1.3. Index Files</a></li>
-<li><a href="executable-jar.html#executable-jar.nested-jars.classpath-index">1.4. Classpath Index</a></li>
-<li><a href="executable-jar.html#executable-jar.nested-jars.layer-index">1.5. Layer Index</a></li>
+<li>
+  <p translation-origin="off"><a href="executable-jar.html#executable-jar.nested-jars.jar-structure">1.1. The Executable Jar File Structure</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="executable-jar.html#executable-jar.nested-jars.war-structure">1.2. The Executable War File Structure</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="executable-jar.html#executable-jar.nested-jars.index-files">1.3. Index Files</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="executable-jar.html#executable-jar.nested-jars.classpath-index">1.4. Classpath Index</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="executable-jar.html#executable-jar.nested-jars.layer-index">1.5. Layer Index</a></p>
+</li>
 </ul>
 </li>
-<li><a href="executable-jar.html#executable-jar.jarfile-class">2. Spring Boot&#8217;s &#8220;JarFile&#8221; Class</a>
+<li>
+  <p translation-origin="off"><a href="executable-jar.html#executable-jar.jarfile-class">2. Spring Boot’s “JarFile” Class</a></p>
 <ul class="sectlevel2">
-<li><a href="executable-jar.html#executable-jar.jarfile-class.compatibility">2.1. Compatibility with the Standard Java &#8220;JarFile&#8221;</a></li>
+<li>
+  <p translation-origin="off"><a href="executable-jar.html#executable-jar.jarfile-class.compatibility">2.1. Compatibility with the Standard Java “JarFile”</a></p>
+</li>
 </ul>
 </li>
-<li><a href="executable-jar.html#executable-jar.launching">3. Launching Executable Jars</a>
+<li>
+  <p translation-origin="off"><a href="executable-jar.html#executable-jar.launching">3. Launching Executable Jars</a></p>
 <ul class="sectlevel2">
-<li><a href="executable-jar.html#executable-jar.launching.manifest">3.1. Launcher Manifest</a></li>
+<li>
+  <p translation-origin="off"><a href="executable-jar.html#executable-jar.launching.manifest">3.1. Launcher Manifest</a></p>
+</li>
 </ul>
 </li>
-<li><a href="executable-jar.html#executable-jar.property-launcher">4. PropertiesLauncher Features</a></li>
-<li><a href="executable-jar.html#executable-jar.restrictions">5. Executable Jar Restrictions</a></li>
-<li><a href="executable-jar.html#executable-jar.alternatives">6. Alternative Single Jar Solutions</a></li>
+<li>
+  <p translation-origin="off"><a href="executable-jar.html#executable-jar.property-launcher">4. PropertiesLauncher Features</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="executable-jar.html#executable-jar.restrictions">5. Executable Jar Restrictions</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="executable-jar.html#executable-jar.alternatives">6. Alternative Single Jar Solutions</a></p>
+</li>
 </ul>
 </div>
 </div>
@@ -997,32 +1018,32 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>The <code>spring-boot-loader</code> modules lets Spring Boot support executable jar and war files.
+<p translation-origin="off">The <code>spring-boot-loader</code> modules lets Spring Boot support executable jar and war files.
 If you use the Maven plugin or the Gradle plugin, executable jars are automatically generated, and you generally do not need to know the details of how they work.</p>
 </div>
 <div class="paragraph">
-<p>If you need to create executable jars from a different build system or if you are just curious about the underlying technology, this appendix provides some background.</p>
+<p translation-origin="off">If you need to create executable jars from a different build system or if you are just curious about the underlying technology, this appendix provides some background.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="executable-jar.nested-jars"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars"></a>1. Nested JARs</h2>
+<h2 id="executable-jar.nested-jars" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars"></a>1. Nested JARs</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Java does not provide any standard way to load nested jar files (that is, jar files that are themselves contained within a jar).
+<p translation-origin="off">Java does not provide any standard way to load nested jar files (that is, jar files that are themselves contained within a jar).
 This can be problematic if you need to distribute a self-contained application that can be run from the command line without unpacking.</p>
 </div>
 <div class="paragraph">
-<p>To solve this problem, many developers use &#8220;shaded&#8221; jars.
-A shaded jar packages all classes, from all jars, into a single &#8220;uber jar&#8221;.
+<p translation-origin="off">To solve this problem, many developers use “shaded” jars.
+A shaded jar packages all classes, from all jars, into a single “uber jar”.
 The problem with shaded jars is that it becomes hard to see which libraries are actually in your application.
 It can also be problematic if the same filename is used (but with different content) in multiple jars.
 Spring Boot takes a different approach and lets you actually nest jars directly.</p>
 </div>
 <div class="sect2">
-<h3 id="executable-jar.nested-jars.jar-structure"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.jar-structure"></a>1.1. The Executable Jar File Structure</h3>
+<h3 id="executable-jar.nested-jars.jar-structure" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.jar-structure"></a>1.1. The Executable Jar File Structure</h3>
 <div class="paragraph">
-<p>Spring Boot Loader-compatible jar files should be structured in the following way:</p>
+<p translation-origin="off">Spring Boot Loader-compatible jar files should be structured in the following way:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1046,14 +1067,14 @@ Spring Boot takes a different approach and lets you actually nest jars directly.
 </div>
 </div>
 <div class="paragraph">
-<p>Application classes should be placed in a nested <code>BOOT-INF/classes</code> directory.
+<p translation-origin="off">Application classes should be placed in a nested <code>BOOT-INF/classes</code> directory.
 Dependencies should be placed in a nested <code>BOOT-INF/lib</code> directory.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="executable-jar.nested-jars.war-structure"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.war-structure"></a>1.2. The Executable War File Structure</h3>
+<h3 id="executable-jar.nested-jars.war-structure" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.war-structure"></a>1.2. The Executable War File Structure</h3>
 <div class="paragraph">
-<p>Spring Boot Loader-compatible war files should be structured in the following way:</p>
+<p translation-origin="off">Spring Boot Loader-compatible war files should be structured in the following way:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1081,31 +1102,31 @@ Dependencies should be placed in a nested <code>BOOT-INF/lib</code> directory.</
 </div>
 </div>
 <div class="paragraph">
-<p>Dependencies should be placed in a nested <code>WEB-INF/lib</code> directory.
+<p translation-origin="off">Dependencies should be placed in a nested <code>WEB-INF/lib</code> directory.
 Any dependencies that are required when running embedded but are not required when deploying to a traditional web container should be placed in <code>WEB-INF/lib-provided</code>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="executable-jar.nested-jars.index-files"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.index-files"></a>1.3. Index Files</h3>
+<h3 id="executable-jar.nested-jars.index-files" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.index-files"></a>1.3. Index Files</h3>
 <div class="paragraph">
-<p>Spring Boot Loader-compatible jar and war archives can include additional index files under the <code>BOOT-INF/</code> directory.
+<p translation-origin="off">Spring Boot Loader-compatible jar and war archives can include additional index files under the <code>BOOT-INF/</code> directory.
 A <code>classpath.idx</code> file can be provided for both jars and wars, and it provides the ordering that jars should be added to the classpath.
 The <code>layers.idx</code> file can be used only for jars, and it allows a jar to be split into logical layers for Docker/OCI image creation.</p>
 </div>
 <div class="paragraph">
-<p>Index files follow a YAML compatible syntax so that they can be easily parsed by third-party tools.
+<p translation-origin="off">Index files follow a YAML compatible syntax so that they can be easily parsed by third-party tools.
 These files, however, are <em>not</em> parsed internally as YAML and they must be written in exactly the formats described below in order to be used.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="executable-jar.nested-jars.classpath-index"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.classpath-index"></a>1.4. Classpath Index</h3>
+<h3 id="executable-jar.nested-jars.classpath-index" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.classpath-index"></a>1.4. Classpath Index</h3>
 <div class="paragraph">
-<p>The classpath index file can be provided in <code>BOOT-INF/classpath.idx</code>.
+<p translation-origin="off">The classpath index file can be provided in <code>BOOT-INF/classpath.idx</code>.
 It provides a list of jar names (including the directory) in the order that they should be added to the classpath.
-Each line must start with dash space (<code>"-&#183;"</code>) and names must be in double quotes.</p>
+Each line must start with dash space (<code>"-·"</code>) and names must be in double quotes.</p>
 </div>
 <div class="paragraph">
-<p>For example, given the following jar:</p>
+<p translation-origin="off">For example, given the following jar:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1122,7 +1143,7 @@ Each line must start with dash space (<code>"-&#183;"</code>) and names must be 
 </div>
 </div>
 <div class="paragraph">
-<p>The index file would look like this:</p>
+<p translation-origin="off">The index file would look like this:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1132,18 +1153,18 @@ Each line must start with dash space (<code>"-&#183;"</code>) and names must be 
 </div>
 </div>
 <div class="sect2">
-<h3 id="executable-jar.nested-jars.layer-index"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.layer-index"></a>1.5. Layer Index</h3>
+<h3 id="executable-jar.nested-jars.layer-index" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.layer-index"></a>1.5. Layer Index</h3>
 <div class="paragraph">
-<p>The layers index file can be provided in <code>BOOT-INF/layers.idx</code>.
+<p translation-origin="off">The layers index file can be provided in <code>BOOT-INF/layers.idx</code>.
 It provides a list of layers and the parts of the jar that should be contained within them.
 Layers are written in the order that they should be added to the Docker/OCI image.
-Layers names are written as quoted strings prefixed with dash space (<code>"-&#183;"</code>) and with a colon (<code>":"</code>) suffix.
-Layer content is either a file or directory name written as a quoted string prefixed by space space dash space (<code>"&#183;&#183;-&#183;"</code>).
+Layers names are written as quoted strings prefixed with dash space (<code>"-·"</code>) and with a colon (<code>":"</code>) suffix.
+Layer content is either a file or directory name written as a quoted string prefixed by space space dash space (<code>"··-·"</code>).
 A directory name ends with <code>/</code>, a file name does not.
 When a directory name is used it means that all files inside that directory are in the same layer.</p>
 </div>
 <div class="paragraph">
-<p>A typical example of a layers index would be:</p>
+<p translation-origin="off">A typical example of a layers index would be:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1159,10 +1180,10 @@ When a directory name is used it means that all files inside that directory are 
 </div>
 </div>
 <div class="sect1">
-<h2 id="executable-jar.jarfile-class"><a class="anchor" href="executable-jar.html#executable-jar.jarfile-class"></a>2. Spring Boot&#8217;s &#8220;JarFile&#8221; Class</h2>
+<h2 id="executable-jar.jarfile-class" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.jarfile-class"></a>2. Spring Boot’s “JarFile” Class</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The core class used to support loading nested jars is <code>org.springframework.boot.loader.jar.JarFile</code>.
+<p translation-origin="off">The core class used to support loading nested jars is <code>org.springframework.boot.loader.jar.JarFile</code>.
 It lets you load jar content from a standard jar file or from nested child jar data.
 When first loaded, the location of each <code>JarEntry</code> is mapped to a physical file offset of the outer jar, as shown in the following example:</p>
 </div>
@@ -1180,32 +1201,32 @@ When first loaded, the location of each <code>JarEntry</code> is mapped to a phy
 </div>
 </div>
 <div class="paragraph">
-<p>The preceding example shows how <code>A.class</code> can be found in <code>/BOOT-INF/classes</code> in <code>myapp.jar</code> at position <code>0063</code>.
+<p translation-origin="off">The preceding example shows how <code>A.class</code> can be found in <code>/BOOT-INF/classes</code> in <code>myapp.jar</code> at position <code>0063</code>.
 <code>B.class</code> from the nested jar can actually be found in <code>myapp.jar</code> at position <code>3452</code>, and <code>C.class</code> is at position <code>3980</code>.</p>
 </div>
 <div class="paragraph">
-<p>Armed with this information, we can load specific nested entries by seeking to the appropriate part of the outer jar.
+<p translation-origin="off">Armed with this information, we can load specific nested entries by seeking to the appropriate part of the outer jar.
 We do not need to unpack the archive, and we do not need to read all entry data into memory.</p>
 </div>
 <div class="sect2">
-<h3 id="executable-jar.jarfile-class.compatibility"><a class="anchor" href="executable-jar.html#executable-jar.jarfile-class.compatibility"></a>2.1. Compatibility with the Standard Java &#8220;JarFile&#8221;</h3>
+<h3 id="executable-jar.jarfile-class.compatibility" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.jarfile-class.compatibility"></a>2.1. Compatibility with the Standard Java “JarFile”</h3>
 <div class="paragraph">
-<p>Spring Boot Loader strives to remain compatible with existing code and libraries.
+<p translation-origin="off">Spring Boot Loader strives to remain compatible with existing code and libraries.
 <code>org.springframework.boot.loader.jar.JarFile</code> extends from <code>java.util.jar.JarFile</code> and should work as a drop-in replacement.
-The <code>getURL()</code> method returns a <code>URL</code> that opens a connection compatible with <code>java.net.JarURLConnection</code> and can be used with Java&#8217;s <code>URLClassLoader</code>.</p>
+The <code>getURL()</code> method returns a <code>URL</code> that opens a connection compatible with <code>java.net.JarURLConnection</code> and can be used with Java’s <code>URLClassLoader</code>.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="executable-jar.launching"><a class="anchor" href="executable-jar.html#executable-jar.launching"></a>3. Launching Executable Jars</h2>
+<h2 id="executable-jar.launching" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.launching"></a>3. Launching Executable Jars</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The <code>org.springframework.boot.loader.Launcher</code> class is a special bootstrap class that is used as an executable jar&#8217;s main entry point.
+<p translation-origin="off">The <code>org.springframework.boot.loader.Launcher</code> class is a special bootstrap class that is used as an executable jar’s main entry point.
 It is the actual <code>Main-Class</code> in your jar file, and it is used to setup an appropriate <code>URLClassLoader</code> and ultimately call your <code>main()</code> method.</p>
 </div>
 <div class="paragraph">
-<p>There are three launcher subclasses (<code>JarLauncher</code>, <code>WarLauncher</code>, and <code>PropertiesLauncher</code>).
+<p translation-origin="off">There are three launcher subclasses (<code>JarLauncher</code>, <code>WarLauncher</code>, and <code>PropertiesLauncher</code>).
 Their purpose is to load resources (<code>.class</code> files and so on) from nested jar files or war files in directories (as opposed to those explicitly on the classpath).
 In the case of <code>JarLauncher</code> and <code>WarLauncher</code>, the nested paths are fixed.
 <code>JarLauncher</code> looks in <code>BOOT-INF/lib/</code>, and <code>WarLauncher</code> looks in <code>WEB-INF/lib/</code> and <code>WEB-INF/lib-provided/</code>.
@@ -1214,13 +1235,13 @@ The <code>PropertiesLauncher</code> looks in <code>BOOT-INF/lib/</code> in your 
 You can add additional locations by setting an environment variable called <code>LOADER_PATH</code> or <code>loader.path</code> in <code>loader.properties</code> (which is a comma-separated list of directories, archives, or directories within archives).</p>
 </div>
 <div class="sect2">
-<h3 id="executable-jar.launching.manifest"><a class="anchor" href="executable-jar.html#executable-jar.launching.manifest"></a>3.1. Launcher Manifest</h3>
+<h3 id="executable-jar.launching.manifest" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.launching.manifest"></a>3.1. Launcher Manifest</h3>
 <div class="paragraph">
-<p>You need to specify an appropriate <code>Launcher</code> as the <code>Main-Class</code> attribute of <code>META-INF/MANIFEST.MF</code>.
+<p translation-origin="off">You need to specify an appropriate <code>Launcher</code> as the <code>Main-Class</code> attribute of <code>META-INF/MANIFEST.MF</code>.
 The actual class that you want to launch (that is, the class that contains a <code>main</code> method) should be specified in the <code>Start-Class</code> attribute.</p>
 </div>
 <div class="paragraph">
-<p>The following example shows a typical <code>MANIFEST.MF</code> for an executable jar file:</p>
+<p translation-origin="off">The following example shows a typical <code>MANIFEST.MF</code> for an executable jar file:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1229,7 +1250,7 @@ Start-Class: com.mycompany.project.MyApplication</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>For a war file, it would be as follows:</p>
+<p translation-origin="off">For a war file, it would be as follows:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1239,25 +1260,25 @@ Start-Class: com.mycompany.project.MyApplication</pre>
 </div>
 <div class="admonitionblock note">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-You need not specify <code>Class-Path</code> entries in your manifest file.
-The classpath is deduced from the nested jars.
+<p translation-origin="off">You need not specify <code>Class-Path</code> entries in your manifest file.
+The classpath is deduced from the nested jars.</p>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="executable-jar.property-launcher"><a class="anchor" href="executable-jar.html#executable-jar.property-launcher"></a>4. PropertiesLauncher Features</h2>
+<h2 id="executable-jar.property-launcher" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.property-launcher"></a>4. PropertiesLauncher Features</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><code>PropertiesLauncher</code> has a few special features that can be enabled with external properties (System properties, environment variables, manifest entries, or <code>loader.properties</code>).
+<p translation-origin="off"><code>PropertiesLauncher</code> has a few special features that can be enabled with external properties (System properties, environment variables, manifest entries, or <code>loader.properties</code>).
 The following table describes these properties:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
@@ -1267,49 +1288,53 @@ The following table describes these properties:</p>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Key</th>
-<th class="tableblock halign-left valign-top">Purpose</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Key</p>
+</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Purpose</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.path</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Comma-separated Classpath, such as <code>lib,${HOME}/app/lib</code>.
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.path</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Comma-separated Classpath, such as <code>lib,${HOME}/app/lib</code>.
 Earlier entries take precedence, like a regular <code>-classpath</code> on the <code>javac</code> command line.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.home</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Used to resolve relative paths in <code>loader.path</code>.
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.home</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Used to resolve relative paths in <code>loader.path</code>.
 For example, given <code>loader.path=lib</code>, then <code>${loader.home}/lib</code> is a classpath location (along with all jar files in that directory).
 This property is also used to locate a <code>loader.properties</code> file, as in the following example <code><a href="file:///opt/app" class="bare">/opt/app</a></code> It defaults to <code>${user.dir}</code>.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.args</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Default arguments for the main method (space separated).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.args</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Default arguments for the main method (space separated).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.main</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Name of main class to launch (for example, <code>com.app.Application</code>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.main</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Name of main class to launch (for example, <code>com.app.Application</code>).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.config.name</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Name of properties file (for example, <code>launcher</code>).
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.config.name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Name of properties file (for example, <code>launcher</code>).
 It defaults to <code>loader</code>.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.config.location</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Path to properties file (for example, <code>classpath:loader.properties</code>).
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.config.location</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Path to properties file (for example, <code>classpath:loader.properties</code>).
 It defaults to <code>loader.properties</code>.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.system</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean flag to indicate that all properties should be added to System properties.
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.system</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off">Boolean flag to indicate that all properties should be added to System properties.
 It defaults to <code>false</code>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>When specified as environment variables or manifest entries, the following names should be used:</p>
+<p translation-origin="off">When specified as environment variables or manifest entries, the following names should be used:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1319,100 +1344,106 @@ It defaults to <code>false</code>.</p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Key</th>
-<th class="tableblock halign-left valign-top">Manifest entry</th>
-<th class="tableblock halign-left valign-top">Environment variable</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Key</p>
+</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Manifest entry</p>
+</th>
+<th class="tableblock halign-left valign-top">
+  <p translation-origin="off">Environment variable</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.path</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Loader-Path</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOADER_PATH</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.path</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>Loader-Path</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>LOADER_PATH</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.home</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Loader-Home</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOADER_HOME</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.home</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>Loader-Home</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>LOADER_HOME</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.args</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Loader-Args</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOADER_ARGS</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.args</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>Loader-Args</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>LOADER_ARGS</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.main</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Start-Class</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOADER_MAIN</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.main</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>Start-Class</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>LOADER_MAIN</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.config.location</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Loader-Config-Location</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOADER_CONFIG_LOCATION</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.config.location</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>Loader-Config-Location</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>LOADER_CONFIG_LOCATION</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.system</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Loader-System</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOADER_SYSTEM</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>loader.system</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>Loader-System</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock" translation-origin="off"><code>LOADER_SYSTEM</code></p></td>
 </tr>
 </tbody>
 </table>
 <div class="admonitionblock tip">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Build plugins automatically move the <code>Main-Class</code> attribute to <code>Start-Class</code> when the fat jar is built.
-If you use that, specify the name of the class to launch by using the <code>Main-Class</code> attribute and leaving out <code>Start-Class</code>.
+<p translation-origin="off">Build plugins automatically move the <code>Main-Class</code> attribute to <code>Start-Class</code> when the fat jar is built.
+If you use that, specify the name of the class to launch by using the <code>Main-Class</code> attribute and leaving out <code>Start-Class</code>.</p>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 <div class="paragraph">
-<p>The following rules apply to working with <code>PropertiesLauncher</code>:</p>
+<p translation-origin="off">The following rules apply to working with <code>PropertiesLauncher</code>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>loader.properties</code> is searched for in <code>loader.home</code>, then in the root of the classpath, and then in <code>classpath:/BOOT-INF/classes</code>.
+<p translation-origin="off"><code>loader.properties</code> is searched for in <code>loader.home</code>, then in the root of the classpath, and then in <code>classpath:/BOOT-INF/classes</code>.
 The first location where a file with that name exists is used.</p>
 </li>
 <li>
-<p><code>loader.home</code> is the directory location of an additional properties file (overriding the default) only when <code>loader.config.location</code> is not specified.</p>
+<p translation-origin="off"><code>loader.home</code> is the directory location of an additional properties file (overriding the default) only when <code>loader.config.location</code> is not specified.</p>
 </li>
 <li>
-<p><code>loader.path</code> can contain directories (which are scanned recursively for jar and zip files), archive paths, a directory within an archive that is scanned for jar files (for example, <code>dependencies.jar!/lib</code>), or wildcard patterns (for the default JVM behavior).
+<p translation-origin="off"><code>loader.path</code> can contain directories (which are scanned recursively for jar and zip files), archive paths, a directory within an archive that is scanned for jar files (for example, <code>dependencies.jar!/lib</code>), or wildcard patterns (for the default JVM behavior).
 Archive paths can be relative to <code>loader.home</code> or anywhere in the file system with a <code>jar:file:</code> prefix.</p>
 </li>
 <li>
-<p><code>loader.path</code> (if empty) defaults to <code>BOOT-INF/lib</code> (meaning a local directory or a nested one if running from an archive).
+<p translation-origin="off"><code>loader.path</code> (if empty) defaults to <code>BOOT-INF/lib</code> (meaning a local directory or a nested one if running from an archive).
 Because of this, <code>PropertiesLauncher</code> behaves the same as <code>JarLauncher</code> when no additional configuration is provided.</p>
 </li>
 <li>
-<p><code>loader.path</code> can not be used to configure the location of <code>loader.properties</code> (the classpath used to search for the latter is the JVM classpath when <code>PropertiesLauncher</code> is launched).</p>
+<p translation-origin="off"><code>loader.path</code> can not be used to configure the location of <code>loader.properties</code> (the classpath used to search for the latter is the JVM classpath when <code>PropertiesLauncher</code> is launched).</p>
 </li>
 <li>
-<p>Placeholder replacement is done from System and environment variables plus the properties file itself on all values before use.</p>
+<p translation-origin="off">Placeholder replacement is done from System and environment variables plus the properties file itself on all values before use.</p>
 </li>
 <li>
-<p>The search order for properties (where it makes sense to look in more than one place) is environment variables, system properties, <code>loader.properties</code>, the exploded archive manifest, and the archive manifest.</p>
+<p translation-origin="off">The search order for properties (where it makes sense to look in more than one place) is environment variables, system properties, <code>loader.properties</code>, the exploded archive manifest, and the archive manifest.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="executable-jar.restrictions"><a class="anchor" href="executable-jar.html#executable-jar.restrictions"></a>5. Executable Jar Restrictions</h2>
+<h2 id="executable-jar.restrictions" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.restrictions"></a>5. Executable Jar Restrictions</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You need to consider the following restrictions when working with a Spring Boot Loader packaged application:</p>
+<p translation-origin="off">You need to consider the following restrictions when working with a Spring Boot Loader packaged application:</p>
 </div>
 <div id="executable-jar-zip-entry-compression" class="ulist">
 <ul>
 <li>
-<p>Zip entry compression:
+<p translation-origin="off">Zip entry compression:
 The <code>ZipEntry</code> for a nested jar must be saved by using the <code>ZipEntry.STORED</code> method.
 This is required so that we can seek directly to individual content within the nested jar.
 The content of the nested jar file itself can still be compressed, as can any other entries in the outer jar.</p>
@@ -1422,7 +1453,7 @@ The content of the nested jar file itself can still be compressed, as can any ot
 <div id="executable-jar-system-classloader" class="ulist">
 <ul>
 <li>
-<p>System classLoader:
+<p translation-origin="off">System classLoader:
 Launched applications should use <code>Thread.getContextClassLoader()</code> when loading classes (most libraries and frameworks do so by default).
 Trying to load nested jar classes with <code>ClassLoader.getSystemClassLoader()</code> fails.
 <code>java.util.Logging</code> always uses the system classloader.
@@ -1433,24 +1464,24 @@ For this reason, you should consider a different logging implementation.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="executable-jar.alternatives"><a class="anchor" href="executable-jar.html#executable-jar.alternatives"></a>6. Alternative Single Jar Solutions</h2>
+<h2 id="executable-jar.alternatives" translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.alternatives"></a>6. Alternative Single Jar Solutions</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If the preceding restrictions mean that you cannot use Spring Boot Loader, consider the following alternatives:</p>
+<p translation-origin="off">If the preceding restrictions mean that you cannot use Spring Boot Loader, consider the following alternatives:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://maven.apache.org/plugins/maven-shade-plugin/">Maven Shade Plugin</a></p>
+<p translation-origin="off"><a href="https://maven.apache.org/plugins/maven-shade-plugin/">Maven Shade Plugin</a></p>
 </li>
 <li>
-<p><a href="http://www.jdotsoft.com/JarClassLoader.php">JarClassLoader</a></p>
+<p translation-origin="off"><a href="http://www.jdotsoft.com/JarClassLoader.php">JarClassLoader</a></p>
 </li>
 <li>
-<p><a href="https://sourceforge.net/projects/one-jar/">OneJar</a></p>
+<p translation-origin="off"><a href="https://sourceforge.net/projects/one-jar/">OneJar</a></p>
 </li>
 <li>
-<p><a href="https://imperceptiblethoughts.com/shadow/">Gradle Shadow Plugin</a></p>
+<p translation-origin="off"><a href="https://imperceptiblethoughts.com/shadow/">Gradle Shadow Plugin</a></p>
 </li>
 </ul>
 </div>
@@ -1465,6 +1496,7 @@ Last updated 2022-01-20 14:11:26 UTC
 </div>
 </div>
 </div>
-<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1fdf2a2d417c65","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
-</body>
-</html>
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6d1fdf2a2d417c65&quot;,&quot;token&quot;:&quot;bffcb8a918ae4755926f76178bfbd26b&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
+</body></html>

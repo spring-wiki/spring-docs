@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.12">
 <title>Upgrading Spring Boot</title>
 <link rel="stylesheet" href="css/site.css">
-<script src="js/setup.js"></script><script defer src="js/site.js"></script>
+<script src="js/setup.js"></script><script defer="" src="js/site.js"></script>
 <script type="application/json" id="anchor-rewrite">
 {
 "actuator-properties":"application-properties.actuator",
@@ -950,7 +948,7 @@
 <body id="upgrading" class="book toc2 toc-left"><div id="banner-container" class="container" role="banner">
 <div id="banner" class="contained" role="banner">
 <div id="switch-theme">
-<input type="checkbox" id="switch-theme-checkbox" />
+<input type="checkbox" id="switch-theme-checkbox">
 <label for="switch-theme-checkbox">Dark Theme</label>
 </div>
 </div>
@@ -964,14 +962,22 @@
 <div id="main" class="contained">
 <div id="doc" class="doc">
 <div id="header">
-<h1>Upgrading Spring Boot</h1>
+<h1 translation-origin="off">Upgrading Spring Boot</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <span id="back-to-index"><a href="index.html">Back to index</a></span><ul class="sectlevel1">
-<li><a href="upgrading.html#upgrading.from-1x">1. Upgrading from 1.x</a></li>
-<li><a href="upgrading.html#upgrading.to-feature">2. Upgrading to a new feature release</a></li>
-<li><a href="upgrading.html#upgrading.cli">3. Upgrading the Spring Boot CLI</a></li>
-<li><a href="upgrading.html#upgrading.whats-next">4. What to Read Next</a></li>
+<li>
+  <p translation-origin="off"><a href="upgrading.html#upgrading.from-1x">1. Upgrading from 1.x</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="upgrading.html#upgrading.to-feature">2. Upgrading to a new feature release</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="upgrading.html#upgrading.cli">3. Upgrading the Spring Boot CLI</a></p>
+</li>
+<li>
+  <p translation-origin="off"><a href="upgrading.html#upgrading.whats-next">4. What to Read Next</a></p>
+</li>
 </ul>
 </div>
 </div>
@@ -979,30 +985,30 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Instructions for how to upgrade from earlier versions of Spring Boot are provided on the project <a href="https://github.com/spring-projects/spring-boot/wiki">wiki</a>.
+<p translation-origin="off">Instructions for how to upgrade from earlier versions of Spring Boot are provided on the project <a href="https://github.com/spring-projects/spring-boot/wiki">wiki</a>.
 Follow the links in the <a href="https://github.com/spring-projects/spring-boot/wiki#release-notes">release notes</a> section to find the version that you want to upgrade to.</p>
 </div>
 <div class="paragraph">
-<p>Upgrading instructions are always the first item in the release notes.
+<p translation-origin="off">Upgrading instructions are always the first item in the release notes.
 If you are more than one release behind, please make sure that you also review the release notes of the versions that you jumped.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="upgrading.from-1x"><a class="anchor" href="upgrading.html#upgrading.from-1x"></a>1. Upgrading from 1.x</h2>
+<h2 id="upgrading.from-1x" translation-origin="off"><a class="anchor" href="upgrading.html#upgrading.from-1x"></a>1. Upgrading from 1.x</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If you are upgrading from the <code>1.x</code> release of Spring Boot, check the <a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0-Migration-Guide">&#8220;migration guide&#8221; on the project wiki</a> that provides detailed upgrade instructions.
-Check also the <a href="https://github.com/spring-projects/spring-boot/wiki">&#8220;release notes&#8221;</a> for a list of &#8220;new and noteworthy&#8221; features for each release.</p>
+<p translation-origin="off">If you are upgrading from the <code>1.x</code> release of Spring Boot, check the <a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0-Migration-Guide">“migration guide” on the project wiki</a> that provides detailed upgrade instructions.
+Check also the <a href="https://github.com/spring-projects/spring-boot/wiki">“release notes”</a> for a list of “new and noteworthy” features for each release.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="upgrading.to-feature"><a class="anchor" href="upgrading.html#upgrading.to-feature"></a>2. Upgrading to a new feature release</h2>
+<h2 id="upgrading.to-feature" translation-origin="off"><a class="anchor" href="upgrading.html#upgrading.to-feature"></a>2. Upgrading to a new feature release</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>When upgrading to a new feature release, some properties may have been renamed or removed.
-Spring Boot provides a way to analyze your application&#8217;s environment and print diagnostics at startup, but also temporarily migrate properties at runtime for you.
+<p translation-origin="off">When upgrading to a new feature release, some properties may have been renamed or removed.
+Spring Boot provides a way to analyze your application’s environment and print diagnostics at startup, but also temporarily migrate properties at runtime for you.
 To enable that feature, add the following dependency to your project:</p>
 </div>
 <div class="listingblock">
@@ -1016,47 +1022,47 @@ To enable that feature, add the following dependency to your project:</p>
 </div>
 <div class="admonitionblock warning">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-Properties that are added late to the environment, such as when using <code>@PropertySource</code>, will not be taken into account.
+<p translation-origin="off">Properties that are added late to the environment, such as when using <code>@PropertySource</code>, will not be taken into account.</p>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 <div class="admonitionblock note">
 <table>
-<tr>
+<tbody><tr>
 <td class="icon">
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Once you finish the migration, please make sure to remove this module from your project&#8217;s dependencies.
+<p translation-origin="off">Once you finish the migration, please make sure to remove this module from your project’s dependencies.</p>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="upgrading.cli"><a class="anchor" href="upgrading.html#upgrading.cli"></a>3. Upgrading the Spring Boot CLI</h2>
+<h2 id="upgrading.cli" translation-origin="off"><a class="anchor" href="upgrading.html#upgrading.cli"></a>3. Upgrading the Spring Boot CLI</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To upgrade an existing CLI installation, use the appropriate package manager command (for example, <code>brew upgrade</code>).
+<p translation-origin="off">To upgrade an existing CLI installation, use the appropriate package manager command (for example, <code>brew upgrade</code>).
 If you manually installed the CLI, follow the <a href="getting-started.html#getting-started.installing.cli.manual-installation">standard instructions</a>, remembering to update your <code>PATH</code> environment variable to remove any older references.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="upgrading.whats-next"><a class="anchor" href="upgrading.html#upgrading.whats-next"></a>4. What to Read Next</h2>
+<h2 id="upgrading.whats-next" translation-origin="off"><a class="anchor" href="upgrading.html#upgrading.whats-next"></a>4. What to Read Next</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Once you&#8217;ve decided to upgrade your application, you can find detailed information regarding specific features in the rest of the document.</p>
+<p translation-origin="off">Once you’ve decided to upgrade your application, you can find detailed information regarding specific features in the rest of the document.</p>
 </div>
 <div class="paragraph">
-<p>Spring Boot&#8217;s documentation is specific to that version, so any information that you find in here will contain the most up-to-date changes that are in that version.</p>
+<p translation-origin="off">Spring Boot’s documentation is specific to that version, so any information that you find in here will contain the most up-to-date changes that are in that version.</p>
 </div>
 </div>
 </div>
@@ -1069,6 +1075,7 @@ Last updated 2022-01-20 14:11:26 UTC
 </div>
 </div>
 </div>
-<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d1fde63ec287c65","token":"bffcb8a918ae4755926f76178bfbd26b","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
-</body>
-</html>
+<script>if (window.parent == window) {(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-2728886-23', 'auto', {'siteSpeedSampleRate': 100});ga('send', 'pageview');}</script><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6d1fde63ec287c65&quot;,&quot;token&quot;:&quot;bffcb8a918ae4755926f76178bfbd26b&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
+</body></html>
