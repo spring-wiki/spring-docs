@@ -1260,7 +1260,7 @@ Some offer a way to customize the default caches defined by the <code>spring.cac
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">也可以通过设置<code>spring.cache.type</code>属性来<em nt__marker="*">强制</em>使用特定的缓存提供者。如果您需要在某些环境（例如测试）中<a href="io.html#io.caching.provider.none">完全禁用缓存</a>，请使用此属性。</p>
+<p translation-result="on">也可以通过设置<code>spring.cache.type</code>属性来<em>强制</em>使用特定的缓存提供者。如果您需要在某些环境（例如测试）中<a href="io.html#io.caching.provider.none">完全禁用缓存</a>，请使用此属性。</p>
 <p translation-origin="off">It is also possible to <em>force</em> a particular cache provider by setting the <code>spring.cache.type</code> property.
 Use this property if you need to <a href="io.html#io.caching.provider.none">disable caching altogether</a> in certain environments (such as tests).</p>
 </td>
@@ -1325,7 +1325,7 @@ You can have as many customizers as you want, and you can also order them by usi
 <h4 id="io.caching.provider.generic" translation-result="on"><a href="io.html#io.caching.provider.generic"></a>1.1.1。通用的</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.generic"></a>1.1.1. Generic</h4>
 <div class="paragraph">
-<p translation-result="on">如果上下文定义<em nt__marker="*">了至少</em>一个<code>org.springframework.cache.Cache</code> bean，则使用通用缓存。一个<code>CacheManager</code>包装了该类型的所有 bean。</p>
+<p translation-result="on">如果上下文定义<em>了至少</em>一个<code>org.springframework.cache.Cache</code> bean，则使用通用缓存。一个<code>CacheManager</code>包装了该类型的所有 bean。</p>
 <p translation-origin="off">Generic caching is used if the context defines <em>at least</em> one <code>org.springframework.cache.Cache</code> bean.
 A <code>CacheManager</code> wrapping all beans of that type is created.</p>
 </div>
@@ -1507,7 +1507,7 @@ See <a href="https://github.com/infinispan/infinispan-spring-boot">Infinispan’
 <h4 id="io.caching.provider.couchbase" translation-result="on"><a href="io.html#io.caching.provider.couchbase"></a>1.1.6。沙发底座</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.couchbase"></a>1.1.6. Couchbase</h4>
 <div class="paragraph">
-<p translation-result="on">如果 Spring Data Couchbase 可用并且 Couchbase 已<a href="data.html#data.nosql.couchbase">配置</a>，则自动配置<code>CouchbaseCacheManager</code> 。可以通过设置<code>spring.cache.cache-names</code>属性在启动时创建额外的缓存，并且可以使用<code>spring.cache.couchbase.*</code>属性配置缓存默认值。例如，以下配置创建<code>cache1</code>和<code>cache2</code>缓存，条目<em nt__marker="*">过期</em>时间为 10 分钟：</p>
+<p translation-result="on">如果 Spring Data Couchbase 可用并且 Couchbase 已<a href="data.html#data.nosql.couchbase">配置</a>，则自动配置<code>CouchbaseCacheManager</code> 。可以通过设置<code>spring.cache.cache-names</code>属性在启动时创建额外的缓存，并且可以使用<code>spring.cache.couchbase.*</code>属性配置缓存默认值。例如，以下配置创建<code>cache1</code>和<code>cache2</code>缓存，条目<em>过期</em>时间为 10 分钟：</p>
 <p translation-origin="off">If Spring Data Couchbase is available and Couchbase is <a href="data.html#data.nosql.couchbase">configured</a>, a <code>CouchbaseCacheManager</code> is auto-configured.
 It is possible to create additional caches on startup by setting the <code>spring.cache.cache-names</code> property and cache defaults can be configured by using <code>spring.cache.couchbase.*</code> properties.
 For instance, the following configuration creates <code>cache1</code> and <code>cache2</code> caches with an entry <em>expiration</em> of 10 minutes:</p>
@@ -1566,7 +1566,7 @@ public class MyCouchbaseCacheManagerConfiguration {
 <h4 id="io.caching.provider.redis" translation-result="on"><a href="io.html#io.caching.provider.redis"></a>1.1.7。雷迪斯</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.redis"></a>1.1.7. Redis</h4>
 <div class="paragraph">
-<p translation-result="on">如果<a href="https://redis.io/">Redis</a>可用且已配置，则会自动配置<code>RedisCacheManager</code> 。可以通过设置<code>spring.cache.cache-names</code>属性在启动时创建额外的缓存，并且可以使用<code>spring.cache.redis.*</code>属性配置缓存默认值。例如，以下配置创建<code>cache1</code>和<code>cache2</code>缓存，其<em nt__marker="*">生存时间</em>为 10 分钟：</p>
+<p translation-result="on">如果<a href="https://redis.io/">Redis</a>可用且已配置，则会自动配置<code>RedisCacheManager</code> 。可以通过设置<code>spring.cache.cache-names</code>属性在启动时创建额外的缓存，并且可以使用<code>spring.cache.redis.*</code>属性配置缓存默认值。例如，以下配置创建<code>cache1</code>和<code>cache2</code>缓存，其<em>生存时间</em>为 10 分钟：</p>
 <p translation-origin="off">If <a href="https://redis.io/">Redis</a> is available and configured, a <code>RedisCacheManager</code> is auto-configured.
 It is possible to create additional caches on startup by setting the <code>spring.cache.cache-names</code> property and cache defaults can be configured by using <code>spring.cache.redis.*</code> properties.
 For instance, the following configuration creates <code>cache1</code> and <code>cache2</code> caches with a <em>time to live</em> of 10 minutes:</p>
@@ -1675,7 +1675,7 @@ Caches can be created on startup by setting the <code>spring.cache.cache-names</
 </ol>
 </div>
 <div class="paragraph">
-<p translation-result="on">例如，以下配置创建<code>cache1</code>和<code>cache2</code>缓存，最大大小为 500，<em nt__marker="*">生存时间</em>为 10 分钟</p>
+<p translation-result="on">例如，以下配置创建<code>cache1</code>和<code>cache2</code>缓存，最大大小为 500，<em>生存时间</em>为 10 分钟</p>
 <p translation-origin="off">For instance, the following configuration creates <code>cache1</code> and <code>cache2</code> caches with a maximum size of 500 and a <em>time to live</em> of 10 minutes</p>
 </div>
 <div class="listingblock primary">
@@ -1697,7 +1697,7 @@ spring.cache.caffeine.spec=maximumSize=500,expireAfterAccess=600s</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果定义了<code>com.github.benmanes.caffeine.cache.CacheLoader</code> bean，它会自动关联到<code>CaffeineCacheManager</code> 。由于<code>CacheLoader</code>将与缓存管理器管理的<em nt__marker="*">所有</em>缓存相关联，因此必须将其定义为<code>CacheLoader&lt;Object, Object&gt;</code> 。自动配置忽略任何其他泛型类型。</p>
+<p translation-result="on">如果定义了<code>com.github.benmanes.caffeine.cache.CacheLoader</code> bean，它会自动关联到<code>CaffeineCacheManager</code> 。由于<code>CacheLoader</code>将与缓存管理器管理的<em>所有</em>缓存相关联，因此必须将其定义为<code>CacheLoader&lt;Object, Object&gt;</code> 。自动配置忽略任何其他泛型类型。</p>
 <p translation-origin="off">If a <code>com.github.benmanes.caffeine.cache.CacheLoader</code> bean is defined, it is automatically associated to the <code>CaffeineCacheManager</code>.
 Since the <code>CacheLoader</code> is going to be associated with <em>all</em> caches managed by the cache manager, it must be defined as <code>CacheLoader&lt;Object, Object&gt;</code>.
 The auto-configuration ignores any other generic type.</p>

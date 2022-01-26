@@ -3781,7 +3781,7 @@ This is a useful member of the view resolver chain and picks up any beans with t
 It should not be necessary to override or replace it.</p>
 </li>
 <li>
-<p translation-result="on">仅当实际<strong nt__marker="*">存在</strong><code>View</code>类型的 bean 时，才会添加名为“viewResolver”的<code>ContentNegotiatingViewResolver</code> 。这是一个复合解析器，委托给所有其他解析器并尝试找到与客户端发送的“接受”HTTP 标头的匹配项。有一个<a href="https://spring.io/blog/2013/06/03/content-negotiation-using-views">关于<code>ContentNegotiatingViewResolver</code>的有用博客</a>，您可能想学习以了解更多信息，您还可以查看源代码了解详细信息。您可以通过定义一个名为“viewResolver”的 bean 来关闭自动配置的<code>ContentNegotiatingViewResolver</code> 。</p>
+<p translation-result="on">仅当实际<strong>存在</strong><code>View</code>类型的 bean 时，才会添加名为“viewResolver”的<code>ContentNegotiatingViewResolver</code> 。这是一个复合解析器，委托给所有其他解析器并尝试找到与客户端发送的“接受”HTTP 标头的匹配项。有一个<a href="https://spring.io/blog/2013/06/03/content-negotiation-using-views">关于<code>ContentNegotiatingViewResolver</code>的有用博客</a>，您可能想学习以了解更多信息，您还可以查看源代码了解详细信息。您可以通过定义一个名为“viewResolver”的 bean 来关闭自动配置的<code>ContentNegotiatingViewResolver</code> 。</p>
 <p translation-origin="off">A <code>ContentNegotiatingViewResolver</code> named ‘viewResolver’ is added only if there <strong>are</strong> actually beans of type <code>View</code> present.
 This is a composite resolver, delegating to all the others and attempting to find a match to the ‘Accept’ HTTP header sent by the client.
 There is a useful <a href="https://spring.io/blog/2013/06/03/content-negotiation-using-views">blog about <code>ContentNegotiatingViewResolver</code></a> that you might like to study to learn more, and you might also look at the source code for detail.
@@ -4577,7 +4577,7 @@ public class MyDataSourceConfiguration {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">此设置使您与默认情况下 Spring Boot 为您所做<em nt__marker="*">的同步</em>，除了选择专用连接池（在代码中）并且其设置在<code>app.datasource.configuration</code>子命名空间中公开。因为<code>DataSourceProperties</code>正在为您处理<code>url</code> / <code>jdbcUrl</code>翻译，您可以按如下方式配置它：</p>
+<p translation-result="on">此设置使您与默认情况下 Spring Boot 为您所做<em>的同步</em>，除了选择专用连接池（在代码中）并且其设置在<code>app.datasource.configuration</code>子命名空间中公开。因为<code>DataSourceProperties</code>正在为您处理<code>url</code> / <code>jdbcUrl</code>翻译，您可以按如下方式配置它：</p>
 <p translation-origin="off">This setup puts you <em>in sync</em> with what Spring Boot does for you by default, except that a dedicated connection pool is chosen (in code) and its settings are exposed in the <code>app.datasource.configuration</code> sub namespace.
 Because <code>DataSourceProperties</code> is taking care of the <code>url</code>/<code>jdbcUrl</code> translation for you, you can configure it as follows:</p>
 </div>
@@ -4645,7 +4645,7 @@ In practice, the builder is initialized with whatever value you might set there 
 You must, however, mark one of the <code>DataSource</code> instances as <code>@Primary</code>, because various auto-configurations down the road expect to be able to get one by type.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您创建自己的<code>DataSource</code> ，则自动配置会退出。在以下示例中，我们提供了与自动配置在主数据源上提供的<em nt__marker="*">完全相同的</em>功能集：</p>
+<p translation-result="on">如果您创建自己的<code>DataSource</code> ，则自动配置会退出。在以下示例中，我们提供了与自动配置在主数据源上提供的<em>完全相同的</em>功能集：</p>
 <p translation-origin="off">If you create your own <code>DataSource</code>, the auto-configuration backs off.
 In the following example, we provide the <em>exact</em> same feature set as the auto-configuration provides on the primary data source:</p>
 </div>
@@ -5772,7 +5772,7 @@ See <a href="https://docs.spring.io/spring-batch/docs/4.3.4/api/org/springframew
 <p translation-origin="off">Spring Batch auto-configuration is enabled by adding <code>@EnableBatchProcessing</code> to one of your <code>@Configuration</code> classes.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，它在启动时执行应用程序上下文中的<strong nt__marker="*">所有</strong><code>Jobs</code> （有关详细信息，请参阅<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/batch/JobLauncherApplicationRunner.java"><code>JobLauncherApplicationRunner</code></a> ）。您可以通过指定<code>spring.batch.job.names</code> （它采用逗号分隔的作业名称模式列表）来缩小到一个或多个特定作业。</p>
+<p translation-result="on">默认情况下，它在启动时执行应用程序上下文中的<strong>所有</strong><code>Jobs</code> （有关详细信息，请参阅<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/batch/JobLauncherApplicationRunner.java"><code>JobLauncherApplicationRunner</code></a> ）。您可以通过指定<code>spring.batch.job.names</code> （它采用逗号分隔的作业名称模式列表）来缩小到一个或多个特定作业。</p>
 <p translation-origin="off">By default, it executes <strong>all</strong> <code>Jobs</code> in the application context on startup (see <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/batch/JobLauncherApplicationRunner.java"><code>JobLauncherApplicationRunner</code></a> for details).
 You can narrow down to a specific job or jobs by specifying <code>spring.batch.job.names</code> (which takes a comma-separated list of job name patterns).</p>
 </div>
@@ -6683,12 +6683,12 @@ To make it executable, you can either use the <code>spring-boot-antlib</code> mo
 If you are building a war, package the application’s classes in a nested <code>WEB-INF/classes</code> directory as usual.</p>
 </li>
 <li>
-<p translation-result="on">在嵌套的<code>BOOT-INF/lib</code>目录中添加运行时依赖项以用于 jar 或<code>WEB-INF/lib</code>用于战争。切记<strong nt__marker="*">不要</strong>压缩存档中的条目。</p>
+<p translation-result="on">在嵌套的<code>BOOT-INF/lib</code>目录中添加运行时依赖项以用于 jar 或<code>WEB-INF/lib</code>用于战争。切记<strong>不要</strong>压缩存档中的条目。</p>
 <p translation-origin="off">Add the runtime dependencies in a nested <code>BOOT-INF/lib</code> directory for a jar or <code>WEB-INF/lib</code> for a war.
 Remember <strong>not</strong> to compress the entries in the archive.</p>
 </li>
 <li>
-<p translation-result="on">在嵌套的<code>BOOT-INF/lib</code>目录中添加<code>provided</code>的（嵌入式容器）依赖项以用于 jar 或<code>WEB-INF/lib-provided</code>用于战争。切记<strong nt__marker="*">不要</strong>压缩存档中的条目。</p>
+<p translation-result="on">在嵌套的<code>BOOT-INF/lib</code>目录中添加<code>provided</code>的（嵌入式容器）依赖项以用于 jar 或<code>WEB-INF/lib-provided</code>用于战争。切记<strong>不要</strong>压缩存档中的条目。</p>
 <p translation-origin="off">Add the <code>provided</code> (embedded container) dependencies in a nested <code>BOOT-INF/lib</code> directory for a jar or <code>WEB-INF/lib-provided</code> for a war.
 Remember <strong>not</strong> to compress the entries in the archive.</p>
 </li>
@@ -7033,7 +7033,7 @@ In that case, we suggest <a href="https://stackoverflow.com/questions/tagged/spr
 <h3 id="howto.traditional-deployment.weblogic" translation-result="on"><a href="howto.html#howto.traditional-deployment.weblogic"></a>17.3.将 WAR 部署到 WebLogic</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.traditional-deployment.weblogic"></a>17.3. Deploying a WAR to WebLogic</h3>
 <div class="paragraph">
-<p translation-result="on">要将 Spring Boot 应用程序部署到 WebLogic，您必须确保您的 servlet 初始化程序<strong nt__marker="*">直接</strong>实现<code>WebApplicationInitializer</code> （即使您从已经实现它的基类扩展）。</p>
+<p translation-result="on">要将 Spring Boot 应用程序部署到 WebLogic，您必须确保您的 servlet 初始化程序<strong>直接</strong>实现<code>WebApplicationInitializer</code> （即使您从已经实现它的基类扩展）。</p>
 <p translation-origin="off">To deploy a Spring Boot application to WebLogic, you must ensure that your servlet initializer <strong>directly</strong> implements <code>WebApplicationInitializer</code> (even if you extend from a base class that already implements it).</p>
 </div>
 <div class="paragraph">

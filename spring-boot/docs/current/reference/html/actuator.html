@@ -7027,7 +7027,7 @@ In other words, if <code>jvm.memory.max</code> appears as <code>jvm_memory_max</
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">报告的测量值是与仪表名称和已应用的任何标签匹配的所有仪表的统计信息的<em nt__marker="*">总和</em>。在前面的示例中，返回的<code>Value</code>统计信息是堆的“代码缓存”、“压缩类空间”和“元空间”区域的最大内存占用量之和。如果您只想查看“元空间”的最大大小，可以添加一个额外的<code>tag=id:Metaspace</code> — 即<code>/actuator/metrics/jvm.memory.max?tag=area:nonheap&amp;tag=id:Metaspace</code> 。</p>
+<p translation-result="on">报告的测量值是与仪表名称和已应用的任何标签匹配的所有仪表的统计信息的<em>总和</em>。在前面的示例中，返回的<code>Value</code>统计信息是堆的“代码缓存”、“压缩类空间”和“元空间”区域的最大内存占用量之和。如果您只想查看“元空间”的最大大小，可以添加一个额外的<code>tag=id:Metaspace</code> — 即<code>/actuator/metrics/jvm.memory.max?tag=area:nonheap&amp;tag=id:Metaspace</code> 。</p>
 <p translation-origin="off">The reported measurements are the <em>sum</em> of the statistics of all meters that match the meter name and any tags that have been applied.
 In the preceding example, the returned <code>Value</code> statistic is the sum of the maximum memory footprints of the “Code Cache”, “Compressed Class Space”, and “Metaspace” areas of the heap.
 If you wanted to see only the maximum size for the “Metaspace”, you could add an additional <code>tag=id:Metaspace</code> — that is, <code>/actuator/metrics/jvm.memory.max?tag=area:nonheap&amp;tag=id:Metaspace</code>.</p>
