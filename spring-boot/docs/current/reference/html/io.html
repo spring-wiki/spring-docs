@@ -1140,7 +1140,7 @@ Spring Boot auto-configures the cache infrastructure as long as caching support 
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">简而言之，要向服务的操作添加缓存，请将相关注释添加到其方法中，如以下示例所示：</p>
+<p translation-result="on">简而言之，要向服务的操作添加缓存，请将相关注解添加到其方法中，如以下示例所示：</p>
 <p translation-origin="off">In a nutshell, to add caching to an operation of your service add the relevant annotation to its method, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -1174,7 +1174,7 @@ Otherwise, the method is invoked, and the cache is updated before returning the 
 <i class="fa icon-caution" title="小心"></i>
 </td>
 <td class="content">
-<p translation-result="on">你还可以透明地使用标准 JSR-107 (JCache) 注释（例如 <code>@CacheResult</code> ）。但是，我们强烈建议你不要混合和匹配 Spring Cache 和 JCache 注释。</p>
+<p translation-result="on">你还可以透明地使用标准 JSR-107 (JCache) 注解（例如 <code>@CacheResult</code> ）。但是，我们强烈建议你不要混合和匹配 Spring Cache 和 JCache 注解。</p>
 <p translation-origin="off">You can also use the standard JSR-107 (JCache) annotations (such as <code>@CacheResult</code>) transparently.
 However, we strongly advise you to not mix and match the Spring Cache and JCache annotations.</p>
 </td>
@@ -1944,7 +1944,7 @@ It is also possible to provide a custom script by setting the <code>spring.quart
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">要让 Quartz 使用应用程序的主 <code>DataSource</code> 以外的 <code>DataSource</code> ，请声明一个 <code>DataSource</code> bean，用 <code>@QuartzDataSource</code> 注释其 <code>@Bean</code> 方法。这样做可以确保 Quartz 特定的 <code>DataSource</code> 被 <code>SchedulerFactoryBean</code> 和模式初始化所使用。类似地，要让 Quartz 使用除应用程序主 <code>TransactionManager</code> 之外的 <code>TransactionManager</code> 声明一个 <code>TransactionManager</code> bean，并使用 <code>@QuartzTransactionManager</code> 注释其 <code>@Bean</code> 方法。</p>
+<p translation-result="on">要让 Quartz 使用应用程序的主 <code>DataSource</code> 以外的 <code>DataSource</code> ，请声明一个 <code>DataSource</code> bean，用 <code>@QuartzDataSource</code> 注解其 <code>@Bean</code> 方法。这样做可以确保 Quartz 特定的 <code>DataSource</code> 被 <code>SchedulerFactoryBean</code> 和模式初始化所使用。类似地，要让 Quartz 使用除应用程序主 <code>TransactionManager</code> 之外的 <code>TransactionManager</code> 声明一个 <code>TransactionManager</code> bean，并使用 <code>@QuartzTransactionManager</code> 注解其 <code>@Bean</code> 方法。</p>
 <p translation-origin="off">To have Quartz use a <code>DataSource</code> other than the application’s main <code>DataSource</code>, declare a <code>DataSource</code> bean, annotating its <code>@Bean</code> method with <code>@QuartzDataSource</code>.
 Doing so ensures that the Quartz-specific <code>DataSource</code> is used by both the <code>SchedulerFactoryBean</code> and for schema initialization.
 Similarly, to have Quartz use a <code>TransactionManager</code> other than the application’s main <code>TransactionManager</code> declare a <code>TransactionManager</code> bean, annotating its <code>@Bean</code> method with <code>@QuartzTransactionManager</code>.</p>
@@ -2095,7 +2095,7 @@ spring.mail.properties[mail.smtp.writetimeout]=5000</code></pre>
 <h2 translation-origin="off"><a class="anchor" href="io.html#io.validation"></a>5. Validation</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">只要类路径上有 JSR-303 实现（例如 Hibernate 验证器），Bean Validation 1.1 支持的方法验证功能就会自动启用。这允许 bean 方法在其参数和/或返回值上使用 <code>javax.validation</code> 约束进行注释。具有此类注释方法的目标类需要在类型级别使用 <code>@Validated</code> 注释进行注释，以便在其方法中搜索内联约束注释。</p>
+<p translation-result="on">只要类路径上有 JSR-303 实现（例如 Hibernate 验证器），Bean Validation 1.1 支持的方法验证功能就会自动启用。这允许 bean 方法在其参数和/或返回值上使用 <code>javax.validation</code> 约束进行注解。具有此类注解方法的目标类需要在类型级别使用 <code>@Validated</code> 注解进行注解，以便在其方法中搜索内联约束注解。</p>
 <p translation-origin="off">The method validation feature supported by Bean Validation 1.1 is automatically enabled as long as a JSR-303 implementation (such as Hibernate validator) is on the classpath.
 This lets bean methods be annotated with <code>javax.validation</code> constraints on their parameters and/or on their return value.
 Target classes with such annotated methods need to be annotated with the <code>@Validated</code> annotation at the type level for their methods to be searched for inline constraint annotations.</p>

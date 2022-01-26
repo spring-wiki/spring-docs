@@ -1788,14 +1788,14 @@ We step through the important parts in the next few sections.</p>
 <h4 id="getting-started.first-application.code.mvc-annotations" translation-result="on"><a href="getting-started.html#getting-started.first-application.code.mvc-annotations"></a>4.3.1.@RestController 和 @RequestMapping 注解</h4>
 <h4 translation-origin="off"><a class="anchor" href="getting-started.html#getting-started.first-application.code.mvc-annotations"></a>4.3.1. The @RestController and @RequestMapping Annotations</h4>
 <div class="paragraph">
-<p translation-result="on"><code>MyApplication</code> 类的第一个注解是 <code>@RestController</code> 。这称为<em>构造型</em>注释。它为阅读代码的人和 Spring 提供了类扮演特定角色的提示。在这种情况下，我们的类是一个 web <code>@Controller</code> ，所以 Spring 在处理传入的 web 请求时会考虑它。</p>
+<p translation-result="on"><code>MyApplication</code> 类的第一个注解是 <code>@RestController</code> 。这称为<em>构造型</em>注解。它为阅读代码的人和 Spring 提供了类扮演特定角色的提示。在这种情况下，我们的类是一个 web <code>@Controller</code> ，所以 Spring 在处理传入的 web 请求时会考虑它。</p>
 <p translation-origin="off">The first annotation on our <code>MyApplication</code> class is <code>@RestController</code>.
 This is known as a <em>stereotype</em> annotation.
 It provides hints for people reading the code and for Spring that the class plays a specific role.
 In this case, our class is a web <code>@Controller</code>, so Spring considers it when handling incoming web requests.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>@RequestMapping</code> 注解提供“路由”信息。它告诉 Spring 任何带有 <code>/</code> 路径的 HTTP 请求都应该映射到 <code>home</code> 方法。<code>@RestController</code> 注释告诉 Spring 将结果字符串直接呈现给调用者。</p>
+<p translation-result="on"><code>@RequestMapping</code> 注解提供“路由”信息。它告诉 Spring 任何带有 <code>/</code> 路径的 HTTP 请求都应该映射到 <code>home</code> 方法。<code>@RestController</code> 注解告诉 Spring 将结果字符串直接呈现给调用者。</p>
 <p translation-origin="off">The <code>@RequestMapping</code> annotation provides “routing” information.
 It tells Spring that any HTTP request with the <code>/</code> path should be mapped to the <code>home</code> method.
 The <code>@RestController</code> annotation tells Spring to render the resulting string directly back to the caller.</p>
@@ -1819,7 +1819,7 @@ See the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/h
 <h4 id="getting-started.first-application.code.enable-auto-configuration" translation-result="on"><a href="getting-started.html#getting-started.first-application.code.enable-auto-configuration"></a>4.3.2. @EnableAutoConfiguration 注解</h4>
 <h4 translation-origin="off"><a class="anchor" href="getting-started.html#getting-started.first-application.code.enable-auto-configuration"></a>4.3.2. The @EnableAutoConfiguration Annotation</h4>
 <div class="paragraph">
-<p translation-result="on">第二个类级别的注释是 <code>@EnableAutoConfiguration</code> 。这个注解告诉 Spring Boot 根据你添加的 jar 依赖来“猜测”你想如何配置 Spring。由于 <code>spring-boot-starter-web</code> 添加了 Tomcat 和 Spring MVC，因此自动配置假定你正在开发 Web 应用程序并相应地设置 Spring。</p>
+<p translation-result="on">第二个类级别的注解是 <code>@EnableAutoConfiguration</code> 。这个注解告诉 Spring Boot 根据你添加的 jar 依赖来“猜测”你想如何配置 Spring。由于 <code>spring-boot-starter-web</code> 添加了 Tomcat 和 Spring MVC，因此自动配置假定你正在开发 Web 应用程序并相应地设置 Spring。</p>
 <p translation-origin="off">The second class-level annotation is <code>@EnableAutoConfiguration</code>.
 This annotation tells Spring Boot to “guess” how you want to configure Spring, based on the jar dependencies that you have added.
 Since <code>spring-boot-starter-web</code> added Tomcat and Spring MVC, the auto-configuration assumes that you are developing a web application and sets up Spring accordingly.</p>

@@ -1687,7 +1687,7 @@ However, there are some best practices that help.</p>
 <h3 id="using.structuring-your-code.using-the-default-package" translation-result="on"><a href="using.html#using.structuring-your-code.using-the-default-package"></a>2.1. 使用“默认”包</h3>
 <h3 translation-origin="off"><a class="anchor" href="using.html#using.structuring-your-code.using-the-default-package"></a>2.1. Using the “default” Package</h3>
 <div class="paragraph">
-<p translation-result="on">当一个类不包含 <code>package</code> 声明时，它被认为在“默认包”中。通常不鼓励使用“默认包”，应避免使用。它可能会导致使用 <code>@ComponentScan</code> 、 <code>@ConfigurationPropertiesScan</code> 、 <code>@EntityScan</code> 或 <code>@SpringBootApplication</code> 注释的 Spring Boot 应用程序出现特定问题，因为每个 jar 中的每个类都被读取。</p>
+<p translation-result="on">当一个类不包含 <code>package</code> 声明时，它被认为在“默认包”中。通常不鼓励使用“默认包”，应避免使用。它可能会导致使用 <code>@ComponentScan</code> 、 <code>@ConfigurationPropertiesScan</code> 、 <code>@EntityScan</code> 或 <code>@SpringBootApplication</code> 注解的 Spring Boot 应用程序出现特定问题，因为每个 jar 中的每个类都被读取。</p>
 <p translation-origin="off">When a class does not include a <code>package</code> declaration, it is considered to be in the “default package”.
 The use of the “default package” is generally discouraged and should be avoided.
 It can cause particular problems for Spring Boot applications that use the <code>@ComponentScan</code>, <code>@ConfigurationPropertiesScan</code>, <code>@EntityScan</code>, or <code>@SpringBootApplication</code> annotations, since every class from every jar is read.</p>
@@ -1723,7 +1723,7 @@ Using a root package also allows component scan to apply only on your project.</
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果你不想使用 <code>@SpringBootApplication</code> ，它导入的 <code>@EnableAutoConfiguration</code> 和 <code>@ComponentScan</code> 注释定义了该行为，因此你也可以用它们。</p>
+<p translation-result="on">如果你不想使用 <code>@SpringBootApplication</code> ，它导入的 <code>@EnableAutoConfiguration</code> 和 <code>@ComponentScan</code> 注解定义了该行为，因此你也可以用它们。</p>
 <p translation-origin="off">If you do not want to use <code>@SpringBootApplication</code>, the <code>@EnableAutoConfiguration</code> and <code>@ComponentScan</code> annotations that it imports defines that behavior so you can also use those instead.</p>
 </td>
 </tr>
@@ -1793,7 +1793,7 @@ Usually the class that defines the <code>main</code> method is a good candidate 
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">互联网上已经发布了许多使用 XML 配置的 Spring 配置示例。如果可能，请始终尝试使用等效的基于 Java 的配置。搜索 <code>Enable*</code> 注释可能是一个很好的起点。</p>
+<p translation-result="on">互联网上已经发布了许多使用 XML 配置的 Spring 配置示例。如果可能，请始终尝试使用等效的基于 Java 的配置。搜索 <code>Enable*</code> 注解可能是一个很好的起点。</p>
 <p translation-origin="off">Many Spring configuration examples have been published on the Internet that use XML configuration.
 If possible, always try to use the equivalent Java-based configuration.
 Searching for <code>Enable*</code> annotations can be a good starting point.</p>
@@ -1815,7 +1815,7 @@ Alternatively, you can use <code>@ComponentScan</code> to automatically pick up 
 <h3 id="using.configuration-classes.importing-xml-configuration" translation-result="on"><a href="using.html#using.configuration-classes.importing-xml-configuration"></a>3.2. 导入 XML 配置</h3>
 <h3 translation-origin="off"><a class="anchor" href="using.html#using.configuration-classes.importing-xml-configuration"></a>3.2. Importing XML Configuration</h3>
 <div class="paragraph">
-<p translation-result="on">如果你绝对必须使用基于 XML 的配置，我们建议你仍然从 <code>@Configuration</code> 类开始。然后，你可以用 <code>@ImportResource</code> 注释来加载 XML 配置文件。</p>
+<p translation-result="on">如果你绝对必须使用基于 XML 的配置，我们建议你仍然从 <code>@Configuration</code> 类开始。然后，你可以用 <code>@ImportResource</code> 注解来加载 XML 配置文件。</p>
 <p translation-origin="off">If you absolutely must use XML based configuration, we recommend that you still start with a <code>@Configuration</code> class.
 You can then use an <code>@ImportResource</code> annotation to load XML configuration files.</p>
 </div>
@@ -1832,7 +1832,7 @@ You can then use an <code>@ImportResource</code> annotation to load XML configur
 For example, if <code>HSQLDB</code> is on your classpath, and you have not manually configured any database connection beans, then Spring Boot auto-configures an in-memory database.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">你需要通过将 <code>@EnableAutoConfiguration</code> 或 <code>@SpringBootApplication</code> 注释添加到你的 <code>@Configuration</code> 类之一来选择加入自动配置。</p>
+<p translation-result="on">你需要通过将 <code>@EnableAutoConfiguration</code> 或 <code>@SpringBootApplication</code> 注解添加到你的 <code>@Configuration</code> 类之一来选择加入自动配置。</p>
 <p translation-origin="off">You need to opt-in to auto-configuration by adding the <code>@EnableAutoConfiguration</code> or <code>@SpringBootApplication</code> annotations to one of your <code>@Configuration</code> classes.</p>
 </div>
 <div class="admonitionblock tip">
@@ -1896,7 +1896,7 @@ Finally, you can also control the list of auto-configuration classes to exclude 
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">你可以在注释级别和使用属性定义排除项。</p>
+<p translation-result="on">你可以在注解级别和使用属性定义排除项。</p>
 <p translation-origin="off">You can define exclusions both at the annotation level and by using the property.</p>
 </td>
 </tr>
@@ -1929,7 +1929,7 @@ The actual contents of those classes, such as nested configuration classes or be
 We generally recommend using constructor injection to wire up dependencies and <code>@ComponentScan</code> to find beans.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你按照上面的建议构建代码（将应用程序类放在顶级包中），则可以添加不带任何参数的 <code>@ComponentScan</code> 或使用隐式包含它的 <code>@SpringBootApplication</code> 注释。你的所有应用程序组件（ <code>@Component</code> 、 <code>@Service</code> Service、 <code>@Repository</code> 、 <code>@Controller</code> 等）都会自动注册为 Spring Bean。</p>
+<p translation-result="on">如果你按照上面的建议构建代码（将应用程序类放在顶级包中），则可以添加不带任何参数的 <code>@ComponentScan</code> 或使用隐式包含它的 <code>@SpringBootApplication</code> 注解。你的所有应用程序组件（ <code>@Component</code> 、 <code>@Service</code> Service、 <code>@Repository</code> 、 <code>@Controller</code> 等）都会自动注册为 Spring Bean。</p>
 <p translation-origin="off">If you structure your code as suggested above (locating your application class in a top package), you can add <code>@ComponentScan</code> without any arguments or use the <code>@SpringBootApplication</code> annotation which implicitly includes it.
 All of your application components (<code>@Component</code>, <code>@Service</code>, <code>@Repository</code>, <code>@Controller</code>, and others) are automatically registered as Spring Beans.</p>
 </div>
@@ -2070,7 +2070,7 @@ public class MyApplication {
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">这些功能都不是强制性的，你可以选择将此单个注释替换为它启用的任何功能。例如，你可能不想在应用程序中使用组件扫描或配置属性扫描：</p>
+<p translation-result="on">这些功能都不是强制性的，你可以选择将此单个注解替换为它启用的任何功能。例如，你可能不想在应用程序中使用组件扫描或配置属性扫描：</p>
 <p translation-origin="off">None of these features are mandatory and you may choose to replace this single annotation by any of the features that it enables.
 For instance, you may not want to use component scan or configuration properties scan in your application:</p>
 </div>

@@ -1408,7 +1408,7 @@ If a <code>DestinationResolver</code> or a <code>MessageConverter</code> bean is
 <h3 id="messaging.jms.receiving" translation-result="on"><a href="messaging.html#messaging.jms.receiving"></a>1.5. 接收消息</h3>
 <h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms.receiving"></a>1.5. Receiving a Message</h3>
 <div class="paragraph">
-<p translation-result="on">当 JMS 基础设施存在时，可以用 <code>@JmsListener</code> 注释任何 bean 以创建侦听器端点。如果没有定义 <code>JmsListenerContainerFactory</code> ，则会自动配置一个默认值。如果定义了 <code>DestinationResolver</code> 、 <code>MessageConverter</code> 或 <code>javax.jms.ExceptionListener</code> bean，它们将自动与默认工厂关联。</p>
+<p translation-result="on">当 JMS 基础设施存在时，可以用 <code>@JmsListener</code> 注解任何 bean 以创建侦听器端点。如果没有定义 <code>JmsListenerContainerFactory</code> ，则会自动配置一个默认值。如果定义了 <code>DestinationResolver</code> 、 <code>MessageConverter</code> 或 <code>javax.jms.ExceptionListener</code> bean，它们将自动与默认工厂关联。</p>
 <p translation-origin="off">When the JMS infrastructure is present, any bean can be annotated with <code>@JmsListener</code> to create a listener endpoint.
 If no <code>JmsListenerContainerFactory</code> has been defined, a default one is configured automatically.
 If a <code>DestinationResolver</code>, a <code>MessageConverter</code>, or a <code>javax.jms.ExceptionListener</code> beans are defined, they are associated automatically with the default factory.</p>
@@ -1711,7 +1711,7 @@ You can also customize the <code>RetryTemplate</code> programmatically by declar
 <h3 id="messaging.amqp.receiving" translation-result="on"><a href="messaging.html#messaging.amqp.receiving"></a>2.3. 接收消息</h3>
 <h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.amqp.receiving"></a>2.3. Receiving a Message</h3>
 <div class="paragraph">
-<p translation-result="on">当 Rabbit 基础设施存在时，可以用 <code>@RabbitListener</code> 注释任何 bean 以创建侦听器端点。如果未定义 <code>RabbitListenerContainerFactory</code> ，则会自动配置默认的 <code>SimpleRabbitListenerContainerFactory</code> ，你可以用 <code>spring.rabbitmq.listener.type</code> 属性切换到直接容器。如果定义了 <code>MessageConverter</code> 或 <code>MessageRecoverer</code> bean，它会自动与默认工厂关联。</p>
+<p translation-result="on">当 Rabbit 基础设施存在时，可以用 <code>@RabbitListener</code> 注解任何 bean 以创建侦听器端点。如果未定义 <code>RabbitListenerContainerFactory</code> ，则会自动配置默认的 <code>SimpleRabbitListenerContainerFactory</code> ，你可以用 <code>spring.rabbitmq.listener.type</code> 属性切换到直接容器。如果定义了 <code>MessageConverter</code> 或 <code>MessageRecoverer</code> bean，它会自动与默认工厂关联。</p>
 <p translation-origin="off">When the Rabbit infrastructure is present, any bean can be annotated with <code>@RabbitListener</code> to create a listener endpoint.
 If no <code>RabbitListenerContainerFactory</code> has been defined, a default <code>SimpleRabbitListenerContainerFactory</code> is automatically configured and you can switch to a direct container using the <code>spring.rabbitmq.listener.type</code> property.
 If a <code>MessageConverter</code> or a <code>MessageRecoverer</code> bean is defined, it is automatically associated with the default factory.</p>
@@ -1946,7 +1946,7 @@ Also, if a <code>RecordMessageConverter</code> bean is defined, it is automatica
 <h3 id="messaging.kafka.receiving" translation-result="on"><a href="messaging.html#messaging.kafka.receiving"></a>3.2. 接收消息</h3>
 <h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.kafka.receiving"></a>3.2. Receiving a Message</h3>
 <div class="paragraph">
-<p translation-result="on">当存在 Apache Kafka 基础架构时，可以用 <code>@KafkaListener</code> 注释任何 bean 以创建侦听器端点。如果没有定义 <code>KafkaListenerContainerFactory</code> ，则会自动使用 <code>spring.kafka.listener.*</code> 中定义的键配置默认值。</p>
+<p translation-result="on">当存在 Apache Kafka 基础架构时，可以用 <code>@KafkaListener</code> 注解任何 bean 以创建侦听器端点。如果没有定义 <code>KafkaListenerContainerFactory</code> ，则会自动使用 <code>spring.kafka.listener.*</code> 中定义的键配置默认值。</p>
 <p translation-origin="off">When the Apache Kafka infrastructure is present, any bean can be annotated with <code>@KafkaListener</code> to create a listener endpoint.
 If no <code>KafkaListenerContainerFactory</code> has been defined, a default one is automatically configured with keys defined in <code>spring.kafka.listener.*</code>.</p>
 </div>
@@ -2178,7 +2178,7 @@ spring.kafka.producer.properties[spring.json.add.type.headers]=false</code></pre
 <h3 id="messaging.kafka.embedded" translation-result="on"><a href="messaging.html#messaging.kafka.embedded"></a>3.5. 使用嵌入式 Kafka 进行测试</h3>
 <h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.kafka.embedded"></a>3.5. Testing with Embedded Kafka</h3>
 <div class="paragraph">
-<p translation-result="on">Spring for Apache Kafka 提供了一种使用嵌入式 Apache Kafka 代理测试项目的便捷方式。要使用此功能，请使用 <code>spring-kafka-test</code> 模块中的 <code>@EmbeddedKafka</code> 注释测试类。有关更多信息，请参阅 Spring for Apache Kafka <a href="https://docs.spring.io/spring-kafka/docs/2.8.2/reference/html/#embedded-kafka-annotation">参考手册</a>。</p>
+<p translation-result="on">Spring for Apache Kafka 提供了一种使用嵌入式 Apache Kafka 代理测试项目的便捷方式。要使用此功能，请使用 <code>spring-kafka-test</code> 模块中的 <code>@EmbeddedKafka</code> 注解测试类。有关更多信息，请参阅 Spring for Apache Kafka <a href="https://docs.spring.io/spring-kafka/docs/2.8.2/reference/html/#embedded-kafka-annotation">参考手册</a>。</p>
 <p translation-origin="off">Spring for Apache Kafka provides a convenient way to test projects with an embedded Apache Kafka broker.
 To use this feature, annotate a test class with <code>@EmbeddedKafka</code> from the <code>spring-kafka-test</code> module.
 For more information, please see the Spring for Apache Kafka <a href="https://docs.spring.io/spring-kafka/docs/2.8.2/reference/html/#embedded-kafka-annotation">reference manual</a>.</p>
@@ -2434,7 +2434,7 @@ public class MyService {
 <h2 translation-origin="off"><a class="anchor" href="messaging.html#messaging.spring-integration"></a>5. Spring Integration</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot 为使用 <a href="https://spring.io/projects/spring-integration">Spring Integration</a> 提供了多种便利，包括 <code>spring-boot-starter-integration</code> “Starter”。Spring Integration 提供了对消息传递以及 HTTP、TCP 等其他传输的抽象。如果 Spring Integration 在你的类路径上可用，则通过 <code>@EnableIntegration</code> 注释对其进行初始化。</p>
+<p translation-result="on">Spring Boot 为使用 <a href="https://spring.io/projects/spring-integration">Spring Integration</a> 提供了多种便利，包括 <code>spring-boot-starter-integration</code> “Starter”。Spring Integration 提供了对消息传递以及 HTTP、TCP 等其他传输的抽象。如果 Spring Integration 在你的类路径上可用，则通过 <code>@EnableIntegration</code> 注解对其进行初始化。</p>
 <p translation-origin="off">Spring Boot offers several conveniences for working with <a href="https://spring.io/projects/spring-integration">Spring Integration</a>, including the <code>spring-boot-starter-integration</code> “Starter”.
 Spring Integration provides abstractions over messaging and also other transports such as HTTP, TCP, and others.
 If Spring Integration is available on your classpath, it is initialized through the <code>@EnableIntegration</code> annotation.</p>

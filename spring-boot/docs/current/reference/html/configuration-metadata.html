@@ -1030,11 +1030,11 @@
 </ul>
 </li>
 <li>
-  <p translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor">3. 使用注释处理器生成你自己的元数据</a></p>
+  <p translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor">3. 使用注解处理器生成你自己的元数据</a></p>
   <p translation-origin="off"><a href="configuration-metadata.html#configuration-metadata.annotation-processor">3. Generating Your Own Metadata by Using the Annotation Processor</a></p>
 <ul class="sectlevel2">
 <li>
-  <p translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor.configuring">3.1. 配置注释处理器</a></p>
+  <p translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor.configuring">3.1. 配置注解处理器</a></p>
   <p translation-origin="off"><a href="configuration-metadata.html#configuration-metadata.annotation-processor.configuring">3.1. Configuring the Annotation Processor</a></p>
 </li>
 <li>
@@ -1065,7 +1065,7 @@
 The files are designed to let IDE developers offer contextual help and “code completion” as users are working with <code>application.properties</code> or <code>application.yml</code> files.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">大多数元数据文件是在编译时通过处理所有使用 <code>@ConfigurationProperties</code> 注释的项目自动生成的。但是，可以为极端情况或更高级的用例<a href="configuration-metadata.html#configuration-metadata.annotation-processor.adding-additional-metadata">手动编写部分元数据</a>。</p>
+<p translation-result="on">大多数元数据文件是在编译时通过处理所有使用 <code>@ConfigurationProperties</code> 注解的项目自动生成的。但是，可以为极端情况或更高级的用例<a href="configuration-metadata.html#configuration-metadata.annotation-processor.adding-additional-metadata">手动编写部分元数据</a>。</p>
 <p translation-origin="off">The majority of the metadata file is generated automatically at compile time by processing all items annotated with <code>@ConfigurationProperties</code>.
 However, it is possible to <a href="configuration-metadata.html#configuration-metadata.annotation-processor.adding-additional-metadata">write part of the metadata manually</a> for corner cases or more advanced use cases.</p>
 </div>
@@ -1226,7 +1226,7 @@ This attribute is mandatory.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
 <td class="tableblock halign-left valign-top"><p translation-result="on">细绳</p><p class="tableblock" translation-origin="off">String</p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">组的数据类型的类名。例如，如果组基于使用 <code>@ConfigurationProperties</code> 注释的类，则该属性将包含该类的完全限定名称。如果它基于 <code>@Bean</code> 方法，那么它将是该方法的返回类型。如果类型未知，则可以省略该属性。</p><p class="tableblock" translation-origin="off">The class name of the data type of the group.
+<td class="tableblock halign-left valign-top"><p translation-result="on">组的数据类型的类名。例如，如果组基于使用 <code>@ConfigurationProperties</code> 注解的类，则该属性将包含该类的完全限定名称。如果它基于 <code>@Bean</code> 方法，那么它将是该方法的返回类型。如果类型未知，则可以省略该属性。</p><p class="tableblock" translation-origin="off">The class name of the data type of the group.
 For example, if the group were based on a class annotated with <code>@ConfigurationProperties</code>, the attribute would contain the fully qualified name of that class.
 If it were based on a <code>@Bean</code> method, it would be the return type of that method.
 If the type is not known, the attribute may be omitted.</p></td>
@@ -1242,7 +1242,7 @@ The last line in the description should end with a period (<code>.</code>).</p><
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>sourceType</code></p></td>
 <td class="tableblock halign-left valign-top"><p translation-result="on">细绳</p><p class="tableblock" translation-origin="off">String</p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">贡献此组的源的类名。例如，如果组基于使用 <code>@ConfigurationProperties</code> 注释的 <code>@Bean</code> 方法，则此属性将包含包含该方法的 <code>@Configuration</code> 类的完全限定名称。如果源类型未知，则可以省略该属性。</p><p class="tableblock" translation-origin="off">The class name of the source that contributed this group.
+<td class="tableblock halign-left valign-top"><p translation-result="on">贡献此组的源的类名。例如，如果组基于使用 <code>@ConfigurationProperties</code> 注解的 <code>@Bean</code> 方法，则此属性将包含包含该方法的 <code>@Configuration</code> 类的完全限定名称。如果源类型未知，则可以省略该属性。</p><p class="tableblock" translation-origin="off">The class name of the source that contributed this group.
 For example, if the group were based on a <code>@Bean</code> method annotated with <code>@ConfigurationProperties</code>, this attribute would contain the fully qualified name of the <code>@Configuration</code> class that contains the method.
 If the source type is not known, the attribute may be omitted.</p></td>
 </tr>
@@ -1312,7 +1312,7 @@ The last line in the description should end with a period (<code>.</code>).</p><
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>sourceType</code></p></td>
 <td class="tableblock halign-left valign-top"><p translation-result="on">细绳</p><p class="tableblock" translation-origin="off">String</p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">贡献此属性的源的类名。例如，如果属性来自使用 <code>@ConfigurationProperties</code> 注释的类，则此属性将包含该类的完全限定名称。如果源类型未知，则可以省略。</p><p class="tableblock" translation-origin="off">The class name of the source that contributed this property.
+<td class="tableblock halign-left valign-top"><p translation-result="on">贡献此属性的源的类名。例如，如果属性来自使用 <code>@ConfigurationProperties</code> 注解的类，则此属性将包含该类的完全限定名称。如果源类型未知，则可以省略。</p><p class="tableblock" translation-origin="off">The class name of the source that contributed this property.
 For example, if the property were from a class annotated with <code>@ConfigurationProperties</code>, this attribute would contain the fully qualified name of that class.
 If the source type is unknown, it may be omitted.</p></td>
 </tr>
@@ -1398,7 +1398,7 @@ If no reason and replacement are available, an empty <code>deprecation</code> ob
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">也可以通过将 <code>@DeprecatedConfigurationProperty</code> 注释添加到公开已弃用属性的 getter 来在代码中以声明方式指定弃用。例如，假设 <code>my.app.target</code> 属性令人困惑并被重命名为 <code>my.app.name</code> 。以下示例显示了如何处理这种情况：</p>
+<p translation-result="on">也可以通过将 <code>@DeprecatedConfigurationProperty</code> 注解添加到公开已弃用属性的 getter 来在代码中以声明方式指定弃用。例如，假设 <code>my.app.target</code> 属性令人困惑并被重命名为 <code>my.app.name</code> 。以下示例显示了如何处理这种情况：</p>
 <p translation-origin="off">Deprecation can also be specified declaratively in code by adding the <code>@DeprecatedConfigurationProperty</code> annotation to the getter exposing the deprecated property.
 For instance, assume that the <code>my.app.target</code> property was confusing and was renamed to <code>my.app.name</code>.
 The following example shows how to handle that situation:</p>
@@ -2256,16 +2256,16 @@ If you provide that hint, you still need to transform the bean name into an actu
 </div>
 </div>
 <div class="sect1">
-<h2 id="configuration-metadata.annotation-processor" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor"></a>3. 使用注释处理器生成你自己的元数据</h2>
+<h2 id="configuration-metadata.annotation-processor" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor"></a>3. 使用注解处理器生成你自己的元数据</h2>
 <h2 translation-origin="off"><a class="anchor" href="configuration-metadata.html#configuration-metadata.annotation-processor"></a>3. Generating Your Own Metadata by Using the Annotation Processor</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">你可以使用 <code>spring-boot-configuration-processor</code> jar 从带有 <code>@ConfigurationProperties</code> 注释的项目轻松生成自己的配置元数据文件。该 jar 包含一个 Java 注释处理器，它在你的项目编译时被调用。</p>
+<p translation-result="on">你可以使用 <code>spring-boot-configuration-processor</code> jar 从带有 <code>@ConfigurationProperties</code> 注解的项目轻松生成自己的配置元数据文件。该 jar 包含一个 Java 注解处理器，它在你的项目编译时被调用。</p>
 <p translation-origin="off">You can easily generate your own configuration metadata file from items annotated with <code>@ConfigurationProperties</code> by using the <code>spring-boot-configuration-processor</code> jar.
 The jar includes a Java annotation processor which is invoked as your project is compiled.</p>
 </div>
 <div class="sect2">
-<h3 id="configuration-metadata.annotation-processor.configuring" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor.configuring"></a> 3.1. 配置注释处理器</h3>
+<h3 id="configuration-metadata.annotation-processor.configuring" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor.configuring"></a> 3.1. 配置注解处理器</h3>
 <h3 translation-origin="off"><a class="anchor" href="configuration-metadata.html#configuration-metadata.annotation-processor.configuring"></a>3.1. Configuring the Annotation Processor</h3>
 <div class="paragraph">
 <p translation-result="on">要使用处理器，请包含对 <code>spring-boot-configuration-processor</code> 的依赖。</p>
@@ -2305,7 +2305,7 @@ The jar includes a Java annotation processor which is invoked as your project is
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">此依赖关系确保在编译期间注释处理器运行时附加元数据可用。</p>
+<p translation-result="on">此依赖关系确保在编译期间注解处理器运行时附加元数据可用。</p>
 <p translation-origin="off">This dependency ensures that the additional metadata is available when the annotation processor runs during compilation.</p>
 </div>
 <div class="admonitionblock note">
@@ -2316,7 +2316,7 @@ The jar includes a Java annotation processor which is invoked as your project is
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">如果你在项目中使用 AspectJ，则需要确保注释处理器只运行一次。有几种方法可以做到这一点。使用 Maven，你可以显式配置 <code>maven-apt-plugin</code> 并仅将依赖项添加到注释处理器。你还可以让 AspectJ 插件运行所有处理并在 <code>maven-compiler-plugin</code> 配置中禁用注释处理，如下所示：</p>
+<p translation-result="on">如果你在项目中使用 AspectJ，则需要确保注解处理器只运行一次。有几种方法可以做到这一点。使用 Maven，你可以显式配置 <code>maven-apt-plugin</code> 并仅将依赖项添加到注解处理器。你还可以让 AspectJ 插件运行所有处理并在 <code>maven-compiler-plugin</code> 配置中禁用注解处理，如下所示：</p>
 <p translation-origin="off">If you are using AspectJ in your project, you need to make sure that the annotation processor runs only once.
 There are several ways to do this.
 With Maven, you can configure the <code>maven-apt-plugin</code> explicitly and add the dependency to the annotation processor only there.
@@ -2342,11 +2342,11 @@ You could also let the AspectJ plugin run all the processing and disable annotat
 <h3 id="configuration-metadata.annotation-processor.automatic-metadata-generation" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor.automatic-metadata-generation"></a> 3.2.自动元数据生成</h3>
 <h3 translation-origin="off"><a class="anchor" href="configuration-metadata.html#configuration-metadata.annotation-processor.automatic-metadata-generation"></a>3.2. Automatic Metadata Generation</h3>
 <div class="paragraph">
-<p translation-result="on">处理器获取使用 <code>@ConfigurationProperties</code> 注释的类和方法。</p>
+<p translation-result="on">处理器获取使用 <code>@ConfigurationProperties</code> 注解的类和方法。</p>
 <p translation-origin="off">The processor picks up both classes and methods that are annotated with <code>@ConfigurationProperties</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果该类也使用 <code>@ConstructorBinding</code> 注释，则需要一个构造函数，并且每个构造函数参数创建一个属性。否则，通过对集合和映射类型进行特殊处理的标准 getter 和 setter 的存在来发现属性（即使仅存在 getter 也会被检测到）。注释处理器还支持使用 <code>@Data</code> 、 <code>@Value</code> 、 <code>@Getter</code> 和 <code>@Setter</code> 注释。</p>
+<p translation-result="on">如果该类也使用 <code>@ConstructorBinding</code> 注解，则需要一个构造函数，并且每个构造函数参数创建一个属性。否则，通过对集合和映射类型进行特殊处理的标准 getter 和 setter 的存在来发现属性（即使仅存在 getter 也会被检测到）。注解处理器还支持使用 <code>@Data</code> 、 <code>@Value</code> 、 <code>@Getter</code> 和 <code>@Setter</code> 注解。</p>
 <p translation-origin="off">If the class is also annotated with <code>@ConstructorBinding</code>, a single constructor is expected and one property is created per constructor parameter.
 Otherwise, properties are discovered through the presence of standard getters and setters with special handling for collection and map types (that is detected even if only a getter is present).
 The annotation processor also supports the use of the <code>@Data</code>, <code>@Value</code>, <code>@Getter</code>, and <code>@Setter</code> lombok annotations.</p>
@@ -2426,7 +2426,7 @@ The Javadoc on fields is used to populate the <code>description</code> attribute
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">注释处理器应用许多启发式方法从源模型中提取默认值。必须静态提供默认值。特别是，不要引用另一个类中定义的常量。此外，注释处理器无法自动检测 <code>Enum</code> 和 <code>Collections</code> 的默认值。</p>
+<p translation-result="on">注解处理器应用许多启发式方法从源模型中提取默认值。必须静态提供默认值。特别是，不要引用另一个类中定义的常量。此外，注解处理器无法自动检测 <code>Enum</code> 和 <code>Collections</code> 的默认值。</p>
 <p translation-origin="off">The annotation processor applies a number of heuristics to extract the default value from the source model.
 Default values have to be provided statically. In particular, do not refer to a constant defined in another class.
 Also, the annotation processor cannot auto-detect default values for <code>Enum</code>s and <code>Collections</code>s.</p>
@@ -2514,7 +2514,7 @@ public class MyMessagingProperties {
 <h4 id="configuration-metadata.annotation-processor.automatic-metadata-generation.nested-properties" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor.automatic-metadata-generation.nested-properties"></a> 3.2.1. 嵌套属性</h4>
 <h4 translation-origin="off"><a class="anchor" href="configuration-metadata.html#configuration-metadata.annotation-processor.automatic-metadata-generation.nested-properties"></a>3.2.1. Nested Properties</h4>
 <div class="paragraph">
-<p translation-result="on">注释处理器自动将内部类视为嵌套属性。我们可以为它创建一个子命名空间，而不是在命名空间的根目录记录 <code>ip</code> 和 <code>port</code> 。考虑更新的示例：</p>
+<p translation-result="on">注解处理器自动将内部类视为嵌套属性。我们可以为它创建一个子命名空间，而不是在命名空间的根目录记录 <code>ip</code> 和 <code>port</code> 。考虑更新的示例：</p>
 <p translation-origin="off">The annotation processor automatically considers inner classes as nested properties.
 Rather than documenting the <code>ip</code> and <code>port</code> at the root of the namespace, we could create a sub-namespace for it.
 Consider the updated example:</p>
@@ -2579,7 +2579,7 @@ public class MyServerProperties {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">前面的示例为 <code>my.server.name</code> 、 <code>my.server.host.ip</code> 和 <code>my.server.host.port</code> 属性生成元数据信息。你可以在字段上使用 <code>@NestedConfigurationProperty</code> 注释来指示应将常规（非内部）类视为嵌套类。</p>
+<p translation-result="on">前面的示例为 <code>my.server.name</code> 、 <code>my.server.host.ip</code> 和 <code>my.server.host.port</code> 属性生成元数据信息。你可以在字段上使用 <code>@NestedConfigurationProperty</code> 注解来指示应将常规（非内部）类视为嵌套类。</p>
 <p translation-origin="off">The preceding example produces metadata information for <code>my.server.name</code>, <code>my.server.host.ip</code>, and <code>my.server.host.port</code> properties.
 You can use the <code>@NestedConfigurationProperty</code> annotation on a field to indicate that a regular (non-inner) class should be treated as if it were nested.</p>
 </div>
@@ -2602,7 +2602,7 @@ You can use the <code>@NestedConfigurationProperty</code> annotation on a field 
 <h3 id="configuration-metadata.annotation-processor.adding-additional-metadata" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor.adding-additional-metadata"></a> 3.3.添加其他元数据</h3>
 <h3 translation-origin="off"><a class="anchor" href="configuration-metadata.html#configuration-metadata.annotation-processor.adding-additional-metadata"></a>3.3. Adding Additional Metadata</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 的配置文件处理非常灵活，通常情况下可能存在未绑定到 <code>@ConfigurationProperties</code> bean 的属性。你可能还需要调整现有密钥的某些属性。为了支持这种情况并让你提供自定义“提示”，注释处理器自动将 <code>META-INF/additional-spring-configuration-metadata.json</code> 中的项目合并到主元数据文件中。</p>
+<p translation-result="on">Spring Boot 的配置文件处理非常灵活，通常情况下可能存在未绑定到 <code>@ConfigurationProperties</code> bean 的属性。你可能还需要调整现有密钥的某些属性。为了支持这种情况并让你提供自定义“提示”，注解处理器自动将 <code>META-INF/additional-spring-configuration-metadata.json</code> 中的项目合并到主元数据文件中。</p>
 <p translation-origin="off">Spring Boot’s configuration file handling is quite flexible, and it is often the case that properties may exist that are not bound to a <code>@ConfigurationProperties</code> bean.
 You may also need to tune some attributes of an existing key.
 To support such cases and let you provide custom "hints", the annotation processor automatically merges items from <code>META-INF/additional-spring-configuration-metadata.json</code> into the main metadata file.</p>

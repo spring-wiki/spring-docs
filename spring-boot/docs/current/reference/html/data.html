@@ -1698,13 +1698,13 @@ You can follow the <a href="https://spring.io/guides/gs/accessing-data-jpa/">“
 <h4 id="data.sql.jpa-and-spring-data.entity-classes" translation-result="on"><a href="data.html#data.sql.jpa-and-spring-data.entity-classes"></a>1.3.1. 实体类</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.sql.jpa-and-spring-data.entity-classes"></a>1.3.1. Entity Classes</h4>
 <div class="paragraph">
-<p translation-result="on">传统上，JPA“实体”类在 <code>persistence.xml</code> 文件中指定。使用 Spring Boot，此文件不是必需的，而是使用“实体扫描”。默认情况下，搜索主配置类下的所有包（使用 <code>@EnableAutoConfiguration</code> 或 <code>@SpringBootApplication</code> 注释的包）。</p>
+<p translation-result="on">传统上，JPA“实体”类在 <code>persistence.xml</code> 文件中指定。使用 Spring Boot，此文件不是必需的，而是使用“实体扫描”。默认情况下，搜索主配置类下的所有包（使用 <code>@EnableAutoConfiguration</code> 或 <code>@SpringBootApplication</code> 注解的包）。</p>
 <p translation-origin="off">Traditionally, JPA “Entity” classes are specified in a <code>persistence.xml</code> file.
 With Spring Boot, this file is not necessary and “Entity Scanning” is used instead.
 By default, all packages below your main configuration class (the one annotated with <code>@EnableAutoConfiguration</code> or <code>@SpringBootApplication</code>) are searched.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">考虑使用 <code>@Entity</code> 、 <code>@Embeddable</code> 或 <code>@MappedSuperclass</code> 注释的任何类。典型的实体类类似于以下示例：</p>
+<p translation-result="on">考虑使用 <code>@Entity</code> 、 <code>@Embeddable</code> 或 <code>@MappedSuperclass</code> 注解的任何类。典型的实体类类似于以下示例：</p>
 <p translation-origin="off">Any classes annotated with <code>@Entity</code>, <code>@Embeddable</code>, or <code>@MappedSuperclass</code> are considered.
 A typical entity class resembles the following example:</p>
 </div>
@@ -1763,7 +1763,7 @@ public class City implements Serializable {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">你可以用 <code>@EntityScan</code> 注释自定义实体扫描位置。请参阅“ <a href="howto.html#howto.data-access.separate-entity-definitions-from-spring-configuration">howto.html</a> ”操作指南。</p>
+<p translation-result="on">你可以用 <code>@EntityScan</code> 注解自定义实体扫描位置。请参阅“ <a href="howto.html#howto.data-access.separate-entity-definitions-from-spring-configuration">howto.html</a> ”操作指南。</p>
 <p translation-origin="off">You can customize entity scanning locations by using the <code>@EntityScan</code> annotation.
 See the “<a href="howto.html#howto.data-access.separate-entity-definitions-from-spring-configuration">howto.html</a>” how-to.</p>
 </td>
@@ -1781,11 +1781,11 @@ JPA queries are created automatically from your method names.
 For example, a <code>CityRepository</code> interface might declare a <code>findAllByState(String state)</code> method to find all the cities in a given state.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">对于更复杂的查询，你可以用 Spring Data 的<a href="https://docs.spring.io/spring-data/jpa/docs/2.6.1/api/org/springframework/data/jpa/repository/Query.html"><code>Query</code></a>注释来注释你的方法。</p>
+<p translation-result="on">对于更复杂的查询，你可以用 Spring Data 的<a href="https://docs.spring.io/spring-data/jpa/docs/2.6.1/api/org/springframework/data/jpa/repository/Query.html"><code>Query</code></a>注解来注解你的方法。</p>
 <p translation-origin="off">For more complex queries, you can annotate your method with Spring Data’s <a href="https://docs.spring.io/spring-data/jpa/docs/2.6.1/api/org/springframework/data/jpa/repository/Query.html"><code>Query</code></a> annotation.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Data 存储库通常从<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/Repository.html"><code>Repository</code></a>或<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/CrudRepository.html"><code>CrudRepository</code></a>接口扩展。如果你使用自动配置，则从包含你的主要配置类（使用 <code>@EnableAutoConfiguration</code> 或 <code>@SpringBootApplication</code> 注释的那个）的包中搜索存储库。</p>
+<p translation-result="on">Spring Data 存储库通常从<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/Repository.html"><code>Repository</code></a>或<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/CrudRepository.html"><code>CrudRepository</code></a>接口扩展。如果你使用自动配置，则从包含你的主要配置类（使用 <code>@EnableAutoConfiguration</code> 或 <code>@SpringBootApplication</code> 注解的那个）的包中搜索存储库。</p>
 <p translation-origin="off">Spring Data repositories usually extend from the <a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/Repository.html"><code>Repository</code></a> or <a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/CrudRepository.html"><code>CrudRepository</code></a> interfaces.
 If you use auto-configuration, repositories are searched from the package containing your main configuration class (the one annotated with <code>@EnableAutoConfiguration</code> or <code>@SpringBootApplication</code>) down.</p>
 </div>
@@ -1970,12 +1970,12 @@ If you do not want this behavior, you should set <code>spring.jpa.open-in-view</
 <h3 id="data.sql.jdbc" translation-result="on"><a href="data.html#data.sql.jdbc"></a>1.4. Spring 数据 JDBC</h3>
 <h3 translation-origin="off"><a class="anchor" href="data.html#data.sql.jdbc"></a>1.4. Spring Data JDBC</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Data 包括对 JDBC 的存储库支持，并将自动为 <code>CrudRepository</code> 上的方法生成 SQL。对于更高级的查询，提供了 <code>@Query</code> 注释。</p>
+<p translation-result="on">Spring Data 包括对 JDBC 的存储库支持，并将自动为 <code>CrudRepository</code> 上的方法生成 SQL。对于更高级的查询，提供了 <code>@Query</code> 注解。</p>
 <p translation-origin="off">Spring Data includes repository support for JDBC and will automatically generate SQL for the methods on <code>CrudRepository</code>.
 For more advanced queries, a <code>@Query</code> annotation is provided.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">当必要的依赖项位于类路径上时，Spring Boot 将自动配置 Spring Data 的 JDBC 存储库。它们可以通过对 <code>spring-boot-starter-data-jdbc</code> 的单一依赖项添加到你的项目中。如有必要，你可以通过将 <code>@EnableJdbcRepositories</code> 注释或 <code>JdbcConfiguration</code> 子类添加到你的应用程序来控制 Spring Data JDBC 的配置。</p>
+<p translation-result="on">当必要的依赖项位于类路径上时，Spring Boot 将自动配置 Spring Data 的 JDBC 存储库。它们可以通过对 <code>spring-boot-starter-data-jdbc</code> 的单一依赖项添加到你的项目中。如有必要，你可以通过将 <code>@EnableJdbcRepositories</code> 注解或 <code>JdbcConfiguration</code> 子类添加到你的应用程序来控制 Spring Data JDBC 的配置。</p>
 <p translation-origin="off">Spring Boot will auto-configure Spring Data’s JDBC repositories when the necessary dependencies are on the classpath.
 They can be added to your project with a single dependency on <code>spring-boot-starter-data-jdbc</code>.
 If necessary, you can take control of Spring Data JDBC’s configuration by adding the <code>@EnableJdbcRepositories</code> annotation or a <code>JdbcConfiguration</code> subclass to your application.</p>
@@ -2412,11 +2412,11 @@ Queries are created automatically from your method names.
 For example, a <code>CityRepository</code> interface might declare a <code>findAllByState(String state)</code> method to find all the cities in a given state.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">对于更复杂的查询，你可以用 Spring Data 的<a href="https://docs.spring.io/spring-data/r2dbc/docs/1.4.1/api/org/springframework/data/r2dbc/repository/Query.html"><code>Query</code></a>注释来注释你的方法。</p>
+<p translation-result="on">对于更复杂的查询，你可以用 Spring Data 的<a href="https://docs.spring.io/spring-data/r2dbc/docs/1.4.1/api/org/springframework/data/r2dbc/repository/Query.html"><code>Query</code></a>注解来注解你的方法。</p>
 <p translation-origin="off">For more complex queries, you can annotate your method with Spring Data’s <a href="https://docs.spring.io/spring-data/r2dbc/docs/1.4.1/api/org/springframework/data/r2dbc/repository/Query.html"><code>Query</code></a> annotation.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Data 存储库通常从<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/Repository.html"><code>Repository</code></a>或<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/CrudRepository.html"><code>CrudRepository</code></a>接口扩展。如果你使用自动配置，则从包含你的主要配置类（使用 <code>@EnableAutoConfiguration</code> 或 <code>@SpringBootApplication</code> 注释的那个）的包中搜索存储库。</p>
+<p translation-result="on">Spring Data 存储库通常从<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/Repository.html"><code>Repository</code></a>或<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/CrudRepository.html"><code>CrudRepository</code></a>接口扩展。如果你使用自动配置，则从包含你的主要配置类（使用 <code>@EnableAutoConfiguration</code> 或 <code>@SpringBootApplication</code> 注解的那个）的包中搜索存储库。</p>
 <p translation-origin="off">Spring Data repositories usually extend from the <a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/Repository.html"><code>Repository</code></a> or <a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/CrudRepository.html"><code>CrudRepository</code></a> interfaces.
 If you use auto-configuration, repositories are searched from the package containing your main configuration class (the one annotated with <code>@EnableAutoConfiguration</code> or <code>@SpringBootApplication</code>) down.</p>
 </div>
@@ -2814,7 +2814,7 @@ import org.springframework.data.repository.Repository;
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">你可以用 <code>@EntityScan</code> 注释自定义文档扫描位置。</p>
+<p translation-result="on">你可以用 <code>@EntityScan</code> 注解自定义文档扫描位置。</p>
 <p translation-origin="off">You can customize document scanning locations by using the <code>@EntityScan</code> annotation.</p>
 </td>
 </tr>
@@ -3490,7 +3490,7 @@ public class MyBean {
 <h4 id="data.nosql.cassandra.repositories" translation-result="on"><a href="data.html#data.nosql.cassandra.repositories"></a>2.6.2. Spring Data Cassandra 存储库</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.nosql.cassandra.repositories"></a>2.6.2. Spring Data Cassandra Repositories</h4>
 <div class="paragraph">
-<p translation-result="on">Spring Data 包括对 Cassandra 的基本存储库支持。目前，这比前面讨论的 JPA 存储库更受限制，需要使用 <code>@Query</code> 注释查找器方法。</p>
+<p translation-result="on">Spring Data 包括对 Cassandra 的基本存储库支持。目前，这比前面讨论的 JPA 存储库更受限制，需要使用 <code>@Query</code> 注解查找器方法。</p>
 <p translation-origin="off">Spring Data includes basic repository support for Cassandra.
 Currently, this is more limited than the JPA repositories discussed earlier and needs to annotate finder methods with <code>@Query</code>.</p>
 </div>

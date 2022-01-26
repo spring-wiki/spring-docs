@@ -1397,7 +1397,7 @@
   <p translation-origin="off"><a href="actuator.html#actuator.metrics.supported.jetty">6.3.19. Jetty Metrics</a></p>
 </li>
 <li>
-  <p translation-result="on"><a href="actuator.html#actuator.metrics.supported.timed-annotation">6.3.20.@Timed 注释支持</a></p>
+  <p translation-result="on"><a href="actuator.html#actuator.metrics.supported.timed-annotation">6.3.20.@Timed 注解支持</a></p>
   <p translation-origin="off"><a href="actuator.html#actuator.metrics.supported.timed-annotation">6.3.20. @Timed Annotation Support</a></p>
 </li>
 <li>
@@ -2366,7 +2366,7 @@ management.endpoints.web.cors.allowed-methods=GET,POST</code></pre>
 <h3 id="actuator.endpoints.implementing-custom" translation-result="on"><a href="actuator.html#actuator.endpoints.implementing-custom"></a>2.7. 实施自定义端点</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.implementing-custom"></a>2.7. Implementing Custom Endpoints</h3>
 <div class="paragraph">
-<p translation-result="on">如果添加带有 <code>@Bean</code> 注释的 <code>@Endpoint</code> ，则任何带有 <code>@ReadOperation</code> 、 <code>@WriteOperation</code> 或 <code>@DeleteOperation</code> 注释的方法都会自动通过 JMX 公开，并且在 Web 应用程序中，也会通过 HTTP 公开。可以用 Jersey、Spring MVC 或 Spring WebFlux 通过 HTTP 公开端点。如果 Jersey 和 Spring MVC 都可用，则使用 Spring MVC。</p>
+<p translation-result="on">如果添加带有 <code>@Bean</code> 注解的 <code>@Endpoint</code> ，则任何带有 <code>@ReadOperation</code> 、 <code>@WriteOperation</code> 或 <code>@DeleteOperation</code> 注解的方法都会自动通过 JMX 公开，并且在 Web 应用程序中，也会通过 HTTP 公开。可以用 Jersey、Spring MVC 或 Spring WebFlux 通过 HTTP 公开端点。如果 Jersey 和 Spring MVC 都可用，则使用 Spring MVC。</p>
 <p translation-origin="off">If you add a <code>@Bean</code> annotated with <code>@Endpoint</code>, any methods annotated with <code>@ReadOperation</code>, <code>@WriteOperation</code>, or <code>@DeleteOperation</code> are automatically exposed over JMX and, in a web application, over HTTP as well.
 Endpoints can be exposed over HTTP by using Jersey, Spring MVC, or Spring WebFlux.
 If both Jersey and Spring MVC are available, Spring MVC is used.</p>
@@ -2391,7 +2391,7 @@ These endpoints are restricted to their respective technologies.
 For example, <code>@WebEndpoint</code> is exposed only over HTTP and not over JMX.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">你可以用 <code>@EndpointWebExtension</code> 和 <code>@EndpointJmxExtension</code> 编写特定于技术的扩展。这些注释让你可以提供特定于技术的操作来扩充现有端点。</p>
+<p translation-result="on">你可以用 <code>@EndpointWebExtension</code> 和 <code>@EndpointJmxExtension</code> 编写特定于技术的扩展。这些注解让你可以提供特定于技术的操作来扩充现有端点。</p>
 <p translation-origin="off">You can write technology-specific extensions by using <code>@EndpointWebExtension</code> and <code>@EndpointJmxExtension</code>.
 These annotations let you provide technology-specific operations to augment an existing endpoint.</p>
 </div>
@@ -2403,7 +2403,7 @@ These annotations let you provide technology-specific operations to augment an e
 <h4 id="actuator.endpoints.implementing-custom.input" translation-result="on"><a href="actuator.html#actuator.endpoints.implementing-custom.input"></a>2.7.1. 接收输入</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.implementing-custom.input"></a>2.7.1. Receiving Input</h4>
 <div class="paragraph">
-<p translation-result="on">端点上的操作通过其参数接收输入。当通过 Web 公开时，这些参数的值取自 URL 的查询参数和 JSON 请求正文。通过 JMX 公开时，参数将映射到 MBean 操作的参数。默认情况下需要参数。可以通过使用 <code>@javax.annotation.Nullable</code> 或 <code>@org.springframework.lang.Nullable</code> 注释它们来使它们成为可选的。</p>
+<p translation-result="on">端点上的操作通过其参数接收输入。当通过 Web 公开时，这些参数的值取自 URL 的查询参数和 JSON 请求正文。通过 JMX 公开时，参数将映射到 MBean 操作的参数。默认情况下需要参数。可以通过使用 <code>@javax.annotation.Nullable</code> 或 <code>@org.springframework.lang.Nullable</code> 注解它们来使它们成为可选的。</p>
 <p translation-origin="off">Operations on an endpoint receive input through their parameters.
 When exposed over the web, the values for these parameters are taken from the URL’s query parameters and from the JSON request body.
 When exposed over JMX, the parameters are mapped to the parameters of the MBean’s operations.
@@ -2500,7 +2500,7 @@ The default base path is <code>/actuator</code>.
 For example, an endpoint with an ID of <code>sessions</code> uses <code>/actuator/sessions</code> as its path in the predicate.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">你可以通过使用 <code>@Selector</code> 注释操作方法的一个或多个参数来进一步自定义路径。这样的参数作为路径变量添加到路径谓词中。当调用端点操作时，变量的值被传递到操作方法中。如果要捕获所有剩余的路径元素，可以将 <code>@Selector(Match=ALL_REMAINING)</code> 添加到最后一个参数，并使其成为与 <code>String[]</code> 转换兼容的类型。</p>
+<p translation-result="on">你可以通过使用 <code>@Selector</code> 注解操作方法的一个或多个参数来进一步自定义路径。这样的参数作为路径变量添加到路径谓词中。当调用端点操作时，变量的值被传递到操作方法中。如果要捕获所有剩余的路径元素，可以将 <code>@Selector(Match=ALL_REMAINING)</code> 添加到最后一个参数，并使其成为与 <code>String[]</code> 转换兼容的类型。</p>
 <p translation-origin="off">You can further customize the path by annotating one or more parameters of the operation method with <code>@Selector</code>.
 Such a parameter is added to the path predicate as a path variable.
 The variable’s value is passed into the operation method when the endpoint operation is invoked.
@@ -2560,7 +2560,7 @@ For all other operations, the <code>consumes</code> clause is empty.</p>
 <h5 id="actuator.endpoints.implementing-custom.web.produces-predicates" translation-result="on"><a href="actuator.html#actuator.endpoints.implementing-custom.web.produces-predicates"></a>生产</h5>
 <h5 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.implementing-custom.web.produces-predicates"></a>Produces</h5>
 <div class="paragraph">
-<p translation-result="on">谓词的 <code>produces</code> 子句可以由 <code>@DeleteOperation</code> 、 <code>@ReadOperation</code> 和 <code>@WriteOperation</code> 注释的 <code>produces</code> 属性确定。该属性是可选的。如果不使用，则自动确定 <code>produces</code> 子句。</p>
+<p translation-result="on">谓词的 <code>produces</code> 子句可以由 <code>@DeleteOperation</code> 、 <code>@ReadOperation</code> 和 <code>@WriteOperation</code> 注解的 <code>produces</code> 属性确定。该属性是可选的。如果不使用，则自动确定 <code>produces</code> 子句。</p>
 <p translation-origin="off">The <code>produces</code> clause of the predicate can be determined by the <code>produces</code> attribute of the <code>@DeleteOperation</code>, <code>@ReadOperation</code>, and <code>@WriteOperation</code> annotations.
 The attribute is optional.
 If it is not used, the <code>produces</code> clause is determined automatically.</p>
@@ -2631,7 +2631,7 @@ The latter is typically used to perform authorization checks by using its <code>
 <h4 id="actuator.endpoints.implementing-custom.servlet" translation-result="on"><a href="actuator.html#actuator.endpoints.implementing-custom.servlet"></a>2.7.3. Servlet 端点</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.implementing-custom.servlet"></a>2.7.3. Servlet Endpoints</h4>
 <div class="paragraph">
-<p translation-result="on">servlet 可以通过实现一个使用 <code>@ServletEndpoint</code> 注释的类来作为端点公开，该类也实现了 <code>Supplier&lt;EndpointServlet&gt;</code> 。Servlet 端点提供与 servlet 容器的更深层次的集成，但以牺牲可移植性为代价。它们旨在用于将现有 servlet 公开为端点。对于新端点，应尽可能首选 <code>@Endpoint</code> 和 <code>@WebEndpoint</code> 注释。</p>
+<p translation-result="on">servlet 可以通过实现一个使用 <code>@ServletEndpoint</code> 注解的类来作为端点公开，该类也实现了 <code>Supplier&lt;EndpointServlet&gt;</code> 。Servlet 端点提供与 servlet 容器的更深层次的集成，但以牺牲可移植性为代价。它们旨在用于将现有 servlet 公开为端点。对于新端点，应尽可能首选 <code>@Endpoint</code> 和 <code>@WebEndpoint</code> 注解。</p>
 <p translation-origin="off">A servlet can be exposed as an endpoint by implementing a class annotated with <code>@ServletEndpoint</code> that also implements <code>Supplier&lt;EndpointServlet&gt;</code>.
 Servlet endpoints provide deeper integration with the servlet container but at the expense of portability.
 They are intended to be used to expose an existing servlet as an endpoint.
@@ -2642,7 +2642,7 @@ For new endpoints, the <code>@Endpoint</code> and <code>@WebEndpoint</code> anno
 <h4 id="actuator.endpoints.implementing-custom.controller" translation-result="on"><a href="actuator.html#actuator.endpoints.implementing-custom.controller"></a>2.7.4. 控制器端点</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.implementing-custom.controller"></a>2.7.4. Controller Endpoints</h4>
 <div class="paragraph">
-<p translation-result="on">你可以用 <code>@ControllerEndpoint</code> 和 <code>@RestControllerEndpoint</code> 来实现仅由 Spring MVC 或 Spring WebFlux 公开的端点。方法通过使用 Spring MVC 和 Spring WebFlux 的标准注释进行映射，例如 <code>@RequestMapping</code> 和 <code>@GetMapping</code> ，端点的 ID 用作路径的前缀。控制器端点提供与 Spring 的 Web 框架的更深层次的集成，但以牺牲可移植性为代价。<code>@Endpoint</code> 和 <code>@WebEndpoint</code> 注释应尽可能首选。</p>
+<p translation-result="on">你可以用 <code>@ControllerEndpoint</code> 和 <code>@RestControllerEndpoint</code> 来实现仅由 Spring MVC 或 Spring WebFlux 公开的端点。方法通过使用 Spring MVC 和 Spring WebFlux 的标准注解进行映射，例如 <code>@RequestMapping</code> 和 <code>@GetMapping</code> ，端点的 ID 用作路径的前缀。控制器端点提供与 Spring 的 Web 框架的更深层次的集成，但以牺牲可移植性为代价。<code>@Endpoint</code> 和 <code>@WebEndpoint</code> 注解应尽可能首选。</p>
 <p translation-origin="off">You can use <code>@ControllerEndpoint</code> and <code>@RestControllerEndpoint</code> to implement an endpoint that is exposed only by Spring MVC or Spring WebFlux.
 Methods are mapped by using the standard annotations for Spring MVC and Spring WebFlux, such as <code>@RequestMapping</code> and <code>@GetMapping</code>, with the endpoint’s ID being used as a prefix for the path.
 Controller endpoints provide deeper integration with Spring’s web frameworks but at the expense of portability.
@@ -4292,7 +4292,7 @@ management.server.address=127.0.0.1</code></pre>
 <h2 translation-origin="off"><a class="anchor" href="actuator.html#actuator.jmx"></a>4. Monitoring and Management over JMX</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Java 管理扩展 (JMX) 提供了一种标准机制来监视和管理应用程序。默认情况下，此功能未启用。你可以通过将 <code>spring.jmx.enabled</code> 配置属性设置为 <code>true</code> 来打开它。Spring Boot 将最合适的 <code>MBeanServer</code> 公开为 ID 为 <code>mbeanServer</code> 的 bean。使用 Spring JMX 注释（@ <code>@ManagedOperation</code> <code>@ManagedAttribute</code> <code>@ManagedResource</code> 的任何 bean 都会暴露给它。</p>
+<p translation-result="on">Java 管理扩展 (JMX) 提供了一种标准机制来监视和管理应用程序。默认情况下，此功能未启用。你可以通过将 <code>spring.jmx.enabled</code> 配置属性设置为 <code>true</code> 来打开它。Spring Boot 将最合适的 <code>MBeanServer</code> 公开为 ID 为 <code>mbeanServer</code> 的 bean。使用 Spring JMX 注解（@ <code>@ManagedOperation</code> <code>@ManagedAttribute</code> <code>@ManagedResource</code> 的任何 bean 都会暴露给它。</p>
 <p translation-origin="off">Java Management Extensions (JMX) provide a standard mechanism to monitor and manage applications.
 By default, this feature is not enabled.
 You can turn it on by setting the <code>spring.jmx.enabled</code> configuration property to <code>true</code>.
@@ -4762,7 +4762,7 @@ public class MyMeterRegistryConfiguration {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 还<a href="actuator.html#actuator.metrics.supported">配置了你可以通过配置或专用注释标记控制的内置检测</a>。</p>
+<p translation-result="on">Spring Boot 还<a href="actuator.html#actuator.metrics.supported">配置了你可以通过配置或专用注解标记控制的内置检测</a>。</p>
 <p translation-origin="off">Spring Boot also <a href="actuator.html#actuator.metrics.supported">configures built-in instrumentation</a> that you can control through configuration or dedicated annotation markers.</p>
 </div>
 </div>
@@ -5889,7 +5889,7 @@ By default, metrics are generated with the name, <code>http.server.requests</cod
 You can customized the name by setting the <code>management.metrics.web.server.request.metric-name</code> property.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>@Controller</code> 类和 <code>@RequestMapping</code> 方法支持 <code>@Timed</code> 注释（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注释支持</a>）。如果你不想记录所有 Spring MVC 请求的度量，可以将 <code>management.metrics.web.server.request.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注释。</p>
+<p translation-result="on"><code>@Controller</code> 类和 <code>@RequestMapping</code> 方法支持 <code>@Timed</code> 注解（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注解支持</a>）。如果你不想记录所有 Spring MVC 请求的度量，可以将 <code>management.metrics.web.server.request.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注解。</p>
 <p translation-origin="off"><code>@Timed</code> annotations are supported on <code>@Controller</code> classes and <code>@RequestMapping</code> methods (see <a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed Annotation Support</a> for details).
 If you do not want to record metrics for all Spring MVC requests, you can set <code>management.metrics.web.server.request.autotime.enabled</code> to <code>false</code> and exclusively use <code>@Timed</code> annotations instead.</p>
 </div>
@@ -5968,7 +5968,7 @@ By default, metrics are generated with the name, <code>http.server.requests</cod
 You can customize the name by setting the <code>management.metrics.web.server.request.metric-name</code> property.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>@Controller</code> 类和 <code>@RequestMapping</code> 方法支持 <code>@Timed</code> 注释（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注释支持</a>）。如果你不想记录所有 Spring WebFlux 请求的度量，可以将 <code>management.metrics.web.server.request.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注释。</p>
+<p translation-result="on"><code>@Controller</code> 类和 <code>@RequestMapping</code> 方法支持 <code>@Timed</code> 注解（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注解支持</a>）。如果你不想记录所有 Spring WebFlux 请求的度量，可以将 <code>management.metrics.web.server.request.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注解。</p>
 <p translation-origin="off"><code>@Timed</code> annotations are supported on <code>@Controller</code> classes and <code>@RequestMapping</code> methods (see <a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed Annotation Support</a> for details).
 If you do not want to record metrics for all Spring WebFlux requests, you can set <code>management.metrics.web.server.request.autotime.enabled</code> to <code>false</code> and exclusively use <code>@Timed</code> annotations instead.</p>
 </div>
@@ -6047,7 +6047,7 @@ By default, metrics are generated with the name, <code>http.server.requests</cod
 You can customize the name by setting the <code>management.metrics.web.server.request.metric-name</code> property.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">请求处理类和方法支持 <code>@Timed</code> 注释（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注释支持</a>）。如果你不想记录所有 Jersey 请求的度量，可以将 <code>management.metrics.web.server.request.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注释。</p>
+<p translation-result="on">请求处理类和方法支持 <code>@Timed</code> 注解（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注解支持</a>）。如果你不想记录所有 Jersey 请求的度量，可以将 <code>management.metrics.web.server.request.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注解。</p>
 <p translation-origin="off"><code>@Timed</code> annotations are supported on request-handling classes and methods (see <a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed Annotation Support</a> for details).
 If you do not want to record metrics for all Jersey requests, you can set <code>management.metrics.web.server.request.autotime.enabled</code> to <code>false</code> and exclusively use <code>@Timed</code> annotations instead.</p>
 </div>
@@ -6327,7 +6327,7 @@ By default, metrics are generated with the name, <code>spring.data.repository.in
 You can customize the name by setting the <code>management.metrics.data.repository.metric-name</code> property.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>Repository</code> 类和方法支持 <code>@Timed</code> 注释（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注释支持</a>）。如果你不想记录所有 <code>Repository</code> 调用的度量，可以将 <code>management.metrics.data.repository.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注释。</p>
+<p translation-result="on"><code>Repository</code> 类和方法支持 <code>@Timed</code> 注解（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注解支持</a>）。如果你不想记录所有 <code>Repository</code> 调用的度量，可以将 <code>management.metrics.data.repository.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注解。</p>
 <p translation-origin="off"><code>@Timed</code> annotations are supported on <code>Repository</code> classes and methods (see <a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed Annotation Support</a> for details).
 If you do not want to record metrics for all <code>Repository</code> invocations, you can set <code>management.metrics.data.repository.autotime.enabled</code> to <code>false</code> and exclusively use <code>@Timed</code> annotations instead.</p>
 </div>
@@ -6618,10 +6618,10 @@ Metrics for Jetty’s <code>Connector</code> instances are bound by using Microm
 </div>
 </div>
 <div class="sect3">
-<h4 id="actuator.metrics.supported.timed-annotation" translation-result="on"><a href="actuator.html#actuator.metrics.supported.timed-annotation"></a>6.3.20.@Timed 注释支持</h4>
+<h4 id="actuator.metrics.supported.timed-annotation" translation-result="on"><a href="actuator.html#actuator.metrics.supported.timed-annotation"></a>6.3.20.@Timed 注解支持</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.supported.timed-annotation"></a>6.3.20. @Timed Annotation Support</h4>
 <div class="paragraph">
-<p translation-result="on">你可以将 <code>io.micrometer.core.annotation</code> 包中的 <code>@Timed</code> 注释与前面描述的几种支持的技术一起使用。如果支持，你可以在类级别或方法级别使用注释。</p>
+<p translation-result="on">你可以将 <code>io.micrometer.core.annotation</code> 包中的 <code>@Timed</code> 注解与前面描述的几种支持的技术一起使用。如果支持，你可以在类级别或方法级别使用注解。</p>
 <p translation-origin="off">You can use the <code>@Timed</code> annotation from the <code>io.micrometer.core.annotation</code> package with several of the supported technologies described earlier.
 If supported, you can use the annotation at either the class level or the method level.</p>
 </div>
@@ -6657,7 +6657,7 @@ public class MyController {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你只想检测单个映射，则可以在方法上使用注释而不是类：</p>
+<p translation-result="on">如果你只想检测单个映射，则可以在方法上使用注解而不是类：</p>
 <p translation-origin="off">If you want only to instrument a single mapping, you can use the annotation on the method instead of the class:</p>
 </div>
 <div class="listingblock">
@@ -6688,7 +6688,7 @@ public class MyController {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果要更改特定方法的计时详细信息，还可以组合类级别和方法级别的注释：</p>
+<p translation-result="on">如果要更改特定方法的计时详细信息，还可以组合类级别和方法级别的注解：</p>
 <p translation-origin="off">You can also combine class-level and method-level annotations if you want to change the timing details for a specific method:</p>
 </div>
 <div class="listingblock">
@@ -6727,7 +6727,7 @@ public class MyController {
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">带有 <code>longTask = true</code> 的 <code>@Timed</code> 注释为该方法启用了一个长任务计时器。长任务计时器需要一个单独的度量名称，并且可以与短任务计时器叠加。</p>
+<p translation-result="on">带有 <code>longTask = true</code> 的 <code>@Timed</code> 注解为该方法启用了一个长任务计时器。长任务计时器需要一个单独的度量名称，并且可以与短任务计时器叠加。</p>
 <p translation-origin="off">A <code>@Timed</code> annotation with <code>longTask = true</code> enables a long task timer for the method.
 Long task timers require a separate metric name and can be stacked with a short task timer.</p>
 </td>

@@ -1131,11 +1131,11 @@
   <p translation-origin="off"><a href="features.html#features.external-config.typesafe-configuration-properties.constructor-binding">2.8.2. Constructor binding</a></p>
 </li>
 <li>
-  <p translation-result="on"><a href="features.html#features.external-config.typesafe-configuration-properties.enabling-annotated-types">2.8.3. 启用 @ConfigurationProperties 注释类型</a></p>
+  <p translation-result="on"><a href="features.html#features.external-config.typesafe-configuration-properties.enabling-annotated-types">2.8.3. 启用 @ConfigurationProperties 注解类型</a></p>
   <p translation-origin="off"><a href="features.html#features.external-config.typesafe-configuration-properties.enabling-annotated-types">2.8.3. Enabling @ConfigurationProperties-annotated types</a></p>
 </li>
 <li>
-  <p translation-result="on"><a href="features.html#features.external-config.typesafe-configuration-properties.using-annotated-types">2.8.4. 使用 @ConfigurationProperties 注释的类型</a></p>
+  <p translation-result="on"><a href="features.html#features.external-config.typesafe-configuration-properties.using-annotated-types">2.8.4. 使用 @ConfigurationProperties 注解的类型</a></p>
   <p translation-origin="off"><a href="features.html#features.external-config.typesafe-configuration-properties.using-annotated-types">2.8.4. Using @ConfigurationProperties-annotated types</a></p>
 </li>
 <li>
@@ -1488,7 +1488,7 @@
   <p translation-origin="off"><a href="features.html#features.developing-auto-configuration.locating-auto-configuration-candidates">9.2. Locating Auto-configuration Candidates</a></p>
 </li>
 <li>
-  <p translation-result="on"><a href="features.html#features.developing-auto-configuration.condition-annotations">9.3. 条件注释</a></p>
+  <p translation-result="on"><a href="features.html#features.developing-auto-configuration.condition-annotations">9.3. 条件注解</a></p>
   <p translation-origin="off"><a href="features.html#features.developing-auto-configuration.condition-annotations">9.3. Condition Annotations</a></p>
 <ul class="sectlevel3">
 <li>
@@ -1793,7 +1793,7 @@ Alternatively, it can be enabled using the <code>spring.main.lazy-initialization
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果你想在应用程序的其余部分使用延迟初始化的同时禁用某些 bean 的延迟初始化，你可以用 <code>@Lazy(false)</code> 注释将它们的延迟属性显式设置为 false。</p>
+<p translation-result="on">如果你想在应用程序的其余部分使用延迟初始化的同时禁用某些 bean 的延迟初始化，你可以用 <code>@Lazy(false)</code> 注解将它们的延迟属性显式设置为 false。</p>
 <p translation-origin="off">If you want to disable lazy initialization for certain beans while using lazy initialization for the rest of the application, you can explicitly set their lazy attribute to false using the <code>@Lazy(false)</code> annotation.</p>
 </td>
 </tr>
@@ -2363,7 +2363,7 @@ public class MyBean {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">Spring Boot 还向 Spring <code>Environment</code> 注册了一个 <code>CommandLinePropertySource</code> 。这使你还可以用 <code>@Value</code> 注释注入单个应用程序参数。</p>
+<p translation-result="on">Spring Boot 还向 Spring <code>Environment</code> 注册了一个 <code>CommandLinePropertySource</code> 。这使你还可以用 <code>@Value</code> 注解注入单个应用程序参数。</p>
 <p translation-origin="off">Spring Boot also registers a <code>CommandLinePropertySource</code> with the Spring <code>Environment</code>.
 This lets you also inject single application arguments by using the <code>@Value</code> annotation.</p>
 </td>
@@ -2415,7 +2415,7 @@ public class MyCommandLineRunner implements CommandLineRunner {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果定义了几个必须按特定顺序调用的 <code>CommandLineRunner</code> 或 <code>ApplicationRunner</code> bean，你可以另外实现 <code>org.springframework.core.Ordered</code> 接口或使用 <code>org.springframework.core.annotation.Order</code> 注释。</p>
+<p translation-result="on">如果定义了几个必须按特定顺序调用的 <code>CommandLineRunner</code> 或 <code>ApplicationRunner</code> bean，你可以另外实现 <code>org.springframework.core.Ordered</code> 接口或使用 <code>org.springframework.core.annotation.Order</code> 注解。</p>
 <p translation-origin="off">If several <code>CommandLineRunner</code> or <code>ApplicationRunner</code> beans are defined that must be called in a specific order, you can additionally implement the <code>org.springframework.core.Ordered</code> interface or use the <code>org.springframework.core.annotation.Order</code> annotation.</p>
 </div>
 </div>
@@ -2552,7 +2552,7 @@ Applications can ask for the bean of type <code>BufferingApplicationStartup</cod
 You can use a variety of external configuration sources, include Java properties files, YAML files, environment variables, and command-line arguments.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">属性值可以通过使用 <code>@Value</code> 注释直接注入到你的 bean 中，通过 Spring 的 <code>Environment</code> 抽象访问，或者通过 <code>@ConfigurationProperties</code> <a href="features.html#features.external-config.typesafe-configuration-properties">绑定到结构化对象</a>。</p>
+<p translation-result="on">属性值可以通过使用 <code>@Value</code> 注解直接注入到你的 bean 中，通过 Spring 的 <code>Environment</code> 抽象访问，或者通过 <code>@ConfigurationProperties</code> <a href="features.html#features.external-config.typesafe-configuration-properties">绑定到结构化对象</a>。</p>
 <p translation-origin="off">Property values can be injected directly into your beans by using the <code>@Value</code> annotation, accessed through Spring’s <code>Environment</code> abstraction, or be <a href="features.html#features.external-config.typesafe-configuration-properties">bound to structured objects</a> through <code>@ConfigurationProperties</code>.</p>
 </div>
 <div class="paragraph">
@@ -2567,7 +2567,7 @@ Properties are considered in the following order (with values from lower items o
 <p translation-origin="off">Default properties (specified by setting <code>SpringApplication.setDefaultProperties</code>).</p>
 </li>
 <li>
-<p translation-result="on"><code>@Configuration</code> 类上的<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/PropertySource.html"><code>@PropertySource</code></a>注释。请注意，在刷新应用程序上下文之前，不会将此类属性源添加到 <code>Environment</code> 中。配置某些属性（例如 <code>logging.*</code> 和 <code>spring.main.*</code> 在刷新开始之前读取）为时已晚。</p>
+<p translation-result="on"><code>@Configuration</code> 类上的<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/PropertySource.html"><code>@PropertySource</code></a>注解。请注意，在刷新应用程序上下文之前，不会将此类属性源添加到 <code>Environment</code> 中。配置某些属性（例如 <code>logging.*</code> 和 <code>spring.main.*</code> 在刷新开始之前读取）为时已晚。</p>
 <p translation-origin="off"><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/context/annotation/PropertySource.html"><code>@PropertySource</code></a> annotations on your <code>@Configuration</code> classes.
 Please note that such property sources are not added to the <code>Environment</code> until the application context is being refreshed.
 This is too late to configure certain properties such as <code>logging.*</code> and <code>spring.main.*</code> which are read before refresh begins.</p>
@@ -2609,12 +2609,12 @@ This is too late to configure certain properties such as <code>logging.*</code> 
 <p translation-origin="off">Command line arguments.</p>
 </li>
 <li>
-<p translation-result="on">测试中的 <code>properties</code> 属性。在<a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/test/context/SpringBootTest.html"><code>@SpringBootTest</code></a>和<a href="features.html#features.testing.spring-boot-applications.autoconfigured-tests">用于测试应用程序特定部分的测试注释</a>上可用。</p>
+<p translation-result="on">测试中的 <code>properties</code> 属性。在<a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/test/context/SpringBootTest.html"><code>@SpringBootTest</code></a>和<a href="features.html#features.testing.spring-boot-applications.autoconfigured-tests">用于测试应用程序特定部分的测试注解</a>上可用。</p>
 <p translation-origin="off"><code>properties</code> attribute on your tests.
 Available on <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/test/context/SpringBootTest.html"><code>@SpringBootTest</code></a> and the <a href="features.html#features.testing.spring-boot-applications.autoconfigured-tests">test annotations for testing a particular slice of your application</a>.</p>
 </li>
 <li>
-<p translation-result="on">测试中的<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/test/context/TestPropertySource.html"><code>@TestPropertySource</code></a>注释。</p>
+<p translation-result="on">测试中的<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/test/context/TestPropertySource.html"><code>@TestPropertySource</code></a>注解。</p>
 <p translation-origin="off"><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/test/context/TestPropertySource.html"><code>@TestPropertySource</code></a> annotations on your tests.</p>
 </li>
 <li>
@@ -3574,7 +3574,7 @@ spring:
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">对于 <code>application.properties</code> 文件，特殊的 <code>#---</code> 注释用于标记文档拆分：</p>
+<p translation-result="on">对于 <code>application.properties</code> 文件，特殊的 <code>#---</code> 注解用于标记文档拆分：</p>
 <p translation-origin="off">For <code>application.properties</code> files a special <code>#---</code> comment is used to mark the document splits:</p>
 </div>
 <div class="listingblock">
@@ -3592,7 +3592,7 @@ spring.config.activate.on-cloud-platform=kubernetes</code></pre>
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">属性文件分隔符不能有任何前导空格，并且必须正好有三个连字符。分隔符前后的行不能是注释。</p>
+<p translation-result="on">属性文件分隔符不能有任何前导空格，并且必须正好有三个连字符。分隔符前后的行不能是注解。</p>
 <p translation-origin="off">Property file separators must not have any leading whitespace and must have exactly three hyphen characters.
 The lines immediately before and after the separator must not be comments.</p>
 </td>
@@ -3620,7 +3620,7 @@ See the <a href="features.html#features.external-config.files.activation-propert
 <i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
-<p translation-result="on">无法使用 <code>@PropertySource</code> 或 <code>@TestPropertySource</code> 注释加载多文档属性文件。</p>
+<p translation-result="on">无法使用 <code>@PropertySource</code> 或 <code>@TestPropertySource</code> 注解加载多文档属性文件。</p>
 <p translation-origin="off">Multi-document property files cannot be loaded by using the <code>@PropertySource</code> or <code>@TestPropertySource</code> annotations.</p>
 </td>
 </tr>
@@ -4169,7 +4169,7 @@ public class MyProperties {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">在此设置中，<code>@ConstructorBinding</code> 注释用于指示应使用构造函数绑定。这意味着绑定器将期望找到具有你希望绑定的参数的构造函数。如果你使用的是 Java 16 或更高版本，则可以将构造函数绑定与记录一起使用。在这种情况下，除非你的记录有多个构造函数，否则不需要使用 <code>@ConstructorBinding</code> 。</p>
+<p translation-result="on">在此设置中，<code>@ConstructorBinding</code> 注解用于指示应使用构造函数绑定。这意味着绑定器将期望找到具有你希望绑定的参数的构造函数。如果你使用的是 Java 16 或更高版本，则可以将构造函数绑定与记录一起使用。在这种情况下，除非你的记录有多个构造函数，否则不需要使用 <code>@ConstructorBinding</code> 。</p>
 <p translation-origin="off">In this setup, the <code>@ConstructorBinding</code> annotation is used to indicate that constructor binding should be used.
 This means that the binder will expect to find a constructor with the parameters that you wish to have bound.
 If you are using Java 16 or later, constructor binding can be used with records.
@@ -4180,7 +4180,7 @@ In this case, unless your record has multiple constructors, there is no need to 
 <p translation-origin="off">Nested members of a <code>@ConstructorBinding</code> class (such as <code>Security</code> in the example above) will also be bound through their constructor.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">可以用 <code>@DefaultValue</code> 指定默认值，并且将应用相同的转换服务将 <code>String</code> 值强制为缺失属性的目标类型。默认情况下，如果没有属性绑定到 <code>Security</code> ，则 <code>MyProperties</code> 实例将包含一个 <code>null</code> 值作为 <code>security</code> 。如果你希望即使没有绑定任何属性也返回一个非空的 <code>Security</code> 实例，你可以用空的 <code>@DefaultValue</code> 注释来执行此操作：</p>
+<p translation-result="on">可以用 <code>@DefaultValue</code> 指定默认值，并且将应用相同的转换服务将 <code>String</code> 值强制为缺失属性的目标类型。默认情况下，如果没有属性绑定到 <code>Security</code> ，则 <code>MyProperties</code> 实例将包含一个 <code>null</code> 值作为 <code>security</code> 。如果你希望即使没有绑定任何属性也返回一个非空的 <code>Security</code> 实例，你可以用空的 <code>@DefaultValue</code> 注解来执行此操作：</p>
 <p translation-origin="off">Default values can be specified using <code>@DefaultValue</code> and the same conversion service will be applied to coerce the <code>String</code> value to the target type of a missing property.
 By default, if no properties are bound to <code>Security</code>, the <code>MyProperties</code> instance will contain a <code>null</code> value for <code>security</code>.
 If you wish you return a non-null instance of <code>Security</code> even when no properties are bound to it, you can use an empty <code>@DefaultValue</code> annotation to do so:</p>
@@ -4239,7 +4239,7 @@ For consistency with properties of other types, if you do declare an <code>Optio
 </div>
 </div>
 <div class="sect3">
-<h4 id="features.external-config.typesafe-configuration-properties.enabling-annotated-types" translation-result="on"><a href="features.html#features.external-config.typesafe-configuration-properties.enabling-annotated-types"></a> 2.8.3.启用 @ConfigurationProperties 注释类型</h4>
+<h4 id="features.external-config.typesafe-configuration-properties.enabling-annotated-types" translation-result="on"><a href="features.html#features.external-config.typesafe-configuration-properties.enabling-annotated-types"></a> 2.8.3.启用 @ConfigurationProperties 注解类型</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.external-config.typesafe-configuration-properties.enabling-annotated-types"></a>2.8.3. Enabling @ConfigurationProperties-annotated types</h4>
 <div class="paragraph">
 <p translation-result="on">Spring Boot 提供了绑定 <code>@ConfigurationProperties</code> 类型并将它们注册为 bean 的基础设施。你可以按类启用配置属性，也可以启用与组件扫描类似的配置属性扫描。</p>
@@ -4247,7 +4247,7 @@ For consistency with properties of other types, if you do declare an <code>Optio
 You can either enable configuration properties on a class-by-class basis or enable configuration property scanning that works in a similar manner to component scanning.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">有时，使用 <code>@ConfigurationProperties</code> 注释的类可能不适合扫描，例如，如果你正在开发自己的自动配置或者你想有条件地启用它们。在这些情况下，请使用 <code>@EnableConfigurationProperties</code> 注释指定要处理的类型列表。这可以在任何 <code>@Configuration</code> 类上完成，如下例所示：</p>
+<p translation-result="on">有时，使用 <code>@ConfigurationProperties</code> 注解的类可能不适合扫描，例如，如果你正在开发自己的自动配置或者你想有条件地启用它们。在这些情况下，请使用 <code>@EnableConfigurationProperties</code> 注解指定要处理的类型列表。这可以在任何 <code>@Configuration</code> 类上完成，如下例所示：</p>
 <p translation-origin="off">Sometimes, classes annotated with <code>@ConfigurationProperties</code> might not be suitable for scanning, for example, if you’re developing your own auto-configuration or you want to enable them conditionally.
 In these cases, specify the list of types to process using the <code>@EnableConfigurationProperties</code> annotation.
 This can be done on any <code>@Configuration</code> class, as shown in the following example:</p>
@@ -4266,7 +4266,7 @@ public class MyConfiguration {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">要使用配置属性扫描，请将 <code>@ConfigurationPropertiesScan</code> 注释添加到你的应用程序。通常，它被添加到使用 <code>@SpringBootApplication</code> 注解的主应用程序类中，但它可以添加到任何 <code>@Configuration</code> 类中。默认情况下，扫描将从声明注解的类的包中进行。如果要定义要扫描的特定包，可以按照以下示例进行操作：</p>
+<p translation-result="on">要使用配置属性扫描，请将 <code>@ConfigurationPropertiesScan</code> 注解添加到你的应用程序。通常，它被添加到使用 <code>@SpringBootApplication</code> 注解的主应用程序类中，但它可以添加到任何 <code>@Configuration</code> 类中。默认情况下，扫描将从声明注解的类的包中进行。如果要定义要扫描的特定包，可以按照以下示例进行操作：</p>
 <p translation-origin="off">To use configuration property scanning, add the <code>@ConfigurationPropertiesScan</code> annotation to your application.
 Typically, it is added to the main application class that is annotated with <code>@SpringBootApplication</code> but it can be added to any <code>@Configuration</code> class.
 By default, scanning will occur from the package of the class that declares the annotation.
@@ -4293,7 +4293,7 @@ public class MyApplication {
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">当使用配置属性扫描或通过 <code>@EnableConfigurationProperties</code> 注册 <code>@ConfigurationProperties</code> bean 时，该 bean 具有常规名称： <code>&lt;prefix&gt;-&lt;fqn&gt;</code> ，其中 <code>&lt;prefix&gt;</code> 是在 <code>@ConfigurationProperties</code> 注释中指定的环境键前缀，<code>&lt;fqn&gt;</code> 是 bean 的完全限定名称。如果注解不提供任何前缀，则仅使用 bean 的完全限定名称。</p>
+<p translation-result="on">当使用配置属性扫描或通过 <code>@EnableConfigurationProperties</code> 注册 <code>@ConfigurationProperties</code> bean 时，该 bean 具有常规名称： <code>&lt;prefix&gt;-&lt;fqn&gt;</code> ，其中 <code>&lt;prefix&gt;</code> 是在 <code>@ConfigurationProperties</code> 注解中指定的环境键前缀，<code>&lt;fqn&gt;</code> 是 bean 的完全限定名称。如果注解不提供任何前缀，则仅使用 bean 的完全限定名称。</p>
 <p translation-origin="off">When the <code>@ConfigurationProperties</code> bean is registered using configuration property scanning or through <code>@EnableConfigurationProperties</code>, the bean has a conventional name: <code>&lt;prefix&gt;-&lt;fqn&gt;</code>, where <code>&lt;prefix&gt;</code> is the environment key prefix specified in the <code>@ConfigurationProperties</code> annotation and <code>&lt;fqn&gt;</code> is the fully qualified name of the bean.
 If the annotation does not provide any prefix, only the fully qualified name of the bean is used.</p>
 </div>
@@ -4306,14 +4306,14 @@ If the annotation does not provide any prefix, only the fully qualified name of 
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">我们建议 <code>@ConfigurationProperties</code> 只处理环境，特别是不要从上下文中注入其他 bean。对于极端情况，可以用 setter 注入或框架提供的任何 <code>*Aware</code> 接口（例如 <code>EnvironmentAware</code> 如果你需要访问 <code>Environment</code> ）。如果你仍然想使用构造函数注入其他 bean，则配置属性 bean 必须使用 <code>@Component</code> 注释并使用基于 JavaBean 的属性绑定。</p>
+<p translation-result="on">我们建议 <code>@ConfigurationProperties</code> 只处理环境，特别是不要从上下文中注入其他 bean。对于极端情况，可以用 setter 注入或框架提供的任何 <code>*Aware</code> 接口（例如 <code>EnvironmentAware</code> 如果你需要访问 <code>Environment</code> ）。如果你仍然想使用构造函数注入其他 bean，则配置属性 bean 必须使用 <code>@Component</code> 注解并使用基于 JavaBean 的属性绑定。</p>
 <p translation-origin="off">We recommend that <code>@ConfigurationProperties</code> only deal with the environment and, in particular, does not inject other beans from the context.
 For corner cases, setter injection can be used or any of the <code>*Aware</code> interfaces provided by the framework (such as <code>EnvironmentAware</code> if you need access to the <code>Environment</code>).
 If you still want to inject other beans using the constructor, the configuration properties bean must be annotated with <code>@Component</code> and use JavaBean-based property binding.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="features.external-config.typesafe-configuration-properties.using-annotated-types" translation-result="on"><a href="features.html#features.external-config.typesafe-configuration-properties.using-annotated-types"></a> 2.8.4. 使用 @ConfigurationProperties 注释的类型</h4>
+<h4 id="features.external-config.typesafe-configuration-properties.using-annotated-types" translation-result="on"><a href="features.html#features.external-config.typesafe-configuration-properties.using-annotated-types"></a> 2.8.4. 使用 @ConfigurationProperties 注解的类型</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.external-config.typesafe-configuration-properties.using-annotated-types"></a>2.8.4. Using @ConfigurationProperties-annotated types</h4>
 <div class="paragraph">
 <p translation-result="on">这种配置风格特别适用于 <code>SpringApplication</code> 外部 YAML 配置，如下例所示：</p>
@@ -4379,7 +4379,7 @@ See the <a href="configuration-metadata.html#configuration-metadata">appendix</a
 <h4 id="features.external-config.typesafe-configuration-properties.third-party-configuration" translation-result="on"><a href="features.html#features.external-config.typesafe-configuration-properties.third-party-configuration"></a> 2.8.5. 第三方配置</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.external-config.typesafe-configuration-properties.third-party-configuration"></a>2.8.5. Third-party Configuration</h4>
 <div class="paragraph">
-<p translation-result="on">除了使用 <code>@ConfigurationProperties</code> 来注释一个类，你还可以在公共 <code>@Bean</code> 方法上使用它。当你想要将属性绑定到你无法控制的第三方组件时，这样做会特别有用。</p>
+<p translation-result="on">除了使用 <code>@ConfigurationProperties</code> 来注解一个类，你还可以在公共 <code>@Bean</code> 方法上使用它。当你想要将属性绑定到你无法控制的第三方组件时，这样做会特别有用。</p>
 <p translation-origin="off">As well as using <code>@ConfigurationProperties</code> to annotate a class, you can also use it on public <code>@Bean</code> methods.
 Doing so can be particularly useful when you want to bind properties to third-party components that are outside of your control.</p>
 </div>
@@ -4492,7 +4492,7 @@ public class MyPersonProperties {
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">注释的 <code>prefix</code> 值<em>必须</em>是 kebab 大小写（小写并由 <code>-</code> 分隔，例如 <code>my.main-project.person</code> ）。</p>
+<p translation-result="on">注解的 <code>prefix</code> 值<em>必须</em>是 kebab 大小写（小写并由 <code>-</code> 分隔，例如 <code>my.main-project.person</code> ）。</p>
 <p translation-origin="off">The <code>prefix</code> value for the annotation <em>must</em> be in kebab case (lowercase and separated by <code>-</code>, such as <code>my.main-project.person</code>).</p>
 </td>
 </tr>
@@ -4860,7 +4860,7 @@ If the <code>dev</code> profile is enabled, however, <code>map</code> contains t
 <h4 id="features.external-config.typesafe-configuration-properties.conversion" translation-result="on"><a href="features.html#features.external-config.typesafe-configuration-properties.conversion"></a> 2.8.8. 属性转换</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.external-config.typesafe-configuration-properties.conversion"></a>2.8.8. Properties Conversion</h4>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 在绑定到 <code>@ConfigurationProperties</code> bean 时尝试将外部应用程序属性强制转换为正确的类型。如果你需要自定义类型转换，你可以提供 <code>ConversionService</code> bean（带有名为 <code>conversionService</code> 的 bean）或自定义属性编辑器（通过 <code>CustomEditorConfigurer</code> bean）或自定义 <code>Converters</code> （带有注释为 <code>@ConfigurationPropertiesBinding</code> 的 bean 定义）。</p>
+<p translation-result="on">Spring Boot 在绑定到 <code>@ConfigurationProperties</code> bean 时尝试将外部应用程序属性强制转换为正确的类型。如果你需要自定义类型转换，你可以提供 <code>ConversionService</code> bean（带有名为 <code>conversionService</code> 的 bean）或自定义属性编辑器（通过 <code>CustomEditorConfigurer</code> bean）或自定义 <code>Converters</code> （带有注解为 <code>@ConfigurationPropertiesBinding</code> 的 bean 定义）。</p>
 <p translation-origin="off">Spring Boot attempts to coerce the external application properties to the right type when it binds to the <code>@ConfigurationProperties</code> beans.
 If you need custom type conversion, you can provide a <code>ConversionService</code> bean (with a bean named <code>conversionService</code>) or custom property editors (through a <code>CustomEditorConfigurer</code> bean) or custom <code>Converters</code> (with bean definitions annotated as <code>@ConfigurationPropertiesBinding</code>).</p>
 </div>
@@ -5274,7 +5274,7 @@ Doing so gives a transparent upgrade path while supporting a much richer format.
 <h4 id="features.external-config.typesafe-configuration-properties.validation" translation-result="on"><a href="features.html#features.external-config.typesafe-configuration-properties.validation"></a> 2.8.9.  @ConfigurationProperties 验证</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.external-config.typesafe-configuration-properties.validation"></a>2.8.9. @ConfigurationProperties Validation</h4>
 <div class="paragraph">
-<p translation-result="on">每当使用 Spring 的 <code>@Validated</code> 注解进行注解时，Spring Boot 都会尝试验证 <code>@ConfigurationProperties</code> 类。你可以直接在配置类上使用 JSR-303 <code>javax.validation</code> 约束注释。为此，请确保你的类路径中存在兼容的 JSR-303 实现，然后将约束注释添加到你的字段，如以下示例所示：</p>
+<p translation-result="on">每当使用 Spring 的 <code>@Validated</code> 注解进行注解时，Spring Boot 都会尝试验证 <code>@ConfigurationProperties</code> 类。你可以直接在配置类上使用 JSR-303 <code>javax.validation</code> 约束注解。为此，请确保你的类路径中存在兼容的 JSR-303 实现，然后将约束注解添加到你的字段，如以下示例所示：</p>
 <p translation-origin="off">Spring Boot attempts to validate <code>@ConfigurationProperties</code> classes whenever they are annotated with Spring’s <code>@Validated</code> annotation.
 You can use JSR-303 <code>javax.validation</code> constraint annotations directly on your configuration class.
 To do so, ensure that a compliant JSR-303 implementation is on your classpath and then add constraint annotations to your fields, as shown in the following example:</p>
@@ -5316,14 +5316,14 @@ public class MyProperties {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">你还可以通过使用 <code>@Validated</code> 注释创建配置属性的 <code>@Bean</code> 方法来触发验证。</p>
+<p translation-result="on">你还可以通过使用 <code>@Validated</code> 注解创建配置属性的 <code>@Bean</code> 方法来触发验证。</p>
 <p translation-origin="off">You can also trigger validation by annotating the <code>@Bean</code> method that creates the configuration properties with <code>@Validated</code>.</p>
 </td>
 </tr>
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">为了确保始终为嵌套属性触发验证，即使没有找到任何属性，也必须使用 <code>@Valid</code> 注释关联的字段。以下示例基于前面的 <code>MyProperties</code> 示例构建：</p>
+<p translation-result="on">为了确保始终为嵌套属性触发验证，即使没有找到任何属性，也必须使用 <code>@Valid</code> 注解关联的字段。以下示例基于前面的 <code>MyProperties</code> 示例构建：</p>
 <p translation-origin="off">To ensure that validation is always triggered for nested properties, even when no properties are found, the associated field must be annotated with <code>@Valid</code>.
 The following example builds on the preceding <code>MyProperties</code> example:</p>
 </div>
@@ -5438,7 +5438,7 @@ The following table summarizes the features that are supported by <code>@Configu
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="features.html#features.external-config.typesafe-configuration-properties.relaxed-binding">轻松绑定</a></p><p class="tableblock" translation-origin="off"><a href="features.html#features.external-config.typesafe-configuration-properties.relaxed-binding">Relaxed binding</a></p></td>
 <td class="tableblock halign-left valign-top"><p translation-result="on">是的</p><p class="tableblock" translation-origin="off">Yes</p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">有限（见<a href="features.html#features.external-config.typesafe-configuration-properties.vs-value-annotation.note">下文注释</a>）</p><p class="tableblock" translation-origin="off">Limited (see <a href="features.html#features.external-config.typesafe-configuration-properties.vs-value-annotation.note">note below</a>)</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">有限（见<a href="features.html#features.external-config.typesafe-configuration-properties.vs-value-annotation.note">下文注解</a>）</p><p class="tableblock" translation-origin="off">Limited (see <a href="features.html#features.external-config.typesafe-configuration-properties.vs-value-annotation.note">note below</a>)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="configuration-metadata.html#configuration-metadata">元数据支持</a></p><p class="tableblock" translation-origin="off"><a href="configuration-metadata.html#configuration-metadata">Meta-data support</a></p></td>
@@ -5469,7 +5469,7 @@ If you used <code>@Value("{demo.itemPrice}")</code> instead, <code>demo.item-pri
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你为自己的组件定义了一组配置键，我们建议你将它们分组到使用 <code>@ConfigurationProperties</code> 注释的 POJO 中。这样做将为你提供结构化的、类型安全的对象，你可以将其注入到你自己的 bean 中。</p>
+<p translation-result="on">如果你为自己的组件定义了一组配置键，我们建议你将它们分组到使用 <code>@ConfigurationProperties</code> 注解的 POJO 中。这样做将为你提供结构化的、类型安全的对象，你可以将其注入到你自己的 bean 中。</p>
 <p translation-origin="off">If you define a set of configuration keys for your own components, we recommend you group them in a POJO annotated with <code>@ConfigurationProperties</code>.
 Doing so will provide you with structured, type-safe object that you can inject into your own beans.</p>
 </div>
@@ -6806,7 +6806,7 @@ spring.task.scheduling.pool.size=2</code></pre>
 <h2 translation-origin="off"><a class="anchor" href="features.html#features.testing"></a>8. Testing</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot 提供了许多实用程序和注释来帮助测试你的应用程序。测试支持由两个模块提供： <code>spring-boot-test</code> 包含核心项目，<code>spring-boot-test-autoconfigure</code> 支持自动配置测试。</p>
+<p translation-result="on">Spring Boot 提供了许多实用程序和注解来帮助测试你的应用程序。测试支持由两个模块提供： <code>spring-boot-test</code> 包含核心项目，<code>spring-boot-test-autoconfigure</code> 支持自动配置测试。</p>
 <p translation-origin="off">Spring Boot provides a number of utilities and annotations to help when testing your application.
 Test support is provided by two modules: <code>spring-boot-test</code> contains core items, and <code>spring-boot-test-autoconfigure</code> supports auto-configuration for tests.</p>
 </div>
@@ -6939,7 +6939,7 @@ You can declare a dependency directly to <code>org.springframework:spring-test</
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 提供了一个 <code>@SpringBootTest</code> 注解，当你需要 Spring Boot 功能时，可以将其用作标准 <code>spring-test</code> <code>@ContextConfiguration</code> 注解的替代品。注释<a href="features.html#features.testing.spring-boot-applications.detecting-configuration">通过 <code>SpringApplication</code> 创建测试中使用的 <code>ApplicationContext</code> 来工作</a>。除了 <code>@SpringBootTest</code> 之外，还提供了许多其他注释来<a href="features.html#features.testing.spring-boot-applications.autoconfigured-tests">测试应用程序的更具体的切片</a>。</p>
+<p translation-result="on">Spring Boot 提供了一个 <code>@SpringBootTest</code> 注解，当你需要 Spring Boot 功能时，可以将其用作标准 <code>spring-test</code> <code>@ContextConfiguration</code> 注解的替代品。注解<a href="features.html#features.testing.spring-boot-applications.detecting-configuration">通过 <code>SpringApplication</code> 创建测试中使用的 <code>ApplicationContext</code> 来工作</a>。除了 <code>@SpringBootTest</code> 之外，还提供了许多其他注解来<a href="features.html#features.testing.spring-boot-applications.autoconfigured-tests">测试应用程序的更具体的切片</a>。</p>
 <p translation-origin="off">Spring Boot provides a <code>@SpringBootTest</code> annotation, which can be used as an alternative to the standard <code>spring-test</code> <code>@ContextConfiguration</code> annotation when you need Spring Boot features.
 The annotation works by <a href="features.html#features.testing.spring-boot-applications.detecting-configuration">creating the <code>ApplicationContext</code> used in your tests through <code>SpringApplication</code></a>.
 In addition to <code>@SpringBootTest</code> a number of other annotations are also provided for <a href="features.html#features.testing.spring-boot-applications.autoconfigured-tests">testing more specific slices</a> of an application.</p>
@@ -6951,7 +6951,7 @@ In addition to <code>@SpringBootTest</code> a number of other annotations are al
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果你使用的是 JUnit 4，请不要忘记将 <code>@RunWith(SpringRunner.class)</code> 添加到你的测试中，否则注释将被忽略。如果你使用的是 JUnit 5，则无需将等效的 <code>@ExtendWith(SpringExtension.class)</code> 添加为 <code>@SpringBootTest</code> 并且其他 <code>@…​Test</code> 注释已经使用它进行了注释。</p>
+<p translation-result="on">如果你使用的是 JUnit 4，请不要忘记将 <code>@RunWith(SpringRunner.class)</code> 添加到你的测试中，否则注解将被忽略。如果你使用的是 JUnit 5，则无需将等效的 <code>@ExtendWith(SpringExtension.class)</code> 添加为 <code>@SpringBootTest</code> 并且其他 <code>@…​Test</code> 注解已经使用它进行了注解。</p>
 <p translation-origin="off">If you are using JUnit 4, do not forget to also add <code>@RunWith(SpringRunner.class)</code> to your test, otherwise the annotations will be ignored.
 If you are using JUnit 5, there is no need to add the equivalent <code>@ExtendWith(SpringExtension.class)</code> as <code>@SpringBootTest</code> and the other <code>@…​Test</code> annotations are already annotated with it.</p>
 </td>
@@ -6966,7 +6966,7 @@ You can use the <code>webEnvironment</code> attribute of <code>@SpringBootTest</
 <div class="ulist">
 <ul>
 <li>
-<p translation-result="on"><code>MOCK</code> （默认）：加载一个 Web <code>ApplicationContext</code> 并提供一个模拟 Web 环境。使用此注释时不启动嵌入式服务器。如果你的类路径上没有 Web 环境，则此模式会透明地回退到创建常规的非 Web <code>ApplicationContext</code> 。它可以与<a href="features.html#features.testing.spring-boot-applications.with-mock-environment"><code>@AutoConfigureMockMvc</code> 或 <code>@AutoConfigureWebTestClient</code> </a>结合使用，对你的 Web 应用程序进行基于模拟的测试。</p>
+<p translation-result="on"><code>MOCK</code> （默认）：加载一个 Web <code>ApplicationContext</code> 并提供一个模拟 Web 环境。使用此注解时不启动嵌入式服务器。如果你的类路径上没有 Web 环境，则此模式会透明地回退到创建常规的非 Web <code>ApplicationContext</code> 。它可以与<a href="features.html#features.testing.spring-boot-applications.with-mock-environment"><code>@AutoConfigureMockMvc</code> 或 <code>@AutoConfigureWebTestClient</code> </a>结合使用，对你的 Web 应用程序进行基于模拟的测试。</p>
 <p translation-origin="off"><code>MOCK</code>(Default) : Loads a web <code>ApplicationContext</code> and provides a mock web environment.
 Embedded servers are not started when using this annotation.
 If a web environment is not available on your classpath, this mode transparently falls back to creating a regular non-web <code>ApplicationContext</code>.
@@ -7052,12 +7052,12 @@ class MyWebFluxTests {
 Alternatively, you might have often used nested <code>@Configuration</code> classes within your test.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">在测试 Spring Boot 应用程序时，通常不需要这样做。只要你没有明确定义，Spring Boot 的 <code>@*Test</code> 注释就会自动搜索你的主要配置。</p>
+<p translation-result="on">在测试 Spring Boot 应用程序时，通常不需要这样做。只要你没有明确定义，Spring Boot 的 <code>@*Test</code> 注解就会自动搜索你的主要配置。</p>
 <p translation-origin="off">When testing Spring Boot applications, this is often not required.
 Spring Boot’s <code>@*Test</code> annotations search for your primary configuration automatically whenever you do not explicitly define one.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">搜索算法从包含测试的包开始，直到找到一个用 <code>@SpringBootApplication</code> 或 <code>@SpringBootConfiguration</code> 注释的类。只要你以合理的方式<a href="using.html#using.structuring-your-code">构建代码</a>，通常会找到你的主要配置。</p>
+<p translation-result="on">搜索算法从包含测试的包开始，直到找到一个用 <code>@SpringBootApplication</code> 或 <code>@SpringBootConfiguration</code> 注解的类。只要你以合理的方式<a href="using.html#using.structuring-your-code">构建代码</a>，通常会找到你的主要配置。</p>
 <p translation-origin="off">The search algorithm works up from the package that contains the test until it finds a class annotated with <code>@SpringBootApplication</code> or <code>@SpringBootConfiguration</code>.
 As long as you <a href="using.html#using.structuring-your-code">structured your code</a> in a sensible way, your main configuration is usually found.</p>
 </div>
@@ -7069,7 +7069,7 @@ As long as you <a href="using.html#using.structuring-your-code">structured your 
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">如果你使用<a href="features.html#features.testing.spring-boot-applications.autoconfigured-tests">测试注释来测试应用程序的更具体部分</a>，则应避免在<a href="features.html#features.testing.spring-boot-applications.user-configuration-and-slicing">主方法的应用程序类</a>上添加特定于特定区域的配置设置。</p>
+<p translation-result="on">如果你使用<a href="features.html#features.testing.spring-boot-applications.autoconfigured-tests">测试注解来测试应用程序的更具体部分</a>，则应避免在<a href="features.html#features.testing.spring-boot-applications.user-configuration-and-slicing">主方法的应用程序类</a>上添加特定于特定区域的配置设置。</p>
 <p translation-origin="off">If you use a <a href="features.html#features.testing.spring-boot-applications.autoconfigured-tests">test annotation to test a more specific slice of your application</a>, you should avoid adding configuration settings that are specific to a particular area on the <a href="features.html#features.testing.spring-boot-applications.user-configuration-and-slicing">main method’s application class</a>.</p>
 </div>
 <div class="paragraph">
@@ -7305,7 +7305,7 @@ If you need to test these lower-level concerns, you can start a fully running se
 If you use <code>@SpringBootTest(webEnvironment=WebEnvironment.RANDOM_PORT)</code>, an available port is picked at random each time your test runs.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>@LocalServerPort</code> 注释可用于<a href="howto.html#howto.webserver.discover-port">将实际使用的端口注入</a>到你的测试中。为方便起见，需要对启动的服务器进行 REST 调用的测试可以另外 <code>@Autowire</code> 一个<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/testing.html#webtestclient-tests"><code>WebTestClient</code></a> ，它解析到正在运行的服务器的相关链接，并带有用于验证响应的专用 API，如下例所示：</p>
+<p translation-result="on"><code>@LocalServerPort</code> 注解可用于<a href="howto.html#howto.webserver.discover-port">将实际使用的端口注入</a>到你的测试中。为方便起见，需要对启动的服务器进行 REST 调用的测试可以另外 <code>@Autowire</code> 一个<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/testing.html#webtestclient-tests"><code>WebTestClient</code></a> ，它解析到正在运行的服务器的相关链接，并带有用于验证响应的专用 API，如下例所示：</p>
 <p translation-origin="off">The <code>@LocalServerPort</code> annotation can be used to <a href="howto.html#howto.webserver.discover-port">inject the actual port used</a> into your test.
 For convenience, tests that need to make REST calls to the started server can additionally <code>@Autowire</code> a <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/testing.html#webtestclient-tests"><code>WebTestClient</code></a>, which resolves relative links to the running server and comes with a dedicated API for verifying responses, as shown in the following example:</p>
 </div>
@@ -7436,7 +7436,7 @@ class MyJmxTests {
 <p translation-origin="off">Regardless of your classpath, meter registries, except the in-memory backed, are not auto-configured when using <code>@SpringBootTest</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你需要在集成测试中将度量导出到不同的后端，请使用 <code>@AutoConfigureMetrics</code> 对其进行注释。</p>
+<p translation-result="on">如果你需要在集成测试中将度量导出到不同的后端，请使用 <code>@AutoConfigureMetrics</code> 对其进行注解。</p>
 <p translation-origin="off">If you need to export metrics to a different backend as part of an integration test, annotate it with <code>@AutoConfigureMetrics</code>.</p>
 </div>
 </div>
@@ -7450,7 +7450,7 @@ For example, you may have a facade over some remote service that is unavailable 
 Mocking can also be useful when you want to simulate failures that might be hard to trigger in a real environment.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 包含一个 <code>@MockBean</code> 注释，可用于为 <code>ApplicationContext</code> 中的 bean 定义 Mockito 模拟。你可以用注解添加新 bean 或替换单个现有 bean 定义。注释可以直接用于测试类、测试中的字段或 <code>@Configuration</code> 类和字段。在字段上使用时，创建的模拟实例也会被注入。在每个测试方法之后，模拟 bean 都会自动重置。</p>
+<p translation-result="on">Spring Boot 包含一个 <code>@MockBean</code> 注解，可用于为 <code>ApplicationContext</code> 中的 bean 定义 Mockito 模拟。你可以用注解添加新 bean 或替换单个现有 bean 定义。注解可以直接用于测试类、测试中的字段或 <code>@Configuration</code> 类和字段。在字段上使用时，创建的模拟实例也会被注入。在每个测试方法之后，模拟 bean 都会自动重置。</p>
 <p translation-origin="off">Spring Boot includes a <code>@MockBean</code> annotation that can be used to define a Mockito mock for a bean inside your <code>ApplicationContext</code>.
 You can use the annotation to add new beans or replace a single existing bean definition.
 The annotation can be used directly on test classes, on fields within your test, or on <code>@Configuration</code> classes and fields.
@@ -7613,7 +7613,7 @@ It often helps to load only the parts of the configuration that are required to 
 For example, you might want to test that Spring MVC controllers are mapping URLs correctly, and you do not want to involve database calls in those tests, or you might want to test JPA entities, and you are not interested in the web layer when those tests run.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>spring-boot-test-autoconfigure</code> 模块包含许多注释，可用于自动配置此类“切片”。它们中的每一个都以类似的方式工作，提供一个加载 <code>ApplicationContext</code> 的 <code>@…​Test</code> 注释和一个或多个可用于自定义自动配置设置的 <code>@AutoConfigure…​</code> 。</p>
+<p translation-result="on"><code>spring-boot-test-autoconfigure</code> 模块包含许多注解，可用于自动配置此类“切片”。它们中的每一个都以类似的方式工作，提供一个加载 <code>ApplicationContext</code> 的 <code>@…​Test</code> 注解和一个或多个可用于自定义自动配置设置的 <code>@AutoConfigure…​</code> 。</p>
 <p translation-origin="off">The <code>spring-boot-test-autoconfigure</code> module includes a number of annotations that can be used to automatically configure such “slices”.
 Each of them works in a similar way, providing a <code>@…​Test</code> annotation that loads the <code>ApplicationContext</code> and one or more <code>@AutoConfigure…​</code> annotations that can be used to customize auto-configuration settings.</p>
 </div>
@@ -7639,7 +7639,7 @@ Alternatively, you can use <code>@ImportAutoConfiguration#exclude</code>.</p>
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">不支持在一个测试中使用多个 <code>@…​Test</code> 注释来包含多个“切片”。如果你需要多个“切片”，请选择其中一个 <code>@…​Test</code> 注释并手动包含其他“切片”的 <code>@AutoConfigure…​</code> 。</p>
+<p translation-result="on">不支持在一个测试中使用多个 <code>@…​Test</code> 注解来包含多个“切片”。如果你需要多个“切片”，请选择其中一个 <code>@…​Test</code> 注解并手动包含其他“切片”的 <code>@AutoConfigure…​</code> 。</p>
 <p translation-origin="off">Including multiple “slices” by using several <code>@…​Test</code> annotations in one test is not supported.
 If you need multiple “slices”, pick one of the <code>@…​Test</code> annotations and include the <code>@AutoConfigure…​</code> annotations of the other “slices” by hand.</p>
 </td>
@@ -7653,7 +7653,7 @@ If you need multiple “slices”, pick one of the <code>@…​Test</code> anno
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">也可以将 @AutoConfigure <code>@AutoConfigure…​</code> 与标准 <code>@SpringBootTest</code> 注释一起使用。如果你对“切片”你的应用程序不感兴趣，但你想要一些自动配置的测试 bean，你可以用这种组合。</p>
+<p translation-result="on">也可以将 @AutoConfigure <code>@AutoConfigure…​</code> 与标准 <code>@SpringBootTest</code> 注解一起使用。如果你对“切片”你的应用程序不感兴趣，但你想要一些自动配置的测试 bean，你可以用这种组合。</p>
 <p translation-origin="off">It is also possible to use the <code>@AutoConfigure…​</code> annotations with the standard <code>@SpringBootTest</code> annotation.
 You can use this combination if you are not interested in “slicing” your application but you want some of the auto-configured test beans.</p>
 </td>
@@ -7665,7 +7665,7 @@ You can use this combination if you are not interested in “slicing” your app
 <h4 id="features.testing.spring-boot-applications.json-tests" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.json-tests"></a>8.3.12. 自动配置的 JSON 测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.json-tests"></a>8.3.12. Auto-configured JSON Tests</h4>
 <div class="paragraph">
-<p translation-result="on">要测试对象 JSON 序列化和反序列化是否按预期工作，你可以用 <code>@JsonTest</code> 注释。<code>@JsonTest</code> 自动配置可用的支持 JSON 映射器，它可以是以下库之一：</p>
+<p translation-result="on">要测试对象 JSON 序列化和反序列化是否按预期工作，你可以用 <code>@JsonTest</code> 注解。<code>@JsonTest</code> 自动配置可用的支持 JSON 映射器，它可以是以下库之一：</p>
 <p translation-origin="off">To test that object JSON serialization and deserialization is working as expected, you can use the <code>@JsonTest</code> annotation.
 <code>@JsonTest</code> auto-configures the available supported JSON mapper, which can be one of the following libraries:</p>
 </div>
@@ -7780,7 +7780,7 @@ void someTest() throws Exception {
 <h4 id="features.testing.spring-boot-applications.spring-mvc-tests" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.spring-mvc-tests"></a>8.3.13. 自动配置的 Spring MVC 测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.spring-mvc-tests"></a>8.3.13. Auto-configured Spring MVC Tests</h4>
 <div class="paragraph">
-<p translation-result="on">要测试 Spring MVC 控制器是否按预期工作，请使用 <code>@WebMvcTest</code> 注释。<code>@WebMvcTest</code> 自动配置 Spring MVC 基础结构并将扫描的 bean 限制为 <code>@Controller</code> 、 <code>@ControllerAdvice</code> 、 <code>@JsonComponent</code> 、 <code>Converter</code> 、 <code>GenericConverter</code> 、 <code>Filter</code> 、 <code>HandlerInterceptor</code> 、 <code>WebMvcConfigurer</code> 、 <code>WebMvcRegistrations</code> 和 <code>HandlerMethodArgumentResolver</code> 。使用 <code>@WebMvcTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
+<p translation-result="on">要测试 Spring MVC 控制器是否按预期工作，请使用 <code>@WebMvcTest</code> 注解。<code>@WebMvcTest</code> 自动配置 Spring MVC 基础结构并将扫描的 bean 限制为 <code>@Controller</code> 、 <code>@ControllerAdvice</code> 、 <code>@JsonComponent</code> 、 <code>Converter</code> 、 <code>GenericConverter</code> 、 <code>Filter</code> 、 <code>HandlerInterceptor</code> 、 <code>WebMvcConfigurer</code> 、 <code>WebMvcRegistrations</code> 和 <code>HandlerMethodArgumentResolver</code> 。使用 <code>@WebMvcTest</code> 注解时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
 <p translation-origin="off">To test whether Spring MVC controllers are working as expected, use the <code>@WebMvcTest</code> annotation.
 <code>@WebMvcTest</code> auto-configures the Spring MVC infrastructure and limits scanned beans to <code>@Controller</code>, <code>@ControllerAdvice</code>, <code>@JsonComponent</code>, <code>Converter</code>, <code>GenericConverter</code>, <code>Filter</code>, <code>HandlerInterceptor</code>, <code>WebMvcConfigurer</code>, <code>WebMvcRegistrations</code>, and <code>HandlerMethodArgumentResolver</code>.
 Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans are not scanned when the <code>@WebMvcTest</code> annotation is used.
@@ -7828,7 +7828,7 @@ Mock MVC offers a powerful way to quickly test MVC controllers without needing t
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">你还可以通过使用 <code>@AutoConfigureMockMvc</code> 注释来在非 <code>@WebMvcTest</code> （例如 <code>@SpringBootTest</code> ）中自动配置 <code>MockMvc</code> 。以下示例使用 <code>MockMvc</code> ：</p>
+<p translation-result="on">你还可以通过使用 <code>@AutoConfigureMockMvc</code> 注解来在非 <code>@WebMvcTest</code> （例如 <code>@SpringBootTest</code> ）中自动配置 <code>MockMvc</code> 。以下示例使用 <code>MockMvc</code> ：</p>
 <p translation-origin="off">You can also auto-configure <code>MockMvc</code> in a non-<code>@WebMvcTest</code> (such as <code>@SpringBootTest</code>) by annotating it with <code>@AutoConfigureMockMvc</code>.
 The following example uses <code>MockMvc</code>:</p>
 </td>
@@ -7879,7 +7879,7 @@ class MyControllerTests {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果你需要配置自动配置的元素（例如，应应用 servlet 过滤器），你可以用 <code>@AutoConfigureMockMvc</code> 注释中的属性。</p>
+<p translation-result="on">如果你需要配置自动配置的元素（例如，应应用 servlet 过滤器），你可以用 <code>@AutoConfigureMockMvc</code> 注解中的属性。</p>
 <p translation-origin="off">If you need to configure elements of the auto-configuration (for example, when servlet filters should be applied) you can use attributes in the <code>@AutoConfigureMockMvc</code> annotation.</p>
 </td>
 </tr>
@@ -7975,7 +7975,7 @@ More details on how to use Spring Security’s <code>MockMvc</code> support can 
 <h4 id="features.testing.spring-boot-applications.spring-webflux-tests" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.spring-webflux-tests"></a>8.3.14. 自动配置的 Spring WebFlux 测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.spring-webflux-tests"></a>8.3.14. Auto-configured Spring WebFlux Tests</h4>
 <div class="paragraph">
-<p translation-result="on">要测试 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html">Spring WebFlux</a> 控制器是否按预期工作，可以用 <code>@WebFluxTest</code> 注释。<code>@WebFluxTest</code> 自动配置 Spring WebFlux 基础结构并将扫描的 bean 限制为 <code>@Controller</code> 、 <code>@ControllerAdvice</code> 、 <code>@JsonComponent</code> 、 <code>Converter</code> 、 <code>GenericConverter</code> 、 <code>WebFluxConfigurer</code> <code>WebFilter</code> 使用 <code>@WebFluxTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
+<p translation-result="on">要测试 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html">Spring WebFlux</a> 控制器是否按预期工作，可以用 <code>@WebFluxTest</code> 注解。<code>@WebFluxTest</code> 自动配置 Spring WebFlux 基础结构并将扫描的 bean 限制为 <code>@Controller</code> 、 <code>@ControllerAdvice</code> 、 <code>@JsonComponent</code> 、 <code>Converter</code> 、 <code>GenericConverter</code> 、 <code>WebFluxConfigurer</code> <code>WebFilter</code> 使用 <code>@WebFluxTest</code> 注解时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
 <p translation-origin="off">To test that <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html">Spring WebFlux</a> controllers are working as expected, you can use the <code>@WebFluxTest</code> annotation.
 <code>@WebFluxTest</code> auto-configures the Spring WebFlux infrastructure and limits scanned beans to <code>@Controller</code>, <code>@ControllerAdvice</code>, <code>@JsonComponent</code>, <code>Converter</code>, <code>GenericConverter</code>, <code>WebFilter</code>, and <code>WebFluxConfigurer</code>.
 Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans are not scanned when the <code>@WebFluxTest</code> annotation is used.
@@ -8008,7 +8008,7 @@ Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans 
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">通常，<code>@WebFluxTest</code> 仅限于单个控制器，并与 <code>@MockBean</code> 注释结合使用，为所需的协作者提供模拟实现。</p>
+<p translation-result="on">通常，<code>@WebFluxTest</code> 仅限于单个控制器，并与 <code>@MockBean</code> 注解结合使用，为所需的协作者提供模拟实现。</p>
 <p translation-origin="off">Often, <code>@WebFluxTest</code> is limited to a single controller and used in combination with the <code>@MockBean</code> annotation to provide mock implementations for required collaborators.</p>
 </div>
 <div class="paragraph">
@@ -8022,7 +8022,7 @@ Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans 
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">你还可以通过使用 <code>@AutoConfigureWebTestClient</code> 注释来在非 <code>@WebFluxTest</code> （例如 <code>@SpringBootTest</code> ）中自动配置 <code>WebTestClient</code> 。以下示例显示了一个同时使用 <code>@WebFluxTest</code> 和 <code>WebTestClient</code> 的类：</p>
+<p translation-result="on">你还可以通过使用 <code>@AutoConfigureWebTestClient</code> 注解来在非 <code>@WebFluxTest</code> （例如 <code>@SpringBootTest</code> ）中自动配置 <code>WebTestClient</code> 。以下示例显示了一个同时使用 <code>@WebFluxTest</code> 和 <code>WebTestClient</code> 的类：</p>
 <p translation-origin="off">You can also auto-configure <code>WebTestClient</code> in a non-<code>@WebFluxTest</code> (such as <code>@SpringBootTest</code>) by annotating it with <code>@AutoConfigureWebTestClient</code>.
 The following example shows a class that uses both <code>@WebFluxTest</code> and a <code>WebTestClient</code>:</p>
 </td>
@@ -8122,7 +8122,7 @@ To include that in your test, you will need to import the configuration that reg
 <h4 id="features.testing.spring-boot-applications.autoconfigured-spring-data-cassandra" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-cassandra"></a> 8.3.15. 自动配置的数据 Cassandra 测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-cassandra"></a>8.3.15. Auto-configured Data Cassandra Tests</h4>
 <div class="paragraph">
-<p translation-result="on">你可以用 <code>@DataCassandraTest</code> 来测试 Cassandra 应用程序。默认情况下，它配置一个 <code>CassandraTemplate</code> ，扫描 <code>@Table</code> 类，并配置 Spring Data Cassandra 存储库。使用 <code>@DataCassandraTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。（有关在 Spring Boot 中使用 Cassandra 的更多信息，请参阅本章前面的“ <a href="data.html#data.nosql.cassandra">data.html</a> ”。）</p>
+<p translation-result="on">你可以用 <code>@DataCassandraTest</code> 来测试 Cassandra 应用程序。默认情况下，它配置一个 <code>CassandraTemplate</code> ，扫描 <code>@Table</code> 类，并配置 Spring Data Cassandra 存储库。使用 <code>@DataCassandraTest</code> 注解时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。（有关在 Spring Boot 中使用 Cassandra 的更多信息，请参阅本章前面的“ <a href="data.html#data.nosql.cassandra">data.html</a> ”。）</p>
 <p translation-origin="off">You can use <code>@DataCassandraTest</code> to test Cassandra applications.
 By default, it configures a <code>CassandraTemplate</code>, scans for <code>@Table</code> classes, and configures Spring Data Cassandra repositories.
 Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans are not scanned when the <code>@DataCassandraTest</code> annotation is used.
@@ -8166,7 +8166,7 @@ class MyDataCassandraTests {
 <h4 id="features.testing.spring-boot-applications.autoconfigured-spring-data-jpa" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-jpa"></a> 8.3.16. 自动配置的数据 JPA 测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-jpa"></a>8.3.16. Auto-configured Data JPA Tests</h4>
 <div class="paragraph">
-<p translation-result="on">你可以用 <code>@DataJpaTest</code> 注释来测试 JPA 应用程序。默认情况下，它会扫描 <code>@Entity</code> 类并配置 Spring Data JPA 存储库。如果类路径上有一个嵌入式数据库，它也会配置一个。默认情况下，通过将 <code>spring.jpa.show-sql</code> 属性设置为 <code>true</code> 来记录 SQL 查询。这可以用注释的 <code>showSql()</code> 属性禁用。</p>
+<p translation-result="on">你可以用 <code>@DataJpaTest</code> 注解来测试 JPA 应用程序。默认情况下，它会扫描 <code>@Entity</code> 类并配置 Spring Data JPA 存储库。如果类路径上有一个嵌入式数据库，它也会配置一个。默认情况下，通过将 <code>spring.jpa.show-sql</code> 属性设置为 <code>true</code> 来记录 SQL 查询。这可以用注解的 <code>showSql()</code> 属性禁用。</p>
 <p translation-origin="off">You can use the <code>@DataJpaTest</code> annotation to test JPA applications.
 By default, it scans for <code>@Entity</code> classes and configures Spring Data JPA repositories.
 If an embedded database is available on the classpath, it configures one as well.
@@ -8174,7 +8174,7 @@ SQL queries are logged by default by setting the <code>spring.jpa.show-sql</code
 This can be disabled using the <code>showSql()</code> attribute of the annotation.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">使用 <code>@DataJpaTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
+<p translation-result="on">使用 <code>@DataJpaTest</code> 注解时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
 <p translation-origin="off">Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans are not scanned when the <code>@DataJpaTest</code> annotation is used.
 <code>@EnableConfigurationProperties</code> can be used to include <code>@ConfigurationProperties</code> beans.</p>
 </div>
@@ -8232,7 +8232,7 @@ When doing so, make sure that your test is running in a transaction, for instanc
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你需要，也可以用 <code>JdbcTemplate</code> 。以下示例显示了正在使用的 <code>@DataJpaTest</code> 注释：</p>
+<p translation-result="on">如果你需要，也可以用 <code>JdbcTemplate</code> 。以下示例显示了正在使用的 <code>@DataJpaTest</code> 注解：</p>
 <p translation-origin="off">A <code>JdbcTemplate</code> is also available if you need that.
 The following example shows the <code>@DataJpaTest</code> annotation in use:</p>
 </div>
@@ -8268,7 +8268,7 @@ class MyRepositoryTests {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">内存嵌入式数据库通常适用于测试，因为它们速度快且不需要任何安装。但是，如果你更喜欢针对真实数据库运行测试，则可以用 <code>@AutoConfigureTestDatabase</code> 注释，如以下示例所示：</p>
+<p translation-result="on">内存嵌入式数据库通常适用于测试，因为它们速度快且不需要任何安装。但是，如果你更喜欢针对真实数据库运行测试，则可以用 <code>@AutoConfigureTestDatabase</code> 注解，如以下示例所示：</p>
 <p translation-origin="off">In-memory embedded databases generally work well for tests, since they are fast and do not require any installation.
 If, however, you prefer to run tests against a real database you can use the <code>@AutoConfigureTestDatabase</code> annotation, as shown in the following example:</p>
 </div>
@@ -8293,7 +8293,7 @@ class MyRepositoryTests {
 <h4 id="features.testing.spring-boot-applications.autoconfigured-jdbc" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.autoconfigured-jdbc"></a>8.3.17. 自动配置的 JDBC 测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.autoconfigured-jdbc"></a>8.3.17. Auto-configured JDBC Tests</h4>
 <div class="paragraph">
-<p translation-result="on"><code>@JdbcTest</code> 与 <code>@DataJpaTest</code> 类似，但适用于只需要 <code>DataSource</code> 且不使用 Spring Data JDBC 的测试。默认情况下，它配置一个内存嵌入式数据库和一个 <code>JdbcTemplate</code> 。使用 <code>@JdbcTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
+<p translation-result="on"><code>@JdbcTest</code> 与 <code>@DataJpaTest</code> 类似，但适用于只需要 <code>DataSource</code> 且不使用 Spring Data JDBC 的测试。默认情况下，它配置一个内存嵌入式数据库和一个 <code>JdbcTemplate</code> 。使用 <code>@JdbcTest</code> 注解时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
 <p translation-origin="off"><code>@JdbcTest</code> is similar to <code>@DataJpaTest</code> but is for tests that only require a <code>DataSource</code> and do not use Spring Data JDBC.
 By default, it configures an in-memory embedded database and a <code>JdbcTemplate</code>.
 Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans are not scanned when the <code>@JdbcTest</code> annotation is used.
@@ -8333,7 +8333,7 @@ class MyTransactionalTests {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你希望测试针对真实数据库运行，则可以用 <code>@AutoConfigureTestDatabase</code> 注释，其方式与 <code>DataJpaTest</code> 相同。（请参阅“<a href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-jpa">自动配置的数据 JPA 测试</a>”。）</p>
+<p translation-result="on">如果你希望测试针对真实数据库运行，则可以用 <code>@AutoConfigureTestDatabase</code> 注解，其方式与 <code>DataJpaTest</code> 相同。（请参阅“<a href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-jpa">自动配置的数据 JPA 测试</a>”。）</p>
 <p translation-origin="off">If you prefer your test to run against a real database, you can use the <code>@AutoConfigureTestDatabase</code> annotation in the same way as for <code>DataJpaTest</code>.
 (See "<a href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-jpa">Auto-configured Data JPA Tests</a>".)</p>
 </div>
@@ -8342,7 +8342,7 @@ class MyTransactionalTests {
 <h4 id="features.testing.spring-boot-applications.autoconfigured-spring-data-jdbc" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-jdbc"></a> 8.3.18. 自动配置的数据 JDBC 测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-jdbc"></a>8.3.18. Auto-configured Data JDBC Tests</h4>
 <div class="paragraph">
-<p translation-result="on"><code>@DataJdbcTest</code> 与 <code>@JdbcTest</code> 类似，但适用于使用 Spring Data JDBC 存储库的测试。默认情况下，它配置一个内存嵌入式数据库、一个 <code>JdbcTemplate</code> 和 Spring Data JDBC 存储库。使用 <code>@DataJdbcTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
+<p translation-result="on"><code>@DataJdbcTest</code> 与 <code>@JdbcTest</code> 类似，但适用于使用 Spring Data JDBC 存储库的测试。默认情况下，它配置一个内存嵌入式数据库、一个 <code>JdbcTemplate</code> 和 Spring Data JDBC 存储库。使用 <code>@DataJdbcTest</code> 注解时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
 <p translation-origin="off"><code>@DataJdbcTest</code> is similar to <code>@JdbcTest</code> but is for tests that use Spring Data JDBC repositories.
 By default, it configures an in-memory embedded database, a <code>JdbcTemplate</code>, and Spring Data JDBC repositories.
 Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans are not scanned when the <code>@DataJdbcTest</code> annotation is used.
@@ -8368,7 +8368,7 @@ See the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/h
 If that is not what you want, you can disable transaction management for a test or for the whole test class as <a href="features.html#features.testing.spring-boot-applications.autoconfigured-jdbc">shown in the JDBC example</a>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你希望测试针对真实数据库运行，则可以用 <code>@AutoConfigureTestDatabase</code> 注释，其方式与 <code>DataJpaTest</code> 相同。（请参阅“<a href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-jpa">自动配置的数据 JPA 测试</a>”。）</p>
+<p translation-result="on">如果你希望测试针对真实数据库运行，则可以用 <code>@AutoConfigureTestDatabase</code> 注解，其方式与 <code>DataJpaTest</code> 相同。（请参阅“<a href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-jpa">自动配置的数据 JPA 测试</a>”。）</p>
 <p translation-origin="off">If you prefer your test to run against a real database, you can use the <code>@AutoConfigureTestDatabase</code> annotation in the same way as for <code>DataJpaTest</code>.
 (See "<a href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-jpa">Auto-configured Data JPA Tests</a>".)</p>
 </div>
@@ -8377,7 +8377,7 @@ If that is not what you want, you can disable transaction management for a test 
 <h4 id="features.testing.spring-boot-applications.autoconfigured-jooq" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.autoconfigured-jooq"></a>8.3.19. 自动配置的 jOOQ 测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.autoconfigured-jooq"></a>8.3.19. Auto-configured jOOQ Tests</h4>
 <div class="paragraph">
-<p translation-result="on">你可以以与 <code>@JdbcTest</code> 类似的方式使用 <code>@JooqTest</code> ，但用于与 jOOQ 相关的测试。由于 jOOQ 严重依赖与数据库模式相对应的基于 Java 的模式，因此使用现有的 <code>DataSource</code> 。如果你想用内存数据库替换它，你可以用 <code>@AutoConfigureTestDatabase</code> 覆盖这些设置。（有关在 Spring Boot 中使用 jOOQ 的更多信息，请参阅本章前面的“ <a href="data.html#data.sql.jooq">data.html</a> ”。）使用 <code>@JooqTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
+<p translation-result="on">你可以以与 <code>@JdbcTest</code> 类似的方式使用 <code>@JooqTest</code> ，但用于与 jOOQ 相关的测试。由于 jOOQ 严重依赖与数据库模式相对应的基于 Java 的模式，因此使用现有的 <code>DataSource</code> 。如果你想用内存数据库替换它，你可以用 <code>@AutoConfigureTestDatabase</code> 覆盖这些设置。（有关在 Spring Boot 中使用 jOOQ 的更多信息，请参阅本章前面的“ <a href="data.html#data.sql.jooq">data.html</a> ”。）使用 <code>@JooqTest</code> 注解时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
 <p translation-origin="off">You can use <code>@JooqTest</code> in a similar fashion as <code>@JdbcTest</code> but for jOOQ-related tests.
 As jOOQ relies heavily on a Java-based schema that corresponds with the database schema, the existing <code>DataSource</code> is used.
 If you want to replace it with an in-memory database, you can use <code>@AutoConfigureTestDatabase</code> to override those settings.
@@ -8432,7 +8432,7 @@ If that is not what you want, you can disable transaction management for a test 
 <h4 id="features.testing.spring-boot-applications.autoconfigured-spring-data-mongodb" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-mongodb"></a> 8.3.20. 自动配置数据 MongoDB 测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-mongodb"></a>8.3.20. Auto-configured Data MongoDB Tests</h4>
 <div class="paragraph">
-<p translation-result="on">你可以用 <code>@DataMongoTest</code> 来测试 MongoDB 应用程序。默认情况下，它配置一个内存嵌入式 MongoDB（如果可用），配置一个 <code>MongoTemplate</code> ，扫描 <code>@Document</code> 类，并配置 Spring Data MongoDB 存储库。使用 <code>@DataMongoTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。（有关在 Spring Boot 中使用 MongoDB 的更多信息，请参阅本章前面的“ <a href="data.html#data.nosql.mongodb">data.html</a> ”。）</p>
+<p translation-result="on">你可以用 <code>@DataMongoTest</code> 来测试 MongoDB 应用程序。默认情况下，它配置一个内存嵌入式 MongoDB（如果可用），配置一个 <code>MongoTemplate</code> ，扫描 <code>@Document</code> 类，并配置 Spring Data MongoDB 存储库。使用 <code>@DataMongoTest</code> 注解时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。（有关在 Spring Boot 中使用 MongoDB 的更多信息，请参阅本章前面的“ <a href="data.html#data.nosql.mongodb">data.html</a> ”。）</p>
 <p translation-origin="off">You can use <code>@DataMongoTest</code> to test MongoDB applications.
 By default, it configures an in-memory embedded MongoDB (if available), configures a <code>MongoTemplate</code>, scans for <code>@Document</code> classes, and configures Spring Data MongoDB repositories.
 Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans are not scanned when the <code>@DataMongoTest</code> annotation is used.
@@ -8453,7 +8453,7 @@ Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans 
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">以下类显示了正在使用的 <code>@DataMongoTest</code> 注释：</p>
+<p translation-result="on">以下类显示了正在使用的 <code>@DataMongoTest</code> 注解：</p>
 <p translation-origin="off">The following class shows the <code>@DataMongoTest</code> annotation in use:</p>
 </div>
 <div class="listingblock">
@@ -8498,7 +8498,7 @@ class MyDataMongoDbTests {
 <h4 id="features.testing.spring-boot-applications.autoconfigured-spring-data-neo4j" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-neo4j"></a> 8.3.21. 自动配置的数据 Neo4j 测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-neo4j"></a>8.3.21. Auto-configured Data Neo4j Tests</h4>
 <div class="paragraph">
-<p translation-result="on">你可以用 <code>@DataNeo4jTest</code> 来测试 Neo4j 应用程序。默认情况下，它会扫描 <code>@Node</code> 类，并配置 Spring Data Neo4j 存储库。使用 <code>@DataNeo4jTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。（有关在 Spring Boot 中使用 Neo4J 的更多信息，请参阅本章前面的“ <a href="data.html#data.nosql.neo4j">data.html</a> ”。）</p>
+<p translation-result="on">你可以用 <code>@DataNeo4jTest</code> 来测试 Neo4j 应用程序。默认情况下，它会扫描 <code>@Node</code> 类，并配置 Spring Data Neo4j 存储库。使用 <code>@DataNeo4jTest</code> 注解时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。（有关在 Spring Boot 中使用 Neo4J 的更多信息，请参阅本章前面的“ <a href="data.html#data.nosql.neo4j">data.html</a> ”。）</p>
 <p translation-origin="off">You can use <code>@DataNeo4jTest</code> to test Neo4j applications.
 By default, it scans for <code>@Node</code> classes, and configures Spring Data Neo4j repositories.
 Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans are not scanned when the <code>@DataNeo4jTest</code> annotation is used.
@@ -8578,7 +8578,7 @@ If you are using this style, you must configure <code>@DataNeo4jTest</code> test
 <h4 id="features.testing.spring-boot-applications.autoconfigured-spring-data-redis" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-redis"></a> 8.3.22. 自动配置的数据 Redis 测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-redis"></a>8.3.22. Auto-configured Data Redis Tests</h4>
 <div class="paragraph">
-<p translation-result="on">你可以用 <code>@DataRedisTest</code> 来测试 Redis 应用程序。默认情况下，它会扫描 <code>@RedisHash</code> 类并配置 Spring Data Redis 存储库。使用 <code>@DataRedisTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。（有关在 Spring Boot 中使用 Redis 的更多信息，请参阅本章前面的“ <a href="data.html#data.nosql.redis">data.html</a> ”。）</p>
+<p translation-result="on">你可以用 <code>@DataRedisTest</code> 来测试 Redis 应用程序。默认情况下，它会扫描 <code>@RedisHash</code> 类并配置 Spring Data Redis 存储库。使用 <code>@DataRedisTest</code> 注解时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。（有关在 Spring Boot 中使用 Redis 的更多信息，请参阅本章前面的“ <a href="data.html#data.nosql.redis">data.html</a> ”。）</p>
 <p translation-origin="off">You can use <code>@DataRedisTest</code> to test Redis applications.
 By default, it scans for <code>@RedisHash</code> classes and configures Spring Data Redis repositories.
 Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans are not scanned when the <code>@DataRedisTest</code> annotation is used.
@@ -8624,7 +8624,7 @@ class MyDataRedisTests {
 <h4 id="features.testing.spring-boot-applications.autoconfigured-spring-data-ldap" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-ldap"></a> 8.3.23. 自动配置的数据 LDAP 测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-data-ldap"></a>8.3.23. Auto-configured Data LDAP Tests</h4>
 <div class="paragraph">
-<p translation-result="on">你可以用 <code>@DataLdapTest</code> 来测试 LDAP 应用程序。默认情况下，它配置内存中的嵌入式 LDAP（如果可用），配置 <code>LdapTemplate</code> ，扫描 <code>@Entry</code> 类，并配置 Spring Data LDAP 存储库。使用 <code>@DataLdapTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。（有关在 Spring Boot 中使用 LDAP 的更多信息，请参阅本章前面的“ <a href="data.html#data.nosql.ldap">data.html</a> ”。）</p>
+<p translation-result="on">你可以用 <code>@DataLdapTest</code> 来测试 LDAP 应用程序。默认情况下，它配置内存中的嵌入式 LDAP（如果可用），配置 <code>LdapTemplate</code> ，扫描 <code>@Entry</code> 类，并配置 Spring Data LDAP 存储库。使用 <code>@DataLdapTest</code> 注解时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。（有关在 Spring Boot 中使用 LDAP 的更多信息，请参阅本章前面的“ <a href="data.html#data.nosql.ldap">data.html</a> ”。）</p>
 <p translation-origin="off">You can use <code>@DataLdapTest</code> to test LDAP applications.
 By default, it configures an in-memory embedded LDAP (if available), configures an <code>LdapTemplate</code>, scans for <code>@Entry</code> classes, and configures Spring Data LDAP repositories.
 Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans are not scanned when the <code>@DataLdapTest</code> annotation is used.
@@ -8645,7 +8645,7 @@ Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans 
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">以下示例显示了正在使用的 <code>@DataLdapTest</code> 注释：</p>
+<p translation-result="on">以下示例显示了正在使用的 <code>@DataLdapTest</code> 注解：</p>
 <p translation-origin="off">The following example shows the <code>@DataLdapTest</code> annotation in use:</p>
 </div>
 <div class="listingblock">
@@ -8690,7 +8690,7 @@ class MyDataLdapTests {
 <h4 id="features.testing.spring-boot-applications.autoconfigured-rest-client" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.autoconfigured-rest-client"></a> 8.3.24. 自动配置的 REST 客户端</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.autoconfigured-rest-client"></a>8.3.24. Auto-configured REST Clients</h4>
 <div class="paragraph">
-<p translation-result="on">你可以用 <code>@RestClientTest</code> 注释来测试 REST 客户端。默认情况下，它会自动配置 Jackson、GSON 和 Jsonb 支持，配置 <code>RestTemplateBuilder</code> 并添加对 <code>MockRestServiceServer</code> 的支持。使用 <code>@RestClientTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
+<p translation-result="on">你可以用 <code>@RestClientTest</code> 注解来测试 REST 客户端。默认情况下，它会自动配置 Jackson、GSON 和 Jsonb 支持，配置 <code>RestTemplateBuilder</code> 并添加对 <code>MockRestServiceServer</code> 的支持。使用 <code>@RestClientTest</code> 注解时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。<code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
 <p translation-origin="off">You can use the <code>@RestClientTest</code> annotation to test REST clients.
 By default, it auto-configures Jackson, GSON, and Jsonb support, configures a <code>RestTemplateBuilder</code>, and adds support for <code>MockRestServiceServer</code>.
 Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans are not scanned when the <code>@RestClientTest</code> annotation is used.
@@ -8751,7 +8751,7 @@ class MyRestClientTests {
 <h4 id="features.testing.spring-boot-applications.autoconfigured-spring-restdocs" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-restdocs"></a> 8.3.25. 自动配置的 Spring REST 文档测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-restdocs"></a>8.3.25. Auto-configured Spring REST Docs Tests</h4>
 <div class="paragraph">
-<p translation-result="on">你可以用 <code>@AutoConfigureRestDocs</code> 注释在你的测试中使用 Mock MVC、REST Assured 或 WebTestClient 使用 <a href="https://spring.io/projects/spring-restdocs">Spring REST 文档</a>。它消除了 Spring REST Docs 中对 JUnit 扩展的需求。</p>
+<p translation-result="on">你可以用 <code>@AutoConfigureRestDocs</code> 注解在你的测试中使用 Mock MVC、REST Assured 或 WebTestClient 使用 <a href="https://spring.io/projects/spring-restdocs">Spring REST 文档</a>。它消除了 Spring REST Docs 中对 JUnit 扩展的需求。</p>
 <p translation-origin="off">You can use the <code>@AutoConfigureRestDocs</code> annotation to use <a href="https://spring.io/projects/spring-restdocs">Spring REST Docs</a> in your tests with Mock MVC, REST Assured, or WebTestClient.
 It removes the need for the JUnit extension in Spring REST Docs.</p>
 </div>
@@ -9163,7 +9163,7 @@ class MyJdbcTests {
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">或者，可以通过在 <code>META-INF/spring.factories</code> 中注册它们来为切片注释的任何使用添加额外的自动配置，如下例所示：</p>
+<p translation-result="on">或者，可以通过在 <code>META-INF/spring.factories</code> 中注册它们来为切片注解的任何使用添加额外的自动配置，如下例所示：</p>
 <p translation-origin="off">Alternatively, additional auto-configurations can be added for any use of a slice annotation by registering them in <code>META-INF/spring.factories</code> as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -9178,7 +9178,7 @@ class MyJdbcTests {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">只要使用 <code>@ImportAutoConfiguration</code> 进行元注释，就可以通过这种方式自定义切片或 <code>@AutoConfigure…​</code> 。</p>
+<p translation-result="on">只要使用 <code>@ImportAutoConfiguration</code> 进行元注解，就可以通过这种方式自定义切片或 <code>@AutoConfigure…​</code> 。</p>
 <p translation-origin="off">A slice or <code>@AutoConfigure…​</code> annotation can be customized this way as long as it is meta-annotated with <code>@ImportAutoConfiguration</code>.</p>
 </td>
 </tr>
@@ -9243,7 +9243,7 @@ public class MyBatchConfiguration {
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">根据你的应用程序的复杂性，你可能有一个用于自定义的 <code>@Configuration</code> 类，或者每个域区域一个类。后一种方法允许你在其中一个测试中启用它，如有必要，使用 <code>@Import</code> 注释。</p>
+<p translation-result="on">根据你的应用程序的复杂性，你可能有一个用于自定义的 <code>@Configuration</code> 类，或者每个域区域一个类。后一种方法允许你在其中一个测试中启用它，如有必要，使用 <code>@Import</code> 注解。</p>
 <p translation-origin="off">Depending on the complexity of your application, you may either have a single <code>@Configuration</code> class for your customizations or one class per domain area.
 The latter approach lets you enable it in one of your tests, if necessary, with the <code>@Import</code> annotation.</p>
 </td>
@@ -9526,7 +9526,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">或者，如果你将 <code>@SpringBootTest</code> 注释与 <code>WebEnvironment.RANDOM_PORT</code> 或 <code>WebEnvironment.DEFINED_PORT</code> 使用，你可以注入一个完全配置的 <code>TestRestTemplate</code> 并开始使用它。如有必要，可以通过 <code>RestTemplateBuilder</code> bean 应用其他自定义。任何未指定主机和端口的 URL 都会自动连接到嵌入式服务器，如下例所示：</p>
+<p translation-result="on">或者，如果你将 <code>@SpringBootTest</code> 注解与 <code>WebEnvironment.RANDOM_PORT</code> 或 <code>WebEnvironment.DEFINED_PORT</code> 使用，你可以注入一个完全配置的 <code>TestRestTemplate</code> 并开始使用它。如有必要，可以通过 <code>RestTemplateBuilder</code> bean 应用其他自定义。任何未指定主机和端口的 URL 都会自动连接到嵌入式服务器，如下例所示：</p>
 <p translation-origin="off">Alternatively, if you use the <code>@SpringBootTest</code> annotation with <code>WebEnvironment.RANDOM_PORT</code> or <code>WebEnvironment.DEFINED_PORT</code>, you can inject a fully configured <code>TestRestTemplate</code> and start using it.
 If necessary, additional customizations can be applied through the <code>RestTemplateBuilder</code> bean.
 Any URLs that do not specify a host and port automatically connect to the embedded server, as shown in the following example:</p>
@@ -9610,7 +9610,7 @@ We first cover what you need to know to build your own auto-configuration and th
 <h3 id="features.developing-auto-configuration.understanding-auto-configured-beans" translation-result="on"><a href="features.html#features.developing-auto-configuration.understanding-auto-configured-beans"></a> 9.1. 了解自动配置的 Bean</h3>
 <h3 translation-origin="off"><a class="anchor" href="features.html#features.developing-auto-configuration.understanding-auto-configured-beans"></a>9.1. Understanding Auto-configured Beans</h3>
 <div class="paragraph">
-<p translation-result="on">在幕后，自动配置是使用标准的 <code>@Configuration</code> 类实现的。附加的 <code>@Conditional</code> 注释用于限制何时应用自动配置。通常，自动配置类使用 <code>@ConditionalOnClass</code> 和 <code>@ConditionalOnMissingBean</code> 注解。这确保了自动配置仅在找到相关类并且你没有声明自己的 <code>@Configuration</code> 时适用。</p>
+<p translation-result="on">在幕后，自动配置是使用标准的 <code>@Configuration</code> 类实现的。附加的 <code>@Conditional</code> 注解用于限制何时应用自动配置。通常，自动配置类使用 <code>@ConditionalOnClass</code> 和 <code>@ConditionalOnMissingBean</code> 注解。这确保了自动配置仅在找到相关类并且你没有声明自己的 <code>@Configuration</code> 时适用。</p>
 <p translation-origin="off">Under the hood, auto-configuration is implemented with standard <code>@Configuration</code> classes.
 Additional <code>@Conditional</code> annotations are used to constrain when the auto-configuration should apply.
 Usually, auto-configuration classes use <code>@ConditionalOnClass</code> and <code>@ConditionalOnMissingBean</code> annotations.
@@ -9653,12 +9653,12 @@ Specific <code>@Import</code>s should be used instead.</p>
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你的配置需要按特定顺序应用，你可以用<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/AutoConfigureAfter.java"><code>@AutoConfigureAfter</code></a>或<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/AutoConfigureBefore.java"><code>@AutoConfigureBefore</code></a>注释。例如，如果你提供特定于 Web 的配置，则可能需要在 <code>WebMvcAutoConfiguration</code> 之后应用你的类。</p>
+<p translation-result="on">如果你的配置需要按特定顺序应用，你可以用<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/AutoConfigureAfter.java"><code>@AutoConfigureAfter</code></a>或<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/AutoConfigureBefore.java"><code>@AutoConfigureBefore</code></a>注解。例如，如果你提供特定于 Web 的配置，则可能需要在 <code>WebMvcAutoConfiguration</code> 之后应用你的类。</p>
 <p translation-origin="off">You can use the <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/AutoConfigureAfter.java"><code>@AutoConfigureAfter</code></a> or <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/AutoConfigureBefore.java"><code>@AutoConfigureBefore</code></a> annotations if your configuration needs to be applied in a specific order.
 For example, if you provide web-specific configuration, your class may need to be applied after <code>WebMvcAutoConfiguration</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你想订购某些彼此不应该有任何直接了解的自动配置，你也可以用 <code>@AutoConfigureOrder</code> 。该注释与常规 <code>@Order</code> 注释具有相同的语义，但为自动配置类提供了专用顺序。</p>
+<p translation-result="on">如果你想订购某些彼此不应该有任何直接了解的自动配置，你也可以用 <code>@AutoConfigureOrder</code> 。该注解与常规 <code>@Order</code> 注解具有相同的语义，但为自动配置类提供了专用顺序。</p>
 <p translation-origin="off">If you want to order certain auto-configurations that should not have any direct knowledge of each other, you can also use <code>@AutoConfigureOrder</code>.
 That annotation has the same semantic as the regular <code>@Order</code> annotation but provides a dedicated order for auto-configuration classes.</p>
 </div>
@@ -9669,15 +9669,15 @@ The order in which those beans are subsequently created is unaffected and is det
 </div>
 </div>
 <div class="sect2">
-<h3 id="features.developing-auto-configuration.condition-annotations" translation-result="on"><a href="features.html#features.developing-auto-configuration.condition-annotations"></a>9.3. 条件注释</h3>
+<h3 id="features.developing-auto-configuration.condition-annotations" translation-result="on"><a href="features.html#features.developing-auto-configuration.condition-annotations"></a>9.3. 条件注解</h3>
 <h3 translation-origin="off"><a class="anchor" href="features.html#features.developing-auto-configuration.condition-annotations"></a>9.3. Condition Annotations</h3>
 <div class="paragraph">
-<p translation-result="on">你几乎总是希望在你的自动配置类中包含一个或多个 <code>@Conditional</code> 注释。<code>@ConditionalOnMissingBean</code> 注解是一个常见的例子，如果开发人员对你的默认设置不满意，它可以让他们覆盖自动配置。</p>
+<p translation-result="on">你几乎总是希望在你的自动配置类中包含一个或多个 <code>@Conditional</code> 注解。<code>@ConditionalOnMissingBean</code> 注解是一个常见的例子，如果开发人员对你的默认设置不满意，它可以让他们覆盖自动配置。</p>
 <p translation-origin="off">You almost always want to include one or more <code>@Conditional</code> annotations on your auto-configuration class.
 The <code>@ConditionalOnMissingBean</code> annotation is one common example that is used to allow developers to override auto-configuration if they are not happy with your defaults.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 包含许多 <code>@Conditional</code> 注释，你可以通过注释 <code>@Configuration</code> 类或单个 <code>@Bean</code> 方法在自己的代码中重用它们。这些注释包括：</p>
+<p translation-result="on">Spring Boot 包含许多 <code>@Conditional</code> 注解，你可以通过注解 <code>@Configuration</code> 类或单个 <code>@Bean</code> 方法在自己的代码中重用它们。这些注解包括：</p>
 <p translation-origin="off">Spring Boot includes a number of <code>@Conditional</code> annotations that you can reuse in your own code by annotating <code>@Configuration</code> classes or individual <code>@Bean</code> methods.
 These annotations include:</p>
 </div>
@@ -9713,7 +9713,7 @@ These annotations include:</p>
 <h4 id="features.developing-auto-configuration.condition-annotations.class-conditions" translation-result="on"><a href="features.html#features.developing-auto-configuration.condition-annotations.class-conditions"></a> 9.3.1. 班级条件</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.developing-auto-configuration.condition-annotations.class-conditions"></a>9.3.1. Class Conditions</h4>
 <div class="paragraph">
-<p translation-result="on"><code>@ConditionalOnClass</code> 和 <code>@ConditionalOnMissingClass</code> 注释让 <code>@Configuration</code> 类根据特定类的存在或不存在而包含在内。由于注释元数据是使用 <a href="https://asm.ow2.io/">ASM</a> 解析的，因此你可以用 <code>value</code> 属性来引用真实的类，即使该类实际上可能不会出现在正在运行的应用程序类路径中。如果你更喜欢使用 <code>String</code> 值指定类名，也可以用 <code>name</code> 属性。</p>
+<p translation-result="on"><code>@ConditionalOnClass</code> 和 <code>@ConditionalOnMissingClass</code> 注解让 <code>@Configuration</code> 类根据特定类的存在或不存在而包含在内。由于注解元数据是使用 <a href="https://asm.ow2.io/">ASM</a> 解析的，因此你可以用 <code>value</code> 属性来引用真实的类，即使该类实际上可能不会出现在正在运行的应用程序类路径中。如果你更喜欢使用 <code>String</code> 值指定类名，也可以用 <code>name</code> 属性。</p>
 <p translation-origin="off">The <code>@ConditionalOnClass</code> and <code>@ConditionalOnMissingClass</code> annotations let <code>@Configuration</code> classes be included based on the presence or absence of specific classes.
 Due to the fact that annotation metadata is parsed by using <a href="https://asm.ow2.io/">ASM</a>, you can use the <code>value</code> attribute to refer to the real class, even though that class might not actually appear on the running application classpath.
 You can also use the <code>name</code> attribute if you prefer to specify the class name by using a <code>String</code> value.</p>
@@ -9762,7 +9762,7 @@ public class MyAutoConfiguration {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果你使用 <code>@ConditionalOnClass</code> 或 <code>@ConditionalOnMissingClass</code> 作为元注释的一部分来组成你自己的组合注释，则必须使用 <code>name</code> 来引用类，在这种情况下不处理。</p>
+<p translation-result="on">如果你使用 <code>@ConditionalOnClass</code> 或 <code>@ConditionalOnMissingClass</code> 作为元注解的一部分来组成你自己的组合注解，则必须使用 <code>name</code> 来引用类，在这种情况下不处理。</p>
 <p translation-origin="off">If you use <code>@ConditionalOnClass</code> or <code>@ConditionalOnMissingClass</code> as a part of a meta-annotation to compose your own composed annotations, you must use <code>name</code> as referring to the class in such a case is not handled.</p>
 </td>
 </tr>
@@ -9773,7 +9773,7 @@ public class MyAutoConfiguration {
 <h4 id="features.developing-auto-configuration.condition-annotations.bean-conditions" translation-result="on"><a href="features.html#features.developing-auto-configuration.condition-annotations.bean-conditions"></a> 9.3.2.豆条件</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.developing-auto-configuration.condition-annotations.bean-conditions"></a>9.3.2. Bean Conditions</h4>
 <div class="paragraph">
-<p translation-result="on"><code>@ConditionalOnBean</code> 和 <code>@ConditionalOnMissingBean</code> 注释允许根据特定 bean 的存在或不存在来包含 bean。你可以用 <code>value</code> 属性按类型指定 beans，也可以用 <code>name</code> 按名称指定 beans。<code>search</code> 属性允许你限制在搜索 bean 时应考虑的 <code>ApplicationContext</code> 层次结构。</p>
+<p translation-result="on"><code>@ConditionalOnBean</code> 和 <code>@ConditionalOnMissingBean</code> 注解允许根据特定 bean 的存在或不存在来包含 bean。你可以用 <code>value</code> 属性按类型指定 beans，也可以用 <code>name</code> 按名称指定 beans。<code>search</code> 属性允许你限制在搜索 bean 时应考虑的 <code>ApplicationContext</code> 层次结构。</p>
 <p translation-origin="off">The <code>@ConditionalOnBean</code> and <code>@ConditionalOnMissingBean</code> annotations let a bean be included based on the presence or absence of specific beans.
 You can use the <code>value</code> attribute to specify beans by type or <code>name</code> to specify beans by name.
 The <code>search</code> attribute lets you limit the <code>ApplicationContext</code> hierarchy that should be considered when searching for beans.</p>
@@ -9812,7 +9812,7 @@ public class MyAutoConfiguration {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">你需要非常小心添加 bean 定义的顺序，因为这些条件是根据到目前为止已处理的内容进行评估的。出于这个原因，我们建议在自动配置类上仅使用 <code>@ConditionalOnBean</code> 和 <code>@ConditionalOnMissingBean</code> 注释（因为它们保证在添加任何用户定义的 bean 定义后加载）。</p>
+<p translation-result="on">你需要非常小心添加 bean 定义的顺序，因为这些条件是根据到目前为止已处理的内容进行评估的。出于这个原因，我们建议在自动配置类上仅使用 <code>@ConditionalOnBean</code> 和 <code>@ConditionalOnMissingBean</code> 注解（因为它们保证在添加任何用户定义的 bean 定义后加载）。</p>
 <p translation-origin="off">You need to be very careful about the order in which bean definitions are added, as these conditions are evaluated based on what has been processed so far.
 For this reason, we recommend using only <code>@ConditionalOnBean</code> and <code>@ConditionalOnMissingBean</code> annotations on auto-configuration classes (since these are guaranteed to load after any user-defined bean definitions have been added).</p>
 </td>
@@ -9853,7 +9853,7 @@ Providing as much type information as possible in <code>@Bean</code> methods is 
 <h4 id="features.developing-auto-configuration.condition-annotations.property-conditions" translation-result="on"><a href="features.html#features.developing-auto-configuration.condition-annotations.property-conditions"></a> 9.3.3.物业条件</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.developing-auto-configuration.condition-annotations.property-conditions"></a>9.3.3. Property Conditions</h4>
 <div class="paragraph">
-<p translation-result="on"><code>@ConditionalOnProperty</code> 注释允许基于 Spring Environment 属性包含配置。使用 <code>prefix</code> 和 <code>name</code> 属性来指定应该检查的属性。默认情况下，匹配任何存在且不等于 <code>false</code> 的属性。你还可以用 <code>havingValue</code> 和 <code>matchIfMissing</code> 属性创建更高级的检查。</p>
+<p translation-result="on"><code>@ConditionalOnProperty</code> 注解允许基于 Spring Environment 属性包含配置。使用 <code>prefix</code> 和 <code>name</code> 属性来指定应该检查的属性。默认情况下，匹配任何存在且不等于 <code>false</code> 的属性。你还可以用 <code>havingValue</code> 和 <code>matchIfMissing</code> 属性创建更高级的检查。</p>
 <p translation-origin="off">The <code>@ConditionalOnProperty</code> annotation lets configuration be included based on a Spring Environment property.
 Use the <code>prefix</code> and <code>name</code> attributes to specify the property that should be checked.
 By default, any property that exists and is not equal to <code>false</code> is matched.
@@ -9864,7 +9864,7 @@ You can also create more advanced checks by using the <code>havingValue</code> a
 <h4 id="features.developing-auto-configuration.condition-annotations.resource-conditions" translation-result="on"><a href="features.html#features.developing-auto-configuration.condition-annotations.resource-conditions"></a> 9.3.4. 资源条件</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.developing-auto-configuration.condition-annotations.resource-conditions"></a>9.3.4. Resource Conditions</h4>
 <div class="paragraph">
-<p translation-result="on"><code>@ConditionalOnResource</code> 注释允许仅在存在特定资源时才包含配置。可以用通常的 Spring 约定来指定资源，如以下示例所示： <code>file:/home/user/test.dat</code> 。</p>
+<p translation-result="on"><code>@ConditionalOnResource</code> 注解允许仅在存在特定资源时才包含配置。可以用通常的 Spring 约定来指定资源，如以下示例所示： <code>file:/home/user/test.dat</code> 。</p>
 <p translation-origin="off">The <code>@ConditionalOnResource</code> annotation lets configuration be included only when a specific resource is present.
 Resources can be specified by using the usual Spring conventions, as shown in the following example: <code>file:/home/user/test.dat</code>.</p>
 </div>
@@ -9873,13 +9873,13 @@ Resources can be specified by using the usual Spring conventions, as shown in th
 <h4 id="features.developing-auto-configuration.condition-annotations.web-application-conditions" translation-result="on"><a href="features.html#features.developing-auto-configuration.condition-annotations.web-application-conditions"></a> 9.3.5. 网络申请条件</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.developing-auto-configuration.condition-annotations.web-application-conditions"></a>9.3.5. Web Application Conditions</h4>
 <div class="paragraph">
-<p translation-result="on"><code>@ConditionalOnWebApplication</code> 和 <code>@ConditionalOnNotWebApplication</code> 注释允许根据应用程序是否为“Web 应用程序”来包含配置。基于 servlet 的 Web 应用程序是使用 Spring <code>WebApplicationContext</code> 、定义 <code>session</code> 范围或具有 <code>ConfigurableWebEnvironment</code> 的任何应用程序。响应式 Web 应用程序是使用 <code>ReactiveWebApplicationContext</code> 或具有 <code>ConfigurableReactiveWebEnvironment</code> 的任何应用程序。</p>
+<p translation-result="on"><code>@ConditionalOnWebApplication</code> 和 <code>@ConditionalOnNotWebApplication</code> 注解允许根据应用程序是否为“Web 应用程序”来包含配置。基于 servlet 的 Web 应用程序是使用 Spring <code>WebApplicationContext</code> 、定义 <code>session</code> 范围或具有 <code>ConfigurableWebEnvironment</code> 的任何应用程序。响应式 Web 应用程序是使用 <code>ReactiveWebApplicationContext</code> 或具有 <code>ConfigurableReactiveWebEnvironment</code> 的任何应用程序。</p>
 <p translation-origin="off">The <code>@ConditionalOnWebApplication</code> and <code>@ConditionalOnNotWebApplication</code> annotations let configuration be included depending on whether the application is a “web application”.
 A servlet-based web application is any application that uses a Spring <code>WebApplicationContext</code>, defines a <code>session</code> scope, or has a <code>ConfigurableWebEnvironment</code>.
 A reactive web application is any application that uses a <code>ReactiveWebApplicationContext</code>, or has a <code>ConfigurableReactiveWebEnvironment</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>@ConditionalOnWarDeployment</code> 注释允许根据应用程序是否是部署到容器的传统 WAR 应用程序来包含配置。对于使用嵌入式服务器运行的应用程序，此条件将不匹配。</p>
+<p translation-result="on"><code>@ConditionalOnWarDeployment</code> 注解允许根据应用程序是否是部署到容器的传统 WAR 应用程序来包含配置。对于使用嵌入式服务器运行的应用程序，此条件将不匹配。</p>
 <p translation-origin="off">The <code>@ConditionalOnWarDeployment</code> annotation lets configuration be included depending on whether the application is a traditional WAR application that is deployed to a container.
 This condition will not match for applications that are run with an embedded server.</p>
 </div>
@@ -9888,7 +9888,7 @@ This condition will not match for applications that are run with an embedded ser
 <h4 id="features.developing-auto-configuration.condition-annotations.spel-conditions" translation-result="on"><a href="features.html#features.developing-auto-configuration.condition-annotations.spel-conditions"></a> 9.3.6.  SpEL 表达条件</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.developing-auto-configuration.condition-annotations.spel-conditions"></a>9.3.6. SpEL Expression Conditions</h4>
 <div class="paragraph">
-<p translation-result="on"><code>@ConditionalOnExpression</code> 注释允许基于 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/core.html#expressions">SpEL 表达式</a>的结果包含配置。</p>
+<p translation-result="on"><code>@ConditionalOnExpression</code> 注解允许基于 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/core.html#expressions">SpEL 表达式</a>的结果包含配置。</p>
 <p translation-origin="off">The <code>@ConditionalOnExpression</code> annotation lets configuration be included based on the result of a <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/core.html#expressions">SpEL expression</a>.</p>
 </div>
 </div>
@@ -10208,7 +10208,7 @@ If you do it that way, the library is not provided and, by default, Spring Boot 
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 使用注释处理器来收集元数据文件（ <code>META-INF/spring-autoconfigure-metadata.properties</code> ）中的自动配置条件。如果该文件存在，它将用于急切地过滤不匹配的自动配置，这将缩短启动时间。建议在包含自动配置的模块中添加以下依赖项：</p>
+<p translation-result="on">Spring Boot 使用注解处理器来收集元数据文件（ <code>META-INF/spring-autoconfigure-metadata.properties</code> ）中的自动配置条件。如果该文件存在，它将用于急切地过滤不匹配的自动配置，这将缩短启动时间。建议在包含自动配置的模块中添加以下依赖项：</p>
 <p translation-origin="off">Spring Boot uses an annotation processor to collect the conditions on auto-configurations in a metadata file (<code>META-INF/spring-autoconfigure-metadata.properties</code>).
 If that file is present, it is used to eagerly filter auto-configurations that do not match, which will improve startup time.
 It is recommended to add the following dependency in a module that contains auto-configurations:</p>
@@ -10334,7 +10334,7 @@ To use Kotlin, <code>org.jetbrains.kotlin:kotlin-stdlib</code> and <code>org.jet
 The <code>kotlin-stdlib</code> variants <code>kotlin-stdlib-jdk7</code> and <code>kotlin-stdlib-jdk8</code> can also be used.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">由于 <a href="https://discuss.kotlinlang.org/t/classes-final-by-default/166">Kotlin 类默认为 final</a> ，你可能需要配置 <a href="https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support">kotlin-spring</a> 插件以自动打开带有 Spring 注释的类，以便它们可以被代理。</p>
+<p translation-result="on">由于 <a href="https://discuss.kotlinlang.org/t/classes-final-by-default/166">Kotlin 类默认为 final</a> ，你可能需要配置 <a href="https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support">kotlin-spring</a> 插件以自动打开带有 Spring 注解的类，以便它们可以被代理。</p>
 <p translation-origin="off">Since <a href="https://discuss.kotlinlang.org/t/classes-final-by-default/166">Kotlin classes are final by default</a>, you are likely to want to configure <a href="https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support">kotlin-spring</a> plugin in order to automatically open Spring-annotated classes so that they can be proxied.</p>
 </div>
 <div class="paragraph">
@@ -10368,7 +10368,7 @@ This helps to eliminate a common source of bugs without paying the cost of wrapp
 Kotlin also allows using functional constructs with nullable values as described in this <a href="https://www.baeldung.com/kotlin-null-safety">comprehensive guide to null-safety in Kotlin</a>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">尽管 Java 不允许在其类型系统中表达 null 安全性，但 Spring Framework、Spring Data 和 Reactor 现在通过工具友好的注解为其 API 提供 null 安全性。默认情况下，Kotlin 中使用的 Java API 的类型被识别为放宽空检查的<a href="https://kotlinlang.org/docs/reference/java-interop.html#null-safety-and-platform-types">平台类型</a>。<a href="https://kotlinlang.org/docs/reference/java-interop.html#jsr-305-support">Kotlin 对 JSR 305 注释和可空性注释的支持为 Kotlin</a> 中的相关 Spring API 提供了空值安全性。</p>
+<p translation-result="on">尽管 Java 不允许在其类型系统中表达 null 安全性，但 Spring Framework、Spring Data 和 Reactor 现在通过工具友好的注解为其 API 提供 null 安全性。默认情况下，Kotlin 中使用的 Java API 的类型被识别为放宽空检查的<a href="https://kotlinlang.org/docs/reference/java-interop.html#null-safety-and-platform-types">平台类型</a>。<a href="https://kotlinlang.org/docs/reference/java-interop.html#jsr-305-support">Kotlin 对 JSR 305 注解和可空性注解的支持为 Kotlin</a> 中的相关 Spring API 提供了空值安全性。</p>
 <p translation-origin="off">Although Java does not allow one to express null-safety in its type system, Spring Framework, Spring Data, and Reactor now provide null-safety of their API through tooling-friendly annotations.
 By default, types from Java APIs used in Kotlin are recognized as <a href="https://kotlinlang.org/docs/reference/java-interop.html#null-safety-and-platform-types">platform types</a> for which null-checks are relaxed.
 <a href="https://kotlinlang.org/docs/reference/java-interop.html#jsr-305-support">Kotlin’s support for JSR 305 annotations</a> combined with nullability annotations provide null-safety for the related Spring API in Kotlin.</p>
@@ -10386,7 +10386,7 @@ The <code>strict</code> value is required to have null-safety taken in account i
 <i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
-<p translation-result="on">尚不支持泛型类型参数、可变参数和数组元素可空性。有关最新信息，请参阅 <a href="https://jira.spring.io/browse/SPR-15942">SPR-15942</a> 。另请注意，Spring Boot 自己的 API<a href="https://github.com/spring-projects/spring-boot/issues/10712">尚未注释</a>。</p>
+<p translation-result="on">尚不支持泛型类型参数、可变参数和数组元素可空性。有关最新信息，请参阅 <a href="https://jira.spring.io/browse/SPR-15942">SPR-15942</a> 。另请注意，Spring Boot 自己的 API<a href="https://github.com/spring-projects/spring-boot/issues/10712">尚未注解</a>。</p>
 <p translation-origin="off">Generic type arguments, varargs and array elements nullability are not yet supported.
 See <a href="https://jira.spring.io/browse/SPR-15942">SPR-15942</a> for up-to-date information.
 Also be aware that Spring Boot’s own API is <a href="https://github.com/spring-projects/spring-boot/issues/10712">not yet annotated</a>.</p>
@@ -10507,7 +10507,7 @@ data class KotlinExampleProperties(
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">要使用注释处理器生成<a href="configuration-metadata.html#configuration-metadata.annotation-processor">你自己的元数据</a>，<a href="https://kotlinlang.org/docs/reference/kapt.html"><code>kapt</code></a>使用 <code>spring-boot-configuration-processor</code> 依赖项配置 kapt。请注意，由于 kapt 提供的模型的限制，某些功能（例如检测默认值或不推荐使用的项目）无法正常工作。</p>
+<p translation-result="on">要使用注解处理器生成<a href="configuration-metadata.html#configuration-metadata.annotation-processor">你自己的元数据</a>，<a href="https://kotlinlang.org/docs/reference/kapt.html"><code>kapt</code></a>使用 <code>spring-boot-configuration-processor</code> 依赖项配置 kapt。请注意，由于 kapt 提供的模型的限制，某些功能（例如检测默认值或不推荐使用的项目）无法正常工作。</p>
 <p translation-origin="off">To generate <a href="configuration-metadata.html#configuration-metadata.annotation-processor">your own metadata</a> using the annotation processor, <a href="https://kotlinlang.org/docs/reference/kapt.html"><code>kapt</code> should be configured</a> with the <code>spring-boot-configuration-processor</code> dependency.
 Note that some features (such as detecting the default value or deprecated items) are not working due to limitations in the model kapt provides.</p>
 </td>
@@ -10519,13 +10519,13 @@ Note that some features (such as detecting the default value or deprecated items
 <h3 id="features.kotlin.testing" translation-result="on"><a href="features.html#features.kotlin.testing"></a>10.6. 测试</h3>
 <h3 translation-origin="off"><a class="anchor" href="features.html#features.kotlin.testing"></a>10.6. Testing</h3>
 <div class="paragraph">
-<p translation-result="on">虽然可以用 JUnit 4 来测试 Kotlin 代码，但 JUnit 5 默认提供并推荐使用。JUnit 5 允许一个测试类被实例化一次，并被重用于该类的所有测试。这使得在非静态方法上使用 <code>@BeforeAll</code> 和 <code>@AfterAll</code> 注释成为可能，这非常适合 Kotlin。</p>
+<p translation-result="on">虽然可以用 JUnit 4 来测试 Kotlin 代码，但 JUnit 5 默认提供并推荐使用。JUnit 5 允许一个测试类被实例化一次，并被重用于该类的所有测试。这使得在非静态方法上使用 <code>@BeforeAll</code> 和 <code>@AfterAll</code> 注解成为可能，这非常适合 Kotlin。</p>
 <p translation-origin="off">While it is possible to use JUnit 4 to test Kotlin code, JUnit 5 is provided by default and is recommended.
 JUnit 5 enables a test class to be instantiated once and reused for all of the class’s tests.
 This makes it possible to use <code>@BeforeAll</code> and <code>@AfterAll</code> annotations on non-static methods, which is a good fit for Kotlin.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">要模拟 Kotlin 类，建议使用 <a href="https://mockk.io/">MockK</a> 。如果你需要与 <code>Mockk</code> 特定的<a href="features.html#features.testing.spring-boot-applications.mocking-beans"><code>@MockBean</code> 和 <code>@SpyBean</code> 注释</a>等效的 <a href="https://github.com/Ninja-Squad/springmockk">Mockk</a> ，则可以用提供类似 <code>@MockkBean</code> 和 <code>@SpykBean</code> 注释的 SpringMockK。</p>
+<p translation-result="on">要模拟 Kotlin 类，建议使用 <a href="https://mockk.io/">MockK</a> 。如果你需要与 <code>Mockk</code> 特定的<a href="features.html#features.testing.spring-boot-applications.mocking-beans"><code>@MockBean</code> 和 <code>@SpyBean</code> 注解</a>等效的 <a href="https://github.com/Ninja-Squad/springmockk">Mockk</a> ，则可以用提供类似 <code>@MockkBean</code> 和 <code>@SpykBean</code> 注解的 SpringMockK。</p>
 <p translation-origin="off">To mock Kotlin classes, <a href="https://mockk.io/">MockK</a> is recommended.
 If you need the <code>Mockk</code> equivalent of the Mockito specific <a href="features.html#features.testing.spring-boot-applications.mocking-beans"><code>@MockBean</code> and <code>@SpyBean</code> annotations</a>, you can use <a href="https://github.com/Ninja-Squad/springmockk">SpringMockK</a> which provides similar <code>@MockkBean</code> and <code>@SpykBean</code> annotations.</p>
 </div>

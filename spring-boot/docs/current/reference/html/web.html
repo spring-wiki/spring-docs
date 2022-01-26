@@ -1240,7 +1240,7 @@ You can also choose to build reactive web applications by using the <code>spring
 <h3 id="web.servlet.spring-mvc" translation-result="on"><a href="web.html#web.servlet.spring-mvc"></a>1.1.“Spring Web MVC 框架”</h3>
 <h3 translation-origin="off"><a class="anchor" href="web.html#web.servlet.spring-mvc"></a>1.1. The “Spring Web MVC Framework”</h3>
 <div class="paragraph">
-<p translation-result="on"><a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc">Spring Web MVC 框架</a>（通常称为“Spring MVC”）是一个丰富的“模型视图控制器”Web 框架。Spring MVC 允许你创建特殊的 <code>@Controller</code> 或 <code>@RestController</code> bean 来处理传入的 HTTP 请求。控制器中的方法通过使用 <code>@RequestMapping</code> 注释映射到 HTTP。</p>
+<p translation-result="on"><a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc">Spring Web MVC 框架</a>（通常称为“Spring MVC”）是一个丰富的“模型视图控制器”Web 框架。Spring MVC 允许你创建特殊的 <code>@Controller</code> 或 <code>@RestController</code> bean 来处理传入的 HTTP 请求。控制器中的方法通过使用 <code>@RequestMapping</code> 注解映射到 HTTP。</p>
 <p translation-origin="off">The <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc">Spring Web MVC framework</a> (often referred to as “Spring MVC”) is a rich “model view controller” web framework.
 Spring MVC lets you create special <code>@Controller</code> or <code>@RestController</code> beans to handle incoming HTTP requests.
 Methods in your controller are mapped to HTTP by using <code>@RequestMapping</code> annotations.</p>
@@ -1348,7 +1348,7 @@ There are also several guides that cover Spring MVC available at <a href="https:
 <p translation-origin="off">If you want to provide custom instances of <code>RequestMappingHandlerMapping</code>, <code>RequestMappingHandlerAdapter</code>, or <code>ExceptionHandlerExceptionResolver</code>, and still keep the Spring Boot MVC customizations, you can declare a bean of type <code>WebMvcRegistrations</code> and use it to provide custom instances of those components.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你想完全控制 Spring MVC，你可以添加自己的带有 <code>@EnableWebMvc</code> 注释的 <code>@Configuration</code> ，或者添加你自己的 <code>@Configuration</code> -annotated <code>DelegatingWebMvcConfiguration</code> ，如 <code>@EnableWebMvc</code> 的 Javadoc 中所述。</p>
+<p translation-result="on">如果你想完全控制 Spring MVC，你可以添加自己的带有 <code>@EnableWebMvc</code> 注解的 <code>@Configuration</code> ，或者添加你自己的 <code>@Configuration</code> -annotated <code>DelegatingWebMvcConfiguration</code> ，如 <code>@EnableWebMvc</code> 的 Javadoc 中所述。</p>
 <p translation-origin="off">If you want to take complete control of Spring MVC, you can add your own <code>@Configuration</code> annotated with <code>@EnableWebMvc</code>, or alternatively add your own <code>@Configuration</code>-annotated <code>DelegatingWebMvcConfiguration</code> as described in the Javadoc of <code>@EnableWebMvc</code>.</p>
 </div>
 <div class="admonitionblock note">
@@ -1359,7 +1359,7 @@ There are also several guides that cover Spring MVC available at <a href="https:
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">Spring MVC 使用不同的 <code>ConversionService</code> 来转换 <code>application.properties</code> 或 <code>application.yaml</code> 文件中的值。这意味着 <code>Period</code> 、 <code>Duration</code> 和 <code>DataSize</code> 转换器不可用，<code>@DurationUnit</code> 和 <code>@DataSizeUnit</code> 注释将被忽略。</p>
+<p translation-result="on">Spring MVC 使用不同的 <code>ConversionService</code> 来转换 <code>application.properties</code> 或 <code>application.yaml</code> 文件中的值。这意味着 <code>Period</code> 、 <code>Duration</code> 和 <code>DataSize</code> 转换器不可用，<code>@DurationUnit</code> 和 <code>@DataSizeUnit</code> 注解将被忽略。</p>
 <p translation-origin="off">Spring MVC uses a different <code>ConversionService</code> to the one used to convert values from your <code>application.properties</code> or <code>application.yaml</code> file.
 It means that <code>Period</code>, <code>Duration</code> and <code>DataSize</code> converters are not available and that <code>@DurationUnit</code> and <code>@DataSizeUnit</code> annotations will be ignored.</p>
 </div>
@@ -1423,7 +1423,7 @@ You can also override default converters in the same way.</p>
 Custom serializers are usually <a href="https://github.com/FasterXML/jackson-docs/wiki/JacksonHowToCustomSerializers">registered with Jackson through a module</a>, but Spring Boot provides an alternative <code>@JsonComponent</code> annotation that makes it easier to directly register Spring Beans.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">你可以在 <code>JsonSerializer</code> 、 <code>JsonDeserializer</code> 或 <code>KeyDeserializer</code> 实现上直接使用 <code>@JsonComponent</code> 注释。你还可以在包含序列化器/反序列化器作为内部类的类上使用它，如以下示例所示：</p>
+<p translation-result="on">你可以在 <code>JsonSerializer</code> 、 <code>JsonDeserializer</code> 或 <code>KeyDeserializer</code> 实现上直接使用 <code>@JsonComponent</code> 注解。你还可以在包含序列化器/反序列化器作为内部类的类上使用它，如以下示例所示：</p>
 <p translation-origin="off">You can use the <code>@JsonComponent</code> annotation directly on <code>JsonSerializer</code>, <code>JsonDeserializer</code> or <code>KeyDeserializer</code> implementations.
 You can also use it on classes that contain serializers/deserializers as inner classes, as shown in the following example:</p>
 </div>
@@ -1475,7 +1475,7 @@ public class MyJsonComponent {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>ApplicationContext</code> 中的所有 <code>@JsonComponent</code> bean 都会自动向 Jackson 注册。因为 <code>@JsonComponent</code> 使用 <code>@Component</code> 进行元注释，所以通常的组件扫描规则适用。</p>
+<p translation-result="on"><code>ApplicationContext</code> 中的所有 <code>@JsonComponent</code> bean 都会自动向 Jackson 注册。因为 <code>@JsonComponent</code> 使用 <code>@Component</code> 进行元注解，所以通常的组件扫描规则适用。</p>
 <p translation-origin="off">All <code>@JsonComponent</code> beans in the <code>ApplicationContext</code> are automatically registered with Jackson.
 Because <code>@JsonComponent</code> is meta-annotated with <code>@Component</code>, the usual component-scanning rules apply.</p>
 </div>
@@ -1737,7 +1737,7 @@ If either is found, it is automatically used as the welcome page of the applicat
 <h4 id="web.servlet.spring-mvc.content-negotiation" translation-result="on"><a href="web.html#web.servlet.spring-mvc.content-negotiation"></a>1.1.7. 路径匹配和内容协商</h4>
 <h4 translation-origin="off"><a class="anchor" href="web.html#web.servlet.spring-mvc.content-negotiation"></a>1.1.7. Path Matching and Content Negotiation</h4>
 <div class="paragraph">
-<p translation-result="on">Spring MVC 可以通过查看请求路径并将其与应用程序中定义的映射匹配（例如，控制器方法上的 <code>@GetMapping</code> 注释）将传入的 HTTP 请求映射到处理程序。</p>
+<p translation-result="on">Spring MVC 可以通过查看请求路径并将其与应用程序中定义的映射匹配（例如，控制器方法上的 <code>@GetMapping</code> 注解）将传入的 HTTP 请求映射到处理程序。</p>
 <p translation-origin="off">Spring MVC can map incoming HTTP requests to handlers by looking at the request path and matching it to the mappings defined in your application (for example, <code>@GetMapping</code> annotations on Controller methods).</p>
 </div>
 <div class="paragraph">
@@ -2014,7 +2014,7 @@ To do so, extend <code>BasicErrorController</code>, add a public method with a <
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">你还可以定义一个使用 <code>@ControllerAdvice</code> 注释的类来自定义 JSON 文档以返回特定控制器和/或异常类型，如以下示例所示：</p>
+<p translation-result="on">你还可以定义一个使用 <code>@ControllerAdvice</code> 注解的类来自定义 JSON 文档以返回特定控制器和/或异常类型，如以下示例所示：</p>
 <p translation-origin="off">You can also define a class annotated with <code>@ControllerAdvice</code> to customize the JSON document to return for a particular controller and/or exception type, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -2264,7 +2264,7 @@ To do so, set the <code>spring.security.filter.dispatcher-types</code> property 
 <p translation-origin="off"><a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross-origin resource sharing</a> (CORS) is a <a href="https://www.w3.org/TR/cors/">W3C specification</a> implemented by <a href="https://caniuse.com/#feat=cors">most browsers</a> that lets you specify in a flexible way what kind of cross-domain requests are authorized, instead of using some less secure and less powerful approaches such as IFRAME or JSONP.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">从 4.2 版开始，Spring MVC<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-cors">支持 CORS</a> 。在 Spring Boot 应用程序中使用带有<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/bind/annotation/CrossOrigin.html"><code>@CrossOrigin</code></a>注释的<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-cors-controller">控制器方法 CORS 配置</a>不需要任何特定配置。可以通过使用自定义的 <code>addCorsMappings(CorsRegistry)</code> 方法注册 <code>WebMvcConfigurer</code> bean 来定义<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-cors-global">全局 CORS 配置</a>，如下例所示：</p>
+<p translation-result="on">从 4.2 版开始，Spring MVC<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-cors">支持 CORS</a> 。在 Spring Boot 应用程序中使用带有<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/bind/annotation/CrossOrigin.html"><code>@CrossOrigin</code></a>注解的<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-cors-controller">控制器方法 CORS 配置</a>不需要任何特定配置。可以通过使用自定义的 <code>addCorsMappings(CorsRegistry)</code> 方法注册 <code>WebMvcConfigurer</code> bean 来定义<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-cors-global">全局 CORS 配置</a>，如下例所示：</p>
 <p translation-origin="off">As of version 4.2, Spring MVC <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-cors">supports CORS</a>.
 Using <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-cors-controller">controller method CORS configuration</a> with <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/bind/annotation/CrossOrigin.html"><code>@CrossOrigin</code></a> annotations in your Spring Boot application does not require any specific configuration.
 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-cors-global">Global CORS configuration</a> can be defined by registering a <code>WebMvcConfigurer</code> bean with a customized <code>addCorsMappings(CorsRegistry)</code> method, as shown in the following example:</p>
@@ -2348,7 +2348,7 @@ To avoid this limitation, the <code>packages</code> method should not be used, a
 <p translation-origin="off">For more advanced customizations, you can also register an arbitrary number of beans that implement <code>ResourceConfigCustomizer</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">所有注册的端点都应该是带有 HTTP 资源注释（ <code>@GET</code> 和其他）的 <code>@Components</code> ，如下例所示：</p>
+<p translation-result="on">所有注册的端点都应该是带有 HTTP 资源注解（ <code>@GET</code> 和其他）的 <code>@Components</code> ，如下例所示：</p>
 <p translation-origin="off">All the registered endpoints should be <code>@Components</code> with HTTP resource annotations (<code>@GET</code> and others), as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -2424,7 +2424,7 @@ Filters map to <code>/*</code>.</p>
 <p translation-origin="off">If convention-based mapping is not flexible enough, you can use the <code>ServletRegistrationBean</code>, <code>FilterRegistrationBean</code>, and <code>ServletListenerRegistrationBean</code> classes for complete control.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">让过滤器豆无序通常是安全的。如果需要特定顺序，你应该使用 <code>@Order</code> 注释 <code>Filter</code> 或使其实现 <code>Ordered</code> 。你不能通过使用 <code>@Order</code> 注释其 bean 方法来配置 <code>Filter</code> 的顺序。如果你无法更改 <code>Filter</code> 类以添加 <code>@Order</code> 或实现 <code>Ordered</code> ，则必须为 <code>Filter</code> 定义 <code>FilterRegistrationBean</code> 并使用 <code>setOrder(int)</code> 方法设置注册 bean 的顺序。避免在 <code>Ordered.HIGHEST_PRECEDENCE</code> 配置读取请求正文的过滤器，因为它可能会违反应用程序的字符编码配置。如果 servlet 过滤器包装了请求，则应使用小于或等于 <code>OrderedFilter.REQUEST_WRAPPER_FILTER_MAX_ORDER</code> 的顺序对其进行配置。</p>
+<p translation-result="on">让过滤器豆无序通常是安全的。如果需要特定顺序，你应该使用 <code>@Order</code> 注解 <code>Filter</code> 或使其实现 <code>Ordered</code> 。你不能通过使用 <code>@Order</code> 注解其 bean 方法来配置 <code>Filter</code> 的顺序。如果你无法更改 <code>Filter</code> 类以添加 <code>@Order</code> 或实现 <code>Ordered</code> ，则必须为 <code>Filter</code> 定义 <code>FilterRegistrationBean</code> 并使用 <code>setOrder(int)</code> 方法设置注册 bean 的顺序。避免在 <code>Ordered.HIGHEST_PRECEDENCE</code> 配置读取请求正文的过滤器，因为它可能会违反应用程序的字符编码配置。如果 servlet 过滤器包装了请求，则应使用小于或等于 <code>OrderedFilter.REQUEST_WRAPPER_FILTER_MAX_ORDER</code> 的顺序对其进行配置。</p>
 <p translation-origin="off">It is usually safe to leave filter beans unordered.
 If a specific order is required, you should annotate the <code>Filter</code> with <code>@Order</code> or make it implement <code>Ordered</code>.
 You cannot configure the order of a <code>Filter</code> by annotating its bean method with <code>@Order</code>.
@@ -2479,7 +2479,7 @@ The single <code>onStartup</code> method provides access to the <code>ServletCon
 <h5 id="web.servlet.embedded-container.context-initializer.scanning" translation-result="on"><a href="web.html#web.servlet.embedded-container.context-initializer.scanning"></a>扫描 Servlet、过滤器和侦听器</h5>
 <h5 translation-origin="off"><a class="anchor" href="web.html#web.servlet.embedded-container.context-initializer.scanning"></a>Scanning for Servlets, Filters, and listeners</h5>
 <div class="paragraph">
-<p translation-result="on">使用嵌入式容器时，可以用 <code>@ServletComponentScan</code> 启用使用 <code>@WebServlet</code> 、 <code>@WebFilter</code> 和 <code>@WebListener</code> 注释的类的自动注册。</p>
+<p translation-result="on">使用嵌入式容器时，可以用 <code>@ServletComponentScan</code> 启用使用 <code>@WebServlet</code> 、 <code>@WebFilter</code> 和 <code>@WebListener</code> 注解的类的自动注册。</p>
 <p translation-origin="off">When using an embedded container, automatic registration of classes annotated with <code>@WebServlet</code>, <code>@WebFilter</code>, and <code>@WebListener</code> can be enabled by using <code>@ServletComponentScan</code>.</p>
 </div>
 <div class="admonitionblock tip">
@@ -2767,7 +2767,7 @@ JSPs are not supported when using an executable jar.</p>
 Unlike Spring MVC, it does not require the servlet API, is fully asynchronous and non-blocking, and implements the <a href="https://www.reactive-streams.org/">Reactive Streams</a> specification through <a href="https://projectreactor.io/">the Reactor project</a>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring WebFlux 有两种风格：函数式和基于注释的。基于注解的模型非常接近 Spring MVC 模型，如下例所示：</p>
+<p translation-result="on">Spring WebFlux 有两种风格：函数式和基于注解的。基于注解的模型非常接近 Spring MVC 模型，如下例所示：</p>
 <p translation-origin="off">Spring WebFlux comes in two flavors: functional and annotation-based.
 The annotation-based one is quite close to the Spring MVC model, as shown in the following example:</p>
 </div>
@@ -3344,7 +3344,7 @@ The name of the file should be the exact status code or a series mask.</p>
 <code>WebFilter</code> beans found in the application context will be automatically used to filter each exchange.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果过滤器的顺序很重要，它们可以实现 <code>Ordered</code> 或使用 <code>@Order</code> 进行注释。Spring Boot 自动配置可能会为你配置 Web 过滤器。这样做时，将使用下表中显示的订单：</p>
+<p translation-result="on">如果过滤器的顺序很重要，它们可以实现 <code>Ordered</code> 或使用 <code>@Order</code> 进行注解。Spring Boot 自动配置可能会为你配置 Web 过滤器。这样做时，将使用下表中显示的订单：</p>
 <p translation-origin="off">Where the order of the filters is important they can implement <code>Ordered</code> or be annotated with <code>@Order</code>.
 Spring Boot auto-configuration may configure web filters for you.
 When it does so, the orders shown in the following table will be used:</p>

@@ -1187,7 +1187,7 @@ Doing so ensures the values are properly passed to the process.</p>
 <h4 id="cli.using-the-cli.run.deduced-grab-annotations" translation-result="on"><a href="cli.html#cli.using-the-cli.run.deduced-grab-annotations"></a>2.1.1. 推导出的“抓取”依赖项</h4>
 <h4 translation-origin="off"><a class="anchor" href="cli.html#cli.using-the-cli.run.deduced-grab-annotations"></a>2.1.1. Deduced “grab” Dependencies</h4>
 <div class="paragraph">
-<p translation-result="on">标准 Groovy 包含一个 <code>@Grab</code> 注释，它允许你声明对第三方库的依赖关系。这种有用的技术可以让 Groovy 以与 Maven 或 Gradle 相同的方式下载 jar，但不需要你使用构建工具。</p>
+<p translation-result="on">标准 Groovy 包含一个 <code>@Grab</code> 注解，它允许你声明对第三方库的依赖关系。这种有用的技术可以让 Groovy 以与 Maven 或 Gradle 相同的方式下载 jar，但不需要你使用构建工具。</p>
 <p translation-origin="off">Standard Groovy includes a <code>@Grab</code> annotation, which lets you declare dependencies on third-party libraries.
 This useful technique lets Groovy download jars in the same way as Maven or Gradle would but without requiring you to use a build tool.</p>
 </div>
@@ -1317,7 +1317,7 @@ Notice how the preceding example refers to <code>@Component</code>, <code>@RestC
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">许多 Spring 注释在不使用 <code>import</code> 语句的情况下工作。在添加导入之前尝试运行你的应用程序以查看失败的原因。</p>
+<p translation-result="on">许多 Spring 注解在不使用 <code>import</code> 语句的情况下工作。在添加导入之前尝试运行你的应用程序以查看失败的原因。</p>
 <p translation-origin="off">Many Spring annotations work without using <code>import</code> statements.
 Try running your application to see what fails before adding imports.</p>
 </td>
@@ -1338,7 +1338,7 @@ A <code>SpringApplication</code> is automatically created, with your compiled co
 <h4 id="cli.using-the-cli.run.custom-dependency-management" translation-result="on"><a href="cli.html#cli.using-the-cli.run.custom-dependency-management"></a>2.1.5. 自定义依赖管理</h4>
 <h4 translation-origin="off"><a class="anchor" href="cli.html#cli.using-the-cli.run.custom-dependency-management"></a>2.1.5. Custom Dependency Management</h4>
 <div class="paragraph">
-<p translation-result="on">默认情况下，CLI 在解析 <code>@Grab</code> 依赖项时使用 <code>spring-boot-dependencies</code> 中声明的依赖项管理。可以用 <code>@DependencyManagementBom</code> 注解配置覆盖默认依赖管理的附加依赖管理。注释的值应指定一个或多个 Maven BOM 的坐标 ( <code>groupId:artifactId:version</code> )。</p>
+<p translation-result="on">默认情况下，CLI 在解析 <code>@Grab</code> 依赖项时使用 <code>spring-boot-dependencies</code> 中声明的依赖项管理。可以用 <code>@DependencyManagementBom</code> 注解配置覆盖默认依赖管理的附加依赖管理。注解的值应指定一个或多个 Maven BOM 的坐标 ( <code>groupId:artifactId:version</code> )。</p>
 <p translation-origin="off">By default, the CLI uses the dependency management declared in <code>spring-boot-dependencies</code> when resolving <code>@Grab</code> dependencies.
 Additional dependency management, which overrides the default dependency management, can be configured by using the <code>@DependencyManagementBom</code> annotation.
 The annotation’s value should specify the coordinates (<code>groupId:artifactId:version</code>) of one or more Maven BOMs.</p>

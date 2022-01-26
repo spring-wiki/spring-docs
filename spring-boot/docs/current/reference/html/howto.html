@@ -1650,7 +1650,7 @@ When reading the code, remember the following rules of thumb:</p>
 <div class="ulist">
 <ul>
 <li>
-<p translation-result="on">查找名为 <code>*AutoConfiguration</code> 的类并阅读它们的源代码。请特别注意 <code>@Conditional*</code> 注释，以了解它们启用了哪些功能以及何时启用。将 <code>--debug</code> 添加到命令行或系统属性 <code>-Ddebug</code> 以在控制台上获取在你的应用程序中做出的所有自动配置决策的日志。在启用了执行器的正在运行的应用程序中，查看 <code>conditions</code> 端点（ <code>/actuator/conditions</code> 或 JMX 等效项）以获取相同的信息。</p>
+<p translation-result="on">查找名为 <code>*AutoConfiguration</code> 的类并阅读它们的源代码。请特别注意 <code>@Conditional*</code> 注解，以了解它们启用了哪些功能以及何时启用。将 <code>--debug</code> 添加到命令行或系统属性 <code>-Ddebug</code> 以在控制台上获取在你的应用程序中做出的所有自动配置决策的日志。在启用了执行器的正在运行的应用程序中，查看 <code>conditions</code> 端点（ <code>/actuator/conditions</code> 或 JMX 等效项）以获取相同的信息。</p>
 <p translation-origin="off">Look for classes called <code>*AutoConfiguration</code> and read their sources.
 Pay special attention to the <code>@Conditional*</code> annotations to find out what features they enable and when.
 Add <code>--debug</code> to the command line or a System property <code>-Ddebug</code> to get a log on the console of all the auto-configuration decisions that were made in your app.
@@ -1669,11 +1669,11 @@ In a running application with actuator enabled, look at the <code>configprops</c
 It is often used with a prefix.</p>
 </li>
 <li>
-<p translation-result="on">寻找直接绑定到 <code>Environment</code> 的 <code>@Value</code> 注释。</p>
+<p translation-result="on">寻找直接绑定到 <code>Environment</code> 的 <code>@Value</code> 注解。</p>
 <p translation-origin="off">Look for <code>@Value</code> annotations that bind directly to the <code>Environment</code>.</p>
 </li>
 <li>
-<p translation-result="on">查找 <code>@ConditionalOnExpression</code> 注释，这些注释会根据 SpEL 表达式打开和关闭功能，通常使用从 <code>Environment</code> 解析的占位符进行评估。</p>
+<p translation-result="on">查找 <code>@ConditionalOnExpression</code> 注解，这些注解会根据 SpEL 表达式打开和关闭功能，通常使用从 <code>Environment</code> 解析的占位符进行评估。</p>
 <p translation-origin="off">Look for <code>@ConditionalOnExpression</code> annotations that switch features on and off in response to SpEL expressions, normally evaluated with placeholders resolved from the <code>Environment</code>.</p>
 </li>
 </ul>
@@ -2391,7 +2391,7 @@ There is not (and technically cannot be) an exhaustive list of all supported pro
 <p translation-origin="off">A running application with the Actuator features has a <code>configprops</code> endpoint that shows all the bound and bindable properties available through <code>@ConfigurationProperties</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">附录包括一个<a href="application-properties.html#application-properties"><code>application.properties</code></a>示例，其中列出了 Spring Boot 支持的最常见属性。最终列表来自搜索 <code>@ConfigurationProperties</code> 和 <code>@Value</code> 注释的源代码以及偶尔使用 <code>Binder</code> 。有关加载属性的确切顺序的更多信息，请参阅“ <a href="features.html#features.external-config">features.html</a> ”。</p>
+<p translation-result="on">附录包括一个<a href="application-properties.html#application-properties"><code>application.properties</code></a>示例，其中列出了 Spring Boot 支持的最常见属性。最终列表来自搜索 <code>@ConfigurationProperties</code> 和 <code>@Value</code> 注解的源代码以及偶尔使用 <code>Binder</code> 。有关加载属性的确切顺序的更多信息，请参阅“ <a href="features.html#features.external-config">features.html</a> ”。</p>
 <p translation-origin="off">The appendix includes an <a href="application-properties.html#application-properties"><code>application.properties</code></a> example with a list of the most common properties supported by Spring Boot.
 The definitive list comes from searching the source code for <code>@ConfigurationProperties</code> and <code>@Value</code> annotations as well as the occasional use of <code>Binder</code>.
 For more about the exact ordering of loading properties, see "<a href="features.html#features.external-config">features.html</a>".</p>
@@ -2592,7 +2592,7 @@ public class MyWebIntegrationTests {
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on"><code>@LocalServerPort</code> 是 <code>@Value("${local.server.port}")</code> 的元注释。不要尝试在常规应用程序中注入端口。正如我们刚刚看到的，只有在容器初始化之后才设置该值。与测试相反，应用程序代码回调被提前处理（在值实际可用之前）。</p>
+<p translation-result="on"><code>@LocalServerPort</code> 是 <code>@Value("${local.server.port}")</code> 的元注解。不要尝试在常规应用程序中注入端口。正如我们刚刚看到的，只有在容器初始化之后才设置该值。与测试相反，应用程序代码回调被提前处理（在值实际可用之前）。</p>
 <p translation-origin="off"><code>@LocalServerPort</code> is a meta-annotation for <code>@Value("${local.server.port}")</code>.
 Do not try to inject the port in a regular application.
 As we just saw, the value is set only after the container has been initialized.
@@ -2999,7 +2999,7 @@ public class MyFilterConfiguration {
 <h4 id="howto.webserver.add-servlet-filter-listener.using-scanning" translation-result="on"><a href="howto.html#howto.webserver.add-servlet-filter-listener.using-scanning"></a>3.10.2. 使用类路径扫描添加 Servlet、过滤器和侦听器</h4>
 <h4 translation-origin="off"><a class="anchor" href="howto.html#howto.webserver.add-servlet-filter-listener.using-scanning"></a>3.10.2. Add Servlets, Filters, and Listeners by Using Classpath Scanning</h4>
 <div class="paragraph">
-<p translation-result="on"><code>@WebServlet</code> 、 <code>@WebFilter</code> 和 <code>@WebListener</code> 注释的类可以通过使用 <code>@ServletComponentScan</code> 注释 <code>@Configuration</code> 类并指定包含要注册的组件的包来自动注册到嵌入式 servlet 容器。默认情况下，<code>@ServletComponentScan</code> 从注解类的包中扫描。</p>
+<p translation-result="on"><code>@WebServlet</code> 、 <code>@WebFilter</code> 和 <code>@WebListener</code> 注解的类可以通过使用 <code>@ServletComponentScan</code> 注解 <code>@Configuration</code> 类并指定包含要注册的组件的包来自动注册到嵌入式 servlet 容器。默认情况下，<code>@ServletComponentScan</code> 从注解类的包中扫描。</p>
 <p translation-origin="off"><code>@WebServlet</code>, <code>@WebFilter</code>, and <code>@WebListener</code> annotated classes can be automatically registered with an embedded servlet container by annotating a <code>@Configuration</code> class with <code>@ServletComponentScan</code> and specifying the package(s) containing the components that you want to register.
 By default, <code>@ServletComponentScan</code> scans from the package of the annotated class.</p>
 </div>
@@ -3406,7 +3406,7 @@ public class MyWebSocketConfiguration {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">前面示例中显示的 bean 将任何 <code>@ServerEndpoint</code> 注释的 bean 注册到底层 WebSocket 容器。当部署到独立的 servlet 容器时，此角色由 servlet 容器初始化程序执行，并且不需要 <code>ServerEndpointExporter</code> bean。</p>
+<p translation-result="on">前面示例中显示的 bean 将任何 <code>@ServerEndpoint</code> 注解的 bean 注册到底层 WebSocket 容器。当部署到独立的 servlet 容器时，此角色由 servlet 容器初始化程序执行，并且不需要 <code>ServerEndpointExporter</code> bean。</p>
 <p translation-origin="off">The bean shown in the preceding example registers any <code>@ServerEndpoint</code> annotated beans with the underlying WebSocket container.
 When deployed to a standalone servlet container, this role is performed by a servlet container initializer, and the <code>ServerEndpointExporter</code> bean is not required.</p>
 </div>
@@ -3471,7 +3471,7 @@ To use the Jackson XML renderer, add the following dependency to your project:</
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果 Jackson 的 XML 扩展不可用而 JAXB 可用，则可以呈现 XML，但需要将 <code>MyThing</code> 注释为 <code>@XmlRootElement</code> ，如下例所示：</p>
+<p translation-result="on">如果 Jackson 的 XML 扩展不可用而 JAXB 可用，则可以呈现 XML，但需要将 <code>MyThing</code> 注解为 <code>@XmlRootElement</code> ，如下例所示：</p>
 <p translation-origin="off">If Jackson’s XML extension is not available and JAXB is available, XML can be rendered with the additional requirement of having <code>MyThing</code> annotated as <code>@XmlRootElement</code>, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -4811,7 +4811,7 @@ There is a <code>spring-boot-starter-data-jpa</code> for JPA, <code>spring-boot-
 To get started, create some repository interfaces to handle your <code>@Entity</code> objects.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 尝试根据找到的 <code>@EnableAutoConfiguration</code> 来猜测你的 <code>@Repository</code> 定义的位置。要获得更多控制，请使用 <code>@EnableJpaRepositories</code> 注释（来自 Spring Data JPA）。</p>
+<p translation-result="on">Spring Boot 尝试根据找到的 <code>@EnableAutoConfiguration</code> 来猜测你的 <code>@Repository</code> 定义的位置。要获得更多控制，请使用 <code>@EnableJpaRepositories</code> 注解（来自 Spring Data JPA）。</p>
 <p translation-origin="off">Spring Boot tries to guess the location of your <code>@Repository</code> definitions, based on the <code>@EnableAutoConfiguration</code> it finds.
 To get more control, use the <code>@EnableJpaRepositories</code> annotation (from Spring Data JPA).</p>
 </div>
@@ -5195,7 +5195,7 @@ If you prefer to use a traditional <code>persistence.xml</code>, you need to def
 <h3 id="howto.data-access.use-spring-data-jpa-and-mongo-repositories" translation-result="on"><a href="howto.html#howto.data-access.use-spring-data-jpa-and-mongo-repositories"></a>8.12. 使用 Spring Data JPA 和 Mongo 存储库</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.data-access.use-spring-data-jpa-and-mongo-repositories"></a>8.12. Use Spring Data JPA and Mongo Repositories</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Data JPA 和 Spring Data Mongo 都可以自动为你创建 <code>Repository</code> 实现。如果它们都存在于类路径中，你可能需要做一些额外的配置来告诉 Spring Boot 要创建哪些存储库。最明确的方法是使用标准 Spring Data <code>@EnableJpaRepositories</code> 和 <code>@EnableMongoRepositories</code> 注释并提供 <code>Repository</code> 接口的位置。</p>
+<p translation-result="on">Spring Data JPA 和 Spring Data Mongo 都可以自动为你创建 <code>Repository</code> 实现。如果它们都存在于类路径中，你可能需要做一些额外的配置来告诉 Spring Boot 要创建哪些存储库。最明确的方法是使用标准 Spring Data <code>@EnableJpaRepositories</code> 和 <code>@EnableMongoRepositories</code> 注解并提供 <code>Repository</code> 接口的位置。</p>
 <p translation-origin="off">Spring Data JPA and Spring Data Mongo can both automatically create <code>Repository</code> implementations for you.
 If they are both present on the classpath, you might have to do some extra configuration to tell Spring Boot which repositories to create.
 The most explicit way to do that is to use the standard Spring Data <code>@EnableJpaRepositories</code> and <code>@EnableMongoRepositories</code> annotations and provide the location of your <code>Repository</code> interfaces.</p>
@@ -5206,7 +5206,7 @@ The most explicit way to do that is to use the standard Spring Data <code>@Enabl
 Doing so is useful, for instance, in case you want to switch off the Mongo repositories and still use the auto-configured <code>MongoTemplate</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">其他自动配置的 Spring Data 存储库类型（Elasticsearch、Solr 等）存在相同的障碍和相同的功能。要使用它们，请相应地更改注释和标志的名称。</p>
+<p translation-result="on">其他自动配置的 Spring Data 存储库类型（Elasticsearch、Solr 等）存在相同的障碍和相同的功能。要使用它们，请相应地更改注解和标志的名称。</p>
 <p translation-origin="off">The same obstacle and the same features exist for other auto-configured Spring Data repository types (Elasticsearch, Solr, and others).
 To work with them, change the names of the annotations and flags accordingly.</p>
 </div>
@@ -5678,7 +5678,7 @@ To have other beans be detected, register an implementation of <code>DatabaseIni
 </ul>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你使用的是第三方启动器数据访问库，它可能会提供一个检测器，以便也自动检测其他类型的 bean。要检测其他 bean，请在 <code>META-INF/spring-factories</code> 中注册 <code>DependsOnDatabaseInitializationDetector</code> 的实现。或者，使用 <code>@DependsOnDatabaseInitialization</code> 注释 bean 的类或其 <code>@Bean</code> 方法。</p>
+<p translation-result="on">如果你使用的是第三方启动器数据访问库，它可能会提供一个检测器，以便也自动检测其他类型的 bean。要检测其他 bean，请在 <code>META-INF/spring-factories</code> 中注册 <code>DependsOnDatabaseInitializationDetector</code> 的实现。或者，使用 <code>@DependsOnDatabaseInitialization</code> 注解 bean 的类或其 <code>@Bean</code> 方法。</p>
 <p translation-origin="off">If you are using a third-party starter data access library, it may provide a detector such that beans of other types are also detected automatically.
 To have other beans be detected, register an implementation of <code>DependsOnDatabaseInitializationDetector</code> in <code>META-INF/spring-factories</code>.
 Alternatively, annotate the bean’s class or its <code>@Bean</code> method with <code>@DependsOnDatabaseInitialization</code>.</p>
@@ -5751,7 +5751,7 @@ This section addresses those questions.</p>
 <h3 id="howto.batch.specifying-a-data-source" translation-result="on"><a href="howto.html#howto.batch.specifying-a-data-source"></a>11.1. 指定批处理数据源</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.batch.specifying-a-data-source"></a>11.1. Specifying a Batch Data Source</h3>
 <div class="paragraph">
-<p translation-result="on">默认情况下，批处理应用程序需要 <code>DataSource</code> 来存储作业详细信息。Spring Batch 默认需要一个 <code>DataSource</code> 。要让它使用应用程序的主 <code>DataSource</code> 以外的 <code>DataSource</code> ，请声明一个 <code>DataSource</code> bean，用 <code>@BatchDataSource</code> 注释其 <code>@Bean</code> 方法。如果你这样做并且想要两个数据源，请记住标记另一个 <code>@Primary</code> 。要获得更大的控制权，请实施 <code>BatchConfigurer</code> 。有关更多详细信息，请参阅<a href="https://docs.spring.io/spring-batch/docs/4.3.4/api/org/springframework/batch/core/configuration/annotation/EnableBatchProcessing.html"><code>@EnableBatchProcessing</code> 的 Javadoc</a> 。</p>
+<p translation-result="on">默认情况下，批处理应用程序需要 <code>DataSource</code> 来存储作业详细信息。Spring Batch 默认需要一个 <code>DataSource</code> 。要让它使用应用程序的主 <code>DataSource</code> 以外的 <code>DataSource</code> ，请声明一个 <code>DataSource</code> bean，用 <code>@BatchDataSource</code> 注解其 <code>@Bean</code> 方法。如果你这样做并且想要两个数据源，请记住标记另一个 <code>@Primary</code> 。要获得更大的控制权，请实施 <code>BatchConfigurer</code> 。有关更多详细信息，请参阅<a href="https://docs.spring.io/spring-batch/docs/4.3.4/api/org/springframework/batch/core/configuration/annotation/EnableBatchProcessing.html"><code>@EnableBatchProcessing</code> 的 Javadoc</a> 。</p>
 <p translation-origin="off">By default, batch applications require a <code>DataSource</code> to store job details.
 Spring Batch expects a single <code>DataSource</code> by default.
 To have it use a <code>DataSource</code> other than the application’s main <code>DataSource</code>, declare a <code>DataSource</code> bean, annotating its <code>@Bean</code> method with <code>@BatchDataSource</code>.
@@ -6872,7 +6872,7 @@ Spring MVC web applications are generally amenable to first creating a deployabl
 See the <a href="https://spring.io/guides/gs/convert-jar-to-war/">Getting Started Guide on Converting a jar to a war</a>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">要通过扩展 <code>SpringBootServletInitializer</code> （例如，在名为 <code>Application</code> 的类中）并添加 Spring Boot <code>@SpringBootApplication</code> 注释来创建可部署的战争，请使用类似于以下示例中所示的代码：</p>
+<p translation-result="on">要通过扩展 <code>SpringBootServletInitializer</code> （例如，在名为 <code>Application</code> 的类中）并添加 Spring Boot <code>@SpringBootApplication</code> 注解来创建可部署的战争，请使用类似于以下示例中所示的代码：</p>
 <p translation-origin="off">To create a deployable war by extending <code>SpringBootServletInitializer</code> (for example, in a class called <code>Application</code>) and adding the Spring Boot <code>@SpringBootApplication</code> annotation, use code similar to that shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -6925,7 +6925,7 @@ If you have other features in your application (for instance, using other servle
 <p translation-origin="off">A <code>@Bean</code> of type <code>Filter</code> or <code>FilterRegistrationBean</code> behaves similarly (as a <code>&lt;filter/&gt;</code> and <code>&lt;filter-mapping/&gt;</code>).</p>
 </li>
 <li>
-<p translation-result="on">XML 文件中的 <code>ApplicationContext</code> 可以通过 <code>Application</code> 中的 <code>@ImportResource</code> 添加。或者，已经大量使用注释配置的情况可以在几行中重新创建为 <code>@Bean</code> 定义。</p>
+<p translation-result="on">XML 文件中的 <code>ApplicationContext</code> 可以通过 <code>Application</code> 中的 <code>@ImportResource</code> 添加。或者，已经大量使用注解配置的情况可以在几行中重新创建为 <code>@Bean</code> 定义。</p>
 <p translation-origin="off">An <code>ApplicationContext</code> in an XML file can be added through an <code>@ImportResource</code> in your <code>Application</code>.
 Alternatively, cases where annotation configuration is heavily used already can be recreated in a few lines as <code>@Bean</code> definitions.</p>
 </li>
