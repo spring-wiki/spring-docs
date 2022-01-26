@@ -949,7 +949,7 @@
 <div id="banner" class="contained" role="banner">
 <div id="switch-theme">
 <input type="checkbox" id="switch-theme-checkbox">
-<label for="switch-theme-checkbox">Dark Theme</label>
+<label for="switch-theme-checkbox">暗黑模式</label>
 </div>
 </div>
 </div>
@@ -964,8 +964,8 @@
 <div id="header">
 <h1 translation-origin="off">“How-to” Guides</h1>
 <div id="toc" class="toc2">
-<div id="toctitle">Table of Contents</div>
-<span id="back-to-index"><a href="index.html">Back to index</a></span><ul class="sectlevel1">
+<div id="toctitle">目录</div>
+<span id="back-to-index"><a href="index.html">返回索引页</a></span><ul class="sectlevel1">
 <li>
   <p translation-origin="off"><a href="howto.html#howto.application">1. Spring Boot Application</a></p>
 <ul class="sectlevel2">
@@ -1474,7 +1474,7 @@ com.example.ProjectConstraintViolationFailureAnalyzer</code></pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you need access to the <code>BeanFactory</code> or the <code>Environment</code>, your <code>FailureAnalyzer</code> can implement <code>BeanFactoryAware</code> or <code>EnvironmentAware</code> respectively.</p>
@@ -1604,7 +1604,7 @@ import org.springframework.util.Assert;
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The <code>Environment</code> has already been prepared with all the usual property sources that Spring Boot loads by default.
@@ -1619,7 +1619,7 @@ A custom implementation may define another order.</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
+<i class="fa icon-caution" title="小心"></i>
 </td>
 <td class="content">
 <p translation-origin="off">While using <code>@PropertySource</code> on your <code>@SpringBootApplication</code> may seem to be a convenient way to load a custom resource in the <code>Environment</code>, we do not recommend it.
@@ -1669,7 +1669,8 @@ This is possible in both Maven and Gradle.</p>
 If you use the <code>spring-boot-starter-parent</code>, you can then refer to your Maven ‘project properties’ with <code>@<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d0fefe90">[email&nbsp;protected]</a></code> placeholders, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties"><a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d1b0a1a1ffb4bfb2beb5b8bfb6ec91a1a3bebbb4b2a5ffb3a4b8bdb5ffa2bea4a3b2b494bfb2beb5b8bfb6">[email&nbsp;protected]</a>@
 <a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="84e5f4f4aaeee5f2e5aaf2e1f6f7edebeab9c4eee5f2e5aaf2e1f6f7edebea">[email&nbsp;protected]</a>@</code></pre>
@@ -1688,7 +1689,7 @@ If you use the <code>spring-boot-starter-parent</code>, you can then refer to yo
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Only production configuration is filtered that way (in other words, no filtering is applied on <code>src/test/resources</code>).</p>
@@ -1700,7 +1701,7 @@ If you use the <code>spring-boot-starter-parent</code>, you can then refer to yo
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you enable the <code>addResources</code> flag, the <code>spring-boot:run</code> goal can add <code>src/main/resources</code> directly to the classpath (for hot reloading purposes).
@@ -1746,7 +1747,7 @@ See the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/maven-plugin/refe
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The <code>useDefaultDelimiters</code> property is important if you use standard Spring placeholders (such as <code>${placeholder}</code>) in your configuration.
@@ -1772,7 +1773,8 @@ If that property is not set to <code>false</code>, these may be expanded by the 
 <p translation-origin="off">You can then refer to your Gradle project’s properties by using placeholders, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">app.name=${name}
 app.description=${description}</code></pre>
@@ -1790,7 +1792,7 @@ app.description=${description}</code></pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Gradle’s <code>expand</code> method uses Groovy’s <code>SimpleTemplateEngine</code>, which transforms <code>${..}</code> tokens.
@@ -1810,7 +1812,8 @@ Alternatively, you can externalize the configuration by setting properties in <c
 For example, in <code>application.properties</code>, you might have the following settings:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.main.web-application-type=none
 spring.main.banner-mode=off</code></pre>
@@ -1876,7 +1879,8 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 <p translation-origin="off">Given the examples above, if we have the following configuration:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.main.sources=com.example.MyDatabaseConfig,com.example.MyJmsConfig
 spring.main.banner-mode=console</code></pre>
@@ -1946,7 +1950,8 @@ By default, if YAML is used, then files with the ‘.yml’ extension are also a
 You can enable this behavior by using placeholders in <code>application.properties</code>, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">server.port=${port:8080}</code></pre>
 </div>
@@ -1962,7 +1967,7 @@ You can enable this behavior by using placeholders in <code>application.properti
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you inherit from the <code>spring-boot-starter-parent</code> POM, the default filter token of the <code>maven-resources-plugins</code> has been changed from <code>${*}</code> to <code>@</code> (that is, <code>@<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5b363a2d3e35752f34303e351b">[email&nbsp;protected]</a></code> instead of <code>${maven.token}</code>) to prevent conflicts with Spring-style placeholders.
@@ -1975,7 +1980,7 @@ If you have enabled Maven filtering for the <code>application.properties</code> 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">In this specific case, the port binding works in a PaaS environment such as Heroku or Cloud Foundry.
@@ -2037,7 +2042,8 @@ Also, you can launch your application with a <code>-D</code> argument (remember 
 <p translation-origin="off">In Spring Boot, you can also set the active profile in <code>application.properties</code>, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.profiles.active=production</code></pre>
 </div>
@@ -2068,7 +2074,8 @@ By default, the name of the default profile is <code>default</code>, but it coul
 <p translation-origin="off">In Spring Boot, you can also set the default profile name in <code>application.properties</code>, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.profiles.default=dev</code></pre>
 </div>
@@ -2095,7 +2102,8 @@ By default, the name of the default profile is <code>default</code>, but it coul
 If the profile expression matches then that document is included in the final merge (otherwise, it is not), as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">server.port=9000
 #---
@@ -2136,7 +2144,7 @@ If ‘production’ is active, then the port is 0.</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The documents are merged in the order in which they are encountered.
@@ -2220,7 +2228,7 @@ To help with this process, Spring Boot provides a separate starter for each of t
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The version of the servlet API has been overridden as, unlike Tomcat 9 and Undertow 2, Jetty 9.4 does not support servlet 4.0.
@@ -2249,7 +2257,7 @@ If you wish to use Jetty 10, which does support servlet 4.0, override the <code>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off"><code>spring-boot-starter-reactor-netty</code> is required to use the <code>WebClient</code> class, so you may need to keep a dependency on Netty even when you need to include a different HTTP server.</p>
@@ -2265,7 +2273,8 @@ If you wish to use Jetty 10, which does support servlet 4.0, override the <code>
 To disable this behavior configure the <code>WebApplicationType</code> in your <code>application.properties</code>, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.main.web-application-type=none</code></pre>
 </div>
@@ -2329,7 +2338,7 @@ public class MyWebIntegrationTests {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -2350,7 +2359,8 @@ Contrary to a test, application code callbacks are processed early (before the v
 It can be enabled in <code>application.properties</code>, as follows:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">server.compression.enabled=true</code></pre>
 </div>
@@ -2409,7 +2419,8 @@ You can configure this behavior by setting the <code>server.compression.min-resp
 The following example shows setting SSL properties in <code>application.properties</code>:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">server.port=8443
 server.ssl.key-store=classpath:keystore.jks
@@ -2550,7 +2561,7 @@ public class MyTomcatWebServerCustomizer implements WebServerFactoryCustomizer&l
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Spring Boot uses that infrastructure internally to auto-configure the server.
@@ -2643,7 +2654,7 @@ You can work around such restrictions by initializing the beans lazily when firs
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -2702,7 +2713,8 @@ By default, <code>@ServletComponentScan</code> scans from the package of the ann
 <p translation-origin="off">For instance, the following settings log access on Tomcat with a <a href="https://tomcat.apache.org/tomcat-9.0-doc/config/valve.html#Access_Logging">custom pattern</a>.</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">server.tomcat.basedir=my-tomcat
 server.tomcat.accesslog.enabled=true
@@ -2724,7 +2736,7 @@ server.tomcat.accesslog.pattern=%t %a %r %s (%D ms)</code></pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The default location for logs is a <code>logs</code> directory relative to the Tomcat base directory.
@@ -2738,7 +2750,8 @@ In the preceding example, the logs are available in <code>my-tomcat/logs</code> 
 <p translation-origin="off">Access logging for Undertow can be configured in a similar fashion, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">server.undertow.accesslog.enabled=true
 server.undertow.accesslog.pattern=%t %a %r %s (%D ms)</code></pre>
@@ -2762,7 +2775,8 @@ You can customize this location by setting the <code>server.undertow.accesslog.d
 <p translation-origin="off">Finally, access logging for Jetty can also be configured as follows:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">server.jetty.accesslog.enabled=true
 server.jetty.accesslog.filename=/var/log/jetty-access.log</code></pre>
@@ -2806,7 +2820,7 @@ You can register it as a servlet filter in your application by setting <code>ser
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you are using Tomcat and terminating SSL at the proxy, <code>server.tomcat.redirect-context-root</code> should be set to <code>false</code>.
@@ -2819,7 +2833,7 @@ This allows the <code>X-Forwarded-Proto</code> header to be honored before any r
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If your application runs in Cloud Foundry or Heroku, the <code>server.forward-headers-strategy</code> property defaults to <code>NATIVE</code>.
@@ -2834,7 +2848,8 @@ In all other instances, it defaults to <code>NONE</code>.</p>
 <p translation-origin="off">If you use Tomcat, you can additionally configure the names of the headers used to carry “forwarded” information, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">server.tomcat.remoteip.remote-ip-header=x-your-remote-ip-header
 server.tomcat.remoteip.protocol-header=x-your-protocol-header</code></pre>
@@ -2856,7 +2871,8 @@ By default, IP addresses in <code>10/8</code>, <code>192.168/16</code>, <code>16
 You can customize the valve’s configuration by adding an entry to <code>application.properties</code>, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">server.tomcat.remoteip.internal-proxies=192\\.168\\.\\d{1,3}\\.\\d{1,3}</code></pre>
 </div>
@@ -2874,7 +2890,7 @@ You can customize the valve’s configuration by adding an entry to <code>applic
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">You can trust all proxies by setting the <code>internal-proxies</code> to empty (but do not do so in production).</p>
@@ -2987,7 +3003,8 @@ This minimizes Tomcat’s memory footprint.
 If you want to use Tomcat’s MBeans, for example so that they can be used by Micrometer to expose metrics, you must use the <code>server.tomcat.mbeanregistry.enabled</code> property to do so, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">server.tomcat.mbeanregistry.enabled=true</code></pre>
 </div>
@@ -3155,7 +3172,7 @@ If you use a more recent Java generation, add the following dependency to your p
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">To get the server to render XML instead of JSON, you might have to send an <code>Accept: text/xml</code> header (or use a browser).</p>
@@ -3310,7 +3327,7 @@ For example, if you want to specify that files be unlimited, set the <code>sprin
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">It is recommended to use the container’s built-in support for multipart uploads rather than introducing an additional dependency such as Apache Commons File Upload.</p>
@@ -3326,7 +3343,8 @@ For example, if you want to specify that files be unlimited, set the <code>sprin
 If you would rather map to a different path, you can configure one as follows:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.mvc.servlet.path=/mypath</code></pre>
 </div>
@@ -3557,7 +3575,7 @@ public class MyReactorNettyClientConfiguration {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Note the use of <code>ReactorResourceFactory</code> for the connection provider and event loop resources.
@@ -3595,7 +3613,8 @@ If Logback is available, it is the first choice.</p>
 <p translation-origin="off">If the only change you need to make to logging is to set the levels of various loggers, you can do so in <code>application.properties</code> by using the "logging.level" prefix, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">logging.level.org.springframework.web=debug
 logging.level.org.hibernate=error</code></pre>
@@ -3628,7 +3647,7 @@ You can also use <code>logback-spring.xml</code> if you want to use the <a href=
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The Logback documentation has a <a href="https://logback.qos.ch/manual/configuration.html">dedicated section that covers configuration</a> in some detail.</p>
@@ -3709,7 +3728,7 @@ If present, this setting is given preference.</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Spring extensions are not supported with Groovy configuration.
@@ -3740,7 +3759,8 @@ Any <code>logback-spring.groovy</code> files will not be detected.</p>
 <p translation-origin="off">You also need to add <code>logging.file.name</code> to your <code>application.properties</code> or <code>application.yaml</code>, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">logging.file.name=myapplication.log</code></pre>
 </div>
@@ -3809,7 +3829,7 @@ To do so, declare a dependency on the Log4j 2 starter and tell Gradle that any o
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The Log4j starters gather together the dependencies for common logging requirements (such as having Tomcat use <code>java.util.logging</code> but configuring the output using Log4j 2).</p>
@@ -3821,7 +3841,7 @@ To do so, declare a dependency on the Log4j 2 starter and tell Gradle that any o
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">To ensure that debug logging performed using <code>java.util.logging</code> is routed into Log4j 2, configure its <a href="https://logging.apache.org/log4j/2.x/log4j-jul/index.html">JDK logging adapter</a> by setting the <code>java.util.logging.manager</code> system property to <code>org.apache.logging.log4j.jul.LogManager</code>.</p>
@@ -3927,7 +3947,8 @@ public class MyDataSourceConfiguration {
 <p translation-origin="off">The following example shows how to define a data source by setting properties:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">app.datasource.url=jdbc:h2:mem:mydb
 app.datasource.username=sa
@@ -3986,7 +4007,8 @@ Check the implementation that is going to be used at runtime for more details.</
 <p translation-origin="off">The following example shows how to define a JDBC data source by setting properties:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">app.datasource.url=jdbc:mysql://localhost/test
 app.datasource.username=dbuser
@@ -4012,7 +4034,8 @@ Also, if you happen to have Hikari on the classpath, this basic setup does not w
 In that case, you must rewrite your configuration as follows:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">app.datasource.jdbc-url=jdbc:mysql://localhost/test
 app.datasource.username=dbuser
@@ -4101,7 +4124,8 @@ public class MyDataSourceConfiguration {
 Because <code>DataSourceProperties</code> is taking care of the <code>url</code>/<code>jdbcUrl</code> translation for you, you can configure it as follows:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">app.datasource.url=jdbc:mysql://localhost/test
 app.datasource.username=dbuser
@@ -4125,7 +4149,7 @@ app.datasource.configuration.maximum-pool-size=30</code></pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Spring Boot will expose Hikari-specific settings to <code>spring.datasource.hikari</code>.
@@ -4138,7 +4162,7 @@ This example uses a more generic <code>configuration</code> sub namespace as the
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Because your custom configuration chooses to go with Hikari, <code>app.datasource.type</code> has no effect.
@@ -4204,7 +4228,7 @@ public class MyDataSourcesConfiguration {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off"><code>firstDataSourceProperties</code> has to be flagged as <code>@Primary</code> so that the database initializer feature uses your copy (if you use the initializer).</p>
@@ -4217,7 +4241,8 @@ public class MyDataSourcesConfiguration {
 For instance, you could configure them as follows:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">app.datasource.first.url=jdbc:mysql://localhost/first
 app.datasource.first.username=dbuser
@@ -4365,7 +4390,8 @@ If you prefer to set the dialect yourself, set the <code>spring.jpa.database-pla
 <p translation-origin="off">The most common options to set are shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.jpa.hibernate.naming.physical-strategy=com.example.MyPhysicalNamingStrategy
 spring.jpa.show-sql=true</code></pre>
@@ -4389,7 +4415,7 @@ spring.jpa.show-sql=true</code></pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
+<i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -4408,7 +4434,7 @@ If you use other forms, such as <code>batchSize</code> or <code>batch-size</code
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you need to apply advanced customization to Hibernate properties, consider registering a <code>HibernatePropertiesCustomizer</code> bean that will be invoked prior to creating the <code>EntityManagerFactory</code>.
@@ -4602,7 +4628,7 @@ It is possible to map additional JPA properties using the <code>app.first.jpa</c
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">When you create a bean for <code>LocalContainerEntityManagerFactoryBean</code> yourself, any customization that was applied during the creation of the auto-configured <code>LocalContainerEntityManagerFactoryBean</code> is lost.
@@ -4695,7 +4721,7 @@ If you need to provide additional customization, you should use a <a href="https
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you do not specify any order on your custom <code>RepositoryRestConfigurer</code>, it runs after the one Spring Boot uses internally.
@@ -4750,7 +4776,7 @@ See <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-b
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">In particular, <code>JooqExceptionTranslator</code> and <code>SpringTransactionProvider</code> can be reused to provide similar features to what the auto-configuration does with a single <code>DataSource</code>.</p>
@@ -4802,7 +4828,7 @@ You either have to set <code>ddl-auto</code> explicitly or use one of the other 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">You can output the schema creation by enabling the <code>org.hibernate.SQL</code> logger.
@@ -4853,7 +4879,8 @@ If you use an embedded database, this happens by default.
 You can also enable it for any database type, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.batch.jdbc.initialize-schema=always</code></pre>
 </div>
@@ -4888,7 +4915,8 @@ This is a comma-separated list of one or more <code>classpath:</code> or <code>f
 For example, the following configuration would search for scripts in both the default classpath location and the <code>/opt/migration</code> directory:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.flyway.locations=classpath:db/migration,filesystem:/opt/migration</code></pre>
 </div>
@@ -4906,7 +4934,8 @@ For example, the following configuration would search for scripts in both the de
 Assume the following:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.flyway.locations=classpath:db/migration/{vendor}</code></pre>
 </div>
@@ -4958,7 +4987,8 @@ Also, you can use profile-specific configuration to customize <code>spring.flywa
 For example, in <code>application-dev.properties</code>, you might specify the following setting:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.flyway.locations=classpath:/db/migration,classpath:/dev/db/migration</code></pre>
 </div>
@@ -4984,7 +5014,7 @@ For example, in <code>application-dev.properties</code>, you might specify the f
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -5228,7 +5258,7 @@ To listen on a completely different network address (such as when you have an in
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Set <code>server.error.whitelabel.enabled=false</code> to switch the default error page off.
@@ -5375,7 +5405,8 @@ The standard behavior is determined by the presence or absence of certain reques
 You can switch on the valve by adding some entries to <code>application.properties</code>, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">server.tomcat.remoteip.remote-ip-header=x-forwarded-for
 server.tomcat.remoteip.protocol-header=x-forwarded-proto</code></pre>
@@ -5663,7 +5694,7 @@ When such a file is present, Spring Boot auto-configures a <code>BuildProperties
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">See the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/maven-plugin/reference/htmlsingle/#goals-build-info">Spring Boot Maven Plugin documentation</a> for more details.</p>
@@ -5685,7 +5716,7 @@ When such a file is present, Spring Boot auto-configures a <code>BuildProperties
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">See the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/reference/htmlsingle/#integrating-with-actuator-build-info">Spring Boot Gradle Plugin documentation</a> for more details.</p>
@@ -5732,7 +5763,7 @@ To use it, add the following declaration for the <a href="https://github.com/git
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The commit time in <code>git.properties</code> is expected to match the following format: <code>yyyy-MM-dd’T’HH:mm:ssZ</code>.
@@ -5753,7 +5784,7 @@ The Spring Boot plugins for Maven and Gradle allow these managed dependency vers
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
+<i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Each Spring Boot release is designed and tested against this specific set of third-party dependencies.
@@ -5865,7 +5896,7 @@ Such nested jars are written beneath the temporary directory identified by the <
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
+<i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Care should be taken to ensure that your operating system is configured so that it will not delete the jars that have been unpacked to the temporary directory while the application is still running.</p>
@@ -6018,7 +6049,7 @@ This section answers common questions about traditional deployment.</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
+<i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Because Spring WebFlux does not strictly depend on the servlet API and applications are deployed by default on an embedded Reactor Netty server, War deployment is not supported for WebFlux applications.</p>
@@ -6107,7 +6138,7 @@ To do so, you need to mark the embedded servlet container dependency as being pr
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off"><code>providedRuntime</code> is preferred to Gradle’s <code>compileOnly</code> configuration.
@@ -6196,7 +6227,7 @@ Alternatively, cases where annotation configuration is heavily used already can 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -6318,7 +6349,7 @@ You can do so by adding a <code>WEB-INF/weblogic.xml</code> file with the follow
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-20 14:11:26 UTC
+最后更新于 2022-01-20 14:11:26 UTC
 </div>
 </div>
 </div>

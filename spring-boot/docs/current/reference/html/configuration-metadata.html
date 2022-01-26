@@ -949,7 +949,7 @@
 <div id="banner" class="contained" role="banner">
 <div id="switch-theme">
 <input type="checkbox" id="switch-theme-checkbox">
-<label for="switch-theme-checkbox">Dark Theme</label>
+<label for="switch-theme-checkbox">暗黑模式</label>
 </div>
 </div>
 </div>
@@ -964,8 +964,8 @@
 <div id="header">
 <h1 translation-origin="off">Configuration Metadata</h1>
 <div id="toc" class="toc2">
-<div id="toctitle">Table of Contents</div>
-<span id="back-to-index"><a href="index.html">Back to index</a></span><ul class="sectlevel1">
+<div id="toctitle">目录</div>
+<span id="back-to-index"><a href="index.html">返回索引页</a></span><ul class="sectlevel1">
 <li>
   <p translation-origin="off"><a href="configuration-metadata.html#configuration-metadata.format">1. Metadata Format</a></p>
 <ul class="sectlevel2">
@@ -1123,7 +1123,8 @@ They use a JSON format with items categorized under either “groups” or “pr
 For example, <code>server.port</code> and <code>server.address</code> might be specified in your <code>application.properties</code>/<code>application.yaml</code>, as follows:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">server.port=9090
 server.address=127.0.0.1</code></pre>
@@ -1145,7 +1146,7 @@ For example, the <code>server.port</code> and <code>server.address</code> proper
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">It is not required that every “property” has a “group”.
@@ -1343,7 +1344,7 @@ If there is no replacement for this property, it may be omitted.</p></td>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Prior to Spring Boot 1.3, a single <code>deprecated</code> boolean attribute can be used instead of the <code>deprecation</code> element.
@@ -1395,7 +1396,7 @@ public class MyProperties {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">There is no way to set a <code>level</code>.
@@ -1624,7 +1625,7 @@ In order to offer additional content assistance for the keys, you could add the 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">We recommend that you use an <code>Enum</code> for those two values instead.
@@ -1646,7 +1647,7 @@ Also, it could eventually provide its own.</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">As this is a new feature, IDE vendors must catch up with how it works.
@@ -1707,7 +1708,7 @@ Usually constrained by a base class that is specified by the <code>target</code>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Only one provider can be active for a given property, but you can specify several providers if they can all manage the property <em>in some way</em>.
@@ -1889,7 +1890,7 @@ This parameter is mandatory.</p></td>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If multiple values can be provided, use a <code>Collection</code> or <em>Array</em> type to teach the IDE about it.</p>
@@ -2094,7 +2095,7 @@ Typically used to filter out non-candidate beans.</p></td>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The binder is not aware of the metadata.
@@ -2179,7 +2180,7 @@ The jar includes a Java annotation processor which is invoked as your project is
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -2277,7 +2278,7 @@ The Javadoc on fields is used to populate the <code>description</code> attribute
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">You should only use plain text with <code>@ConfigurationProperties</code> field Javadoc, since they are not processed before being added to the JSON.</p>
@@ -2358,7 +2359,7 @@ public class MyMessagingProperties {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Only the <code>name</code> of the property is required to document additional metadata for existing properties.</p>
@@ -2440,7 +2441,7 @@ You can use the <code>@NestedConfigurationProperty</code> annotation on a field 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">This has no effect on collections and maps, as those types are automatically identified, and a single metadata property is generated for each of them.</p>
@@ -2472,7 +2473,7 @@ If you do not have any additional properties, do not add the file.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-20 14:11:26 UTC
+最后更新于 2022-01-20 14:11:26 UTC
 </div>
 </div>
 </div>

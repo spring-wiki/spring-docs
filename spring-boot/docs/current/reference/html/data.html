@@ -949,7 +949,7 @@
 <div id="banner" class="contained" role="banner">
 <div id="switch-theme">
 <input type="checkbox" id="switch-theme-checkbox">
-<label for="switch-theme-checkbox">Dark Theme</label>
+<label for="switch-theme-checkbox">暗黑模式</label>
 </div>
 </div>
 </div>
@@ -964,8 +964,8 @@
 <div id="header">
 <h1 translation-origin="off">Data</h1>
 <div id="toc" class="toc2">
-<div id="toctitle">Table of Contents</div>
-<span id="back-to-index"><a href="index.html">Back to index</a></span><ul class="sectlevel1">
+<div id="toctitle">目录</div>
+<span id="back-to-index"><a href="index.html">返回索引页</a></span><ul class="sectlevel1">
 <li>
   <p translation-origin="off"><a href="data.html#data.sql">1. SQL Databases</a></p>
 <ul class="sectlevel2">
@@ -1202,7 +1202,7 @@ Traditionally, a 'DataSource' uses a <code>URL</code> along with some credential
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">See <a href="howto.html#howto.data-access.configure-custom-datasource">the “How-to” section</a> for more advanced examples, typically to take full control over the configuration of the DataSource.</p>
@@ -1221,7 +1221,7 @@ You need to populate your database when your application starts and be prepared 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The “How-to” section includes a <a href="howto.html#howto.data-initialization">section on how to initialize a database</a>.</p>
@@ -1240,7 +1240,7 @@ Setting the property to <code>none</code> disables auto-configuration of an embe
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -1271,7 +1271,7 @@ If you want to make sure that each context has a separate embedded database, you
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">You need a dependency on <code>spring-jdbc</code> for an embedded database to be auto-configured.
@@ -1284,7 +1284,7 @@ In this example, it is pulled in transitively through <code>spring-boot-starter-
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If, for whatever reason, you do configure the connection URL for an embedded database, take care to ensure that the database’s automatic shutdown is disabled.
@@ -1309,7 +1309,8 @@ Disabling the database’s automatic shutdown lets Spring Boot control when the 
 For example, you might declare the following section in <code>application.properties</code>:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.datasource.url=jdbc:mysql://localhost/test
 spring.datasource.username=dbuser
@@ -1330,7 +1331,7 @@ spring.datasource.password=dbpass</code></pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">You should at least specify the URL by setting the <code>spring.datasource.url</code> property.
@@ -1343,7 +1344,7 @@ Otherwise, Spring Boot tries to auto-configure an embedded database.</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Spring Boot can deduce the JDBC driver class for most databases from the URL.
@@ -1356,7 +1357,7 @@ If you need to specify a specific class, you can use the <code>spring.datasource
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">For a pooling <code>DataSource</code> to be created, we need to be able to verify that a valid <code>Driver</code> class is available, so we check for that before doing anything.
@@ -1375,7 +1376,8 @@ See the documentation of the connection pool implementation you are using for mo
 <p translation-origin="off">For instance, if you use the <a href="https://tomcat.apache.org/tomcat-9.0-doc/jdbc-pool.html#Common_Attributes">Tomcat connection pool</a>, you could customize many additional settings, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.datasource.tomcat.max-wait=10000
 spring.datasource.tomcat.max-active=50
@@ -1423,7 +1425,7 @@ If HikariCP is available, we always choose it.</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you use the <code>spring-boot-starter-jdbc</code> or <code>spring-boot-starter-data-jpa</code> “starters”, you automatically get a dependency to <code>HikariCP</code>.</p>
@@ -1476,7 +1478,8 @@ The following connection pools are supported by <code>DataSourceBuilder</code>:<
 For example, the following section in <code>application.properties</code> shows how you can access a JBoss AS defined <code>DataSource</code>:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.datasource.jndi-name=java:jboss/datasources/customers</code></pre>
 </div>
@@ -1522,7 +1525,8 @@ public class MyBean {
 <p translation-origin="off">You can customize some properties of the template by using the <code>spring.jdbc.template.*</code> properties, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.jdbc.template.max-rows=500</code></pre>
 </div>
@@ -1540,7 +1544,7 @@ public class MyBean {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The <code>NamedParameterJdbcTemplate</code> reuses the same <code>JdbcTemplate</code> instance behind the scenes.
@@ -1574,7 +1578,7 @@ It provides the following key dependencies:</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">We do not go into too many details of JPA or <a href="https://spring.io/projects/spring-data">Spring Data</a> here.
@@ -1646,7 +1650,7 @@ public class City implements Serializable {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">You can customize entity scanning locations by using the <code>@EntityScan</code> annotation.
@@ -1700,7 +1704,7 @@ If more than one exists, the one named <code>applicationTaskExecutor</code> will
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -1716,7 +1720,7 @@ For JPA components (such as converters) that are created as Spring beans, use <c
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">We have barely scratched the surface of Spring Data JPA.
@@ -1754,7 +1758,7 @@ import org.springframework.data.repository.history.RevisionRepository;
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">For more details, check the <a href="https://docs.spring.io/spring-data/envers/docs/2.6.1/reference/html/">Spring Data Envers reference documentation</a>.</p>
@@ -1771,7 +1775,8 @@ You can explicitly configure JPA settings by using <code>spring.jpa.*</code> pro
 For example, to create and drop tables you can add the following line to your <code>application.properties</code>:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.jpa.hibernate.ddl-auto=create-drop</code></pre>
 </div>
@@ -1788,7 +1793,7 @@ For example, to create and drop tables you can add the following line to your <c
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Hibernate’s own internal property name for this (if you happen to remember it better) is <code>hibernate.hbm2ddl.auto</code>.
@@ -1799,7 +1804,8 @@ The following line shows an example of setting JPA properties for Hibernate:</p>
 </tbody></table>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.jpa.properties.hibernate[globally_quoted_identifiers]=true</code></pre>
 </div>
@@ -1845,7 +1851,7 @@ If necessary, you can take control of Spring Data JDBC’s configuration by addi
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">For complete details of Spring Data JDBC, see the <a href="https://docs.spring.io/spring-data/jdbc/docs/2.3.1/reference/html/">reference documentation</a>.</p>
@@ -1877,7 +1883,7 @@ The console is auto-configured when the following conditions are met:</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you are not using Spring Boot’s developer tools but would still like to make use of H2’s console, you can configure the <code>spring.h2.console.enabled</code> property with a value of <code>true</code>.</p>
@@ -1889,7 +1895,7 @@ The console is auto-configured when the following conditions are met:</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The H2 console is only intended for use during development, so you should take care to ensure that <code>spring.h2.console.enabled</code> is not set to <code>true</code> in production.</p>
@@ -1984,7 +1990,7 @@ public class MyBean {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The jOOQ manual tends to use a variable named <code>create</code> to hold the <code>DSLContext</code>.</p>
@@ -2015,7 +2021,7 @@ If Spring Boot could not detect the dialect, it uses <code>DEFAULT</code>.</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Spring Boot can only auto-configure dialects supported by the open source version of jOOQ.</p>
@@ -2047,7 +2053,8 @@ Connections are provided by using a <code>ConnectionFactory</code>, similar to a
 For example, you might declare the following section in <code>application.properties</code>:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.r2dbc.url=r2dbc:postgresql://localhost/test
 spring.r2dbc.username=dbuser
@@ -2068,7 +2075,7 @@ spring.r2dbc.password=dbpass</code></pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">You do not need to specify a driver class name, since Spring Boot obtains the driver from R2DBC’s Connection Factory discovery.</p>
@@ -2080,7 +2087,7 @@ spring.r2dbc.password=dbpass</code></pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">At least the url should be provided.
@@ -2093,7 +2100,7 @@ Information specified in the URL takes precedence over individual properties, th
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The “How-to” section includes a <a href="howto.html#howto.data-initialization.using-basic-sql-scripts">section on how to initialize a database</a>.</p>
@@ -2178,7 +2185,7 @@ You need only include a build dependency to the embedded database that you want 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -2259,7 +2266,7 @@ import org.springframework.data.repository.Repository;
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">We have barely scratched the surface of Spring Data R2DBC. For complete details, see the <a href="https://docs.spring.io/spring-data/r2dbc/docs/1.4.1/reference/html/">Spring Data R2DBC reference documentation</a>.</p>
@@ -2325,7 +2332,7 @@ That starter handles both traditional and reactive applications.</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">We also provide a <code>spring-boot-starter-data-redis-reactive</code> “Starter” for consistency with the other stores with reactive support.</p>
@@ -2368,7 +2375,7 @@ public class MyBean {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">You can also register an arbitrary number of beans that implement <code>LettuceClientConfigurationBuilderCustomizer</code> for more advanced customizations.
@@ -2443,7 +2450,8 @@ Each will be called in order with the <code>MongoClientSettings.Builder</code> t
 <p translation-origin="off">You can set the <code>spring.data.mongodb.uri</code> property to change the URL and configure additional settings such as the <em>replica set</em>, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.data.mongodb.uri=mongodb://user:<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="493a2c2a3b2c3d092426272e2678672c31282439252c672a2624">[email&nbsp;protected]</a>:12345,mongo2.example.com:23456/test</code></pre>
 </div>
@@ -2462,7 +2470,8 @@ Each will be called in order with the <code>MongoClientSettings.Builder</code> t
 For example, you might declare the following settings in your <code>application.properties</code>:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.data.mongodb.host=mongoserver.example.com
 spring.data.mongodb.port=27017
@@ -2488,7 +2497,7 @@ spring.data.mongodb.password=secret</code></pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If <code>spring.data.mongodb.port</code> is not specified, the default of <code>27017</code> is used.
@@ -2501,7 +2510,7 @@ You could delete this line from the example shown earlier.</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you do not use Spring Data MongoDB, you can inject a <code>MongoClient</code> bean instead of using <code>MongoDatabaseFactory</code>.
@@ -2514,7 +2523,7 @@ If you want to take complete control of establishing the MongoDB connection, you
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you are using the reactive driver, Netty is required for SSL.
@@ -2591,7 +2600,7 @@ import org.springframework.data.repository.Repository;
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">You can customize document scanning locations by using the <code>@EntityScan</code> annotation.</p>
@@ -2603,7 +2612,7 @@ import org.springframework.data.repository.Repository;
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">For complete details of Spring Data MongoDB, including its rich object mapping technologies, see its <a href="https://spring.io/projects/spring-data-mongodb">reference documentation</a>.</p>
@@ -2622,7 +2631,7 @@ To use it in your Spring Boot application, add a dependency on <code>de.flapdood
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The default download configuration allows access to most of the versions listed in <a href="https://github.com/flapdoodle-oss/de.flapdoodle.embed.mongo/blob/de.flapdoodle.embed.mongo-3.0.0/src/main/java/de/flapdoodle/embed/mongo/distribution/Version.java">Embedded Mongo’s <code>Version</code> class</a> as well as some others.
@@ -2641,7 +2650,7 @@ The <code>MongoClient</code> created by <code>MongoAutoConfiguration</code> is a
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you do not configure a custom port, the embedded support uses a random port (rather than 27017) by default.</p>
@@ -2708,7 +2717,8 @@ public class MyBean {
 The following example shows how to configure the uri and credentials to use:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.neo4j.uri=bolt://my-server:7687
 spring.neo4j.authentication.username=neo4j
@@ -2768,7 +2778,7 @@ When Project Reactor is available on the classpath, the reactive style is also a
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -2882,7 +2892,8 @@ By default, the clients will target <code><a href="http://localhost:9200" class=
 You can use <code>spring.elasticsearch.*</code> properties to further tune how the clients are configured, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.elasticsearch.uris=https://search.example.com:9200
 spring.elasticsearch.socket-timeout=10s
@@ -2912,7 +2923,7 @@ To take full control over its registration, define a <code>RestClientBuilder</co
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If your application needs access to a "Low Level" <code>RestClient</code>, you can get it by calling <code>client.getLowLevelClient()</code> on the auto-configured <code>RestHighLevelClient</code>.</p>
@@ -2925,7 +2936,8 @@ To take full control over its registration, define a <code>RestClientBuilder</co
 You can further tune how <code>Sniffer</code> is configured, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.elasticsearch.restclient.sniffer.interval=10m
 spring.elasticsearch.restclient.sniffer.delay-after-failure=30s</code></pre>
@@ -2954,7 +2966,8 @@ It is built on top of WebFlux’s <code>WebClient</code>, so both <code>spring-b
 In addition to the properties described previously, the <code>spring.elasticsearch.webclient.*</code> properties can be used to configure reactive-specific settings, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.elasticsearch.webclient.max-in-memory-size=1MB</code></pre>
 </div>
@@ -3025,7 +3038,7 @@ You could take the JPA example from earlier and, assuming that <code>City</code>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">For complete details of Spring Data Elasticsearch, see the <a href="https://docs.spring.io/spring-data/elasticsearch/docs/current/reference/html/">reference documentation</a>.</p>
@@ -3045,7 +3058,8 @@ Same applies to <code>ReactiveElasticsearchTemplate</code> and <code>ReactiveEla
 <p translation-origin="off">You can choose to disable the repositories support with the following property:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.data.elasticsearch.repositories.enabled=false</code></pre>
 </div>
@@ -3077,7 +3091,8 @@ The <code>spring.data.cassandra.*</code> properties can be used to customize the
 Generally, you provide <code>keyspace-name</code> and <code>contact-points</code> as well the local datacenter name, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.data.cassandra.keyspace-name=mykeyspace
 spring.data.cassandra.contact-points=cassandrahost1:9042,cassandrahost2:9042
@@ -3099,7 +3114,8 @@ spring.data.cassandra.local-datacenter=datacenter1</code></pre>
 <p translation-origin="off">If the port is the same for all your contact points you can use a shortcut and only specify the host names, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.data.cassandra.keyspace-name=mykeyspace
 spring.data.cassandra.contact-points=cassandrahost1,cassandrahost2
@@ -3121,7 +3137,7 @@ spring.data.cassandra.local-datacenter=datacenter1</code></pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Those two examples are identical as the port default to <code>9042</code>.
@@ -3134,7 +3150,7 @@ If you need to configure the port, use <code>spring.data.cassandra.port</code>.<
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -3156,7 +3172,7 @@ The <code>CqlSession</code> can be customized with a bean of type <code>CqlSessi
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you use <code>CqlSessionBuilder</code> to create multiple <code>CqlSession</code> beans, keep in mind the builder is mutable so make sure to inject a fresh copy for each session.</p>
@@ -3205,7 +3221,7 @@ Currently, this is more limited than the JPA repositories discussed earlier and 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">For complete details of Spring Data Cassandra, see the <a href="https://docs.spring.io/spring-data/cassandra/docs/">reference documentation</a>.</p>
@@ -3230,7 +3246,8 @@ The <code>spring.couchbase.*</code> properties can be used to customize the conn
 Generally, you provide the <a href="https://github.com/couchbaselabs/sdk-rfcs/blob/master/rfc/0011-connection-string.md">connection string</a>, username, and password, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.couchbase.connection-string=couchbase://192.168.1.123
 spring.couchbase.username=user
@@ -3252,7 +3269,8 @@ spring.couchbase.password=secret</code></pre>
 For instance, the following configuration changes the timeout to use to open a new <code>Bucket</code> and enables SSL support:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.couchbase.env.timeouts.connect=3s
 spring.couchbase.env.ssl.key-store=/location/of/keystore.jks
@@ -3276,7 +3294,7 @@ spring.couchbase.env.ssl.key-store-password=secret</code></pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Check the <code>spring.couchbase.env.*</code> properties for more details.
@@ -3297,7 +3315,8 @@ For complete details of Spring Data Couchbase, see the <a href="https://docs.spr
 This happens when a <code>Cluster</code> is available, as described above, and a bucket name has been specified:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.data.couchbase.bucket-name=my-bucket</code></pre>
 </div>
@@ -3397,7 +3416,8 @@ There is a <code>spring-boot-starter-data-ldap</code> “Starter” for collecti
 <p translation-origin="off">To connect to an LDAP server, make sure you declare a dependency on the <code>spring-boot-starter-data-ldap</code> “Starter” or <code>spring-ldap-core</code> and then declare the URLs of your server in your application.properties, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.ldap.urls=ldap://myserver:1235
 spring.ldap.username=admin
@@ -3467,7 +3487,8 @@ public class MyBean {
 To configure the server, add a dependency to <code>com.unboundid:unboundid-ldapsdk</code> and declare a <code>spring.ldap.embedded.base-dn</code> property, as follows:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.ldap.embedded.base-dn=dc=spring,dc=io</code></pre>
 </div>
@@ -3485,7 +3506,7 @@ To configure the server, add a dependency to <code>com.unboundid:unboundid-ldaps
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -3495,7 +3516,8 @@ To configure the server, add a dependency to <code>com.unboundid:unboundid-ldaps
 <p translation-origin="off">In yaml files, you can use the yaml list notation. In properties files, you must include the index as part of the property name:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.ldap.embedded.base-dn[0]=dc=spring,dc=io
 spring.ldap.embedded.base-dn[1]=dc=pivotal,dc=io</code></pre>
@@ -3539,7 +3561,8 @@ If you have custom attributes, you can use <code>spring.ldap.embedded.validation
 <p translation-origin="off">Spring Boot auto-configures an <code>InfluxDB</code> instance, provided the <code>influxdb-java</code> client is on the classpath and the URL of the database is set, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.influx.url=https://172.0.0.1:8086</code></pre>
 </div>
@@ -3578,7 +3601,7 @@ From here, you can read about Spring Boot’s support for various <a href="messa
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-20 14:11:26 UTC
+最后更新于 2022-01-20 14:11:26 UTC
 </div>
 </div>
 </div>

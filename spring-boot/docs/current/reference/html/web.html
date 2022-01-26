@@ -949,7 +949,7 @@
 <div id="banner" class="contained" role="banner">
 <div id="switch-theme">
 <input type="checkbox" id="switch-theme-checkbox">
-<label for="switch-theme-checkbox">Dark Theme</label>
+<label for="switch-theme-checkbox">暗黑模式</label>
 </div>
 </div>
 </div>
@@ -964,8 +964,8 @@
 <div id="header">
 <h1 translation-origin="off">Web</h1>
 <div id="toc" class="toc2">
-<div id="toctitle">Table of Contents</div>
-<span id="back-to-index"><a href="index.html">Back to index</a></span><ul class="sectlevel1">
+<div id="toctitle">目录</div>
+<span id="back-to-index"><a href="index.html">返回索引页</a></span><ul class="sectlevel1">
 <li>
   <p translation-origin="off"><a href="web.html#web.servlet">1. Servlet Web Applications</a></p>
 <ul class="sectlevel2">
@@ -1281,7 +1281,7 @@ There are also several guides that cover Spring MVC available at <a href="https:
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -1470,7 +1470,8 @@ Most of the time, this does not happen (unless you modify the default MVC config
 For instance, relocating all resources to <code>/resources/**</code> can be achieved as follows:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.mvc.static-path-pattern=/resources/**</code></pre>
 </div>
@@ -1495,7 +1496,7 @@ Any resources with a path in <code>/webjars/**</code> are served from jar files 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Do not use the <code>src/main/webapp</code> directory if your application is packaged as a jar.
@@ -1516,7 +1517,7 @@ Using jQuery as an example, adding <code>"/webjars/jquery/jquery.min.js"</code> 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you use JBoss, you need to declare the <code>webjars-locator-jboss-vfs</code> dependency instead of the <code>webjars-locator-core</code>.
@@ -1529,7 +1530,8 @@ Otherwise, all Webjars resolve as a <code>404</code>.</p>
 <p translation-origin="off">To use cache busting, the following configuration configures a cache busting solution for all static resources, effectively adding a content hash, such as <code>&lt;link href="/css/spring-2a2d595e6ed9a0b24f027f2b63b134d6.css"/&gt;</code>, in URLs:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.web.resources.chain.strategy.content.enabled=true
 spring.web.resources.chain.strategy.content.paths=/**</code></pre>
@@ -1552,7 +1554,7 @@ spring.web.resources.chain.strategy.content.paths=/**</code></pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Links to resources are rewritten in templates at runtime, thanks to a <code>ResourceUrlEncodingFilter</code> that is auto-configured for Thymeleaf and FreeMarker.
@@ -1568,7 +1570,8 @@ That is why other strategies are also supported and can be combined.
 A "fixed" strategy adds a static version string in the URL without changing the file name, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.web.resources.chain.strategy.content.enabled=true
 spring.web.resources.chain.strategy.content.paths=/**
@@ -1604,7 +1607,7 @@ spring.web.resources.chain.strategy.fixed.version=v12</code></pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -1640,7 +1643,8 @@ Nowadays, Content Negotiation is much more reliable.</p>
 Instead of using suffix matching, we can use a query parameter to ensure that requests like <code>"GET /projects/spring-boot?format=json"</code> will be mapped to <code>@GetMapping("/projects/spring-boot")</code>:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.mvc.contentnegotiation.favor-parameter=true</code></pre>
 </div>
@@ -1658,7 +1662,8 @@ Instead of using suffix matching, we can use a query parameter to ensure that re
 <p translation-origin="off">Or if you prefer to use a different parameter name:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.mvc.contentnegotiation.favor-parameter=true
 spring.mvc.contentnegotiation.parameter-name=myparam</code></pre>
@@ -1678,7 +1683,8 @@ spring.mvc.contentnegotiation.parameter-name=myparam</code></pre>
 <p translation-origin="off">Most standard media types are supported out-of-the-box, but you can also define new ones:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.mvc.contentnegotiation.media-types.markdown=text/markdown</code></pre>
 </div>
@@ -1698,7 +1704,8 @@ spring.mvc.contentnegotiation.parameter-name=myparam</code></pre>
 If you understand the caveats and would still like your application to use suffix pattern matching, the following configuration is required:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.mvc.contentnegotiation.favor-path-extension=true
 spring.mvc.pathmatch.use-suffix-pattern=true</code></pre>
@@ -1719,7 +1726,8 @@ spring.mvc.pathmatch.use-suffix-pattern=true</code></pre>
 <p translation-origin="off">Alternatively, rather than open all suffix patterns, it is more secure to only support registered suffix patterns:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.mvc.contentnegotiation.favor-path-extension=true
 spring.mvc.pathmatch.use-registered-suffix-pattern=true</code></pre>
@@ -1742,7 +1750,8 @@ It was previously only supporting the <code>AntPathMatcher</code> strategy, but 
 Spring Boot now provides a configuration property to choose and opt in the new strategy:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.mvc.pathmatch.matching-strategy=path-pattern-parser</code></pre>
 </div>
@@ -1764,7 +1773,7 @@ Spring Boot now provides a configuration property to choose and opt in the new s
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off"><code>PathPatternParser</code> is an optimized implementation but restricts usage of
@@ -1814,7 +1823,7 @@ Also, many other templating engines include their own Spring MVC integrations.</
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If possible, JSPs should be avoided.
@@ -1830,7 +1839,7 @@ There are several <a href="web.html#web.servlet.embedded-container.jsp-limitatio
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Depending on how you run your application, your IDE may order the classpath differently.
@@ -1860,7 +1869,7 @@ See the <a href="application-properties.html#application-properties.server">“S
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The <code>BasicErrorController</code> can be used as a base class for a custom <code>ErrorController</code>.
@@ -2041,7 +2050,7 @@ public class MyErrorPagesConfiguration {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you register an <code>ErrorPage</code> with a path that ends up being handled by a <code>Filter</code> (as is common with some non-Spring web frameworks, like Jersey and Wicket), then the <code>Filter</code> has to be explicitly registered as an <code>ERROR</code> dispatcher, as shown in the following example:</p>
@@ -2166,7 +2175,7 @@ public class MyJerseyConfig extends ResourceConfig {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
+<i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Jersey’s support for scanning executable archives is rather limited.
@@ -2256,7 +2265,7 @@ If a servlet filter wraps the request, it should be configured with an order tha
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">To see the order of every <code>Filter</code> in your application, enable debug level logging for the <code>web</code> <a href="features.html#features.logging.log-groups">logging group</a> (<code>logging.level.web=debug</code>).
@@ -2269,7 +2278,7 @@ Details of the registered filters, including their order and URL patterns, will 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
+<i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Take care when registering <code>Filter</code> beans since they are initialized very early in the application lifecycle.
@@ -2299,7 +2308,7 @@ The single <code>onStartup</code> method provides access to the <code>ServletCon
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off"><code>@ServletComponentScan</code> has no effect in a standalone container, where the container’s built-in discovery mechanisms are used instead.</p>
@@ -2320,7 +2329,7 @@ Usually a <code>TomcatServletWebServerFactory</code>, <code>JettyServletWebServe
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">You usually do not need to be aware of these implementation classes.
@@ -2367,7 +2376,7 @@ For instance, <a href="howto.html#howto.webserver.configure-access-logs">access 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">See the <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/ServerProperties.java"><code>ServerProperties</code></a> class for a complete list.</p>
@@ -2390,7 +2399,8 @@ It is also used to configure Spring Session servlet based <code>SessionRepositor
 <p translation-origin="off">For example, if you want your session cookie to have a <code>SameSite</code> attribute of <code>None</code>, you can add the following to your <code>application.properties</code> or <code>application.yaml</code> file:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">server.servlet.session.cookie.same-site=none</code></pre>
 </div>
@@ -2496,7 +2506,7 @@ See the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springfra
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Auto-configured customizers are still applied on your custom factory, so use that option carefully.</p>
@@ -2658,7 +2668,7 @@ public class MyUserHandler {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">You can define as many <code>RouterFunction</code> beans as you like to modularize the definition of the router.
@@ -2674,7 +2684,7 @@ Beans can be ordered if you need to apply a precedence.</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Adding both <code>spring-boot-starter-web</code> and <code>spring-boot-starter-webflux</code> modules in your application results in Spring Boot auto-configuring Spring MVC, not WebFlux.
@@ -2752,7 +2762,7 @@ public class MyUserHandler {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">You can define as many <code>RouterFunction</code> beans as you like to modularize the definition of the router.
@@ -2768,7 +2778,7 @@ Beans can be ordered if you need to apply a precedence.</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Adding both <code>spring-boot-starter-web</code> and <code>spring-boot-starter-webflux</code> modules in your application results in Spring Boot auto-configuring Spring MVC, not WebFlux.
@@ -2855,7 +2865,8 @@ It uses the <code>ResourceWebHandler</code> from Spring WebFlux so that you can 
 For instance, relocating all resources to <code>/resources/**</code> can be achieved as follows:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.webflux.static-path-pattern=/resources/**</code></pre>
 </div>
@@ -2882,7 +2893,7 @@ Any resources with a path in <code>/webjars/**</code> are served from jar files 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Spring WebFlux applications do not strictly depend on the servlet API, so they cannot be deployed as war files and do not use the <code>src/main/webapp</code> directory.</p>
@@ -3156,7 +3167,7 @@ Undertow will accept requests but respond immediately with a service unavailable
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Graceful shutdown with Tomcat requires Tomcat 9.0.33 or later.</p>
@@ -3168,7 +3179,8 @@ Undertow will accept requests but respond immediately with a service unavailable
 <p translation-origin="off">To enable graceful shutdown, configure the <code>server.shutdown</code> property, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">server.shutdown=graceful</code></pre>
 </div>
@@ -3184,7 +3196,8 @@ Undertow will accept requests but respond immediately with a service unavailable
 <p translation-origin="off">To configure the timeout period, configure the <code>spring.lifecycle.timeout-per-shutdown-phase</code> property, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.lifecycle.timeout-per-shutdown-phase=20s</code></pre>
 </div>
@@ -3201,7 +3214,7 @@ Undertow will accept requests but respond immediately with a service unavailable
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-important" title="Important"></i>
+<i class="fa icon-important" title="重要"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Using graceful shutdown with your IDE may not work properly if it does not send a proper <code>SIGTERM</code> signal.
@@ -3234,7 +3247,7 @@ The user name is <code>user</code>, and the password is random and is printed at
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you fine-tune your logging configuration, ensure that the <code>org.springframework.boot.autoconfigure.security</code> category is set to log <code>INFO</code>-level messages.
@@ -3346,7 +3359,8 @@ The same properties are applicable to both servlet and reactive applications.</p
 <p translation-origin="off">You can register multiple OAuth2 clients and providers under the <code>spring.security.oauth2.client</code> prefix, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.security.oauth2.client.registration.my-client-1.client-id=abcd
 spring.security.oauth2.client.registration.my-client-1.client-secret=password
@@ -3420,7 +3434,8 @@ The result is expected to be an <code>OpenID Provider Configuration Response</co
 The following example shows how an OpenID Connect Provider can be configured with the <code>issuer-uri</code>:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.security.oauth2.client.provider.oidc-provider.issuer-uri=https://dev-123456.oktapreview.com/oauth2/default/</code></pre>
 </div>
@@ -3467,7 +3482,7 @@ public class MyOAuthClientConfiguration {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Spring Boot auto-configures an <code>InMemoryOAuth2AuthorizedClientService</code> which is used by Spring Security for the management of client registrations.
@@ -3490,7 +3505,8 @@ Also, if the key for the client registration matches a default supported provide
 <p translation-origin="off">In other words, the two configurations in the following example use the Google provider:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.security.oauth2.client.registration.my-client.client-id=abcd
 spring.security.oauth2.client.registration.my-client.client-secret=password
@@ -3525,7 +3541,8 @@ spring.security.oauth2.client.registration.google.client-secret=password</code><
 For JWT configuration, a JWK Set URI or OIDC Issuer URI needs to be specified, as shown in the following examples:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.security.oauth2.resourceserver.jwt.jwk-set-uri=https://example.com/oauth2/default/v1/keys</code></pre>
 </div>
@@ -3542,7 +3559,8 @@ For JWT configuration, a JWK Set URI or OIDC Issuer URI needs to be specified, a
 </div>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.security.oauth2.resourceserver.jwt.issuer-uri=https://dev-123456.oktapreview.com/oauth2/default/</code></pre>
 </div>
@@ -3562,7 +3580,7 @@ For JWT configuration, a JWK Set URI or OIDC Issuer URI needs to be specified, a
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If the authorization server does not support a JWK Set URI, you can configure the resource server with the Public Key used for verifying the signature of the JWT.
@@ -3581,7 +3599,8 @@ This can be done using the <code>spring.security.oauth2.resourceserver.jwt.publi
 <p translation-origin="off">In cases where opaque tokens are used instead of JWTs, you can configure the following properties to validate tokens through introspection:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.security.oauth2.resourceserver.opaquetoken.introspection-uri=https://example.com/check-token
 spring.security.oauth2.resourceserver.opaquetoken.client-id=my-client-id
@@ -3630,7 +3649,8 @@ This configuration makes use of the properties under <code>Saml2RelyingPartyProp
 You can register multiple relying parties under the <code>spring.security.saml2.relyingparty</code> prefix, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.security.saml2.relyingparty.registration.my-relying-party1.signing.credentials[0].private-key-location=path-to-private-key
 spring.security.saml2.relyingparty.registration.my-relying-party1.signing.credentials[0].certificate-location=path-to-certificate
@@ -3742,7 +3762,8 @@ If you have more than one implementation, you must choose the <a href="https://g
 For instance, to use JDBC as the back-end store, you can configure your application as follows:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.session.store-type=jdbc</code></pre>
 </div>
@@ -3759,7 +3780,7 @@ For instance, to use JDBC as the back-end store, you can configure your applicat
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">You can disable Spring Session by setting the <code>store-type</code> to <code>none</code>.</p>
@@ -3772,7 +3793,8 @@ For instance, to use JDBC as the back-end store, you can configure your applicat
 For instance, it is possible to customize the name of the table for the JDBC store, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.session.jdbc.table-name=SESSIONS</code></pre>
 </div>
@@ -3813,7 +3835,7 @@ Note that doing so disables the <code>ObjectMapper</code> customization describe
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
+<i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
 <p translation-origin="off"><code>spring-boot-starter-hateoas</code> is specific to Spring MVC and should not be combined with Spring WebFlux.
@@ -3837,7 +3859,7 @@ You can pick any of these based on your application’s needs.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-20 14:11:26 UTC
+最后更新于 2022-01-20 14:11:26 UTC
 </div>
 </div>
 </div>

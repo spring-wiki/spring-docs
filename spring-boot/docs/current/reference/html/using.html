@@ -949,7 +949,7 @@
 <div id="banner" class="contained" role="banner">
 <div id="switch-theme">
 <input type="checkbox" id="switch-theme-checkbox">
-<label for="switch-theme-checkbox">Dark Theme</label>
+<label for="switch-theme-checkbox">暗黑模式</label>
 </div>
 </div>
 </div>
@@ -964,8 +964,8 @@
 <div id="header">
 <h1 translation-origin="off">Developing with Spring Boot</h1>
 <div id="toc" class="toc2">
-<div id="toctitle">Table of Contents</div>
-<span id="back-to-index"><a href="index.html">Back to index</a></span><ul class="sectlevel1">
+<div id="toctitle">目录</div>
+<span id="back-to-index"><a href="index.html">返回索引页</a></span><ul class="sectlevel1">
 <li><a href="using.html#using.build-systems">1. Build Systems</a>
 <ul class="sectlevel2">
 <li><a href="using.html#using.build-systems.dependency-management">1.1. Dependency Management</a></li>
@@ -1070,7 +1070,7 @@ When you upgrade Spring Boot itself, these dependencies are upgraded as well in 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 You can still specify a version and override Spring Boot’s recommendations if you need to do so.
@@ -1086,7 +1086,7 @@ The list is available as a standard Bills of Materials (<code>spring-boot-depend
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
+<i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
 Each release of Spring Boot is associated with a base version of the Spring Framework.
@@ -1196,7 +1196,7 @@ The <code>spring-boot-antlib</code> “AntLib” module is also available to hel
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 If you do not want to use the <code>spring-boot-antlib</code> module, see the <em><a href="howto.html#howto.build.build-an-executable-archive-with-ant-without-using-spring-boot-antlib">howto.html</a></em> “How-to” .
@@ -1500,7 +1500,7 @@ For example, a third-party starter project called <code>thirdpartyproject</code>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 For a list of additional community contributed starters, see the <a href="https://github.com/spring-projects/spring-boot/tree/main/spring-boot-project/spring-boot-starters/README.adoc">README file</a> in the <code>spring-boot-starters</code> module on GitHub.
@@ -1529,7 +1529,7 @@ It can cause particular problems for Spring Boot applications that use the <code
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 We recommend that you follow Java’s recommended package naming conventions and use a reversed domain name (for example, <code>com.example.project</code>).
@@ -1550,7 +1550,7 @@ Using a root package also allows component scan to apply only on your project.</
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 If you do not want to use <code>@SpringBootApplication</code>, the <code>@EnableAutoConfiguration</code> and <code>@ComponentScan</code> annotations that it imports defines that behavior so you can also use those instead.
@@ -1615,7 +1615,7 @@ Usually the class that defines the <code>main</code> method is a good candidate 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 Many Spring configuration examples have been published on the Internet that use XML configuration.
@@ -1656,7 +1656,7 @@ For example, if <code>HSQLDB</code> is on your classpath, and you have not manua
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 You should only ever add one <code>@SpringBootApplication</code> or <code>@EnableAutoConfiguration</code> annotation.
@@ -1703,7 +1703,7 @@ Finally, you can also control the list of auto-configuration classes to exclude 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 You can define exclusions both at the annotation level and by using the property.
@@ -1715,7 +1715,7 @@ You can define exclusions both at the annotation level and by using the property
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 Even though auto-configuration classes are <code>public</code>, the only aspect of the class that is considered public API is the name of the class which can be used for disabling the auto-configuration.
@@ -1798,7 +1798,7 @@ public class MyAccountService implements AccountService {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 Notice how using constructor injection lets the <code>riskAssessor</code> field be marked as <code>final</code>, indicating that it cannot be subsequently changed.
@@ -1850,7 +1850,7 @@ public class MyApplication {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <code>@SpringBootApplication</code> also provides aliases to customize the attributes of <code>@EnableAutoConfiguration</code> and <code>@ComponentScan</code>.
@@ -1862,7 +1862,7 @@ public class MyApplication {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -1910,7 +1910,7 @@ You do not need any special IDE plugins or extensions.</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 This section only covers jar-based packaging.
@@ -1937,7 +1937,7 @@ Gradle offers plugins for <a href="https://docs.gradle.org/current/userguide/use
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 If you accidentally run a web application twice, you see a “Port already in use” error.
@@ -2055,7 +2055,7 @@ To include devtools support, add the module dependency to your build, as shown i
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 Developer tools are automatically disabled when running a fully packaged application.
@@ -2072,7 +2072,7 @@ To disable devtools, exclude the dependency or set the <code>-Dspring.devtools.r
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 Flagging the dependency as optional in Maven or using the <code>developmentOnly</code> configuration in Gradle (as shown above) prevents devtools from being transitively applied to other modules that use your project.
@@ -2084,7 +2084,7 @@ Flagging the dependency as optional in Maven or using the <code>developmentOnly<
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 Repackaged archives do not contain devtools by default.
@@ -2120,7 +2120,7 @@ If you wish to log all request details (including potentially sensitive informat
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 If you do not want property defaults to be applied you can set <code>spring.devtools.add-properties</code> to <code>false</code> in your <code>application.properties</code>.
@@ -2132,7 +2132,7 @@ If you do not want property defaults to be applied you can set <code>spring.devt
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 For a complete list of the properties that are applied by the devtools, see <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-devtools/src/main/java/org/springframework/boot/devtools/env/DevToolsPropertyDefaultsPostProcessor.java">DevToolsPropertyDefaultsPostProcessor</a>.
@@ -2175,7 +2175,7 @@ The way in which you cause the classpath to be updated depends on the IDE that y
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 If you are restarting with Maven or Gradle using the build plugin you must leave the <code>forking</code> set to <code>enabled</code>.
@@ -2188,7 +2188,7 @@ If you disable forking, the isolated application classloader used by devtools wi
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 Automatic restart works very well when used with LiveReload.
@@ -2203,7 +2203,7 @@ Other devtools features (such as LiveReload and property overrides) can still be
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 DevTools relies on the application context’s shutdown hook to close it during a restart.
@@ -2216,7 +2216,7 @@ It does not work correctly if you have disabled the shutdown hook (<code>SpringA
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 DevTools needs to customize the <code>ResourceLoader</code> used by the <code>ApplicationContext</code>.
@@ -2230,7 +2230,7 @@ Direct override of the <code>getResource</code> method on the <code>ApplicationC
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
+<i class="fa icon-caution" title="小心"></i>
 </td>
 <td class="content">
 Automatic restart is not supported when using AspectJ weaving.
@@ -2264,7 +2264,8 @@ The report shows the changes to your application’s auto-configuration as you m
 <p translation-origin="off">To disable the logging of the report, set the following property:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.devtools.restart.log-condition-evaluation-delta=false</code></pre>
 </div>
@@ -2289,7 +2290,8 @@ If you want to customize these exclusions, you can use the <code>spring.devtools
 For example, to exclude only <code>/static</code> and <code>/public</code> you would set the following property:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.devtools.restart.exclude=static/**,public/**</code></pre>
 </div>
@@ -2307,7 +2309,7 @@ For example, to exclude only <code>/static</code> and <code>/public</code> you w
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 If you want to keep those defaults and <em>add</em> additional exclusions, use the <code>spring.devtools.restart.additional-exclude</code> property instead.
@@ -2361,7 +2363,7 @@ To do so, you can use a “trigger file”, which is a special file that must be
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 Any update to the file will trigger a check, but restart only actually occurs if Devtools has detected it has something to do.
@@ -2388,7 +2390,8 @@ The trigger file must appear somewhere on your classpath.</p>
 <p translation-origin="off">Then your <code>trigger-file</code> property would be:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.devtools.restart.trigger-file=.reloadtrigger</code></pre>
 </div>
@@ -2409,7 +2412,7 @@ The trigger file must appear somewhere on your classpath.</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 You might want to set <code>spring.devtools.restart.trigger-file</code> as a <a href="using.html#using.devtools.globalsettings">global setting</a>, so that all your projects behave in the same way.
@@ -2442,7 +2445,8 @@ The <code>include</code> elements are items that should be pulled up into the �
 The value of the property is a regex pattern that is applied to the classpath, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">restart.exclude.companycommonlibs=/mycorp-common-[\\w\\d-\\.]+\\.jar
 restart.include.projectcommon=/mycorp-myproj-[\\w\\d-\\.]+\\.jar</code></pre>
@@ -2462,7 +2466,7 @@ restart.include.projectcommon=/mycorp-myproj-[\\w\\d-\\.]+\\.jar</code></pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 All property keys must be unique.
@@ -2475,7 +2479,7 @@ As long as a property starts with <code>restart.include.</code> or <code>restart
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 All <code>META-INF/spring-devtools.properties</code> from the classpath are loaded.
@@ -2510,7 +2514,7 @@ LiveReload browser extensions are freely available for Chrome, Firefox and Safar
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 You can only run one LiveReload server at a time.
@@ -2524,7 +2528,7 @@ If you start multiple applications from your IDE, only the first has LiveReload 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
+<i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
 To trigger LiveReload when a file changes, <a href="using.html#using.devtools.restart">Automatic Restart</a> must be enabled.
@@ -2556,7 +2560,8 @@ To trigger LiveReload when a file changes, <a href="using.html#using.devtools.re
 For example, to configure restart to always use a <a href="using.html#using.devtools.restart.triggerfile">trigger file</a>, you would add the following property to your <code>spring-boot-devtools</code> file:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.devtools.restart.trigger-file=.reloadtrigger</code></pre>
 </div>
@@ -2578,7 +2583,7 @@ To customize this location, set the <code>SPRING_DEVTOOLS_HOME</code> environmen
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 If devtools configuration files are not found in <code>$HOME/.config/spring-boot</code>, the root of the <code>$HOME</code> directory is searched for the presence of a <code>.spring-boot-devtools.properties</code> file.
@@ -2591,7 +2596,7 @@ This allows you to share the devtools global configuration with applications tha
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -2613,7 +2618,8 @@ Since Spring Boot relies entirely on the IDE to compile and copy files into the 
 If you observe such problems constantly, try increasing the <code>spring.devtools.restart.poll-interval</code> and <code>spring.devtools.restart.quiet-period</code> parameters to the values that fit your development environment:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.devtools.restart.poll-interval=2s
 spring.devtools.restart.quiet-period=1s</code></pre>
@@ -2675,7 +2681,7 @@ The client component must be launched manually.</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 Remote devtools is not supported for Spring WebFlux applications.
@@ -2736,7 +2742,7 @@ The application’s single required argument is the remote URL to which it conne
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 Because the remote client is using the same classpath as the real application it can directly read application properties.
@@ -2749,7 +2755,7 @@ This is how the <code>spring.devtools.remote.secret</code> property is read and 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 It is always advisable to use <code>https://</code> as the connection protocol, so that traffic is encrypted and passwords cannot be intercepted.
@@ -2761,7 +2767,7 @@ It is always advisable to use <code>https://</code> as the connection protocol, 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 If you need to use a proxy to access the remote application, configure the <code>spring.devtools.remote.proxy.host</code> and <code>spring.devtools.remote.proxy.port</code> properties.
@@ -2793,7 +2799,7 @@ See the <a href="using.html#using.devtools.globalsettings.configuring-file-syste
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 Files are only monitored when the remote client is running.
@@ -2831,7 +2837,7 @@ You can now go on to learn about specific <em><a href="features.html#features">S
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-20 14:11:26 UTC
+最后更新于 2022-01-20 14:11:26 UTC
 </div>
 </div>
 </div>

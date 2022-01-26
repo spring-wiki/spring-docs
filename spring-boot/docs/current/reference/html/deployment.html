@@ -949,7 +949,7 @@
 <div id="banner" class="contained" role="banner">
 <div id="switch-theme">
 <input type="checkbox" id="switch-theme-checkbox">
-<label for="switch-theme-checkbox">Dark Theme</label>
+<label for="switch-theme-checkbox">暗黑模式</label>
 </div>
 </div>
 </div>
@@ -964,8 +964,8 @@
 <div id="header">
 <h1 translation-origin="off">Deploying Spring Boot Applications</h1>
 <div id="toc" class="toc2">
-<div id="toctitle">Table of Contents</div>
-<span id="back-to-index"><a href="index.html">Back to index</a></span><ul class="sectlevel1">
+<div id="toctitle">目录</div>
+<span id="back-to-index"><a href="index.html">返回索引页</a></span><ul class="sectlevel1">
 <li>
   <p translation-origin="off"><a href="deployment.html#deployment.cloud">1. Deploying to the Cloud</a></p>
 <ul class="sectlevel2">
@@ -1120,7 +1120,7 @@ The following line shows using the <code>cf push</code> command to deploy an app
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">In the preceding example, we substitute <code>acloudyspringtime</code> for whatever value you give <code>cf</code> as the name of your application.</p>
@@ -1223,7 +1223,7 @@ See the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springfra
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The <a href="https://github.com/pivotal-cf/java-cfenv/">Java CFEnv</a> project is a better fit for tasks such as configuring a DataSource.</p>
@@ -1272,7 +1272,7 @@ The preStop handler can be configured by using the PodSpec in the pod’s config
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">When Kubernetes sends a SIGTERM signal to the pod, it waits for a specified time called the termination grace period (the default for which is 30 seconds).
@@ -1444,7 +1444,7 @@ To configure it, add the following line to your <code>application.properties</co
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <div class="title">Upload binaries instead of sources</div>
@@ -1467,7 +1467,7 @@ To do so, add lines similar to the following to your <code>.elasticbeanstalk/con
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <div class="title">Reduce costs by setting the environment type</div>
@@ -1519,7 +1519,7 @@ If there is a <a href="https://boxfuse.com/docs/commandline/#configuration"><cod
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">By default, Boxfuse activates a Spring profile named <code>boxfuse</code> on startup.
@@ -1640,7 +1640,7 @@ This helps when installing and managing Spring Boot applications in common produ
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
+<i class="fa icon-caution" title="小心"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Fully executable jars work by embedding an extra script at the front of the file.
@@ -1655,7 +1655,7 @@ It is recommended that you make your jar or war fully executable only if you int
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
+<i class="fa icon-caution" title="小心"></i>
 </td>
 <td class="content">
 <p translation-origin="off">A zip64-format jar file cannot be made fully executable.
@@ -1748,7 +1748,7 @@ For example, on a Debian-based system, you could start it with the following com
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If your application fails to start, check the log file written to <code>/var/log/&lt;appname&gt;.log</code> for errors.</p>
@@ -1771,7 +1771,7 @@ For example, on Debian, you could use the following command:</p>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The following is a set of guidelines on how to secure a Spring Boot application that runs as an init.d service.
@@ -1798,7 +1798,7 @@ Instead, create a specific user to run your application and set the <code>RUN_AS
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">To reduce the chances of the application’s user account being compromised, you should consider preventing it from using a login shell.
@@ -1871,7 +1871,7 @@ WantedBy=multi-user.target</pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-important" title="Important"></i>
+<i class="fa icon-important" title="重要"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Remember to change the <code>Description</code>, <code>User</code>, and <code>ExecStart</code> fields for your application.</p>
@@ -1883,7 +1883,7 @@ WantedBy=multi-user.target</pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The <code>ExecStart</code> field does not declare the script action command, which means that the <code>run</code> command is used by default.</p>
@@ -2154,7 +2154,7 @@ If it is not a symlink or you want to explicitly set the app name, this can be u
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The <code>PID_FOLDER</code>, <code>LOG_FOLDER</code>, and <code>LOG_FILENAME</code> variables are only valid for an <code>init.d</code> service.
@@ -2180,7 +2180,7 @@ LOG_FOLDER=/custom/log/folder</pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If you do not like having the config file next to the jar file, you can set a <code>CONF_FOLDER</code> environment variable to customize the location of the config file.</p>
@@ -2221,7 +2221,7 @@ Since Spring Boot is so amenable to cloud-based deployment, you can freely consi
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-20 14:11:26 UTC
+最后更新于 2022-01-20 14:11:26 UTC
 </div>
 </div>
 </div>

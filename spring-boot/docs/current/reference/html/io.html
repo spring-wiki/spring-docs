@@ -949,7 +949,7 @@
 <div id="banner" class="contained" role="banner">
 <div id="switch-theme">
 <input type="checkbox" id="switch-theme-checkbox">
-<label for="switch-theme-checkbox">Dark Theme</label>
+<label for="switch-theme-checkbox">暗黑模式</label>
 </div>
 </div>
 </div>
@@ -964,8 +964,8 @@
 <div id="header">
 <h1 translation-origin="off">IO</h1>
 <div id="toc" class="toc2">
-<div id="toctitle">Table of Contents</div>
-<span id="back-to-index"><a href="index.html">Back to index</a></span><ul class="sectlevel1">
+<div id="toctitle">目录</div>
+<span id="back-to-index"><a href="index.html">返回索引页</a></span><ul class="sectlevel1">
 <li>
   <p translation-origin="off"><a href="io.html#io.caching">1. Caching</a></p>
 <ul class="sectlevel2">
@@ -1097,7 +1097,7 @@ Spring Boot auto-configures the cache infrastructure as long as caching support 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Check the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/integration.html#cache">relevant section</a> of the Spring Framework reference for more details.</p>
@@ -1135,7 +1135,7 @@ Otherwise, the method is invoked, and the cache is updated before returning the 
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
+<i class="fa icon-caution" title="小心"></i>
 </td>
 <td class="content">
 <p translation-origin="off">You can also use the standard JSR-107 (JCache) annotations (such as <code>@CacheResult</code>) transparently.
@@ -1156,7 +1156,7 @@ Some offer a way to customize the default caches defined by the <code>spring.cac
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">It is also possible to transparently <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/integration.html#cache-annotations-put">update</a> or <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/integration.html#cache-annotations-evict">evict</a> data from the cache.</p>
@@ -1207,7 +1207,7 @@ Some offer a way to customize the default caches defined by the <code>spring.cac
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">It is also possible to <em>force</em> a particular cache provider by setting the <code>spring.cache.type</code> property.
@@ -1220,7 +1220,7 @@ Use this property if you need to <a href="io.html#io.caching.provider.none">disa
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Use the <code>spring-boot-starter-cache</code> “Starter” to quickly add basic caching dependencies.
@@ -1257,7 +1257,7 @@ public class MyCacheManagerConfiguration {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">In the preceding example, an auto-configured <code>ConcurrentMapCacheManager</code> is expected.
@@ -1286,7 +1286,8 @@ Any other compliant library can be added as well.</p>
 Even if the JSR-107 standard does not enforce a standardized way to define the location of the configuration file, Spring Boot does its best to accommodate setting a cache with implementation details, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties"># Only necessary if more than one provider is present
 spring.cache.jcache.provider=com.example.MyCachingProvider
@@ -1308,7 +1309,7 @@ spring:
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">When a cache library offers both a native implementation and JSR-107 support, Spring Boot prefers the JSR-107 support, so that the same features are available if you switch to a different JSR-107 implementation.</p>
@@ -1320,7 +1321,7 @@ spring:
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Spring Boot has <a href="io.html#io.hazelcast">general support for Hazelcast</a>.
@@ -1347,7 +1348,7 @@ If a custom <code>javax.cache.configuration.Configuration</code> bean is defined
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">If a standard <code>javax.cache.CacheManager</code> bean is defined, it is wrapped automatically in an <code>org.springframework.cache.CacheManager</code> implementation that the abstraction expects.
@@ -1365,7 +1366,8 @@ If EhCache 2.x is found, the <code>EhCacheCacheManager</code> provided by the <c
 An alternate configuration file can be provided as well, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.cache.ehcache.config=classpath:config/another-config.xml</code></pre>
 </div>
@@ -1394,7 +1396,8 @@ If a <code>HazelcastInstance</code> has been auto-configured, it is automaticall
 Otherwise, the default bootstrap is used.</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.cache.infinispan.config=infinispan.xml</code></pre>
 </div>
@@ -1416,7 +1419,7 @@ If a custom <code>ConfigurationBuilder</code> bean is defined, it is used to cus
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">The support of Infinispan in Spring Boot is restricted to the embedded mode and is quite basic.
@@ -1435,7 +1438,8 @@ It is possible to create additional caches on startup by setting the <code>sprin
 For instance, the following configuration creates <code>cache1</code> and <code>cache2</code> caches with an entry <em>expiration</em> of 10 minutes:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.cache.cache-names=cache1,cache2
 spring.cache.couchbase.expiration=10m</code></pre>
@@ -1490,7 +1494,8 @@ It is possible to create additional caches on startup by setting the <code>sprin
 For instance, the following configuration creates <code>cache1</code> and <code>cache2</code> caches with a <em>time to live</em> of 10 minutes:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.cache.cache-names=cache1,cache2
 spring.cache.redis.time-to-live=10m</code></pre>
@@ -1510,7 +1515,7 @@ spring.cache.redis.time-to-live=10m</code></pre>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">By default, a key prefix is added so that, if two separate caches use the same key, Redis does not have overlapping keys and cannot return invalid values.
@@ -1523,7 +1528,7 @@ We strongly recommend keeping this setting enabled if you create your own <code>
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">You can take full control of the default configuration by adding a <code>RedisCacheConfiguration</code> <code>@Bean</code> of your own.
@@ -1587,7 +1592,8 @@ Caches can be created on startup by setting the <code>spring.cache.cache-names</
 <p translation-origin="off">For instance, the following configuration creates <code>cache1</code> and <code>cache2</code> caches with a maximum size of 500 and a <em>time to live</em> of 10 minutes</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.cache.cache-names=cache1,cache2
 spring.cache.caffeine.spec=maximumSize=500,expireAfterAccess=600s</code></pre>
@@ -1618,7 +1624,8 @@ By default, caches are created as needed, but you can restrict the list of avail
 For instance, if you want only <code>cache1</code> and <code>cache2</code> caches, set the <code>cache-names</code> property as follows:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.cache.cache-names=cache1,cache2</code></pre>
 </div>
@@ -1643,7 +1650,8 @@ This is similar to the way the "real" cache providers behave if you use an undec
 If you need to disable caching altogether in certain environments, force the cache type to <code>none</code> to use a no-op implementation, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.cache.type=none</code></pre>
 </div>
@@ -1692,7 +1700,7 @@ If you need to disable caching altogether in certain environments, force the cac
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Spring Boot supports both Hazelcast 4 and Hazelcast 3.
@@ -1710,7 +1718,8 @@ If your configuration defines an instance name, Spring Boot tries to locate an e
 <p translation-origin="off">You could also specify the Hazelcast configuration file to use through configuration, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.hazelcast.config=classpath:config/my-hazelcast.xml</code></pre>
 </div>
@@ -1732,7 +1741,7 @@ See the <a href="https://docs.hazelcast.org/docs/latest/manual/html-single/">Haz
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">Spring Boot also has <a href="io.html#io.caching.provider.hazelcast">explicit caching support for Hazelcast</a>.
@@ -1772,7 +1781,8 @@ If Quartz is available, a <code>Scheduler</code> is auto-configured (through the
 However, it is possible to configure a JDBC-based store if a <code>DataSource</code> bean is available in your application and if the <code>spring.quartz.job-store-type</code> property is configured accordingly, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.quartz.job-store-type=jdbc</code></pre>
 </div>
@@ -1789,7 +1799,8 @@ However, it is possible to configure a JDBC-based store if a <code>DataSource</c
 <p translation-origin="off">When the JDBC store is used, the schema can be initialized on startup, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.quartz.jdbc.initialize-schema=always</code></pre>
 </div>
@@ -1807,7 +1818,7 @@ However, it is possible to configure a JDBC-based store if a <code>DataSource</c
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
+<i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
 <p translation-origin="off">By default, the database is detected and initialized by using the standard scripts provided with the Quartz library.
@@ -1834,7 +1845,7 @@ Advanced Quartz configuration properties can be customized using <code>spring.qu
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">In particular, an <code>Executor</code> bean is not associated with the scheduler as Quartz offers a way to configure the scheduler through <code>spring.quartz.properties</code>.
@@ -1893,7 +1904,7 @@ import org.springframework.scheduling.quartz.QuartzJobBean;
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off">See the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/integration.html#mail">reference documentation</a> for a detailed explanation of how you can use <code>JavaMailSender</code>.</p>
@@ -1910,7 +1921,8 @@ See <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-b
 <p translation-origin="off">In particular, certain default timeout values are infinite, and you may want to change that to avoid having a thread blocked by an unresponsive mail server, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.mail.properties[mail.smtp.connectiontimeout]=5000
 spring.mail.properties[mail.smtp.timeout]=3000
@@ -1932,7 +1944,8 @@ spring.mail.properties[mail.smtp.writetimeout]=5000</code></pre>
 <p translation-origin="off">It is also possible to configure a <code>JavaMailSender</code> with an existing <code>Session</code> from JNDI:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.mail.jndi-name=mail/Session</code></pre>
 </div>
@@ -2031,7 +2044,7 @@ public class MyService {
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
 <p translation-origin="off"><code>RestTemplateBuilder</code> includes a number of useful methods that can be used to quickly configure a <code>RestTemplate</code>.
@@ -2230,7 +2243,8 @@ In that case, no auto-configuration or <code>WebClientCustomizer</code> is appli
 To do so, configure their location, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
-<div class="title">Properties</div>
+<div class="title" translation-result="on">属性</div>
+<div class="title" translation-origin="off">Properties</div>
 <div class="content">
 <pre class="highlight"><code class="language-properties" data-lang="properties">spring.webservices.wsdl-locations=classpath:/wsdl</code></pre>
 </div>
@@ -2342,7 +2356,7 @@ See the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springfra
 <table>
 <tbody><tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
 <p translation-origin="off">To ensure that multiple transaction managers can safely coordinate the same resource managers, each Atomikos instance must be configured with a unique ID.
@@ -2431,7 +2445,7 @@ You can read about <a href="container-images.html#container-images">building con
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-20 14:11:26 UTC
+最后更新于 2022-01-20 14:11:26 UTC
 </div>
 </div>
 </div>
