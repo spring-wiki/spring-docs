@@ -1424,7 +1424,7 @@
   <p translation-origin="off"><a href="howto.html#howto.actuator.sanitize-sensitive-values">12.3. Sanitize Sensitive Values</a></p>
 </li>
 <li>
-  <p translation-result="on"><a href="howto.html#howto.actuator.map-health-indicators-to-metrics">12.4. 将健康指标映射到千分尺指标</a></p>
+  <p translation-result="on"><a href="howto.html#howto.actuator.map-health-indicators-to-metrics">12.4. 将健康度量映射到千分尺度量</a></p>
   <p translation-origin="off"><a href="howto.html#howto.actuator.map-health-indicators-to-metrics">12.4. Map Health Indicators to Micrometer Metrics</a></p>
 </li>
 </ul>
@@ -3325,7 +3325,7 @@ public class MyLegacyCookieProcessorConfiguration {
 <h3 id="howto.webserver.enable-tomcat-mbean-registry" translation-result="on"><a href="howto.html#howto.webserver.enable-tomcat-mbean-registry"></a>3.15. 启用 Tomcat 的 MBean 注册表</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.webserver.enable-tomcat-mbean-registry"></a>3.15. Enable Tomcat’s MBean Registry</h3>
 <div class="paragraph">
-<p translation-result="on">默认情况下禁用嵌入式 Tomcat 的 MBean 注册表。这最大限度地减少了 Tomcat 的内存占用。例如，如果要使用 Tomcat 的 MBean，以便 Micrometer 可以用它们来公开指标，则必须使用 <code>server.tomcat.mbeanregistry.enabled</code> 属性来执行此操作，如下例所示：</p>
+<p translation-result="on">默认情况下禁用嵌入式 Tomcat 的 MBean 注册表。这最大限度地减少了 Tomcat 的内存占用。例如，如果要使用 Tomcat 的 MBean，以便 Micrometer 可以用它们来公开度量，则必须使用 <code>server.tomcat.mbeanregistry.enabled</code> 属性来执行此操作，如下例所示：</p>
 <p translation-origin="off">Embedded Tomcat’s MBean registry is disabled by default.
 This minimizes Tomcat’s memory footprint.
 If you want to use Tomcat’s MBeans, for example so that they can be used by Micrometer to expose metrics, you must use the <code>server.tomcat.mbeanregistry.enabled</code> property to do so, as shown in the following example:</p>
@@ -5929,10 +5929,10 @@ Alternatively, additional patterns can be configured using <code>management.endp
 </div>
 </div>
 <div class="sect2">
-<h3 id="howto.actuator.map-health-indicators-to-metrics" translation-result="on"><a href="howto.html#howto.actuator.map-health-indicators-to-metrics"></a>12.4. 将健康指标映射到千分尺指标</h3>
+<h3 id="howto.actuator.map-health-indicators-to-metrics" translation-result="on"><a href="howto.html#howto.actuator.map-health-indicators-to-metrics"></a>12.4. 将健康度量映射到千分尺度量</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.actuator.map-health-indicators-to-metrics"></a>12.4. Map Health Indicators to Micrometer Metrics</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 健康指标返回一个 <code>Status</code> 类型来指示整个系统的健康状况。如果你想监控或提醒特定应用程序的健康水平，你可以用 Micrometer 将这些状态导出为指标。默认情况下，Spring Boot 使用状态码“UP”、“DOWN”、“OUT_OF_SERVICE”和“UNKNOWN”。要导出这些，你需要将这些状态转换为一组数字，以便它们可以与 Micrometer <code>Gauge</code> 一起使用。</p>
+<p translation-result="on">Spring Boot 健康度量返回一个 <code>Status</code> 类型来指示整个系统的健康状况。如果你想监控或提醒特定应用程序的健康水平，你可以用 Micrometer 将这些状态导出为度量。默认情况下，Spring Boot 使用状态码“UP”、“DOWN”、“OUT_OF_SERVICE”和“UNKNOWN”。要导出这些，你需要将这些状态转换为一组数字，以便它们可以与 Micrometer <code>Gauge</code> 一起使用。</p>
 <p translation-origin="off">Spring Boot health indicators return a <code>Status</code> type to indicate the overall system health.
 If you want to monitor or alert on levels of health for a particular application, you can export these statuses as metrics with Micrometer.
 By default, the status codes “UP”, “DOWN”, “OUT_OF_SERVICE” and “UNKNOWN” are used by Spring Boot.

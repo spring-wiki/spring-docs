@@ -2054,7 +2054,7 @@ public class MyControllerAdvice extends ResponseEntityExceptionHandler {
 <p translation-origin="off">In the preceding example, if <code>YourException</code> is thrown by a controller defined in the same package as <code>SomeController</code>, a JSON representation of the <code>CustomErrorType</code> POJO is used instead of the <code>ErrorAttributes</code> representation.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">在某些情况下，在控制器级别处理的错误不会被<a href="actuator.html#actuator.metrics.supported.spring-mvc">度量基础设施</a>记录。应用程序可以通过将处理的异常设置为请求属性来确保将此类异常与请求指标一起记录：</p>
+<p translation-result="on">在某些情况下，在控制器级别处理的错误不会被<a href="actuator.html#actuator.metrics.supported.spring-mvc">度量基础设施</a>记录。应用程序可以通过将处理的异常设置为请求属性来确保将此类异常与请求度量一起记录：</p>
 <p translation-origin="off">In some cases, errors handled at the controller level are not recorded by the <a href="actuator.html#actuator.metrics.supported.spring-mvc">metrics infrastructure</a>.
 Applications can ensure that such exceptions are recorded with the request metrics by setting the handled exception as a request attribute:</p>
 </div>
@@ -3258,7 +3258,7 @@ public class MyErrorWebExceptionHandler extends AbstractErrorWebExceptionHandler
 <p translation-origin="off">For a more complete picture, you can also subclass <code>DefaultErrorWebExceptionHandler</code> directly and override specific methods.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">在某些情况下，在控制器或处理程序功能级别处理的错误不会被<a href="actuator.html#actuator.metrics.supported.spring-webflux">度量基础设施</a>记录。应用程序可以通过将处理的异常设置为请求属性来确保将此类异常与请求指标一起记录：</p>
+<p translation-result="on">在某些情况下，在控制器或处理程序功能级别处理的错误不会被<a href="actuator.html#actuator.metrics.supported.spring-webflux">度量基础设施</a>记录。应用程序可以通过将处理的异常设置为请求属性来确保将此类异常与请求度量一起记录：</p>
 <p translation-origin="off">In some cases, errors handled at the controller or handler function level are not recorded by the <a href="actuator.html#actuator.metrics.supported.spring-webflux">metrics infrastructure</a>.
 Applications can ensure that such exceptions are recorded with the request metrics by setting the handled exception as a request attribute:</p>
 </div>
