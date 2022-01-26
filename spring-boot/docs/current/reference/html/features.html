@@ -5446,7 +5446,7 @@ The following table summarizes the features that are supported by <code>@Configu
 <td class="tableblock halign-left valign-top"><p translation-result="on">不</p><p class="tableblock" translation-origin="off">No</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p translation-result="on"><code>SpEL</code> 评估</p><p class="tableblock" translation-origin="off"><code>SpEL</code> evaluation</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on"><code>SpEL</code> 估算</p><p class="tableblock" translation-origin="off"><code>SpEL</code> evaluation</p></td>
 <td class="tableblock halign-left valign-top"><p translation-result="on">不</p><p class="tableblock" translation-origin="off">No</p></td>
 <td class="tableblock halign-left valign-top"><p translation-result="on">是的</p><p class="tableblock" translation-origin="off">Yes</p></td>
 </tr>
@@ -5474,7 +5474,7 @@ If you used <code>@Value("{demo.itemPrice}")</code> instead, <code>demo.item-pri
 Doing so will provide you with structured, type-safe object that you can inject into your own beans.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">在解析这些文件和填充环境时，不会处理来自<a href="features.html#features.external-config.files">应用程序属性文件</a>的 <code>SpEL</code> 表达式。但是，可以在 <code>@Value</code> 中编写 <code>SpEL</code> 表达式。如果应用程序属性文件中的属性值是 <code>SpEL</code> 表达式，则将在通过 <code>@Value</code> 使用时对其进行评估。</p>
+<p translation-result="on">在解析这些文件和填充环境时，不会处理来自<a href="features.html#features.external-config.files">应用程序属性文件</a>的 <code>SpEL</code> 表达式。但是，可以在 <code>@Value</code> 中编写 <code>SpEL</code> 表达式。如果应用程序属性文件中的属性值是 <code>SpEL</code> 表达式，则将在通过 <code>@Value</code> 使用时对其进行估算。</p>
 <p translation-origin="off"><code>SpEL</code> expressions from <a href="features.html#features.external-config.files">application property files</a> are not processed at time of parsing these files and populating the environment.
 However, it is possible to write a <code>SpEL</code> expression in <code>@Value</code>.
 If the value of a property from an application property file is a <code>SpEL</code> expression, it will be evaluated when consumed through <code>@Value</code>.</p>
@@ -9812,7 +9812,7 @@ public class MyAutoConfiguration {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">你需要非常小心添加 bean 定义的顺序，因为这些条件是根据到目前为止已处理的内容进行评估的。出于这个原因，我们建议在自动配置类上仅使用 <code>@ConditionalOnBean</code> 和 <code>@ConditionalOnMissingBean</code> 注解（因为它们保证在添加任何用户定义的 bean 定义后加载）。</p>
+<p translation-result="on">你需要非常小心添加 bean 定义的顺序，因为这些条件是根据到目前为止已处理的内容进行估算的。出于这个原因，我们建议在自动配置类上仅使用 <code>@ConditionalOnBean</code> 和 <code>@ConditionalOnMissingBean</code> 注解（因为它们保证在添加任何用户定义的 bean 定义后加载）。</p>
 <p translation-origin="off">You need to be very careful about the order in which bean definitions are added, as these conditions are evaluated based on what has been processed so far.
 For this reason, we recommend using only <code>@ConditionalOnBean</code> and <code>@ConditionalOnMissingBean</code> annotations on auto-configuration classes (since these are guaranteed to load after any user-defined bean definitions have been added).</p>
 </td>
@@ -9840,7 +9840,7 @@ The only difference between using these conditions at the class level and markin
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">声明 <code>@Bean</code> 方法时，在方法的返回类型中提供尽可能多的类型信息。例如，如果你的 bean 的具体类实现了一个接口，那么 bean 方法的返回类型应该是具体类而不是接口。在使用 bean 条件时，在 <code>@Bean</code> 方法中提供尽可能多的类型信息尤其重要，因为它们的评估只能依赖于方法签名中可用的类型信息。</p>
+<p translation-result="on">声明 <code>@Bean</code> 方法时，在方法的返回类型中提供尽可能多的类型信息。例如，如果你的 bean 的具体类实现了一个接口，那么 bean 方法的返回类型应该是具体类而不是接口。在使用 bean 条件时，在 <code>@Bean</code> 方法中提供尽可能多的类型信息尤其重要，因为它们的估算只能依赖于方法签名中可用的类型信息。</p>
 <p translation-origin="off">When declaring a <code>@Bean</code> method, provide as much type information as possible in the method’s return type.
 For example, if your bean’s concrete class implements an interface the bean method’s return type should be the concrete class and not the interface.
 Providing as much type information as possible in <code>@Bean</code> methods is particularly important when using bean conditions as their evaluation can only rely upon to type information that is available in the method signature.</p>
@@ -9897,7 +9897,7 @@ This condition will not match for applications that are run with an embedded ser
 <h3 id="features.developing-auto-configuration.testing" translation-result="on"><a href="features.html#features.developing-auto-configuration.testing"></a>9.4. 测试你的自动配置</h3>
 <h3 translation-origin="off"><a class="anchor" href="features.html#features.developing-auto-configuration.testing"></a>9.4. Testing your Auto-configuration</h3>
 <div class="paragraph">
-<p translation-result="on">自动配置会受到许多因素的影响：用户配置（ <code>@Bean</code> 定义和 <code>Environment</code> 自定义）、条件评估（特定库的存在）等。具体来说，每个测试都应该创建一个定义良好的 <code>ApplicationContext</code> 来表示这些定制的组合。<code>ApplicationContextRunner</code> 提供了一个很好的方法来实现这一点。</p>
+<p translation-result="on">自动配置会受到许多因素的影响：用户配置（ <code>@Bean</code> 定义和 <code>Environment</code> 自定义）、条件估算（特定库的存在）等。具体来说，每个测试都应该创建一个定义良好的 <code>ApplicationContext</code> 来表示这些定制的组合。<code>ApplicationContextRunner</code> 提供了一个很好的方法来实现这一点。</p>
 <p translation-origin="off">An auto-configuration can be affected by many factors: user configuration (<code>@Bean</code> definition and <code>Environment</code> customization), condition evaluation (presence of a particular library), and others.
 Concretely, each test should create a well defined <code>ApplicationContext</code> that represents a combination of those customizations.
 <code>ApplicationContextRunner</code> provides a great way to achieve that.</p>

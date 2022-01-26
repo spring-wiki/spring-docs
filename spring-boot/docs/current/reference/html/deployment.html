@@ -1960,7 +1960,7 @@ One way to protect against this is to make it immutable by using <code>chattr</c
 <p translation-origin="off">This will prevent any user, including root, from modifying the jar.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果 root 用于控制应用程序的服务，并且你<a href="deployment.html#deployment.installing.nix-services.script-customization.when-running.conf-file">使用 <code>.conf</code> 文件</a>来自定义其启动，则 <code>.conf</code> 文件由 root 用户读取和评估。它应该得到相应的保护。使用 <code>chmod</code> 使文件只能由所有者读取，并使用 <code>chown</code> 使 root 成为所有者，如下例所示：</p>
+<p translation-result="on">如果 root 用于控制应用程序的服务，并且你<a href="deployment.html#deployment.installing.nix-services.script-customization.when-running.conf-file">使用 <code>.conf</code> 文件</a>来自定义其启动，则 <code>.conf</code> 文件由 root 用户读取和估算。它应该得到相应的保护。使用 <code>chmod</code> 使文件只能由所有者读取，并使用 <code>chown</code> 使 root 成为所有者，如下例所示：</p>
 <p translation-origin="off">If root is used to control the application’s service and you <a href="deployment.html#deployment.installing.nix-services.script-customization.when-running.conf-file">use a <code>.conf</code> file</a> to customize its startup, the <code>.conf</code> file is read and evaluated by the root user.
 It should be secured accordingly.
 Use <code>chmod</code> so that the file can only be read by the owner and use <code>chown</code> to make root the owner, as shown in the following example:</p>
