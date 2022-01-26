@@ -2202,7 +2202,7 @@ This takes precedence to anything that is applied by the auto-configuration.</p>
 <h3 id="data.sql.r2dbc" translation-result="on"><a href="data.html#data.sql.r2dbc"></a>1.7. 使用 R2DBC</h3>
 <h3 translation-origin="off"><a class="anchor" href="data.html#data.sql.r2dbc"></a>1.7. Using R2DBC</h3>
 <div class="paragraph">
-<p translation-result="on">反应式关系数据库连接 ( <a href="https://r2dbc.io">R2DBC</a> ) 项目将反应式编程 API 引入关系数据库。R2DBC 的 <code>io.r2dbc.spi.Connection</code> 提供了一种使用非阻塞数据库连接的标准方法。连接是通过使用 <code>ConnectionFactory</code> 提供的，类似于带有 jdbc 的 <code>DataSource</code> 。</p>
+<p translation-result="on">响应式关系数据库连接 ( <a href="https://r2dbc.io">R2DBC</a> ) 项目将响应式编程 API 引入关系数据库。R2DBC 的 <code>io.r2dbc.spi.Connection</code> 提供了一种使用非阻塞数据库连接的标准方法。连接是通过使用 <code>ConnectionFactory</code> 提供的，类似于带有 jdbc 的 <code>DataSource</code> 。</p>
 <p translation-origin="off">The Reactive Relational Database Connectivity (<a href="https://r2dbc.io">R2DBC</a>) project brings reactive programming APIs to relational databases.
 R2DBC’s <code>io.r2dbc.spi.Connection</code> provides a standard method of working with non-blocking database connections.
 Connections are provided by using a <code>ConnectionFactory</code>, similar to a <code>DataSource</code> with jdbc.</p>
@@ -2327,7 +2327,7 @@ public class MyPostgresR2dbcConfiguration {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">当 <code>ConnectionFactory</code> bean 可用时，常规的 JDBC <code>DataSource</code> 自动配置会退出。如果你想保留 JDBC <code>DataSource</code> 自动配置，并且对在反应式应用程序中使用阻塞 JDBC API 的风险感到满意，请在应用程序的 <code>@Configuration</code> 类上添加 <code>@Import(DataSourceAutoConfiguration.class)</code> 以重新启用它.</p>
+<p translation-result="on">当 <code>ConnectionFactory</code> bean 可用时，常规的 JDBC <code>DataSource</code> 自动配置会退出。如果你想保留 JDBC <code>DataSource</code> 自动配置，并且对在响应式应用程序中使用阻塞 JDBC API 的风险感到满意，请在应用程序的 <code>@Configuration</code> 类上添加 <code>@Import(DataSourceAutoConfiguration.class)</code> 以重新启用它.</p>
 <p translation-origin="off">When a <code>ConnectionFactory</code> bean is available, the regular JDBC <code>DataSource</code> auto-configuration backs off.
 If you want to retain the JDBC <code>DataSource</code> auto-configuration, and are comfortable with the risk of using the blocking JDBC API in a reactive application, add <code>@Import(DataSourceAutoConfiguration.class)</code> on a <code>@Configuration</code> class in your application to re-enable it.</p>
 </div>
@@ -2511,7 +2511,7 @@ See the appropriate reference documentation at <a href="https://spring.io/projec
 Spring Boot offers basic auto-configuration for the <a href="https://github.com/lettuce-io/lettuce-core/">Lettuce</a> and <a href="https://github.com/xetorthio/jedis/">Jedis</a> client libraries and the abstractions on top of them provided by <a href="https://github.com/spring-projects/spring-data-redis">Spring Data Redis</a>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">有一个 <code>spring-boot-starter-data-redis</code> “Starter” 用于以方便的方式收集依赖项。默认情况下，它使用 <a href="https://github.com/lettuce-io/lettuce-core/">Lettuce</a> 。该启动器同时处理传统和反应式应用程序。</p>
+<p translation-result="on">有一个 <code>spring-boot-starter-data-redis</code> “Starter” 用于以方便的方式收集依赖项。默认情况下，它使用 <a href="https://github.com/lettuce-io/lettuce-core/">Lettuce</a> 。该启动器同时处理传统和响应式应用程序。</p>
 <p translation-origin="off">There is a <code>spring-boot-starter-data-redis</code> “Starter” for collecting the dependencies in a convenient way.
 By default, it uses <a href="https://github.com/lettuce-io/lettuce-core/">Lettuce</a>.
 That starter handles both traditional and reactive applications.</p>
@@ -3275,7 +3275,7 @@ public class MyBean {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">在存在 <code>spring-data-elasticsearch</code> 和使用 <code>WebClient</code> 所需的依赖项（通常是 <code>spring-boot-starter-webflux</code> ）的情况下，Spring Boot 还可以将 <a href="features.html#data.nosql.elasticsearch.connecting-using-rest.webclient">ReactiveElasticsearchClient</a> 和 <code>ReactiveElasticsearchTemplate</code> 自动配置为 bean。它们是其他 REST 客户端的反应式等价物。</p>
+<p translation-result="on">在存在 <code>spring-data-elasticsearch</code> 和使用 <code>WebClient</code> 所需的依赖项（通常是 <code>spring-boot-starter-webflux</code> ）的情况下，Spring Boot 还可以将 <a href="features.html#data.nosql.elasticsearch.connecting-using-rest.webclient">ReactiveElasticsearchClient</a> 和 <code>ReactiveElasticsearchTemplate</code> 自动配置为 bean。它们是其他 REST 客户端的响应式等价物。</p>
 <p translation-origin="off">In the presence of <code>spring-data-elasticsearch</code> and the required dependencies for using a <code>WebClient</code> (typically <code>spring-boot-starter-webflux</code>), Spring Boot can also auto-configure a <a href="features.html#data.nosql.elasticsearch.connecting-using-rest.webclient">ReactiveElasticsearchClient</a> and a <code>ReactiveElasticsearchTemplate</code> as beans.
 They are the reactive equivalent of the other REST clients.</p>
 </div>
@@ -3307,7 +3307,7 @@ You could take the JPA example from earlier and, assuming that <code>City</code>
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 使用 <code>ElasticsearchRestTemplate</code> 或 <code>ReactiveElasticsearchTemplate</code> bean 支持经典和反应式 Elasticsearch 存储库。鉴于存在所需的依赖项，这些 bean 很可能是由 Spring Boot 自动配置的。</p>
+<p translation-result="on">Spring Boot 使用 <code>ElasticsearchRestTemplate</code> 或 <code>ReactiveElasticsearchTemplate</code> bean 支持经典和响应式 Elasticsearch 存储库。鉴于存在所需的依赖项，这些 bean 很可能是由 Spring Boot 自动配置的。</p>
 <p translation-origin="off">Spring Boot supports both classic and reactive Elasticsearch repositories, using the <code>ElasticsearchRestTemplate</code> or <code>ReactiveElasticsearchTemplate</code> beans.
 Most likely those beans are auto-configured by Spring Boot given the required dependencies are present.</p>
 </div>

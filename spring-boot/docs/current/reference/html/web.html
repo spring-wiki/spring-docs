@@ -1094,7 +1094,7 @@
 </ul>
 </li>
 <li>
-  <p translation-result="on"><a href="web.html#web.reactive">2. 反应式 Web 应用程序</a></p>
+  <p translation-result="on"><a href="web.html#web.reactive">2. 响应式 Web 应用程序</a></p>
   <p translation-origin="off"><a href="web.html#web.reactive">2. Reactive Web Applications</a></p>
 <ul class="sectlevel2">
 <li>
@@ -1138,11 +1138,11 @@
 </ul>
 </li>
 <li>
-  <p translation-result="on"><a href="web.html#web.reactive.reactive-server">2.2. 嵌入式反应式服务器支持</a></p>
+  <p translation-result="on"><a href="web.html#web.reactive.reactive-server">2.2. 嵌入式响应式服务器支持</a></p>
   <p translation-origin="off"><a href="web.html#web.reactive.reactive-server">2.2. Embedded Reactive Server Support</a></p>
 </li>
 <li>
-  <p translation-result="on"><a href="web.html#web.reactive.reactive-server-resources-configuration">2.3. 反应式服务器资源配置</a></p>
+  <p translation-result="on"><a href="web.html#web.reactive.reactive-server-resources-configuration">2.3. 响应式服务器资源配置</a></p>
   <p translation-origin="off"><a href="web.html#web.reactive.reactive-server-resources-configuration">2.3. Reactive Server Resources Configuration</a></p>
 </li>
 </ul>
@@ -1216,7 +1216,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot 非常适合 Web 应用程序开发。你可以使用嵌入式 Tomcat、Jetty、Undertow 或 Netty 创建一个自包含的 HTTP 服务器。大多数 Web 应用程序使用 <code>spring-boot-starter-web</code> 模块来快速启动和运行。你还可以选择使用 <code>spring-boot-starter-webflux</code> 模块构建反应式 Web 应用程序。</p>
+<p translation-result="on">Spring Boot 非常适合 Web 应用程序开发。你可以使用嵌入式 Tomcat、Jetty、Undertow 或 Netty 创建一个自包含的 HTTP 服务器。大多数 Web 应用程序使用 <code>spring-boot-starter-web</code> 模块来快速启动和运行。你还可以选择使用 <code>spring-boot-starter-webflux</code> 模块构建响应式 Web 应用程序。</p>
 <p translation-origin="off">Spring Boot is well suited for web application development.
 You can create a self-contained HTTP server by using embedded Tomcat, Jetty, Undertow, or Netty.
 Most web applications use the <code>spring-boot-starter-web</code> module to get up and running quickly.
@@ -2751,7 +2751,7 @@ JSPs are not supported when using an executable jar.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="web.reactive" translation-result="on"><a href="web.html#web.reactive"></a>2. 反应式 Web 应用程序</h2>
+<h2 id="web.reactive" translation-result="on"><a href="web.html#web.reactive"></a>2. 响应式 Web 应用程序</h2>
 <h2 translation-origin="off"><a class="anchor" href="web.html#web.reactive"></a>2. Reactive Web Applications</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -3384,7 +3384,7 @@ When it does so, the orders shown in the following table will be used:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="web.reactive.reactive-server" translation-result="on"><a href="web.html#web.reactive.reactive-server"></a>2.2. 嵌入式反应式服务器支持</h3>
+<h3 id="web.reactive.reactive-server" translation-result="on"><a href="web.html#web.reactive.reactive-server"></a>2.2. 嵌入式响应式服务器支持</h3>
 <h3 translation-origin="off"><a class="anchor" href="web.html#web.reactive.reactive-server"></a>2.2. Embedded Reactive Server Support</h3>
 <div class="paragraph">
 <p translation-result="on">Spring Boot 包括对以下嵌入式响应式 Web 服务器的支持：Reactor Netty、Tomcat、Jetty 和 Undertow。大多数开发人员使用适当的“Starter”来获取完全配置的实例。默认情况下，嵌入式服务器在端口 8080 上侦听 HTTP 请求。</p>
@@ -3394,7 +3394,7 @@ By default, the embedded server listens for HTTP requests on port 8080.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="web.reactive.reactive-server-resources-configuration" translation-result="on"><a href="web.html#web.reactive.reactive-server-resources-configuration"></a>2.3. 反应式服务器资源配置</h3>
+<h3 id="web.reactive.reactive-server-resources-configuration" translation-result="on"><a href="web.html#web.reactive.reactive-server-resources-configuration"></a>2.3. 响应式服务器资源配置</h3>
 <h3 translation-origin="off"><a class="anchor" href="web.html#web.reactive.reactive-server-resources-configuration"></a>2.3. Reactive Server Resources Configuration</h3>
 <div class="paragraph">
 <p translation-result="on">当自动配置 Reactor Netty 或 Jetty 服务器时，Spring Boot 将创建特定的 bean，这些 bean 将为服务器实例提供 HTTP 资源： <code>ReactorResourceFactory</code> 或 <code>JettyResourceFactory</code> 。</p>
@@ -3432,7 +3432,7 @@ By default, the embedded server listens for HTTP requests on port 8080.</p>
 <h2 translation-origin="off"><a class="anchor" href="web.html#web.graceful-shutdown"></a>3. Graceful Shutdown</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">所有四个嵌入式 Web 服务器（Jetty、Reactor Netty、Tomcat 和 Undertow）以及反应式和基于 servlet 的 Web 应用程序都支持优雅关闭。它作为关闭应用程序上下文的一部分发生，并在停止 <code>SmartLifecycle</code> bean 的最早阶段执行。此停止处理使用超时提供宽限期，在此期间将允许完成现有请求，但不允许新请求。不允许新请求的确切方式因所使用的 Web 服务器而异。Jetty、Reactor Netty 和 Tomcat 将停止接受网络层的请求。Undertow 将接受请求，但会立即以服务不可用 (503) 响应进行响应。</p>
+<p translation-result="on">所有四个嵌入式 Web 服务器（Jetty、Reactor Netty、Tomcat 和 Undertow）以及响应式和基于 servlet 的 Web 应用程序都支持优雅关闭。它作为关闭应用程序上下文的一部分发生，并在停止 <code>SmartLifecycle</code> bean 的最早阶段执行。此停止处理使用超时提供宽限期，在此期间将允许完成现有请求，但不允许新请求。不允许新请求的确切方式因所使用的 Web 服务器而异。Jetty、Reactor Netty 和 Tomcat 将停止接受网络层的请求。Undertow 将接受请求，但会立即以服务不可用 (503) 响应进行响应。</p>
 <p translation-origin="off">Graceful shutdown is supported with all four embedded web servers (Jetty, Reactor Netty, Tomcat, and Undertow) and with both reactive and servlet-based web applications.
 It occurs as part of closing the application context and is performed in the earliest phase of stopping <code>SmartLifecycle</code> beans.
 This stop processing uses a timeout which provides a grace period during which existing requests will be allowed to complete but no new requests will be permitted.
@@ -3910,7 +3910,7 @@ This can be done using the <code>spring.security.oauth2.resourceserver.jwt.publi
 <p translation-origin="off">The same properties are applicable for both servlet and reactive applications.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">或者，你可以为 servlet 应用程序定义自己的 <code>JwtDecoder</code> bean，或为反应式应用程序定义 <code>ReactiveJwtDecoder</code> 。</p>
+<p translation-result="on">或者，你可以为 servlet 应用程序定义自己的 <code>JwtDecoder</code> bean，或为响应式应用程序定义 <code>ReactiveJwtDecoder</code> 。</p>
 <p translation-origin="off">Alternatively, you can define your own <code>JwtDecoder</code> bean for servlet applications or a <code>ReactiveJwtDecoder</code> for reactive applications.</p>
 </div>
 <div class="paragraph">
@@ -3944,7 +3944,7 @@ spring.security.oauth2.resourceserver.opaquetoken.client-secret=my-client-secret
 <p translation-origin="off">Again, the same properties are applicable for both servlet and reactive applications.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">或者，你可以为 servlet 应用程序定义自己的 <code>OpaqueTokenIntrospector</code> bean，或为反应式应用程序定义一个 <code>ReactiveOpaqueTokenIntrospector</code> 。</p>
+<p translation-result="on">或者，你可以为 servlet 应用程序定义自己的 <code>OpaqueTokenIntrospector</code> bean，或为响应式应用程序定义一个 <code>ReactiveOpaqueTokenIntrospector</code> 。</p>
 <p translation-origin="off">Alternatively, you can define your own <code>OpaqueTokenIntrospector</code> bean for servlet applications or a <code>ReactiveOpaqueTokenIntrospector</code> for reactive applications.</p>
 </div>
 </div>
@@ -4088,7 +4088,7 @@ When building a servlet web application, the following stores can be auto-config
 </ul>
 </div>
 <div class="paragraph">
-<p translation-result="on">反应式自动配置取代了使用 <code>@Enable*WebSession</code> 的需要。</p>
+<p translation-result="on">响应式自动配置取代了使用 <code>@Enable*WebSession</code> 的需要。</p>
 <p translation-origin="off">The reactive auto-configuration replaces the need to use <code>@Enable*WebSession</code>.</p>
 </div>
 <div class="paragraph">
