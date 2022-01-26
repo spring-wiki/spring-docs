@@ -980,7 +980,7 @@
   <p translation-origin="off"><a href="web.html#web.servlet.spring-mvc.auto-configuration">1.1.1. Spring MVC Auto-configuration</a></p>
 </li>
 <li>
-  <p translation-result="on"><a href="web.html#web.servlet.spring-mvc.message-converters">1.1.2。 HttpMessage转换器</a></p>
+  <p translation-result="on"><a href="web.html#web.servlet.spring-mvc.message-converters">1.1.2。 HttpMessage 转换器</a></p>
   <p translation-origin="off"><a href="web.html#web.servlet.spring-mvc.message-converters">1.1.2. HttpMessageConverters</a></p>
 </li>
 <li>
@@ -1292,7 +1292,7 @@ public class MyRestController {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring MVC 是核心 Spring Framework 的一部分，详细信息可在<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc">参考文档</a>中找到。 <a href="https://spring.io/guides">spring.io/guides</a>上还有一些涵盖 Spring MVC 的指南。</p>
+<p translation-result="on">Spring MVC 是核心 Spring Framework 的一部分，详细信息可在<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc">参考文档</a>中找到。 <a href="https://spring.io/guides">spring.io/guides</a> 上还有一些涵盖 Spring MVC 的指南。</p>
 <p translation-origin="off">Spring MVC is part of the core Spring Framework, and detailed information is available in the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc">reference documentation</a>.
 There are also several guides that cover Spring MVC available at <a href="https://spring.io/guides" class="bare">spring.io/guides</a>.</p>
 </div>
@@ -1340,7 +1340,7 @@ There are also several guides that cover Spring MVC available at <a href="https:
 </ul>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您想保留这些 Spring Boot MVC 自定义并进行更多<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc">MVC 自定义</a>（拦截器、格式化程序、视图控制器和其他功能），您可以添加自己的 <code>WebMvcConfigurer</code> 类型的 <code>@Configuration</code> 类，但<strong>不</strong><code>@EnableWebMvc</code> 。</p>
+<p translation-result="on">如果您想保留这些 Spring Boot MVC 自定义并进行更多 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc">MVC 自定义</a>（拦截器、格式化程序、视图控制器和其他功能），您可以添加自己的 <code>WebMvcConfigurer</code> 类型的 <code>@Configuration</code> 类，但<strong>不</strong><code>@EnableWebMvc</code> 。</p>
 <p translation-origin="off">If you want to keep those Spring Boot MVC customizations and make more <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc">MVC customizations</a> (interceptors, formatters, view controllers, and other features), you can add your own <code>@Configuration</code> class of type <code>WebMvcConfigurer</code> but <strong>without</strong> <code>@EnableWebMvc</code>.</p>
 </div>
 <div class="paragraph">
@@ -1374,7 +1374,7 @@ From this method you can register any converter that you like, or you can delega
 </div>
 </div>
 <div class="sect3">
-<h4 id="web.servlet.spring-mvc.message-converters" translation-result="on"><a href="web.html#web.servlet.spring-mvc.message-converters"></a>1.1.2。 HttpMessage转换器</h4>
+<h4 id="web.servlet.spring-mvc.message-converters" translation-result="on"><a href="web.html#web.servlet.spring-mvc.message-converters"></a>1.1.2。 HttpMessage 转换器</h4>
 <h4 translation-origin="off"><a class="anchor" href="web.html#web.servlet.spring-mvc.message-converters"></a>1.1.2. HttpMessageConverters</h4>
 <div class="paragraph">
 <p translation-result="on">Spring MVC 使用 <code>HttpMessageConverter</code> 接口来转换 HTTP 请求和响应。明智的默认设置是开箱即用的。例如，对象可以自动转换为 JSON（通过使用 Jackson 库）或 XML（通过使用 Jackson XML 扩展，如果可用，或者通过使用 JAXB，如果 Jackson XML 扩展不可用）。默认情况下，字符串以 <code>UTF-8</code> 编码。</p>
@@ -1582,7 +1582,7 @@ For instance, relocating all resources to <code>/resources/**</code> can be achi
 The root servlet context path, <code>"/"</code>, is automatically added as a location as well.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">除了前面提到的“标准”静态资源位置之外，还为<a href="https://www.webjars.org/">Webjars 内容</a>做了一个特殊情况。任何具有 <code>/webjars/**</code> 路径的资源如果以 Webjars 格式打包，则从 jar 文件中提供。</p>
+<p translation-result="on">除了前面提到的“标准”静态资源位置之外，还为 <a href="https://www.webjars.org/">Webjars 内容</a>做了一个特殊情况。任何具有 <code>/webjars/**</code> 路径的资源如果以 Webjars 格式打包，则从 jar 文件中提供。</p>
 <p translation-origin="off">In addition to the “standard” static resource locations mentioned earlier, a special case is made for <a href="https://www.webjars.org/">Webjars content</a>.
 Any resources with a path in <code>/webjars/**</code> are served from jar files if they are packaged in the Webjars format.</p>
 </div>
@@ -1741,7 +1741,7 @@ If either is found, it is automatically used as the welcome page of the applicat
 <p translation-origin="off">Spring MVC can map incoming HTTP requests to handlers by looking at the request path and matching it to the mappings defined in your application (for example, <code>@GetMapping</code> annotations on Controller methods).</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot默认选择禁用后缀模式匹配，这意味着像 <code>"GET /projects/spring-boot.json"</code> 这样的请求不会匹配到 <code>@GetMapping("/projects/spring-boot")</code> 映射。这被认为是<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-ann-requestmapping-suffix-pattern-match">Spring MVC 应用程序的最佳实践</a>。过去，此功能主要对未发送正确“Accept”请求标头的 HTTP 客户端有用；我们需要确保向客户端发送正确的内容类型。如今，内容协商更加可靠。</p>
+<p translation-result="on">Spring Boot 默认选择禁用后缀模式匹配，这意味着像 <code>"GET /projects/spring-boot.json"</code> 这样的请求不会匹配到 <code>@GetMapping("/projects/spring-boot")</code> 映射。这被认为是 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-ann-requestmapping-suffix-pattern-match">Spring MVC 应用程序的最佳实践</a>。过去，此功能主要对未发送正确“Accept”请求标头的 HTTP 客户端有用；我们需要确保向客户端发送正确的内容类型。如今，内容协商更加可靠。</p>
 <p translation-origin="off">Spring Boot chooses to disable suffix pattern matching by default, which means that requests like <code>"GET /projects/spring-boot.json"</code> will not be matched to <code>@GetMapping("/projects/spring-boot")</code> mappings.
 This is considered as a <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-ann-requestmapping-suffix-pattern-match">best practice for Spring MVC applications</a>.
 This feature was mainly useful in the past for HTTP clients which did not send proper "Accept" request headers; we needed to make sure to send the correct Content Type to the client.
@@ -2260,7 +2260,7 @@ To do so, set the <code>spring.security.filter.dispatcher-types</code> property 
 <h4 id="web.servlet.spring-mvc.cors" translation-result="on"><a href="web.html#web.servlet.spring-mvc.cors"></a>1.1.11。 CORS 支持</h4>
 <h4 translation-origin="off"><a class="anchor" href="web.html#web.servlet.spring-mvc.cors"></a>1.1.11. CORS Support</h4>
 <div class="paragraph">
-<p translation-result="on"><a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">跨域资源共享</a>(CORS) 是<a href="https://caniuse.com/#feat=cors">大多数浏览器</a>实现的<a href="https://www.w3.org/TR/cors/">W3C 规范</a>，它允许您以灵活的方式指定授权哪种跨域请求，而不是使用 IFRAME 或 JSONP 等一些不太安全和不太强大的方法。</p>
+<p translation-result="on"><a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">跨域资源共享</a>(CORS) 是<a href="https://caniuse.com/#feat=cors">大多数浏览器</a>实现的 <a href="https://www.w3.org/TR/cors/">W3C 规范</a>，它允许您以灵活的方式指定授权哪种跨域请求，而不是使用 IFRAME 或 JSONP 等一些不太安全和不太强大的方法。</p>
 <p translation-origin="off"><a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross-origin resource sharing</a> (CORS) is a <a href="https://www.w3.org/TR/cors/">W3C specification</a> implemented by <a href="https://caniuse.com/#feat=cors">most browsers</a> that lets you specify in a flexible way what kind of cross-domain requests are authorized, instead of using some less secure and less powerful approaches such as IFRAME or JSONP.</p>
 </div>
 <div class="paragraph">
@@ -2301,7 +2301,7 @@ public class MyCorsConfiguration {
 <h3 id="web.servlet.jersey" translation-result="on"><a href="web.html#web.servlet.jersey"></a>1.2. JAX-RS 和泽西岛</h3>
 <h3 translation-origin="off"><a class="anchor" href="web.html#web.servlet.jersey"></a>1.2. JAX-RS and Jersey</h3>
 <div class="paragraph">
-<p translation-result="on">如果您更喜欢 REST 端点的 JAX-RS 编程模型，则可以使用其中一种可用的实现来代替 Spring MVC。 <a href="https://jersey.github.io/">Jersey</a>和<a href="https://cxf.apache.org/">Apache CXF</a>开箱即用，效果很好。 CXF 要求您在应用程序上下文中将其 <code>Servlet</code> 或 <code>Filter</code> 注册为 <code>@Bean</code> 。 Jersey 有一些原生的 Spring 支持，所以我们还在 Spring Boot 中为它提供了自动配置支持，以及一个 starter。</p>
+<p translation-result="on">如果您更喜欢 REST 端点的 JAX-RS 编程模型，则可以使用其中一种可用的实现来代替 Spring MVC。 <a href="https://jersey.github.io/">Jersey</a> 和 <a href="https://cxf.apache.org/">Apache CXF</a> 开箱即用，效果很好。 CXF 要求您在应用程序上下文中将其 <code>Servlet</code> 或 <code>Filter</code> 注册为 <code>@Bean</code> 。 Jersey 有一些原生的 Spring 支持，所以我们还在 Spring Boot 中为它提供了自动配置支持，以及一个 starter。</p>
 <p translation-origin="off">If you prefer the JAX-RS programming model for REST endpoints, you can use one of the available implementations instead of Spring MVC.
 <a href="https://jersey.github.io/">Jersey</a> and <a href="https://cxf.apache.org/">Apache CXF</a> work quite well out of the box.
 CXF requires you to register its <code>Servlet</code> or <code>Filter</code> as a <code>@Bean</code> in your application context.
@@ -2335,7 +2335,7 @@ public class MyJerseyConfig extends ResourceConfig {
 <i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
-<p translation-result="on">Jersey 对扫描可执行档案的支持相当有限。例如，当运行可执行的war文件时，它无法扫描在<a href="deployment.html#deployment.installing">完全可执行的jar文件</a>或 <code>WEB-INF/classes</code> 中找到的包中的端点。为避免此限制，不应使用 <code>packages</code> 方法，而应使用 <code>register</code> 方法单独注册端点，如上例所示。</p>
+<p translation-result="on">Jersey 对扫描可执行档案的支持相当有限。例如，当运行可执行的 war 文件时，它无法扫描在<a href="deployment.html#deployment.installing">完全可执行的 jar 文件</a>或 <code>WEB-INF/classes</code> 中找到的包中的端点。为避免此限制，不应使用 <code>packages</code> 方法，而应使用 <code>register</code> 方法单独注册端点，如上例所示。</p>
 <p translation-origin="off">Jersey’s support for scanning executable archives is rather limited.
 For example, it cannot scan for endpoints in a package found in a <a href="deployment.html#deployment.installing">fully executable jar file</a> or in <code>WEB-INF/classes</code> when running an executable war file.
 To avoid this limitation, the <code>packages</code> method should not be used, and endpoints should be registered individually by using the <code>register</code> method, as shown in the preceding example.</p>
@@ -2393,7 +2393,7 @@ Both the servlet and the filter registrations can be given init parameters by us
 <h3 id="web.servlet.embedded-container" translation-result="on"><a href="web.html#web.servlet.embedded-container"></a>1.3.嵌入式 Servlet 容器支持</h3>
 <h3 translation-origin="off"><a class="anchor" href="web.html#web.servlet.embedded-container"></a>1.3. Embedded Servlet Container Support</h3>
 <div class="paragraph">
-<p translation-result="on">对于 servlet 应用程序，Spring Boot 包括对嵌入式<a href="https://tomcat.apache.org/">Tomcat</a> 、 <a href="https://www.eclipse.org/jetty/">Jetty</a>和<a href="https://github.com/undertow-io/undertow">Undertow</a>服务器的支持。大多数开发人员使用适当的“Starter”来获取完全配置的实例。默认情况下，嵌入式服务器在端口 <code>8080</code> 上侦听 HTTP 请求。</p>
+<p translation-result="on">对于 servlet 应用程序，Spring Boot 包括对嵌入式 <a href="https://tomcat.apache.org/">Tomcat</a> 、 <a href="https://www.eclipse.org/jetty/">Jetty</a> 和 <a href="https://github.com/undertow-io/undertow">Undertow</a> 服务器的支持。大多数开发人员使用适当的“Starter”来获取完全配置的实例。默认情况下，嵌入式服务器在端口 <code>8080</code> 上侦听 HTTP 请求。</p>
 <p translation-origin="off">For servlet application, Spring Boot includes support for embedded <a href="https://tomcat.apache.org/">Tomcat</a>, <a href="https://www.eclipse.org/jetty/">Jetty</a>, and <a href="https://github.com/undertow-io/undertow">Undertow</a> servers.
 Most developers use the appropriate “Starter” to obtain a fully configured instance.
 By default, the embedded server listens for HTTP requests on port <code>8080</code>.</p>
@@ -2540,7 +2540,7 @@ Usually, you would define the properties in your <code>application.properties</c
 <p translation-origin="off">Network settings: Listen port for incoming HTTP requests (<code>server.port</code>), interface address to bind to <code>server.address</code>, and so on.</p>
 </li>
 <li>
-<p translation-result="on">会话设置：会话是否持久（ <code>server.servlet.session.persistent</code> ）、会话超时（ <code>server.servlet.session.timeout</code> ）、会话数据的位置（ <code>server.servlet.session.store-dir</code> ）和 session-cookie配置（ <code>server.servlet.session.cookie.*</code> ）。</p>
+<p translation-result="on">会话设置：会话是否持久（ <code>server.servlet.session.persistent</code> ）、会话超时（ <code>server.servlet.session.timeout</code> ）、会话数据的位置（ <code>server.servlet.session.store-dir</code> ）和 session-cookie 配置（ <code>server.servlet.session.cookie.*</code> ）。</p>
 <p translation-origin="off">Session settings: Whether the session is persistent (<code>server.servlet.session.persistent</code>), session timeout (<code>server.servlet.session.timeout</code>), location of session data (<code>server.servlet.session.store-dir</code>), and session-cookie configuration (<code>server.servlet.session.cookie.*</code>).</p>
 </li>
 <li>
@@ -2762,7 +2762,7 @@ JSPs are not supported when using an executable jar.</p>
 <h3 id="web.reactive.webflux" translation-result="on"><a href="web.html#web.reactive.webflux"></a>2.1。 “Spring WebFlux 框架”</h3>
 <h3 translation-origin="off"><a class="anchor" href="web.html#web.reactive.webflux"></a>2.1. The “Spring WebFlux Framework”</h3>
 <div class="paragraph">
-<p translation-result="on">Spring WebFlux 是 Spring Framework 5.0 中引入的新的响应式 Web 框架。与 Spring MVC 不同，它不需要 servlet API，完全异步和非阻塞，并通过<a href="https://projectreactor.io/">Reactor 项目</a>实现<a href="https://www.reactive-streams.org/">Reactive Streams</a>规范。</p>
+<p translation-result="on">Spring WebFlux 是 Spring Framework 5.0 中引入的新的响应式 Web 框架。与 Spring MVC 不同，它不需要 servlet API，完全异步和非阻塞，并通过 <a href="https://projectreactor.io/">Reactor 项目</a>实现 <a href="https://www.reactive-streams.org/">Reactive Streams</a> 规范。</p>
 <p translation-origin="off">Spring WebFlux is the new reactive web framework introduced in Spring Framework 5.0.
 Unlike Spring MVC, it does not require the servlet API, is fully asynchronous and non-blocking, and implements the <a href="https://www.reactive-streams.org/">Reactive Streams</a> specification through <a href="https://projectreactor.io/">the Reactor project</a>.</p>
 </div>
@@ -3086,7 +3086,7 @@ public class MyCodecsConfiguration {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您还可以利用<a href="web.html#web.servlet.spring-mvc.json">Boot 的自定义 JSON 序列化器和反序列化器</a>。</p>
+<p translation-result="on">您还可以利用 <a href="web.html#web.servlet.spring-mvc.json">Boot 的自定义 JSON 序列化器和反序列化器</a>。</p>
 <p translation-origin="off">You can also leverage <a href="web.html#web.servlet.spring-mvc.json">Boot’s custom JSON serializers and deserializers</a>.</p>
 </div>
 </div>
@@ -3126,7 +3126,7 @@ If you do so, the default welcome page detection switches to your custom locatio
 So, if there is an <code>index.html</code> in any of your locations on startup, it is the home page of the application.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">除了前面列出的“标准”静态资源位置之外，还为<a href="https://www.webjars.org/">Webjars 内容</a>做了一个特殊情况。任何具有 <code>/webjars/**</code> 路径的资源如果以 Webjars 格式打包，则从 jar 文件中提供。</p>
+<p translation-result="on">除了前面列出的“标准”静态资源位置之外，还为 <a href="https://www.webjars.org/">Webjars 内容</a>做了一个特殊情况。任何具有 <code>/webjars/**</code> 路径的资源如果以 Webjars 格式打包，则从 jar 文件中提供。</p>
 <p translation-origin="off">In addition to the “standard” static resource locations listed earlier, a special case is made for <a href="https://www.webjars.org/">Webjars content</a>.
 Any resources with a path in <code>/webjars/**</code> are served from jar files if they are packaged in the Webjars format.</p>
 </div>
@@ -3421,7 +3421,7 @@ By default, the embedded server listens for HTTP requests on port 8080.</p>
 <p translation-origin="off">Developers can override the resource configuration for Jetty and Reactor Netty by providing a custom <code>ReactorResourceFactory</code> or <code>JettyResourceFactory</code> bean - this will be applied to both clients and servers.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以在<a href="io.html#io.rest-client.webclient.runtime">WebClient 运行时部分</a>了解有关客户端资源配置的更多信息。</p>
+<p translation-result="on">您可以在 <a href="io.html#io.rest-client.webclient.runtime">WebClient 运行时部分</a>了解有关客户端资源配置的更多信息。</p>
 <p translation-origin="off">You can learn more about the resource configuration on the client side in the <a href="io.html#io.rest-client.webclient.runtime">WebClient Runtime section</a>.</p>
 </div>
 </div>
@@ -3511,7 +3511,7 @@ See the documentation of your IDE for more details.</p>
 <h2 translation-origin="off"><a class="anchor" href="web.html#web.security"></a>4. Spring Security</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">如果<a href="https://spring.io/projects/spring-security">Spring Security</a>在类路径上，则默认情况下 Web 应用程序是安全的。 Spring Boot 依赖 Spring Security 的内容协商策略来确定是使用 <code>httpBasic</code> 还是 <code>formLogin</code> 。要向 Web 应用程序添加方法级别的安全性，您还可以使用所需的设置添加 <code>@EnableGlobalMethodSecurity</code> 。更多信息可以在<a href="https://docs.spring.io/spring-security/reference/5.6.1/servlet/authorization/method-security.html">Spring Security Reference Guide</a>中找到。</p>
+<p translation-result="on">如果 <a href="https://spring.io/projects/spring-security">Spring Security</a> 在类路径上，则默认情况下 Web 应用程序是安全的。 Spring Boot 依赖 Spring Security 的内容协商策略来确定是使用 <code>httpBasic</code> 还是 <code>formLogin</code> 。要向 Web 应用程序添加方法级别的安全性，您还可以使用所需的设置添加 <code>@EnableGlobalMethodSecurity</code> 。更多信息可以在 <a href="https://docs.spring.io/spring-security/reference/5.6.1/servlet/authorization/method-security.html">Spring Security Reference Guide</a> 中找到。</p>
 <p translation-origin="off">If <a href="https://spring.io/projects/spring-security">Spring Security</a> is on the classpath, then web applications are secured by default.
 Spring Boot relies on Spring Security’s content-negotiation strategy to determine whether to use <code>httpBasic</code> or <code>formLogin</code>.
 To add method-level security to a web application, you can also add <code>@EnableGlobalMethodSecurity</code> with your desired settings.
@@ -3648,7 +3648,7 @@ public class MyWebFluxSecurityConfiguration {
 <h3 id="web.security.oauth2" translation-result="on"><a href="web.html#web.security.oauth2"></a>4.3. OAuth2</h3>
 <h3 translation-origin="off"><a class="anchor" href="web.html#web.security.oauth2"></a>4.3. OAuth2</h3>
 <div class="paragraph">
-<p translation-result="on"><a href="https://oauth.net/2/">OAuth2</a>是 Spring 支持的广泛使用的授权框架。</p>
+<p translation-result="on"><a href="https://oauth.net/2/">OAuth2</a> 是 Spring 支持的广泛使用的授权框架。</p>
 <p translation-origin="off"><a href="https://oauth.net/2/">OAuth2</a> is a widely used authorization framework that is supported by Spring.</p>
 </div>
 <div class="sect3">
@@ -3733,7 +3733,7 @@ spring.security.oauth2.client.provider.my-oauth-provider.user-name-attribute=nam
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">对于支持<a href="https://openid.net/specs/openid-connect-discovery-1_0.html">OpenID Connect 发现</a>的 OpenID Connect 提供者，可以进一步简化配置。提供者需要配置一个 <code>issuer-uri</code> ，它是它声明为其颁发者标识符的 URI。例如，如果提供的 <code>issuer-uri</code> 是“https://example.com”，那么将向“https://example.com/.well-known/openid-configuration”发出 <code>OpenID Provider Configuration Request</code> 。结果应该是 <code>OpenID Provider Configuration Response</code> 。以下示例显示了如何使用 <code>issuer-uri</code> 配置 OpenID Connect 提供程序：</p>
+<p translation-result="on">对于支持 <a href="https://openid.net/specs/openid-connect-discovery-1_0.html">OpenID Connect 发现</a>的 OpenID Connect 提供者，可以进一步简化配置。提供者需要配置一个 <code>issuer-uri</code> ，它是它声明为其颁发者标识符的 URI。例如，如果提供的 <code>issuer-uri</code> 是“https://example.com”，那么将向“https://example.com/.well-known/openid-configuration”发出 <code>OpenID Provider Configuration Request</code> 。结果应该是 <code>OpenID Provider Configuration Response</code> 。以下示例显示了如何使用 <code>issuer-uri</code> 配置 OpenID Connect 提供程序：</p>
 <p translation-origin="off">For OpenID Connect providers that support <a href="https://openid.net/specs/openid-connect-discovery-1_0.html">OpenID Connect discovery</a>, the configuration can be further simplified.
 The provider needs to be configured with an <code>issuer-uri</code> which is the URI that the it asserts as its Issuer Identifier.
 For example, if the <code>issuer-uri</code> provided is "https://example.com", then an <code>OpenID Provider Configuration Request</code> will be made to "https://example.com/.well-known/openid-configuration".
@@ -3952,7 +3952,7 @@ spring.security.oauth2.resourceserver.opaquetoken.client-secret=my-client-secret
 <h4 id="web.security.oauth2.authorization-server" translation-result="on"><a href="web.html#web.security.oauth2.authorization-server"></a>4.3.3.授权服务器</h4>
 <h4 translation-origin="off"><a class="anchor" href="web.html#web.security.oauth2.authorization-server"></a>4.3.3. Authorization Server</h4>
 <div class="paragraph">
-<p translation-result="on">目前，Spring Security 不支持实现 OAuth 2.0 授权服务器。但是，此功能可从<a href="https://spring.io/projects/spring-security-oauth">Spring Security OAuth</a>项目中获得，该项目最终将被 Spring Security 完全取代。在此之前，您可以使用 <code>spring-security-oauth2-autoconfigure</code> 模块轻松设置 OAuth 2.0 授权服务器；有关说明，请参阅其<a href="https://docs.spring.io/spring-security-oauth2-boot/">文档</a>。</p>
+<p translation-result="on">目前，Spring Security 不支持实现 OAuth 2.0 授权服务器。但是，此功能可从 <a href="https://spring.io/projects/spring-security-oauth">Spring Security OAuth</a> 项目中获得，该项目最终将被 Spring Security 完全取代。在此之前，您可以使用 <code>spring-security-oauth2-autoconfigure</code> 模块轻松设置 OAuth 2.0 授权服务器；有关说明，请参阅其<a href="https://docs.spring.io/spring-security-oauth2-boot/">文档</a>。</p>
 <p translation-origin="off">Currently, Spring Security does not provide support for implementing an OAuth 2.0 Authorization Server.
 However, this functionality is available from the <a href="https://spring.io/projects/spring-security-oauth">Spring Security OAuth</a> project, which will eventually be superseded by Spring Security completely.
 Until then, you can use the <code>spring-security-oauth2-autoconfigure</code> module to easily set up an OAuth 2.0 authorization server; see its <a href="https://docs.spring.io/spring-security-oauth2-boot/">documentation</a> for instructions.</p>
@@ -4046,7 +4046,7 @@ spring.security.saml2.relyingparty.registration.my-relying-party2.identityprovid
 <h2 translation-origin="off"><a class="anchor" href="web.html#web.spring-session"></a>5. Spring Session</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot 为各种数据存储提供<a href="https://spring.io/projects/spring-session">Spring Session</a>自动配置。在构建 servlet Web 应用程序时，可以自动配置以下存储：</p>
+<p translation-result="on">Spring Boot 为各种数据存储提供 <a href="https://spring.io/projects/spring-session">Spring Session</a> 自动配置。在构建 servlet Web 应用程序时，可以自动配置以下存储：</p>
 <p translation-origin="off">Spring Boot provides <a href="https://spring.io/projects/spring-session">Spring Session</a> auto-configuration for a wide range of data stores.
 When building a servlet web application, the following stores can be auto-configured:</p>
 </div>

@@ -2001,7 +2001,7 @@ See the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springfra
 <h3 id="features.spring-application.application-availability" translation-result="on"><a href="features.html#features.spring-application.application-availability"></a>1.6.应用程序可用性</h3>
 <h3 translation-origin="off"><a class="anchor" href="features.html#features.spring-application.application-availability"></a>1.6. Application Availability</h3>
 <div class="paragraph">
-<p translation-result="on">当部署在平台上时，应用程序可以使用<a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/">Kubernetes Probes</a>等基础设施向平台提供有关其可用性的信息。 Spring Boot 包括对常用“liveness”和“readiness”可用性状态的开箱即用支持。如果您使用 Spring Boot 的“执行器”支持，那么这些状态将作为健康端点组公开。</p>
+<p translation-result="on">当部署在平台上时，应用程序可以使用 <a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/">Kubernetes Probes</a> 等基础设施向平台提供有关其可用性的信息。 Spring Boot 包括对常用“liveness”和“readiness”可用性状态的开箱即用支持。如果您使用 Spring Boot 的“执行器”支持，那么这些状态将作为健康端点组公开。</p>
 <p translation-origin="off">When deployed on platforms, applications can provide information about their availability to the platform using infrastructure such as <a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/">Kubernetes Probes</a>.
 Spring Boot includes out-of-the box support for the commonly used “liveness” and “readiness” availability states.
 If you are using Spring Boot’s “actuator” support then these states are exposed as health endpoint groups.</p>
@@ -2025,7 +2025,7 @@ A broken “Liveness” state means that the application is in a state that it c
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">一般来说，“Liveness”状态不应基于外部检查，例如<a href="actuator.html#actuator.endpoints.health">Health 检查</a>。如果是这样，一个失败的外部系统（数据库、Web API、外部缓存）将触发大规模重启和跨平台的级联故障。</p>
+<p translation-result="on">一般来说，“Liveness”状态不应基于外部检查，例如 <a href="actuator.html#actuator.endpoints.health">Health 检查</a>。如果是这样，一个失败的外部系统（数据库、Web API、外部缓存）将触发大规模重启和跨平台的级联故障。</p>
 <p translation-origin="off">In general, the "Liveness" state should not be based on external checks, such as <a href="actuator.html#actuator.endpoints.health">Health checks</a>.
 If it did, a failing external system (a database, a Web API, an external cache) would trigger massive restarts and cascading failures across the platform.</p>
 </td>
@@ -2033,7 +2033,7 @@ If it did, a failing external system (a database, a Web API, an external cache) 
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 应用程序的内部状态主要由 Spring <code>ApplicationContext</code> 表示。如果应用程序上下文已成功启动，Spring Boot 假定应用程序处于有效状态。一旦上下文被刷新，应用程序就被认为是活动的，请参阅<a href="features.html#features.spring-application.application-events-and-listeners">Spring Boot 应用程序生命周期和相关的应用程序事件</a>。</p>
+<p translation-result="on">Spring Boot 应用程序的内部状态主要由 Spring <code>ApplicationContext</code> 表示。如果应用程序上下文已成功启动，Spring Boot 假定应用程序处于有效状态。一旦上下文被刷新，应用程序就被认为是活动的，请参阅 <a href="features.html#features.spring-application.application-events-and-listeners">Spring Boot 应用程序生命周期和相关的应用程序事件</a>。</p>
 <p translation-origin="off">The internal state of Spring Boot applications is mostly represented by the Spring <code>ApplicationContext</code>.
 If the application context has started successfully, Spring Boot assumes that the application is in a valid state.
 An application is considered live as soon as the context has been refreshed, see <a href="features.html#features.spring-application.application-events-and-listeners">Spring Boot application lifecycle and related Application Events</a>.</p>
@@ -2049,7 +2049,7 @@ A failing “Readiness” state tells the platform that it should not route traf
 This typically happens during startup, while <code>CommandLineRunner</code> and <code>ApplicationRunner</code> components are being processed, or at any time if the application decides that it is too busy for additional traffic.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">一旦调用了应用程序和命令行运行器，就认为应用程序已准备就绪，请参阅<a href="features.html#features.spring-application.application-events-and-listeners">Spring Boot 应用程序生命周期和相关的应用程序事件</a>。</p>
+<p translation-result="on">一旦调用了应用程序和命令行运行器，就认为应用程序已准备就绪，请参阅 <a href="features.html#features.spring-application.application-events-and-listeners">Spring Boot 应用程序生命周期和相关的应用程序事件</a>。</p>
 <p translation-origin="off">An application is considered ready as soon as application and command-line runners have been called, see <a href="features.html#features.spring-application.application-events-and-listeners">Spring Boot application lifecycle and related Application Events</a>.</p>
 </div>
 <div class="admonitionblock tip">
@@ -2618,7 +2618,7 @@ Available on <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/spri
 <p translation-origin="off"><a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/test/context/TestPropertySource.html"><code>@TestPropertySource</code></a> annotations on your tests.</p>
 </li>
 <li>
-<p translation-result="on">当 devtools 处于活动状态时， <code>$HOME/.config/spring-boot</code> 目录中的<a href="using.html#using.devtools.globalsettings">Devtools 全局设置属性</a>。</p>
+<p translation-result="on">当 devtools 处于活动状态时， <code>$HOME/.config/spring-boot</code> 目录中的 <a href="using.html#using.devtools.globalsettings">Devtools 全局设置属性</a>。</p>
 <p translation-origin="off"><a href="using.html#using.devtools.globalsettings">Devtools global settings properties</a> in the <code>$HOME/.config/spring-boot</code> directory when devtools is active.</p>
 </li>
 </ol>
@@ -3707,13 +3707,13 @@ myotherprop: "sometimes-set"</code></pre>
 <h3 id="features.external-config.encrypting" translation-result="on"><a href="features.html#features.external-config.encrypting"></a>2.4.加密属性</h3>
 <h3 translation-origin="off"><a class="anchor" href="features.html#features.external-config.encrypting"></a>2.4. Encrypting Properties</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 不提供对加密属性值的任何内置支持，但是，它确实提供了修改 Spring <code>Environment</code> 中包含的值所需的挂钩点。 <code>EnvironmentPostProcessor</code> 接口允许您在应用程序启动之前操作 <code>Environment</code> 。有关详细信息，请参阅<a href="howto.html#howto.application.customize-the-environment-or-application-context">howto.html</a> 。</p>
+<p translation-result="on">Spring Boot 不提供对加密属性值的任何内置支持，但是，它确实提供了修改 Spring <code>Environment</code> 中包含的值所需的挂钩点。 <code>EnvironmentPostProcessor</code> 接口允许您在应用程序启动之前操作 <code>Environment</code> 。有关详细信息，请参阅 <a href="howto.html#howto.application.customize-the-environment-or-application-context">howto.html</a> 。</p>
 <p translation-origin="off">Spring Boot does not provide any built in support for encrypting property values, however, it does provide the hook points necessary to modify values contained in the Spring <code>Environment</code>.
 The <code>EnvironmentPostProcessor</code> interface allows you to manipulate the <code>Environment</code> before the application starts.
 See <a href="howto.html#howto.application.customize-the-environment-or-application-context">howto.html</a> for details.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您需要一种安全的方式来存储凭据和密码， <a href="https://cloud.spring.io/spring-cloud-vault/">Spring Cloud Vault</a>项目支持在<a href="https://www.vaultproject.io/">HashiCorp Vault</a>中存储外部化配置。</p>
+<p translation-result="on">如果您需要一种安全的方式来存储凭据和密码， <a href="https://cloud.spring.io/spring-cloud-vault/">Spring Cloud Vault</a> 项目支持在 <a href="https://www.vaultproject.io/">HashiCorp Vault</a> 中存储外部化配置。</p>
 <p translation-origin="off">If you need a secure way to store credentials and passwords, the <a href="https://cloud.spring.io/spring-cloud-vault/">Spring Cloud Vault</a> project provides support for storing externalized configuration in <a href="https://www.vaultproject.io/">HashiCorp Vault</a>.</p>
 </div>
 </div>
@@ -3721,7 +3721,7 @@ See <a href="howto.html#howto.application.customize-the-environment-or-applicati
 <h3 id="features.external-config.yaml" translation-result="on"><a href="features.html#features.external-config.yaml"></a>2.5.使用 YAML</h3>
 <h3 translation-origin="off"><a class="anchor" href="features.html#features.external-config.yaml"></a>2.5. Working with YAML</h3>
 <div class="paragraph">
-<p translation-result="on"><a href="https://yaml.org">YAML</a>是 JSON 的超集，因此是一种用于指定分层配置数据的便捷格式。只要您的类路径中有<a href="https://bitbucket.org/asomov/snakeyaml">SnakeYAML</a>库， <code>SpringApplication</code> 类就会自动支持 YAML 作为属性的替代方案。</p>
+<p translation-result="on"><a href="https://yaml.org">YAML</a> 是 JSON 的超集，因此是一种用于指定分层配置数据的便捷格式。只要您的类路径中有 <a href="https://bitbucket.org/asomov/snakeyaml">SnakeYAML</a> 库， <code>SpringApplication</code> 类就会自动支持 YAML 作为属性的替代方案。</p>
 <p translation-origin="off"><a href="https://yaml.org">YAML</a> is a superset of JSON and, as such, is a convenient format for specifying hierarchical configuration data.
 The <code>SpringApplication</code> class automatically supports YAML as an alternative to properties whenever you have the <a href="https://bitbucket.org/asomov/snakeyaml">SnakeYAML</a> library on your classpath.</p>
 </div>
@@ -5575,7 +5575,7 @@ The name of the default profile is <code>default</code> and it can be tuned usin
 This means that you can specify active profiles in <code>application.properties</code> and then <strong>replace</strong> them by using the command line switch.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">有时，将属性<strong>添加</strong>到活动配置文件而不是替换它们很有用。 <code>SpringApplication</code> 入口点有一个用于设置附加配置文件的 Java API（即，在那些由 <code>spring.profiles.active</code> 属性激活的配置文件之上）。请参阅 SpringApplication 中的<a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/SpringApplication.html">setAdditionalProfiles</a> <code>setAdditionalProfiles()</code> 方法。如果给定的配置文件处于活动状态，则在<a href="features.html#features.profiles.groups">下一节</a>中描述的配置文件组也可用于添加活动配置文件。</p>
+<p translation-result="on">有时，将属性<strong>添加</strong>到活动配置文件而不是替换它们很有用。 <code>SpringApplication</code> 入口点有一个用于设置附加配置文件的 Java API（即，在那些由 <code>spring.profiles.active</code> 属性激活的配置文件之上）。请参阅 SpringApplication 中的 <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/SpringApplication.html">setAdditionalProfiles</a> <code>setAdditionalProfiles()</code> 方法。如果给定的配置文件处于活动状态，则在<a href="features.html#features.profiles.groups">下一节</a>中描述的配置文件组也可用于添加活动配置文件。</p>
 <p translation-origin="off">Sometimes, it is useful to have properties that <strong>add</strong> to the active profiles rather than replace them.
 The <code>SpringApplication</code> entry point has a Java API for setting additional profiles (that is, on top of those activated by the <code>spring.profiles.active</code> property).
 See the <code>setAdditionalProfiles()</code> method in <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/SpringApplication.html">SpringApplication</a>.
@@ -5648,7 +5648,7 @@ See "<a href="features.html#features.external-config.files.profile-specific">Pro
 <h2 translation-origin="off"><a class="anchor" href="features.html#features.logging"></a>4. Logging</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot 使用<a href="https://commons.apache.org/logging">Commons Logging</a>进行所有内部日志记录，但保持底层日志实现打开。为<a href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/package-summary.html">Java Util Logging</a> 、 <a href="https://logging.apache.org/log4j/2.x/">Log4J2</a>和<a href="https://logback.qos.ch/">Logback</a>提供了默认配置。在每种情况下，记录器都预先配置为使用控制台输出，并且还提供可选的文件输出。</p>
+<p translation-result="on">Spring Boot 使用 <a href="https://commons.apache.org/logging">Commons Logging</a> 进行所有内部日志记录，但保持底层日志实现打开。为 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/package-summary.html">Java Util Logging</a> 、 <a href="https://logging.apache.org/log4j/2.x/">Log4J2</a> 和 <a href="https://logback.qos.ch/">Logback</a> 提供了默认配置。在每种情况下，记录器都预先配置为使用控制台输出，并且还提供可选的文件输出。</p>
 <p translation-origin="off">Spring Boot uses <a href="https://commons.apache.org/logging">Commons Logging</a> for all internal logging but leaves the underlying log implementation open.
 Default configurations are provided for <a href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/package-summary.html">Java Util Logging</a>, <a href="https://logging.apache.org/log4j/2.x/">Log4J2</a>, and <a href="https://logback.qos.ch/">Logback</a>.
 In each case, loggers are pre-configured to use console output with optional file output also available.</p>
@@ -6246,7 +6246,7 @@ The only way to change the logging system or disable it entirely is through Syst
 <td class="tableblock halign-left valign-top"><p translation-result="on"><code>logback-spring.xml</code> 、 <code>logback-spring.groovy</code> 、 <code>logback.xml</code> 或 <code>logback.groovy</code></p><p class="tableblock" translation-origin="off"><code>logback-spring.xml</code>, <code>logback-spring.groovy</code>, <code>logback.xml</code>, or <code>logback.groovy</code> </p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p translation-result="on">日志4j2</p><p class="tableblock" translation-origin="off">Log4j2</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">日志 4j2</p><p class="tableblock" translation-origin="off">Log4j2</p></td>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><code>log4j2-spring.xml</code> 或 <code>log4j2.xml</code></p><p class="tableblock" translation-origin="off"><code>log4j2-spring.xml</code> or <code>log4j2.xml</code> </p></td>
 </tr>
 <tr>
@@ -6428,7 +6428,7 @@ See the default configurations in <code>spring-boot.jar</code> for examples:</p>
 <p translation-origin="off"><a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/resources/org/springframework/boot/logging/logback/defaults.xml">Logback</a></p>
 </li>
 <li>
-<p translation-result="on"><a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/resources/org/springframework/boot/logging/log4j2/log4j2.xml">日志4j 2</a></p>
+<p translation-result="on"><a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/resources/org/springframework/boot/logging/log4j2/log4j2.xml">日志 4j 2</a></p>
 <p translation-origin="off"><a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/resources/org/springframework/boot/logging/log4j2/log4j2.xml">Log4j 2</a></p>
 </li>
 <li>
@@ -6445,7 +6445,7 @@ See the default configurations in <code>spring-boot.jar</code> for examples:</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">如果你想在日志属性中使用占位符，你应该使用<a href="features.html#features.external-config.files.property-placeholders">Spring Boot 的语法</a>，而不是底层框架的语法。值得注意的是，如果你使用 Logback，你应该使用 <code>:</code> 作为属性名称和它的默认值之间的分隔符，而不是使用 <code>:-</code> 。</p>
+<p translation-result="on">如果你想在日志属性中使用占位符，你应该使用 <a href="features.html#features.external-config.files.property-placeholders">Spring Boot 的语法</a>，而不是底层框架的语法。值得注意的是，如果你使用 Logback，你应该使用 <code>:</code> 作为属性名称和它的默认值之间的分隔符，而不是使用 <code>:-</code> 。</p>
 <p translation-origin="off">If you want to use a placeholder in a logging property, you should use <a href="features.html#features.external-config.files.property-placeholders">Spring Boot’s syntax</a> and not the syntax of the underlying framework.
 Notably, if you use Logback, you should use <code>:</code> as the delimiter between a property name and its default value and not use <code>:-</code>.</p>
 </div>
@@ -6741,7 +6741,7 @@ Depending on your target arrangement, you could change your <code>Executor</code
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">线程池使用8个核心线程，可以根据负载增长和收缩。这些默认设置可以使用 <code>spring.task.execution</code> 命名空间进行微调，如下例所示：</p>
+<p translation-result="on">线程池使用 8 个核心线程，可以根据负载增长和收缩。这些默认设置可以使用 <code>spring.task.execution</code> 命名空间进行微调，如下例所示：</p>
 <p translation-origin="off">The thread pool uses 8 core threads that can grow and shrink according to the load.
 Those default settings can be fine-tuned using the <code>spring.task.execution</code> namespace, as shown in the following example:</p>
 </div>
@@ -6966,7 +6966,7 @@ You can use the <code>webEnvironment</code> attribute of <code>@SpringBootTest</
 <div class="ulist">
 <ul>
 <li>
-<p translation-result="on"><code>MOCK</code> （默认）：加载一个 Web <code>ApplicationContext</code> 并提供一个模拟 Web 环境。使用此注释时不启动嵌入式服务器。如果您的类路径上没有 Web 环境，则此模式会透明地回退到创建常规的非 Web <code>ApplicationContext</code> 。它可以与<a href="features.html#features.testing.spring-boot-applications.with-mock-environment"><code>@AutoConfigureMockMvc</code> 或 <code>@AutoConfigureWebTestClient</code> </a>结合使用，对您的Web 应用程序进行基于模拟的测试。</p>
+<p translation-result="on"><code>MOCK</code> （默认）：加载一个 Web <code>ApplicationContext</code> 并提供一个模拟 Web 环境。使用此注释时不启动嵌入式服务器。如果您的类路径上没有 Web 环境，则此模式会透明地回退到创建常规的非 Web <code>ApplicationContext</code> 。它可以与<a href="features.html#features.testing.spring-boot-applications.with-mock-environment"><code>@AutoConfigureMockMvc</code> 或 <code>@AutoConfigureWebTestClient</code> </a>结合使用，对您的 Web 应用程序进行基于模拟的测试。</p>
 <p translation-origin="off"><code>MOCK</code>(Default) : Loads a web <code>ApplicationContext</code> and provides a mock web environment.
 Embedded servers are not started when using this annotation.
 If a web environment is not available on your classpath, this mode transparently falls back to creating a regular non-web <code>ApplicationContext</code>.
@@ -7142,7 +7142,7 @@ class MyTests {
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果您直接使用 <code>@ComponentScan</code> （即不通过 <code>@SpringBootApplication</code> ），则需要向其注册 <code>TypeExcludeFilter</code> 。有关详细信息，请参阅<a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/context/TypeExcludeFilter.html">Javadoc</a> 。</p>
+<p translation-result="on">如果您直接使用 <code>@ComponentScan</code> （即不通过 <code>@SpringBootApplication</code> ），则需要向其注册 <code>TypeExcludeFilter</code> 。有关详细信息，请参阅 <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/context/TypeExcludeFilter.html">Javadoc</a> 。</p>
 <p translation-origin="off">If you directly use <code>@ComponentScan</code> (that is, not through <code>@SpringBootApplication</code>) you need to register the <code>TypeExcludeFilter</code> with it.
 See <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/context/TypeExcludeFilter.html">the Javadoc</a> for details.</p>
 </td>
@@ -7154,7 +7154,7 @@ See <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframewo
 <h4 id="features.testing.spring-boot-applications.using-application-arguments" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.using-application-arguments"></a> 8.3.4.使用应用程序参数</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.using-application-arguments"></a>8.3.4. Using Application Arguments</h4>
 <div class="paragraph">
-<p translation-result="on">如果您的应用程序需要<a href="features.html#features.spring-application.application-arguments">arguments</a> ，您可以使用 <code>args</code> 属性让 <code>@SpringBootTest</code> 注入它们。</p>
+<p translation-result="on">如果您的应用程序需要 <a href="features.html#features.spring-application.application-arguments">arguments</a> ，您可以使用 <code>args</code> 属性让 <code>@SpringBootTest</code> 注入它们。</p>
 <p translation-origin="off">If your application expects <a href="features.html#features.spring-application.application-arguments">arguments</a>, you can
 have <code>@SpringBootTest</code> inject them using the <code>args</code> attribute.</p>
 </div>
@@ -7541,7 +7541,7 @@ We recommend using a <code>@Bean</code> method to create and configure the mock 
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">此外，您可以使用 <code>@SpyBean</code> 用 Mockito <code>spy</code> 包装任何现有的 bean。有关完整的详细信息，请参阅<a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/test/mock/mockito/SpyBean.html">Javadoc</a> 。</p>
+<p translation-result="on">此外，您可以使用 <code>@SpyBean</code> 用 Mockito <code>spy</code> 包装任何现有的 bean。有关完整的详细信息，请参阅 <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/test/mock/mockito/SpyBean.html">Javadoc</a> 。</p>
 <p translation-origin="off">Additionally, you can use <code>@SpyBean</code> to wrap any existing bean with a Mockito <code>spy</code>.
 See the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/test/mock/mockito/SpyBean.html">Javadoc</a> for full details.</p>
 </div>
@@ -7581,7 +7581,7 @@ This allows Mockito to mock and spy on <code>final</code> methods.</p>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果您使用 <code>@SpyBean</code> 通过 <code>@Cacheable</code> 方法通过名称引用参数来监视bean，则必须使用 <code>-parameters</code> 编译您的应用程序。这确保了一旦 bean 被监视，参数名称对缓存基础设施可用。</p>
+<p translation-result="on">如果您使用 <code>@SpyBean</code> 通过 <code>@Cacheable</code> 方法通过名称引用参数来监视 bean，则必须使用 <code>-parameters</code> 编译您的应用程序。这确保了一旦 bean 被监视，参数名称对缓存基础设施可用。</p>
 <p translation-origin="off">If you are using <code>@SpyBean</code> to spy on a bean with <code>@Cacheable</code> methods that refer to parameters by name, your application must be compiled with <code>-parameters</code>.
 This ensures that the parameter names are available to the caching infrastructure once the bean has been spied upon.</p>
 </td>
@@ -7975,7 +7975,7 @@ More details on how to use Spring Security’s <code>MockMvc</code> support can 
 <h4 id="features.testing.spring-boot-applications.spring-webflux-tests" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.spring-webflux-tests"></a>8.3.14。自动配置的 Spring WebFlux 测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.spring-webflux-tests"></a>8.3.14. Auto-configured Spring WebFlux Tests</h4>
 <div class="paragraph">
-<p translation-result="on">要测试<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html">Spring WebFlux</a>控制器是否按预期工作，可以使用 <code>@WebFluxTest</code> 注释。 <code>@WebFluxTest</code> 自动配置 Spring WebFlux 基础结构并将扫描的 bean 限制为 <code>@Controller</code> 、 <code>@ControllerAdvice</code> 、 <code>@JsonComponent</code> 、 <code>Converter</code> 、 <code>GenericConverter</code> 、 <code>WebFluxConfigurer</code> <code>WebFilter</code> 使用 <code>@WebFluxTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。 <code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
+<p translation-result="on">要测试 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html">Spring WebFlux</a> 控制器是否按预期工作，可以使用 <code>@WebFluxTest</code> 注释。 <code>@WebFluxTest</code> 自动配置 Spring WebFlux 基础结构并将扫描的 bean 限制为 <code>@Controller</code> 、 <code>@ControllerAdvice</code> 、 <code>@JsonComponent</code> 、 <code>Converter</code> 、 <code>GenericConverter</code> 、 <code>WebFluxConfigurer</code> <code>WebFilter</code> 使用 <code>@WebFluxTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。 <code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
 <p translation-origin="off">To test that <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html">Spring WebFlux</a> controllers are working as expected, you can use the <code>@WebFluxTest</code> annotation.
 <code>@WebFluxTest</code> auto-configures the Spring WebFlux infrastructure and limits scanned beans to <code>@Controller</code>, <code>@ControllerAdvice</code>, <code>@JsonComponent</code>, <code>Converter</code>, <code>GenericConverter</code>, <code>WebFilter</code>, and <code>WebFluxConfigurer</code>.
 Regular <code>@Component</code> and <code>@ConfigurationProperties</code> beans are not scanned when the <code>@WebFluxTest</code> annotation is used.
@@ -8377,7 +8377,7 @@ If that is not what you want, you can disable transaction management for a test 
 <h4 id="features.testing.spring-boot-applications.autoconfigured-jooq" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.autoconfigured-jooq"></a>8.3.19。自动配置的 jOOQ 测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.autoconfigured-jooq"></a>8.3.19. Auto-configured jOOQ Tests</h4>
 <div class="paragraph">
-<p translation-result="on">您可以以与 <code>@JdbcTest</code> 类似的方式使用 <code>@JooqTest</code> ，但用于与jOOQ 相关的测试。由于 jOOQ 严重依赖与数据库模式相对应的基于 Java 的模式，因此使用现有的 <code>DataSource</code> 。如果你想用内存数据库替换它，你可以使用 <code>@AutoConfigureTestDatabase</code> 覆盖这些设置。 （有关在 Spring Boot 中使用 jOOQ 的更多信息，请参阅本章前面的“ <a href="data.html#data.sql.jooq">data.html</a> ”。）使用 <code>@JooqTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。 <code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
+<p translation-result="on">您可以以与 <code>@JdbcTest</code> 类似的方式使用 <code>@JooqTest</code> ，但用于与 jOOQ 相关的测试。由于 jOOQ 严重依赖与数据库模式相对应的基于 Java 的模式，因此使用现有的 <code>DataSource</code> 。如果你想用内存数据库替换它，你可以使用 <code>@AutoConfigureTestDatabase</code> 覆盖这些设置。 （有关在 Spring Boot 中使用 jOOQ 的更多信息，请参阅本章前面的“ <a href="data.html#data.sql.jooq">data.html</a> ”。）使用 <code>@JooqTest</code> 注释时，不会扫描常规 <code>@Component</code> 和 <code>@ConfigurationProperties</code> bean。 <code>@EnableConfigurationProperties</code> 可用于包含 <code>@ConfigurationProperties</code> bean。</p>
 <p translation-origin="off">You can use <code>@JooqTest</code> in a similar fashion as <code>@JdbcTest</code> but for jOOQ-related tests.
 As jOOQ relies heavily on a Java-based schema that corresponds with the database schema, the existing <code>DataSource</code> is used.
 If you want to replace it with an in-memory database, you can use <code>@AutoConfigureTestDatabase</code> to override those settings.
@@ -8751,7 +8751,7 @@ class MyRestClientTests {
 <h4 id="features.testing.spring-boot-applications.autoconfigured-spring-restdocs" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-restdocs"></a> 8.3.25。自动配置的 Spring REST 文档测试</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.autoconfigured-spring-restdocs"></a>8.3.25. Auto-configured Spring REST Docs Tests</h4>
 <div class="paragraph">
-<p translation-result="on">您可以使用 <code>@AutoConfigureRestDocs</code> 注释在您的测试中使用 Mock MVC、REST Assured 或 WebTestClient 使用<a href="https://spring.io/projects/spring-restdocs">Spring REST 文档</a>。它消除了 Spring REST Docs 中对 JUnit 扩展的需求。</p>
+<p translation-result="on">您可以使用 <code>@AutoConfigureRestDocs</code> 注释在您的测试中使用 Mock MVC、REST Assured 或 WebTestClient 使用 <a href="https://spring.io/projects/spring-restdocs">Spring REST 文档</a>。它消除了 Spring REST Docs 中对 JUnit 扩展的需求。</p>
 <p translation-origin="off">You can use the <code>@AutoConfigureRestDocs</code> annotation to use <a href="https://spring.io/projects/spring-restdocs">Spring REST Docs</a> in your tests with Mock MVC, REST Assured, or WebTestClient.
 It removes the need for the JUnit extension in Spring REST Docs.</p>
 </div>
@@ -9339,7 +9339,7 @@ Alternatively, you can specify a source for your test, which disables the behavi
 <h4 id="features.testing.spring-boot-applications.spock" translation-result="on"><a href="features.html#features.testing.spring-boot-applications.spock"></a>8.3.29。使用 Spock 测试 Spring Boot 应用程序</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.spring-boot-applications.spock"></a>8.3.29. Using Spock to Test Spring Boot Applications</h4>
 <div class="paragraph">
-<p translation-result="on">Spock 2.x 可用于测试 Spring Boot 应用程序。为此，请将 Spock 的 <code>spock-spring</code> 模块的依赖项添加到应用程序的构建中。 <code>spock-spring</code> 将 Spring 的测试框架集成到 Spock 中。有关详细信息，请参阅<a href="https://spockframework.org/spock/docs/2.0/modules.html#_spring_module">Spock 的 Spring 模块的文档</a>。</p>
+<p translation-result="on">Spock 2.x 可用于测试 Spring Boot 应用程序。为此，请将 Spock 的 <code>spock-spring</code> 模块的依赖项添加到应用程序的构建中。 <code>spock-spring</code> 将 Spring 的测试框架集成到 Spock 中。有关详细信息，请参阅 <a href="https://spockframework.org/spock/docs/2.0/modules.html#_spring_module">Spock 的 Spring 模块的文档</a>。</p>
 <p translation-origin="off">Spock 2.x can be used to test a Spring Boot application.
 To do so, add a dependency on Spock’s <code>spock-spring</code> module to your application’s build.
 <code>spock-spring</code> integrates Spring’s test framework into Spock.
@@ -9473,7 +9473,7 @@ Instead, such errors can be detected through the returned <code>ResponseEntity</
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">Spring Framework 5.0 提供了一个新的 <code>WebTestClient</code> ，它适用于<a href="features.html#features.testing.spring-boot-applications.spring-webflux-tests">WebFlux 集成测试</a>以及<a href="features.html#features.testing.spring-boot-applications.with-running-server">WebFlux 和 MVC 端到端测试</a>。与 <code>TestRestTemplate</code> 不同，它为断言提供了流畅的 API。</p>
+<p translation-result="on">Spring Framework 5.0 提供了一个新的 <code>WebTestClient</code> ，它适用于 <a href="features.html#features.testing.spring-boot-applications.spring-webflux-tests">WebFlux 集成测试</a>以及 <a href="features.html#features.testing.spring-boot-applications.with-running-server">WebFlux 和 MVC 端到端测试</a>。与 <code>TestRestTemplate</code> 不同，它为断言提供了流畅的 API。</p>
 <p translation-origin="off">Spring Framework 5.0 provides a new <code>WebTestClient</code> that works for <a href="features.html#features.testing.spring-boot-applications.spring-webflux-tests">WebFlux integration tests</a> and both <a href="features.html#features.testing.spring-boot-applications.with-running-server">WebFlux and MVC end-to-end testing</a>.
 It provides a fluent API for assertions, unlike <code>TestRestTemplate</code>.</p>
 </td>
@@ -9713,7 +9713,7 @@ These annotations include:</p>
 <h4 id="features.developing-auto-configuration.condition-annotations.class-conditions" translation-result="on"><a href="features.html#features.developing-auto-configuration.condition-annotations.class-conditions"></a> 9.3.1。班级条件</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.developing-auto-configuration.condition-annotations.class-conditions"></a>9.3.1. Class Conditions</h4>
 <div class="paragraph">
-<p translation-result="on"><code>@ConditionalOnClass</code> 和 <code>@ConditionalOnMissingClass</code> 注释让 <code>@Configuration</code> 类根据特定类的存在或不存在而包含在内。由于注释元数据是使用<a href="https://asm.ow2.io/">ASM</a>解析的，因此您可以使用 <code>value</code> 属性来引用真实的类，即使该类实际上可能不会出现在正在运行的应用程序类路径中。如果您更喜欢使用 <code>String</code> 值指定类名，也可以使用 <code>name</code> 属性。</p>
+<p translation-result="on"><code>@ConditionalOnClass</code> 和 <code>@ConditionalOnMissingClass</code> 注释让 <code>@Configuration</code> 类根据特定类的存在或不存在而包含在内。由于注释元数据是使用 <a href="https://asm.ow2.io/">ASM</a> 解析的，因此您可以使用 <code>value</code> 属性来引用真实的类，即使该类实际上可能不会出现在正在运行的应用程序类路径中。如果您更喜欢使用 <code>String</code> 值指定类名，也可以使用 <code>name</code> 属性。</p>
 <p translation-origin="off">The <code>@ConditionalOnClass</code> and <code>@ConditionalOnMissingClass</code> annotations let <code>@Configuration</code> classes be included based on the presence or absence of specific classes.
 Due to the fact that annotation metadata is parsed by using <a href="https://asm.ow2.io/">ASM</a>, you can use the <code>value</code> attribute to refer to the real class, even though that class might not actually appear on the running application classpath.
 You can also use the <code>name</code> attribute if you prefer to specify the class name by using a <code>String</code> value.</p>
@@ -9888,7 +9888,7 @@ This condition will not match for applications that are run with an embedded ser
 <h4 id="features.developing-auto-configuration.condition-annotations.spel-conditions" translation-result="on"><a href="features.html#features.developing-auto-configuration.condition-annotations.spel-conditions"></a> 9.3.6。 SpEL 表达条件</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.developing-auto-configuration.condition-annotations.spel-conditions"></a>9.3.6. SpEL Expression Conditions</h4>
 <div class="paragraph">
-<p translation-result="on"><code>@ConditionalOnExpression</code> 注释允许基于<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/core.html#expressions">SpEL 表达式</a>的结果包含配置。</p>
+<p translation-result="on"><code>@ConditionalOnExpression</code> 注释允许基于 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/core.html#expressions">SpEL 表达式</a>的结果包含配置。</p>
 <p translation-origin="off">The <code>@ConditionalOnExpression</code> annotation lets configuration be included based on the result of a <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/core.html#expressions">SpEL expression</a>.</p>
 </div>
 </div>
@@ -10310,16 +10310,16 @@ If a project is created with only your custom starter, Spring Boot’s core feat
 <h2 translation-origin="off"><a class="anchor" href="features.html#features.kotlin"></a>10. Kotlin support</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on"><a href="https://kotlinlang.org">Kotlin</a>是一种针对 JVM（和其他平台）的静态类型语言，它允许编写简洁优雅的代码，同时提供与用 Java 编写的现有库的<a href="https://kotlinlang.org/docs/reference/java-interop.html">互操作性</a>。</p>
+<p translation-result="on"><a href="https://kotlinlang.org">Kotlin</a> 是一种针对 JVM（和其他平台）的静态类型语言，它允许编写简洁优雅的代码，同时提供与用 Java 编写的现有库的<a href="https://kotlinlang.org/docs/reference/java-interop.html">互操作性</a>。</p>
 <p translation-origin="off"><a href="https://kotlinlang.org">Kotlin</a> is a statically-typed language targeting the JVM (and other platforms) which allows writing concise and elegant code while providing <a href="https://kotlinlang.org/docs/reference/java-interop.html">interoperability</a> with existing libraries written in Java.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 通过利用其他 Spring 项目（如 Spring Framework、Spring Data 和 Reactor）中的支持来提供 Kotlin 支持。有关更多信息，请参阅<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/languages.html#kotlin">Spring Framework Kotlin 支持文档</a>。</p>
+<p translation-result="on">Spring Boot 通过利用其他 Spring 项目（如 Spring Framework、Spring Data 和 Reactor）中的支持来提供 Kotlin 支持。有关更多信息，请参阅 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/languages.html#kotlin">Spring Framework Kotlin 支持文档</a>。</p>
 <p translation-origin="off">Spring Boot provides Kotlin support by leveraging the support in other Spring projects such as Spring Framework, Spring Data, and Reactor.
 See the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/languages.html#kotlin">Spring Framework Kotlin support documentation</a> for more information.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">开始使用 Spring Boot 和 Kotlin 的最简单方法是遵循<a href="https://spring.io/guides/tutorials/spring-boot-kotlin/">这个综合教程</a>。您可以使用<a href="https://start.spring.io/#!language=kotlin">start.spring.io</a>创建新的 Kotlin 项目。如果您需要支持，请随时加入<a href="https://slack.kotlinlang.org/">Kotlin Slack</a>的#spring 频道，或者在<a href="https://stackoverflow.com/questions/tagged/spring+kotlin">Stack Overflow</a>上提出有关 <code>spring</code> 和 <code>kotlin</code> 标签的问题。</p>
+<p translation-result="on">开始使用 Spring Boot 和 Kotlin 的最简单方法是遵循<a href="https://spring.io/guides/tutorials/spring-boot-kotlin/">这个综合教程</a>。您可以使用 <a href="https://start.spring.io/#!language=kotlin">start.spring.io</a> 创建新的 Kotlin 项目。如果您需要支持，请随时加入 <a href="https://slack.kotlinlang.org/">Kotlin Slack</a> 的#spring 频道，或者在 <a href="https://stackoverflow.com/questions/tagged/spring+kotlin">Stack Overflow</a> 上提出有关 <code>spring</code> 和 <code>kotlin</code> 标签的问题。</p>
 <p translation-origin="off">The easiest way to start with Spring Boot and Kotlin is to follow <a href="https://spring.io/guides/tutorials/spring-boot-kotlin/">this comprehensive tutorial</a>.
 You can create new Kotlin projects by using <a href="https://start.spring.io/#!language=kotlin">start.spring.io</a>.
 Feel free to join the #spring channel of <a href="https://slack.kotlinlang.org/">Kotlin Slack</a> or ask a question with the <code>spring</code> and <code>kotlin</code> tags on <a href="https://stackoverflow.com/questions/tagged/spring+kotlin">Stack Overflow</a> if you need support.</p>
@@ -10334,11 +10334,11 @@ To use Kotlin, <code>org.jetbrains.kotlin:kotlin-stdlib</code> and <code>org.jet
 The <code>kotlin-stdlib</code> variants <code>kotlin-stdlib-jdk7</code> and <code>kotlin-stdlib-jdk8</code> can also be used.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">由于<a href="https://discuss.kotlinlang.org/t/classes-final-by-default/166">Kotlin 类默认为 final</a> ，您可能需要配置<a href="https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support">kotlin-spring</a>插件以自动打开带有 Spring 注释的类，以便它们可以被代理。</p>
+<p translation-result="on">由于 <a href="https://discuss.kotlinlang.org/t/classes-final-by-default/166">Kotlin 类默认为 final</a> ，您可能需要配置 <a href="https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support">kotlin-spring</a> 插件以自动打开带有 Spring 注释的类，以便它们可以被代理。</p>
 <p translation-origin="off">Since <a href="https://discuss.kotlinlang.org/t/classes-final-by-default/166">Kotlin classes are final by default</a>, you are likely to want to configure <a href="https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support">kotlin-spring</a> plugin in order to automatically open Spring-annotated classes so that they can be proxied.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">在 Kotlin 中序列化/反序列化 JSON 数据需要<a href="https://github.com/FasterXML/jackson-module-kotlin">Jackson 的 Kotlin 模块</a>。在类路径中找到它时会自动注册。如果 Jackson 和 Kotlin 存在但 Jackson Kotlin 模块不存在，则会记录一条警告消息。</p>
+<p translation-result="on">在 Kotlin 中序列化/反序列化 JSON 数据需要 <a href="https://github.com/FasterXML/jackson-module-kotlin">Jackson 的 Kotlin 模块</a>。在类路径中找到它时会自动注册。如果 Jackson 和 Kotlin 存在但 Jackson Kotlin 模块不存在，则会记录一条警告消息。</p>
 <p translation-origin="off"><a href="https://github.com/FasterXML/jackson-module-kotlin">Jackson’s Kotlin module</a> is required for serializing / deserializing JSON data in Kotlin.
 It is automatically registered when found on the classpath.
 A warning message is logged if Jackson and Kotlin are present but the Jackson Kotlin module is not.</p>
@@ -10350,7 +10350,7 @@ A warning message is logged if Jackson and Kotlin are present but the Jackson Ko
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果在<a href="https://start.spring.io/#!language=kotlin">start.spring.io</a>上引导 Kotlin 项目，则默认提供这些依赖项和插件。</p>
+<p translation-result="on">如果在 <a href="https://start.spring.io/#!language=kotlin">start.spring.io</a> 上引导 Kotlin 项目，则默认提供这些依赖项和插件。</p>
 <p translation-origin="off">These dependencies and plugins are provided by default if one bootstraps a Kotlin project on <a href="https://start.spring.io/#!language=kotlin">start.spring.io</a>.</p>
 </td>
 </tr>
@@ -10361,14 +10361,14 @@ A warning message is logged if Jackson and Kotlin are present but the Jackson Ko
 <h3 id="features.kotlin.null-safety" translation-result="on"><a href="features.html#features.kotlin.null-safety"></a>10.2.零安全</h3>
 <h3 translation-origin="off"><a class="anchor" href="features.html#features.kotlin.null-safety"></a>10.2. Null-safety</h3>
 <div class="paragraph">
-<p translation-result="on">Kotlin 的主要功能之一是<a href="https://kotlinlang.org/docs/reference/null-safety.html">null-safety</a> 。它在编译时处理 <code>null</code> 值，而不是将问题推迟到运行时并遇到 <code>NullPointerException</code> 。这有助于消除常见的错误来源，而无需支付像 <code>Optional</code> 这样的包装器的成本。 Kotlin 还允许使用具有可为空值的函数构造，如本<a href="https://www.baeldung.com/kotlin-null-safety">Kotlin 中空安全综合指南中</a>所述。</p>
+<p translation-result="on">Kotlin 的主要功能之一是 <a href="https://kotlinlang.org/docs/reference/null-safety.html">null-safety</a> 。它在编译时处理 <code>null</code> 值，而不是将问题推迟到运行时并遇到 <code>NullPointerException</code> 。这有助于消除常见的错误来源，而无需支付像 <code>Optional</code> 这样的包装器的成本。 Kotlin 还允许使用具有可为空值的函数构造，如本 <a href="https://www.baeldung.com/kotlin-null-safety">Kotlin 中空安全综合指南中</a>所述。</p>
 <p translation-origin="off">One of Kotlin’s key features is <a href="https://kotlinlang.org/docs/reference/null-safety.html">null-safety</a>.
 It deals with <code>null</code> values at compile time rather than deferring the problem to runtime and encountering a <code>NullPointerException</code>.
 This helps to eliminate a common source of bugs without paying the cost of wrappers like <code>Optional</code>.
 Kotlin also allows using functional constructs with nullable values as described in this <a href="https://www.baeldung.com/kotlin-null-safety">comprehensive guide to null-safety in Kotlin</a>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">尽管 Java 不允许在其类型系统中表达 null 安全性，但 Spring Framework、Spring Data 和 Reactor 现在通过工具友好的注解为其 API 提供 null 安全性。默认情况下，Kotlin 中使用的 Java API 的类型被识别为放宽空检查的<a href="https://kotlinlang.org/docs/reference/java-interop.html#null-safety-and-platform-types">平台类型</a>。 <a href="https://kotlinlang.org/docs/reference/java-interop.html#jsr-305-support">Kotlin 对 JSR 305 注释和可空性注释的支持为 Kotlin</a>中的相关 Spring API 提供了空值安全性。</p>
+<p translation-result="on">尽管 Java 不允许在其类型系统中表达 null 安全性，但 Spring Framework、Spring Data 和 Reactor 现在通过工具友好的注解为其 API 提供 null 安全性。默认情况下，Kotlin 中使用的 Java API 的类型被识别为放宽空检查的<a href="https://kotlinlang.org/docs/reference/java-interop.html#null-safety-and-platform-types">平台类型</a>。 <a href="https://kotlinlang.org/docs/reference/java-interop.html#jsr-305-support">Kotlin 对 JSR 305 注释和可空性注释的支持为 Kotlin</a> 中的相关 Spring API 提供了空值安全性。</p>
 <p translation-origin="off">Although Java does not allow one to express null-safety in its type system, Spring Framework, Spring Data, and Reactor now provide null-safety of their API through tooling-friendly annotations.
 By default, types from Java APIs used in Kotlin are recognized as <a href="https://kotlinlang.org/docs/reference/java-interop.html#null-safety-and-platform-types">platform types</a> for which null-checks are relaxed.
 <a href="https://kotlinlang.org/docs/reference/java-interop.html#jsr-305-support">Kotlin’s support for JSR 305 annotations</a> combined with nullability annotations provide null-safety for the related Spring API in Kotlin.</p>
@@ -10386,7 +10386,7 @@ The <code>strict</code> value is required to have null-safety taken in account i
 <i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
-<p translation-result="on">尚不支持泛型类型参数、可变参数和数组元素可空性。有关最新信息，请参阅<a href="https://jira.spring.io/browse/SPR-15942">SPR-15942</a> 。另请注意，Spring Boot 自己的 API<a href="https://github.com/spring-projects/spring-boot/issues/10712">尚未注释</a>。</p>
+<p translation-result="on">尚不支持泛型类型参数、可变参数和数组元素可空性。有关最新信息，请参阅 <a href="https://jira.spring.io/browse/SPR-15942">SPR-15942</a> 。另请注意，Spring Boot 自己的 API<a href="https://github.com/spring-projects/spring-boot/issues/10712">尚未注释</a>。</p>
 <p translation-origin="off">Generic type arguments, varargs and array elements nullability are not yet supported.
 See <a href="https://jira.spring.io/browse/SPR-15942">SPR-15942</a> for up-to-date information.
 Also be aware that Spring Boot’s own API is <a href="https://github.com/spring-projects/spring-boot/issues/10712">not yet annotated</a>.</p>
@@ -10470,7 +10470,7 @@ The version can be customized by setting the <code>kotlin-coroutines.version</co
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on"><code>org.jetbrains.kotlinx:kotlinx-coroutines-reactor</code> 依赖是默认提供的，如果一个 Kotlin 项目至少有一个对<a href="https://start.spring.io/#!language=kotlin">start.spring.io</a>的响应式依赖。</p>
+<p translation-result="on"><code>org.jetbrains.kotlinx:kotlinx-coroutines-reactor</code> 依赖是默认提供的，如果一个 Kotlin 项目至少有一个对 <a href="https://start.spring.io/#!language=kotlin">start.spring.io</a> 的响应式依赖。</p>
 <p translation-origin="off"><code>org.jetbrains.kotlinx:kotlinx-coroutines-reactor</code> dependency is provided by default if one bootstraps a Kotlin project with at least one reactive dependency on <a href="https://start.spring.io/#!language=kotlin">start.spring.io</a>.</p>
 </td>
 </tr>
@@ -10525,7 +10525,7 @@ JUnit 5 enables a test class to be instantiated once and reused for all of the c
 This makes it possible to use <code>@BeforeAll</code> and <code>@AfterAll</code> annotations on non-static methods, which is a good fit for Kotlin.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">要模拟 Kotlin 类，建议使用<a href="https://mockk.io/">MockK</a> 。如果您需要与 <code>Mockk</code> 特定的<a href="features.html#features.testing.spring-boot-applications.mocking-beans"><code>@MockBean</code> 和 <code>@SpyBean</code> 注释</a>等效的<a href="https://github.com/Ninja-Squad/springmockk">Mockk</a> ，则可以使用提供类似 <code>@MockkBean</code> 和 <code>@SpykBean</code> 注释的 SpringMockK。</p>
+<p translation-result="on">要模拟 Kotlin 类，建议使用 <a href="https://mockk.io/">MockK</a> 。如果您需要与 <code>Mockk</code> 特定的<a href="features.html#features.testing.spring-boot-applications.mocking-beans"><code>@MockBean</code> 和 <code>@SpyBean</code> 注释</a>等效的 <a href="https://github.com/Ninja-Squad/springmockk">Mockk</a> ，则可以使用提供类似 <code>@MockkBean</code> 和 <code>@SpykBean</code> 注释的 SpringMockK。</p>
 <p translation-origin="off">To mock Kotlin classes, <a href="https://mockk.io/">MockK</a> is recommended.
 If you need the <code>Mockk</code> equivalent of the Mockito specific <a href="features.html#features.testing.spring-boot-applications.mocking-beans"><code>@MockBean</code> and <code>@SpyBean</code> annotations</a>, you can use <a href="https://github.com/Ninja-Squad/springmockk">SpringMockK</a> which provides similar <code>@MockkBean</code> and <code>@SpykBean</code> annotations.</p>
 </div>
@@ -10625,7 +10625,7 @@ If you need the <code>Mockk</code> equivalent of the Mockito specific <a href="f
 <h2 translation-origin="off"><a class="anchor" href="features.html#features.whats-next"></a>11. What to Read Next</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">如果您想了解有关本节中讨论的任何类的更多信息，请参阅<a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/">Spring Boot API 文档</a>，或者您可以<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3">直接浏览源代码</a>。如果您有具体问题，请参阅<a href="howto.html#howto">操作方法</a>部分。</p>
+<p translation-result="on">如果您想了解有关本节中讨论的任何类的更多信息，请参阅 <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/">Spring Boot API 文档</a>，或者您可以<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3">直接浏览源代码</a>。如果您有具体问题，请参阅<a href="howto.html#howto">操作方法</a>部分。</p>
 <p translation-origin="off">If you want to learn more about any of the classes discussed in this section, see the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/">Spring Boot API documentation</a> or you can browse the <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3">source code directly</a>.
 If you have specific questions, see the <a href="howto.html#howto">how-to</a> section.</p>
 </div>

@@ -1035,7 +1035,7 @@
   <p translation-origin="off"><a href="io.html#io.validation">5. Validation</a></p>
 </li>
 <li>
-  <p translation-result="on"><a href="io.html#io.rest-client">6.调用REST服务</a></p>
+  <p translation-result="on"><a href="io.html#io.rest-client">6.调用 REST 服务</a></p>
   <p translation-origin="off"><a href="io.html#io.rest-client">6. Calling REST Services</a></p>
 <ul class="sectlevel2">
 <li>
@@ -1057,7 +1057,7 @@
   <p translation-origin="off"><a href="io.html#io.rest-client.webclient.runtime">6.2.1. WebClient Runtime</a></p>
 </li>
 <li>
-  <p translation-result="on"><a href="io.html#io.rest-client.webclient.customization">6.2.2. Web客户端定制</a></p>
+  <p translation-result="on"><a href="io.html#io.rest-client.webclient.customization">6.2.2. Web 客户端定制</a></p>
   <p translation-origin="off"><a href="io.html#io.rest-client.webclient.customization">6.2.2. WebClient Customization</a></p>
 </li>
 </ul>
@@ -1334,7 +1334,7 @@ A <code>CacheManager</code> wrapping all beans of that type is created.</p>
 <h4 id="io.caching.provider.jcache" translation-result="on"><a href="io.html#io.caching.provider.jcache"></a>1.1.2。 JCache (JSR-107)</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.jcache"></a>1.1.2. JCache (JSR-107)</h4>
 <div class="paragraph">
-<p translation-result="on"><a href="https://jcp.org/en/jsr/detail?id=107">JCache</a>通过类路径上存在 <code>javax.cache.spi.CachingProvider</code> 来引导（即类路径上存在符合 JSR-107 的缓存库），而 <code>JCacheCacheManager</code> 由 <code>spring-boot-starter-cache</code> 提供起动机”。有各种兼容的库可用，Spring Boot 为 Ehcache 3、Hazelcast 和 Infinispan 提供了依赖管理。也可以添加任何其他兼容的库。</p>
+<p translation-result="on"><a href="https://jcp.org/en/jsr/detail?id=107">JCache</a> 通过类路径上存在 <code>javax.cache.spi.CachingProvider</code> 来引导（即类路径上存在符合 JSR-107 的缓存库），而 <code>JCacheCacheManager</code> 由 <code>spring-boot-starter-cache</code> 提供起动机”。有各种兼容的库可用，Spring Boot 为 Ehcache 3、Hazelcast 和 Infinispan 提供了依赖管理。也可以添加任何其他兼容的库。</p>
 <p translation-origin="off"><a href="https://jcp.org/en/jsr/detail?id=107">JCache</a> is bootstrapped through the presence of a <code>javax.cache.spi.CachingProvider</code> on the classpath (that is, a JSR-107 compliant caching library exists on the classpath), and the <code>JCacheCacheManager</code> is provided by the <code>spring-boot-starter-cache</code> “Starter”.
 Various compliant libraries are available, and Spring Boot provides dependency management for Ehcache 3, Hazelcast, and Infinispan.
 Any other compliant library can be added as well.</p>
@@ -1427,7 +1427,7 @@ No further customization is applied to it.</p>
 <h4 id="io.caching.provider.ehcache2" translation-result="on"><a href="io.html#io.caching.provider.ehcache2"></a>1.1.3。 EhCache 2.x</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.ehcache2"></a>1.1.3. EhCache 2.x</h4>
 <div class="paragraph">
-<p translation-result="on">如果可以在类路径的根目录找到名为 <code>ehcache.xml</code> 的文件，则使用<a href="https://www.ehcache.org/">EhCache</a> 2.x。如果找到 EhCache 2.x，则使用 <code>spring-boot-starter-cache</code> “Starter”提供的 <code>EhCacheCacheManager</code> 来引导缓存管理器。也可以提供备用配置文件，如以下示例所示：</p>
+<p translation-result="on">如果可以在类路径的根目录找到名为 <code>ehcache.xml</code> 的文件，则使用 <a href="https://www.ehcache.org/">EhCache</a> 2.x。如果找到 EhCache 2.x，则使用 <code>spring-boot-starter-cache</code> “Starter”提供的 <code>EhCacheCacheManager</code> 来引导缓存管理器。也可以提供备用配置文件，如以下示例所示：</p>
 <p translation-origin="off"><a href="https://www.ehcache.org/">EhCache</a> 2.x is used if a file named <code>ehcache.xml</code> can be found at the root of the classpath.
 If EhCache 2.x is found, the <code>EhCacheCacheManager</code> provided by the <code>spring-boot-starter-cache</code> “Starter” is used to bootstrap the cache manager.
 An alternate configuration file can be provided as well, as shown in the following example:</p>
@@ -1462,7 +1462,7 @@ If a <code>HazelcastInstance</code> has been auto-configured, it is automaticall
 <h4 id="io.caching.provider.infinispan" translation-result="on"><a href="io.html#io.caching.provider.infinispan"></a>1.1.5。英菲尼斯潘</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.infinispan"></a>1.1.5. Infinispan</h4>
 <div class="paragraph">
-<p translation-result="on"><a href="https://infinispan.org/">Infinispan</a>没有默认配置文件位置，因此必须明确指定。否则，将使用默认引导程序。</p>
+<p translation-result="on"><a href="https://infinispan.org/">Infinispan</a> 没有默认配置文件位置，因此必须明确指定。否则，将使用默认引导程序。</p>
 <p translation-origin="off"><a href="https://infinispan.org/">Infinispan</a> has no default configuration file location, so it must be specified explicitly.
 Otherwise, the default bootstrap is used.</p>
 </div>
@@ -1494,7 +1494,7 @@ If a custom <code>ConfigurationBuilder</code> bean is defined, it is used to cus
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">Spring Boot 中对 Infinispan 的支持仅限于嵌入式模式，相当基础。如果你想要更多的选择，你应该使用官方的 Infinispan Spring Boot starter。有关详细信息，请参阅<a href="https://github.com/infinispan/infinispan-spring-boot">Infinispan 的文档</a>。</p>
+<p translation-result="on">Spring Boot 中对 Infinispan 的支持仅限于嵌入式模式，相当基础。如果你想要更多的选择，你应该使用官方的 Infinispan Spring Boot starter。有关详细信息，请参阅 <a href="https://github.com/infinispan/infinispan-spring-boot">Infinispan 的文档</a>。</p>
 <p translation-origin="off">The support of Infinispan in Spring Boot is restricted to the embedded mode and is quite basic.
 If you want more options, you should use the official Infinispan Spring Boot starter instead.
 See <a href="https://github.com/infinispan/infinispan-spring-boot">Infinispan’s documentation</a> for more details.</p>
@@ -1566,7 +1566,7 @@ public class MyCouchbaseCacheManagerConfiguration {
 <h4 id="io.caching.provider.redis" translation-result="on"><a href="io.html#io.caching.provider.redis"></a>1.1.7。雷迪斯</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.redis"></a>1.1.7. Redis</h4>
 <div class="paragraph">
-<p translation-result="on">如果<a href="https://redis.io/">Redis</a>可用且已配置，则会自动配置 <code>RedisCacheManager</code> 。可以通过设置 <code>spring.cache.cache-names</code> 属性在启动时创建额外的缓存，并且可以使用 <code>spring.cache.redis.*</code> 属性配置缓存默认值。例如，以下配置创建 <code>cache1</code> 和 <code>cache2</code> 缓存，其<em>生存时间</em>为 10 分钟：</p>
+<p translation-result="on">如果 <a href="https://redis.io/">Redis</a> 可用且已配置，则会自动配置 <code>RedisCacheManager</code> 。可以通过设置 <code>spring.cache.cache-names</code> 属性在启动时创建额外的缓存，并且可以使用 <code>spring.cache.redis.*</code> 属性配置缓存默认值。例如，以下配置创建 <code>cache1</code> 和 <code>cache2</code> 缓存，其<em>生存时间</em>为 10 分钟：</p>
 <p translation-origin="off">If <a href="https://redis.io/">Redis</a> is available and configured, a <code>RedisCacheManager</code> is auto-configured.
 It is possible to create additional caches on startup by setting the <code>spring.cache.cache-names</code> property and cache defaults can be configured by using <code>spring.cache.redis.*</code> properties.
 For instance, the following configuration creates <code>cache1</code> and <code>cache2</code> caches with a <em>time to live</em> of 10 minutes:</p>
@@ -1653,7 +1653,7 @@ public class MyRedisCacheManagerConfiguration {
 <h4 id="io.caching.provider.caffeine" translation-result="on"><a href="io.html#io.caching.provider.caffeine"></a>1.1.8。咖啡因</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.caffeine"></a>1.1.8. Caffeine</h4>
 <div class="paragraph">
-<p translation-result="on"><a href="https://github.com/ben-manes/caffeine">Caffeine</a>是 Java 8 对 Guava 缓存的重写，它取代了对 Guava 的支持。如果存在 Caffeine，则自动配置 <code>CaffeineCacheManager</code> （由 <code>spring-boot-starter-cache</code> “Starter”提供）。可以通过设置 <code>spring.cache.cache-names</code> 属性在启动时创建缓存，并且可以通过以下之一进行自定义（按指示的顺序）：</p>
+<p translation-result="on"><a href="https://github.com/ben-manes/caffeine">Caffeine</a> 是 Java 8 对 Guava 缓存的重写，它取代了对 Guava 的支持。如果存在 Caffeine，则自动配置 <code>CaffeineCacheManager</code> （由 <code>spring-boot-starter-cache</code> “Starter”提供）。可以通过设置 <code>spring.cache.cache-names</code> 属性在启动时创建缓存，并且可以通过以下之一进行自定义（按指示的顺序）：</p>
 <p translation-origin="off"><a href="https://github.com/ben-manes/caffeine">Caffeine</a> is a Java 8 rewrite of Guava’s cache that supersedes support for Guava.
 If Caffeine is present, a <code>CaffeineCacheManager</code> (provided by the <code>spring-boot-starter-cache</code> “Starter”) is auto-configured.
 Caches can be created on startup by setting the <code>spring.cache.cache-names</code> property and can be customized by one of the following (in the indicated order):</p>
@@ -1766,7 +1766,7 @@ If you need to disable caching altogether in certain environments, force the cac
 <h2 translation-origin="off"><a class="anchor" href="io.html#io.hazelcast"></a>2. Hazelcast</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">如果<a href="https://hazelcast.com/">Hazelcast</a>在类路径上并且找到了合适的配置，Spring Boot 会自动配置一个 <code>HazelcastInstance</code> ，您可以将其注入应用程序中。</p>
+<p translation-result="on">如果 <a href="https://hazelcast.com/">Hazelcast</a> 在类路径上并且找到了合适的配置，Spring Boot 会自动配置一个 <code>HazelcastInstance</code> ，您可以将其注入应用程序中。</p>
 <p translation-origin="off">If <a href="https://hazelcast.com/">Hazelcast</a> is on the classpath and a suitable configuration is found, Spring Boot auto-configures a <code>HazelcastInstance</code> that you can inject in your application.</p>
 </div>
 <div class="paragraph">
@@ -1837,7 +1837,7 @@ If your configuration defines an instance name, Spring Boot tries to locate an e
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">否则，Spring Boot 会尝试从默认位置查找 <code>hazelcast.xml</code> 配置：工作目录或类路径根目录中的 hazelcast.xml，或相同位置的 <code>.yaml</code> 对应项。我们还检查是否设置了 <code>hazelcast.config</code> 系统属性。有关更多详细信息，请参阅<a href="https://docs.hazelcast.org/docs/latest/manual/html-single/">Hazelcast 文档</a>。</p>
+<p translation-result="on">否则，Spring Boot 会尝试从默认位置查找 <code>hazelcast.xml</code> 配置：工作目录或类路径根目录中的 hazelcast.xml，或相同位置的 <code>.yaml</code> 对应项。我们还检查是否设置了 <code>hazelcast.config</code> 系统属性。有关更多详细信息，请参阅 <a href="https://docs.hazelcast.org/docs/latest/manual/html-single/">Hazelcast 文档</a>。</p>
 <p translation-origin="off">Otherwise, Spring Boot tries to find the Hazelcast configuration from the default locations: <code>hazelcast.xml</code> in the working directory or at the root of the classpath, or a <code>.yaml</code> counterpart in the same locations.
 We also check if the <code>hazelcast.config</code> system property is set.
 See the <a href="https://docs.hazelcast.org/docs/latest/manual/html-single/">Hazelcast documentation</a> for more details.</p>
@@ -1863,7 +1863,7 @@ If caching is enabled, the <code>HazelcastInstance</code> is automatically wrapp
 <h2 translation-origin="off"><a class="anchor" href="io.html#io.quartz"></a>3. Quartz Scheduler</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot 为使用<a href="https://www.quartz-scheduler.org/">Quartz 调度程序</a>提供了多种便利，包括 <code>spring-boot-starter-quartz</code> “Starter”。如果 Quartz 可用，则会自动配置 <code>SchedulerFactoryBean</code> <code>Scheduler</code> ）。</p>
+<p translation-result="on">Spring Boot 为使用 <a href="https://www.quartz-scheduler.org/">Quartz 调度程序</a>提供了多种便利，包括 <code>spring-boot-starter-quartz</code> “Starter”。如果 Quartz 可用，则会自动配置 <code>SchedulerFactoryBean</code> <code>Scheduler</code> ）。</p>
 <p translation-origin="off">Spring Boot offers several conveniences for working with the <a href="https://www.quartz-scheduler.org/">Quartz scheduler</a>, including the <code>spring-boot-starter-quartz</code> “Starter”.
 If Quartz is available, a <code>Scheduler</code> is auto-configured (through the <code>SchedulerFactoryBean</code> abstraction).</p>
 </div>
@@ -2132,7 +2132,7 @@ Once the parameters have been resolved, message interpolation is completed using
 </div>
 </div>
 <div class="sect1">
-<h2 id="io.rest-client" translation-result="on"><a href="io.html#io.rest-client"></a>6.调用REST服务</h2>
+<h2 id="io.rest-client" translation-result="on"><a href="io.html#io.rest-client"></a>6.调用 REST 服务</h2>
 <h2 translation-origin="off"><a class="anchor" href="io.html#io.rest-client"></a>6. Calling REST Services</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -2301,7 +2301,7 @@ Compared to <code>RestTemplate</code>, this client has a more functional feel an
 You can learn more about the <code>WebClient</code> in the dedicated <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html#webflux-client">section in the Spring Framework docs</a>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 为您创建并预配置了 <code>WebClient.Builder</code> 。强烈建议将其注入您的组件并使用它来创建 <code>WebClient</code> 实例。 Spring Boot 正在配置该构建器以共享 HTTP 资源，以与服务器相同的方式反映编解码器设置（请参阅<a href="web.html#web.reactive.webflux.httpcodecs">WebFlux HTTP 编解码器自动配置</a>）等等。</p>
+<p translation-result="on">Spring Boot 为您创建并预配置了 <code>WebClient.Builder</code> 。强烈建议将其注入您的组件并使用它来创建 <code>WebClient</code> 实例。 Spring Boot 正在配置该构建器以共享 HTTP 资源，以与服务器相同的方式反映编解码器设置（请参阅 <a href="web.html#web.reactive.webflux.httpcodecs">WebFlux HTTP 编解码器自动配置</a>）等等。</p>
 <p translation-origin="off">Spring Boot creates and pre-configures a <code>WebClient.Builder</code> for you.
 It is strongly advised to inject it in your components and use it to create <code>WebClient</code> instances.
 Spring Boot is configuring that builder to share HTTP resources, reflect codecs setup in the same fashion as the server ones (see <a href="web.html#web.reactive.webflux.httpcodecs">WebFlux HTTP codecs auto-configuration</a>), and more.</p>
@@ -2363,7 +2363,7 @@ Using the same technology for server and client has it advantages, as it will au
 </div>
 </div>
 <div class="sect3">
-<h4 id="io.rest-client.webclient.customization" translation-result="on"><a href="io.html#io.rest-client.webclient.customization"></a>6.2.2. Web客户端定制</h4>
+<h4 id="io.rest-client.webclient.customization" translation-result="on"><a href="io.html#io.rest-client.webclient.customization"></a>6.2.2. Web 客户端定制</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.rest-client.webclient.customization"></a>6.2.2. WebClient Customization</h4>
 <div class="paragraph">
 <p translation-result="on"><code>WebClient</code> 自定义有三种主要方法，具体取决于您希望自定义应用的范围。</p>
@@ -2498,7 +2498,7 @@ public class MyWebServiceTemplateConfiguration {
 <h2 translation-origin="off"><a class="anchor" href="io.html#io.jta"></a>8. Distributed Transactions with JTA</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot 使用<a href="https://www.atomikos.com/">Atomikos</a>嵌入式事务管理器支持跨多个 XA 资源的分布式 JTA 事务。部署到合适的 Java EE 应用服务器时也支持 JTA 事务。</p>
+<p translation-result="on">Spring Boot 使用 <a href="https://www.atomikos.com/">Atomikos</a> 嵌入式事务管理器支持跨多个 XA 资源的分布式 JTA 事务。部署到合适的 Java EE 应用服务器时也支持 JTA 事务。</p>
 <p translation-origin="off">Spring Boot supports distributed JTA transactions across multiple XA resources by using an <a href="https://www.atomikos.com/">Atomikos</a> embedded transaction manager.
 JTA transactions are also supported when deploying to a suitable Java EE Application Server.</p>
 </div>
@@ -2513,7 +2513,7 @@ If you are within a JTA environment and still want to use local transactions, yo
 <h3 id="io.jta.atomikos" translation-result="on"><a href="io.html#io.jta.atomikos"></a>8.1。使用 Atomikos 事务管理器</h3>
 <h3 translation-origin="off"><a class="anchor" href="io.html#io.jta.atomikos"></a>8.1. Using an Atomikos Transaction Manager</h3>
 <div class="paragraph">
-<p translation-result="on"><a href="https://www.atomikos.com/">Atomikos</a>是一种流行的开源事务管理器，可以嵌入到您的 Spring Boot 应用程序中。您可以使用 <code>spring-boot-starter-jta-atomikos</code> 启动器来拉入适当的 Atomikos 库。 Spring Boot 自动配置 Atomikos 并确保将适当 <code>depends-on</code> 设置应用于您的 Spring bean 以实现正确的启动和关闭顺序。</p>
+<p translation-result="on"><a href="https://www.atomikos.com/">Atomikos</a> 是一种流行的开源事务管理器，可以嵌入到您的 Spring Boot 应用程序中。您可以使用 <code>spring-boot-starter-jta-atomikos</code> 启动器来拉入适当的 Atomikos 库。 Spring Boot 自动配置 Atomikos 并确保将适当 <code>depends-on</code> 设置应用于您的 Spring bean 以实现正确的启动和关闭顺序。</p>
 <p translation-origin="off"><a href="https://www.atomikos.com/">Atomikos</a> is a popular open source transaction manager which can be embedded into your Spring Boot application.
 You can use the <code>spring-boot-starter-jta-atomikos</code> starter to pull in the appropriate Atomikos libraries.
 Spring Boot auto-configures Atomikos and ensures that appropriate <code>depends-on</code> settings are applied to your Spring beans for correct startup and shutdown ordering.</p>
@@ -2608,7 +2608,7 @@ The interfaces are responsible for wrapping <code>XAConnectionFactory</code> and
 DataSource and JMS auto-configuration use JTA variants, provided you have a <code>JtaTransactionManager</code> bean and appropriate XA wrapper beans registered within your <code>ApplicationContext</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jta/atomikos/AtomikosXAConnectionFactoryWrapper.java">AtomikosXAConnectionFactoryWrapper</a>和<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jta/atomikos/AtomikosXADataSourceWrapper.java">AtomikosXADataSourceWrapper</a>提供了如何编写 XA 包装器的很好的示例。</p>
+<p translation-result="on"><a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jta/atomikos/AtomikosXAConnectionFactoryWrapper.java">AtomikosXAConnectionFactoryWrapper</a> 和 <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jta/atomikos/AtomikosXADataSourceWrapper.java">AtomikosXADataSourceWrapper</a> 提供了如何编写 XA 包装器的很好的示例。</p>
 <p translation-origin="off">The <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jta/atomikos/AtomikosXAConnectionFactoryWrapper.java">AtomikosXAConnectionFactoryWrapper</a> and <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jta/atomikos/AtomikosXADataSourceWrapper.java">AtomikosXADataSourceWrapper</a> provide good examples of how to write XA wrappers.</p>
 </div>
 </div>

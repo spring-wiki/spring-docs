@@ -999,7 +999,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot 应用程序可以<a href="container-images.html#container-images.dockerfiles">使用 Dockerfiles</a>进行容器化，或者<a href="container-images.html#container-images.buildpacks">使用 Cloud Native Buildpacks 创建优化的 docker 兼容容器镜像，您可以在任何地方运行</a>。</p>
+<p translation-result="on">Spring Boot 应用程序可以<a href="container-images.html#container-images.dockerfiles">使用 Dockerfiles</a> 进行容器化，或者<a href="container-images.html#container-images.buildpacks">使用 Cloud Native Buildpacks 创建优化的 docker 兼容容器镜像，您可以在任何地方运行</a>。</p>
 <p translation-origin="off">Spring Boot applications can be containerized <a href="container-images.html#container-images.dockerfiles">using Dockerfiles</a>, or by <a href="container-images.html#container-images.buildpacks">using Cloud Native Buildpacks to create optimized docker compatible container images that you can run anywhere</a>.</p>
 </div>
 </div>
@@ -1009,7 +1009,7 @@
 <h2 translation-origin="off"><a class="anchor" href="container-images.html#container-images.efficient-images"></a>1. Efficient container images</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">很容易将 Spring Boot fat jar 打包为 docker 镜像。然而，在 docker 镜像中复制和运行 fat jar 有很多缺点。在不打开包装的情况下运行 fat jar 总是有一定的开销，在容器化环境中这可能很明显。另一个问题是，将应用程序的代码及其所有依赖项放在 Docker 映像的一层中是次优的。由于您可能比升级您使用的 Spring Boot 版本更频繁地重新编译您的代码，因此通常最好将它们分开一点。如果你把jar文件放在你的应用程序类之前的层，Docker通常只需要改变最底层，就可以从它的缓存中提取其他的。</p>
+<p translation-result="on">很容易将 Spring Boot fat jar 打包为 docker 镜像。然而，在 docker 镜像中复制和运行 fat jar 有很多缺点。在不打开包装的情况下运行 fat jar 总是有一定的开销，在容器化环境中这可能很明显。另一个问题是，将应用程序的代码及其所有依赖项放在 Docker 映像的一层中是次优的。由于您可能比升级您使用的 Spring Boot 版本更频繁地重新编译您的代码，因此通常最好将它们分开一点。如果你把 jar 文件放在你的应用程序类之前的层，Docker 通常只需要改变最底层，就可以从它的缓存中提取其他的。</p>
 <p translation-origin="off">It is easily possible to package a Spring Boot fat jar as a docker image.
 However, there are various downsides to copying and running the fat jar as is in the docker image.
 There’s always a certain amount of overhead when running a fat jar without unpacking it, and in a containerized environment this can be noticeable.
@@ -1241,7 +1241,7 @@ Spring Boot includes buildpack support directly for both Maven and Gradle.
 This means you can just type a single command and quickly get a sensible image into your locally running Docker daemon.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">请参阅单独的插件文档，了解如何将 buildpacks 与<a href="https://docs.spring.io/spring-boot/docs/2.6.3/maven-plugin/reference/htmlsingle/#build-image">Maven</a>和<a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/reference/htmlsingle/#build-image">Gradle</a>一起使用。</p>
+<p translation-result="on">请参阅单独的插件文档，了解如何将 buildpacks 与 <a href="https://docs.spring.io/spring-boot/docs/2.6.3/maven-plugin/reference/htmlsingle/#build-image">Maven</a> 和 <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/reference/htmlsingle/#build-image">Gradle</a> 一起使用。</p>
 <p translation-origin="off">See the individual plugin documentation on how to use buildpacks with <a href="https://docs.spring.io/spring-boot/docs/2.6.3/maven-plugin/reference/htmlsingle/#build-image">Maven</a> and <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/reference/htmlsingle/#build-image">Gradle</a>.</p>
 </div>
 <div class="admonitionblock note">
@@ -1251,7 +1251,7 @@ This means you can just type a single command and quickly get a sensible image i
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on"><a href="https://github.com/paketo-buildpacks/spring-boot">Paketo Spring Boot buildpack</a>也已更新以支持 <code>layers.idx</code> 文件，因此应用到它的任何自定义都将反映在 buildpack 创建的映像中。</p>
+<p translation-result="on"><a href="https://github.com/paketo-buildpacks/spring-boot">Paketo Spring Boot buildpack</a> 也已更新以支持 <code>layers.idx</code> 文件，因此应用到它的任何自定义都将反映在 buildpack 创建的映像中。</p>
 <p translation-origin="off">The <a href="https://github.com/paketo-buildpacks/spring-boot">Paketo Spring Boot buildpack</a> has also been updated to support the <code>layers.idx</code> file so any customization that is applied to it will be reflected in the image created by the buildpack.</p>
 </td>
 </tr>
