@@ -1247,7 +1247,7 @@
 <h2 translation-origin="off"><a class="anchor" href="data.html#data.sql"></a>1. SQL Databases</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on"><a href="https://spring.io/projects/spring-framework">Spring Framework</a> 为使用 SQL 数据库提供了广泛的支持，从使用 <code>JdbcTemplate</code> 的直接 JDBC 访问到完整的“对象关系映射”技术，如 Hibernate。<a href="https://spring.io/projects/spring-data">Spring Data</a> 提供了额外级别的功能：直接从接口创建 <code>Repository</code> 实现并使用约定从您的方法名称生成查询。</p>
+<p translation-result="on"><a href="https://spring.io/projects/spring-framework">Spring Framework</a> 为使用 SQL 数据库提供了广泛的支持，从使用 <code>JdbcTemplate</code> 的直接 JDBC 访问到完整的“对象关系映射”技术，如 Hibernate。<a href="https://spring.io/projects/spring-data">Spring Data</a> 提供了额外级别的功能：直接从接口创建 <code>Repository</code> 实现并使用约定从你的方法名称生成查询。</p>
 <p translation-origin="off">The <a href="https://spring.io/projects/spring-framework">Spring Framework</a> provides extensive support for working with SQL databases, from direct JDBC access using <code>JdbcTemplate</code> to complete “object relational mapping” technologies such as Hibernate.
 <a href="https://spring.io/projects/spring-data">Spring Data</a> provides an additional level of functionality: creating <code>Repository</code> implementations directly from interfaces and using conventions to generate queries from your method names.</p>
 </div>
@@ -1276,7 +1276,7 @@ Traditionally, a 'DataSource' uses a <code>URL</code> along with some credential
 <h4 id="data.sql.datasource.embedded" translation-result="on"><a href="data.html#data.sql.datasource.embedded"></a>1.1.1. 嵌入式数据库支持</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.sql.datasource.embedded"></a>1.1.1. Embedded Database Support</h4>
 <div class="paragraph">
-<p translation-result="on">使用内存嵌入式数据库开发应用程序通常很方便。显然，内存数据库不提供持久存储。您需要在应用程序启动时填充数据库，并准备在应用程序结束时丢弃数据。</p>
+<p translation-result="on">使用内存嵌入式数据库开发应用程序通常很方便。显然，内存数据库不提供持久存储。你需要在应用程序启动时填充数据库，并准备在应用程序结束时丢弃数据。</p>
 <p translation-origin="off">It is often convenient to develop applications by using an in-memory embedded database.
 Obviously, in-memory databases do not provide persistent storage.
 You need to populate your database when your application starts and be prepared to throw away data when your application ends.</p>
@@ -1295,7 +1295,7 @@ You need to populate your database when your application starts and be prepared 
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 可以自动配置嵌入式 <a href="https://www.h2database.com">H2</a> 、 <a href="http://hsqldb.org/">HSQL</a> 和 <a href="https://db.apache.org/derby/">Derby</a> 数据库。您无需提供任何连接 URL。您只需要包含对要使用的嵌入式数据库的构建依赖项。如果类路径上有多个嵌入式数据库，请设置 <code>spring.datasource.embedded-database-connection</code> 配置属性来控制使用哪一个。将该属性设置为 <code>none</code> 会禁用嵌入式数据库的自动配置。</p>
+<p translation-result="on">Spring Boot 可以自动配置嵌入式 <a href="https://www.h2database.com">H2</a> 、 <a href="http://hsqldb.org/">HSQL</a> 和 <a href="https://db.apache.org/derby/">Derby</a> 数据库。你无需提供任何连接 URL。你只需要包含对要使用的嵌入式数据库的构建依赖项。如果类路径上有多个嵌入式数据库，请设置 <code>spring.datasource.embedded-database-connection</code> 配置属性来控制使用哪一个。将该属性设置为 <code>none</code> 会禁用嵌入式数据库的自动配置。</p>
 <p translation-origin="off">Spring Boot can auto-configure embedded <a href="https://www.h2database.com">H2</a>, <a href="http://hsqldb.org/">HSQL</a>, and <a href="https://db.apache.org/derby/">Derby</a> databases.
 You need not provide any connection URLs.
 You need only include a build dependency to the embedded database that you want to use.
@@ -1310,7 +1310,7 @@ Setting the property to <code>none</code> disables auto-configuration of an embe
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">如果您在测试中使用此功能，您可能会注意到，无论您使用多少应用程序上下文，整个测试套件都会重用同一个数据库。如果要确保每个上下文都有一个单独的嵌入式数据库，则应将 <code>spring.datasource.generate-unique-name</code> 设置为 <code>true</code> 。</p>
+<p translation-result="on">如果你在测试中使用此功能，你可能会注意到，无论你使用多少应用程序上下文，整个测试套件都会重用同一个数据库。如果要确保每个上下文都有一个单独的嵌入式数据库，则应将 <code>spring.datasource.generate-unique-name</code> 设置为 <code>true</code> 。</p>
 <p translation-origin="off">If you are using this feature in your tests, you may notice that the same database is reused by your whole test suite regardless of the number of application contexts that you use.
 If you want to make sure that each context has a separate embedded database, you should set <code>spring.datasource.generate-unique-name</code> to <code>true</code>.</p>
 </div>
@@ -1342,7 +1342,7 @@ If you want to make sure that each context has a separate embedded database, you
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">您需要依赖 <code>spring-jdbc</code> 才能自动配置嵌入式数据库。在这个例子中，它是通过 <code>spring-boot-starter-data-jpa</code> 传递的。</p>
+<p translation-result="on">你需要依赖 <code>spring-jdbc</code> 才能自动配置嵌入式数据库。在这个例子中，它是通过 <code>spring-boot-starter-data-jpa</code> 传递的。</p>
 <p translation-origin="off">You need a dependency on <code>spring-jdbc</code> for an embedded database to be auto-configured.
 In this example, it is pulled in transitively through <code>spring-boot-starter-data-jpa</code>.</p>
 </td>
@@ -1356,7 +1356,7 @@ In this example, it is pulled in transitively through <code>spring-boot-starter-
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果出于某种原因，您确实为嵌入式数据库配置了连接 URL，请注意确保禁用数据库的自动关闭。如果您使用 H2，则应使用 <code>DB_CLOSE_ON_EXIT=FALSE</code> 来执行此操作。如果使用 HSQLDB，则应确保不使用 <code>shutdown=true</code> 。禁用数据库的自动关闭让 Spring Boot 控制数据库何时关闭，从而确保在不再需要访问数据库时发生这种情况。</p>
+<p translation-result="on">如果出于某种原因，你确实为嵌入式数据库配置了连接 URL，请注意确保禁用数据库的自动关闭。如果你使用 H2，则应使用 <code>DB_CLOSE_ON_EXIT=FALSE</code> 来执行此操作。如果使用 HSQLDB，则应确保不使用 <code>shutdown=true</code> 。禁用数据库的自动关闭让 Spring Boot 控制数据库何时关闭，从而确保在不再需要访问数据库时发生这种情况。</p>
 <p translation-origin="off">If, for whatever reason, you do configure the connection URL for an embedded database, take care to ensure that the database’s automatic shutdown is disabled.
 If you use H2, you should use <code>DB_CLOSE_ON_EXIT=FALSE</code> to do so.
 If you use HSQLDB, you should ensure that <code>shutdown=true</code> is not used.
@@ -1378,7 +1378,7 @@ Disabling the database’s automatic shutdown lets Spring Boot control when the 
 <h4 id="data.sql.datasource.configuration" translation-result="on"><a href="data.html#data.sql.datasource.configuration"></a>1.1.3. 数据源配置</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.sql.datasource.configuration"></a>1.1.3. DataSource Configuration</h4>
 <div class="paragraph">
-<p translation-result="on">DataSource 配置由 <code>spring.datasource.*</code> 中的外部配置属性控制。例如，您可以在 <code>application.properties</code> 中声明以下部分：</p>
+<p translation-result="on">DataSource 配置由 <code>spring.datasource.*</code> 中的外部配置属性控制。例如，你可以在 <code>application.properties</code> 中声明以下部分：</p>
 <p translation-origin="off">DataSource configuration is controlled by external configuration properties in <code>spring.datasource.*</code>.
 For example, you might declare the following section in <code>application.properties</code>:</p>
 </div>
@@ -1408,7 +1408,7 @@ spring.datasource.password=dbpass</code></pre>
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">您至少应该通过设置 <code>spring.datasource.url</code> 属性来指定 URL。否则，Spring Boot 会尝试自动配置嵌入式数据库。</p>
+<p translation-result="on">你至少应该通过设置 <code>spring.datasource.url</code> 属性来指定 URL。否则，Spring Boot 会尝试自动配置嵌入式数据库。</p>
 <p translation-origin="off">You should at least specify the URL by setting the <code>spring.datasource.url</code> property.
 Otherwise, Spring Boot tries to auto-configure an embedded database.</p>
 </td>
@@ -1436,7 +1436,7 @@ If you need to specify a specific class, you can use the <code>spring.datasource
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">对于要创建的池 <code>DataSource</code> ，我们需要能够验证有效的 <code>Driver</code> 类是否可用，因此我们在做任何事情之前都要检查它。换句话说，如果您设置 <code>spring.datasource.driver-class-name=com.mysql.jdbc.Driver</code> ，那么该类必须是可加载的。</p>
+<p translation-result="on">对于要创建的池 <code>DataSource</code> ，我们需要能够验证有效的 <code>Driver</code> 类是否可用，因此我们在做任何事情之前都要检查它。换句话说，如果你设置 <code>spring.datasource.driver-class-name=com.mysql.jdbc.Driver</code> ，那么该类必须是可加载的。</p>
 <p translation-origin="off">For a pooling <code>DataSource</code> to be created, we need to be able to verify that a valid <code>Driver</code> class is available, so we check for that before doing anything.
 In other words, if you set <code>spring.datasource.driver-class-name=com.mysql.jdbc.Driver</code>, then that class has to be loadable.</p>
 </td>
@@ -1444,14 +1444,14 @@ In other words, if you set <code>spring.datasource.driver-class-name=com.mysql.j
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">有关更多受支持的选项，请参阅<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jdbc/DataSourceProperties.java"><code>DataSourceProperties</code></a> 。无论<a href="features.html#data.sql.datasource.connection-pool">实际实施</a>如何，这些都是标准选项。还可以通过使用它们各自的前缀（ <code>spring.datasource.hikari.*</code> 、 <code>spring.datasource.tomcat.*</code> 、 <code>spring.datasource.dbcp2.*</code> 和 <code>spring.datasource.oracleucp.*</code> 来微调特定于实现的设置） ）。有关更多详细信息，请参阅您正在使用的连接池实现的文档。</p>
+<p translation-result="on">有关更多受支持的选项，请参阅<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jdbc/DataSourceProperties.java"><code>DataSourceProperties</code></a> 。无论<a href="features.html#data.sql.datasource.connection-pool">实际实施</a>如何，这些都是标准选项。还可以通过使用它们各自的前缀（ <code>spring.datasource.hikari.*</code> 、 <code>spring.datasource.tomcat.*</code> 、 <code>spring.datasource.dbcp2.*</code> 和 <code>spring.datasource.oracleucp.*</code> 来微调特定于实现的设置） ）。有关更多详细信息，请参阅你正在使用的连接池实现的文档。</p>
 <p translation-origin="off">See <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jdbc/DataSourceProperties.java"><code>DataSourceProperties</code></a> for more of the supported options.
 These are the standard options that work regardless of <a href="features.html#data.sql.datasource.connection-pool">the actual implementation</a>.
 It is also possible to fine-tune implementation-specific settings by using their respective prefix (<code>spring.datasource.hikari.*</code>, <code>spring.datasource.tomcat.*</code>, <code>spring.datasource.dbcp2.*</code>, and <code>spring.datasource.oracleucp.*</code>).
 See the documentation of the connection pool implementation you are using for more details.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">例如，如果您使用 <a href="https://tomcat.apache.org/tomcat-9.0-doc/jdbc-pool.html#Common_Attributes">Tomcat 连接池</a>，您可以自定义许多附加设置，如下例所示：</p>
+<p translation-result="on">例如，如果你使用 <a href="https://tomcat.apache.org/tomcat-9.0-doc/jdbc-pool.html#Common_Attributes">Tomcat 连接池</a>，你可以自定义许多附加设置，如下例所示：</p>
 <p translation-origin="off">For instance, if you use the <a href="https://tomcat.apache.org/tomcat-9.0-doc/jdbc-pool.html#Common_Attributes">Tomcat connection pool</a>, you could customize many additional settings, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
@@ -1521,12 +1521,12 @@ If HikariCP is available, we always choose it.</p>
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以完全绕过该算法并通过设置 <code>spring.datasource.type</code> 属性来指定要使用的连接池。如果您在 Tomcat 容器中运行应用程序，这一点尤其重要，因为默认情况下会提供 <code>tomcat-jdbc</code> 。</p>
+<p translation-result="on">你可以完全绕过该算法并通过设置 <code>spring.datasource.type</code> 属性来指定要使用的连接池。如果你在 Tomcat 容器中运行应用程序，这一点尤其重要，因为默认情况下会提供 <code>tomcat-jdbc</code> 。</p>
 <p translation-origin="off">You can bypass that algorithm completely and specify the connection pool to use by setting the <code>spring.datasource.type</code> property.
 This is especially important if you run your application in a Tomcat container, as <code>tomcat-jdbc</code> is provided by default.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">始终可以使用 <code>DataSourceBuilder</code> 手动配置其他连接池。如果您定义自己的 <code>DataSource</code> bean，则不会发生自动配置。<code>DataSourceBuilder</code> 支持以下连接池：</p>
+<p translation-result="on">始终可以使用 <code>DataSourceBuilder</code> 手动配置其他连接池。如果你定义自己的 <code>DataSource</code> bean，则不会发生自动配置。<code>DataSourceBuilder</code> 支持以下连接池：</p>
 <p translation-origin="off">Additional connection pools can always be configured manually, using <code>DataSourceBuilder</code>.
 If you define your own <code>DataSource</code> bean, auto-configuration does not occur.
 The following connection pools are supported by <code>DataSourceBuilder</code>:</p>
@@ -1566,7 +1566,7 @@ The following connection pools are supported by <code>DataSourceBuilder</code>:<
 <h4 id="data.sql.datasource.jndi" translation-result="on"><a href="data.html#data.sql.datasource.jndi"></a>1.1.5. 连接到 JNDI 数据源</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.sql.datasource.jndi"></a>1.1.5. Connection to a JNDI DataSource</h4>
 <div class="paragraph">
-<p translation-result="on">如果您将 Spring Boot 应用程序部署到 Application Server，您可能希望使用 Application Server 的内置功能配置和管理 DataSource，并使用 JNDI 访问它。</p>
+<p translation-result="on">如果你将 Spring Boot 应用程序部署到 Application Server，你可能希望使用 Application Server 的内置功能配置和管理 DataSource，并使用 JNDI 访问它。</p>
 <p translation-origin="off">If you deploy your Spring Boot application to an Application Server, you might want to configure and manage your DataSource by using your Application Server’s built-in features and access it by using JNDI.</p>
 </div>
 <div class="paragraph">
@@ -1595,7 +1595,7 @@ For example, the following section in <code>application.properties</code> shows 
 <h3 id="data.sql.jdbc-template" translation-result="on"><a href="data.html#data.sql.jdbc-template"></a>1.2. 使用 JdbcTemplate</h3>
 <h3 translation-origin="off"><a class="anchor" href="data.html#data.sql.jdbc-template"></a>1.2. Using JdbcTemplate</h3>
 <div class="paragraph">
-<p translation-result="on">Spring 的 <code>JdbcTemplate</code> 和 <code>NamedParameterJdbcTemplate</code> 类是自动配置的，您可以将它们直接 <code>@Autowire</code> 到您自己的 bean 中，如下例所示：</p>
+<p translation-result="on">Spring 的 <code>JdbcTemplate</code> 和 <code>NamedParameterJdbcTemplate</code> 类是自动配置的，你可以将它们直接 <code>@Autowire</code> 到你自己的 bean 中，如下例所示：</p>
 <p translation-origin="off">Spring’s <code>JdbcTemplate</code> and <code>NamedParameterJdbcTemplate</code> classes are auto-configured, and you can <code>@Autowire</code> them directly into your own beans, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -1621,7 +1621,7 @@ public class MyBean {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以使用 <code>spring.jdbc.template.*</code> 属性自定义模板的一些属性，如下例所示：</p>
+<p translation-result="on">你可以使用 <code>spring.jdbc.template.*</code> 属性自定义模板的一些属性，如下例所示：</p>
 <p translation-origin="off">You can customize some properties of the template by using the <code>spring.jdbc.template.*</code> properties, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
@@ -1659,7 +1659,7 @@ If more than one <code>JdbcTemplate</code> is defined and no primary candidate e
 <h3 id="data.sql.jpa-and-spring-data" translation-result="on"><a href="data.html#data.sql.jpa-and-spring-data"></a>1.3. JPA 和 Spring Data JPA</h3>
 <h3 translation-origin="off"><a class="anchor" href="data.html#data.sql.jpa-and-spring-data"></a>1.3. JPA and Spring Data JPA</h3>
 <div class="paragraph">
-<p translation-result="on">Java Persistence API 是一种标准技术，可让您将对象“映射”到关系数据库。<code>spring-boot-starter-data-jpa</code> POM 提供了一种快速入门的方法。它提供以下关键依赖项：</p>
+<p translation-result="on">Java Persistence API 是一种标准技术，可让你将对象“映射”到关系数据库。<code>spring-boot-starter-data-jpa</code> POM 提供了一种快速入门的方法。它提供以下关键依赖项：</p>
 <p translation-origin="off">The Java Persistence API is a standard technology that lets you “map” objects to relational databases.
 The <code>spring-boot-starter-data-jpa</code> POM provides a quick way to get started.
 It provides the following key dependencies:</p>
@@ -1671,7 +1671,7 @@ It provides the following key dependencies:</p>
 <p translation-origin="off">Hibernate: One of the most popular JPA implementations.</p>
 </li>
 <li>
-<p translation-result="on">Spring Data JPA：帮助您实现基于 JPA 的存储库。</p>
+<p translation-result="on">Spring Data JPA：帮助你实现基于 JPA 的存储库。</p>
 <p translation-origin="off">Spring Data JPA: Helps you to implement JPA-based repositories.</p>
 </li>
 <li>
@@ -1687,7 +1687,7 @@ It provides the following key dependencies:</p>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">我们不会在此过多介绍 JPA 或 <a href="https://spring.io/projects/spring-data">Spring Data</a> 的细节。您可以遵循 <a href="https://spring.io">spring.io</a> 中的<a href="https://spring.io/guides/gs/accessing-data-jpa/">“使用 JPA 访问数据”</a>指南并阅读 <a href="https://spring.io/projects/spring-data-jpa">Spring Data JPA</a> 和 <a href="https://hibernate.org/orm/documentation/">Hibernate</a> 参考文档。</p>
+<p translation-result="on">我们不会在此过多介绍 JPA 或 <a href="https://spring.io/projects/spring-data">Spring Data</a> 的细节。你可以遵循 <a href="https://spring.io">spring.io</a> 中的<a href="https://spring.io/guides/gs/accessing-data-jpa/">“使用 JPA 访问数据”</a>指南并阅读 <a href="https://spring.io/projects/spring-data-jpa">Spring Data JPA</a> 和 <a href="https://hibernate.org/orm/documentation/">Hibernate</a> 参考文档。</p>
 <p translation-origin="off">We do not go into too many details of JPA or <a href="https://spring.io/projects/spring-data">Spring Data</a> here.
 You can follow the <a href="https://spring.io/guides/gs/accessing-data-jpa/">“Accessing Data with JPA”</a> guide from <a href="https://spring.io" class="bare">spring.io</a> and read the <a href="https://spring.io/projects/spring-data-jpa">Spring Data JPA</a> and <a href="https://hibernate.org/orm/documentation/">Hibernate</a> reference documentation.</p>
 </td>
@@ -1763,7 +1763,7 @@ public class City implements Serializable {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">您可以使用 <code>@EntityScan</code> 注释自定义实体扫描位置。请参阅“ <a href="howto.html#howto.data-access.separate-entity-definitions-from-spring-configuration">howto.html</a> ”操作指南。</p>
+<p translation-result="on">你可以使用 <code>@EntityScan</code> 注释自定义实体扫描位置。请参阅“ <a href="howto.html#howto.data-access.separate-entity-definitions-from-spring-configuration">howto.html</a> ”操作指南。</p>
 <p translation-origin="off">You can customize entity scanning locations by using the <code>@EntityScan</code> annotation.
 See the “<a href="howto.html#howto.data-access.separate-entity-definitions-from-spring-configuration">howto.html</a>” how-to.</p>
 </td>
@@ -1775,17 +1775,17 @@ See the “<a href="howto.html#howto.data-access.separate-entity-definitions-fro
 <h4 id="data.sql.jpa-and-spring-data.repositories" translation-result="on"><a href="data.html#data.sql.jpa-and-spring-data.repositories"></a>1.3.2. Spring Data JPA 存储库</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.sql.jpa-and-spring-data.repositories"></a>1.3.2. Spring Data JPA Repositories</h4>
 <div class="paragraph">
-<p translation-result="on"><a href="https://spring.io/projects/spring-data-jpa">Spring Data JPA</a> 存储库是您可以定义以访问数据的接口。JPA 查询是根据您的方法名称自动创建的。例如，<code>CityRepository</code> 接口可能会声明一个 <code>findAllByState(String state)</code> 方法来查找给定状态下的所有城市。</p>
+<p translation-result="on"><a href="https://spring.io/projects/spring-data-jpa">Spring Data JPA</a> 存储库是你可以定义以访问数据的接口。JPA 查询是根据你的方法名称自动创建的。例如，<code>CityRepository</code> 接口可能会声明一个 <code>findAllByState(String state)</code> 方法来查找给定状态下的所有城市。</p>
 <p translation-origin="off"><a href="https://spring.io/projects/spring-data-jpa">Spring Data JPA</a> repositories are interfaces that you can define to access data.
 JPA queries are created automatically from your method names.
 For example, a <code>CityRepository</code> interface might declare a <code>findAllByState(String state)</code> method to find all the cities in a given state.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">对于更复杂的查询，您可以使用 Spring Data 的<a href="https://docs.spring.io/spring-data/jpa/docs/2.6.1/api/org/springframework/data/jpa/repository/Query.html"><code>Query</code></a>注释来注释您的方法。</p>
+<p translation-result="on">对于更复杂的查询，你可以使用 Spring Data 的<a href="https://docs.spring.io/spring-data/jpa/docs/2.6.1/api/org/springframework/data/jpa/repository/Query.html"><code>Query</code></a>注释来注释你的方法。</p>
 <p translation-origin="off">For more complex queries, you can annotate your method with Spring Data’s <a href="https://docs.spring.io/spring-data/jpa/docs/2.6.1/api/org/springframework/data/jpa/repository/Query.html"><code>Query</code></a> annotation.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Data 存储库通常从<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/Repository.html"><code>Repository</code></a>或<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/CrudRepository.html"><code>CrudRepository</code></a>接口扩展。如果您使用自动配置，则从包含您的主要配置类（使用 <code>@EnableAutoConfiguration</code> 或 <code>@SpringBootApplication</code> 注释的那个）的包中搜索存储库。</p>
+<p translation-result="on">Spring Data 存储库通常从<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/Repository.html"><code>Repository</code></a>或<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/CrudRepository.html"><code>CrudRepository</code></a>接口扩展。如果你使用自动配置，则从包含你的主要配置类（使用 <code>@EnableAutoConfiguration</code> 或 <code>@SpringBootApplication</code> 注释的那个）的包中搜索存储库。</p>
 <p translation-origin="off">Spring Data repositories usually extend from the <a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/Repository.html"><code>Repository</code></a> or <a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/CrudRepository.html"><code>CrudRepository</code></a> interfaces.
 If you use auto-configuration, repositories are searched from the package containing your main configuration class (the one annotated with <code>@EnableAutoConfiguration</code> or <code>@SpringBootApplication</code>) down.</p>
 </div>
@@ -1825,7 +1825,7 @@ If more than one exists, the one named <code>applicationTaskExecutor</code> will
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">使用延迟或延迟引导时，请确保在应用程序上下文引导阶段之后推迟对 JPA 基础架构的任何访问。您可以使用 <code>SmartInitializingSingleton</code> 调用任何需要 JPA 基础结构的初始化。对于作为 Spring bean 创建的 JPA 组件（例如转换器），使用 <code>ObjectProvider</code> 来延迟解析依赖项（如果有）。</p>
+<p translation-result="on">使用延迟或延迟引导时，请确保在应用程序上下文引导阶段之后推迟对 JPA 基础架构的任何访问。你可以使用 <code>SmartInitializingSingleton</code> 调用任何需要 JPA 基础结构的初始化。对于作为 Spring bean 创建的 JPA 组件（例如转换器），使用 <code>ObjectProvider</code> 来延迟解析依赖项（如果有）。</p>
 <p translation-origin="off">When using deferred or lazy bootstrapping, make sure to defer any access to the JPA infrastructure after the application context bootstrap phase.
 You can use <code>SmartInitializingSingleton</code> to invoke any initialization that requires the JPA infrastructure.
 For JPA components (such as converters) that are created as Spring beans, use <code>ObjectProvider</code> to delay the resolution of dependencies, if any.</p>
@@ -1857,7 +1857,7 @@ For complete details, see the <a href="https://docs.spring.io/spring-data/jpa/do
 <p translation-origin="off">If <a href="https://spring.io/projects/spring-data-envers">Spring Data Envers</a> is available, JPA repositories are auto-configured to support typical Envers queries.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">要使用 Spring Data Envers，请确保您的存储库从 <code>RevisionRepository</code> 扩展，如以下示例所示：</p>
+<p translation-result="on">要使用 Spring Data Envers，请确保你的存储库从 <code>RevisionRepository</code> 扩展，如以下示例所示：</p>
 <p translation-origin="off">To use Spring Data Envers, make sure your repository extends from <code>RevisionRepository</code> as show in the following example:</p>
 </div>
 <div class="listingblock">
@@ -1894,7 +1894,7 @@ import org.springframework.data.repository.history.RevisionRepository;
 <h4 id="data.sql.jpa-and-spring-data.creating-and-dropping" translation-result="on"><a href="data.html#data.sql.jpa-and-spring-data.creating-and-dropping"></a>1.3.4. 创建和删除 JPA 数据库</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.sql.jpa-and-spring-data.creating-and-dropping"></a>1.3.4. Creating and Dropping JPA Databases</h4>
 <div class="paragraph">
-<p translation-result="on">默认情况下，<strong>仅</strong>当您使用嵌入式数据库（H2、HSQL 或 Derby）时，才会自动创建 JPA 数据库。您可以使用 <code>spring.jpa.*</code> 属性显式配置 JPA 设置。例如，要创建和删除表，您可以将以下行添加到 <code>application.properties</code> ：</p>
+<p translation-result="on">默认情况下，<strong>仅</strong>当你使用嵌入式数据库（H2、HSQL 或 Derby）时，才会自动创建 JPA 数据库。你可以使用 <code>spring.jpa.*</code> 属性显式配置 JPA 设置。例如，要创建和删除表，你可以将以下行添加到 <code>application.properties</code> ：</p>
 <p translation-origin="off">By default, JPA databases are automatically created <strong>only</strong> if you use an embedded database (H2, HSQL, or Derby).
 You can explicitly configure JPA settings by using <code>spring.jpa.*</code> properties.
 For example, to create and drop tables you can add the following line to your <code>application.properties</code>:</p>
@@ -1921,7 +1921,7 @@ For example, to create and drop tables you can add the following line to your <c
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">Hibernate 自己的内部属性名称（如果你碰巧记得更好的话）是 <code>hibernate.hbm2ddl.auto</code> 。您可以使用 <code>spring.jpa.properties.*</code> 设置它以及其他 Hibernate 本机属性（在将它们添加到实体管理器之前去除前缀）。以下行显示了为 Hibernate 设置 JPA 属性的示例：</p>
+<p translation-result="on">Hibernate 自己的内部属性名称（如果你碰巧记得更好的话）是 <code>hibernate.hbm2ddl.auto</code> 。你可以使用 <code>spring.jpa.properties.*</code> 设置它以及其他 Hibernate 本机属性（在将它们添加到实体管理器之前去除前缀）。以下行显示了为 Hibernate 设置 JPA 属性的示例：</p>
 <p translation-origin="off">Hibernate’s own internal property name for this (if you happen to remember it better) is <code>hibernate.hbm2ddl.auto</code>.
 You can set it, along with other Hibernate native properties, by using <code>spring.jpa.properties.*</code> (the prefix is stripped before adding them to the entity manager).
 The following line shows an example of setting JPA properties for Hibernate:</p>
@@ -1960,7 +1960,7 @@ There is also a <code>spring.jpa.generate-ddl</code> flag, but it is not used if
 <h4 id="data.sql.jpa-and-spring-data.open-entity-manager-in-view" translation-result="on"><a href="data.html#data.sql.jpa-and-spring-data.open-entity-manager-in-view"></a>1.3.5. 在视图中打开 EntityManager</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.sql.jpa-and-spring-data.open-entity-manager-in-view"></a>1.3.5. Open EntityManager in View</h4>
 <div class="paragraph">
-<p translation-result="on">如果您正在运行 Web 应用程序，Spring Boot 默认注册<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/orm/jpa/support/OpenEntityManagerInViewInterceptor.html"><code>OpenEntityManagerInViewInterceptor</code></a>以应用“在视图中打开 EntityManager”模式，以允许在 Web 视图中延迟加载。如果您不希望这种行为，您应该在 <code>application.properties</code> 中将 <code>spring.jpa.open-in-view</code> 设置为 <code>false</code> 。</p>
+<p translation-result="on">如果你正在运行 Web 应用程序，Spring Boot 默认注册<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/orm/jpa/support/OpenEntityManagerInViewInterceptor.html"><code>OpenEntityManagerInViewInterceptor</code></a>以应用“在视图中打开 EntityManager”模式，以允许在 Web 视图中延迟加载。如果你不希望这种行为，你应该在 <code>application.properties</code> 中将 <code>spring.jpa.open-in-view</code> 设置为 <code>false</code> 。</p>
 <p translation-origin="off">If you are running a web application, Spring Boot by default registers <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/orm/jpa/support/OpenEntityManagerInViewInterceptor.html"><code>OpenEntityManagerInViewInterceptor</code></a> to apply the “Open EntityManager in View” pattern, to allow for lazy loading in web views.
 If you do not want this behavior, you should set <code>spring.jpa.open-in-view</code> to <code>false</code> in your <code>application.properties</code>.</p>
 </div>
@@ -1975,7 +1975,7 @@ If you do not want this behavior, you should set <code>spring.jpa.open-in-view</
 For more advanced queries, a <code>@Query</code> annotation is provided.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">当必要的依赖项位于类路径上时，Spring Boot 将自动配置 Spring Data 的 JDBC 存储库。它们可以通过对 <code>spring-boot-starter-data-jdbc</code> 的单一依赖项添加到您的项目中。如有必要，您可以通过将 <code>@EnableJdbcRepositories</code> 注释或 <code>JdbcConfiguration</code> 子类添加到您的应用程序来控制 Spring Data JDBC 的配置。</p>
+<p translation-result="on">当必要的依赖项位于类路径上时，Spring Boot 将自动配置 Spring Data 的 JDBC 存储库。它们可以通过对 <code>spring-boot-starter-data-jdbc</code> 的单一依赖项添加到你的项目中。如有必要，你可以通过将 <code>@EnableJdbcRepositories</code> 注释或 <code>JdbcConfiguration</code> 子类添加到你的应用程序来控制 Spring Data JDBC 的配置。</p>
 <p translation-origin="off">Spring Boot will auto-configure Spring Data’s JDBC repositories when the necessary dependencies are on the classpath.
 They can be added to your project with a single dependency on <code>spring-boot-starter-data-jdbc</code>.
 If necessary, you can take control of Spring Data JDBC’s configuration by adding the <code>@EnableJdbcRepositories</code> annotation or a <code>JdbcConfiguration</code> subclass to your application.</p>
@@ -1998,14 +1998,14 @@ If necessary, you can take control of Spring Data JDBC’s configuration by addi
 <h3 id="data.sql.h2-web-console" translation-result="on"><a href="data.html#data.sql.h2-web-console"></a>1.5. 使用 H2 的 Web 控制台</h3>
 <h3 translation-origin="off"><a class="anchor" href="data.html#data.sql.h2-web-console"></a>1.5. Using H2’s Web Console</h3>
 <div class="paragraph">
-<p translation-result="on"><a href="https://www.h2database.com">H2 数据库</a>提供了一个<a href="https://www.h2database.com/html/quickstart.html#h2_console">基于浏览器的控制台</a>，Spring Boot 可以为您自动配置。当满足以下条件时，控制台会自动配置：</p>
+<p translation-result="on"><a href="https://www.h2database.com">H2 数据库</a>提供了一个<a href="https://www.h2database.com/html/quickstart.html#h2_console">基于浏览器的控制台</a>，Spring Boot 可以为你自动配置。当满足以下条件时，控制台会自动配置：</p>
 <p translation-origin="off">The <a href="https://www.h2database.com">H2 database</a> provides a <a href="https://www.h2database.com/html/quickstart.html#h2_console">browser-based console</a> that Spring Boot can auto-configure for you.
 The console is auto-configured when the following conditions are met:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p translation-result="on">您正在开发一个基于 servlet 的 Web 应用程序。</p>
+<p translation-result="on">你正在开发一个基于 servlet 的 Web 应用程序。</p>
 <p translation-origin="off">You are developing a servlet-based web application.</p>
 </li>
 <li>
@@ -2013,7 +2013,7 @@ The console is auto-configured when the following conditions are met:</p>
 <p translation-origin="off"><code>com.h2database:h2</code> is on the classpath.</p>
 </li>
 <li>
-<p translation-result="on">您正在使用 <a href="using.html#using.devtools">Spring Boot 的开发人员工具</a>。</p>
+<p translation-result="on">你正在使用 <a href="using.html#using.devtools">Spring Boot 的开发人员工具</a>。</p>
 <p translation-origin="off">You are using <a href="using.html#using.devtools">Spring Boot’s developer tools</a>.</p>
 </li>
 </ul>
@@ -2025,7 +2025,7 @@ The console is auto-configured when the following conditions are met:</p>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果您不使用 Spring Boot 的开发人员工具，但仍想使用 H2 的控制台，则可以将 <code>spring.h2.console.enabled</code> 属性配置为 <code>true</code> 。</p>
+<p translation-result="on">如果你不使用 Spring Boot 的开发人员工具，但仍想使用 H2 的控制台，则可以将 <code>spring.h2.console.enabled</code> 属性配置为 <code>true</code> 。</p>
 <p translation-origin="off">If you are not using Spring Boot’s developer tools but would still like to make use of H2’s console, you can configure the <code>spring.h2.console.enabled</code> property with a value of <code>true</code>.</p>
 </td>
 </tr>
@@ -2038,7 +2038,7 @@ The console is auto-configured when the following conditions are met:</p>
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">H2 控制台仅用于开发期间，因此您应注意确保 <code>spring.h2.console.enabled</code> 在生产中未设置为 <code>true</code> 。</p>
+<p translation-result="on">H2 控制台仅用于开发期间，因此你应注意确保 <code>spring.h2.console.enabled</code> 在生产中未设置为 <code>true</code> 。</p>
 <p translation-origin="off">The H2 console is only intended for use during development, so you should take care to ensure that <code>spring.h2.console.enabled</code> is not set to <code>true</code> in production.</p>
 </td>
 </tr>
@@ -2048,7 +2048,7 @@ The console is auto-configured when the following conditions are met:</p>
 <h4 id="data.sql.h2-web-console.custom-path" translation-result="on"><a href="data.html#data.sql.h2-web-console.custom-path"></a>1.5.1. 更改 H2 控制台的路径</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.sql.h2-web-console.custom-path"></a>1.5.1. Changing the H2 Console’s Path</h4>
 <div class="paragraph">
-<p translation-result="on">默认情况下，控制台位于 <code>/h2-console</code> 。您可以使用 <code>spring.h2.console.path</code> 属性自定义控制台的路径。</p>
+<p translation-result="on">默认情况下，控制台位于 <code>/h2-console</code> 。你可以使用 <code>spring.h2.console.path</code> 属性自定义控制台的路径。</p>
 <p translation-origin="off">By default, the console is available at <code>/h2-console</code>.
 You can customize the console’s path by using the <code>spring.h2.console.path</code> property.</p>
 </div>
@@ -2058,7 +2058,7 @@ You can customize the console’s path by using the <code>spring.h2.console.path
 <h3 id="data.sql.jooq" translation-result="on"><a href="data.html#data.sql.jooq"></a>1.6. 使用 jOOQ</h3>
 <h3 translation-origin="off"><a class="anchor" href="data.html#data.sql.jooq"></a>1.6. Using jOOQ</h3>
 <div class="paragraph">
-<p translation-result="on">jOOQ 面向对象查询 ( <a href="https://www.jooq.org/">jOOQ</a> ) 是 <a href="https://www.datageekery.com/">Data Geekery</a> 的一款流行产品，它从您的数据库生成 Java 代码，并允许您通过其流畅的 API 构建类型安全的 SQL 查询。商业版和开源版都可以与 Spring Boot 一起使用。</p>
+<p translation-result="on">jOOQ 面向对象查询 ( <a href="https://www.jooq.org/">jOOQ</a> ) 是 <a href="https://www.datageekery.com/">Data Geekery</a> 的一款流行产品，它从你的数据库生成 Java 代码，并允许你通过其流畅的 API 构建类型安全的 SQL 查询。商业版和开源版都可以与 Spring Boot 一起使用。</p>
 <p translation-origin="off">jOOQ Object Oriented Querying (<a href="https://www.jooq.org/">jOOQ</a>) is a popular product from <a href="https://www.datageekery.com/">Data Geekery</a> which generates Java code from your database and lets you build type-safe SQL queries through its fluent API.
 Both the commercial and open source editions can be used with Spring Boot.</p>
 </div>
@@ -2066,7 +2066,7 @@ Both the commercial and open source editions can be used with Spring Boot.</p>
 <h4 id="data.sql.jooq.codegen" translation-result="on"><a href="data.html#data.sql.jooq.codegen"></a>1.6.1. 代码生成</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.sql.jooq.codegen"></a>1.6.1. Code Generation</h4>
 <div class="paragraph">
-<p translation-result="on">为了使用 jOOQ 类型安全查询，您需要从数据库模式生成 Java 类。您可以按照 <a href="https://www.jooq.org/doc/3.14.15/manual-single-page/#jooq-in-7-steps-step3">jOOQ 用户手册</a>中的说明进行操作。如果您使用 <code>jooq-codegen-maven</code> 插件并且还使用 <code>spring-boot-starter-parent</code> “父 POM”，则可以安全地省略插件的 <code>&lt;version&gt;</code> 标签。您还可以使用 Spring Boot 定义的版本变量（例如 <code>h2.version</code> ）来声明插件的数据库依赖项。以下清单显示了一个示例：</p>
+<p translation-result="on">为了使用 jOOQ 类型安全查询，你需要从数据库模式生成 Java 类。你可以按照 <a href="https://www.jooq.org/doc/3.14.15/manual-single-page/#jooq-in-7-steps-step3">jOOQ 用户手册</a>中的说明进行操作。如果你使用 <code>jooq-codegen-maven</code> 插件并且还使用 <code>spring-boot-starter-parent</code> “父 POM”，则可以安全地省略插件的 <code>&lt;version&gt;</code> 标签。你还可以使用 Spring Boot 定义的版本变量（例如 <code>h2.version</code> ）来声明插件的数据库依赖项。以下清单显示了一个示例：</p>
 <p translation-origin="off">In order to use jOOQ type-safe queries, you need to generate Java classes from your database schema.
 You can follow the instructions in the <a href="https://www.jooq.org/doc/3.14.15/manual-single-page/#jooq-in-7-steps-step3">jOOQ user manual</a>.
 If you use the <code>jooq-codegen-maven</code> plugin and you also use the <code>spring-boot-starter-parent</code> “parent POM”, you can safely omit the plugin’s <code>&lt;version&gt;</code> tag.
@@ -2105,7 +2105,7 @@ The following listing shows an example:</p>
 <h4 id="data.sql.jooq.dslcontext" translation-result="on"><a href="data.html#data.sql.jooq.dslcontext"></a>1.6.2. 使用 DSLContext</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.sql.jooq.dslcontext"></a>1.6.2. Using DSLContext</h4>
 <div class="paragraph">
-<p translation-result="on">jOOQ 提供的 fluent API 是通过 <code>org.jooq.DSLContext</code> 接口启动的。Spring Boot 将 <code>DSLContext</code> 自动配置为 Spring Bean 并将其连接到您的应用程序 <code>DataSource</code> 。要使用 <code>DSLContext</code> ，您可以注入它，如下例所示：</p>
+<p translation-result="on">jOOQ 提供的 fluent API 是通过 <code>org.jooq.DSLContext</code> 接口启动的。Spring Boot 将 <code>DSLContext</code> 自动配置为 Spring Bean 并将其连接到你的应用程序 <code>DataSource</code> 。要使用 <code>DSLContext</code> ，你可以注入它，如下例所示：</p>
 <p translation-origin="off">The fluent API offered by jOOQ is initiated through the <code>org.jooq.DSLContext</code> interface.
 Spring Boot auto-configures a <code>DSLContext</code> as a Spring Bean and connects it to your application <code>DataSource</code>.
 To use the <code>DSLContext</code>, you can inject it, as shown in the following example:</p>
@@ -2149,7 +2149,7 @@ public class MyBean {
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">然后，您可以使用 <code>DSLContext</code> 来构造查询，如以下示例所示：</p>
+<p translation-result="on">然后，你可以使用 <code>DSLContext</code> 来构造查询，如以下示例所示：</p>
 <p translation-origin="off">You can then use the <code>DSLContext</code> to construct your queries, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -2188,12 +2188,12 @@ If Spring Boot could not detect the dialect, it uses <code>DEFAULT</code>.</p>
 <h4 id="data.sql.jooq.customizing" translation-result="on"><a href="data.html#data.sql.jooq.customizing"></a>1.6.4. 自定义 jOOQ</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.sql.jooq.customizing"></a>1.6.4. Customizing jOOQ</h4>
 <div class="paragraph">
-<p translation-result="on">更高级的自定义可以通过定义您自己的 <code>DefaultConfigurationCustomizer</code> bean 来实现，该 bean 将在创建 <code>org.jooq.Configuration</code> <code>@Bean</code> 之前被调用。这优先于自动配置应用的任何内容。</p>
+<p translation-result="on">更高级的自定义可以通过定义你自己的 <code>DefaultConfigurationCustomizer</code> bean 来实现，该 bean 将在创建 <code>org.jooq.Configuration</code> <code>@Bean</code> 之前被调用。这优先于自动配置应用的任何内容。</p>
 <p translation-origin="off">More advanced customizations can be achieved by defining your own <code>DefaultConfigurationCustomizer</code> bean that will be invoked prior to creating the <code>org.jooq.Configuration</code> <code>@Bean</code>.
 This takes precedence to anything that is applied by the auto-configuration.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您想完全控制 jOOQ 配置，您还可以创建自己的 <code>org.jooq.Configuration</code> <code>@Bean</code> 。</p>
+<p translation-result="on">如果你想完全控制 jOOQ 配置，你还可以创建自己的 <code>org.jooq.Configuration</code> <code>@Bean</code> 。</p>
 <p translation-origin="off">You can also create your own <code>org.jooq.Configuration</code> <code>@Bean</code> if you want to take complete control of the jOOQ configuration.</p>
 </div>
 </div>
@@ -2208,7 +2208,7 @@ R2DBC’s <code>io.r2dbc.spi.Connection</code> provides a standard method of wor
 Connections are provided by using a <code>ConnectionFactory</code>, similar to a <code>DataSource</code> with jdbc.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>ConnectionFactory</code> 配置由 <code>spring.r2dbc.*</code> 中的外部配置属性控制。例如，您可以在 <code>application.properties</code> 中声明以下部分：</p>
+<p translation-result="on"><code>ConnectionFactory</code> 配置由 <code>spring.r2dbc.*</code> 中的外部配置属性控制。例如，你可以在 <code>application.properties</code> 中声明以下部分：</p>
 <p translation-origin="off"><code>ConnectionFactory</code> configuration is controlled by external configuration properties in <code>spring.r2dbc.*</code>.
 For example, you might declare the following section in <code>application.properties</code>:</p>
 </div>
@@ -2238,7 +2238,7 @@ spring.r2dbc.password=dbpass</code></pre>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">您不需要指定驱动程序类名，因为 Spring Boot 从 R2DBC 的连接工厂发现中获取驱动程序。</p>
+<p translation-result="on">你不需要指定驱动程序类名，因为 Spring Boot 从 R2DBC 的连接工厂发现中获取驱动程序。</p>
 <p translation-origin="off">You do not need to specify a driver class name, since Spring Boot obtains the driver from R2DBC’s Connection Factory discovery.</p>
 </td>
 </tr>
@@ -2272,7 +2272,7 @@ Information specified in the URL takes precedence over individual properties, th
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">要自定义 ConnectionFactory 创建的 <code>ConnectionFactory</code> ，即设置您不希望（或不能）在中央数据库配置中配置的特定参数，您可以使用 <code>ConnectionFactoryOptionsBuilderCustomizer</code> <code>@Bean</code> 。以下示例显示了如何手动覆盖数据库端口，而其余选项取自应用程序配置：</p>
+<p translation-result="on">要自定义 ConnectionFactory 创建的 <code>ConnectionFactory</code> ，即设置你不希望（或不能）在中央数据库配置中配置的特定参数，你可以使用 <code>ConnectionFactoryOptionsBuilderCustomizer</code> <code>@Bean</code> 。以下示例显示了如何手动覆盖数据库端口，而其余选项取自应用程序配置：</p>
 <p translation-origin="off">To customize the connections created by a <code>ConnectionFactory</code>, that is, set specific parameters that you do not want (or cannot) configure in your central database configuration, you can use a <code>ConnectionFactoryOptionsBuilderCustomizer</code> <code>@Bean</code>.
 The following example shows how to manually override the database port while the rest of the options is taken from the application configuration:</p>
 </div>
@@ -2327,7 +2327,7 @@ public class MyPostgresR2dbcConfiguration {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">当 <code>ConnectionFactory</code> bean 可用时，常规的 JDBC <code>DataSource</code> 自动配置会退出。如果您想保留 JDBC <code>DataSource</code> 自动配置，并且对在反应式应用程序中使用阻塞 JDBC API 的风险感到满意，请在应用程序的 <code>@Configuration</code> 类上添加 <code>@Import(DataSourceAutoConfiguration.class)</code> 以重新启用它.</p>
+<p translation-result="on">当 <code>ConnectionFactory</code> bean 可用时，常规的 JDBC <code>DataSource</code> 自动配置会退出。如果你想保留 JDBC <code>DataSource</code> 自动配置，并且对在反应式应用程序中使用阻塞 JDBC API 的风险感到满意，请在应用程序的 <code>@Configuration</code> 类上添加 <code>@Import(DataSourceAutoConfiguration.class)</code> 以重新启用它.</p>
 <p translation-origin="off">When a <code>ConnectionFactory</code> bean is available, the regular JDBC <code>DataSource</code> auto-configuration backs off.
 If you want to retain the JDBC <code>DataSource</code> auto-configuration, and are comfortable with the risk of using the blocking JDBC API in a reactive application, add <code>@Import(DataSourceAutoConfiguration.class)</code> on a <code>@Configuration</code> class in your application to re-enable it.</p>
 </div>
@@ -2335,7 +2335,7 @@ If you want to retain the JDBC <code>DataSource</code> auto-configuration, and a
 <h4 id="data.sql.r2dbc.embedded" translation-result="on"><a href="data.html#data.sql.r2dbc.embedded"></a>1.7.1. 嵌入式数据库支持</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.sql.r2dbc.embedded"></a>1.7.1. Embedded Database Support</h4>
 <div class="paragraph">
-<p translation-result="on">与 <a href="features.html#data.sql.datasource.embedded">JDBC 支持</a>类似，Spring Boot 可以自动配置嵌入式数据库以进行响应式使用。您无需提供任何连接 URL。您只需要将构建依赖项包含到要使用的嵌入式数据库中，如以下示例所示：</p>
+<p translation-result="on">与 <a href="features.html#data.sql.datasource.embedded">JDBC 支持</a>类似，Spring Boot 可以自动配置嵌入式数据库以进行响应式使用。你无需提供任何连接 URL。你只需要将构建依赖项包含到要使用的嵌入式数据库中，如以下示例所示：</p>
 <p translation-origin="off">Similarly to <a href="features.html#data.sql.datasource.embedded">the JDBC support</a>, Spring Boot can automatically configure an embedded database for reactive usage.
 You need not provide any connection URLs.
 You need only include a build dependency to the embedded database that you want to use, as shown in the following example:</p>
@@ -2357,7 +2357,7 @@ You need only include a build dependency to the embedded database that you want 
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">如果您在测试中使用此功能，您可能会注意到，无论您使用多少应用程序上下文，整个测试套件都会重用同一个数据库。如果要确保每个上下文都有一个单独的嵌入式数据库，则应将 <code>spring.r2dbc.generate-unique-name</code> 设置为 <code>true</code> 。</p>
+<p translation-result="on">如果你在测试中使用此功能，你可能会注意到，无论你使用多少应用程序上下文，整个测试套件都会重用同一个数据库。如果要确保每个上下文都有一个单独的嵌入式数据库，则应将 <code>spring.r2dbc.generate-unique-name</code> 设置为 <code>true</code> 。</p>
 <p translation-origin="off">If you are using this feature in your tests, you may notice that the same database is reused by your whole test suite regardless of the number of application contexts that you use.
 If you want to make sure that each context has a separate embedded database, you should set <code>spring.r2dbc.generate-unique-name</code> to <code>true</code>.</p>
 </div>
@@ -2370,7 +2370,7 @@ If you want to make sure that each context has a separate embedded database, you
 <h4 id="data.sql.r2dbc.using-database-client" translation-result="on"><a href="data.html#data.sql.r2dbc.using-database-client"></a>1.7.2. 使用数据库客户端</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.sql.r2dbc.using-database-client"></a>1.7.2. Using DatabaseClient</h4>
 <div class="paragraph">
-<p translation-result="on"><code>DatabaseClient</code> bean 是自动配置的，您可以将其直接 <code>@Autowire</code> 到您自己的 bean 中，如下例所示：</p>
+<p translation-result="on"><code>DatabaseClient</code> bean 是自动配置的，你可以将其直接 <code>@Autowire</code> 到你自己的 bean 中，如下例所示：</p>
 <p translation-origin="off">A <code>DatabaseClient</code> bean is auto-configured, and you can <code>@Autowire</code> it directly into your own beans, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -2406,17 +2406,17 @@ public class MyBean {
 <h4 id="data.sql.r2dbc.repositories" translation-result="on"><a href="data.html#data.sql.r2dbc.repositories"></a>1.7.3. Spring Data R2DBC 存储库</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.sql.r2dbc.repositories"></a>1.7.3. Spring Data R2DBC Repositories</h4>
 <div class="paragraph">
-<p translation-result="on"><a href="https://spring.io/projects/spring-data-r2dbc">Spring Data R2DBC</a> 存储库是您可以定义以访问数据的接口。查询是根据您的方法名称自动创建的。例如，<code>CityRepository</code> 接口可能会声明一个 <code>findAllByState(String state)</code> 方法来查找给定状态下的所有城市。</p>
+<p translation-result="on"><a href="https://spring.io/projects/spring-data-r2dbc">Spring Data R2DBC</a> 存储库是你可以定义以访问数据的接口。查询是根据你的方法名称自动创建的。例如，<code>CityRepository</code> 接口可能会声明一个 <code>findAllByState(String state)</code> 方法来查找给定状态下的所有城市。</p>
 <p translation-origin="off"><a href="https://spring.io/projects/spring-data-r2dbc">Spring Data R2DBC</a> repositories are interfaces that you can define to access data.
 Queries are created automatically from your method names.
 For example, a <code>CityRepository</code> interface might declare a <code>findAllByState(String state)</code> method to find all the cities in a given state.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">对于更复杂的查询，您可以使用 Spring Data 的<a href="https://docs.spring.io/spring-data/r2dbc/docs/1.4.1/api/org/springframework/data/r2dbc/repository/Query.html"><code>Query</code></a>注释来注释您的方法。</p>
+<p translation-result="on">对于更复杂的查询，你可以使用 Spring Data 的<a href="https://docs.spring.io/spring-data/r2dbc/docs/1.4.1/api/org/springframework/data/r2dbc/repository/Query.html"><code>Query</code></a>注释来注释你的方法。</p>
 <p translation-origin="off">For more complex queries, you can annotate your method with Spring Data’s <a href="https://docs.spring.io/spring-data/r2dbc/docs/1.4.1/api/org/springframework/data/r2dbc/repository/Query.html"><code>Query</code></a> annotation.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Data 存储库通常从<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/Repository.html"><code>Repository</code></a>或<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/CrudRepository.html"><code>CrudRepository</code></a>接口扩展。如果您使用自动配置，则从包含您的主要配置类（使用 <code>@EnableAutoConfiguration</code> 或 <code>@SpringBootApplication</code> 注释的那个）的包中搜索存储库。</p>
+<p translation-result="on">Spring Data 存储库通常从<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/Repository.html"><code>Repository</code></a>或<a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/CrudRepository.html"><code>CrudRepository</code></a>接口扩展。如果你使用自动配置，则从包含你的主要配置类（使用 <code>@EnableAutoConfiguration</code> 或 <code>@SpringBootApplication</code> 注释的那个）的包中搜索存储库。</p>
 <p translation-origin="off">Spring Data repositories usually extend from the <a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/Repository.html"><code>Repository</code></a> or <a href="https://docs.spring.io/spring-data/commons/docs/2.6.1/api/org/springframework/data/repository/CrudRepository.html"><code>CrudRepository</code></a> interfaces.
 If you use auto-configuration, repositories are searched from the package containing your main configuration class (the one annotated with <code>@EnableAutoConfiguration</code> or <code>@SpringBootApplication</code>) down.</p>
 </div>
@@ -2460,7 +2460,7 @@ import org.springframework.data.repository.Repository;
 <h2 translation-origin="off"><a class="anchor" href="data.html#data.nosql"></a>2. Working with NoSQL Technologies</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Data 提供了额外的项目来帮助您访问各种 NoSQL 技术，包括：</p>
+<p translation-result="on">Spring Data 提供了额外的项目来帮助你访问各种 NoSQL 技术，包括：</p>
 <p translation-origin="off">Spring Data provides additional projects that help you access a variety of NoSQL technologies, including:</p>
 </div>
 <div class="ulist">
@@ -2497,7 +2497,7 @@ import org.springframework.data.repository.Repository;
 </ul>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 为 Redis、MongoDB、Neo4j、Solr、Elasticsearch、Cassandra、Couchbase、LDAP 和 InfluxDB 提供自动配置。您可以使用其他项目，但您必须自己配置它们。请参阅 <a href="https://spring.io/projects/spring-data">spring.io/projects/spring-data</a> 中的相应参考文档。</p>
+<p translation-result="on">Spring Boot 为 Redis、MongoDB、Neo4j、Solr、Elasticsearch、Cassandra、Couchbase、LDAP 和 InfluxDB 提供自动配置。你可以使用其他项目，但你必须自己配置它们。请参阅 <a href="https://spring.io/projects/spring-data">spring.io/projects/spring-data</a> 中的相应参考文档。</p>
 <p translation-origin="off">Spring Boot provides auto-configuration for Redis, MongoDB, Neo4j, Solr, Elasticsearch, Cassandra, Couchbase, LDAP and InfluxDB.
 You can make use of the other projects, but you must configure them yourself.
 See the appropriate reference documentation at <a href="https://spring.io/projects/spring-data" class="bare">spring.io/projects/spring-data</a>.</p>
@@ -2533,7 +2533,7 @@ That starter handles both traditional and reactive applications.</p>
 <h4 id="data.nosql.redis.connecting" translation-result="on"><a href="data.html#data.nosql.redis.connecting"></a>2.1.1. 连接到 Redis</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.nosql.redis.connecting"></a>2.1.1. Connecting to Redis</h4>
 <div class="paragraph">
-<p translation-result="on">您可以像注入任何其他 Spring Bean 一样注入自动配置的 <code>RedisConnectionFactory</code> 、 <code>StringRedisTemplate</code> 或 vanilla <code>RedisTemplate</code> 实例。默认情况下，实例尝试连接到位于 <code>localhost:6379</code> 的 Redis 服务器。以下清单显示了此类 bean 的示例：</p>
+<p translation-result="on">你可以像注入任何其他 Spring Bean 一样注入自动配置的 <code>RedisConnectionFactory</code> 、 <code>StringRedisTemplate</code> 或 vanilla <code>RedisTemplate</code> 实例。默认情况下，实例尝试连接到位于 <code>localhost:6379</code> 的 Redis 服务器。以下清单显示了此类 bean 的示例：</p>
 <p translation-origin="off">You can inject an auto-configured <code>RedisConnectionFactory</code>, <code>StringRedisTemplate</code>, or vanilla <code>RedisTemplate</code> instance as you would any other Spring Bean.
 By default, the instance tries to connect to a Redis server at <code>localhost:6379</code>.
 The following listing shows an example of such a bean:</p>
@@ -2569,7 +2569,7 @@ public class MyBean {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">您还可以注册任意数量的实现 <code>LettuceClientConfigurationBuilderCustomizer</code> 的 bean 以进行更高级的自定义。<code>ClientResources</code> 也可以使用 <code>ClientResourcesBuilderCustomizer</code> 进行自定义。如果你使用 Jedis，<code>JedisClientConfigurationBuilderCustomizer</code> 也是可用的。或者，您可以注册类型为 <code>RedisStandaloneConfiguration</code> 、 <code>RedisSentinelConfiguration</code> 或 <code>RedisClusterConfiguration</code> 的 bean 以完全控制配置。</p>
+<p translation-result="on">你还可以注册任意数量的实现 <code>LettuceClientConfigurationBuilderCustomizer</code> 的 bean 以进行更高级的自定义。<code>ClientResources</code> 也可以使用 <code>ClientResourcesBuilderCustomizer</code> 进行自定义。如果你使用 Jedis，<code>JedisClientConfigurationBuilderCustomizer</code> 也是可用的。或者，你可以注册类型为 <code>RedisStandaloneConfiguration</code> 、 <code>RedisSentinelConfiguration</code> 或 <code>RedisClusterConfiguration</code> 的 bean 以完全控制配置。</p>
 <p translation-origin="off">You can also register an arbitrary number of beans that implement <code>LettuceClientConfigurationBuilderCustomizer</code> for more advanced customizations.
 <code>ClientResources</code> can also be customized using <code>ClientResourcesBuilderCustomizer</code>.
 If you use Jedis, <code>JedisClientConfigurationBuilderCustomizer</code> is also available.
@@ -2579,7 +2579,7 @@ Alternatively, you can register a bean of type <code>RedisStandaloneConfiguratio
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您添加自己的任何自动配置类型的 <code>@Bean</code> ，它将替换默认值（除了 <code>RedisTemplate</code> 的情况，当排除基于 bean 名称 <code>redisTemplate</code> ，而不是其类型时）。</p>
+<p translation-result="on">如果你添加自己的任何自动配置类型的 <code>@Bean</code> ，它将替换默认值（除了 <code>RedisTemplate</code> 的情况，当排除基于 bean 名称 <code>redisTemplate</code> ，而不是其类型时）。</p>
 <p translation-origin="off">If you add your own <code>@Bean</code> of any of the auto-configured types, it replaces the default (except in the case of <code>RedisTemplate</code>, when the exclusion is based on the bean name, <code>redisTemplate</code>, not its type).</p>
 </div>
 <div class="paragraph">
@@ -2600,7 +2600,7 @@ Spring Boot offers several conveniences for working with MongoDB, including the 
 <h4 id="data.nosql.mongodb.connecting" translation-result="on"><a href="data.html#data.nosql.mongodb.connecting"></a>2.2.1. 连接到 MongoDB 数据库</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.nosql.mongodb.connecting"></a>2.2.1. Connecting to a MongoDB Database</h4>
 <div class="paragraph">
-<p translation-result="on">要访问 MongoDB 数据库，您可以注入一个自动配置的 <code>org.springframework.data.mongodb.MongoDatabaseFactory</code> 。默认情况下，实例尝试连接到位于 <code>mongodb://localhost/test</code> 的 MongoDB 服务器。以下示例显示了如何连接到 MongoDB 数据库：</p>
+<p translation-result="on">要访问 MongoDB 数据库，你可以注入一个自动配置的 <code>org.springframework.data.mongodb.MongoDatabaseFactory</code> 。默认情况下，实例尝试连接到位于 <code>mongodb://localhost/test</code> 的 MongoDB 服务器。以下示例显示了如何连接到 MongoDB 数据库：</p>
 <p translation-origin="off">To access MongoDB databases, you can inject an auto-configured <code>org.springframework.data.mongodb.MongoDatabaseFactory</code>.
 By default, the instance tries to connect to a MongoDB server at <code>mongodb://localhost/test</code>.
 The following example shows how to connect to a MongoDB database:</p>
@@ -2635,11 +2635,11 @@ public class MyBean {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您定义了自己的 <code>MongoClient</code> ，它将用于自动配置合适的 <code>MongoDatabaseFactory</code> 。</p>
+<p translation-result="on">如果你定义了自己的 <code>MongoClient</code> ，它将用于自动配置合适的 <code>MongoDatabaseFactory</code> 。</p>
 <p translation-origin="off">If you have defined your own <code>MongoClient</code>, it will be used to auto-configure a suitable <code>MongoDatabaseFactory</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">自动配置的 <code>MongoClient</code> 是使用 <code>MongoClientSettings</code> bean 创建的。如果您已经定义了自己的 <code>MongoClientSettings</code> ，它将不加修改地使用它，并且 <code>spring.data.mongodb</code> 属性将被忽略。否则 <code>MongoClientSettings</code> 将被自动配置并应用 <code>spring.data.mongodb</code> 属性。无论哪种情况，您都可以声明一个或多个 <code>MongoClientSettingsBuilderCustomizer</code> bean 来微调 <code>MongoClientSettings</code> 配置。每个都将使用用于构建 <code>MongoClientSettings</code> 的 <code>MongoClientSettings.Builder</code> 按顺序调用。</p>
+<p translation-result="on">自动配置的 <code>MongoClient</code> 是使用 <code>MongoClientSettings</code> bean 创建的。如果你已经定义了自己的 <code>MongoClientSettings</code> ，它将不加修改地使用它，并且 <code>spring.data.mongodb</code> 属性将被忽略。否则 <code>MongoClientSettings</code> 将被自动配置并应用 <code>spring.data.mongodb</code> 属性。无论哪种情况，你都可以声明一个或多个 <code>MongoClientSettingsBuilderCustomizer</code> bean 来微调 <code>MongoClientSettings</code> 配置。每个都将使用用于构建 <code>MongoClientSettings</code> 的 <code>MongoClientSettings.Builder</code> 按顺序调用。</p>
 <p translation-origin="off">The auto-configured <code>MongoClient</code> is created using a <code>MongoClientSettings</code> bean.
 If you have defined your own <code>MongoClientSettings</code>, it will be used without modification and the <code>spring.data.mongodb</code> properties will be ignored.
 Otherwise a <code>MongoClientSettings</code> will be auto-configured and will have the <code>spring.data.mongodb</code> properties applied to it.
@@ -2647,7 +2647,7 @@ In either case, you can declare one or more <code>MongoClientSettingsBuilderCust
 Each will be called in order with the <code>MongoClientSettings.Builder</code> that is used to build the <code>MongoClientSettings</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以设置 <code>spring.data.mongodb.uri</code> 属性来更改 URL 并配置其他设置，例如<em>副本集</em>，如下例所示：</p>
+<p translation-result="on">你可以设置 <code>spring.data.mongodb.uri</code> 属性来更改 URL 并配置其他设置，例如<em>副本集</em>，如下例所示：</p>
 <p translation-origin="off">You can set the <code>spring.data.mongodb.uri</code> property to change the URL and configure additional settings such as the <em>replica set</em>, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
@@ -2667,7 +2667,7 @@ Each will be called in order with the <code>MongoClientSettings.Builder</code> t
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">或者，您可以使用离散属性指定连接详细信息。例如，您可以在 <code>application.properties</code> 中声明以下设置：</p>
+<p translation-result="on">或者，你可以使用离散属性指定连接详细信息。例如，你可以在 <code>application.properties</code> 中声明以下设置：</p>
 <p translation-origin="off">Alternatively, you can specify connection details using discrete properties.
 For example, you might declare the following settings in your <code>application.properties</code>:</p>
 </div>
@@ -2702,7 +2702,7 @@ spring.data.mongodb.password=secret</code></pre>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果未指定 <code>spring.data.mongodb.port</code> ，则使用默认值 <code>27017</code> 。您可以从前面显示的示例中删除此行。</p>
+<p translation-result="on">如果未指定 <code>spring.data.mongodb.port</code> ，则使用默认值 <code>27017</code> 。你可以从前面显示的示例中删除此行。</p>
 <p translation-origin="off">If <code>spring.data.mongodb.port</code> is not specified, the default of <code>27017</code> is used.
 You could delete this line from the example shown earlier.</p>
 </td>
@@ -2716,7 +2716,7 @@ You could delete this line from the example shown earlier.</p>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果你不使用 Spring Data MongoDB，你可以注入一个 <code>MongoClient</code> bean 而不是使用 <code>MongoDatabaseFactory</code> 。如果您想完全控制建立 MongoDB 连接，您还可以声明自己的 <code>MongoDatabaseFactory</code> 或 <code>MongoClient</code> bean。</p>
+<p translation-result="on">如果你不使用 Spring Data MongoDB，你可以注入一个 <code>MongoClient</code> bean 而不是使用 <code>MongoDatabaseFactory</code> 。如果你想完全控制建立 MongoDB 连接，你还可以声明自己的 <code>MongoDatabaseFactory</code> 或 <code>MongoClient</code> bean。</p>
 <p translation-origin="off">If you do not use Spring Data MongoDB, you can inject a <code>MongoClient</code> bean instead of using <code>MongoDatabaseFactory</code>.
 If you want to take complete control of establishing the MongoDB connection, you can also declare your own <code>MongoDatabaseFactory</code> or <code>MongoClient</code> bean.</p>
 </td>
@@ -2730,7 +2730,7 @@ If you want to take complete control of establishing the MongoDB connection, you
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果您使用的是响应式驱动程序，则 SSL 需要 Netty。如果 Netty 可用并且要使用的工厂尚未自定义，则自动配置会自动配置此工厂。</p>
+<p translation-result="on">如果你使用的是响应式驱动程序，则 SSL 需要 Netty。如果 Netty 可用并且要使用的工厂尚未自定义，则自动配置会自动配置此工厂。</p>
 <p translation-origin="off">If you are using the reactive driver, Netty is required for SSL.
 The auto-configuration configures this factory automatically if Netty is available and the factory to use has not been customized already.</p>
 </td>
@@ -2742,7 +2742,7 @@ The auto-configuration configures this factory automatically if Netty is availab
 <h4 id="data.nosql.mongodb.template" translation-result="on"><a href="data.html#data.nosql.mongodb.template"></a>2.2.2. Mongo 模板</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.nosql.mongodb.template"></a>2.2.2. MongoTemplate</h4>
 <div class="paragraph">
-<p translation-result="on"><a href="https://spring.io/projects/spring-data-mongodb">Spring Data MongoDB</a> 提供了一个<a href="https://docs.spring.io/spring-data/mongodb/docs/3.3.1/api/org/springframework/data/mongodb/core/MongoTemplate.html"><code>MongoTemplate</code></a>类，它的设计与 Spring 的 <code>JdbcTemplate</code> 非常相似。与 <code>JdbcTemplate</code> 一样，Spring Boot 自动配置一个 bean 供您注入模板，如下所示：</p>
+<p translation-result="on"><a href="https://spring.io/projects/spring-data-mongodb">Spring Data MongoDB</a> 提供了一个<a href="https://docs.spring.io/spring-data/mongodb/docs/3.3.1/api/org/springframework/data/mongodb/core/MongoTemplate.html"><code>MongoTemplate</code></a>类，它的设计与 Spring 的 <code>JdbcTemplate</code> 非常相似。与 <code>JdbcTemplate</code> 一样，Spring Boot 自动配置一个 bean 供你注入模板，如下所示：</p>
 <p translation-origin="off"><a href="https://spring.io/projects/spring-data-mongodb">Spring Data MongoDB</a> provides a <a href="https://docs.spring.io/spring-data/mongodb/docs/3.3.1/api/org/springframework/data/mongodb/core/MongoTemplate.html"><code>MongoTemplate</code></a> class that is very similar in its design to Spring’s <code>JdbcTemplate</code>.
 As with <code>JdbcTemplate</code>, Spring Boot auto-configures a bean for you to inject the template, as follows:</p>
 </div>
@@ -2787,7 +2787,7 @@ public class MyBean {
 As with the JPA repositories discussed earlier, the basic principle is that queries are constructed automatically, based on method names.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">事实上，Spring Data JPA 和 Spring Data MongoDB 共享相同的公共基础架构。您可以使用前面的 JPA 示例，假设 <code>City</code> 现在是 MongoDB 数据类而不是 JPA <code>@Entity</code> ，它的工作方式相同，如下例所示：</p>
+<p translation-result="on">事实上，Spring Data JPA 和 Spring Data MongoDB 共享相同的公共基础架构。你可以使用前面的 JPA 示例，假设 <code>City</code> 现在是 MongoDB 数据类而不是 JPA <code>@Entity</code> ，它的工作方式相同，如下例所示：</p>
 <p translation-origin="off">In fact, both Spring Data JPA and Spring Data MongoDB share the same common infrastructure.
 You could take the JPA example from earlier and, assuming that <code>City</code> is now a MongoDB data class rather than a JPA <code>@Entity</code>, it works in the same way, as shown in the following example:</p>
 </div>
@@ -2814,7 +2814,7 @@ import org.springframework.data.repository.Repository;
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">您可以使用 <code>@EntityScan</code> 注释自定义文档扫描位置。</p>
+<p translation-result="on">你可以使用 <code>@EntityScan</code> 注释自定义文档扫描位置。</p>
 <p translation-origin="off">You can customize document scanning locations by using the <code>@EntityScan</code> annotation.</p>
 </td>
 </tr>
@@ -2838,7 +2838,7 @@ import org.springframework.data.repository.Repository;
 <h4 id="data.nosql.mongodb.embedded" translation-result="on"><a href="data.html#data.nosql.mongodb.embedded"></a>2.2.4. 嵌入式 Mongo</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.nosql.mongodb.embedded"></a>2.2.4. Embedded Mongo</h4>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 为 <a href="https://github.com/flapdoodle-oss/de.flapdoodle.embed.mongo">Embedded Mongo</a> 提供自动配置。要在 Spring Boot 应用程序中使用它，请添加对 <code>de.flapdoodle.embed:de.flapdoodle.embed.mongo</code> 的依赖项并设置 <code>spring.mongodb.embedded.version</code> 属性以匹配您的应用程序将在生产中使用的 MongoDB 版本.</p>
+<p translation-result="on">Spring Boot 为 <a href="https://github.com/flapdoodle-oss/de.flapdoodle.embed.mongo">Embedded Mongo</a> 提供自动配置。要在 Spring Boot 应用程序中使用它，请添加对 <code>de.flapdoodle.embed:de.flapdoodle.embed.mongo</code> 的依赖项并设置 <code>spring.mongodb.embedded.version</code> 属性以匹配你的应用程序将在生产中使用的 MongoDB 版本.</p>
 <p translation-origin="off">Spring Boot offers auto-configuration for <a href="https://github.com/flapdoodle-oss/de.flapdoodle.embed.mongo">Embedded Mongo</a>.
 To use it in your Spring Boot application, add a dependency on <code>de.flapdoodle.embed:de.flapdoodle.embed.mongo</code> and set the <code>spring.mongodb.embedded.version</code> property to match the version of MongoDB that your application will use in production.</p>
 </div>
@@ -2870,7 +2870,7 @@ The <code>MongoClient</code> created by <code>MongoAutoConfiguration</code> is a
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果您不配置自定义端口，则嵌入式支持默认使用随机端口（而不是 27017）。</p>
+<p translation-result="on">如果你不配置自定义端口，则嵌入式支持默认使用随机端口（而不是 27017）。</p>
 <p translation-origin="off">If you do not configure a custom port, the embedded support uses a random port (rather than 27017) by default.</p>
 </td>
 </tr>
@@ -2881,7 +2881,7 @@ The <code>MongoClient</code> created by <code>MongoAutoConfiguration</code> is a
 <p translation-origin="off">If you have SLF4J on the classpath, the output produced by Mongo is automatically routed to a logger named <code>org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongo</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以声明自己的 <code>IMongodConfig</code> 和 <code>IRuntimeConfig</code> bean 来控制 Mongo 实例的配置和日志记录路由。可以通过声明 <code>DownloadConfigBuilderCustomizer</code> bean 来自定义下载配置。</p>
+<p translation-result="on">你可以声明自己的 <code>IMongodConfig</code> 和 <code>IRuntimeConfig</code> bean 来控制 Mongo 实例的配置和日志记录路由。可以通过声明 <code>DownloadConfigBuilderCustomizer</code> bean 来自定义下载配置。</p>
 <p translation-origin="off">You can declare your own <code>IMongodConfig</code> and <code>IRuntimeConfig</code> beans to take control of the Mongo instance’s configuration and logging routing.
 The download configuration can be customized by declaring a <code>DownloadConfigBuilderCustomizer</code> bean.</p>
 </div>
@@ -2899,7 +2899,7 @@ Spring Boot offers several conveniences for working with Neo4j, including the <c
 <h4 id="data.nosql.neo4j.connecting" translation-result="on"><a href="data.html#data.nosql.neo4j.connecting"></a>2.3.1. 连接到 Neo4j 数据库</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.nosql.neo4j.connecting"></a>2.3.1. Connecting to a Neo4j Database</h4>
 <div class="paragraph">
-<p translation-result="on">要访问 Neo4j 服务器，您可以注入一个自动配置的 <code>org.neo4j.driver.Driver</code> 。默认情况下，实例尝试使用 Bolt 协议连接到位于 <code>localhost:7687</code> 的 Neo4j 服务器。以下示例显示了如何注入 Neo4j <code>Driver</code> ，该驱动程序使您可以访问 <code>Session</code> ：</p>
+<p translation-result="on">要访问 Neo4j 服务器，你可以注入一个自动配置的 <code>org.neo4j.driver.Driver</code> 。默认情况下，实例尝试使用 Bolt 协议连接到位于 <code>localhost:7687</code> 的 Neo4j 服务器。以下示例显示了如何注入 Neo4j <code>Driver</code> ，该驱动程序使你可以访问 <code>Session</code> ：</p>
 <p translation-origin="off">To access a Neo4j server, you can inject an auto-configured <code>org.neo4j.driver.Driver</code>.
 By default, the instance tries to connect to a Neo4j server at <code>localhost:7687</code> using the Bolt protocol.
 The following example shows how to inject a Neo4j <code>Driver</code> that gives you access, amongst other things, to a <code>Session</code>:</p>
@@ -2937,7 +2937,7 @@ public class MyBean {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以使用 <code>spring.neo4j.*</code> 属性配置驱动程序的各个方面。以下示例显示如何配置要使用的 uri 和凭据：</p>
+<p translation-result="on">你可以使用 <code>spring.neo4j.*</code> 属性配置驱动程序的各个方面。以下示例显示如何配置要使用的 uri 和凭据：</p>
 <p translation-origin="off">You can configure various aspects of the driver using <code>spring.neo4j.*</code> properties.
 The following example shows how to configure the uri and credentials to use:</p>
 </div>
@@ -2977,7 +2977,7 @@ Each will be called in order with the <code>ConfigBuilder</code> that is used to
 For complete details of Spring Data Neo4j, see the <a href="https://docs.spring.io/spring-data/neo4j/docs/6.2.1/reference/html/">reference documentation</a>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">与许多其他 Spring Data 模块一样，Spring Data Neo4j 与 Spring Data JPA 共享通用基础架构。您可以使用前面的 JPA 示例并将 <code>City</code> 定义为 Spring Data Neo4j <code>@Node</code> 而不是 JPA <code>@Entity</code> ，并且存储库抽象以相同的方式工作，如下例所示：</p>
+<p translation-result="on">与许多其他 Spring Data 模块一样，Spring Data Neo4j 与 Spring Data JPA 共享通用基础架构。你可以使用前面的 JPA 示例并将 <code>City</code> 定义为 Spring Data Neo4j <code>@Node</code> 而不是 JPA <code>@Entity</code> ，并且存储库抽象以相同的方式工作，如下例所示：</p>
 <p translation-origin="off">Spring Data Neo4j shares the common infrastructure with Spring Data JPA as many other Spring Data modules do.
 You could take the JPA example from earlier and define <code>City</code> as Spring Data Neo4j <code>@Node</code> rather than JPA <code>@Entity</code> and the repository abstraction works in the same way, as shown in the following example:</p>
 </div>
@@ -3002,7 +3002,7 @@ Spring Boot supports both classic and reactive Neo4j repositories, using the <co
 When Project Reactor is available on the classpath, the reactive style is also auto-configured.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以通过在 <code>@Configuration</code> -bean 上分别使用 <code>@EnableNeo4jRepositories</code> 和 <code>@EntityScan</code> 定义查找存储库和实体的位置。</p>
+<p translation-result="on">你可以通过在 <code>@Configuration</code> -bean 上分别使用 <code>@EnableNeo4jRepositories</code> 和 <code>@EntityScan</code> 定义查找存储库和实体的位置。</p>
 <p translation-origin="off">You can customize the locations to look for repositories and entities by using <code>@EnableNeo4jRepositories</code> and <code>@EntityScan</code> respectively on a <code>@Configuration</code>-bean.</p>
 </div>
 <div class="admonitionblock note">
@@ -3013,7 +3013,7 @@ When Project Reactor is available on the classpath, the reactive style is also a
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">在使用响应式样式的应用程序中，<code>ReactiveTransactionManager</code> 不是自动配置的。要启用事务管理，必须在您的配置中定义以下 bean：</p>
+<p translation-result="on">在使用响应式样式的应用程序中，<code>ReactiveTransactionManager</code> 不是自动配置的。要启用事务管理，必须在你的配置中定义以下 bean：</p>
 <p translation-origin="off">In an application using the reactive style, a <code>ReactiveTransactionManager</code> is not auto-configured.
 To enable transaction management, the following bean must be defined in your configuration:</p>
 </div>
@@ -3057,7 +3057,7 @@ Spring Boot offers basic auto-configuration for the Solr 5 client library.</p>
 <h4 id="data.nosql.solr.connecting" translation-result="on"><a href="data.html#data.nosql.solr.connecting"></a>2.4.1. 连接到 Solr</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.nosql.solr.connecting"></a>2.4.1. Connecting to Solr</h4>
 <div class="paragraph">
-<p translation-result="on">您可以像注入任何其他 Spring bean 一样注入自动配置的 <code>SolrClient</code> 实例。默认情况下，实例尝试连接到 <code>localhost:8983/solr</code> 的服务器。以下示例显示了如何注入 Solr bean：</p>
+<p translation-result="on">你可以像注入任何其他 Spring bean 一样注入自动配置的 <code>SolrClient</code> 实例。默认情况下，实例尝试连接到 <code>localhost:8983/solr</code> 的服务器。以下示例显示了如何注入 Solr bean：</p>
 <p translation-origin="off">You can inject an auto-configured <code>SolrClient</code> instance as you would any other Spring bean.
 By default, the instance tries to connect to a server at <code><a href="http://localhost:8983/solr" class="bare">localhost:8983/solr</a></code>.
 The following example shows how to inject a Solr bean:</p>
@@ -3092,7 +3092,7 @@ public class MyBean {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您添加自己的 <code>@Bean</code> 类型的 <code>SolrClient</code> ，它将替换默认值。</p>
+<p translation-result="on">如果你添加自己的 <code>@Bean</code> 类型的 <code>SolrClient</code> ，它将替换默认值。</p>
 <p translation-origin="off">If you add your own <code>@Bean</code> of type <code>SolrClient</code>, it replaces the default.</p>
 </div>
 </div>
@@ -3129,7 +3129,7 @@ Spring Boot offers basic auto-configuration for Elasticsearch clients.</p>
 <h4 id="data.nosql.elasticsearch.connecting-using-rest" translation-result="on"><a href="data.html#data.nosql.elasticsearch.connecting-using-rest"></a>2.5.1. 使用 REST 客户端连接到 Elasticsearch</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.nosql.elasticsearch.connecting-using-rest"></a>2.5.1. Connecting to Elasticsearch using REST clients</h4>
 <div class="paragraph">
-<p translation-result="on">Elasticsearch 提供<a href="https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/index.html">了两种不同的 REST 客户端</a>，您可以使用它们来查询集群：“Low Level”客户端和“High Level”客户端。Spring Boot 为 <code>org.elasticsearch.client:elasticsearch-rest-high-level-client</code> 附带的“高级”客户端提供支持。此外，Spring Boot 提供了对基于 Spring Framework 的 <code>WebClient</code> 的响应式客户端的支持，该客户端随 <code>org.springframework.data:spring-data-elasticsearch</code> 一起提供。默认情况下，客户端将以 <code>localhost:9200</code> 为目标。您可以使用 <code>spring.elasticsearch.*</code> 属性来进一步调整客户端的配置方式，如下例所示：</p>
+<p translation-result="on">Elasticsearch 提供<a href="https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/index.html">了两种不同的 REST 客户端</a>，你可以使用它们来查询集群：“Low Level”客户端和“High Level”客户端。Spring Boot 为 <code>org.elasticsearch.client:elasticsearch-rest-high-level-client</code> 附带的“高级”客户端提供支持。此外，Spring Boot 提供了对基于 Spring Framework 的 <code>WebClient</code> 的响应式客户端的支持，该客户端随 <code>org.springframework.data:spring-data-elasticsearch</code> 一起提供。默认情况下，客户端将以 <code>localhost:9200</code> 为目标。你可以使用 <code>spring.elasticsearch.*</code> 属性来进一步调整客户端的配置方式，如下例所示：</p>
 <p translation-origin="off">Elasticsearch ships <a href="https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/index.html">two different REST clients</a> that you can use to query a cluster: the "Low Level" client and the "High Level" client.
 Spring Boot provides support for the "High Level" client, which ships with <code>org.elasticsearch.client:elasticsearch-rest-high-level-client</code>.
 Additionally, Spring Boot provides support for a reactive client, based on Spring Framework’s <code>WebClient</code>, that ships with <code>org.springframework.data:spring-data-elasticsearch</code>.
@@ -3161,7 +3161,7 @@ spring.elasticsearch.password=secret</code></pre>
 <h5 id="data.nosql.elasticsearch.connecting-using-rest.restclient" translation-result="on"><a href="data.html#data.nosql.elasticsearch.connecting-using-rest.restclient"></a>使用 RestHighLevelClient 连接到 Elasticsearch</h5>
 <h5 translation-origin="off"><a class="anchor" href="data.html#data.nosql.elasticsearch.connecting-using-rest.restclient"></a>Connecting to Elasticsearch using RestHighLevelClient</h5>
 <div class="paragraph">
-<p translation-result="on">如果类路径上有 elasticsearch <code>elasticsearch-rest-high-level-client</code> ，Spring Boot 将自动配置并注册一个 <code>RestHighLevelClient</code> bean。除了前面描述的属性之外，为了微调 <code>RestHighLevelClient</code> ，您可以注册任意数量的实现 <code>RestClientBuilderCustomizer</code> 的 bean 以进行更高级的自定义。要完全控制其注册，请定义一个 <code>RestClientBuilder</code> bean。</p>
+<p translation-result="on">如果类路径上有 elasticsearch <code>elasticsearch-rest-high-level-client</code> ，Spring Boot 将自动配置并注册一个 <code>RestHighLevelClient</code> bean。除了前面描述的属性之外，为了微调 <code>RestHighLevelClient</code> ，你可以注册任意数量的实现 <code>RestClientBuilderCustomizer</code> 的 bean 以进行更高级的自定义。要完全控制其注册，请定义一个 <code>RestClientBuilder</code> bean。</p>
 <p translation-origin="off">If you have <code>elasticsearch-rest-high-level-client</code> on the classpath, Spring Boot will auto-configure and register a <code>RestHighLevelClient</code> bean.
 In addition to the properties described previously, to fine-tune the <code>RestHighLevelClient</code>, you can register an arbitrary number of beans that implement <code>RestClientBuilderCustomizer</code> for more advanced customizations.
 To take full control over its registration, define a <code>RestClientBuilder</code> bean.</p>
@@ -3173,14 +3173,14 @@ To take full control over its registration, define a <code>RestClientBuilder</co
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果您的应用程序需要访问“低级别” <code>RestClient</code> ，您可以通过在自动配置的 <code>RestHighLevelClient</code> 上调用 <code>client.getLowLevelClient()</code> 来获取它。</p>
+<p translation-result="on">如果你的应用程序需要访问“低级别” <code>RestClient</code> ，你可以通过在自动配置的 <code>RestHighLevelClient</code> 上调用 <code>client.getLowLevelClient()</code> 来获取它。</p>
 <p translation-origin="off">If your application needs access to a "Low Level" <code>RestClient</code>, you can get it by calling <code>client.getLowLevelClient()</code> on the auto-configured <code>RestHighLevelClient</code>.</p>
 </td>
 </tr>
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">此外，如果 <code>elasticsearch-rest-client-sniffer</code> 在类路径上，则 <code>Sniffer</code> 会自动配置为从正在运行的 Elasticsearch 集群中自动发现节点并将它们设置在 <code>RestHighLevelClient</code> bean 上。您可以进一步调整 <code>Sniffer</code> 的配置方式，如下例所示：</p>
+<p translation-result="on">此外，如果 <code>elasticsearch-rest-client-sniffer</code> 在类路径上，则 <code>Sniffer</code> 会自动配置为从正在运行的 Elasticsearch 集群中自动发现节点并将它们设置在 <code>RestHighLevelClient</code> bean 上。你可以进一步调整 <code>Sniffer</code> 的配置方式，如下例所示：</p>
 <p translation-origin="off">Additionally, if <code>elasticsearch-rest-client-sniffer</code> is on the classpath, a <code>Sniffer</code> is auto-configured to automatically discover nodes from a running Elasticsearch cluster and set them on the <code>RestHighLevelClient</code> bean.
 You can further tune how <code>Sniffer</code> is configured, as shown in the following example:</p>
 </div>
@@ -3234,7 +3234,7 @@ In addition to the properties described previously, the <code>spring.elasticsear
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果 <code>spring.elasticsearch.</code> <strong>和 <code>spring.elasticsearch.webclient.</code> </strong>配置属性还不够，并且您想完全控制客户端配置，您可以注册一个自定义 <code>ClientConfiguration</code> bean。</p>
+<p translation-result="on">如果 <code>spring.elasticsearch.</code> <strong>和 <code>spring.elasticsearch.webclient.</code> </strong>配置属性还不够，并且你想完全控制客户端配置，你可以注册一个自定义 <code>ClientConfiguration</code> bean。</p>
 <p translation-origin="off">If the <code>spring.elasticsearch.<strong></strong></code><strong> and <code>spring.elasticsearch.webclient.</code></strong> configuration properties are not enough and you’d like to fully control the client configuration, you can register a custom <code>ClientConfiguration</code> bean.</p>
 </div>
 </div>
@@ -3284,12 +3284,12 @@ They are the reactive equivalent of the other REST clients.</p>
 <h4 id="data.nosql.elasticsearch.repositories" translation-result="on"><a href="data.html#data.nosql.elasticsearch.repositories"></a>2.5.3. Spring Data Elasticsearch 存储库</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.nosql.elasticsearch.repositories"></a>2.5.3. Spring Data Elasticsearch Repositories</h4>
 <div class="paragraph">
-<p translation-result="on">Spring Data 包括对 Elasticsearch 的存储库支持。与前面讨论的 JPA 存储库一样，基本原则是根据方法名称自动为您构建查询。</p>
+<p translation-result="on">Spring Data 包括对 Elasticsearch 的存储库支持。与前面讨论的 JPA 存储库一样，基本原则是根据方法名称自动为你构建查询。</p>
 <p translation-origin="off">Spring Data includes repository support for Elasticsearch.
 As with the JPA repositories discussed earlier, the basic principle is that queries are constructed for you automatically based on method names.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">事实上，Spring Data JPA 和 Spring Data Elasticsearch 共享相同的公共基础架构。您可以使用前面的 JPA 示例，假设 <code>City</code> 现在是 Elasticsearch <code>@Document</code> 类而不是 JPA <code>@Entity</code> ，它的工作方式相同。</p>
+<p translation-result="on">事实上，Spring Data JPA 和 Spring Data Elasticsearch 共享相同的公共基础架构。你可以使用前面的 JPA 示例，假设 <code>City</code> 现在是 Elasticsearch <code>@Document</code> 类而不是 JPA <code>@Entity</code> ，它的工作方式相同。</p>
 <p translation-origin="off">In fact, both Spring Data JPA and Spring Data Elasticsearch share the same common infrastructure.
 You could take the JPA example from earlier and, assuming that <code>City</code> is now an Elasticsearch <code>@Document</code> class rather than a JPA <code>@Entity</code>, it works in the same way.</p>
 </div>
@@ -3312,12 +3312,12 @@ You could take the JPA example from earlier and, assuming that <code>City</code>
 Most likely those beans are auto-configured by Spring Boot given the required dependencies are present.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您希望使用自己的模板来支持 Elasticsearch 存储库，您可以添加自己的 <code>ElasticsearchRestTemplate</code> 或 <code>ElasticsearchOperations</code> <code>@Bean</code> ，只要它被命名为 <code>"elasticsearchTemplate"</code> 。同样适用于 <code>ReactiveElasticsearchTemplate</code> 和 <code>ReactiveElasticsearchOperations</code> ，bean 名称为 <code>"reactiveElasticsearchTemplate"</code> 。</p>
+<p translation-result="on">如果你希望使用自己的模板来支持 Elasticsearch 存储库，你可以添加自己的 <code>ElasticsearchRestTemplate</code> 或 <code>ElasticsearchOperations</code> <code>@Bean</code> ，只要它被命名为 <code>"elasticsearchTemplate"</code> 。同样适用于 <code>ReactiveElasticsearchTemplate</code> 和 <code>ReactiveElasticsearchOperations</code> ，bean 名称为 <code>"reactiveElasticsearchTemplate"</code> 。</p>
 <p translation-origin="off">If you wish to use your own template for backing the Elasticsearch repositories, you can add your own <code>ElasticsearchRestTemplate</code> or <code>ElasticsearchOperations</code> <code>@Bean</code>, as long as it is named <code>"elasticsearchTemplate"</code>.
 Same applies to <code>ReactiveElasticsearchTemplate</code> and <code>ReactiveElasticsearchOperations</code>, with the bean name <code>"reactiveElasticsearchTemplate"</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以选择使用以下属性禁用存储库支持：</p>
+<p translation-result="on">你可以选择使用以下属性禁用存储库支持：</p>
 <p translation-origin="off">You can choose to disable the repositories support with the following property:</p>
 </div>
 <div class="listingblock primary">
@@ -3352,7 +3352,7 @@ There is a <code>spring-boot-starter-data-cassandra</code> “Starter” for col
 <h4 id="data.nosql.cassandra.connecting" translation-result="on"><a href="data.html#data.nosql.cassandra.connecting"></a>2.6.1. 连接到 Cassandra</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.nosql.cassandra.connecting"></a>2.6.1. Connecting to Cassandra</h4>
 <div class="paragraph">
-<p translation-result="on">您可以像使用任何其他 Spring Bean 一样注入自动配置的 <code>CassandraTemplate</code> 或 Cassandra <code>CqlSession</code> 实例。<code>spring.data.cassandra.*</code> 属性可用于自定义连接。通常，您提供 <code>keyspace-name</code> 和 <code>contact-points</code> 以及本地数据中心名称，如以下示例所示：</p>
+<p translation-result="on">你可以像使用任何其他 Spring Bean 一样注入自动配置的 <code>CassandraTemplate</code> 或 Cassandra <code>CqlSession</code> 实例。<code>spring.data.cassandra.*</code> 属性可用于自定义连接。通常，你提供 <code>keyspace-name</code> 和 <code>contact-points</code> 以及本地数据中心名称，如以下示例所示：</p>
 <p translation-origin="off">You can inject an auto-configured <code>CassandraTemplate</code> or a Cassandra <code>CqlSession</code> instance as you would with any other Spring Bean.
 The <code>spring.data.cassandra.*</code> properties can be used to customize the connection.
 Generally, you provide <code>keyspace-name</code> and <code>contact-points</code> as well the local datacenter name, as shown in the following example:</p>
@@ -3432,7 +3432,7 @@ If you need to configure the port, use <code>spring.data.cassandra.port</code>.<
 If a property is both present in <code>spring.data.cassandra.*</code> and the configuration file, the value in <code>spring.data.cassandra.*</code> takes precedence.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">对于更高级的驱动程序自定义，您可以注册任意数量的实现 <code>DriverConfigLoaderBuilderCustomizer</code> 的 bean。<code>CqlSession</code> 可以使用 <code>CqlSessionBuilderCustomizer</code> 类型的 bean 进行定制。</p>
+<p translation-result="on">对于更高级的驱动程序自定义，你可以注册任意数量的实现 <code>DriverConfigLoaderBuilderCustomizer</code> 的 bean。<code>CqlSession</code> 可以使用 <code>CqlSessionBuilderCustomizer</code> 类型的 bean 进行定制。</p>
 <p translation-origin="off">For more advanced driver customizations, you can register an arbitrary number of beans that implement <code>DriverConfigLoaderBuilderCustomizer</code>.
 The <code>CqlSession</code> can be customized with a bean of type <code>CqlSessionBuilderCustomizer</code>.</p>
 </div>
@@ -3447,7 +3447,7 @@ The <code>CqlSession</code> can be customized with a bean of type <code>CqlSessi
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果您使用 <code>CqlSessionBuilder</code> 创建多个 <code>CqlSession</code> bean，请记住构建器是可变的，因此请确保为每个会话注入一个新副本。</p>
+<p translation-result="on">如果你使用 <code>CqlSessionBuilder</code> 创建多个 <code>CqlSession</code> bean，请记住构建器是可变的，因此请确保为每个会话注入一个新副本。</p>
 <p translation-origin="off">If you use <code>CqlSessionBuilder</code> to create multiple <code>CqlSession</code> beans, keep in mind the builder is mutable so make sure to inject a fresh copy for each session.</p>
 </td>
 </tr>
@@ -3482,7 +3482,7 @@ public class MyBean {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您添加自己的 <code>CassandraTemplate</code> 类型的 <code>@Bean</code> ，它将替换默认值。</p>
+<p translation-result="on">如果你添加自己的 <code>CassandraTemplate</code> 类型的 <code>@Bean</code> ，它将替换默认值。</p>
 <p translation-origin="off">If you add your own <code>@Bean</code> of type <code>CassandraTemplate</code>, it replaces the default.</p>
 </div>
 </div>
@@ -3522,7 +3522,7 @@ There are <code>spring-boot-starter-data-couchbase</code> and <code>spring-boot-
 <h4 id="data.nosql.couchbase.connecting" translation-result="on"><a href="data.html#data.nosql.couchbase.connecting"></a>2.7.1. 连接到沙发底座</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.nosql.couchbase.connecting"></a>2.7.1. Connecting to Couchbase</h4>
 <div class="paragraph">
-<p translation-result="on">您可以通过添加 Couchbase SDK 和一些配置来获得 <code>Cluster</code> 。<code>spring.couchbase.*</code> 属性可用于自定义连接。通常，您提供<a href="https://github.com/couchbaselabs/sdk-rfcs/blob/master/rfc/0011-connection-string.md">连接字符串</a>、用户名和密码，如下例所示：</p>
+<p translation-result="on">你可以通过添加 Couchbase SDK 和一些配置来获得 <code>Cluster</code> 。<code>spring.couchbase.*</code> 属性可用于自定义连接。通常，你提供<a href="https://github.com/couchbaselabs/sdk-rfcs/blob/master/rfc/0011-connection-string.md">连接字符串</a>、用户名和密码，如下例所示：</p>
 <p translation-origin="off">You can get a <code>Cluster</code> by adding the Couchbase SDK and some configuration.
 The <code>spring.couchbase.*</code> properties can be used to customize the connection.
 Generally, you provide the <a href="https://github.com/couchbaselabs/sdk-rfcs/blob/master/rfc/0011-connection-string.md">connection string</a>, username, and password, as shown in the following example:</p>
@@ -3597,7 +3597,7 @@ To take more control, one or more <code>ClusterEnvironmentBuilderCustomizer</cod
 For complete details of Spring Data Couchbase, see the <a href="https://docs.spring.io/spring-data/couchbase/docs/4.3.1/reference/html/">reference documentation</a>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以像使用任何其他 Spring Bean 一样注入自动配置的 <code>CouchbaseTemplate</code> 实例，前提是 <code>CouchbaseClientFactory</code> bean 可用。如上所述，当 <code>Cluster</code> 可用并且已指定存储桶名称时，会发生这种情况：</p>
+<p translation-result="on">你可以像使用任何其他 Spring Bean 一样注入自动配置的 <code>CouchbaseTemplate</code> 实例，前提是 <code>CouchbaseClientFactory</code> bean 可用。如上所述，当 <code>Cluster</code> 可用并且已指定存储桶名称时，会发生这种情况：</p>
 <p translation-origin="off">You can inject an auto-configured <code>CouchbaseTemplate</code> instance as you would with any other Spring Bean, provided a <code>CouchbaseClientFactory</code> bean is available.
 This happens when a <code>Cluster</code> is available, as described above, and a bucket name has been specified:</p>
 </div>
@@ -3646,7 +3646,7 @@ public class MyBean {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以在自己的配置中定义一些 bean 来覆盖自动配置提供的那些：</p>
+<p translation-result="on">你可以在自己的配置中定义一些 bean 来覆盖自动配置提供的那些：</p>
 <p translation-origin="off">There are a few beans that you can define in your own configuration to override those provided by the auto-configuration:</p>
 </div>
 <div class="ulist">
@@ -3666,7 +3666,7 @@ public class MyBean {
 </ul>
 </div>
 <div class="paragraph">
-<p translation-result="on">为了避免在您自己的配置中硬编码这些名称，您可以重用 Spring Data Couchbase 提供的 <code>BeanNames</code> 。例如，您可以自定义要使用的转换器，如下所示：</p>
+<p translation-result="on">为了避免在你自己的配置中硬编码这些名称，你可以重用 Spring Data Couchbase 提供的 <code>BeanNames</code> 。例如，你可以自定义要使用的转换器，如下所示：</p>
 <p translation-origin="off">To avoid hard-coding those names in your own config, you can reuse <code>BeanNames</code> provided by Spring Data Couchbase.
 For instance, you can customize the converters to use, as follows:</p>
 </div>
@@ -3737,7 +3737,7 @@ spring.ldap.password=secret</code></pre>
 <p translation-origin="off">If you need to customize connection settings, you can use the <code>spring.ldap.base</code> and <code>spring.ldap.base-environment</code> properties.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>LdapContextSource</code> 是根据这些设置自动配置的。如果 <code>DirContextAuthenticationStrategy</code> bean 可用，则它与自动配置的 <code>LdapContextSource</code> 相关联。如果您需要自定义它，例如使用 <code>PooledContextSource</code> ，您仍然可以注入自动配置的 <code>LdapContextSource</code> 。确保将您自定义的 <code>ContextSource</code> 标记为 <code>@Primary</code> ，以便自动配置的 <code>LdapTemplate</code> 使用它。</p>
+<p translation-result="on"><code>LdapContextSource</code> 是根据这些设置自动配置的。如果 <code>DirContextAuthenticationStrategy</code> bean 可用，则它与自动配置的 <code>LdapContextSource</code> 相关联。如果你需要自定义它，例如使用 <code>PooledContextSource</code> ，你仍然可以注入自动配置的 <code>LdapContextSource</code> 。确保将你自定义的 <code>ContextSource</code> 标记为 <code>@Primary</code> ，以便自动配置的 <code>LdapTemplate</code> 使用它。</p>
 <p translation-origin="off">An <code>LdapContextSource</code> is auto-configured based on these settings.
 If a <code>DirContextAuthenticationStrategy</code> bean is available, it is associated to the auto-configured <code>LdapContextSource</code>.
 If you need to customize it, for instance to use a <code>PooledContextSource</code>, you can still inject the auto-configured <code>LdapContextSource</code>.
@@ -3753,7 +3753,7 @@ Make sure to flag your customized <code>ContextSource</code> as <code>@Primary</
 For complete details of Spring Data LDAP, see the <a href="https://docs.spring.io/spring-data/ldap/docs/1.0.x/reference/html/">reference documentation</a>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您还可以像使用任何其他 Spring Bean 一样注入自动配置的 <code>LdapTemplate</code> 实例，如以下示例所示：</p>
+<p translation-result="on">你还可以像使用任何其他 Spring Bean 一样注入自动配置的 <code>LdapTemplate</code> 实例，如以下示例所示：</p>
 <p translation-origin="off">You can also inject an auto-configured <code>LdapTemplate</code> instance as you would with any other Spring Bean, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -3819,7 +3819,7 @@ To configure the server, add a dependency to <code>com.unboundid:unboundid-ldaps
 <p translation-origin="off">It is possible to define multiple base-dn values, however, since distinguished names usually contain commas, they must be defined using the correct notation.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">在 yaml 文件中，您可以使用 yaml 列表表示法。在属性文件中，您必须包含索引作为属性名称的一部分：</p>
+<p translation-result="on">在 yaml 文件中，你可以使用 yaml 列表表示法。在属性文件中，你必须包含索引作为属性名称的一部分：</p>
 <p translation-origin="off">In yaml files, you can use the yaml list notation. In properties files, you must include the index as part of the property name:</p>
 </div>
 <div class="listingblock primary">
@@ -3848,12 +3848,12 @@ spring.ldap.embedded.base-dn[1]=dc=pivotal,dc=io</code></pre>
 There is no need to specify a <code>spring.ldap.urls</code> property.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您的类路径中有一个 <code>schema.ldif</code> 文件，它用于初始化服务器。如果要从不同的资源加载初始化脚本，还可以使用 <code>spring.ldap.embedded.ldif</code> 属性。</p>
+<p translation-result="on">如果你的类路径中有一个 <code>schema.ldif</code> 文件，它用于初始化服务器。如果要从不同的资源加载初始化脚本，还可以使用 <code>spring.ldap.embedded.ldif</code> 属性。</p>
 <p translation-origin="off">If there is a <code>schema.ldif</code> file on your classpath, it is used to initialize the server.
 If you want to load the initialization script from a different resource, you can also use the <code>spring.ldap.embedded.ldif</code> property.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，使用标准架构来验证 <code>LDIF</code> 文件。您可以通过设置 <code>spring.ldap.embedded.validation.enabled</code> 属性来完全关闭验证。如果您有自定义属性，您可以使用 <code>spring.ldap.embedded.validation.schema</code> 来定义您的自定义属性类型或对象类。</p>
+<p translation-result="on">默认情况下，使用标准架构来验证 <code>LDIF</code> 文件。你可以通过设置 <code>spring.ldap.embedded.validation.enabled</code> 属性来完全关闭验证。如果你有自定义属性，你可以使用 <code>spring.ldap.embedded.validation.schema</code> 来定义你的自定义属性类型或对象类。</p>
 <p translation-origin="off">By default, a standard schema is used to validate <code>LDIF</code> files.
 You can turn off validation altogether by setting the <code>spring.ldap.embedded.validation.enabled</code> property.
 If you have custom attributes, you can use <code>spring.ldap.embedded.validation.schema</code> to define your custom attribute types or object classes.</p>
@@ -3890,16 +3890,16 @@ If you have custom attributes, you can use <code>spring.ldap.embedded.validation
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果与 InfluxDB 的连接需要用户和密码，您可以相应地设置 <code>spring.influx.user</code> 和 <code>spring.influx.password</code> 属性。</p>
+<p translation-result="on">如果与 InfluxDB 的连接需要用户和密码，你可以相应地设置 <code>spring.influx.user</code> 和 <code>spring.influx.password</code> 属性。</p>
 <p translation-origin="off">If the connection to InfluxDB requires a user and password, you can set the <code>spring.influx.user</code> and <code>spring.influx.password</code> properties accordingly.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">InfluxDB 依赖于 OkHttp。如果您需要在后台调整 <code>InfluxDB</code> 使用的 http 客户端，您可以注册一个 <code>InfluxDbOkHttpClientBuilderProvider</code> bean。</p>
+<p translation-result="on">InfluxDB 依赖于 OkHttp。如果你需要在后台调整 <code>InfluxDB</code> 使用的 http 客户端，你可以注册一个 <code>InfluxDbOkHttpClientBuilderProvider</code> bean。</p>
 <p translation-origin="off">InfluxDB relies on OkHttp.
 If you need to tune the http client <code>InfluxDB</code> uses behind the scenes, you can register an <code>InfluxDbOkHttpClientBuilderProvider</code> bean.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您需要对配置进行更多控制，请考虑注册一个 <code>InfluxDbCustomizer</code> bean。</p>
+<p translation-result="on">如果你需要对配置进行更多控制，请考虑注册一个 <code>InfluxDbCustomizer</code> bean。</p>
 <p translation-origin="off">If you need more control over the configuration, consider registering an <code>InfluxDbCustomizer</code> bean.</p>
 </div>
 </div>
@@ -3911,7 +3911,7 @@ If you need to tune the http client <code>InfluxDB</code> uses behind the scenes
 <h2 translation-origin="off"><a class="anchor" href="data.html#data.whats-next"></a>3. What to Read Next</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">您现在应该对如何将 Spring Boot 与各种数据技术一起使用有所了解。从这里，您可以了解 Spring Boot 对各种<a href="messaging.html#messaging">消息传递技术</a>的支持以及如何在您的应用程序中启用它们。</p>
+<p translation-result="on">你现在应该对如何将 Spring Boot 与各种数据技术一起使用有所了解。从这里，你可以了解 Spring Boot 对各种<a href="messaging.html#messaging">消息传递技术</a>的支持以及如何在你的应用程序中启用它们。</p>
 <p translation-origin="off">You should now have a feeling for how to use Spring Boot with various data technologies.
 From here, you can read about Spring Boot’s support for various <a href="messaging.html#messaging">messaging technologies</a> and how to enable them in your application.</p>
 </div>
@@ -3932,3 +3932,4 @@ From here, you can read about Spring Boot’s support for various <a href="messa
 
 
 </body></html>
+

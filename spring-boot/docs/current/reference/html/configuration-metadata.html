@@ -1030,7 +1030,7 @@
 </ul>
 </li>
 <li>
-  <p translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor">3. 使用注释处理器生成您自己的元数据</a></p>
+  <p translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor">3. 使用注释处理器生成你自己的元数据</a></p>
   <p translation-origin="off"><a href="configuration-metadata.html#configuration-metadata.annotation-processor">3. Generating Your Own Metadata by Using the Annotation Processor</a></p>
 <ul class="sectlevel2">
 <li>
@@ -1143,7 +1143,7 @@ They use a JSON format with items categorized under either “groups” or “pr
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">每个“属性”都是用户使用给定值指定的配置项。例如，<code>server.port</code> 和 <code>server.address</code> 可能在您的 <code>application.properties</code> / <code>application.yaml</code> 中指定，如下所示：</p>
+<p translation-result="on">每个“属性”都是用户使用给定值指定的配置项。例如，<code>server.port</code> 和 <code>server.address</code> 可能在你的 <code>application.properties</code> / <code>application.yaml</code> 中指定，如下所示：</p>
 <p translation-origin="off">Each “property” is a configuration item that the user specifies with a given value.
 For example, <code>server.port</code> and <code>server.address</code> might be specified in your <code>application.properties</code>/<code>application.yaml</code>, as follows:</p>
 </div>
@@ -1295,7 +1295,7 @@ This attribute is mandatory.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
 <td class="tableblock halign-left valign-top"><p translation-result="on">细绳</p><p class="tableblock" translation-origin="off">String</p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">属性数据类型的完整签名（例如 <code>java.lang.String</code> ）以及完整的泛型类型（例如 <code>java.util.Map&lt;java.lang.String,com.example.MyEnum&gt;</code> ）。您可以使用此属性来指导用户了解他们可以输入的值的类型。为了保持一致性，原语的类型是通过使用其包装对应物来指定的（例如，<code>boolean</code> 变为 <code>java.lang.Boolean</code> ）。请注意，此类可能是一个复杂类型，它在绑定值时从 <code>String</code> 转换而来。如果类型未知，则可以省略。</p><p class="tableblock" translation-origin="off">The full signature of the data type of the property (for example, <code>java.lang.String</code>) but also a full generic type (such as <code>java.util.Map&lt;java.lang.String,com.example.MyEnum&gt;</code>).
+<td class="tableblock halign-left valign-top"><p translation-result="on">属性数据类型的完整签名（例如 <code>java.lang.String</code> ）以及完整的泛型类型（例如 <code>java.util.Map&lt;java.lang.String,com.example.MyEnum&gt;</code> ）。你可以使用此属性来指导用户了解他们可以输入的值的类型。为了保持一致性，原语的类型是通过使用其包装对应物来指定的（例如，<code>boolean</code> 变为 <code>java.lang.Boolean</code> ）。请注意，此类可能是一个复杂类型，它在绑定值时从 <code>String</code> 转换而来。如果类型未知，则可以省略。</p><p class="tableblock" translation-origin="off">The full signature of the data type of the property (for example, <code>java.lang.String</code>) but also a full generic type (such as <code>java.util.Map&lt;java.lang.String,com.example.MyEnum&gt;</code>).
 You can use this attribute to guide the user as to the types of values that they can enter.
 For consistency, the type of a primitive is specified by using its wrapper counterpart (for example, <code>boolean</code> becomes <code>java.lang.Boolean</code>).
 Note that this class may be a complex type that gets converted from a <code>String</code> as values are bound.
@@ -1451,7 +1451,7 @@ public class MyProperties {
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">前面的代码确保不推荐使用的属性仍然有效（在幕后委托给 <code>name</code> 属性）。一旦可以从公共 API 中删除 <code>getTarget</code> 和 <code>setTarget</code> 方法，元数据中的自动弃用提示也会消失。如果您想保留提示，添加具有 <code>error</code> 弃用级别的手动元数据可确保用户仍然了解该属性。当提供 <code>replacement</code> 时，这样做特别有用。</p>
+<p translation-result="on">前面的代码确保不推荐使用的属性仍然有效（在幕后委托给 <code>name</code> 属性）。一旦可以从公共 API 中删除 <code>getTarget</code> 和 <code>setTarget</code> 方法，元数据中的自动弃用提示也会消失。如果你想保留提示，添加具有 <code>error</code> 弃用级别的手动元数据可确保用户仍然了解该属性。当提供 <code>replacement</code> 时，这样做特别有用。</p>
 <p translation-origin="off">The preceding code makes sure that the deprecated property still works (delegating to the <code>name</code> property behind the scenes).
 Once the <code>getTarget</code> and <code>setTarget</code> methods can be removed from your public API, the automatic deprecation hint in the metadata goes away as well.
 If you want to keep a hint, adding manual metadata with an <code>error</code> deprecation level ensures that users are still informed about that property.
@@ -1598,7 +1598,7 @@ The last line in the description should end with a period (<code>.</code>).</p><
 <h3 id="configuration-metadata.format.repeated-items" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.format.repeated-items"></a>1.4. 重复的元数据项</h3>
 <h3 translation-origin="off"><a class="anchor" href="configuration-metadata.html#configuration-metadata.format.repeated-items"></a>1.4. Repeated Metadata Items</h3>
 <div class="paragraph">
-<p translation-result="on">具有相同“属性”和“组”名称的对象可以在元数据文件中出现多次。例如，您可以将两个单独的类绑定到相同的前缀，每个类都有可能重叠的属性名称。虽然多次出现在元数据中的相同名称不应该是常见的，但元数据的消费者应该注意确保他们支持它。</p>
+<p translation-result="on">具有相同“属性”和“组”名称的对象可以在元数据文件中出现多次。例如，你可以将两个单独的类绑定到相同的前缀，每个类都有可能重叠的属性名称。虽然多次出现在元数据中的相同名称不应该是常见的，但元数据的消费者应该注意确保他们支持它。</p>
 <p translation-origin="off">Objects with the same “property” and “group” name can appear multiple times within a metadata file.
 For example, you could bind two separate classes to the same prefix, with each having potentially overlapping property names.
 While the same names appearing in the metadata multiple times should not be common, consumers of metadata should take care to ensure that they support it.</p>
@@ -1611,7 +1611,7 @@ While the same names appearing in the metadata multiple times should not be comm
 <h2 translation-origin="off"><a class="anchor" href="configuration-metadata.html#configuration-metadata.manual-hints"></a>2. Providing Manual Hints</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">为了改善用户体验并进一步帮助用户配置给定的属性，您可以提供额外的元数据：</p>
+<p translation-result="on">为了改善用户体验并进一步帮助用户配置给定的属性，你可以提供额外的元数据：</p>
 <p translation-origin="off">To improve the user experience and further assist the user in configuring a given property, you can provide additional metadata that:</p>
 </div>
 <div class="ulist">
@@ -1636,7 +1636,7 @@ In the <a href="configuration-metadata.html#configuration-metadata.format">initi
 Each value may have a description as well.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您的属性是 <code>Map</code> 类型，您可以为键和值提供提示（但不是为地图本身）。特殊的 <code>.keys</code> 和 <code>.values</code> 后缀必须分别引用键和值。</p>
+<p translation-result="on">如果你的属性是 <code>Map</code> 类型，你可以为键和值提供提示（但不是为地图本身）。特殊的 <code>.keys</code> 和 <code>.values</code> 后缀必须分别引用键和值。</p>
 <p translation-origin="off">If your property is of type <code>Map</code>, you can provide hints for both the keys and the values (but not for the map itself).
 The special <code>.keys</code> and <code>.values</code> suffixes must refer to the keys and the values, respectively.</p>
 </div>
@@ -1670,7 +1670,7 @@ public class MyProperties {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">魔法值（在本例中）是 <code>sample1</code> 和 <code>sample2</code> 。为了为密钥提供额外的内容帮助，您可以将以下 JSON 添加到<a href="configuration-metadata.html#configuration-metadata.annotation-processor.adding-additional-metadata">模块的手动元数据中</a>：</p>
+<p translation-result="on">魔法值（在本例中）是 <code>sample1</code> 和 <code>sample2</code> 。为了为密钥提供额外的内容帮助，你可以将以下 JSON 添加到<a href="configuration-metadata.html#configuration-metadata.annotation-processor.adding-additional-metadata">模块的手动元数据中</a>：</p>
 <p translation-origin="off">The magic values are (in this example) are <code>sample1</code> and <code>sample2</code>.
 In order to offer additional content assistance for the keys, you could add the following JSON to <a href="configuration-metadata.html#configuration-metadata.annotation-processor.adding-additional-metadata">the manual metadata of the module</a>:</p>
 </div>
@@ -1698,7 +1698,7 @@ In order to offer additional content assistance for the keys, you could add the 
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">我们建议您对这两个值使用 <code>Enum</code> 。如果您的 IDE 支持它，这是迄今为止最有效的自动完成方法。</p>
+<p translation-result="on">我们建议你对这两个值使用 <code>Enum</code> 。如果你的 IDE 支持它，这是迄今为止最有效的自动完成方法。</p>
 <p translation-origin="off">We recommend that you use an <code>Enum</code> for those two values instead.
 If your IDE supports it, this is by far the most effective approach to auto-completion.</p>
 </td>
@@ -1710,7 +1710,7 @@ If your IDE supports it, this is by far the most effective approach to auto-comp
 <h3 id="configuration-metadata.manual-hints.value-providers" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.manual-hints.value-providers"></a>2.2. 价值提供者</h3>
 <h3 translation-origin="off"><a class="anchor" href="configuration-metadata.html#configuration-metadata.manual-hints.value-providers"></a>2.2. Value Providers</h3>
 <div class="paragraph">
-<p translation-result="on">提供者是一种将语义附加到属性的强大方法。在本节中，我们定义了可用于您自己的提示的官方提供程序。但是，您最喜欢的 IDE 可能会实现其中的一些，也可能不实现。此外，它最终可以提供自己的。</p>
+<p translation-result="on">提供者是一种将语义附加到属性的强大方法。在本节中，我们定义了可用于你自己的提示的官方提供程序。但是，你最喜欢的 IDE 可能会实现其中的一些，也可能不实现。此外，它最终可以提供自己的。</p>
 <p translation-origin="off">Providers are a powerful way to attach semantics to a property.
 In this section, we define the official providers that you can use for your own hints.
 However, your favorite IDE may implement some of these or none of them.
@@ -1788,7 +1788,7 @@ Usually constrained by a base class that is specified by the <code>target</code>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">对于给定的属性，只能有一个提供者处于活动状态，但如果他们都可以<em>以某种方式</em>管理该属性，则您可以指定多个提供者。确保首先放置最强大的提供程序，因为 IDE 必须使用它可以处理的 JSON 部分中的第一个。如果不支持给定属性的提供者，则也不提供特殊的内容帮助。</p>
+<p translation-result="on">对于给定的属性，只能有一个提供者处于活动状态，但如果他们都可以<em>以某种方式</em>管理该属性，则你可以指定多个提供者。确保首先放置最强大的提供程序，因为 IDE 必须使用它可以处理的 JSON 部分中的第一个。如果不支持给定属性的提供者，则也不提供特殊的内容帮助。</p>
 <p translation-origin="off">Only one provider can be active for a given property, but you can specify several providers if they can all manage the property <em>in some way</em>.
 Make sure to place the most powerful provider first, as the IDE must use the first one in the JSON section that it can handle.
 If no provider for a given property is supported, no special content assistance is provided, either.</p>
@@ -1805,7 +1805,7 @@ If no provider for a given property is supported, no special content assistance 
 Regular value validation based on the property type should be applied if this is supported.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您有一个值列表并且任何额外的值仍应被视为有效，则通常使用此提供程序。</p>
+<p translation-result="on">如果你有一个值列表并且任何额外的值仍应被视为有效，则通常使用此提供程序。</p>
 <p translation-origin="off">This provider is typically used if you have a list of values and any extra values should still be considered as valid.</p>
 </div>
 <div class="paragraph">
@@ -1917,7 +1917,7 @@ Note that this information can be provided by the type itself by exposing a clas
 <h4 id="configuration-metadata.manual-hints.value-providers.handle-as" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.manual-hints.value-providers.handle-as"></a> 2.2.3. 处理为</h4>
 <h4 translation-origin="off"><a class="anchor" href="configuration-metadata.html#configuration-metadata.manual-hints.value-providers.handle-as"></a>2.2.3. Handle As</h4>
 <div class="paragraph">
-<p translation-result="on"><strong>handle-as</strong>提供程序允许您将属性的类型替换为更高级的类型。这通常发生在属性具有 <code>java.lang.String</code> 类型时，因为您不希望配置类依赖于可能不在类路径上的类。此提供程序支持以下参数：</p>
+<p translation-result="on"><strong>handle-as</strong>提供程序允许你将属性的类型替换为更高级的类型。这通常发生在属性具有 <code>java.lang.String</code> 类型时，因为你不希望配置类依赖于可能不在类路径上的类。此提供程序支持以下参数：</p>
 <p translation-origin="off">The <strong>handle-as</strong> provider lets you substitute the type of the property to a more high-level type.
 This typically happens when the property has a <code>java.lang.String</code> type, because you do not want your configuration classes to rely on classes that may not be on the classpath.
 This provider supports the following parameters:</p>
@@ -2218,7 +2218,7 @@ Typically used to filter out non-candidate beans.</p></td>
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">活页夹不知道元数据。如果您提供该提示，您仍然需要将 bean 名称转换为 <code>ApplicationContext</code> 使用的实际 Bean 引用。</p>
+<p translation-result="on">活页夹不知道元数据。如果你提供该提示，你仍然需要将 bean 名称转换为 <code>ApplicationContext</code> 使用的实际 Bean 引用。</p>
 <p translation-origin="off">The binder is not aware of the metadata.
 If you provide that hint, you still need to transform the bean name into an actual Bean reference using by the <code>ApplicationContext</code>.</p>
 </td>
@@ -2256,11 +2256,11 @@ If you provide that hint, you still need to transform the bean name into an actu
 </div>
 </div>
 <div class="sect1">
-<h2 id="configuration-metadata.annotation-processor" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor"></a>3. 使用注释处理器生成您自己的元数据</h2>
+<h2 id="configuration-metadata.annotation-processor" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor"></a>3. 使用注释处理器生成你自己的元数据</h2>
 <h2 translation-origin="off"><a class="anchor" href="configuration-metadata.html#configuration-metadata.annotation-processor"></a>3. Generating Your Own Metadata by Using the Annotation Processor</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">您可以使用 <code>spring-boot-configuration-processor</code> jar 从带有 <code>@ConfigurationProperties</code> 注释的项目轻松生成自己的配置元数据文件。该 jar 包含一个 Java 注释处理器，它在您的项目编译时被调用。</p>
+<p translation-result="on">你可以使用 <code>spring-boot-configuration-processor</code> jar 从带有 <code>@ConfigurationProperties</code> 注释的项目轻松生成自己的配置元数据文件。该 jar 包含一个 Java 注释处理器，它在你的项目编译时被调用。</p>
 <p translation-origin="off">You can easily generate your own configuration metadata file from items annotated with <code>@ConfigurationProperties</code> by using the <code>spring-boot-configuration-processor</code> jar.
 The jar includes a Java annotation processor which is invoked as your project is compiled.</p>
 </div>
@@ -2296,7 +2296,7 @@ The jar includes a Java annotation processor which is invoked as your project is
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您使用的是 <code>additional-spring-configuration-metadata.json</code> 文件，则应将 <code>compileJava</code> 任务配置为依赖于 <code>processResources</code> 任务，如下例所示：</p>
+<p translation-result="on">如果你使用的是 <code>additional-spring-configuration-metadata.json</code> 文件，则应将 <code>compileJava</code> 任务配置为依赖于 <code>processResources</code> 任务，如下例所示：</p>
 <p translation-origin="off">If you are using an <code>additional-spring-configuration-metadata.json</code> file, the <code>compileJava</code> task should be configured to depend on the <code>processResources</code> task, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -2316,7 +2316,7 @@ The jar includes a Java annotation processor which is invoked as your project is
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">如果您在项目中使用 AspectJ，则需要确保注释处理器只运行一次。有几种方法可以做到这一点。使用 Maven，您可以显式配置 <code>maven-apt-plugin</code> 并仅将依赖项添加到注释处理器。您还可以让 AspectJ 插件运行所有处理并在 <code>maven-compiler-plugin</code> 配置中禁用注释处理，如下所示：</p>
+<p translation-result="on">如果你在项目中使用 AspectJ，则需要确保注释处理器只运行一次。有几种方法可以做到这一点。使用 Maven，你可以显式配置 <code>maven-apt-plugin</code> 并仅将依赖项添加到注释处理器。你还可以让 AspectJ 插件运行所有处理并在 <code>maven-compiler-plugin</code> 配置中禁用注释处理，如下所示：</p>
 <p translation-origin="off">If you are using AspectJ in your project, you need to make sure that the annotation processor runs only once.
 There are several ways to do this.
 With Maven, you can configure the <code>maven-apt-plugin</code> explicitly and add the dependency to the annotation processor only there.
@@ -2419,7 +2419,7 @@ The Javadoc on fields is used to populate the <code>description</code> attribute
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">您应该只使用带有 <code>@ConfigurationProperties</code> 字段 Javadoc 的纯文本，因为它们在添加到 JSON 之前不会被处理。</p>
+<p translation-result="on">你应该只使用带有 <code>@ConfigurationProperties</code> 字段 Javadoc 的纯文本，因为它们在添加到 JSON 之前不会被处理。</p>
 <p translation-origin="off">You should only use plain text with <code>@ConfigurationProperties</code> field Javadoc, since they are not processed before being added to the JSON.</p>
 </td>
 </tr>
@@ -2480,7 +2480,7 @@ public class MyMessagingProperties {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">为了记录上述类中属性的默认值，您可以将以下内容添加到<a href="configuration-metadata.html#configuration-metadata.annotation-processor.adding-additional-metadata">模块的手动元数据中</a>：</p>
+<p translation-result="on">为了记录上述类中属性的默认值，你可以将以下内容添加到<a href="configuration-metadata.html#configuration-metadata.annotation-processor.adding-additional-metadata">模块的手动元数据中</a>：</p>
 <p translation-origin="off">In order to document default values for properties in the class above, you could add the following content to <a href="configuration-metadata.html#configuration-metadata.annotation-processor.adding-additional-metadata">the manual metadata of the module</a>:</p>
 </div>
 <div class="listingblock">
@@ -2579,7 +2579,7 @@ public class MyServerProperties {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">前面的示例为 <code>my.server.name</code> 、 <code>my.server.host.ip</code> 和 <code>my.server.host.port</code> 属性生成元数据信息。您可以在字段上使用 <code>@NestedConfigurationProperty</code> 注释来指示应将常规（非内部）类视为嵌套类。</p>
+<p translation-result="on">前面的示例为 <code>my.server.name</code> 、 <code>my.server.host.ip</code> 和 <code>my.server.host.port</code> 属性生成元数据信息。你可以在字段上使用 <code>@NestedConfigurationProperty</code> 注释来指示应将常规（非内部）类视为嵌套类。</p>
 <p translation-origin="off">The preceding example produces metadata information for <code>my.server.name</code>, <code>my.server.host.ip</code>, and <code>my.server.host.port</code> properties.
 You can use the <code>@NestedConfigurationProperty</code> annotation on a field to indicate that a regular (non-inner) class should be treated as if it were nested.</p>
 </div>
@@ -2602,18 +2602,18 @@ You can use the <code>@NestedConfigurationProperty</code> annotation on a field 
 <h3 id="configuration-metadata.annotation-processor.adding-additional-metadata" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor.adding-additional-metadata"></a> 3.3.添加其他元数据</h3>
 <h3 translation-origin="off"><a class="anchor" href="configuration-metadata.html#configuration-metadata.annotation-processor.adding-additional-metadata"></a>3.3. Adding Additional Metadata</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 的配置文件处理非常灵活，通常情况下可能存在未绑定到 <code>@ConfigurationProperties</code> bean 的属性。您可能还需要调整现有密钥的某些属性。为了支持这种情况并让您提供自定义“提示”，注释处理器自动将 <code>META-INF/additional-spring-configuration-metadata.json</code> 中的项目合并到主元数据文件中。</p>
+<p translation-result="on">Spring Boot 的配置文件处理非常灵活，通常情况下可能存在未绑定到 <code>@ConfigurationProperties</code> bean 的属性。你可能还需要调整现有密钥的某些属性。为了支持这种情况并让你提供自定义“提示”，注释处理器自动将 <code>META-INF/additional-spring-configuration-metadata.json</code> 中的项目合并到主元数据文件中。</p>
 <p translation-origin="off">Spring Boot’s configuration file handling is quite flexible, and it is often the case that properties may exist that are not bound to a <code>@ConfigurationProperties</code> bean.
 You may also need to tune some attributes of an existing key.
 To support such cases and let you provide custom "hints", the annotation processor automatically merges items from <code>META-INF/additional-spring-configuration-metadata.json</code> into the main metadata file.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您引用已自动检测到的属性，则描述、默认值和弃用信息（如果指定）将被覆盖。如果当前模块中未标识手动属性声明，则将其添加为新属性。</p>
+<p translation-result="on">如果你引用已自动检测到的属性，则描述、默认值和弃用信息（如果指定）将被覆盖。如果当前模块中未标识手动属性声明，则将其添加为新属性。</p>
 <p translation-origin="off">If you refer to a property that has been detected automatically, the description, default value, and deprecation information are overridden, if specified.
 If the manual property declaration is not identified in the current module, it is added as a new property.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>additional-spring-configuration-metadata.json</code> 文件的格式与常规 <code>spring-configuration-metadata.json</code> 完全相同。附加属性文件是可选的。如果您没有任何其他属性，请不要添加该文件。</p>
+<p translation-result="on"><code>additional-spring-configuration-metadata.json</code> 文件的格式与常规 <code>spring-configuration-metadata.json</code> 完全相同。附加属性文件是可选的。如果你没有任何其他属性，请不要添加该文件。</p>
 <p translation-origin="off">The format of the <code>additional-spring-configuration-metadata.json</code> file is exactly the same as the regular <code>spring-configuration-metadata.json</code>.
 The additional properties file is optional.
 If you do not have any additional properties, do not add the file.</p>

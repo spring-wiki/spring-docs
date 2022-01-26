@@ -1032,12 +1032,12 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on"><code>spring-boot-loader</code> 模块让 Spring Boot 支持可执行的 jar 和 war 文件。如果您使用 Maven 插件或 Gradle 插件，可执行 jar 会自动生成，您通常不需要了解它们的工作原理。</p>
+<p translation-result="on"><code>spring-boot-loader</code> 模块让 Spring Boot 支持可执行的 jar 和 war 文件。如果你使用 Maven 插件或 Gradle 插件，可执行 jar 会自动生成，你通常不需要了解它们的工作原理。</p>
 <p translation-origin="off">The <code>spring-boot-loader</code> modules lets Spring Boot support executable jar and war files.
 If you use the Maven plugin or the Gradle plugin, executable jars are automatically generated, and you generally do not need to know the details of how they work.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您需要从不同的构建系统创建可执行 jar，或者您只是对底层技术感到好奇，本附录提供了一些背景知识。</p>
+<p translation-result="on">如果你需要从不同的构建系统创建可执行 jar，或者你只是对底层技术感到好奇，本附录提供了一些背景知识。</p>
 <p translation-origin="off">If you need to create executable jars from a different build system or if you are just curious about the underlying technology, this appendix provides some background.</p>
 </div>
 </div>
@@ -1047,12 +1047,12 @@ If you use the Maven plugin or the Gradle plugin, executable jars are automatica
 <h2 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars"></a>1. Nested JARs</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Java 不提供任何标准方法来加载嵌套的 jar 文件（即，本身包含在 jar 中的 jar 文件）。如果您需要分发可以从命令行运行而无需解包的独立应用程序，这可能会出现问题。</p>
+<p translation-result="on">Java 不提供任何标准方法来加载嵌套的 jar 文件（即，本身包含在 jar 中的 jar 文件）。如果你需要分发可以从命令行运行而无需解包的独立应用程序，这可能会出现问题。</p>
 <p translation-origin="off">Java does not provide any standard way to load nested jar files (that is, jar files that are themselves contained within a jar).
 This can be problematic if you need to distribute a self-contained application that can be run from the command line without unpacking.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">为了解决这个问题，许多开发人员使用“阴影”罐子。带阴影的 jar 将所有 jar 中的所有类打包到一个“uber jar”中。带阴影的 jar 的问题是很难看出哪些库实际上在您的应用程序中。如果在多个 jar 中使用相同的文件名（但内容不同），也可能会出现问题。Spring Boot 采用了不同的方法，让您实际上可以直接嵌套 jar。</p>
+<p translation-result="on">为了解决这个问题，许多开发人员使用“阴影”罐子。带阴影的 jar 将所有 jar 中的所有类打包到一个“uber jar”中。带阴影的 jar 的问题是很难看出哪些库实际上在你的应用程序中。如果在多个 jar 中使用相同的文件名（但内容不同），也可能会出现问题。Spring Boot 采用了不同的方法，让你实际上可以直接嵌套 jar。</p>
 <p translation-origin="off">To solve this problem, many developers use “shaded” jars.
 A shaded jar packages all classes, from all jars, into a single “uber jar”.
 The problem with shaded jars is that it becomes hard to see which libraries are actually in your application.
@@ -1219,7 +1219,7 @@ When a directory name is used it means that all files inside that directory are 
 <h2 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.jarfile-class"></a>2. Spring Boot’s “JarFile” Class</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">用于支持加载嵌套 jar 的核心类是 <code>org.springframework.boot.loader.jar.JarFile</code> 。它允许您从标准 jar 文件或嵌套的子 jar 数据加载 jar 内容。首次加载时，每个 <code>JarEntry</code> 的位置都会映射到外部 jar 的物理文件偏移量，如下例所示：</p>
+<p translation-result="on">用于支持加载嵌套 jar 的核心类是 <code>org.springframework.boot.loader.jar.JarFile</code> 。它允许你从标准 jar 文件或嵌套的子 jar 数据加载 jar 内容。首次加载时，每个 <code>JarEntry</code> 的位置都会映射到外部 jar 的物理文件偏移量，如下例所示：</p>
 <p translation-origin="off">The core class used to support loading nested jars is <code>org.springframework.boot.loader.jar.JarFile</code>.
 It lets you load jar content from a standard jar file or from nested child jar data.
 When first loaded, the location of each <code>JarEntry</code> is mapped to a physical file offset of the outer jar, as shown in the following example:</p>
@@ -1264,12 +1264,12 @@ The <code>getURL()</code> method returns a <code>URL</code> that opens a connect
 <h2 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.launching"></a>3. Launching Executable Jars</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on"><code>org.springframework.boot.loader.Launcher</code> 类是一个特殊的引导类，用作可执行 jar 的主要入口点。它是您的 jar 文件中的实际 <code>Main-Class</code> ，它用于设置适当的 <code>URLClassLoader</code> 并最终调用您的 <code>main()</code> 方法。</p>
+<p translation-result="on"><code>org.springframework.boot.loader.Launcher</code> 类是一个特殊的引导类，用作可执行 jar 的主要入口点。它是你的 jar 文件中的实际 <code>Main-Class</code> ，它用于设置适当的 <code>URLClassLoader</code> 并最终调用你的 <code>main()</code> 方法。</p>
 <p translation-origin="off">The <code>org.springframework.boot.loader.Launcher</code> class is a special bootstrap class that is used as an executable jar’s main entry point.
 It is the actual <code>Main-Class</code> in your jar file, and it is used to setup an appropriate <code>URLClassLoader</code> and ultimately call your <code>main()</code> method.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">有三个启动器子类（ <code>JarLauncher</code> 、 <code>WarLauncher</code> 和 <code>PropertiesLauncher</code> ）。它们的目的是从目录中的嵌套 jar 文件或 war 文件加载资源（ <code>.class</code> 文件等）（与那些显式在类路径上的文件相反）。对于 <code>JarLauncher</code> 和 <code>WarLauncher</code> ，嵌套路径是固定的。<code>JarLauncher</code> 在 <code>BOOT-INF/lib/</code> 中查找，而 <code>WarLauncher</code> 在 <code>WEB-INF/lib/</code> 和 <code>WEB-INF/lib-provided/</code> 中查找。如果你想要更多，你可以在这些位置添加额外的罐子。默认情况下，<code>PropertiesLauncher</code> 在应用程序存档中的 <code>BOOT-INF/lib/</code> 中查找。您可以通过在 <code>loader.properties</code> 中设置一个名为 <code>LOADER_PATH</code> 或 <code>loader.path</code> 的环境变量来添加其他位置（这是一个逗号分隔的目录、档案或档案中的目录的列表）。</p>
+<p translation-result="on">有三个启动器子类（ <code>JarLauncher</code> 、 <code>WarLauncher</code> 和 <code>PropertiesLauncher</code> ）。它们的目的是从目录中的嵌套 jar 文件或 war 文件加载资源（ <code>.class</code> 文件等）（与那些显式在类路径上的文件相反）。对于 <code>JarLauncher</code> 和 <code>WarLauncher</code> ，嵌套路径是固定的。<code>JarLauncher</code> 在 <code>BOOT-INF/lib/</code> 中查找，而 <code>WarLauncher</code> 在 <code>WEB-INF/lib/</code> 和 <code>WEB-INF/lib-provided/</code> 中查找。如果你想要更多，你可以在这些位置添加额外的罐子。默认情况下，<code>PropertiesLauncher</code> 在应用程序存档中的 <code>BOOT-INF/lib/</code> 中查找。你可以通过在 <code>loader.properties</code> 中设置一个名为 <code>LOADER_PATH</code> 或 <code>loader.path</code> 的环境变量来添加其他位置（这是一个逗号分隔的目录、档案或档案中的目录的列表）。</p>
 <p translation-origin="off">There are three launcher subclasses (<code>JarLauncher</code>, <code>WarLauncher</code>, and <code>PropertiesLauncher</code>).
 Their purpose is to load resources (<code>.class</code> files and so on) from nested jar files or war files in directories (as opposed to those explicitly on the classpath).
 In the case of <code>JarLauncher</code> and <code>WarLauncher</code>, the nested paths are fixed.
@@ -1282,7 +1282,7 @@ You can add additional locations by setting an environment variable called <code
 <h3 id="executable-jar.launching.manifest" translation-result="on"><a href="executable-jar.html#executable-jar.launching.manifest"></a>3.1. 启动器清单</h3>
 <h3 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.launching.manifest"></a>3.1. Launcher Manifest</h3>
 <div class="paragraph">
-<p translation-result="on">您需要指定适当的 <code>Launcher</code> 作为 <code>META-INF/MANIFEST.MF</code> 的 <code>Main-Class</code> 属性。您要启动的实际类（即包含 <code>main</code> 方法的类）应在 <code>Start-Class</code> 属性中指定。</p>
+<p translation-result="on">你需要指定适当的 <code>Launcher</code> 作为 <code>META-INF/MANIFEST.MF</code> 的 <code>Main-Class</code> 属性。你要启动的实际类（即包含 <code>main</code> 方法的类）应在 <code>Start-Class</code> 属性中指定。</p>
 <p translation-origin="off">You need to specify an appropriate <code>Launcher</code> as the <code>Main-Class</code> attribute of <code>META-INF/MANIFEST.MF</code>.
 The actual class that you want to launch (that is, the class that contains a <code>main</code> method) should be specified in the <code>Start-Class</code> attribute.</p>
 </div>
@@ -1313,7 +1313,7 @@ Start-Class: com.mycompany.project.MyApplication</pre>
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">您无需在清单文件中指定 <code>Class-Path</code> 条目。类路径是从嵌套的 jar 推导出来的。</p>
+<p translation-result="on">你无需在清单文件中指定 <code>Class-Path</code> 条目。类路径是从嵌套的 jar 推导出来的。</p>
 <p translation-origin="off">You need not specify <code>Class-Path</code> entries in your manifest file.
 The classpath is deduced from the nested jars.</p>
 </td>
@@ -1505,7 +1505,7 @@ Because of this, <code>PropertiesLauncher</code> behaves the same as <code>JarLa
 <h2 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.restrictions"></a>5. Executable Jar Restrictions</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">在使用 Spring Boot Loader 打包应用程序时，您需要考虑以下限制：</p>
+<p translation-result="on">在使用 Spring Boot Loader 打包应用程序时，你需要考虑以下限制：</p>
 <p translation-origin="off">You need to consider the following restrictions when working with a Spring Boot Loader packaged application:</p>
 </div>
 <div id="executable-jar-zip-entry-compression" class="ulist">
@@ -1522,7 +1522,7 @@ The content of the nested jar file itself can still be compressed, as can any ot
 <div id="executable-jar-system-classloader" class="ulist">
 <ul>
 <li>
-<p translation-result="on">系统类加载器：启动的应用程序在加载类时应该使用 <code>Thread.getContextClassLoader()</code> （大多数库和框架默认这样做）。尝试使用 <code>ClassLoader.getSystemClassLoader()</code> 加载嵌套的 jar 类失败。<code>java.util.Logging</code> 始终使用系统类加载器。因此，您应该考虑不同的日志记录实现。</p>
+<p translation-result="on">系统类加载器：启动的应用程序在加载类时应该使用 <code>Thread.getContextClassLoader()</code> （大多数库和框架默认这样做）。尝试使用 <code>ClassLoader.getSystemClassLoader()</code> 加载嵌套的 jar 类失败。<code>java.util.Logging</code> 始终使用系统类加载器。因此，你应该考虑不同的日志记录实现。</p>
 <p translation-origin="off">System classLoader:
 Launched applications should use <code>Thread.getContextClassLoader()</code> when loading classes (most libraries and frameworks do so by default).
 Trying to load nested jar classes with <code>ClassLoader.getSystemClassLoader()</code> fails.
@@ -1538,7 +1538,7 @@ For this reason, you should consider a different logging implementation.</p>
 <h2 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.alternatives"></a>6. Alternative Single Jar Solutions</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">如果上述限制意味着您无法使用 Spring Boot Loader，请考虑以下替代方案：</p>
+<p translation-result="on">如果上述限制意味着你无法使用 Spring Boot Loader，请考虑以下替代方案：</p>
 <p translation-origin="off">If the preceding restrictions mean that you cannot use Spring Boot Loader, consider the following alternatives:</p>
 </div>
 <div class="ulist">

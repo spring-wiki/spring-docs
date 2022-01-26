@@ -1493,7 +1493,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot 包含许多附加功能，可帮助您在将应用程序推送到生产环境时对其进行监控和管理。您可以选择使用 HTTP 端点或 JMX 来管理和监视您的应用程序。审计、健康和指标收集也可以自动应用于您的应用程序。</p>
+<p translation-result="on">Spring Boot 包含许多附加功能，可帮助你在将应用程序推送到生产环境时对其进行监控和管理。你可以选择使用 HTTP 端点或 JMX 来管理和监视你的应用程序。审计、健康和指标收集也可以自动应用于你的应用程序。</p>
 <p translation-origin="off">Spring Boot includes a number of additional features to help you monitor and manage your application when you push it to production.
 You can choose to manage and monitor your application by using HTTP endpoints or with JMX.
 Auditing, health, and metrics gathering can also be automatically applied to your application.</p>
@@ -1551,13 +1551,13 @@ Actuators can generate a large amount of motion from a small change.</p>
 <h2 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints"></a>2. Endpoints</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">执行器端点使您可以监视应用程序并与之交互。Spring Boot 包含许多内置端点，并允许您添加自己的端点。例如，<code>health</code> 端点提供基本的应用程序健康信息。</p>
+<p translation-result="on">执行器端点使你可以监视应用程序并与之交互。Spring Boot 包含许多内置端点，并允许你添加自己的端点。例如，<code>health</code> 端点提供基本的应用程序健康信息。</p>
 <p translation-origin="off">Actuator endpoints let you monitor and interact with your application.
 Spring Boot includes a number of built-in endpoints and lets you add your own.
 For example, the <code>health</code> endpoint provides basic application health information.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以<a href="actuator.html#actuator.endpoints.enabling">启用或禁用</a>每个单独的端点并<a href="actuator.html#actuator.endpoints.exposing">通过 HTTP 或 JMX 公开它们（使它们可以远程访问）</a> 。当端点被启用和公开时，它被认为是可用的。内置端点仅在可用时才会自动配置。大多数应用程序选择通过 HTTP 公开，其中端点的 ID 和 <code>/actuator</code> 的前缀映射到 URL。例如，默认情况下，<code>health</code> 端点映射到 <code>/actuator/health</code> 。</p>
+<p translation-result="on">你可以<a href="actuator.html#actuator.endpoints.enabling">启用或禁用</a>每个单独的端点并<a href="actuator.html#actuator.endpoints.exposing">通过 HTTP 或 JMX 公开它们（使它们可以远程访问）</a> 。当端点被启用和公开时，它被认为是可用的。内置端点仅在可用时才会自动配置。大多数应用程序选择通过 HTTP 公开，其中端点的 ID 和 <code>/actuator</code> 的前缀映射到 URL。例如，默认情况下，<code>health</code> 端点映射到 <code>/actuator/health</code> 。</p>
 <p translation-origin="off">You can <a href="actuator.html#actuator.endpoints.enabling">enable or disable</a> each individual endpoint and <a href="actuator.html#actuator.endpoints.exposing">expose them (make them remotely accessible) over HTTP or JMX</a>.
 An endpoint is considered to be available when it is both enabled and exposed.
 The built-in endpoints are auto-configured only when they are available.
@@ -1693,7 +1693,7 @@ Requires the <code>SpringApplication</code> to be configured with a <code>Buffer
 </tbody>
 </table>
 <div class="paragraph">
-<p translation-result="on">如果您的应用程序是 Web 应用程序（Spring MVC、Spring WebFlux 或 Jersey），您可以使用以下附加端点：</p>
+<p translation-result="on">如果你的应用程序是 Web 应用程序（Spring MVC、Spring WebFlux 或 Jersey），你可以使用以下附加端点：</p>
 <p translation-origin="off">If your application is a web application (Spring MVC, Spring WebFlux, or Jersey), you can use the following additional endpoints:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
@@ -1762,7 +1762,7 @@ The following example enables the <code>shutdown</code> endpoint:</p>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您希望端点启用是选择加入而不是选择退出，请将 <code>management.endpoints.enabled-by-default</code> 属性设置为 <code>false</code> 并使用单个 <code>enabled</code> 端点的属性来选择重新加入。以下示例启用 <code>info</code> 端点并禁用所有其他端点：</p>
+<p translation-result="on">如果你希望端点启用是选择加入而不是选择退出，请将 <code>management.endpoints.enabled-by-default</code> 属性设置为 <code>false</code> 并使用单个 <code>enabled</code> 端点的属性来选择重新加入。以下示例启用 <code>info</code> 端点并禁用所有其他端点：</p>
 <p translation-origin="off">If you prefer endpoint enablement to be opt-in rather than opt-out, set the <code>management.endpoints.enabled-by-default</code> property to <code>false</code> and use individual endpoint <code>enabled</code> properties to opt back in.
 The following example enables the <code>info</code> endpoint and disables all other endpoints:</p>
 </div>
@@ -1792,7 +1792,7 @@ management.endpoint.info.enabled=true</code></pre>
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">禁用的端点完全从应用程序上下文中删除。如果您只想更改暴露端点的技术，请改用<a href="actuator.html#actuator.endpoints.exposing"><code>include</code> 和 <code>exclude</code> 属性</a>。</p>
+<p translation-result="on">禁用的端点完全从应用程序上下文中删除。如果你只想更改暴露端点的技术，请改用<a href="actuator.html#actuator.endpoints.exposing"><code>include</code> 和 <code>exclude</code> 属性</a>。</p>
 <p translation-origin="off">Disabled endpoints are removed entirely from the application context.
 If you want to change only the technologies over which an endpoint is exposed, use the <a href="actuator.html#actuator.endpoints.exposing"><code>include</code> and <code>exclude</code> properties</a> instead.</p>
 </td>
@@ -1804,7 +1804,7 @@ If you want to change only the technologies over which an endpoint is exposed, u
 <h3 id="actuator.endpoints.exposing" translation-result="on"><a href="actuator.html#actuator.endpoints.exposing"></a>2.2. 暴露端点</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.exposing"></a>2.2. Exposing Endpoints</h3>
 <div class="paragraph">
-<p translation-result="on">由于端点可能包含敏感信息，您应该仔细考虑何时公开它们。下表显示了内置端点的默认曝光：</p>
+<p translation-result="on">由于端点可能包含敏感信息，你应该仔细考虑何时公开它们。下表显示了内置端点的默认曝光：</p>
 <p translation-origin="off">Since Endpoints may contain sensitive information, you should carefully consider when to expose them.
 The following table shows the default exposure for the built-in endpoints:</p>
 </div>
@@ -1997,7 +1997,7 @@ The following table shows the default exposure for the built-in endpoints:</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p translation-result="on"><code>include</code> 属性列出了公开的端点的 ID。<code>exclude</code> 属性列出了不应公开的端点的 ID。<code>exclude</code> 属性优先于 <code>include</code> 属性。您可以使用端点 ID 列表配置 <code>include</code> 和 <code>exclude</code> 属性。</p>
+<p translation-result="on"><code>include</code> 属性列出了公开的端点的 ID。<code>exclude</code> 属性列出了不应公开的端点的 ID。<code>exclude</code> 属性优先于 <code>include</code> 属性。你可以使用端点 ID 列表配置 <code>include</code> 和 <code>exclude</code> 属性。</p>
 <p translation-origin="off">The <code>include</code> property lists the IDs of the endpoints that are exposed.
 The <code>exclude</code> property lists the IDs of the endpoints that should not be exposed.
 The <code>exclude</code> property takes precedence over the <code>include</code> property.
@@ -2068,7 +2068,7 @@ management.endpoints.web.exposure.exclude=env,beans</code></pre>
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果您的应用程序是公开的，我们强烈建议您也<a href="actuator.html#actuator.endpoints.security">保护您的端点</a>。</p>
+<p translation-result="on">如果你的应用程序是公开的，我们强烈建议你也<a href="actuator.html#actuator.endpoints.security">保护你的端点</a>。</p>
 <p translation-origin="off">If your application is exposed publicly, we strongly recommend that you also <a href="actuator.html#actuator.endpoints.security">secure your endpoints</a>.</p>
 </td>
 </tr>
@@ -2081,7 +2081,7 @@ management.endpoints.web.exposure.exclude=env,beans</code></pre>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果您想在暴露端点时实现自己的策略，您可以注册一个 <code>EndpointFilter</code> bean。</p>
+<p translation-result="on">如果你想在暴露端点时实现自己的策略，你可以注册一个 <code>EndpointFilter</code> bean。</p>
 <p translation-origin="off">If you want to implement your own strategy for when endpoints are exposed, you can register an <code>EndpointFilter</code> bean.</p>
 </td>
 </tr>
@@ -2092,7 +2092,7 @@ management.endpoints.web.exposure.exclude=env,beans</code></pre>
 <h3 id="actuator.endpoints.security" translation-result="on"><a href="actuator.html#actuator.endpoints.security"></a>2.3. 安全</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.security"></a>2.3. Security</h3>
 <div class="paragraph">
-<p translation-result="on">出于安全目的，默认情况下禁用 <code>/health</code> 以外的所有执行器。您可以使用 <code>management.endpoints.web.exposure.include</code> 属性来启用执行器。</p>
+<p translation-result="on">出于安全目的，默认情况下禁用 <code>/health</code> 以外的所有执行器。你可以使用 <code>management.endpoints.web.exposure.include</code> 属性来启用执行器。</p>
 <p translation-origin="off">For security purposes, all actuators other than <code>/health</code> are disabled by default.
 You can use the <code>management.endpoints.web.exposure.include</code> property to enable the actuators.</p>
 </div>
@@ -2115,7 +2115,7 @@ You can use the <code>management.endpoints.web.exposure.include</code> property 
 If you define a custom <code>WebSecurityConfigurerAdapter</code> or <code>SecurityFilterChain</code> bean, Spring Boot auto-configuration backs off and lets you fully control the actuator access rules.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您希望为 HTTP 端点配置自定义安全性（例如，只允许具有特定角色的用户访问它们），Spring Boot 提供了一些方便的 <code>RequestMatcher</code> 对象，您可以将它们与 Spring Security 结合使用。</p>
+<p translation-result="on">如果你希望为 HTTP 端点配置自定义安全性（例如，只允许具有特定角色的用户访问它们），Spring Boot 提供了一些方便的 <code>RequestMatcher</code> 对象，你可以将它们与 Spring Security 结合使用。</p>
 <p translation-origin="off">If you wish to configure custom security for HTTP endpoints (for example, to allow only users with a certain role to access them), Spring Boot provides some convenient <code>RequestMatcher</code> objects that you can use in combination with Spring Security.</p>
 </div>
 <div class="paragraph">
@@ -2152,7 +2152,7 @@ Several other matcher methods are also available on <code>EndpointRequest</code>
 See the API documentation (<a href="https://docs.spring.io/spring-boot/docs/2.6.3/actuator-api/htmlsingle">HTML</a> or <a href="https://docs.spring.io/spring-boot/docs/2.6.3/actuator-api/pdf/spring-boot-actuator-web-api.pdf">PDF</a>) for details.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您在防火墙后面部署应用程序，您可能希望无需身份验证即可访问所有执行器端点。您可以通过更改 <code>management.endpoints.web.exposure.include</code> 属性来做到这一点，如下所示：</p>
+<p translation-result="on">如果你在防火墙后面部署应用程序，你可能希望无需身份验证即可访问所有执行器端点。你可以通过更改 <code>management.endpoints.web.exposure.include</code> 属性来做到这一点，如下所示：</p>
 <p translation-origin="off">If you deploy applications behind a firewall, you may prefer that all your actuator endpoints can be accessed without requiring authentication.
 You can do so by changing the <code>management.endpoints.web.exposure.include</code> property, as follows:</p>
 </div>
@@ -2174,7 +2174,7 @@ You can do so by changing the <code>management.endpoints.web.exposure.include</c
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">此外，如果存在 Spring Security，您将需要添加自定义安全配置，以允许未经身份验证的访问端点，如以下示例所示：</p>
+<p translation-result="on">此外，如果存在 Spring Security，你将需要添加自定义安全配置，以允许未经身份验证的访问端点，如以下示例所示：</p>
 <p translation-origin="off">Additionally, if Spring Security is present, you would need to add custom security configuration that allows unauthenticated access to the endpoints, as the following example shows:</p>
 </div>
 <div class="listingblock">
@@ -2206,7 +2206,7 @@ public class MySecurityConfiguration {
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">在前面的两个示例中，配置仅适用于执行器端点。由于 Spring Boot 的安全配置在任何 <code>SecurityFilterChain</code> bean 存在的情况下都会完全退出，因此您需要配置一个附加的 <code>SecurityFilterChain</code> bean，其规则适用于应用程序的其余部分。</p>
+<p translation-result="on">在前面的两个示例中，配置仅适用于执行器端点。由于 Spring Boot 的安全配置在任何 <code>SecurityFilterChain</code> bean 存在的情况下都会完全退出，因此你需要配置一个附加的 <code>SecurityFilterChain</code> bean，其规则适用于应用程序的其余部分。</p>
 <p translation-origin="off">In both of the preceding examples, the configuration applies only to the actuator endpoints.
 Since Spring Boot’s security configuration backs off completely in the presence of any <code>SecurityFilterChain</code> bean, you need to configure an additional <code>SecurityFilterChain</code> bean with rules that apply to the rest of the application.</p>
 </td>
@@ -2235,7 +2235,7 @@ This means that the actuator endpoints that require a <code>POST</code> (shutdow
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以在 <a href="https://docs.spring.io/spring-security/reference/5.6.1/features/exploits/csrf.html">Spring Security Reference Guide</a> 中找到有关 CSRF 保护的更多信息。</p>
+<p translation-result="on">你可以在 <a href="https://docs.spring.io/spring-security/reference/5.6.1/features/exploits/csrf.html">Spring Security Reference Guide</a> 中找到有关 CSRF 保护的更多信息。</p>
 <p translation-origin="off">You can find additional information about CSRF protection in the <a href="https://docs.spring.io/spring-security/reference/5.6.1/features/exploits/csrf.html">Spring Security Reference Guide</a>.</p>
 </div>
 </div>
@@ -2289,7 +2289,7 @@ The following example sets the time-to-live of the <code>beans</code> endpoint�
 The “discovery page” is available on <code>/actuator</code> by default.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">要禁用“发现页面”，请将以下属性添加到您的应用程序属性中：</p>
+<p translation-result="on">要禁用“发现页面”，请将以下属性添加到你的应用程序属性中：</p>
 <p translation-origin="off">To disable the “discovery page”, add the following property to your application properties:</p>
 </div>
 <div class="listingblock primary">
@@ -2320,7 +2320,7 @@ When the management context path is set to <code>/</code>, the discovery page is
 <h3 id="actuator.endpoints.cors" translation-result="on"><a href="actuator.html#actuator.endpoints.cors"></a>2.6. CORS 支持</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.cors"></a>2.6. CORS Support</h3>
 <div class="paragraph">
-<p translation-result="on"><a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">跨域资源共享</a>(CORS) 是一种 <a href="https://www.w3.org/TR/cors/">W3C 规范</a>，可让您以灵活的方式指定授权哪种跨域请求。如果您使用 Spring MVC 或 Spring WebFlux，则可以配置 Actuator 的 Web 端点以支持此类场景。</p>
+<p translation-result="on"><a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">跨域资源共享</a>(CORS) 是一种 <a href="https://www.w3.org/TR/cors/">W3C 规范</a>，可让你以灵活的方式指定授权哪种跨域请求。如果你使用 Spring MVC 或 Spring WebFlux，则可以配置 Actuator 的 Web 端点以支持此类场景。</p>
 <p translation-origin="off"><a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross-origin resource sharing</a> (CORS) is a <a href="https://www.w3.org/TR/cors/">W3C specification</a> that lets you specify in a flexible way what kind of cross-domain requests are authorized.
 If you use Spring MVC or Spring WebFlux, you can configure Actuator’s web endpoints to support such scenarios.</p>
 </div>
@@ -2385,18 +2385,18 @@ public CustomData getData() {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您还可以使用 <code>@JmxEndpoint</code> 或 <code>@WebEndpoint</code> 编写特定于技术的端点。这些端点仅限于各自的技术。例如，<code>@WebEndpoint</code> 仅通过 HTTP 而不是通过 JMX 公开。</p>
+<p translation-result="on">你还可以使用 <code>@JmxEndpoint</code> 或 <code>@WebEndpoint</code> 编写特定于技术的端点。这些端点仅限于各自的技术。例如，<code>@WebEndpoint</code> 仅通过 HTTP 而不是通过 JMX 公开。</p>
 <p translation-origin="off">You can also write technology-specific endpoints by using <code>@JmxEndpoint</code> or <code>@WebEndpoint</code>.
 These endpoints are restricted to their respective technologies.
 For example, <code>@WebEndpoint</code> is exposed only over HTTP and not over JMX.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以使用 <code>@EndpointWebExtension</code> 和 <code>@EndpointJmxExtension</code> 编写特定于技术的扩展。这些注释让您可以提供特定于技术的操作来扩充现有端点。</p>
+<p translation-result="on">你可以使用 <code>@EndpointWebExtension</code> 和 <code>@EndpointJmxExtension</code> 编写特定于技术的扩展。这些注释让你可以提供特定于技术的操作来扩充现有端点。</p>
 <p translation-origin="off">You can write technology-specific extensions by using <code>@EndpointWebExtension</code> and <code>@EndpointJmxExtension</code>.
 These annotations let you provide technology-specific operations to augment an existing endpoint.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">最后，如果您需要访问特定于 Web 框架的功能，您可以实现 servlet 或 Spring <code>@Controller</code> 和 <code>@RestController</code> 端点，但代价是它们无法通过 JMX 或使用不同的 Web 框架获得。</p>
+<p translation-result="on">最后，如果你需要访问特定于 Web 框架的功能，你可以实现 servlet 或 Spring <code>@Controller</code> 和 <code>@RestController</code> 端点，但代价是它们无法通过 JMX 或使用不同的 Web 框架获得。</p>
 <p translation-origin="off">Finally, if you need access to web-framework-specific functionality, you can implement servlet or Spring <code>@Controller</code> and <code>@RestController</code> endpoints at the cost of them not being available over JMX or when using a different web framework.</p>
 </div>
 <div class="sect3">
@@ -2411,7 +2411,7 @@ Parameters are required by default.
 They can be made optional by annotating them with either <code>@javax.annotation.Nullable</code> or <code>@org.springframework.lang.Nullable</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以将 JSON 请求正文中的每个根属性映射到端点的参数。考虑以下 JSON 请求正文：</p>
+<p translation-result="on">你可以将 JSON 请求正文中的每个根属性映射到端点的参数。考虑以下 JSON 请求正文：</p>
 <p translation-origin="off">You can map each root property in the JSON request body to a parameter of the endpoint.
 Consider the following JSON request body:</p>
 </div>
@@ -2424,7 +2424,7 @@ Consider the following JSON request body:</p>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以使用它来调用采用 <code>String name</code> 和 <code>int counter</code> 参数的写入操作，如以下示例所示：</p>
+<p translation-result="on">你可以使用它来调用采用 <code>String name</code> 和 <code>int counter</code> 参数的写入操作，如以下示例所示：</p>
 <p translation-origin="off">You can use this to invoke a write operation that takes <code>String name</code> and <code>int counter</code> parameters, as the following example shows:</p>
 </div>
 <div class="listingblock">
@@ -2457,7 +2457,7 @@ In particular, declaring a single parameter with a <code>CustomData</code> type 
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">为了让输入映射到操作方法的参数，实现端点的 Java 代码应该使用 <code>-parameters</code> 编译，实现端点的 Kotlin 代码应该使用 <code>-java-parameters</code> 编译。如果您使用 Spring Boot 的 Gradle 插件或使用 Maven 和 <code>spring-boot-starter-parent</code> ，这将自动发生。</p>
+<p translation-result="on">为了让输入映射到操作方法的参数，实现端点的 Java 代码应该使用 <code>-parameters</code> 编译，实现端点的 Kotlin 代码应该使用 <code>-java-parameters</code> 编译。如果你使用 Spring Boot 的 Gradle 插件或使用 Maven 和 <code>spring-boot-starter-parent</code> ，这将自动发生。</p>
 <p translation-origin="off">To let the input be mapped to the operation method’s parameters, Java code that implements an endpoint should be compiled with <code>-parameters</code>, and Kotlin code that implements an endpoint should be compiled with <code>-java-parameters</code>.
 This will happen automatically if you use Spring Boot’s Gradle plugin or if you use Maven and <code>spring-boot-starter-parent</code>.</p>
 </td>
@@ -2500,7 +2500,7 @@ The default base path is <code>/actuator</code>.
 For example, an endpoint with an ID of <code>sessions</code> uses <code>/actuator/sessions</code> as its path in the predicate.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以通过使用 <code>@Selector</code> 注释操作方法的一个或多个参数来进一步自定义路径。这样的参数作为路径变量添加到路径谓词中。当调用端点操作时，变量的值被传递到操作方法中。如果要捕获所有剩余的路径元素，可以将 <code>@Selector(Match=ALL_REMAINING)</code> 添加到最后一个参数，并使其成为与 <code>String[]</code> 转换兼容的类型。</p>
+<p translation-result="on">你可以通过使用 <code>@Selector</code> 注释操作方法的一个或多个参数来进一步自定义路径。这样的参数作为路径变量添加到路径谓词中。当调用端点操作时，变量的值被传递到操作方法中。如果要捕获所有剩余的路径元素，可以将 <code>@Selector(Match=ALL_REMAINING)</code> 添加到最后一个参数，并使其成为与 <code>String[]</code> 转换兼容的类型。</p>
 <p translation-origin="off">You can further customize the path by annotating one or more parameters of the operation method with <code>@Selector</code>.
 Such a parameter is added to the path predicate as a path variable.
 The variable’s value is passed into the operation method when the endpoint operation is invoked.
@@ -2598,7 +2598,7 @@ If it does not return a value, the response status will be 204 (No Content).</p>
 <h5 id="actuator.endpoints.implementing-custom.web.range-requests" translation-result="on"><a href="actuator.html#actuator.endpoints.implementing-custom.web.range-requests"></a>Web 端点范围请求</h5>
 <h5 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.implementing-custom.web.range-requests"></a>Web Endpoint Range Requests</h5>
 <div class="paragraph">
-<p translation-result="on">您可以使用 HTTP 范围请求来请求 HTTP 资源的一部分。使用 Spring MVC 或 Spring Web Flux 时，返回 <code>org.springframework.core.io.Resource</code> 的操作会自动支持范围请求。</p>
+<p translation-result="on">你可以使用 HTTP 范围请求来请求 HTTP 资源的一部分。使用 Spring MVC 或 Spring Web Flux 时，返回 <code>org.springframework.core.io.Resource</code> 的操作会自动支持范围请求。</p>
 <p translation-origin="off">You can use an HTTP range request to request part of an HTTP resource.
 When using Spring MVC or Spring Web Flux, operations that return a <code>org.springframework.core.io.Resource</code> automatically support range requests.</p>
 </div>
@@ -2642,7 +2642,7 @@ For new endpoints, the <code>@Endpoint</code> and <code>@WebEndpoint</code> anno
 <h4 id="actuator.endpoints.implementing-custom.controller" translation-result="on"><a href="actuator.html#actuator.endpoints.implementing-custom.controller"></a>2.7.4. 控制器端点</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.implementing-custom.controller"></a>2.7.4. Controller Endpoints</h4>
 <div class="paragraph">
-<p translation-result="on">您可以使用 <code>@ControllerEndpoint</code> 和 <code>@RestControllerEndpoint</code> 来实现仅由 Spring MVC 或 Spring WebFlux 公开的端点。方法通过使用 Spring MVC 和 Spring WebFlux 的标准注释进行映射，例如 <code>@RequestMapping</code> 和 <code>@GetMapping</code> ，端点的 ID 用作路径的前缀。控制器端点提供与 Spring 的 Web 框架的更深层次的集成，但以牺牲可移植性为代价。<code>@Endpoint</code> 和 <code>@WebEndpoint</code> 注释应尽可能首选。</p>
+<p translation-result="on">你可以使用 <code>@ControllerEndpoint</code> 和 <code>@RestControllerEndpoint</code> 来实现仅由 Spring MVC 或 Spring WebFlux 公开的端点。方法通过使用 Spring MVC 和 Spring WebFlux 的标准注释进行映射，例如 <code>@RequestMapping</code> 和 <code>@GetMapping</code> ，端点的 ID 用作路径的前缀。控制器端点提供与 Spring 的 Web 框架的更深层次的集成，但以牺牲可移植性为代价。<code>@Endpoint</code> 和 <code>@WebEndpoint</code> 注释应尽可能首选。</p>
 <p translation-origin="off">You can use <code>@ControllerEndpoint</code> and <code>@RestControllerEndpoint</code> to implement an endpoint that is exposed only by Spring MVC or Spring WebFlux.
 Methods are mapped by using the standard annotations for Spring MVC and Spring WebFlux, such as <code>@RequestMapping</code> and <code>@GetMapping</code>, with the endpoint’s ID being used as a prefix for the path.
 Controller endpoints provide deeper integration with Spring’s web frameworks but at the expense of portability.
@@ -2654,7 +2654,7 @@ The <code>@Endpoint</code> and <code>@WebEndpoint</code> annotations should be p
 <h3 id="actuator.endpoints.health" translation-result="on"><a href="actuator.html#actuator.endpoints.health"></a>2.8. 健康信息</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.health"></a>2.8. Health Information</h3>
 <div class="paragraph">
-<p translation-result="on">您可以使用健康信息来检查正在运行的应用程序的状态。当生产系统出现故障时，监控软件经常使用它来提醒某人。<code>health</code> 端点公开的信息取决于 <code>management.endpoint.health.show-details</code> 和 <code>management.endpoint.health.show-components</code> 属性，可以使用以下值之一进行配置：</p>
+<p translation-result="on">你可以使用健康信息来检查正在运行的应用程序的状态。当生产系统出现故障时，监控软件经常使用它来提醒某人。<code>health</code> 端点公开的信息取决于 <code>management.endpoint.health.show-details</code> 和 <code>management.endpoint.health.show-components</code> 属性，可以使用以下值之一进行配置：</p>
 <p translation-origin="off">You can use health information to check the status of your running application.
 It is often used by monitoring software to alert someone when a production system goes down.
 The information exposed by the <code>health</code> endpoint depends on the <code>management.endpoint.health.show-details</code> and <code>management.endpoint.health.show-components</code> properties, which can be configured with one of the following values:</p>
@@ -2693,7 +2693,7 @@ Authorized roles can be configured by using <code>management.endpoint.health.rol
 </tbody>
 </table>
 <div class="paragraph">
-<p translation-result="on">默认值为 <code>never</code> 。当用户处于一个或多个端点角色时，他们被认为是被授权的。如果端点没有配置角色（默认），则所有经过身份验证的用户都被认为是授权的。您可以使用 <code>management.endpoint.health.roles</code> 属性配置角色。</p>
+<p translation-result="on">默认值为 <code>never</code> 。当用户处于一个或多个端点角色时，他们被认为是被授权的。如果端点没有配置角色（默认），则所有经过身份验证的用户都被认为是授权的。你可以使用 <code>management.endpoint.health.roles</code> 属性配置角色。</p>
 <p translation-origin="off">The default value is <code>never</code>.
 A user is considered to be authorized when they are in one or more of the endpoint’s roles.
 If the endpoint has no configured roles (the default), all authenticated users are considered to be authorized.
@@ -2706,14 +2706,14 @@ You can configure the roles by using the <code>management.endpoint.health.roles<
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果您已保护您的应用程序并希望使用 <code>always</code> ，则您的安全配置必须允许经过身份验证和未经身份验证的用户访问健康端点。</p>
+<p translation-result="on">如果你已保护你的应用程序并希望使用 <code>always</code> ，则你的安全配置必须允许经过身份验证和未经身份验证的用户访问健康端点。</p>
 <p translation-origin="off">If you have secured your application and wish to use <code>always</code>, your security configuration must permit access to the health endpoint for both authenticated and unauthenticated users.</p>
 </td>
 </tr>
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">健康信息是从<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/HealthContributorRegistry.java"><code>HealthContributorRegistry</code></a>的内容中收集的（默认情况下，所有在 <code>ApplicationContext</code> 中定义的<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/HealthContributor.java"><code>HealthContributor</code></a>实例）。Spring Boot 包含许多自动配置的 <code>HealthContributors</code> ，您也可以编写自己的。</p>
+<p translation-result="on">健康信息是从<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/HealthContributorRegistry.java"><code>HealthContributorRegistry</code></a>的内容中收集的（默认情况下，所有在 <code>ApplicationContext</code> 中定义的<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/HealthContributor.java"><code>HealthContributor</code></a>实例）。Spring Boot 包含许多自动配置的 <code>HealthContributors</code> ，你也可以编写自己的。</p>
 <p translation-origin="off">Health information is collected from the content of a <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/HealthContributorRegistry.java"><code>HealthContributorRegistry</code></a> (by default, all <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/HealthContributor.java"><code>HealthContributor</code></a> instances defined in your <code>ApplicationContext</code>).
 Spring Boot includes a number of auto-configured <code>HealthContributors</code>, and you can also write your own.</p>
 </div>
@@ -2737,7 +2737,7 @@ If no <code>HealthIndicator</code> returns a status that is known to the <code>S
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">您可以使用 <code>HealthContributorRegistry</code> 在运行时注册和取消注册健康指标。</p>
+<p translation-result="on">你可以使用 <code>HealthContributorRegistry</code> 在运行时注册和取消注册健康指标。</p>
 <p translation-origin="off">You can use the <code>HealthContributorRegistry</code> to register and unregister health indicators at runtime.</p>
 </td>
 </tr>
@@ -2747,7 +2747,7 @@ If no <code>HealthIndicator</code> returns a status that is known to the <code>S
 <h4 id="actuator.endpoints.health.auto-configured-health-indicators" translation-result="on"><a href="actuator.html#actuator.endpoints.health.auto-configured-health-indicators"></a>2.8.1. 自动配置的健康指标</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.health.auto-configured-health-indicators"></a>2.8.1. Auto-configured HealthIndicators</h4>
 <div class="paragraph">
-<p translation-result="on">在适当的时候，Spring Boot 会自动配置下表中列出的 <code>HealthIndicators</code> 。您还可以通过配置 <code>management.health.key.enabled</code> 来启用或禁用选定的指标，<code>key</code> 在下表中列出：</p>
+<p translation-result="on">在适当的时候，Spring Boot 会自动配置下表中列出的 <code>HealthIndicators</code> 。你还可以通过配置 <code>management.health.key.enabled</code> 来启用或禁用选定的指标，<code>key</code> 在下表中列出：</p>
 <p translation-origin="off">When appropriate, Spring Boot auto-configures the <code>HealthIndicators</code> listed in the following table.
 You can also enable or disable selected indicators by configuring <code>management.health.key.enabled</code>,
 with the <code>key</code> listed in the following table:</p>
@@ -2864,7 +2864,7 @@ with the <code>key</code> listed in the following table:</p>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">您可以通过设置 <code>management.health.defaults.enabled</code> 属性来禁用它们。</p>
+<p translation-result="on">你可以通过设置 <code>management.health.defaults.enabled</code> 属性来禁用它们。</p>
 <p translation-origin="off">You can disable them all by setting the <code>management.health.defaults.enabled</code> property.</p>
 </td>
 </tr>
@@ -2914,7 +2914,7 @@ with the <code>key</code> listed in the following table:</p>
 <h4 id="actuator.endpoints.health.writing-custom-health-indicators" translation-result="on"><a href="actuator.html#actuator.endpoints.health.writing-custom-health-indicators"></a>2.8.2. 编写自定义健康指标</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.health.writing-custom-health-indicators"></a>2.8.2. Writing Custom HealthIndicators</h4>
 <div class="paragraph">
-<p translation-result="on">要提供自定义健康信息，您可以注册实现<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/HealthIndicator.java"><code>HealthIndicator</code></a>接口的 Spring bean。您需要提供 <code>health()</code> 方法的实现并返回 <code>Health</code> 响应。<code>Health</code> 响应应包含状态，并且可以选择包含要显示的其他详细信息。以下代码显示了一个示例 <code>HealthIndicator</code> 实现：</p>
+<p translation-result="on">要提供自定义健康信息，你可以注册实现<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/HealthIndicator.java"><code>HealthIndicator</code></a>接口的 Spring bean。你需要提供 <code>health()</code> 方法的实现并返回 <code>Health</code> 响应。<code>Health</code> 响应应包含状态，并且可以选择包含要显示的其他详细信息。以下代码显示了一个示例 <code>HealthIndicator</code> 实现：</p>
 <p translation-origin="off">To provide custom health information, you can register Spring beans that implement the <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/HealthIndicator.java"><code>HealthIndicator</code></a> interface.
 You need to provide an implementation of the <code>health()</code> method and return a <code>Health</code> response.
 The <code>Health</code> response should include a status and can optionally include additional details to be displayed.
@@ -2962,12 +2962,12 @@ In the preceding example, the health information is available in an entry named 
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">除了 Spring Boot 预定义的<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/Status.java"><code>Status</code></a>类型之外，<code>Health</code> 还可以返回一个自定义的 <code>Status</code> 来表示一个新的系统状态。在这种情况下，您还需要提供<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/StatusAggregator.java"><code>StatusAggregator</code></a>接口的自定义实现，或者您必须使用 <code>management.endpoint.health.status.order</code> 配置属性来配置默认实现。</p>
+<p translation-result="on">除了 Spring Boot 预定义的<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/Status.java"><code>Status</code></a>类型之外，<code>Health</code> 还可以返回一个自定义的 <code>Status</code> 来表示一个新的系统状态。在这种情况下，你还需要提供<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/StatusAggregator.java"><code>StatusAggregator</code></a>接口的自定义实现，或者你必须使用 <code>management.endpoint.health.status.order</code> 配置属性来配置默认实现。</p>
 <p translation-origin="off">In addition to Spring Boot’s predefined <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/Status.java"><code>Status</code></a> types, <code>Health</code> can return a custom <code>Status</code> that represents a new system state.
 In such cases, you also need to provide a custom implementation of the <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/StatusAggregator.java"><code>StatusAggregator</code></a> interface, or you must configure the default implementation by using the <code>management.endpoint.health.status.order</code> configuration property.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">例如，假设在您的一个 <code>HealthIndicator</code> 实现中使用了代码为 <code>FATAL</code> 的新 <code>Status</code> 。要配置严重性顺序，请将以下属性添加到您的应用程序属性中：</p>
+<p translation-result="on">例如，假设在你的一个 <code>HealthIndicator</code> 实现中使用了代码为 <code>FATAL</code> 的新 <code>Status</code> 。要配置严重性顺序，请将以下属性添加到你的应用程序属性中：</p>
 <p translation-origin="off">For example, assume a new <code>Status</code> with a code of <code>FATAL</code> is being used in one of your <code>HealthIndicator</code> implementations.
 To configure the severity order, add the following property to your application properties:</p>
 </div>
@@ -2989,7 +2989,7 @@ To configure the severity order, add the following property to your application 
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">响应中的 HTTP 状态代码反映了整体健康状况。默认情况下，<code>OUT_OF_SERVICE</code> 和 <code>DOWN</code> 映射到 503。任何未映射的健康状态，包括 <code>UP</code> ，都映射到 200。如果您通过 HTTP 访问健康端点，您可能还需要注册自定义状态映射。配置自定义映射会禁用 <code>DOWN</code> 和 <code>OUT_OF_SERVICE</code> 的默认映射。如果要保留默认映射，则必须显式配置它们以及任何自定义映射。例如，以下属性将 <code>FATAL</code> 映射到 503（服务不可用）并保留 <code>DOWN</code> 和 <code>OUT_OF_SERVICE</code> 的默认映射：</p>
+<p translation-result="on">响应中的 HTTP 状态代码反映了整体健康状况。默认情况下，<code>OUT_OF_SERVICE</code> 和 <code>DOWN</code> 映射到 503。任何未映射的健康状态，包括 <code>UP</code> ，都映射到 200。如果你通过 HTTP 访问健康端点，你可能还需要注册自定义状态映射。配置自定义映射会禁用 <code>DOWN</code> 和 <code>OUT_OF_SERVICE</code> 的默认映射。如果要保留默认映射，则必须显式配置它们以及任何自定义映射。例如，以下属性将 <code>FATAL</code> 映射到 503（服务不可用）并保留 <code>DOWN</code> 和 <code>OUT_OF_SERVICE</code> 的默认映射：</p>
 <p translation-origin="off">The HTTP status code in the response reflects the overall health status.
 By default, <code>OUT_OF_SERVICE</code> and <code>DOWN</code> map to 503.
 Any unmapped health statuses, including <code>UP</code>, map to 200.
@@ -3090,7 +3090,7 @@ Regular <code>HealthContributors</code> that do not check against a reactive API
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">在反应式应用程序中，您应该使用 <code>ReactiveHealthContributorRegistry</code> 在运行时注册和取消注册健康指标。如果你需要注册一个普通的 <code>HealthContributor</code> ，你应该用 <code>ReactiveHealthContributor#adapt</code> 包装它。</p>
+<p translation-result="on">在反应式应用程序中，你应该使用 <code>ReactiveHealthContributorRegistry</code> 在运行时注册和取消注册健康指标。如果你需要注册一个普通的 <code>HealthContributor</code> ，你应该用 <code>ReactiveHealthContributor#adapt</code> 包装它。</p>
 <p translation-origin="off">In a reactive application, you should use the <code>ReactiveHealthContributorRegistry</code> to register and unregister health indicators at runtime.
 If you need to register a regular <code>HealthContributor</code>, you should wrap it with <code>ReactiveHealthContributor#adapt</code>.</p>
 </td>
@@ -3098,7 +3098,7 @@ If you need to register a regular <code>HealthContributor</code>, you should wra
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">要从响应式 API 提供自定义健康信息，您可以注册实现<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/ReactiveHealthIndicator.java"><code>ReactiveHealthIndicator</code></a>接口的 Spring bean。以下代码显示了一个示例 <code>ReactiveHealthIndicator</code> 实现：</p>
+<p translation-result="on">要从响应式 API 提供自定义健康信息，你可以注册实现<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/ReactiveHealthIndicator.java"><code>ReactiveHealthIndicator</code></a>接口的 Spring bean。以下代码显示了一个示例 <code>ReactiveHealthIndicator</code> 实现：</p>
 <p translation-origin="off">To provide custom health information from a reactive API, you can register Spring beans that implement the <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/health/ReactiveHealthIndicator.java"><code>ReactiveHealthIndicator</code></a> interface.
 The following code shows a sample <code>ReactiveHealthIndicator</code> implementation:</p>
 </div>
@@ -3227,7 +3227,7 @@ Also, any <code>HealthIndicator</code> that is not handled explicitly is wrapped
 <p translation-origin="off">It is sometimes useful to organize health indicators into groups that you can use for different purposes.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">要创建健康指标组，您可以使用 <code>management.endpoint.health.group.&lt;name&gt;</code> 属性并指定要 <code>include</code> 或 <code>exclude</code> 的健康指标 ID 列表。例如，要创建仅包含数据库指标的组，您可以定义以下内容：</p>
+<p translation-result="on">要创建健康指标组，你可以使用 <code>management.endpoint.health.group.&lt;name&gt;</code> 属性并指定要 <code>include</code> 或 <code>exclude</code> 的健康指标 ID 列表。例如，要创建仅包含数据库指标的组，你可以定义以下内容：</p>
 <p translation-origin="off">To create a health indicator group, you can use the <code>management.endpoint.health.group.&lt;name&gt;</code> property and specify a list of health indicator IDs to <code>include</code> or <code>exclude</code>.
 For example, to create a group that includes only database indicators you can define the following:</p>
 </div>
@@ -3250,11 +3250,11 @@ For example, to create a group that includes only database indicators you can de
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">然后，您可以通过点击 <code>localhost:8080/actuator/health/custom</code> 检查结果。</p>
+<p translation-result="on">然后，你可以通过点击 <code>localhost:8080/actuator/health/custom</code> 检查结果。</p>
 <p translation-origin="off">You can then check the result by hitting <code><a href="http://localhost:8080/actuator/health/custom" class="bare">localhost:8080/actuator/health/custom</a></code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">同样，要创建一个从组中排除数据库指标并包含所有其他指标的组，您可以定义以下内容：</p>
+<p translation-result="on">同样，要创建一个从组中排除数据库指标并包含所有其他指标的组，你可以定义以下内容：</p>
 <p translation-origin="off">Similarly, to create a group that excludes the database indicators from the group and includes all the other indicators, you can define the following:</p>
 </div>
 <div class="listingblock primary">
@@ -3276,7 +3276,7 @@ For example, to create a group that includes only database indicators you can de
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，组继承与系统运行状况相同的 <code>StatusAggregator</code> 和 <code>HttpCodeStatusMapper</code> 设置。但是，您也可以在每个组的基础上定义这些。如果需要，您还可以覆盖 <code>show-details</code> 和 <code>roles</code> 属性：</p>
+<p translation-result="on">默认情况下，组继承与系统运行状况相同的 <code>StatusAggregator</code> 和 <code>HttpCodeStatusMapper</code> 设置。但是，你也可以在每个组的基础上定义这些。如果需要，你还可以覆盖 <code>show-details</code> 和 <code>roles</code> 属性：</p>
 <p translation-origin="off">By default, groups inherit the same <code>StatusAggregator</code> and <code>HttpCodeStatusMapper</code> settings as the system health.
 However, you can also define these on a per-group basis.
 You can also override the <code>show-details</code> and <code>roles</code> properties if required:</p>
@@ -3316,14 +3316,14 @@ management.endpoint.health.group.custom.status.http-mapping.out-of-service=500</
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果您需要注册自定义 <code>StatusAggregator</code> 或 <code>HttpCodeStatusMapper</code> bean 以用于组，则可以使用 <code>@Qualifier("groupname")</code> 。</p>
+<p translation-result="on">如果你需要注册自定义 <code>StatusAggregator</code> 或 <code>HttpCodeStatusMapper</code> bean 以用于组，则可以使用 <code>@Qualifier("groupname")</code> 。</p>
 <p translation-origin="off">You can use <code>@Qualifier("groupname")</code> if you need to register custom <code>StatusAggregator</code> or <code>HttpCodeStatusMapper</code> beans for use with the group.</p>
 </td>
 </tr>
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">健康组还可以包含/排除 <code>CompositeHealthContributor</code> 。您还可以仅包含/排除 <code>CompositeHealthContributor</code> 的某个组件。这可以使用组件的完全限定名称来完成，如下所示：</p>
+<p translation-result="on">健康组还可以包含/排除 <code>CompositeHealthContributor</code> 。你还可以仅包含/排除 <code>CompositeHealthContributor</code> 的某个组件。这可以使用组件的完全限定名称来完成，如下所示：</p>
 <p translation-origin="off">A health group can also include/exclude a <code>CompositeHealthContributor</code>.
 You can also include/exclude only a certain component of a <code>CompositeHealthContributor</code>.
 This can be done using the fully qualified name of the component as follows:</p>
@@ -3362,7 +3362,7 @@ The path must be a single path segment.</p>
 <h4 id="actuator.endpoints.health.datasource" translation-result="on"><a href="actuator.html#actuator.endpoints.health.datasource"></a>2.8.6. 数据源运行状况</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.health.datasource"></a>2.8.6. DataSource Health</h4>
 <div class="paragraph">
-<p translation-result="on"><code>DataSource</code> 运行状况指示器显示标准数据源和路由数据源 bean 的运行状况。路由数据源的健康状况包括其每个目标数据源的健康状况。在健康端点的响应中，每个路由数据源的目标都使用其路由键命名。如果您不想在指标的输出中包含路由数据源，请将 <code>management.health.db.ignore-routing-data-sources</code> 设置为 <code>true</code> 。</p>
+<p translation-result="on"><code>DataSource</code> 运行状况指示器显示标准数据源和路由数据源 bean 的运行状况。路由数据源的健康状况包括其每个目标数据源的健康状况。在健康端点的响应中，每个路由数据源的目标都使用其路由键命名。如果你不想在指标的输出中包含路由数据源，请将 <code>management.health.db.ignore-routing-data-sources</code> 设置为 <code>true</code> 。</p>
 <p translation-origin="off">The <code>DataSource</code> health indicator shows the health of both standard data sources and routing data source beans.
 The health of a routing data source includes the health of each of its target data sources.
 In the health endpoint’s response, each of a routing data source’s targets is named by using its routing key.
@@ -3374,19 +3374,19 @@ If you prefer not to include routing data sources in the indicator’s output, s
 <h3 id="actuator.endpoints.kubernetes-probes" translation-result="on"><a href="actuator.html#actuator.endpoints.kubernetes-probes"></a>2.9. Kubernetes 探针</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.kubernetes-probes"></a>2.9. Kubernetes Probes</h3>
 <div class="paragraph">
-<p translation-result="on">部署在 Kubernetes 上的应用程序可以通过 <a href="https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes">Container Probes</a> 提供有关其内部状态的信息。根据<a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/">您的 Kubernetes 配置</a>，kubelet 会调用这些探测器并对结果做出反应。</p>
+<p translation-result="on">部署在 Kubernetes 上的应用程序可以通过 <a href="https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes">Container Probes</a> 提供有关其内部状态的信息。根据<a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/">你的 Kubernetes 配置</a>，kubelet 会调用这些探测器并对结果做出反应。</p>
 <p translation-origin="off">Applications deployed on Kubernetes can provide information about their internal state with <a href="https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes">Container Probes</a>.
 Depending on <a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/">your Kubernetes configuration</a>, the kubelet calls those probes and reacts to the result.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，Spring Boot 管理您的<a href="features.html#features.spring-application.application-availability">应用程序可用性状态</a>。如果部署在 Kubernetes 环境中，actuator 从 <code>ApplicationAvailability</code> 接口收集“Liveness”和“Readiness”信息，并将该信息用于专用<a href="actuator.html#actuator.endpoints.health.auto-configured-health-indicators">健康指标</a>： <code>LivenessStateHealthIndicator</code> 和 <code>ReadinessStateHealthIndicator</code> 。这些指标显示在全局健康端点（ <code>"/actuator/health"</code> ）上。它们还通过使用<a href="actuator.html#actuator.endpoints.health.groups">健康组</a>作为单独的 HTTP 探测器公开： <code>"/actuator/health/liveness"</code> 和 <code>"/actuator/health/readiness"</code> 。</p>
+<p translation-result="on">默认情况下，Spring Boot 管理你的<a href="features.html#features.spring-application.application-availability">应用程序可用性状态</a>。如果部署在 Kubernetes 环境中，actuator 从 <code>ApplicationAvailability</code> 接口收集“Liveness”和“Readiness”信息，并将该信息用于专用<a href="actuator.html#actuator.endpoints.health.auto-configured-health-indicators">健康指标</a>： <code>LivenessStateHealthIndicator</code> 和 <code>ReadinessStateHealthIndicator</code> 。这些指标显示在全局健康端点（ <code>"/actuator/health"</code> ）上。它们还通过使用<a href="actuator.html#actuator.endpoints.health.groups">健康组</a>作为单独的 HTTP 探测器公开： <code>"/actuator/health/liveness"</code> 和 <code>"/actuator/health/readiness"</code> 。</p>
 <p translation-origin="off">By default, Spring Boot manages your <a href="features.html#features.spring-application.application-availability">Application Availability State</a>.
 If deployed in a Kubernetes environment, actuator gathers the “Liveness” and “Readiness” information from the <code>ApplicationAvailability</code> interface and uses that information in dedicated <a href="actuator.html#actuator.endpoints.health.auto-configured-health-indicators">health indicators</a>: <code>LivenessStateHealthIndicator</code> and <code>ReadinessStateHealthIndicator</code>.
 These indicators are shown on the global health endpoint (<code>"/actuator/health"</code>).
 They are also exposed as separate HTTP Probes by using <a href="actuator.html#actuator.endpoints.health.groups">health groups</a>: <code>"/actuator/health/liveness"</code> and <code>"/actuator/health/readiness"</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">然后，您可以使用以下端点信息配置 Kubernetes 基础架构：</p>
+<p translation-result="on">然后，你可以使用以下端点信息配置 Kubernetes 基础架构：</p>
 <p translation-origin="off">You can then configure your Kubernetes infrastructure with the following endpoint information:</p>
 </div>
 <div class="listingblock">
@@ -3421,7 +3421,7 @@ It could be the main web server port or a separate management port if the <code>
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">只有当应用程序<a href="deployment.html#deployment.cloud.kubernetes">在 Kubernetes 环境中运行时，</a>这些健康组才会自动启用。您可以使用 <code>management.endpoint.health.probes.enabled</code> 配置属性在任何环境中启用它们。</p>
+<p translation-result="on">只有当应用程序<a href="deployment.html#deployment.cloud.kubernetes">在 Kubernetes 环境中运行时，</a>这些健康组才会自动启用。你可以使用 <code>management.endpoint.health.probes.enabled</code> 配置属性在任何环境中启用它们。</p>
 <p translation-origin="off">These health groups are automatically enabled only if the application <a href="deployment.html#deployment.cloud.kubernetes">runs in a Kubernetes environment</a>.
 You can enable them in any environment by using the <code>management.endpoint.health.probes.enabled</code> configuration property.</p>
 </div>
@@ -3440,7 +3440,7 @@ The <code>"startupProbe"</code> is not necessarily needed here, as the <code>"re
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您的 Actuator 端点部署在单独的管理上下文中，则端点不会使用与主应用程序相同的 Web 基础设施（端口、连接池、框架组件）。在这种情况下，即使主应用程序无法正常工作（例如，它不能接受新连接），探测检查也可能会成功。出于这个原因，让 <code>liveness</code> 和 <code>readiness</code> 健康组在主服务器端口上可用是一个好主意。这可以通过设置以下属性来完成：</p>
+<p translation-result="on">如果你的 Actuator 端点部署在单独的管理上下文中，则端点不会使用与主应用程序相同的 Web 基础设施（端口、连接池、框架组件）。在这种情况下，即使主应用程序无法正常工作（例如，它不能接受新连接），探测检查也可能会成功。出于这个原因，让 <code>liveness</code> 和 <code>readiness</code> 健康组在主服务器端口上可用是一个好主意。这可以通过设置以下属性来完成：</p>
 <p translation-origin="off">If your Actuator endpoints are deployed on a separate management context, the endpoints do not use the same web infrastructure (port, connection pools, framework components) as the main application.
 In this case, a probe check could be successful even if the main application does not work properly (for example, it cannot accept new connections).
 For this reason, is it a good idea to make the <code>liveness</code> and <code>readiness</code> health groups available on the main server port.
@@ -3459,7 +3459,7 @@ This can be done by setting the following property:</p>
 <h4 id="actuator.endpoints.kubernetes-probes.external-state" translation-result="on"><a href="actuator.html#actuator.endpoints.kubernetes-probes.external-state"></a>2.9.1. 使用 Kubernetes 探针检查外部状态</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.kubernetes-probes.external-state"></a>2.9.1. Checking External State with Kubernetes Probes</h4>
 <div class="paragraph">
-<p translation-result="on">Actuator 将“liveness”和“readiness”探针配置为 Health Groups。这意味着他们可以使用所有<a href="actuator.html#actuator.endpoints.health.groups">健康组功能</a>。例如，您可以配置其他运行状况指标：</p>
+<p translation-result="on">Actuator 将“liveness”和“readiness”探针配置为 Health Groups。这意味着他们可以使用所有<a href="actuator.html#actuator.endpoints.health.groups">健康组功能</a>。例如，你可以配置其他运行状况指标：</p>
 <p translation-origin="off">Actuator configures the “liveness” and “readiness” probes as Health Groups.
 This means that all the <a href="actuator.html#actuator.endpoints.health.groups">health groups features</a> are available for them.
 You can, for example, configure additional Health Indicators:</p>
@@ -3493,7 +3493,7 @@ If the <a href="features.html#features.spring-application.application-availabili
 This means that if an external system (such as a database, a Web API, or an external cache) fails, Kubernetes might restart all application instances and create cascading failures.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">至于“就绪”探测，应用程序开发人员必须仔细选择检查外部系统。出于这个原因，Spring Boot 在就绪探测中不包括任何额外的健康检查。如果<a href="features.html#features.spring-application.application-availability.readiness">应用程序实例的就绪状态</a>未就绪，Kubernetes 不会将流量路由到该实例。某些外部系统可能不被应用程序实例共享，在这种情况下，它们可以包含在就绪探测中。其他外部系统可能对应用程序不是必需的（应用程序可能有断路器和回退），在这种情况下，它们绝对不应该包括在内。不幸的是，所有应用程序实例共享的外部系统很常见，您必须做出判断：将其包含在就绪探针中，并期望应用程序在外部服务关闭时停止服务或将其排除在外并处理堆栈更高的故障，也许通过在调用者中使用断路器。</p>
+<p translation-result="on">至于“就绪”探测，应用程序开发人员必须仔细选择检查外部系统。出于这个原因，Spring Boot 在就绪探测中不包括任何额外的健康检查。如果<a href="features.html#features.spring-application.application-availability.readiness">应用程序实例的就绪状态</a>未就绪，Kubernetes 不会将流量路由到该实例。某些外部系统可能不被应用程序实例共享，在这种情况下，它们可以包含在就绪探测中。其他外部系统可能对应用程序不是必需的（应用程序可能有断路器和回退），在这种情况下，它们绝对不应该包括在内。不幸的是，所有应用程序实例共享的外部系统很常见，你必须做出判断：将其包含在就绪探针中，并期望应用程序在外部服务关闭时停止服务或将其排除在外并处理堆栈更高的故障，也许通过在调用者中使用断路器。</p>
 <p translation-origin="off">As for the “readiness” probe, the choice of checking external systems must be made carefully by the application developers.
 For this reason, Spring Boot does not include any additional health checks in the readiness probe.
 If the <a href="features.html#features.spring-application.application-availability.readiness">readiness state of an application instance</a> is unready, Kubernetes does not route traffic to that instance.
@@ -3681,7 +3681,7 @@ and probes can listen to such events and expose the <code>AvailabilityState</cod
 <h3 id="actuator.endpoints.info" translation-result="on"><a href="actuator.html#actuator.endpoints.info"></a>2.10. 应用信息</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.info"></a>2.10. Application Information</h3>
 <div class="paragraph">
-<p translation-result="on">应用程序信息公开了从 <code>ApplicationContext</code> 中定义的所有<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/info/InfoContributor.java"><code>InfoContributor</code></a> bean 收集的各种信息。Spring Boot 包含许多自动配置的 <code>InfoContributor</code> bean，您可以编写自己的。</p>
+<p translation-result="on">应用程序信息公开了从 <code>ApplicationContext</code> 中定义的所有<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/info/InfoContributor.java"><code>InfoContributor</code></a> bean 收集的各种信息。Spring Boot 包含许多自动配置的 <code>InfoContributor</code> bean，你可以编写自己的。</p>
 <p translation-origin="off">Application information exposes various information collected from all <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/info/InfoContributor.java"><code>InfoContributor</code></a> beans defined in your <code>ApplicationContext</code>.
 Spring Boot includes a number of auto-configured <code>InfoContributor</code> beans, and you can write your own.</p>
 </div>
@@ -3751,7 +3751,7 @@ Spring Boot includes a number of auto-configured <code>InfoContributor</code> be
 Different contributors have different defaults for this property, depending on their prerequisites and the nature of the information that they expose.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">没有先决条件表明应该启用它们，默认情况下禁用 <code>env</code> 和 <code>java</code> 贡献者。您可以通过将 <code>management.info.env.enabled</code> 或 <code>management.info.java.enabled</code> 属性设置为 <code>true</code> 来启用它们。</p>
+<p translation-result="on">没有先决条件表明应该启用它们，默认情况下禁用 <code>env</code> 和 <code>java</code> 贡献者。你可以通过将 <code>management.info.env.enabled</code> 或 <code>management.info.java.enabled</code> 属性设置为 <code>true</code> 来启用它们。</p>
 <p translation-origin="off">With no prerequisites to indicate that they should be enabled, the <code>env</code> and <code>java</code> contributors are disabled by default.
 You can enable them by setting the <code>management.info.env.enabled</code> or <code>management.info.java.enabled</code> properties to <code>true</code>.</p>
 </div>
@@ -3766,7 +3766,7 @@ Alternatively, to disable every contributor that is usually enabled by default, 
 <h4 id="actuator.endpoints.info.custom-application-information" translation-result="on"><a href="actuator.html#actuator.endpoints.info.custom-application-information"></a>2.10.2. 自定义应用程序信息</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.info.custom-application-information"></a>2.10.2. Custom Application Information</h4>
 <div class="paragraph">
-<p translation-result="on">启用 <code>env</code> 贡献者后，您可以通过设置 <code>info.*</code> Spring 属性来自定义 <code>info</code> 端点公开的数据。<code>info</code> 键下的所有 <code>Environment</code> 属性都会自动公开。例如，您可以将以下设置添加到 <code>application.properties</code> 文件中：</p>
+<p translation-result="on">启用 <code>env</code> 贡献者后，你可以通过设置 <code>info.*</code> Spring 属性来自定义 <code>info</code> 端点公开的数据。<code>info</code> 键下的所有 <code>Environment</code> 属性都会自动公开。例如，你可以将以下设置添加到 <code>application.properties</code> 文件中：</p>
 <p translation-origin="off">When the <code>env</code> contributor is enabled, you can customize the data exposed by the <code>info</code> endpoint by setting <code>info.*</code> Spring properties.
 All <code>Environment</code> properties under the <code>info</code> key are automatically exposed.
 For example, you could add the following settings to your <code>application.properties</code> file:</p>
@@ -3799,11 +3799,11 @@ info.app.java.target=11</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">除了硬编码这些值，您还可以<a href="howto.html#howto.properties-and-configuration.expand-properties">在构建时扩展 info 属性</a>。</p>
+<p translation-result="on">除了硬编码这些值，你还可以<a href="howto.html#howto.properties-and-configuration.expand-properties">在构建时扩展 info 属性</a>。</p>
 <p translation-origin="off">Rather than hardcoding those values, you could also <a href="howto.html#howto.properties-and-configuration.expand-properties">expand info properties at build time</a>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">假设您使用 Maven，您可以将前面的示例重写如下：</p>
+<p translation-result="on">假设你使用 Maven，你可以将前面的示例重写如下：</p>
 <p translation-origin="off">Assuming you use Maven, you could rewrite the preceding example as follows:</p>
 </div>
 <div class="listingblock primary">
@@ -3835,7 +3835,7 @@ info.app.java.target=11</code></pre>
 <h4 id="actuator.endpoints.info.git-commit-information" translation-result="on"><a href="actuator.html#actuator.endpoints.info.git-commit-information"></a>2.10.3. Git 提交信息</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.info.git-commit-information"></a>2.10.3. Git Commit Information</h4>
 <div class="paragraph">
-<p translation-result="on"><code>info</code> 端点的另一个有用功能是它能够在项目构建时发布有关 <code>git</code> 源代码存储库状态的信息。如果 <code>GitProperties</code> bean 可用，您可以使用 <code>info</code> 端点来公开这些属性。</p>
+<p translation-result="on"><code>info</code> 端点的另一个有用功能是它能够在项目构建时发布有关 <code>git</code> 源代码存储库状态的信息。如果 <code>GitProperties</code> bean 可用，你可以使用 <code>info</code> 端点来公开这些属性。</p>
 <p translation-origin="off">Another useful feature of the <code>info</code> endpoint is its ability to publish information about the state of your <code>git</code> source code repository when the project was built.
 If a <code>GitProperties</code> bean is available, you can use the <code>info</code> endpoint to expose these properties.</p>
 </div>
@@ -3854,7 +3854,7 @@ See "<a href="howto.html#howto.build.generate-git-info">how to generate git info
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，端点公开 <code>git.branch</code> 、 <code>git.commit.id</code> 和 <code>git.commit.time</code> 属性（如果存在）。如果您不希望端点响应中有任何这些属性，则需要将它们从 <code>git.properties</code> 文件中排除。如果要显示完整的 git 信息（即 <code>git.properties</code> 的完整内容），使用 <code>management.info.git.mode</code> 属性，如下：</p>
+<p translation-result="on">默认情况下，端点公开 <code>git.branch</code> 、 <code>git.commit.id</code> 和 <code>git.commit.time</code> 属性（如果存在）。如果你不希望端点响应中有任何这些属性，则需要将它们从 <code>git.properties</code> 文件中排除。如果要显示完整的 git 信息（即 <code>git.properties</code> 的完整内容），使用 <code>management.info.git.mode</code> 属性，如下：</p>
 <p translation-origin="off">By default, the endpoint exposes <code>git.branch</code>, <code>git.commit.id</code>, and <code>git.commit.time</code> properties, if present.
 If you do not want any of these properties in the endpoint response, they need to be excluded from the <code>git.properties</code> file.
 If you want to display the full git information (that is, the full content of <code>git.properties</code>), use the <code>management.info.git.mode</code> property, as follows:</p>
@@ -3900,7 +3900,7 @@ If you want to display the full git information (that is, the full content of <c
 <h4 id="actuator.endpoints.info.build-information" translation-result="on"><a href="actuator.html#actuator.endpoints.info.build-information"></a>2.10.4. 构建信息</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.info.build-information"></a>2.10.4. Build Information</h4>
 <div class="paragraph">
-<p translation-result="on">如果 <code>BuildProperties</code> bean 可用，则 <code>info</code> 端点还可以发布有关您的构建的信息。如果类路径中有 <code>META-INF/build-info.properties</code> 文件，则会发生这种情况。</p>
+<p translation-result="on">如果 <code>BuildProperties</code> bean 可用，则 <code>info</code> 端点还可以发布有关你的构建的信息。如果类路径中有 <code>META-INF/build-info.properties</code> 文件，则会发生这种情况。</p>
 <p translation-origin="off">If a <code>BuildProperties</code> bean is available, the <code>info</code> endpoint can also publish information about your build.
 This happens if a <code>META-INF/build-info.properties</code> file is available in the classpath.</p>
 </div>
@@ -3923,7 +3923,7 @@ See "<a href="howto.html#howto.build.generate-info">how to generate build inform
 <h4 id="actuator.endpoints.info.java-information" translation-result="on"><a href="actuator.html#actuator.endpoints.info.java-information"></a>2.10.5. Java 信息</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.info.java-information"></a>2.10.5. Java Information</h4>
 <div class="paragraph">
-<p translation-result="on"><code>info</code> 端点发布有关您的 Java 运行时环境的信息，有关更多详细信息，请参阅<a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/info/JavaInfo.html"><code>JavaInfo</code></a> 。</p>
+<p translation-result="on"><code>info</code> 端点发布有关你的 Java 运行时环境的信息，有关更多详细信息，请参阅<a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/info/JavaInfo.html"><code>JavaInfo</code></a> 。</p>
 <p translation-origin="off">The <code>info</code> endpoint publishes information about your Java runtime environment, see <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/info/JavaInfo.html"><code>JavaInfo</code></a> for more details.</p>
 </div>
 </div>
@@ -3931,7 +3931,7 @@ See "<a href="howto.html#howto.build.generate-info">how to generate build inform
 <h4 id="actuator.endpoints.info.writing-custom-info-contributors" translation-result="on"><a href="actuator.html#actuator.endpoints.info.writing-custom-info-contributors"></a>2.10.6. 编写自定义信息贡献者</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.info.writing-custom-info-contributors"></a>2.10.6. Writing Custom InfoContributors</h4>
 <div class="paragraph">
-<p translation-result="on">要提供自定义应用程序信息，您可以注册实现<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/info/InfoContributor.java"><code>InfoContributor</code></a>接口的 Spring beans。</p>
+<p translation-result="on">要提供自定义应用程序信息，你可以注册实现<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/info/InfoContributor.java"><code>InfoContributor</code></a>接口的 Spring beans。</p>
 <p translation-origin="off">To provide custom application information, you can register Spring beans that implement the <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/info/InfoContributor.java"><code>InfoContributor</code></a> interface.</p>
 </div>
 <div class="paragraph">
@@ -3959,7 +3959,7 @@ public class MyInfoContributor implements InfoContributor {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您到达 <code>info</code> 端点，您应该会看到包含以下附加条目的响应：</p>
+<p translation-result="on">如果你到达 <code>info</code> 端点，你应该会看到包含以下附加条目的响应：</p>
 <p translation-origin="off">If you reach the <code>info</code> endpoint, you should see a response that contains the following additional entry:</p>
 </div>
 <div class="listingblock">
@@ -3980,7 +3980,7 @@ public class MyInfoContributor implements InfoContributor {
 <h2 translation-origin="off"><a class="anchor" href="actuator.html#actuator.monitoring"></a>3. Monitoring and Management over HTTP</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">如果您正在开发 Web 应用程序，Spring Boot Actuator 会自动配置所有启用的端点以通过 HTTP 公开。默认约定是使用前缀为 <code>/actuator</code> 的端点的 <code>id</code> 作为 URL 路径。例如，<code>health</code> 被暴露为 <code>/actuator/health</code> 。</p>
+<p translation-result="on">如果你正在开发 Web 应用程序，Spring Boot Actuator 会自动配置所有启用的端点以通过 HTTP 公开。默认约定是使用前缀为 <code>/actuator</code> 的端点的 <code>id</code> 作为 URL 路径。例如，<code>health</code> 被暴露为 <code>/actuator/health</code> 。</p>
 <p translation-origin="off">If you are developing a web application, Spring Boot Actuator auto-configures all enabled endpoints to be exposed over HTTP.
 The default convention is to use the <code>id</code> of the endpoint with a prefix of <code>/actuator</code> as the URL path.
 For example, <code>health</code> is exposed as <code>/actuator/health</code>.</p>
@@ -4016,7 +4016,7 @@ If both Jersey and Spring MVC are available, Spring MVC is used.</p>
 <h3 id="actuator.monitoring.customizing-management-server-context-path" translation-result="on"><a href="actuator.html#actuator.monitoring.customizing-management-server-context-path"></a>3.1. 自定义管理端点路径</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.monitoring.customizing-management-server-context-path"></a>3.1. Customizing the Management Endpoint Paths</h3>
 <div class="paragraph">
-<p translation-result="on">有时，自定义管理端点的前缀很有用。例如，您的应用程序可能已经将 <code>/actuator</code> 用于其他目的。您可以使用 <code>management.endpoints.web.base-path</code> 属性更改管理端点的前缀，如以下示例所示：</p>
+<p translation-result="on">有时，自定义管理端点的前缀很有用。例如，你的应用程序可能已经将 <code>/actuator</code> 用于其他目的。你可以使用 <code>management.endpoints.web.base-path</code> 属性更改管理端点的前缀，如以下示例所示：</p>
 <p translation-origin="off">Sometimes, it is useful to customize the prefix for the management endpoints.
 For example, your application might already use <code>/actuator</code> for another purpose.
 You can use the <code>management.endpoints.web.base-path</code> property to change the prefix for your management endpoint, as the following example shows:</p>
@@ -4087,12 +4087,12 @@ management.endpoints.web.path-mapping.health=healthcheck</code></pre>
 <h3 id="actuator.monitoring.customizing-management-server-port" translation-result="on"><a href="actuator.html#actuator.monitoring.customizing-management-server-port"></a>3.2. 自定义管理服务器端口</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.monitoring.customizing-management-server-port"></a>3.2. Customizing the Management Server Port</h3>
 <div class="paragraph">
-<p translation-result="on">使用默认 HTTP 端口公开管理端点是基于云的部署的明智选择。但是，如果您的应用程序在您自己的数据中心内运行，您可能更愿意使用不同的 HTTP 端口来公开端点。</p>
+<p translation-result="on">使用默认 HTTP 端口公开管理端点是基于云的部署的明智选择。但是，如果你的应用程序在你自己的数据中心内运行，你可能更愿意使用不同的 HTTP 端口来公开端点。</p>
 <p translation-origin="off">Exposing management endpoints by using the default HTTP port is a sensible choice for cloud-based deployments.
 If, however, your application runs inside your own data center, you may prefer to expose endpoints by using a different HTTP port.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以设置 <code>management.server.port</code> 属性来更改 HTTP 端口，如以下示例所示：</p>
+<p translation-result="on">你可以设置 <code>management.server.port</code> 属性来更改 HTTP 端口，如以下示例所示：</p>
 <p translation-origin="off">You can set the <code>management.server.port</code> property to change the HTTP port, as the following example shows:</p>
 </div>
 <div class="listingblock primary">
@@ -4129,7 +4129,7 @@ If you want to use a custom management port on Cloud Foundry, you need to explic
 <h3 id="actuator.monitoring.management-specific-ssl" translation-result="on"><a href="actuator.html#actuator.monitoring.management-specific-ssl"></a>3.3. 配置特定于管理的 SSL</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.monitoring.management-specific-ssl"></a>3.3. Configuring Management-specific SSL</h3>
 <div class="paragraph">
-<p translation-result="on">当配置为使用自定义端口时，您还可以使用各种 <code>management.server.ssl.*</code> 属性为管理服务器配置自己的 SSL。例如，这样做可以让管理服务器在主应用程序使用 HTTPS 时通过 HTTP 可用，如以下属性设置所示：</p>
+<p translation-result="on">当配置为使用自定义端口时，你还可以使用各种 <code>management.server.ssl.*</code> 属性为管理服务器配置自己的 SSL。例如，这样做可以让管理服务器在主应用程序使用 HTTPS 时通过 HTTP 可用，如以下属性设置所示：</p>
 <p translation-origin="off">When configured to use a custom port, you can also configure the management server with its own SSL by using the various <code>management.server.ssl.*</code> properties.
 For example, doing so lets a management server be available over HTTP while the main application uses HTTPS, as the following property settings show:</p>
 </div>
@@ -4202,7 +4202,7 @@ management:
 <h3 id="actuator.monitoring.customizing-management-server-address" translation-result="on"><a href="actuator.html#actuator.monitoring.customizing-management-server-address"></a>3.4. 自定义管理服务器地址</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.monitoring.customizing-management-server-address"></a>3.4. Customizing the Management Server Address</h3>
 <div class="paragraph">
-<p translation-result="on">您可以通过设置 <code>management.server.address</code> 属性来自定义管理端点可用的地址。如果您只想在内部或面向操作的网络上侦听或仅侦听来自 <code>localhost</code> 的连接，这样做会很有用。</p>
+<p translation-result="on">你可以通过设置 <code>management.server.address</code> 属性来自定义管理端点可用的地址。如果你只想在内部或面向操作的网络上侦听或仅侦听来自 <code>localhost</code> 的连接，这样做会很有用。</p>
 <p translation-origin="off">You can customize the address on which the management endpoints are available by setting the <code>management.server.address</code> property.
 Doing so can be useful if you want to listen only on an internal or ops-facing network or to listen only for connections from <code>localhost</code>.</p>
 </div>
@@ -4213,7 +4213,7 @@ Doing so can be useful if you want to listen only on an internal or ops-facing n
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">只有当端口与主服务器端口不同时，您才能在不同的地址上侦听。</p>
+<p translation-result="on">只有当端口与主服务器端口不同时，你才能在不同的地址上侦听。</p>
 <p translation-origin="off">You can listen on a different address only when the port differs from the main server port.</p>
 </td>
 </tr>
@@ -4245,7 +4245,7 @@ management.server.address=127.0.0.1</code></pre>
 <h3 id="actuator.monitoring.disabling-http-endpoints" translation-result="on"><a href="actuator.html#actuator.monitoring.disabling-http-endpoints"></a>3.5. 禁用 HTTP 端点</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.monitoring.disabling-http-endpoints"></a>3.5. Disabling HTTP Endpoints</h3>
 <div class="paragraph">
-<p translation-result="on">如果您不想通过 HTTP 公开端点，可以将管理端口设置为 <code>-1</code> ，如以下示例所示：</p>
+<p translation-result="on">如果你不想通过 HTTP 公开端点，可以将管理端口设置为 <code>-1</code> ，如以下示例所示：</p>
 <p translation-origin="off">If you do not want to expose endpoints over HTTP, you can set the management port to <code>-1</code>, as the following example shows:</p>
 </div>
 <div class="listingblock primary">
@@ -4264,7 +4264,7 @@ management.server.address=127.0.0.1</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您还可以通过使用 <code>management.endpoints.web.exposure.exclude</code> 属性来实现这一点，如以下示例所示：</p>
+<p translation-result="on">你还可以通过使用 <code>management.endpoints.web.exposure.exclude</code> 属性来实现这一点，如以下示例所示：</p>
 <p translation-origin="off">You can also achieve this by using the <code>management.endpoints.web.exposure.exclude</code> property, as the following example shows:</p>
 </div>
 <div class="listingblock primary">
@@ -4292,7 +4292,7 @@ management.server.address=127.0.0.1</code></pre>
 <h2 translation-origin="off"><a class="anchor" href="actuator.html#actuator.jmx"></a>4. Monitoring and Management over JMX</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Java 管理扩展 (JMX) 提供了一种标准机制来监视和管理应用程序。默认情况下，此功能未启用。您可以通过将 <code>spring.jmx.enabled</code> 配置属性设置为 <code>true</code> 来打开它。Spring Boot 将最合适的 <code>MBeanServer</code> 公开为 ID 为 <code>mbeanServer</code> 的 bean。使用 Spring JMX 注释（@ <code>@ManagedOperation</code> <code>@ManagedAttribute</code> <code>@ManagedResource</code> 的任何 bean 都会暴露给它。</p>
+<p translation-result="on">Java 管理扩展 (JMX) 提供了一种标准机制来监视和管理应用程序。默认情况下，此功能未启用。你可以通过将 <code>spring.jmx.enabled</code> 配置属性设置为 <code>true</code> 来打开它。Spring Boot 将最合适的 <code>MBeanServer</code> 公开为 ID 为 <code>mbeanServer</code> 的 bean。使用 Spring JMX 注释（@ <code>@ManagedOperation</code> <code>@ManagedAttribute</code> <code>@ManagedResource</code> 的任何 bean 都会暴露给它。</p>
 <p translation-origin="off">Java Management Extensions (JMX) provide a standard mechanism to monitor and manage applications.
 By default, this feature is not enabled.
 You can turn it on by setting the <code>spring.jmx.enabled</code> configuration property to <code>true</code>.
@@ -4300,7 +4300,7 @@ Spring Boot exposes the most suitable <code>MBeanServer</code> as a bean with an
 Any of your beans that are annotated with Spring JMX annotations (<code>@ManagedResource</code>, <code>@ManagedAttribute</code>, or <code>@ManagedOperation</code>) are exposed to it.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您的平台提供标准 <code>MBeanServer</code> ，则 Spring Boot 将使用该标准并在必要时默认使用 VM <code>MBeanServer</code> 。如果一切都失败了，则创建一个新的 <code>MBeanServer</code> 。</p>
+<p translation-result="on">如果你的平台提供标准 <code>MBeanServer</code> ，则 Spring Boot 将使用该标准并在必要时默认使用 VM <code>MBeanServer</code> 。如果一切都失败了，则创建一个新的 <code>MBeanServer</code> 。</p>
 <p translation-origin="off">If your platform provides a standard <code>MBeanServer</code>, Spring Boot uses that and defaults to the VM <code>MBeanServer</code>, if necessary.
 If all that fails, a new <code>MBeanServer</code> is created.</p>
 </div>
@@ -4309,7 +4309,7 @@ If all that fails, a new <code>MBeanServer</code> is created.</p>
 <p translation-origin="off">See the <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jmx/JmxAutoConfiguration.java"><code>JmxAutoConfiguration</code></a> class for more details.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，Spring Boot 还将管理端点公开为 <code>org.springframework.boot</code> 域下的 JMX MBean。要完全控制 JMX 域中的端点注册，请考虑注册您自己的 <code>EndpointObjectNameFactory</code> 实现。</p>
+<p translation-result="on">默认情况下，Spring Boot 还将管理端点公开为 <code>org.springframework.boot</code> 域下的 JMX MBean。要完全控制 JMX 域中的端点注册，请考虑注册你自己的 <code>EndpointObjectNameFactory</code> 实现。</p>
 <p translation-origin="off">By default, Spring Boot also exposes management endpoints as JMX MBeans under the <code>org.springframework.boot</code> domain.
 To take full control over endpoint registration in the JMX domain, consider registering your own <code>EndpointObjectNameFactory</code> implementation.</p>
 </div>
@@ -4322,12 +4322,12 @@ To take full control over endpoint registration in the JMX domain, consider regi
 For example, the <code>health</code> endpoint is exposed as <code>org.springframework.boot:type=Endpoint,name=Health</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您的应用程序包含多个 Spring <code>ApplicationContext</code> ，您可能会发现名称冲突。要解决此问题，您可以将 <code>spring.jmx.unique-names</code> 属性设置为 <code>true</code> ，以便 MBean 名称始终是唯一的。</p>
+<p translation-result="on">如果你的应用程序包含多个 Spring <code>ApplicationContext</code> ，你可能会发现名称冲突。要解决此问题，你可以将 <code>spring.jmx.unique-names</code> 属性设置为 <code>true</code> ，以便 MBean 名称始终是唯一的。</p>
 <p translation-origin="off">If your application contains more than one Spring <code>ApplicationContext</code>, you may find that names clash.
 To solve this problem, you can set the <code>spring.jmx.unique-names</code> property to <code>true</code> so that MBean names are always unique.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您还可以自定义在其下公开端点的 JMX 域。以下设置显示了在 <code>application.properties</code> 中执行此操作的示例：</p>
+<p translation-result="on">你还可以自定义在其下公开端点的 JMX 域。以下设置显示了在 <code>application.properties</code> 中执行此操作的示例：</p>
 <p translation-origin="off">You can also customize the JMX domain under which endpoints are exposed.
 The following settings show an example of doing so in <code>application.properties</code>:</p>
 </div>
@@ -4356,7 +4356,7 @@ management:
 <h3 id="actuator.jmx.disable-jmx-endpoints" translation-result="on"><a href="actuator.html#actuator.jmx.disable-jmx-endpoints"></a>4.2. 禁用 JMX 端点</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.jmx.disable-jmx-endpoints"></a>4.2. Disabling JMX Endpoints</h3>
 <div class="paragraph">
-<p translation-result="on">如果您不想通过 JMX 公开端点，可以将 <code>management.endpoints.jmx.exposure.exclude</code> 属性设置为 <code>*</code> ，如以下示例所示：</p>
+<p translation-result="on">如果你不想通过 JMX 公开端点，可以将 <code>management.endpoints.jmx.exposure.exclude</code> 属性设置为 <code>*</code> ，如以下示例所示：</p>
 <p translation-origin="off">If you do not want to expose endpoints over JMX, you can set the <code>management.endpoints.jmx.exposure.exclude</code> property to <code>*</code>, as the following example shows:</p>
 </div>
 <div class="listingblock primary">
@@ -4381,7 +4381,7 @@ management:
 <h3 id="actuator.jmx.jolokia" translation-result="on"><a href="actuator.html#actuator.jmx.jolokia"></a>4.3. 将 Jolokia 用于基于 HTTP 的 JMX</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.jmx.jolokia"></a>4.3. Using Jolokia for JMX over HTTP</h3>
 <div class="paragraph">
-<p translation-result="on">Jolokia 是一个 JMX-HTTP 桥，它提供了另一种访问 JMX bean 的方法。要使用 Jolokia，请包含对 <code>org.jolokia:jolokia-core</code> 的依赖项。例如，使用 Maven，您将添加以下依赖项：</p>
+<p translation-result="on">Jolokia 是一个 JMX-HTTP 桥，它提供了另一种访问 JMX bean 的方法。要使用 Jolokia，请包含对 <code>org.jolokia:jolokia-core</code> 的依赖项。例如，使用 Maven，你将添加以下依赖项：</p>
 <p translation-origin="off">Jolokia is a JMX-HTTP bridge that provides an alternative method of accessing JMX beans.
 To use Jolokia, include a dependency to <code>org.jolokia:jolokia-core</code>.
 For example, with Maven, you would add the following dependency:</p>
@@ -4395,7 +4395,7 @@ For example, with Maven, you would add the following dependency:</p>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">然后，您可以通过将 <code>jolokia</code> 或 <code>*</code> 添加到 <code>management.endpoints.web.exposure.include</code> 属性来公开 Jolokia 端点。然后，您可以在管理 HTTP 服务器上使用 <code>/actuator/jolokia</code> 访问它。</p>
+<p translation-result="on">然后，你可以通过将 <code>jolokia</code> 或 <code>*</code> 添加到 <code>management.endpoints.web.exposure.include</code> 属性来公开 Jolokia 端点。然后，你可以在管理 HTTP 服务器上使用 <code>/actuator/jolokia</code> 访问它。</p>
 <p translation-origin="off">You can then expose the Jolokia endpoint by adding <code>jolokia</code> or <code>*</code> to the <code>management.endpoints.web.exposure.include</code> property.
 You can then access it by using <code>/actuator/jolokia</code> on your management HTTP server.</p>
 </div>
@@ -4418,7 +4418,7 @@ The endpoint is not available in a WebFlux application.</p>
 <h4 id="actuator.jmx.jolokia.customizing" translation-result="on"><a href="actuator.html#actuator.jmx.jolokia.customizing"></a>4.3.1. 自定义 Jolokia</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.jmx.jolokia.customizing"></a>4.3.1. Customizing Jolokia</h4>
 <div class="paragraph">
-<p translation-result="on">Jolokia 有许多设置，您通常可以通过设置 servlet 参数来配置这些设置。使用 Spring Boot，您可以使用 <code>application.properties</code> 文件。为此，请在参数前面加上 <code>management.endpoint.jolokia.config.</code> ，如以下示例所示：</p>
+<p translation-result="on">Jolokia 有许多设置，你通常可以通过设置 servlet 参数来配置这些设置。使用 Spring Boot，你可以使用 <code>application.properties</code> 文件。为此，请在参数前面加上 <code>management.endpoint.jolokia.config.</code> ，如以下示例所示：</p>
 <p translation-origin="off">Jolokia has a number of settings that you would traditionally configure by setting servlet parameters.
 With Spring Boot, you can use your <code>application.properties</code> file.
 To do so, prefix the parameter with <code>management.endpoint.jolokia.config.</code>, as the following example shows:</p>
@@ -4445,7 +4445,7 @@ To do so, prefix the parameter with <code>management.endpoint.jolokia.config.</c
 <h4 id="actuator.jmx.jolokia.disabling" translation-result="on"><a href="actuator.html#actuator.jmx.jolokia.disabling"></a>4.3.2. 禁用 Jolokia</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.jmx.jolokia.disabling"></a>4.3.2. Disabling Jolokia</h4>
 <div class="paragraph">
-<p translation-result="on">如果您使用 Jolokia 但不想让 Spring Boot 配置它，请将 <code>management.endpoint.jolokia.enabled</code> 属性设置为 <code>false</code> ，如下所示：</p>
+<p translation-result="on">如果你使用 Jolokia 但不想让 Spring Boot 配置它，请将 <code>management.endpoint.jolokia.enabled</code> 属性设置为 <code>false</code> ，如下所示：</p>
 <p translation-origin="off">If you use Jolokia but do not want Spring Boot to configure it, set the <code>management.endpoint.jolokia.enabled</code> property to <code>false</code>, as follows:</p>
 </div>
 <div class="listingblock primary">
@@ -4473,7 +4473,7 @@ To do so, prefix the parameter with <code>management.endpoint.jolokia.config.</c
 <h2 translation-origin="off"><a class="anchor" href="actuator.html#actuator.loggers"></a>5. Loggers</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot Actuator 包括在运行时查看和配置应用程序日志级别的能力。您可以查看整个列表或单个记录器的配置，该配置由显式配置的日志记录级别以及日志记录框架赋予它的有效日志记录级别组成。这些级别可以是以下之一：</p>
+<p translation-result="on">Spring Boot Actuator 包括在运行时查看和配置应用程序日志级别的能力。你可以查看整个列表或单个记录器的配置，该配置由显式配置的日志记录级别以及日志记录框架赋予它的有效日志记录级别组成。这些级别可以是以下之一：</p>
 <p translation-origin="off">Spring Boot Actuator includes the ability to view and configure the log levels of your application at runtime.
 You can view either the entire list or an individual logger’s configuration, which is made up of both the explicitly configured logging level as well as the effective logging level given to it by the logging framework.
 These levels can be one of:</p>
@@ -4531,7 +4531,7 @@ These levels can be one of:</p>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">要“重置”记录器的特定级别（并改用默认配置），您可以将 <code>null</code> 作为已 <code>configuredLevel</code> 级别传递。</p>
+<p translation-result="on">要“重置”记录器的特定级别（并改用默认配置），你可以将 <code>null</code> 作为已 <code>configuredLevel</code> 级别传递。</p>
 <p translation-origin="off">To “reset” the specific level of the logger (and use the default configuration instead), you can pass a value of <code>null</code> as the <code>configuredLevel</code>.</p>
 </td>
 </tr>
@@ -4645,7 +4645,7 @@ These levels can be one of:</p>
 Having a dependency on <code>micrometer-registry-{system}</code> in your runtime classpath is enough for Spring Boot to configure the registry.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">大多数注册中心都有共同的特征。例如，即使 Micrometer 注册表实现在类路径上，您也可以禁用特定注册表。以下示例禁用 Datadog：</p>
+<p translation-result="on">大多数注册中心都有共同的特征。例如，即使 Micrometer 注册表实现在类路径上，你也可以禁用特定注册表。以下示例禁用 Datadog：</p>
 <p translation-origin="off">Most registries share common features.
 For instance, you can disable a particular registry even if the Micrometer registry implementation is on the classpath.
 The following example disables Datadog:</p>
@@ -4668,7 +4668,7 @@ The following example disables Datadog:</p>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">除非特定于注册表的属性另有说明，否则您还可以禁用所有注册表，如以下示例所示：</p>
+<p translation-result="on">除非特定于注册表的属性另有说明，否则你还可以禁用所有注册表，如以下示例所示：</p>
 <p translation-origin="off">You can also disable all registries unless stated otherwise by the registry-specific property, as the following example shows:</p>
 </div>
 <div class="listingblock primary">
@@ -4689,7 +4689,7 @@ The following example disables Datadog:</p>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 还将任何自动配置的注册表添加到 <code>Metrics</code> 类上的全局静态复合注册表中，除非您明确告诉它不要：</p>
+<p translation-result="on">Spring Boot 还将任何自动配置的注册表添加到 <code>Metrics</code> 类上的全局静态复合注册表中，除非你明确告诉它不要：</p>
 <p translation-origin="off">Spring Boot also adds any auto-configured registries to the global static composite registry on the <code>Metrics</code> class, unless you explicitly tell it not to:</p>
 </div>
 <div class="listingblock primary">
@@ -4708,7 +4708,7 @@ The following example disables Datadog:</p>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以注册任意数量的 <code>MeterRegistryCustomizer</code> bean 以进一步配置注册表，例如在向注册表注册任何仪表之前应用公共标记：</p>
+<p translation-result="on">你可以注册任意数量的 <code>MeterRegistryCustomizer</code> bean 以进一步配置注册表，例如在向注册表注册任何仪表之前应用公共标记：</p>
 <p translation-origin="off">You can register any number of <code>MeterRegistryCustomizer</code> beans to further configure the registry, such as applying common tags, before any meters are registered with the registry:</p>
 </div>
 <div class="listingblock">
@@ -4732,7 +4732,7 @@ public class MyMeterRegistryConfiguration {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以通过更具体地了解泛型类型来将自定义应用于特定的注册表实现：</p>
+<p translation-result="on">你可以通过更具体地了解泛型类型来将自定义应用于特定的注册表实现：</p>
 <p translation-origin="off">You can apply customizations to particular registry implementations by being more specific about the generic type:</p>
 </div>
 <div class="listingblock">
@@ -4762,7 +4762,7 @@ public class MyMeterRegistryConfiguration {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 还<a href="actuator.html#actuator.metrics.supported">配置了您可以通过配置或专用注释标记控制的内置检测</a>。</p>
+<p translation-result="on">Spring Boot 还<a href="actuator.html#actuator.metrics.supported">配置了你可以通过配置或专用注释标记控制的内置检测</a>。</p>
 <p translation-origin="off">Spring Boot also <a href="actuator.html#actuator.metrics.supported">configures built-in instrumentation</a> that you can control through configuration or dedicated annotation markers.</p>
 </div>
 </div>
@@ -4777,7 +4777,7 @@ public class MyMeterRegistryConfiguration {
 <h4 id="actuator.metrics.export.appoptics" translation-result="on"><a href="actuator.html#actuator.metrics.export.appoptics"></a>6.2.1. 应用光学</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.appoptics"></a>6.2.1. AppOptics</h4>
 <div class="paragraph">
-<p translation-result="on">默认情况下，AppOptics 注册表会定期将指标推送到 <code>api.appoptics.com/v1/measurements</code> 。要将指标导出到 SaaS <a href="https://micrometer.io/docs/registry/appOptics">AppOptics</a> ，必须提供您的 API 令牌：</p>
+<p translation-result="on">默认情况下，AppOptics 注册表会定期将指标推送到 <code>api.appoptics.com/v1/measurements</code> 。要将指标导出到 SaaS <a href="https://micrometer.io/docs/registry/appOptics">AppOptics</a> ，必须提供你的 API 令牌：</p>
 <p translation-origin="off">By default, the AppOptics registry periodically pushes metrics to <code><a href="https://api.appoptics.com/v1/measurements" class="bare">api.appoptics.com/v1/measurements</a></code>.
 To export metrics to SaaS <a href="https://micrometer.io/docs/registry/appOptics">AppOptics</a>, your API token must be provided:</p>
 </div>
@@ -4803,7 +4803,7 @@ To export metrics to SaaS <a href="https://micrometer.io/docs/registry/appOptics
 <h4 id="actuator.metrics.export.atlas" translation-result="on"><a href="actuator.html#actuator.metrics.export.atlas"></a>6.2.2. 阿特拉斯</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.atlas"></a>6.2.2. Atlas</h4>
 <div class="paragraph">
-<p translation-result="on">默认情况下，指标会导出到在本地计算机上运行的 <a href="https://micrometer.io/docs/registry/atlas">Atlas</a> 。您可以提供 <a href="https://github.com/Netflix/atlas">Atlas 服务器</a>的位置：</p>
+<p translation-result="on">默认情况下，指标会导出到在本地计算机上运行的 <a href="https://micrometer.io/docs/registry/atlas">Atlas</a> 。你可以提供 <a href="https://github.com/Netflix/atlas">Atlas 服务器</a>的位置：</p>
 <p translation-origin="off">By default, metrics are exported to <a href="https://micrometer.io/docs/registry/atlas">Atlas</a> running on your local machine.
 You can provide the location of the <a href="https://github.com/Netflix/atlas">Atlas server</a>:</p>
 </div>
@@ -4829,7 +4829,7 @@ You can provide the location of the <a href="https://github.com/Netflix/atlas">A
 <h4 id="actuator.metrics.export.datadog" translation-result="on"><a href="actuator.html#actuator.metrics.export.datadog"></a>6.2.3. 数据狗</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.datadog"></a>6.2.3. Datadog</h4>
 <div class="paragraph">
-<p translation-result="on">Datadog 注册表会定期将指标推送到 <a href="https://www.datadoghq.com">datadoghq</a> 。要将指标导出到 <a href="https://micrometer.io/docs/registry/datadog">Datadog</a> ，您必须提供您的 API 密钥：</p>
+<p translation-result="on">Datadog 注册表会定期将指标推送到 <a href="https://www.datadoghq.com">datadoghq</a> 。要将指标导出到 <a href="https://micrometer.io/docs/registry/datadog">Datadog</a> ，你必须提供你的 API 密钥：</p>
 <p translation-origin="off">A Datadog registry periodically pushes metrics to <a href="https://www.datadoghq.com">datadoghq</a>.
 To export metrics to <a href="https://micrometer.io/docs/registry/datadog">Datadog</a>, you must provide your API key:</p>
 </div>
@@ -4851,7 +4851,7 @@ To export metrics to <a href="https://micrometer.io/docs/registry/datadog">Datad
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您还可以更改将指标发送到 Datadog 的时间间隔：</p>
+<p translation-result="on">你还可以更改将指标发送到 Datadog 的时间间隔：</p>
 <p translation-origin="off">You can also change the interval at which metrics are sent to Datadog:</p>
 </div>
 <div class="listingblock primary">
@@ -4888,7 +4888,7 @@ Otherwise, <code>v2</code> is assumed.</p>
 <h5 id="actuator.metrics.export.dynatrace.v2-api" translation-result="on"><a href="actuator.html#actuator.metrics.export.dynatrace.v2-api"></a>v2 API</h5>
 <h5 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.dynatrace.v2-api"></a>v2 API</h5>
 <div class="paragraph">
-<p translation-result="on">您可以通过两种方式使用 v2 API。</p>
+<p translation-result="on">你可以通过两种方式使用 v2 API。</p>
 <p translation-origin="off">You can use the v2 API in two ways.</p>
 </div>
 <div class="paragraph">
@@ -4898,14 +4898,14 @@ The ingest endpoint forwards the metrics to the Dynatrace backend.
 This is the default behavior and requires no special setup beyond a dependency on <code>io.micrometer:micrometer-registry-dynatrace</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果没有本地 OneAgent 正在运行，则需要 <a href="https://www.dynatrace.com/support/help/dynatrace-api/environment-api/metric-v2/post-ingest-metrics/">Metrics v2 API</a> 的端点和 API 令牌。<a href="https://www.dynatrace.com/support/help/dynatrace-api/basics/dynatrace-api-authentication/">API 令牌</a>必须具有“摄取指标”( <code>metrics.ingest</code> ) 权限集。我们建议将令牌的范围限制为这一权限。您必须确保端点 URI 包含路径（例如 <code>/api/v2/metrics/ingest</code> ）：</p>
+<p translation-result="on">如果没有本地 OneAgent 正在运行，则需要 <a href="https://www.dynatrace.com/support/help/dynatrace-api/environment-api/metric-v2/post-ingest-metrics/">Metrics v2 API</a> 的端点和 API 令牌。<a href="https://www.dynatrace.com/support/help/dynatrace-api/basics/dynatrace-api-authentication/">API 令牌</a>必须具有“摄取指标”( <code>metrics.ingest</code> ) 权限集。我们建议将令牌的范围限制为这一权限。你必须确保端点 URI 包含路径（例如 <code>/api/v2/metrics/ingest</code> ）：</p>
 <p translation-origin="off">If no local OneAgent is running, the endpoint of the <a href="https://www.dynatrace.com/support/help/dynatrace-api/environment-api/metric-v2/post-ingest-metrics/">Metrics v2 API</a> and an API token are required.
 The <a href="https://www.dynatrace.com/support/help/dynatrace-api/basics/dynatrace-api-authentication/">API token</a> must have the “Ingest metrics” (<code>metrics.ingest</code>) permission set.
 We recommend limiting the scope of the token to this one permission.
 You must ensure that the endpoint URI contains the path (for example, <code>/api/v2/metrics/ingest</code>):</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Metrics API v2 摄取端点的 URL 根据您的部署选项而有所不同：</p>
+<p translation-result="on">Metrics API v2 摄取端点的 URL 根据你的部署选项而有所不同：</p>
 <p translation-origin="off">The URL of the Metrics API v2 ingest endpoint is different according to your deployment option:</p>
 </div>
 <div class="ulist">
@@ -5000,7 +5000,7 @@ management.metrics.export.dynatrace.v2.default-dimensions.key2=value2</code></pr
 <h5 id="actuator.metrics.export.dynatrace.v1-api" translation-result="on"><a href="actuator.html#actuator.metrics.export.dynatrace.v1-api"></a>v1 API（旧版）</h5>
 <h5 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.dynatrace.v1-api"></a>v1 API (Legacy)</h5>
 <div class="paragraph">
-<p translation-result="on">Dynatrace v1 API 指标注册表使用 <a href="https://www.dynatrace.com/support/help/dynatrace-api/environment-api/metric-v1/">Timeseries v1 API</a> 定期将指标推送到配置的 URI。为了与现有设置向后兼容，当设置了 <code>device-id</code> （v1 需要，但在 v2 中未使用）时，指标将导出到 Timeseries v1 端点。要将指标导出到 <a href="https://micrometer.io/docs/registry/dynatrace">Dynatrace</a> ，必须提供您的 API 令牌、设备 ID 和 URI：</p>
+<p translation-result="on">Dynatrace v1 API 指标注册表使用 <a href="https://www.dynatrace.com/support/help/dynatrace-api/environment-api/metric-v1/">Timeseries v1 API</a> 定期将指标推送到配置的 URI。为了与现有设置向后兼容，当设置了 <code>device-id</code> （v1 需要，但在 v2 中未使用）时，指标将导出到 Timeseries v1 端点。要将指标导出到 <a href="https://micrometer.io/docs/registry/dynatrace">Dynatrace</a> ，必须提供你的 API 令牌、设备 ID 和 URI：</p>
 <p translation-origin="off">The Dynatrace v1 API metrics registry pushes metrics to the configured URI periodically by using the <a href="https://www.dynatrace.com/support/help/dynatrace-api/environment-api/metric-v1/">Timeseries v1 API</a>.
 For backwards-compatibility with existing setups, when <code>device-id</code> is set (required for v1, but not used in v2), metrics are exported to the Timeseries v1 endpoint.
 To export metrics to <a href="https://micrometer.io/docs/registry/dynatrace">Dynatrace</a>, your API token, device ID, and URI must be provided:</p>
@@ -5028,7 +5028,7 @@ management.metrics.export.dynatrace.v1.device-id=YOUR_DEVICE_ID</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">对于 v1 API，您必须指定不带路径的基本环境 URI，因为 v1 端点路径是自动添加的。</p>
+<p translation-result="on">对于 v1 API，你必须指定不带路径的基本环境 URI，因为 v1 端点路径是自动添加的。</p>
 <p translation-origin="off">For the v1 API, you must specify the base environment URI without a path, as the v1 endpoint path is added automatically.</p>
 </div>
 </div>
@@ -5036,7 +5036,7 @@ management.metrics.export.dynatrace.v1.device-id=YOUR_DEVICE_ID</code></pre>
 <h5 id="actuator.metrics.export.dynatrace.version-independent-settings" translation-result="on"><a href="actuator.html#actuator.metrics.export.dynatrace.version-independent-settings"></a>与版本无关的设置</h5>
 <h5 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.dynatrace.version-independent-settings"></a>Version-independent Settings</h5>
 <div class="paragraph">
-<p translation-result="on">除了 API 端点和令牌之外，您还可以更改将指标发送到 Dynatrace 的时间间隔。默认导出间隔为 <code>60s</code> 。以下示例将导出间隔设置为 30 秒：</p>
+<p translation-result="on">除了 API 端点和令牌之外，你还可以更改将指标发送到 Dynatrace 的时间间隔。默认导出间隔为 <code>60s</code> 。以下示例将导出间隔设置为 30 秒：</p>
 <p translation-origin="off">In addition to the API endpoint and token, you can also change the interval at which metrics are sent to Dynatrace.
 The default export interval is <code>60s</code>.
 The following example sets the export interval to 30 seconds:</p>
@@ -5059,7 +5059,7 @@ The following example sets the export interval to 30 seconds:</p>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以在 <a href="https://micrometer.io/docs/registry/dynatrace">Micrometer 文档</a>中找到有关如何为 Micrometer 设置 Dynatrace 导出器的更多信息。</p>
+<p translation-result="on">你可以在 <a href="https://micrometer.io/docs/registry/dynatrace">Micrometer 文档</a>中找到有关如何为 Micrometer 设置 Dynatrace 导出器的更多信息。</p>
 <p translation-origin="off">You can find more information on how to set up the Dynatrace exporter for Micrometer in <a href="https://micrometer.io/docs/registry/dynatrace">the Micrometer documentation</a>.</p>
 </div>
 </div>
@@ -5068,7 +5068,7 @@ The following example sets the export interval to 30 seconds:</p>
 <h4 id="actuator.metrics.export.elastic" translation-result="on"><a href="actuator.html#actuator.metrics.export.elastic"></a>6.2.5. 松紧带</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.elastic"></a>6.2.5. Elastic</h4>
 <div class="paragraph">
-<p translation-result="on">默认情况下，指标会导出到本地机器上运行的 <a href="https://micrometer.io/docs/registry/elastic">Elastic</a> 。您可以使用以下属性提供要使用的 Elastic 服务器的位置：</p>
+<p translation-result="on">默认情况下，指标会导出到本地机器上运行的 <a href="https://micrometer.io/docs/registry/elastic">Elastic</a> 。你可以使用以下属性提供要使用的 Elastic 服务器的位置：</p>
 <p translation-origin="off">By default, metrics are exported to <a href="https://micrometer.io/docs/registry/elastic">Elastic</a> running on your local machine.
 You can provide the location of the Elastic server to use by using the following property:</p>
 </div>
@@ -5094,7 +5094,7 @@ You can provide the location of the Elastic server to use by using the following
 <h4 id="actuator.metrics.export.ganglia" translation-result="on"><a href="actuator.html#actuator.metrics.export.ganglia"></a>6.2.6. 神经节</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.ganglia"></a>6.2.6. Ganglia</h4>
 <div class="paragraph">
-<p translation-result="on">默认情况下，指标会导出到本地机器上运行的 <a href="https://micrometer.io/docs/registry/ganglia">Ganglia</a> 。您可以提供 <a href="http://ganglia.sourceforge.net">Ganglia 服务器</a>主机和端口，如以下示例所示：</p>
+<p translation-result="on">默认情况下，指标会导出到本地机器上运行的 <a href="https://micrometer.io/docs/registry/ganglia">Ganglia</a> 。你可以提供 <a href="http://ganglia.sourceforge.net">Ganglia 服务器</a>主机和端口，如以下示例所示：</p>
 <p translation-origin="off">By default, metrics are exported to <a href="https://micrometer.io/docs/registry/ganglia">Ganglia</a> running on your local machine.
 You can provide the <a href="http://ganglia.sourceforge.net">Ganglia server</a> host and port, as the following example shows:</p>
 </div>
@@ -5122,7 +5122,7 @@ management.metrics.export.ganglia.port=9649</code></pre>
 <h4 id="actuator.metrics.export.graphite" translation-result="on"><a href="actuator.html#actuator.metrics.export.graphite"></a>6.2.7. 石墨</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.graphite"></a>6.2.7. Graphite</h4>
 <div class="paragraph">
-<p translation-result="on">默认情况下，指标会导出到本地计算机上运行的 <a href="https://micrometer.io/docs/registry/graphite">Graphite</a> 。您可以提供 <a href="https://graphiteapp.org">Graphite 服务器</a>主机和端口，如以下示例所示：</p>
+<p translation-result="on">默认情况下，指标会导出到本地计算机上运行的 <a href="https://micrometer.io/docs/registry/graphite">Graphite</a> 。你可以提供 <a href="https://graphiteapp.org">Graphite 服务器</a>主机和端口，如以下示例所示：</p>
 <p translation-origin="off">By default, metrics are exported to <a href="https://micrometer.io/docs/registry/graphite">Graphite</a> running on your local machine.
 You can provide the <a href="https://graphiteapp.org">Graphite server</a> host and port, as the following example shows:</p>
 </div>
@@ -5157,7 +5157,7 @@ management.metrics.export.graphite.port=9004</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">要控制此行为，请定义您的 <code>GraphiteMeterRegistry</code> 并提供您自己的 <code>HierarchicalNameMapper</code> 。除非您定义自己的，否则会提供自动配置的 <code>GraphiteConfig</code> 和 <code>Clock</code> bean：</p>
+<p translation-result="on">要控制此行为，请定义你的 <code>GraphiteMeterRegistry</code> 并提供你自己的 <code>HierarchicalNameMapper</code> 。除非你定义自己的，否则会提供自动配置的 <code>GraphiteConfig</code> 和 <code>Clock</code> bean：</p>
 <p translation-origin="off">To take control over this behavior, define your <code>GraphiteMeterRegistry</code> and supply your own <code>HierarchicalNameMapper</code>.
 An auto-configured <code>GraphiteConfig</code> and <code>Clock</code> beans are provided unless you define your own:</p>
 </div>
@@ -5198,7 +5198,7 @@ public class MyGraphiteConfiguration {
 <h4 id="actuator.metrics.export.humio" translation-result="on"><a href="actuator.html#actuator.metrics.export.humio"></a>6.2.8. 胡米奥</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.humio"></a>6.2.8. Humio</h4>
 <div class="paragraph">
-<p translation-result="on">默认情况下，Humio 注册表会定期将指标推送到 <a href="https://cloud.humio.com">cloud.humio.com</a> 。要将指标导出到 SaaS <a href="https://micrometer.io/docs/registry/humio">Humio</a> ，您必须提供您的 API 令牌：</p>
+<p translation-result="on">默认情况下，Humio 注册表会定期将指标推送到 <a href="https://cloud.humio.com">cloud.humio.com</a> 。要将指标导出到 SaaS <a href="https://micrometer.io/docs/registry/humio">Humio</a> ，你必须提供你的 API 令牌：</p>
 <p translation-origin="off">By default, the Humio registry periodically pushes metrics to <a href="https://cloud.humio.com" class="bare">cloud.humio.com</a>.
 To export metrics to SaaS <a href="https://micrometer.io/docs/registry/humio">Humio</a>, you must provide your API token:</p>
 </div>
@@ -5220,7 +5220,7 @@ To export metrics to SaaS <a href="https://micrometer.io/docs/registry/humio">Hu
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您还应该配置一个或多个标签来识别指标推送到的数据源：</p>
+<p translation-result="on">你还应该配置一个或多个标签来识别指标推送到的数据源：</p>
 <p translation-origin="off">You should also configure one or more tags to identify the data source to which metrics are pushed:</p>
 </div>
 <div class="listingblock primary">
@@ -5248,7 +5248,7 @@ management.metrics.export.humio.tags.bravo=b</code></pre>
 <h4 id="actuator.metrics.export.influx" translation-result="on"><a href="actuator.html#actuator.metrics.export.influx"></a>6.2.9. 涌入</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.influx"></a>6.2.9. Influx</h4>
 <div class="paragraph">
-<p translation-result="on">默认情况下，指标会导出到使用默认配置在本地计算机上运行的 <a href="https://micrometer.io/docs/registry/influx">Influx</a> v1 实例。要将指标导出到 InfluxDB v2，请配置 <code>org</code> 、 <code>bucket</code> 和 authentication <code>token</code> 以编写指标。您可以使用以下命令提供要使用的 <a href="https://www.influxdata.com">Influx 服务器</a>的位置：</p>
+<p translation-result="on">默认情况下，指标会导出到使用默认配置在本地计算机上运行的 <a href="https://micrometer.io/docs/registry/influx">Influx</a> v1 实例。要将指标导出到 InfluxDB v2，请配置 <code>org</code> 、 <code>bucket</code> 和 authentication <code>token</code> 以编写指标。你可以使用以下命令提供要使用的 <a href="https://www.influxdata.com">Influx 服务器</a>的位置：</p>
 <p translation-origin="off">By default, metrics are exported to an <a href="https://micrometer.io/docs/registry/influx">Influx</a> v1 instance running on your local machine with the default configuration.
 To export metrics to InfluxDB v2, configure the <code>org</code>, <code>bucket</code>, and authentication <code>token</code> for writing metrics.
 You can provide the location of the <a href="https://www.influxdata.com">Influx server</a> to use by using:</p>
@@ -5275,7 +5275,7 @@ You can provide the location of the <a href="https://www.influxdata.com">Influx 
 <h4 id="actuator.metrics.export.jmx" translation-result="on"><a href="actuator.html#actuator.metrics.export.jmx"></a>6.2.10.JMX</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.jmx"></a>6.2.10. JMX</h4>
 <div class="paragraph">
-<p translation-result="on">Micrometer 提供到 <a href="https://micrometer.io/docs/registry/jmx">JMX</a> 的分层映射，主要是作为一种在本地查看指标的廉价且可移植的方式。默认情况下，指标会导出到 <code>metrics</code> JMX 域。您可以使用以下方式提供要使用的域：</p>
+<p translation-result="on">Micrometer 提供到 <a href="https://micrometer.io/docs/registry/jmx">JMX</a> 的分层映射，主要是作为一种在本地查看指标的廉价且可移植的方式。默认情况下，指标会导出到 <code>metrics</code> JMX 域。你可以使用以下方式提供要使用的域：</p>
 <p translation-origin="off">Micrometer provides a hierarchical mapping to <a href="https://micrometer.io/docs/registry/jmx">JMX</a>, primarily as a cheap and portable way to view metrics locally.
 By default, metrics are exported to the <code>metrics</code> JMX domain.
 You can provide the domain to use by using:</p>
@@ -5309,7 +5309,7 @@ You can provide the domain to use by using:</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">要控制此行为，请定义您的 <code>JmxMeterRegistry</code> 并提供您自己的 <code>HierarchicalNameMapper</code> 。除非您定义自己的，否则会提供自动配置的 <code>JmxConfig</code> 和 <code>Clock</code> bean：</p>
+<p translation-result="on">要控制此行为，请定义你的 <code>JmxMeterRegistry</code> 并提供你自己的 <code>HierarchicalNameMapper</code> 。除非你定义自己的，否则会提供自动配置的 <code>JmxConfig</code> 和 <code>Clock</code> bean：</p>
 <p translation-origin="off">To take control over this behavior, define your <code>JmxMeterRegistry</code> and supply your own <code>HierarchicalNameMapper</code>.
 An auto-configured <code>JmxConfig</code> and <code>Clock</code> beans are provided unless you define your own:</p>
 </div>
@@ -5350,7 +5350,7 @@ public class MyJmxConfiguration {
 <h4 id="actuator.metrics.export.kairos" translation-result="on"><a href="actuator.html#actuator.metrics.export.kairos"></a>6.2.11. 凯罗斯数据库</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.kairos"></a>6.2.11. KairosDB</h4>
 <div class="paragraph">
-<p translation-result="on">默认情况下，指标会导出到本地计算机上运行的 <a href="https://micrometer.io/docs/registry/kairos">KairosDB</a> 。您可以使用以下方法提供 <a href="https://kairosdb.github.io/">KairosDB 服务器</a>的位置以使用：</p>
+<p translation-result="on">默认情况下，指标会导出到本地计算机上运行的 <a href="https://micrometer.io/docs/registry/kairos">KairosDB</a> 。你可以使用以下方法提供 <a href="https://kairosdb.github.io/">KairosDB 服务器</a>的位置以使用：</p>
 <p translation-origin="off">By default, metrics are exported to <a href="https://micrometer.io/docs/registry/kairos">KairosDB</a> running on your local machine.
 You can provide the location of the <a href="https://kairosdb.github.io/">KairosDB server</a> to use by using:</p>
 </div>
@@ -5376,7 +5376,7 @@ You can provide the location of the <a href="https://kairosdb.github.io/">Kairos
 <h4 id="actuator.metrics.export.newrelic" translation-result="on"><a href="actuator.html#actuator.metrics.export.newrelic"></a>6.2.12. 新遗物</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.newrelic"></a>6.2.12. New Relic</h4>
 <div class="paragraph">
-<p translation-result="on">New Relic 注册表会定期将指标推送到 <a href="https://micrometer.io/docs/registry/new-relic">New Relic</a> 。要将指标导出到 <a href="https://newrelic.com">New Relic</a> ，您必须提供您的 API 密钥和帐户 ID：</p>
+<p translation-result="on">New Relic 注册表会定期将指标推送到 <a href="https://micrometer.io/docs/registry/new-relic">New Relic</a> 。要将指标导出到 <a href="https://newrelic.com">New Relic</a> ，你必须提供你的 API 密钥和帐户 ID：</p>
 <p translation-origin="off">A New Relic registry periodically pushes metrics to <a href="https://micrometer.io/docs/registry/new-relic">New Relic</a>.
 To export metrics to <a href="https://newrelic.com">New Relic</a>, you must provide your API key and account ID:</p>
 </div>
@@ -5400,7 +5400,7 @@ management.metrics.export.newrelic.account-id=YOUR_ACCOUNT_ID</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您还可以更改将指标发送到 New Relic 的时间间隔：</p>
+<p translation-result="on">你还可以更改将指标发送到 New Relic 的时间间隔：</p>
 <p translation-origin="off">You can also change the interval at which metrics are sent to New Relic:</p>
 </div>
 <div class="listingblock primary">
@@ -5421,7 +5421,7 @@ management.metrics.export.newrelic.account-id=YOUR_ACCOUNT_ID</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，指标是通过 REST 调用发布的，但如果您在类路径中有 Java 代理 API，您也可以使用它：</p>
+<p translation-result="on">默认情况下，指标是通过 REST 调用发布的，但如果你在类路径中有 Java 代理 API，你也可以使用它：</p>
 <p translation-origin="off">By default, metrics are published through REST calls, but you can also use the Java Agent API if you have it on the classpath:</p>
 </div>
 <div class="listingblock primary">
@@ -5442,7 +5442,7 @@ management.metrics.export.newrelic.account-id=YOUR_ACCOUNT_ID</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">最后，您可以通过定义自己的 <code>NewRelicClientProvider</code> bean 来完全控制。</p>
+<p translation-result="on">最后，你可以通过定义自己的 <code>NewRelicClientProvider</code> bean 来完全控制。</p>
 <p translation-origin="off">Finally, you can take full control by defining your own <code>NewRelicClientProvider</code> bean.</p>
 </div>
 </div>
@@ -5481,7 +5481,7 @@ Spring Boot provides an actuator endpoint at <code>/actuator/prometheus</code> t
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">对于可能存在时间不够长而无法被抓取的临时或批处理作业，您可以使用 <a href="https://github.com/prometheus/pushgateway">Prometheus Pushgateway</a> 支持将指标公开给 Prometheus。要启用 Prometheus Pushgateway 支持，请将以下依赖项添加到您的项目中：</p>
+<p translation-result="on">对于可能存在时间不够长而无法被抓取的临时或批处理作业，你可以使用 <a href="https://github.com/prometheus/pushgateway">Prometheus Pushgateway</a> 支持将指标公开给 Prometheus。要启用 Prometheus Pushgateway 支持，请将以下依赖项添加到你的项目中：</p>
 <p translation-origin="off">For ephemeral or batch jobs that may not exist long enough to be scraped, you can use <a href="https://github.com/prometheus/pushgateway">Prometheus Pushgateway</a> support to expose the metrics to Prometheus.
 To enable Prometheus Pushgateway support, add the following dependency to your project:</p>
 </div>
@@ -5499,7 +5499,7 @@ To enable Prometheus Pushgateway support, add the following dependency to your p
 This manages the pushing of metrics to a Prometheus Pushgateway.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以使用 <code>management.metrics.export.prometheus.pushgateway</code> 下的属性来调整 <code>PrometheusPushGatewayManager</code> 。对于高级配置，您还可以提供自己的 <code>PrometheusPushGatewayManager</code> bean。</p>
+<p translation-result="on">你可以使用 <code>management.metrics.export.prometheus.pushgateway</code> 下的属性来调整 <code>PrometheusPushGatewayManager</code> 。对于高级配置，你还可以提供自己的 <code>PrometheusPushGatewayManager</code> bean。</p>
 <p translation-origin="off">You can tune the <code>PrometheusPushGatewayManager</code> by using properties under <code>management.metrics.export.prometheus.pushgateway</code>.
 For advanced configuration, you can also provide your own <code>PrometheusPushGatewayManager</code> bean.</p>
 </div>
@@ -5508,7 +5508,7 @@ For advanced configuration, you can also provide your own <code>PrometheusPushGa
 <h4 id="actuator.metrics.export.signalfx" translation-result="on"><a href="actuator.html#actuator.metrics.export.signalfx"></a>6.2.14. 信号效果</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.signalfx"></a>6.2.14. SignalFx</h4>
 <div class="paragraph">
-<p translation-result="on">SignalFx 注册表会定期将指标推送到 <a href="https://micrometer.io/docs/registry/signalFx">SignalFx</a> 。要将指标导出到 <a href="https://www.signalfx.com">SignalFx</a> ，您必须提供访问令牌：</p>
+<p translation-result="on">SignalFx 注册表会定期将指标推送到 <a href="https://micrometer.io/docs/registry/signalFx">SignalFx</a> 。要将指标导出到 <a href="https://www.signalfx.com">SignalFx</a> ，你必须提供访问令牌：</p>
 <p translation-origin="off">SignalFx registry periodically pushes metrics to <a href="https://micrometer.io/docs/registry/signalFx">SignalFx</a>.
 To export metrics to <a href="https://www.signalfx.com">SignalFx</a>, you must provide your access token:</p>
 </div>
@@ -5530,7 +5530,7 @@ To export metrics to <a href="https://www.signalfx.com">SignalFx</a>, you must p
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您还可以更改将指标发送到 SignalFx 的时间间隔：</p>
+<p translation-result="on">你还可以更改将指标发送到 SignalFx 的时间间隔：</p>
 <p translation-origin="off">You can also change the interval at which metrics are sent to SignalFx:</p>
 </div>
 <div class="listingblock primary">
@@ -5555,12 +5555,12 @@ To export metrics to <a href="https://www.signalfx.com">SignalFx</a>, you must p
 <h4 id="actuator.metrics.export.simple" translation-result="on"><a href="actuator.html#actuator.metrics.export.simple"></a>6.2.15. 简单的</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.simple"></a>6.2.15. Simple</h4>
 <div class="paragraph">
-<p translation-result="on">Micrometer 附带一个简单的内存后端，如果没有配置其他注册表，它会自动用作备用。这使您可以查看在 <a href="actuator.html#actuator.metrics.endpoint">metrics 端点</a>中收集了哪些指标。</p>
+<p translation-result="on">Micrometer 附带一个简单的内存后端，如果没有配置其他注册表，它会自动用作备用。这使你可以查看在 <a href="actuator.html#actuator.metrics.endpoint">metrics 端点</a>中收集了哪些指标。</p>
 <p translation-origin="off">Micrometer ships with a simple, in-memory backend that is automatically used as a fallback if no other registry is configured.
 This lets you see what metrics are collected in the <a href="actuator.html#actuator.metrics.endpoint">metrics endpoint</a>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">只要您使用任何其他可用的后端，内存中的后端就会自行禁用。您也可以显式禁用它：</p>
+<p translation-result="on">只要你使用任何其他可用的后端，内存中的后端就会自行禁用。你也可以显式禁用它：</p>
 <p translation-origin="off">The in-memory backend disables itself as soon as you use any other available backend.
 You can also disable it explicitly:</p>
 </div>
@@ -5586,7 +5586,7 @@ You can also disable it explicitly:</p>
 <h4 id="actuator.metrics.export.stackdriver" translation-result="on"><a href="actuator.html#actuator.metrics.export.stackdriver"></a>6.2.16. 堆栈驱动程序</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.stackdriver"></a>6.2.16. Stackdriver</h4>
 <div class="paragraph">
-<p translation-result="on">Stackdriver 注册表会定期将指标推送到 <a href="https://cloud.google.com/stackdriver/">Stackdriver</a> 。要将指标导出到 SaaS <a href="https://micrometer.io/docs/registry/stackdriver">Stackdriver</a> ，您必须提供您的 Google Cloud 项目 ID：</p>
+<p translation-result="on">Stackdriver 注册表会定期将指标推送到 <a href="https://cloud.google.com/stackdriver/">Stackdriver</a> 。要将指标导出到 SaaS <a href="https://micrometer.io/docs/registry/stackdriver">Stackdriver</a> ，你必须提供你的 Google Cloud 项目 ID：</p>
 <p translation-origin="off">The Stackdriver registry periodically pushes metrics to <a href="https://cloud.google.com/stackdriver/">Stackdriver</a>.
 To export metrics to SaaS <a href="https://micrometer.io/docs/registry/stackdriver">Stackdriver</a>, you must provide your Google Cloud project ID:</p>
 </div>
@@ -5608,7 +5608,7 @@ To export metrics to SaaS <a href="https://micrometer.io/docs/registry/stackdriv
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您还可以更改将指标发送到 Stackdriver 的时间间隔：</p>
+<p translation-result="on">你还可以更改将指标发送到 Stackdriver 的时间间隔：</p>
 <p translation-origin="off">You can also change the interval at which metrics are sent to Stackdriver:</p>
 </div>
 <div class="listingblock primary">
@@ -5633,7 +5633,7 @@ To export metrics to SaaS <a href="https://micrometer.io/docs/registry/stackdriv
 <h4 id="actuator.metrics.export.statsd" translation-result="on"><a href="actuator.html#actuator.metrics.export.statsd"></a>6.2.17. 统计数据</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.statsd"></a>6.2.17. StatsD</h4>
 <div class="paragraph">
-<p translation-result="on">StatsD 注册表通过 UDP 急切地将指标推送到 StatsD 代理。默认情况下，指标会导出到本地计算机上运行的 <a href="https://micrometer.io/docs/registry/statsD">StatsD</a> 代理。您可以通过以下方式提供要使用的 StatsD 代理主机、端口和协议：</p>
+<p translation-result="on">StatsD 注册表通过 UDP 急切地将指标推送到 StatsD 代理。默认情况下，指标会导出到本地计算机上运行的 <a href="https://micrometer.io/docs/registry/statsD">StatsD</a> 代理。你可以通过以下方式提供要使用的 StatsD 代理主机、端口和协议：</p>
 <p translation-origin="off">The StatsD registry eagerly pushes metrics over UDP to a StatsD agent.
 By default, metrics are exported to a <a href="https://micrometer.io/docs/registry/statsD">StatsD</a> agent running on your local machine.
 You can provide the StatsD agent host, port, and protocol to use by using:</p>
@@ -5660,7 +5660,7 @@ management.metrics.export.statsd.protocol=udp</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">您还可以更改要使用的 StatsD 线路协议（默认为 Datadog）：</p>
+<p translation-result="on">你还可以更改要使用的 StatsD 线路协议（默认为 Datadog）：</p>
 <p translation-origin="off">You can also change the StatsD line protocol to use (it defaults to Datadog):</p>
 </div>
 <div class="listingblock primary">
@@ -5685,7 +5685,7 @@ management.metrics.export.statsd.protocol=udp</code></pre>
 <h4 id="actuator.metrics.export.wavefront" translation-result="on"><a href="actuator.html#actuator.metrics.export.wavefront"></a>6.2.18. 波前</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.export.wavefront"></a>6.2.18. Wavefront</h4>
 <div class="paragraph">
-<p translation-result="on">Wavefront 注册表会定期将指标推送到 <a href="https://micrometer.io/docs/registry/wavefront">Wavefront</a> 。如果您将指标直接导出到 <a href="https://www.wavefront.com/">Wavefront</a> ，则必须提供您的 API 令牌：</p>
+<p translation-result="on">Wavefront 注册表会定期将指标推送到 <a href="https://micrometer.io/docs/registry/wavefront">Wavefront</a> 。如果你将指标直接导出到 <a href="https://www.wavefront.com/">Wavefront</a> ，则必须提供你的 API 令牌：</p>
 <p translation-origin="off">The Wavefront registry periodically pushes metrics to <a href="https://micrometer.io/docs/registry/wavefront">Wavefront</a>.
 If you are exporting metrics to <a href="https://www.wavefront.com/">Wavefront</a> directly, you must provide your API token:</p>
 </div>
@@ -5707,7 +5707,7 @@ If you are exporting metrics to <a href="https://www.wavefront.com/">Wavefront</
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">或者，您可以在您的环境中使用 Wavefront sidecar 或内部代理将指标数据转发到 Wavefront API 主机：</p>
+<p translation-result="on">或者，你可以在你的环境中使用 Wavefront sidecar 或内部代理将指标数据转发到 Wavefront API 主机：</p>
 <p translation-origin="off">Alternatively, you can use a Wavefront sidecar or an internal proxy in your environment to forward metrics data to the Wavefront API host:</p>
 </div>
 <div class="listingblock primary">
@@ -5734,14 +5734,14 @@ If you are exporting metrics to <a href="https://www.wavefront.com/">Wavefront</
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果您将指标发布到 Wavefront 代理（如 <a href="https://docs.wavefront.com/proxies_installing.html">Wavefront 文档中所述</a>），则主机必须采用 <code>proxy://HOST:PORT</code> 格式。</p>
+<p translation-result="on">如果你将指标发布到 Wavefront 代理（如 <a href="https://docs.wavefront.com/proxies_installing.html">Wavefront 文档中所述</a>），则主机必须采用 <code>proxy://HOST:PORT</code> 格式。</p>
 <p translation-origin="off">If you publish metrics to a Wavefront proxy (as described in <a href="https://docs.wavefront.com/proxies_installing.html">the Wavefront documentation</a>), the host must be in the <code>proxy://HOST:PORT</code> format.</p>
 </td>
 </tr>
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">您还可以更改将指标发送到 Wavefront 的时间间隔：</p>
+<p translation-result="on">你还可以更改将指标发送到 Wavefront 的时间间隔：</p>
 <p translation-origin="off">You can also change the interval at which metrics are sent to Wavefront:</p>
 </div>
 <div class="listingblock primary">
@@ -5883,13 +5883,13 @@ Metrics are tagged by the name of the executor, which is derived from the bean n
 <h4 id="actuator.metrics.supported.spring-mvc" translation-result="on"><a href="actuator.html#actuator.metrics.supported.spring-mvc"></a>6.3.6. Spring MVC 指标</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.supported.spring-mvc"></a>6.3.6. Spring MVC Metrics</h4>
 <div class="paragraph">
-<p translation-result="on">自动配置启用对 Spring MVC 控制器和功能处理程序处理的所有请求的检测。默认情况下，生成的指标名称为 <code>http.server.requests</code> 。您可以通过设置 <code>management.metrics.web.server.request.metric-name</code> 属性来自定义名称。</p>
+<p translation-result="on">自动配置启用对 Spring MVC 控制器和功能处理程序处理的所有请求的检测。默认情况下，生成的指标名称为 <code>http.server.requests</code> 。你可以通过设置 <code>management.metrics.web.server.request.metric-name</code> 属性来自定义名称。</p>
 <p translation-origin="off">Auto-configuration enables the instrumentation of all requests handled by Spring MVC controllers and functional handlers.
 By default, metrics are generated with the name, <code>http.server.requests</code>.
 You can customized the name by setting the <code>management.metrics.web.server.request.metric-name</code> property.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>@Controller</code> 类和 <code>@RequestMapping</code> 方法支持 <code>@Timed</code> 注释（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注释支持</a>）。如果您不想记录所有 Spring MVC 请求的指标，可以将 <code>management.metrics.web.server.request.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注释。</p>
+<p translation-result="on"><code>@Controller</code> 类和 <code>@RequestMapping</code> 方法支持 <code>@Timed</code> 注释（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注释支持</a>）。如果你不想记录所有 Spring MVC 请求的指标，可以将 <code>management.metrics.web.server.request.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注释。</p>
 <p translation-origin="off"><code>@Timed</code> annotations are supported on <code>@Controller</code> classes and <code>@RequestMapping</code> methods (see <a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed Annotation Support</a> for details).
 If you do not want to record metrics for all Spring MVC requests, you can set <code>management.metrics.web.server.request.autotime.enabled</code> to <code>false</code> and exclusively use <code>@Timed</code> annotations instead.</p>
 </div>
@@ -5962,13 +5962,13 @@ Applications can opt in and record exceptions by <a href="web.html#web.servlet.s
 <h4 id="actuator.metrics.supported.spring-webflux" translation-result="on"><a href="actuator.html#actuator.metrics.supported.spring-webflux"></a>6.3.7. Spring WebFlux 指标</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.supported.spring-webflux"></a>6.3.7. Spring WebFlux Metrics</h4>
 <div class="paragraph">
-<p translation-result="on">自动配置支持对 Spring WebFlux 控制器和功能处理程序处理的所有请求进行检测。默认情况下，生成的指标名称为 <code>http.server.requests</code> 。您可以通过设置 <code>management.metrics.web.server.request.metric-name</code> 属性来自定义名称。</p>
+<p translation-result="on">自动配置支持对 Spring WebFlux 控制器和功能处理程序处理的所有请求进行检测。默认情况下，生成的指标名称为 <code>http.server.requests</code> 。你可以通过设置 <code>management.metrics.web.server.request.metric-name</code> 属性来自定义名称。</p>
 <p translation-origin="off">Auto-configuration enables the instrumentation of all requests handled by Spring WebFlux controllers and functional handlers.
 By default, metrics are generated with the name, <code>http.server.requests</code>.
 You can customize the name by setting the <code>management.metrics.web.server.request.metric-name</code> property.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>@Controller</code> 类和 <code>@RequestMapping</code> 方法支持 <code>@Timed</code> 注释（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注释支持</a>）。如果您不想记录所有 Spring WebFlux 请求的指标，可以将 <code>management.metrics.web.server.request.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注释。</p>
+<p translation-result="on"><code>@Controller</code> 类和 <code>@RequestMapping</code> 方法支持 <code>@Timed</code> 注释（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注释支持</a>）。如果你不想记录所有 Spring WebFlux 请求的指标，可以将 <code>management.metrics.web.server.request.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注释。</p>
 <p translation-origin="off"><code>@Timed</code> annotations are supported on <code>@Controller</code> classes and <code>@RequestMapping</code> methods (see <a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed Annotation Support</a> for details).
 If you do not want to record metrics for all Spring WebFlux requests, you can set <code>management.metrics.web.server.request.autotime.enabled</code> to <code>false</code> and exclusively use <code>@Timed</code> annotations instead.</p>
 </div>
@@ -6041,13 +6041,13 @@ Applications can opt in and record exceptions by <a href="web.html#web.reactive.
 <h4 id="actuator.metrics.supported.jersey" translation-result="on"><a href="actuator.html#actuator.metrics.supported.jersey"></a>6.3.8. 泽西服务器指标</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.supported.jersey"></a>6.3.8. Jersey Server Metrics</h4>
 <div class="paragraph">
-<p translation-result="on">自动配置支持检测由 Jersey JAX-RS 实现处理的所有请求。默认情况下，生成的指标名称为 <code>http.server.requests</code> 。您可以通过设置 <code>management.metrics.web.server.request.metric-name</code> 属性来自定义名称。</p>
+<p translation-result="on">自动配置支持检测由 Jersey JAX-RS 实现处理的所有请求。默认情况下，生成的指标名称为 <code>http.server.requests</code> 。你可以通过设置 <code>management.metrics.web.server.request.metric-name</code> 属性来自定义名称。</p>
 <p translation-origin="off">Auto-configuration enables the instrumentation of all requests handled by the Jersey JAX-RS implementation.
 By default, metrics are generated with the name, <code>http.server.requests</code>.
 You can customize the name by setting the <code>management.metrics.web.server.request.metric-name</code> property.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">请求处理类和方法支持 <code>@Timed</code> 注释（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注释支持</a>）。如果您不想记录所有 Jersey 请求的指标，可以将 <code>management.metrics.web.server.request.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注释。</p>
+<p translation-result="on">请求处理类和方法支持 <code>@Timed</code> 注释（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注释支持</a>）。如果你不想记录所有 Jersey 请求的指标，可以将 <code>management.metrics.web.server.request.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注释。</p>
 <p translation-origin="off"><code>@Timed</code> annotations are supported on request-handling classes and methods (see <a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed Annotation Support</a> for details).
 If you do not want to record metrics for all Jersey requests, you can set <code>management.metrics.web.server.request.autotime.enabled</code> to <code>false</code> and exclusively use <code>@Timed</code> annotations instead.</p>
 </div>
@@ -6105,7 +6105,7 @@ If you do not want to record metrics for all Jersey requests, you can set <code>
 <h4 id="actuator.metrics.supported.http-clients" translation-result="on"><a href="actuator.html#actuator.metrics.supported.http-clients"></a>6.3.9. HTTP 客户端指标</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.supported.http-clients"></a>6.3.9. HTTP Client Metrics</h4>
 <div class="paragraph">
-<p translation-result="on">Spring Boot Actuator 管理 <code>RestTemplate</code> 和 <code>WebClient</code> 的检测。为此，您必须注入自动配置的构建器并使用它来创建实例：</p>
+<p translation-result="on">Spring Boot Actuator 管理 <code>RestTemplate</code> 和 <code>WebClient</code> 的检测。为此，你必须注入自动配置的构建器并使用它来创建实例：</p>
 <p translation-origin="off">Spring Boot Actuator manages the instrumentation of both <code>RestTemplate</code> and <code>WebClient</code>.
 For that, you have to inject the auto-configured builder and use it to create instances:</p>
 </div>
@@ -6122,11 +6122,11 @@ For that, you have to inject the auto-configured builder and use it to create in
 </ul>
 </div>
 <div class="paragraph">
-<p translation-result="on">您还可以手动应用负责此检测的定制器，即 <code>MetricsRestTemplateCustomizer</code> 和 <code>MetricsWebClientCustomizer</code> 。</p>
+<p translation-result="on">你还可以手动应用负责此检测的定制器，即 <code>MetricsRestTemplateCustomizer</code> 和 <code>MetricsWebClientCustomizer</code> 。</p>
 <p translation-origin="off">You can also manually apply the customizers responsible for this instrumentation, namely <code>MetricsRestTemplateCustomizer</code> and <code>MetricsWebClientCustomizer</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，生成的指标名称为 <code>http.client.requests</code> 。您可以通过设置 <code>management.metrics.web.client.request.metric-name</code> 属性来自定义名称。</p>
+<p translation-result="on">默认情况下，生成的指标名称为 <code>http.client.requests</code> 。你可以通过设置 <code>management.metrics.web.client.request.metric-name</code> 属性来自定义名称。</p>
 <p translation-origin="off">By default, metrics are generated with the name, <code>http.client.requests</code>.
 You can customize the name by setting the <code>management.metrics.web.client.request.metric-name</code> property.</p>
 </div>
@@ -6176,7 +6176,7 @@ You can customize the name by setting the <code>management.metrics.web.client.re
 </tbody>
 </table>
 <div class="paragraph">
-<p translation-result="on">要自定义标签，根据您选择的客户端，您可以提供一个实现 <code>@Bean</code> 或 <code>WebClientExchangeTagsProvider</code> 的 <code>RestTemplateExchangeTagsProvider</code> 。<code>RestTemplateExchangeTags</code> 和 <code>WebClientExchangeTags</code> 中有方便的静态函数。</p>
+<p translation-result="on">要自定义标签，根据你选择的客户端，你可以提供一个实现 <code>@Bean</code> 或 <code>WebClientExchangeTagsProvider</code> 的 <code>RestTemplateExchangeTagsProvider</code> 。<code>RestTemplateExchangeTags</code> 和 <code>WebClientExchangeTags</code> 中有方便的静态函数。</p>
 <p translation-origin="off">To customize the tags, and depending on your choice of client, you can provide a <code>@Bean</code> that implements <code>RestTemplateExchangeTagsProvider</code> or <code>WebClientExchangeTagsProvider</code>.
 There are convenience static functions in <code>RestTemplateExchangeTags</code> and <code>WebClientExchangeTags</code>.</p>
 </div>
@@ -6185,7 +6185,7 @@ There are convenience static functions in <code>RestTemplateExchangeTags</code> 
 <h4 id="actuator.metrics.supported.tomcat" translation-result="on"><a href="actuator.html#actuator.metrics.supported.tomcat"></a>6.3.10. Tomcat 指标</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.supported.tomcat"></a>6.3.10. Tomcat Metrics</h4>
 <div class="paragraph">
-<p translation-result="on">自动配置仅在启用 <code>MBeanRegistry</code> 时启用 Tomcat 的检测。默认情况下，<code>MBeanRegistry</code> 是禁用的，但您可以通过将 <code>server.tomcat.mbeanregistry.enabled</code> 设置为 <code>true</code> 来启用它。</p>
+<p translation-result="on">自动配置仅在启用 <code>MBeanRegistry</code> 时启用 Tomcat 的检测。默认情况下，<code>MBeanRegistry</code> 是禁用的，但你可以通过将 <code>server.tomcat.mbeanregistry.enabled</code> 设置为 <code>true</code> 来启用它。</p>
 <p translation-origin="off">Auto-configuration enables the instrumentation of Tomcat only when an <code>MBeanRegistry</code> is enabled.
 By default, the <code>MBeanRegistry</code> is disabled, but you can enable it by setting <code>server.tomcat.mbeanregistry.enabled</code> to <code>true</code>.</p>
 </div>
@@ -6270,7 +6270,7 @@ Data source instrumentation results in gauges that represent the currently activ
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">默认情况下，Spring Boot 为所有支持的数据源提供元数据。如果不支持您喜欢的数据源，您可以添加其他 <code>DataSourcePoolMetadataProvider</code> bean。有关示例，请参阅 <code>DataSourcePoolMetadataProvidersConfiguration</code> 。</p>
+<p translation-result="on">默认情况下，Spring Boot 为所有支持的数据源提供元数据。如果不支持你喜欢的数据源，你可以添加其他 <code>DataSourcePoolMetadataProvider</code> bean。有关示例，请参阅 <code>DataSourcePoolMetadataProvidersConfiguration</code> 。</p>
 <p translation-origin="off">By default, Spring Boot provides metadata for all supported data sources.
 You can add additional <code>DataSourcePoolMetadataProvider</code> beans if your favorite data source is not supported.
 See <code>DataSourcePoolMetadataProvidersConfiguration</code> for examples.</p>
@@ -6279,7 +6279,7 @@ See <code>DataSourcePoolMetadataProvidersConfiguration</code> for examples.</p>
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">此外，Hikari 特定的指标以 <code>hikaricp</code> 前缀公开。每个指标都由池的名称标记（您可以使用 <code>spring.datasource.name</code> 控制它）。</p>
+<p translation-result="on">此外，Hikari 特定的指标以 <code>hikaricp</code> 前缀公开。每个指标都由池的名称标记（你可以使用 <code>spring.datasource.name</code> 控制它）。</p>
 <p translation-origin="off">Also, Hikari-specific metrics are exposed with a <code>hikaricp</code> prefix.
 Each metric is tagged by the name of the pool (you can control it with <code>spring.datasource.name</code>).</p>
 </div>
@@ -6296,7 +6296,7 @@ Each metric is tagged by the name of the pool (you can control it with <code>spr
 <p translation-origin="off">Metrics are also tagged by the name of the <code>EntityManagerFactory</code>, which is derived from the bean name.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">要启用统计信息，标准 JPA 属性 <code>hibernate.generate_statistics</code> 必须设置为 <code>true</code> 。您可以在自动配置的 <code>EntityManagerFactory</code> 上启用它：</p>
+<p translation-result="on">要启用统计信息，标准 JPA 属性 <code>hibernate.generate_statistics</code> 必须设置为 <code>true</code> 。你可以在自动配置的 <code>EntityManagerFactory</code> 上启用它：</p>
 <p translation-origin="off">To enable statistics, the standard JPA property <code>hibernate.generate_statistics</code> must be set to <code>true</code>.
 You can enable that on the auto-configured <code>EntityManagerFactory</code>:</p>
 </div>
@@ -6321,13 +6321,13 @@ You can enable that on the auto-configured <code>EntityManagerFactory</code>:</p
 <h4 id="actuator.metrics.supported.spring-data-repository" translation-result="on"><a href="actuator.html#actuator.metrics.supported.spring-data-repository"></a>6.3.14. Spring 数据存储库指标</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.supported.spring-data-repository"></a>6.3.14. Spring Data Repository Metrics</h4>
 <div class="paragraph">
-<p translation-result="on">自动配置启用所有 Spring Data <code>Repository</code> 方法调用的检测。默认情况下，生成的指标名称为 <code>spring.data.repository.invocations</code> 。您可以通过设置 <code>management.metrics.data.repository.metric-name</code> 属性来自定义名称。</p>
+<p translation-result="on">自动配置启用所有 Spring Data <code>Repository</code> 方法调用的检测。默认情况下，生成的指标名称为 <code>spring.data.repository.invocations</code> 。你可以通过设置 <code>management.metrics.data.repository.metric-name</code> 属性来自定义名称。</p>
 <p translation-origin="off">Auto-configuration enables the instrumentation of all Spring Data <code>Repository</code> method invocations.
 By default, metrics are generated with the name, <code>spring.data.repository.invocations</code>.
 You can customize the name by setting the <code>management.metrics.data.repository.metric-name</code> property.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>Repository</code> 类和方法支持 <code>@Timed</code> 注释（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注释支持</a>）。如果您不想记录所有 <code>Repository</code> 调用的指标，可以将 <code>management.metrics.data.repository.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注释。</p>
+<p translation-result="on"><code>Repository</code> 类和方法支持 <code>@Timed</code> 注释（有关详细信息，请参阅<a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed 注释支持</a>）。如果你不想记录所有 <code>Repository</code> 调用的指标，可以将 <code>management.metrics.data.repository.autotime.enabled</code> 设置为 <code>false</code> 并专门使用 <code>@Timed</code> 注释。</p>
 <p translation-origin="off"><code>@Timed</code> annotations are supported on <code>Repository</code> classes and methods (see <a href="actuator.html#actuator.metrics.supported.timed-annotation">@Timed Annotation Support</a> for details).
 If you do not want to record metrics for all <code>Repository</code> invocations, you can set <code>management.metrics.data.repository.autotime.enabled</code> to <code>false</code> and exclusively use <code>@Timed</code> annotations instead.</p>
 </div>
@@ -6621,7 +6621,7 @@ Metrics for Jetty’s <code>Connector</code> instances are bound by using Microm
 <h4 id="actuator.metrics.supported.timed-annotation" translation-result="on"><a href="actuator.html#actuator.metrics.supported.timed-annotation"></a>6.3.20.@Timed 注释支持</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.supported.timed-annotation"></a>6.3.20. @Timed Annotation Support</h4>
 <div class="paragraph">
-<p translation-result="on">您可以将 <code>io.micrometer.core.annotation</code> 包中的 <code>@Timed</code> 注释与前面描述的几种支持的技术一起使用。如果支持，您可以在类级别或方法级别使用注释。</p>
+<p translation-result="on">你可以将 <code>io.micrometer.core.annotation</code> 包中的 <code>@Timed</code> 注释与前面描述的几种支持的技术一起使用。如果支持，你可以在类级别或方法级别使用注释。</p>
 <p translation-origin="off">You can use the <code>@Timed</code> annotation from the <code>io.micrometer.core.annotation</code> package with several of the supported technologies described earlier.
 If supported, you can use the annotation at either the class level or the method level.</p>
 </div>
@@ -6657,7 +6657,7 @@ public class MyController {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您只想检测单个映射，则可以在方法上使用注释而不是类：</p>
+<p translation-result="on">如果你只想检测单个映射，则可以在方法上使用注释而不是类：</p>
 <p translation-origin="off">If you want only to instrument a single mapping, you can use the annotation on the method instead of the class:</p>
 </div>
 <div class="listingblock">
@@ -6749,7 +6749,7 @@ For more detail, see the <a href="https://lettuce.io/core/6.1.6.RELEASE/referenc
 <h3 id="actuator.metrics.registering-custom" translation-result="on"><a href="actuator.html#actuator.metrics.registering-custom"></a>6.4. 注册自定义指标</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.registering-custom"></a>6.4. Registering Custom Metrics</h3>
 <div class="paragraph">
-<p translation-result="on">要注册自定义指标，<code>MeterRegistry</code> 注入到您的组件中：</p>
+<p translation-result="on">要注册自定义指标，<code>MeterRegistry</code> 注入到你的组件中：</p>
 <p translation-origin="off">To register custom metrics, inject <code>MeterRegistry</code> into your component:</p>
 </div>
 <div class="listingblock">
@@ -6774,7 +6774,7 @@ public class MyBean {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您的指标依赖于其他 bean，我们建议您使用 <code>MeterBinder</code> 来注册它们：</p>
+<p translation-result="on">如果你的指标依赖于其他 bean，我们建议你使用 <code>MeterBinder</code> 来注册它们：</p>
 <p translation-origin="off">If your metrics depend on other beans, we recommend that you use a <code>MeterBinder</code> to register them:</p>
 </div>
 <div class="listingblock">
@@ -6796,7 +6796,7 @@ import org.springframework.context.annotation.Bean;
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">使用 <code>MeterBinder</code> 可确保设置正确的依赖关系，并确保在检索度量值时 bean 可用。如果您发现您反复检测跨组件或应用程序的一组指标，<code>MeterBinder</code> 实现也很有用。</p>
+<p translation-result="on">使用 <code>MeterBinder</code> 可确保设置正确的依赖关系，并确保在检索度量值时 bean 可用。如果你发现你反复检测跨组件或应用程序的一组指标，<code>MeterBinder</code> 实现也很有用。</p>
 <p translation-origin="off">Using a <code>MeterBinder</code> ensures that the correct dependency relationships are set up and that the bean is available when the metric’s value is retrieved.
 A <code>MeterBinder</code> implementation can also be useful if you find that you repeatedly instrument a suite of metrics across components or applications.</p>
 </div>
@@ -6818,7 +6818,7 @@ A <code>MeterBinder</code> implementation can also be useful if you find that yo
 <h3 id="actuator.metrics.customizing" translation-result="on"><a href="actuator.html#actuator.metrics.customizing"></a>6.5. 自定义单个指标</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.customizing"></a>6.5. Customizing Individual Metrics</h3>
 <div class="paragraph">
-<p translation-result="on">如果您需要对特定的 <code>Meter</code> 实例应用自定义，可以使用 <code>io.micrometer.core.instrument.config.MeterFilter</code> 接口。</p>
+<p translation-result="on">如果你需要对特定的 <code>Meter</code> 实例应用自定义，可以使用 <code>io.micrometer.core.instrument.config.MeterFilter</code> 接口。</p>
 <p translation-origin="off">If you need to apply customizations to specific <code>Meter</code> instances, you can use the <code>io.micrometer.core.instrument.config.MeterFilter</code> interface.</p>
 </div>
 <div class="paragraph">
@@ -6896,7 +6896,7 @@ management.metrics.tags.stack=prod</code></pre>
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果您使用 Graphite，常用标签的顺序很重要。由于使用这种方法无法保证常用标签的顺序，建议 Graphite 用户定义自定义 <code>MeterFilter</code> 代替。</p>
+<p translation-result="on">如果你使用 Graphite，常用标签的顺序很重要。由于使用这种方法无法保证常用标签的顺序，建议 Graphite 用户定义自定义 <code>MeterFilter</code> 代替。</p>
 <p translation-origin="off">The order of common tags is important if you use Graphite.
 As the order of common tags cannot be guaranteed by using this approach, Graphite users are advised to define a custom <code>MeterFilter</code> instead.</p>
 </td>
@@ -6908,7 +6908,7 @@ As the order of common tags cannot be guaranteed by using this approach, Graphit
 <h4 id="actuator.metrics.customizing.per-meter-properties" translation-result="on"><a href="actuator.html#actuator.metrics.customizing.per-meter-properties"></a>6.5.2. 每米属性</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.customizing.per-meter-properties"></a>6.5.2. Per-meter Properties</h4>
 <div class="paragraph">
-<p translation-result="on">除了 <code>MeterFilter</code> bean 之外，您还可以使用属性在每米的基础上应用一组有限的自定义。每米自定义适用于以给定名称开头的任何仪表 ID。以下示例禁用任何 ID 以 <code>example.remote</code> 开头的仪表</p>
+<p translation-result="on">除了 <code>MeterFilter</code> bean 之外，你还可以使用属性在每米的基础上应用一组有限的自定义。每米自定义适用于以给定名称开头的任何仪表 ID。以下示例禁用任何 ID 以 <code>example.remote</code> 开头的仪表</p>
 <p translation-origin="off">In addition to <code>MeterFilter</code> beans, you can apply a limited set of customization on a per-meter basis by using properties.
 Per-meter customizations apply to any meter IDs that start with the given name.
 The following example disables any meters that have an ID starting with <code>example.remote</code></p>
@@ -6967,7 +6967,7 @@ The following example disables any meters that have an ID starting with <code>ex
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>management.metrics.distribution.percentiles</code></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">发布在您的应用程序中计算的百分位数</p><p class="tableblock" translation-origin="off">Publish percentile values computed in your application</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">发布在你的应用程序中计算的百分位数</p><p class="tableblock" translation-origin="off">Publish percentile values computed in your application</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>management.metrics.distribution.expiry</code>, <code>management.metrics.distribution.buffer-length</code></p></td>
@@ -6976,7 +6976,7 @@ configurable buffer length.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>management.metrics.distribution.slo</code></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">发布包含由您的服务级别目标定义的存储桶的累积直方图。</p><p class="tableblock" translation-origin="off">Publish a cumulative histogram with buckets defined by your service-level objectives.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">发布包含由你的服务级别目标定义的存储桶的累积直方图。</p><p class="tableblock" translation-origin="off">Publish a cumulative histogram with buckets defined by your service-level objectives.</p></td>
 </tr>
 </tbody>
 </table>
@@ -6990,12 +6990,12 @@ configurable buffer length.</p></td>
 <h3 id="actuator.metrics.endpoint" translation-result="on"><a href="actuator.html#actuator.metrics.endpoint"></a>6.6. 指标端点</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.endpoint"></a>6.6. Metrics Endpoint</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 提供了一个 <code>metrics</code> 端点，您可以使用它诊断性地检查应用程序收集的指标。端点默认不可用，必须公开。有关更多详细信息，请参阅<a href="actuator.html#actuator.endpoints.exposing">公开端点</a>。</p>
+<p translation-result="on">Spring Boot 提供了一个 <code>metrics</code> 端点，你可以使用它诊断性地检查应用程序收集的指标。端点默认不可用，必须公开。有关更多详细信息，请参阅<a href="actuator.html#actuator.endpoints.exposing">公开端点</a>。</p>
 <p translation-origin="off">Spring Boot provides a <code>metrics</code> endpoint that you can use diagnostically to examine the metrics collected by an application.
 The endpoint is not available by default and must be exposed. See <a href="actuator.html#actuator.endpoints.exposing">exposing endpoints</a> for more details.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">导航到 <code>/actuator/metrics</code> 会显示可用计量器名称的列表。您可以通过提供特定计量器的名称作为选择器（例如 <code>/actuator/metrics/jvm.memory.max</code> ）来深入查看有关特定计量器的信息。</p>
+<p translation-result="on">导航到 <code>/actuator/metrics</code> 会显示可用计量器名称的列表。你可以通过提供特定计量器的名称作为选择器（例如 <code>/actuator/metrics/jvm.memory.max</code> ）来深入查看有关特定计量器的信息。</p>
 <p translation-origin="off">Navigating to <code>/actuator/metrics</code> displays a list of available meter names.
 You can drill down to view information about a particular meter by providing its name as a selector — for example, <code>/actuator/metrics/jvm.memory.max</code>.</p>
 </div>
@@ -7007,7 +7007,7 @@ You can drill down to view information about a particular meter by providing its
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">您在此处使用的名称应该与代码中使用的名称相匹配，而不是经过命名约定规范化后的名称，以针对它所运送到的监控系统。换句话说，如果 <code>jvm.memory.max</code> 由于其蛇形命名约定而在 Prometheus 中显示为 <code>jvm_memory_max</code> ，则在检查 <code>metrics</code> 端点中的仪表时，您仍应使用 <code>jvm.memory.max</code> 作为选择器。</p>
+<p translation-result="on">你在此处使用的名称应该与代码中使用的名称相匹配，而不是经过命名约定规范化后的名称，以针对它所运送到的监控系统。换句话说，如果 <code>jvm.memory.max</code> 由于其蛇形命名约定而在 Prometheus 中显示为 <code>jvm_memory_max</code> ，则在检查 <code>metrics</code> 端点中的仪表时，你仍应使用 <code>jvm.memory.max</code> 作为选择器。</p>
 <p translation-origin="off">The name you use here should match the name used in the code, not the name after it has been naming-convention normalized for a monitoring system to which it is shipped.
 In other words, if <code>jvm.memory.max</code> appears as <code>jvm_memory_max</code> in Prometheus because of its snake case naming convention, you should still use <code>jvm.memory.max</code> as the selector when inspecting the meter in the <code>metrics</code> endpoint.</p>
 </div>
@@ -7016,7 +7016,7 @@ In other words, if <code>jvm.memory.max</code> appears as <code>jvm_memory_max</
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">您还可以将任意数量的 <code>tag=KEY:VALUE</code> 查询参数添加到 URL 的末尾，以对计量器进行维度下钻 - 例如，<code>/actuator/metrics/jvm.memory.max?tag=area:nonheap</code> 。</p>
+<p translation-result="on">你还可以将任意数量的 <code>tag=KEY:VALUE</code> 查询参数添加到 URL 的末尾，以对计量器进行维度下钻 - 例如，<code>/actuator/metrics/jvm.memory.max?tag=area:nonheap</code> 。</p>
 <p translation-origin="off">You can also add any number of <code>tag=KEY:VALUE</code> query parameters to the end of the URL to dimensionally drill down on a meter — for example, <code>/actuator/metrics/jvm.memory.max?tag=area:nonheap</code>.</p>
 </div>
 <div class="admonitionblock tip">
@@ -7027,7 +7027,7 @@ In other words, if <code>jvm.memory.max</code> appears as <code>jvm_memory_max</
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">报告的测量值是与仪表名称和已应用的任何标签匹配的所有仪表的统计信息的<em>总和</em>。在前面的示例中，返回的 <code>Value</code> 统计信息是堆的“代码缓存”、“压缩类空间”和“元空间”区域的最大内存占用量之和。如果您只想查看“元空间”的最大大小，可以添加一个额外的 <code>tag=id:Metaspace</code> — 即 <code>/actuator/metrics/jvm.memory.max?tag=area:nonheap&amp;tag=id:Metaspace</code> 。</p>
+<p translation-result="on">报告的测量值是与仪表名称和已应用的任何标签匹配的所有仪表的统计信息的<em>总和</em>。在前面的示例中，返回的 <code>Value</code> 统计信息是堆的“代码缓存”、“压缩类空间”和“元空间”区域的最大内存占用量之和。如果你只想查看“元空间”的最大大小，可以添加一个额外的 <code>tag=id:Metaspace</code> — 即 <code>/actuator/metrics/jvm.memory.max?tag=area:nonheap&amp;tag=id:Metaspace</code> 。</p>
 <p translation-origin="off">The reported measurements are the <em>sum</em> of the statistics of all meters that match the meter name and any tags that have been applied.
 In the preceding example, the returned <code>Value</code> statistic is the sum of the maximum memory footprints of the “Code Cache”, “Compressed Class Space”, and “Metaspace” areas of the heap.
 If you wanted to see only the maximum size for the “Metaspace”, you could add an additional <code>tag=id:Metaspace</code> — that is, <code>/actuator/metrics/jvm.memory.max?tag=area:nonheap&amp;tag=id:Metaspace</code>.</p>
@@ -7049,7 +7049,7 @@ If you wanted to see only the maximum size for the “Metaspace”, you could ad
 This feature can be very useful for reporting and for implementing a lock-out policy based on authentication failures.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以通过在应用程序的配置中提供 <code>AuditEventRepository</code> 类型的 bean 来启用审计。为方便起见，Spring Boot 提供了一个 <code>InMemoryAuditEventRepository</code> 。<code>InMemoryAuditEventRepository</code> 的功能有限，我们建议仅将其用于开发环境。对于生产环境，请考虑创建您自己的替代 <code>AuditEventRepository</code> 实现。</p>
+<p translation-result="on">你可以通过在应用程序的配置中提供 <code>AuditEventRepository</code> 类型的 bean 来启用审计。为方便起见，Spring Boot 提供了一个 <code>InMemoryAuditEventRepository</code> 。<code>InMemoryAuditEventRepository</code> 的功能有限，我们建议仅将其用于开发环境。对于生产环境，请考虑创建你自己的替代 <code>AuditEventRepository</code> 实现。</p>
 <p translation-origin="off">You can enable auditing by providing a bean of type <code>AuditEventRepository</code> in your application’s configuration.
 For convenience, Spring Boot offers an <code>InMemoryAuditEventRepository</code>.
 <code>InMemoryAuditEventRepository</code> has limited capabilities, and we recommend using it only for development environments.
@@ -7059,11 +7059,11 @@ For production environments, consider creating your own alternative <code>AuditE
 <h3 id="actuator.auditing.custom" translation-result="on"><a href="actuator.html#actuator.auditing.custom"></a>7.1. 自定义审计</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.auditing.custom"></a>7.1. Custom Auditing</h3>
 <div class="paragraph">
-<p translation-result="on">要自定义已发布的安全事件，您可以提供自己的 <code>AbstractAuthenticationAuditListener</code> 和 <code>AbstractAuthorizationAuditListener</code> 实现。</p>
+<p translation-result="on">要自定义已发布的安全事件，你可以提供自己的 <code>AbstractAuthenticationAuditListener</code> 和 <code>AbstractAuthorizationAuditListener</code> 实现。</p>
 <p translation-origin="off">To customize published security events, you can provide your own implementations of <code>AbstractAuthenticationAuditListener</code> and <code>AbstractAuthorizationAuditListener</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您还可以将审计服务用于您自己的业务活动。为此，可以将 <code>AuditEventRepository</code> bean 注入到您自己的组件中并直接使用它，或者使用 Spring <code>ApplicationEventPublisher</code> 发布 <code>AuditApplicationEvent</code> （通过实现 <code>ApplicationEventPublisherAware</code> ）。</p>
+<p translation-result="on">你还可以将审计服务用于你自己的业务活动。为此，可以将 <code>AuditEventRepository</code> bean 注入到你自己的组件中并直接使用它，或者使用 Spring <code>ApplicationEventPublisher</code> 发布 <code>AuditApplicationEvent</code> （通过实现 <code>ApplicationEventPublisherAware</code> ）。</p>
 <p translation-origin="off">You can also use the audit services for your own business events.
 To do so, either inject the <code>AuditEventRepository</code> bean into your own components and use that directly or publish an <code>AuditApplicationEvent</code> with the Spring <code>ApplicationEventPublisher</code> (by implementing <code>ApplicationEventPublisherAware</code>).</p>
 </div>
@@ -7075,7 +7075,7 @@ To do so, either inject the <code>AuditEventRepository</code> bean into your own
 <h2 translation-origin="off"><a class="anchor" href="actuator.html#actuator.tracing"></a>8. HTTP Tracing</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">您可以通过在应用程序的配置中提供 <code>HttpTraceRepository</code> 类型的 bean 来启用 HTTP 跟踪。为方便起见，Spring Boot 提供了 <code>InMemoryHttpTraceRepository</code> ，它存储最近 100 次（默认）请求-响应交换的跟踪。与其他跟踪解决方案相比，<code>InMemoryHttpTraceRepository</code> 受到限制，我们建议仅将其用于开发环境。对于生产环境，我们建议使用生产就绪的跟踪或可观察性解决方案，例如 Zipkin 或 Spring Cloud Sleuth。或者，您可以创建自己的 <code>HttpTraceRepository</code> 。</p>
+<p translation-result="on">你可以通过在应用程序的配置中提供 <code>HttpTraceRepository</code> 类型的 bean 来启用 HTTP 跟踪。为方便起见，Spring Boot 提供了 <code>InMemoryHttpTraceRepository</code> ，它存储最近 100 次（默认）请求-响应交换的跟踪。与其他跟踪解决方案相比，<code>InMemoryHttpTraceRepository</code> 受到限制，我们建议仅将其用于开发环境。对于生产环境，我们建议使用生产就绪的跟踪或可观察性解决方案，例如 Zipkin 或 Spring Cloud Sleuth。或者，你可以创建自己的 <code>HttpTraceRepository</code> 。</p>
 <p translation-origin="off">You can enable HTTP Tracing by providing a bean of type <code>HttpTraceRepository</code> in your application’s configuration.
 For convenience, Spring Boot offers <code>InMemoryHttpTraceRepository</code>, which stores traces for the last 100 (the default) request-response exchanges.
 <code>InMemoryHttpTraceRepository</code> is limited compared to other tracing solutions, and we recommend using it only for development environments.
@@ -7083,14 +7083,14 @@ For production environments, we recommend using a production-ready tracing or ob
 Alternatively, you can create your own <code>HttpTraceRepository</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以使用 <code>httptrace</code> 端点获取有关存储在 <code>HttpTraceRepository</code> 中的请求-响应交换的信息。</p>
+<p translation-result="on">你可以使用 <code>httptrace</code> 端点获取有关存储在 <code>HttpTraceRepository</code> 中的请求-响应交换的信息。</p>
 <p translation-origin="off">You can use the <code>httptrace</code> endpoint to obtain information about the request-response exchanges that are stored in the <code>HttpTraceRepository</code>.</p>
 </div>
 <div class="sect2">
 <h3 id="actuator.tracing.custom" translation-result="on"><a href="actuator.html#actuator.tracing.custom"></a>8.1. 自定义 HTTP 跟踪</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.tracing.custom"></a>8.1. Custom HTTP tracing</h3>
 <div class="paragraph">
-<p translation-result="on">要自定义每个跟踪中包含的项目，请使用 <code>management.trace.http.include</code> 配置属性。对于高级自定义，请考虑注册您自己的 <code>HttpExchangeTracer</code> 实现。</p>
+<p translation-result="on">要自定义每个跟踪中包含的项目，请使用 <code>management.trace.http.include</code> 配置属性。对于高级自定义，请考虑注册你自己的 <code>HttpExchangeTracer</code> 实现。</p>
 <p translation-origin="off">To customize the items that are included in each trace, use the <code>management.trace.http.include</code> configuration property.
 For advanced customization, consider registering your own <code>HttpExchangeTracer</code> implementation.</p>
 </div>
@@ -7102,7 +7102,7 @@ For advanced customization, consider registering your own <code>HttpExchangeTrac
 <h2 translation-origin="off"><a class="anchor" href="actuator.html#actuator.process-monitoring"></a>9. Process Monitoring</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">在 <code>spring-boot</code> 模块中，您可以找到两个类来创建通常对进程监控有用的文件：</p>
+<p translation-result="on">在 <code>spring-boot</code> 模块中，你可以找到两个类来创建通常对进程监控有用的文件：</p>
 <p translation-origin="off">In the <code>spring-boot</code> module, you can find two classes to create files that are often useful for process monitoring:</p>
 </div>
 <div class="ulist">
@@ -7118,7 +7118,7 @@ For advanced customization, consider registering your own <code>HttpExchangeTrac
 </ul>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，这些编写器未激活，但您可以启用它们：</p>
+<p translation-result="on">默认情况下，这些编写器未激活，但你可以启用它们：</p>
 <p translation-origin="off">By default, these writers are not activated, but you can enable them:</p>
 </div>
 <div class="ulist">
@@ -7137,7 +7137,7 @@ For advanced customization, consider registering your own <code>HttpExchangeTrac
 <h3 id="actuator.process-monitoring.configuration" translation-result="on"><a href="actuator.html#actuator.process-monitoring.configuration"></a>9.1. 扩展配置</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.process-monitoring.configuration"></a>9.1. Extending Configuration</h3>
 <div class="paragraph">
-<p translation-result="on">在 <code>META-INF/spring.factories</code> 文件中，您可以激活写入 PID 文件的侦听器（或多个侦听器）：</p>
+<p translation-result="on">在 <code>META-INF/spring.factories</code> 文件中，你可以激活写入 PID 文件的侦听器（或多个侦听器）：</p>
 <p translation-origin="off">In the <code>META-INF/spring.factories</code> file, you can activate the listener (or listeners) that writes a PID file:</p>
 </div>
 <div class="listingblock">
@@ -7152,7 +7152,7 @@ org.springframework.boot.web.context.WebServerPortFileWriter</pre>
 <h3 id="actuator.process-monitoring.programmatically" translation-result="on"><a href="actuator.html#actuator.process-monitoring.programmatically"></a>9.2. 以编程方式启用过程监控</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.process-monitoring.programmatically"></a>9.2. Programmatically Enabling Process Monitoring</h3>
 <div class="paragraph">
-<p translation-result="on">您还可以通过调用 <code>SpringApplication.addListeners(…​)</code> 方法并传递适当的 <code>Writer</code> 对象来激活侦听器。此方法还允许您自定义 <code>Writer</code> 构造函数中的文件名和路径。</p>
+<p translation-result="on">你还可以通过调用 <code>SpringApplication.addListeners(…​)</code> 方法并传递适当的 <code>Writer</code> 对象来激活侦听器。此方法还允许你自定义 <code>Writer</code> 构造函数中的文件名和路径。</p>
 <p translation-origin="off">You can also activate a listener by invoking the <code>SpringApplication.addListeners(…​)</code> method and passing the appropriate <code>Writer</code> object.
 This method also lets you customize the file name and path in the <code>Writer</code> constructor.</p>
 </div>
@@ -7164,7 +7164,7 @@ This method also lets you customize the file name and path in the <code>Writer</
 <h2 translation-origin="off"><a class="anchor" href="actuator.html#actuator.cloud-foundry"></a>10. Cloud Foundry Support</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot 的执行器模块包括在您部署到兼容的 Cloud Foundry 实例时激活的额外支持。<code>/cloudfoundryapplication</code> 路径为所有 <code>@Endpoint</code> bean 提供了一个替代的安全路由。</p>
+<p translation-result="on">Spring Boot 的执行器模块包括在你部署到兼容的 Cloud Foundry 实例时激活的额外支持。<code>/cloudfoundryapplication</code> 路径为所有 <code>@Endpoint</code> bean 提供了一个替代的安全路由。</p>
 <p translation-origin="off">Spring Boot’s actuator module includes additional support that is activated when you deploy to a compatible Cloud Foundry instance.
 The <code>/cloudfoundryapplication</code> path provides an alternative secured route to all <code>@Endpoint</code> beans.</p>
 </div>
@@ -7180,7 +7180,7 @@ For example, an application status page can include full health information inst
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">普通用户无法直接访问 <code>/cloudfoundryapplication</code> 路径。要使用端点，您必须在请求中传递有效的 UAA 令牌。</p>
+<p translation-result="on">普通用户无法直接访问 <code>/cloudfoundryapplication</code> 路径。要使用端点，你必须在请求中传递有效的 UAA 令牌。</p>
 <p translation-origin="off">The <code>/cloudfoundryapplication</code> path is not directly accessible to regular users.
 To use the endpoint, you must pass a valid UAA token with the request.</p>
 </td>
@@ -7214,7 +7214,7 @@ To use the endpoint, you must pass a valid UAA token with the request.</p>
 <h3 id="actuator.cloud-foundry.ssl" translation-result="on"><a href="actuator.html#actuator.cloud-foundry.ssl"></a>10.2. Cloud Foundry 自签名证书</h3>
 <h3 translation-origin="off"><a class="anchor" href="actuator.html#actuator.cloud-foundry.ssl"></a>10.2. Cloud Foundry Self-signed Certificates</h3>
 <div class="paragraph">
-<p translation-result="on">默认情况下，<code>/cloudfoundryapplication</code> 端点的安全验证会对各种 Cloud Foundry 服务进行 SSL 调用。如果您的 Cloud Foundry UAA 或 Cloud Controller 服务使用自签名证书，您需要设置以下属性：</p>
+<p translation-result="on">默认情况下，<code>/cloudfoundryapplication</code> 端点的安全验证会对各种 Cloud Foundry 服务进行 SSL 调用。如果你的 Cloud Foundry UAA 或 Cloud Controller 服务使用自签名证书，你需要设置以下属性：</p>
 <p translation-origin="off">By default, the security verification for <code>/cloudfoundryapplication</code> endpoints makes SSL calls to various Cloud Foundry services.
 If your Cloud Foundry UAA or Cloud Controller services use self-signed certificates, you need to set the following property:</p>
 </div>
@@ -7243,7 +7243,7 @@ If your Cloud Foundry UAA or Cloud Controller services use self-signed certifica
 For example, if <code>server.servlet.context-path=/app</code>, Cloud Foundry endpoints are available at <code>/app/cloudfoundryapplication/*</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您希望 Cloud Foundry 端点始终在 <code>/cloudfoundryapplication/*</code> 可用，无论服务器的上下文路径如何，您都需要在应用程序中显式配置它。配置会有所不同，具体取决于所使用的 Web 服务器。对于 Tomcat，您可以添加以下配置：</p>
+<p translation-result="on">如果你希望 Cloud Foundry 端点始终在 <code>/cloudfoundryapplication/*</code> 可用，无论服务器的上下文路径如何，你都需要在应用程序中显式配置它。配置会有所不同，具体取决于所使用的 Web 服务器。对于 Tomcat，你可以添加以下配置：</p>
 <p translation-origin="off">If you expect the Cloud Foundry endpoints to always be available at <code>/cloudfoundryapplication/*</code>, regardless of the server’s context-path, you need to explicitly configure that in your application.
 The configuration differs, depending on the web server in use.
 For Tomcat, you can add the following configuration:</p>
@@ -7319,11 +7319,11 @@ public class MyCloudFoundryConfiguration {
 <h2 translation-origin="off"><a class="anchor" href="actuator.html#actuator.whats-next"></a>11. What to Read Next</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">您可能想阅读有关 <a href="https://graphiteapp.org">Graphite</a> 等绘图工具的信息。</p>
+<p translation-result="on">你可能想阅读有关 <a href="https://graphiteapp.org">Graphite</a> 等绘图工具的信息。</p>
 <p translation-origin="off">You might want to read about graphing tools such as <a href="https://graphiteapp.org">Graphite</a>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">否则，您可以继续阅读<a href="deployment.html#deployment">“部署选项”</a>或继续阅读有关 Spring Boot<a href="build-tool-plugins.html#build-tool-plugins">构建工具插件</a>的一些深入信息。</p>
+<p translation-result="on">否则，你可以继续阅读<a href="deployment.html#deployment">“部署选项”</a>或继续阅读有关 Spring Boot<a href="build-tool-plugins.html#build-tool-plugins">构建工具插件</a>的一些深入信息。</p>
 <p translation-origin="off">Otherwise, you can continue on to read about <a href="deployment.html#deployment">“deployment options”</a> or jump ahead for some in-depth information about Spring Boot’s <a href="build-tool-plugins.html#build-tool-plugins">build tool plugins</a>.</p>
 </div>
 </div>
@@ -7343,3 +7343,4 @@ public class MyCloudFoundryConfiguration {
 
 
 </body></html>
+
