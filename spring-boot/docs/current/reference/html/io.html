@@ -979,11 +979,11 @@
   <p translation-origin="off"><a href="io.html#io.caching.provider.generic">1.1.1. Generic</a></p>
 </li>
 <li>
-  <p translation-result="on"><a href="io.html#io.caching.provider.jcache">1.1.2。 JCache (JSR-107)</a></p>
+  <p translation-result="on"><a href="io.html#io.caching.provider.jcache">1.1.2。JCache (JSR-107)</a></p>
   <p translation-origin="off"><a href="io.html#io.caching.provider.jcache">1.1.2. JCache (JSR-107)</a></p>
 </li>
 <li>
-  <p translation-result="on"><a href="io.html#io.caching.provider.ehcache2">1.1.3。 EhCache 2.x</a></p>
+  <p translation-result="on"><a href="io.html#io.caching.provider.ehcache2">1.1.3。EhCache 2.x</a></p>
   <p translation-origin="off"><a href="io.html#io.caching.provider.ehcache2">1.1.3. EhCache 2.x</a></p>
 </li>
 <li>
@@ -1107,7 +1107,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">大多数应用程序在某些时候需要处理输入和输出问题。 Spring Boot 提供实用程序和与一系列技术的集成，以在您需要 IO 功能时提供帮助。本节涵盖标准 IO 功能（例如缓存和验证）以及更高级的主题（例如调度和分布式事务）。我们还将介绍调用远程 REST 或 SOAP 服务以及发送电子邮件。</p>
+<p translation-result="on">大多数应用程序在某些时候需要处理输入和输出问题。Spring Boot 提供实用程序和与一系列技术的集成，以在您需要 IO 功能时提供帮助。本节涵盖标准 IO 功能（例如缓存和验证）以及更高级的主题（例如调度和分布式事务）。我们还将介绍调用远程 REST 或 SOAP 服务以及发送电子邮件。</p>
 <p translation-origin="off">Most applications will need to deal with input and output concerns at some point.
 Spring Boot provides utilities and integrations with a range of technologies to help when you need IO capabilities.
 This section covers standard IO features such as caching and validation as well as more advanced topics such as scheduling and distributed transactions.
@@ -1274,7 +1274,7 @@ Use this property if you need to <a href="io.html#io.caching.provider.none">disa
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">使用 <code>spring-boot-starter-cache</code> “Starter” 快速添加基本缓存依赖项。 starter 引入了 <code>spring-context-support</code> 。如果您手动添加依赖项，则必须包含 <code>spring-context-support</code> 才能使用 JCache、EhCache 2.x 或 Caffeine 支持。</p>
+<p translation-result="on">使用 <code>spring-boot-starter-cache</code> “Starter” 快速添加基本缓存依赖项。starter 引入了 <code>spring-context-support</code> 。如果您手动添加依赖项，则必须包含 <code>spring-context-support</code> 才能使用 JCache、EhCache 2.x 或 Caffeine 支持。</p>
 <p translation-origin="off">Use the <code>spring-boot-starter-cache</code> “Starter” to quickly add basic caching dependencies.
 The starter brings in <code>spring-context-support</code>.
 If you add dependencies manually, you must include <code>spring-context-support</code> in order to use the JCache, EhCache 2.x, or Caffeine support.</p>
@@ -1331,7 +1331,7 @@ A <code>CacheManager</code> wrapping all beans of that type is created.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="io.caching.provider.jcache" translation-result="on"><a href="io.html#io.caching.provider.jcache"></a>1.1.2。 JCache (JSR-107)</h4>
+<h4 id="io.caching.provider.jcache" translation-result="on"><a href="io.html#io.caching.provider.jcache"></a>1.1.2。JCache (JSR-107)</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.jcache"></a>1.1.2. JCache (JSR-107)</h4>
 <div class="paragraph">
 <p translation-result="on"><a href="https://jcp.org/en/jsr/detail?id=107">JCache</a> 通过类路径上存在 <code>javax.cache.spi.CachingProvider</code> 来引导（即类路径上存在符合 JSR-107 的缓存库），而 <code>JCacheCacheManager</code> 由 <code>spring-boot-starter-cache</code> 提供起动机”。有各种兼容的库可用，Spring Boot 为 Ehcache 3、Hazelcast 和 Infinispan 提供了依赖管理。也可以添加任何其他兼容的库。</p>
@@ -1424,7 +1424,7 @@ No further customization is applied to it.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="io.caching.provider.ehcache2" translation-result="on"><a href="io.html#io.caching.provider.ehcache2"></a>1.1.3。 EhCache 2.x</h4>
+<h4 id="io.caching.provider.ehcache2" translation-result="on"><a href="io.html#io.caching.provider.ehcache2"></a>1.1.3。EhCache 2.x</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.ehcache2"></a>1.1.3. EhCache 2.x</h4>
 <div class="paragraph">
 <p translation-result="on">如果可以在类路径的根目录找到名为 <code>ehcache.xml</code> 的文件，则使用 <a href="https://www.ehcache.org/">EhCache</a> 2.x。如果找到 EhCache 2.x，则使用 <code>spring-boot-starter-cache</code> “Starter”提供的 <code>EhCacheCacheManager</code> 来引导缓存管理器。也可以提供备用配置文件，如以下示例所示：</p>
@@ -1849,7 +1849,7 @@ See the <a href="https://docs.hazelcast.org/docs/latest/manual/html-single/">Haz
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">Spring Boot 还具有<a href="io.html#io.caching.provider.hazelcast">对 Hazelcast 的显式缓存支持</a>。如果启用缓存， <code>HazelcastInstance</code> 会自动包装在 <code>CacheManager</code> 实现中。</p>
+<p translation-result="on">Spring Boot 还具有<a href="io.html#io.caching.provider.hazelcast">对 Hazelcast 的显式缓存支持</a>。如果启用缓存，<code>HazelcastInstance</code> 会自动包装在 <code>CacheManager</code> 实现中。</p>
 <p translation-origin="off">Spring Boot also has <a href="io.html#io.caching.provider.hazelcast">explicit caching support for Hazelcast</a>.
 If caching is enabled, the <code>HazelcastInstance</code> is automatically wrapped in a <code>CacheManager</code> implementation.</p>
 </td>
@@ -1874,7 +1874,7 @@ If Quartz is available, a <code>Scheduler</code> is auto-configured (through the
 <div class="ulist">
 <ul>
 <li>
-<p translation-result="on"><code>JobDetail</code> : 定义一个特定的 Job。 <code>JobDetail</code> 实例可以使用 <code>JobBuilder</code> API 构建。</p>
+<p translation-result="on"><code>JobDetail</code> : 定义一个特定的 Job。<code>JobDetail</code> 实例可以使用 <code>JobBuilder</code> API 构建。</p>
 <p translation-origin="off"><code>JobDetail</code>: defines a particular Job.
 <code>JobDetail</code> instances can be built with the <code>JobBuilder</code> API.</p>
 </li>
@@ -1966,7 +1966,7 @@ Advanced Quartz configuration properties can be customized using <code>spring.qu
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">特别是， <code>Executor</code> bean 不与调度程序关联，因为 Quartz 提供了一种通过 <code>spring.quartz.properties</code> 配置调度程序的方法。如果需要自定义任务执行器，可以考虑实现 <code>SchedulerFactoryBeanCustomizer</code> 。</p>
+<p translation-result="on">特别是，<code>Executor</code> bean 不与调度程序关联，因为 Quartz 提供了一种通过 <code>spring.quartz.properties</code> 配置调度程序的方法。如果需要自定义任务执行器，可以考虑实现 <code>SchedulerFactoryBeanCustomizer</code> 。</p>
 <p translation-origin="off">In particular, an <code>Executor</code> bean is not associated with the scheduler as Quartz offers a way to configure the scheduler through <code>spring.quartz.properties</code>.
 If you need to customize the task executor, consider implementing <code>SchedulerFactoryBeanCustomizer</code>.</p>
 </td>
@@ -2301,7 +2301,7 @@ Compared to <code>RestTemplate</code>, this client has a more functional feel an
 You can learn more about the <code>WebClient</code> in the dedicated <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html#webflux-client">section in the Spring Framework docs</a>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 为您创建并预配置了 <code>WebClient.Builder</code> 。强烈建议将其注入您的组件并使用它来创建 <code>WebClient</code> 实例。 Spring Boot 正在配置该构建器以共享 HTTP 资源，以与服务器相同的方式反映编解码器设置（请参阅 <a href="web.html#web.reactive.webflux.httpcodecs">WebFlux HTTP 编解码器自动配置</a>）等等。</p>
+<p translation-result="on">Spring Boot 为您创建并预配置了 <code>WebClient.Builder</code> 。强烈建议将其注入您的组件并使用它来创建 <code>WebClient</code> 实例。Spring Boot 正在配置该构建器以共享 HTTP 资源，以与服务器相同的方式反映编解码器设置（请参阅 <a href="web.html#web.reactive.webflux.httpcodecs">WebFlux HTTP 编解码器自动配置</a>）等等。</p>
 <p translation-origin="off">Spring Boot creates and pre-configures a <code>WebClient.Builder</code> for you.
 It is strongly advised to inject it in your components and use it to create <code>WebClient</code> instances.
 Spring Boot is configuring that builder to share HTTP resources, reflect codecs setup in the same fashion as the server ones (see <a href="web.html#web.reactive.webflux.httpcodecs">WebFlux HTTP codecs auto-configuration</a>), and more.</p>
@@ -2370,7 +2370,7 @@ Using the same technology for server and client has it advantages, as it will au
 <p translation-origin="off">There are three main approaches to <code>WebClient</code> customization, depending on how broadly you want the customizations to apply.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">要尽可能缩小任何自定义的范围，请注入自动配置的 <code>WebClient.Builder</code> ，然后根据需要调用其方法。 <code>WebClient.Builder</code> 实例是有状态的：对构建器的任何更改都会反映在随后使用它创建的所有客户端中。如果要使用同一个构建器创建多个客户端，还可以考虑使用 <code>WebClient.Builder other = builder.clone();</code> .</p>
+<p translation-result="on">要尽可能缩小任何自定义的范围，请注入自动配置的 <code>WebClient.Builder</code> ，然后根据需要调用其方法。<code>WebClient.Builder</code> 实例是有状态的：对构建器的任何更改都会反映在随后使用它创建的所有客户端中。如果要使用同一个构建器创建多个客户端，还可以考虑使用 <code>WebClient.Builder other = builder.clone();</code> .</p>
 <p translation-origin="off">To make the scope of any customizations as narrow as possible, inject the auto-configured <code>WebClient.Builder</code> and then call its methods as required.
 <code>WebClient.Builder</code> instances are stateful: Any change on the builder is reflected in all clients subsequently created with it.
 If you want to create several clients with the same builder, you can also consider cloning the builder with <code>WebClient.Builder other = builder.clone();</code>.</p>
@@ -2459,7 +2459,7 @@ public class MyService {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下， <code>WebServiceTemplateBuilder</code> 使用类路径上可用的 HTTP 客户端库检测合适的基于 HTTP 的 <code>WebServiceMessageSender</code> 。您还可以自定义读取和连接超时，如下所示：</p>
+<p translation-result="on">默认情况下，<code>WebServiceTemplateBuilder</code> 使用类路径上可用的 HTTP 客户端库检测合适的基于 HTTP 的 <code>WebServiceMessageSender</code> 。您还可以自定义读取和连接超时，如下所示：</p>
 <p translation-origin="off">By default, <code>WebServiceTemplateBuilder</code> detects a suitable HTTP-based <code>WebServiceMessageSender</code> using the available HTTP client libraries on the classpath.
 You can also customize read and connection timeouts as follows:</p>
 </div>
@@ -2513,7 +2513,7 @@ If you are within a JTA environment and still want to use local transactions, yo
 <h3 id="io.jta.atomikos" translation-result="on"><a href="io.html#io.jta.atomikos"></a>8.1。使用 Atomikos 事务管理器</h3>
 <h3 translation-origin="off"><a class="anchor" href="io.html#io.jta.atomikos"></a>8.1. Using an Atomikos Transaction Manager</h3>
 <div class="paragraph">
-<p translation-result="on"><a href="https://www.atomikos.com/">Atomikos</a> 是一种流行的开源事务管理器，可以嵌入到您的 Spring Boot 应用程序中。您可以使用 <code>spring-boot-starter-jta-atomikos</code> 启动器来拉入适当的 Atomikos 库。 Spring Boot 自动配置 Atomikos 并确保将适当 <code>depends-on</code> 设置应用于您的 Spring bean 以实现正确的启动和关闭顺序。</p>
+<p translation-result="on"><a href="https://www.atomikos.com/">Atomikos</a> 是一种流行的开源事务管理器，可以嵌入到您的 Spring Boot 应用程序中。您可以使用 <code>spring-boot-starter-jta-atomikos</code> 启动器来拉入适当的 Atomikos 库。Spring Boot 自动配置 Atomikos 并确保将适当 <code>depends-on</code> 设置应用于您的 Spring bean 以实现正确的启动和关闭顺序。</p>
 <p translation-origin="off"><a href="https://www.atomikos.com/">Atomikos</a> is a popular open source transaction manager which can be embedded into your Spring Boot application.
 You can use the <code>spring-boot-starter-jta-atomikos</code> starter to pull in the appropriate Atomikos libraries.
 Spring Boot auto-configures Atomikos and ensures that appropriate <code>depends-on</code> settings are applied to your Spring beans for correct startup and shutdown ordering.</p>
@@ -2545,7 +2545,7 @@ To ensure uniqueness in production, you should configure the <code>spring.jta.tr
 <h3 id="io.jta.javaee" translation-result="on"><a href="io.html#io.jta.javaee"></a>8.2.使用 Java EE 托管事务管理器</h3>
 <h3 translation-origin="off"><a class="anchor" href="io.html#io.jta.javaee"></a>8.2. Using a Java EE Managed Transaction Manager</h3>
 <div class="paragraph">
-<p translation-result="on">如果将 Spring Boot 应用程序打包为 <code>war</code> 或 <code>ear</code> 文件并将其部署到 Java EE 应用程序服务器，则可以使用应用程序服务器的内置事务管理器。 Spring Boot 尝试通过查看常见的 JNDI 位置（ <code>java:comp/UserTransaction</code> 、 <code>java:comp/TransactionManager</code> 等）来自动配置事务管理器。如果您使用应用服务器提供的事务服务，您通常还希望确保所有资源都由服务器管理并通过 JNDI 公开。 Spring Boot 尝试通过在 JNDI 路径（ <code>java:/JmsXA</code> 或 <code>java:/XAConnectionFactory</code> ）中查找 <code>ConnectionFactory</code> 来自动配置 JMS，您可以使用<a href="data.html#data.sql.datasource.jndi"><code>spring.datasource.jndi-name</code> 属性</a>来配置 <code>DataSource</code> 。</p>
+<p translation-result="on">如果将 Spring Boot 应用程序打包为 <code>war</code> 或 <code>ear</code> 文件并将其部署到 Java EE 应用程序服务器，则可以使用应用程序服务器的内置事务管理器。Spring Boot 尝试通过查看常见的 JNDI 位置（ <code>java:comp/UserTransaction</code> 、 <code>java:comp/TransactionManager</code> 等）来自动配置事务管理器。如果您使用应用服务器提供的事务服务，您通常还希望确保所有资源都由服务器管理并通过 JNDI 公开。Spring Boot 尝试通过在 JNDI 路径（ <code>java:/JmsXA</code> 或 <code>java:/XAConnectionFactory</code> ）中查找 <code>ConnectionFactory</code> 来自动配置 JMS，您可以使用<a href="data.html#data.sql.datasource.jndi"><code>spring.datasource.jndi-name</code> 属性</a>来配置 <code>DataSource</code> 。</p>
 <p translation-origin="off">If you package your Spring Boot application as a <code>war</code> or <code>ear</code> file and deploy it to a Java EE application server, you can use your application server’s built-in transaction manager.
 Spring Boot tries to auto-configure a transaction manager by looking at common JNDI locations (<code>java:comp/UserTransaction</code>, <code>java:comp/TransactionManager</code>, and so on).
 If you use a transaction service provided by your application server, you generally also want to ensure that all resources are managed by the server and exposed over JNDI.
@@ -2586,7 +2586,7 @@ For example, your JMS processing logic might take longer than the XA timeout.</p
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">为了保持一致性， <code>jmsConnectionFactory</code> bean 也通过使用 bean 别名 <code>xaJmsConnectionFactory</code> 来提供：</p>
+<p translation-result="on">为了保持一致性，<code>jmsConnectionFactory</code> bean 也通过使用 bean 别名 <code>xaJmsConnectionFactory</code> 来提供：</p>
 <p translation-origin="off">For consistency, the <code>jmsConnectionFactory</code> bean is also provided by using the bean alias <code>xaJmsConnectionFactory</code>:</p>
 </div>
 <div class="listingblock">
@@ -2602,7 +2602,7 @@ For example, your JMS processing logic might take longer than the XA timeout.</p
 <h3 id="io.jta.supporting-alternative-embedded-transaction-manager" translation-result="on"><a href="io.html#io.jta.supporting-alternative-embedded-transaction-manager"></a>8.4.支持替代嵌入式事务管理器</h3>
 <h3 translation-origin="off"><a class="anchor" href="io.html#io.jta.supporting-alternative-embedded-transaction-manager"></a>8.4. Supporting an Alternative Embedded Transaction Manager</h3>
 <div class="paragraph">
-<p translation-result="on"><a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jms/XAConnectionFactoryWrapper.java"><code>XAConnectionFactoryWrapper</code></a>和<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jdbc/XADataSourceWrapper.java"><code>XADataSourceWrapper</code></a>接口可用于支持替代的嵌入式事务管理器。这些接口负责包装 <code>XAConnectionFactory</code> 和 <code>XADataSource</code> bean 并将它们公开为常规 <code>ConnectionFactory</code> 和 <code>DataSource</code> bean，它们透明地注册到分布式事务中。 DataSource 和 JMS 自动配置使用 JTA 变体，前提是您在 <code>ApplicationContext</code> 中注册了 <code>JtaTransactionManager</code> bean 和适当的 XA 包装器 bean。</p>
+<p translation-result="on"><a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jms/XAConnectionFactoryWrapper.java"><code>XAConnectionFactoryWrapper</code></a>和<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jdbc/XADataSourceWrapper.java"><code>XADataSourceWrapper</code></a>接口可用于支持替代的嵌入式事务管理器。这些接口负责包装 <code>XAConnectionFactory</code> 和 <code>XADataSource</code> bean 并将它们公开为常规 <code>ConnectionFactory</code> 和 <code>DataSource</code> bean，它们透明地注册到分布式事务中。DataSource 和 JMS 自动配置使用 JTA 变体，前提是您在 <code>ApplicationContext</code> 中注册了 <code>JtaTransactionManager</code> bean 和适当的 XA 包装器 bean。</p>
 <p translation-origin="off">The <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jms/XAConnectionFactoryWrapper.java"><code>XAConnectionFactoryWrapper</code></a> and <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jdbc/XADataSourceWrapper.java"><code>XADataSourceWrapper</code></a> interfaces can be used to support alternative embedded transaction managers.
 The interfaces are responsible for wrapping <code>XAConnectionFactory</code> and <code>XADataSource</code> beans and exposing them as regular <code>ConnectionFactory</code> and <code>DataSource</code> beans, which transparently enroll in the distributed transaction.
 DataSource and JMS auto-configuration use JTA variants, provided you have a <code>JtaTransactionManager</code> bean and appropriate XA wrapper beans registered within your <code>ApplicationContext</code>.</p>

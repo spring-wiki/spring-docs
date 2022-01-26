@@ -1052,7 +1052,7 @@ If you use the Maven plugin or the Gradle plugin, executable jars are automatica
 This can be problematic if you need to distribute a self-contained application that can be run from the command line without unpacking.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">为了解决这个问题，许多开发人员使用“阴影”罐子。带阴影的 jar 将所有 jar 中的所有类打包到一个“uber jar”中。带阴影的 jar 的问题是很难看出哪些库实际上在您的应用程序中。如果在多个 jar 中使用相同的文件名（但内容不同），也可能会出现问题。 Spring Boot 采用了不同的方法，让您实际上可以直接嵌套 jar。</p>
+<p translation-result="on">为了解决这个问题，许多开发人员使用“阴影”罐子。带阴影的 jar 将所有 jar 中的所有类打包到一个“uber jar”中。带阴影的 jar 的问题是很难看出哪些库实际上在您的应用程序中。如果在多个 jar 中使用相同的文件名（但内容不同），也可能会出现问题。Spring Boot 采用了不同的方法，让您实际上可以直接嵌套 jar。</p>
 <p translation-origin="off">To solve this problem, many developers use “shaded” jars.
 A shaded jar packages all classes, from all jars, into a single “uber jar”.
 The problem with shaded jars is that it becomes hard to see which libraries are actually in your application.
@@ -1135,7 +1135,7 @@ Any dependencies that are required when running embedded but are not required wh
 <h3 id="executable-jar.nested-jars.index-files" translation-result="on"><a href="executable-jar.html#executable-jar.nested-jars.index-files"></a>1.3.索引文件</h3>
 <h3 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.nested-jars.index-files"></a>1.3. Index Files</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Boot Loader 兼容的 jar 和 war 档案可以在 <code>BOOT-INF/</code> 目录下包含其他索引文件。可以为 jars 和 wars 提供一个 <code>classpath.idx</code> 文件，它提供了将 jars 添加到类路径中的顺序。 <code>layers.idx</code> 文件只能用于 jar，它允许将 jar 拆分为逻辑层以创建 Docker/OCI 映像。</p>
+<p translation-result="on">Spring Boot Loader 兼容的 jar 和 war 档案可以在 <code>BOOT-INF/</code> 目录下包含其他索引文件。可以为 jars 和 wars 提供一个 <code>classpath.idx</code> 文件，它提供了将 jars 添加到类路径中的顺序。<code>layers.idx</code> 文件只能用于 jar，它允许将 jar 拆分为逻辑层以创建 Docker/OCI 映像。</p>
 <p translation-origin="off">Spring Boot Loader-compatible jar and war archives can include additional index files under the <code>BOOT-INF/</code> directory.
 A <code>classpath.idx</code> file can be provided for both jars and wars, and it provides the ordering that jars should be added to the classpath.
 The <code>layers.idx</code> file can be used only for jars, and it allows a jar to be split into logical layers for Docker/OCI image creation.</p>
@@ -1251,7 +1251,7 @@ We do not need to unpack the archive, and we do not need to read all entry data 
 <h3 id="executable-jar.jarfile-class.compatibility" translation-result="on"><a href="executable-jar.html#executable-jar.jarfile-class.compatibility"></a>2.1。与标准 Java “JarFile”的兼容性</h3>
 <h3 translation-origin="off"><a class="anchor" href="executable-jar.html#executable-jar.jarfile-class.compatibility"></a>2.1. Compatibility with the Standard Java “JarFile”</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Boot Loader 力求与现有代码和库保持兼容。 <code>org.springframework.boot.loader.jar.JarFile</code> 从 <code>java.util.jar.JarFile</code> 扩展而来，应该可以作为替代品使用。 <code>getURL()</code> 方法返回一个 <code>URL</code> ，该 URL 打开一个与 <code>java.net.JarURLConnection</code> 兼容的连接，并且可以与 Java 的 <code>URLClassLoader</code> 一起使用。</p>
+<p translation-result="on">Spring Boot Loader 力求与现有代码和库保持兼容。<code>org.springframework.boot.loader.jar.JarFile</code> 从 <code>java.util.jar.JarFile</code> 扩展而来，应该可以作为替代品使用。<code>getURL()</code> 方法返回一个 <code>URL</code> ，该 URL 打开一个与 <code>java.net.JarURLConnection</code> 兼容的连接，并且可以与 Java 的 <code>URLClassLoader</code> 一起使用。</p>
 <p translation-origin="off">Spring Boot Loader strives to remain compatible with existing code and libraries.
 <code>org.springframework.boot.loader.jar.JarFile</code> extends from <code>java.util.jar.JarFile</code> and should work as a drop-in replacement.
 The <code>getURL()</code> method returns a <code>URL</code> that opens a connection compatible with <code>java.net.JarURLConnection</code> and can be used with Java’s <code>URLClassLoader</code>.</p>
@@ -1269,7 +1269,7 @@ The <code>getURL()</code> method returns a <code>URL</code> that opens a connect
 It is the actual <code>Main-Class</code> in your jar file, and it is used to setup an appropriate <code>URLClassLoader</code> and ultimately call your <code>main()</code> method.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">有三个启动器子类（ <code>JarLauncher</code> 、 <code>WarLauncher</code> 和 <code>PropertiesLauncher</code> ）。它们的目的是从目录中的嵌套 jar 文件或 war 文件加载资源（ <code>.class</code> 文件等）（与那些显式在类路径上的文件相反）。对于 <code>JarLauncher</code> 和 <code>WarLauncher</code> ，嵌套路径是固定的。 <code>JarLauncher</code> 在 <code>BOOT-INF/lib/</code> 中查找，而 <code>WarLauncher</code> 在 <code>WEB-INF/lib/</code> 和 <code>WEB-INF/lib-provided/</code> 中查找。如果你想要更多，你可以在这些位置添加额外的罐子。默认情况下， <code>PropertiesLauncher</code> 在应用程序存档中的 <code>BOOT-INF/lib/</code> 中查找。您可以通过在 <code>loader.properties</code> 中设置一个名为 <code>LOADER_PATH</code> 或 <code>loader.path</code> 的环境变量来添加其他位置（这是一个逗号分隔的目录、档案或档案中的目录的列表）。</p>
+<p translation-result="on">有三个启动器子类（ <code>JarLauncher</code> 、 <code>WarLauncher</code> 和 <code>PropertiesLauncher</code> ）。它们的目的是从目录中的嵌套 jar 文件或 war 文件加载资源（ <code>.class</code> 文件等）（与那些显式在类路径上的文件相反）。对于 <code>JarLauncher</code> 和 <code>WarLauncher</code> ，嵌套路径是固定的。<code>JarLauncher</code> 在 <code>BOOT-INF/lib/</code> 中查找，而 <code>WarLauncher</code> 在 <code>WEB-INF/lib/</code> 和 <code>WEB-INF/lib-provided/</code> 中查找。如果你想要更多，你可以在这些位置添加额外的罐子。默认情况下，<code>PropertiesLauncher</code> 在应用程序存档中的 <code>BOOT-INF/lib/</code> 中查找。您可以通过在 <code>loader.properties</code> 中设置一个名为 <code>LOADER_PATH</code> 或 <code>loader.path</code> 的环境变量来添加其他位置（这是一个逗号分隔的目录、档案或档案中的目录的列表）。</p>
 <p translation-origin="off">There are three launcher subclasses (<code>JarLauncher</code>, <code>WarLauncher</code>, and <code>PropertiesLauncher</code>).
 Their purpose is to load resources (<code>.class</code> files and so on) from nested jar files or war files in directories (as opposed to those explicitly on the classpath).
 In the case of <code>JarLauncher</code> and <code>WarLauncher</code>, the nested paths are fixed.
@@ -1371,12 +1371,12 @@ This property is also used to locate a <code>loader.properties</code> file, as i
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.config.name</code></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">属性文件的名称（例如， <code>launcher</code> ）。它默认为 <code>loader</code> 。</p><p class="tableblock" translation-origin="off">Name of properties file (for example, <code>launcher</code>).
+<td class="tableblock halign-left valign-top"><p translation-result="on">属性文件的名称（例如，<code>launcher</code> ）。它默认为 <code>loader</code> 。</p><p class="tableblock" translation-origin="off">Name of properties file (for example, <code>launcher</code>).
 It defaults to <code>loader</code>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>loader.config.location</code></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">属性文件的路径（例如， <code>classpath:loader.properties</code> ）。它默认为 <code>loader.properties</code> 。</p><p class="tableblock" translation-origin="off">Path to properties file (for example, <code>classpath:loader.properties</code>).
+<td class="tableblock halign-left valign-top"><p translation-result="on">属性文件的路径（例如，<code>classpath:loader.properties</code> ）。它默认为 <code>loader.properties</code> 。</p><p class="tableblock" translation-origin="off">Path to properties file (for example, <code>classpath:loader.properties</code>).
 It defaults to <code>loader.properties</code>.</p></td>
 </tr>
 <tr>
@@ -1475,12 +1475,12 @@ The first location where a file with that name exists is used.</p>
 <p translation-origin="off"><code>loader.home</code> is the directory location of an additional properties file (overriding the default) only when <code>loader.config.location</code> is not specified.</p>
 </li>
 <li>
-<p translation-result="on"><code>loader.path</code> 可以包含目录（递归扫描 jar 和 zip 文件）、存档路径、存档中扫描 jar 文件的目录（例如， <code>dependencies.jar!/lib</code> ）或通配符模式（用于默认 JVM 行为）。存档路径可以相对于 <code>loader.home</code> 或文件系统中带有 <code>jar:file:</code> 前缀的任何位置。</p>
+<p translation-result="on"><code>loader.path</code> 可以包含目录（递归扫描 jar 和 zip 文件）、存档路径、存档中扫描 jar 文件的目录（例如，<code>dependencies.jar!/lib</code> ）或通配符模式（用于默认 JVM 行为）。存档路径可以相对于 <code>loader.home</code> 或文件系统中带有 <code>jar:file:</code> 前缀的任何位置。</p>
 <p translation-origin="off"><code>loader.path</code> can contain directories (which are scanned recursively for jar and zip files), archive paths, a directory within an archive that is scanned for jar files (for example, <code>dependencies.jar!/lib</code>), or wildcard patterns (for the default JVM behavior).
 Archive paths can be relative to <code>loader.home</code> or anywhere in the file system with a <code>jar:file:</code> prefix.</p>
 </li>
 <li>
-<p translation-result="on"><code>loader.path</code> （如果为空）默认为 <code>BOOT-INF/lib</code> （表示本地目录或嵌套目录，如果从存档运行）。因此， <code>PropertiesLauncher</code> 在没有提供额外配置时的行为与 <code>JarLauncher</code> 相同。</p>
+<p translation-result="on"><code>loader.path</code> （如果为空）默认为 <code>BOOT-INF/lib</code> （表示本地目录或嵌套目录，如果从存档运行）。因此，<code>PropertiesLauncher</code> 在没有提供额外配置时的行为与 <code>JarLauncher</code> 相同。</p>
 <p translation-origin="off"><code>loader.path</code> (if empty) defaults to <code>BOOT-INF/lib</code> (meaning a local directory or a nested one if running from an archive).
 Because of this, <code>PropertiesLauncher</code> behaves the same as <code>JarLauncher</code> when no additional configuration is provided.</p>
 </li>
@@ -1522,7 +1522,7 @@ The content of the nested jar file itself can still be compressed, as can any ot
 <div id="executable-jar-system-classloader" class="ulist">
 <ul>
 <li>
-<p translation-result="on">系统类加载器：启动的应用程序在加载类时应该使用 <code>Thread.getContextClassLoader()</code> （大多数库和框架默认这样做）。尝试使用 <code>ClassLoader.getSystemClassLoader()</code> 加载嵌套的 jar 类失败。 <code>java.util.Logging</code> 始终使用系统类加载器。因此，您应该考虑不同的日志记录实现。</p>
+<p translation-result="on">系统类加载器：启动的应用程序在加载类时应该使用 <code>Thread.getContextClassLoader()</code> （大多数库和框架默认这样做）。尝试使用 <code>ClassLoader.getSystemClassLoader()</code> 加载嵌套的 jar 类失败。<code>java.util.Logging</code> 始终使用系统类加载器。因此，您应该考虑不同的日志记录实现。</p>
 <p translation-origin="off">System classLoader:
 Launched applications should use <code>Thread.getContextClassLoader()</code> when loading classes (most libraries and frameworks do so by default).
 Trying to load nested jar classes with <code>ClassLoader.getSystemClassLoader()</code> fails.

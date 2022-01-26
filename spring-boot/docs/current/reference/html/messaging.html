@@ -971,7 +971,7 @@
   <p><a href="messaging.html#messaging.jms">1. JMS</a></p>
 <ul class="sectlevel2">
 <li>
-  <p translation-result="on"><a href="messaging.html#messaging.jms.activemq">1.1。 ActiveMQ 支持</a></p>
+  <p translation-result="on"><a href="messaging.html#messaging.jms.activemq">1.1。ActiveMQ 支持</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.jms.activemq">1.1. ActiveMQ Support</a></p>
 </li>
 <li>
@@ -996,7 +996,7 @@
   <p><a href="messaging.html#messaging.amqp">2. AMQP</a></p>
 <ul class="sectlevel2">
 <li>
-  <p translation-result="on"><a href="messaging.html#messaging.amqp.rabbitmq">2.1。 RabbitMQ 支持</a></p>
+  <p translation-result="on"><a href="messaging.html#messaging.amqp.rabbitmq">2.1。RabbitMQ 支持</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.amqp.rabbitmq">2.1. RabbitMQ support</a></p>
 </li>
 <li>
@@ -1039,7 +1039,7 @@
   <p><a href="messaging.html#messaging.rsocket">4. RSocket</a></p>
 <ul class="sectlevel2">
 <li>
-  <p translation-result="on"><a href="messaging.html#messaging.rsocket.strategies-auto-configuration">4.1。 RSocket 策略自动配置</a></p>
+  <p translation-result="on"><a href="messaging.html#messaging.rsocket.strategies-auto-configuration">4.1。RSocket 策略自动配置</a></p>
   <p translation-origin="off"><a href="messaging.html#messaging.rsocket.strategies-auto-configuration">4.1. RSocket Strategies Auto-configuration</a></p>
 </li>
 <li>
@@ -1071,7 +1071,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Framework 为与消息传递系统集成提供了广泛的支持，从使用 <code>JmsTemplate</code> 的 JMS API 的简化使用到异步接收消息的完整基础架构。 Spring AMQP 为高级消息队列协议提供了类似的功能集。 Spring Boot 还为 <code>RabbitTemplate</code> 和 RabbitMQ 提供了自动配置选项。 Spring WebSocket 原生包括对 STOMP 消息传递的支持，Spring Boot 通过启动器和少量的自动配置来支持它。 Spring Boot 还支持 Apache Kafka。</p>
+<p translation-result="on">Spring Framework 为与消息传递系统集成提供了广泛的支持，从使用 <code>JmsTemplate</code> 的 JMS API 的简化使用到异步接收消息的完整基础架构。Spring AMQP 为高级消息队列协议提供了类似的功能集。Spring Boot 还为 <code>RabbitTemplate</code> 和 RabbitMQ 提供了自动配置选项。Spring WebSocket 原生包括对 STOMP 消息传递的支持，Spring Boot 通过启动器和少量的自动配置来支持它。Spring Boot 还支持 Apache Kafka。</p>
 <p translation-origin="off">The Spring Framework provides extensive support for integrating with messaging systems, from simplified use of the JMS API using <code>JmsTemplate</code> to a complete infrastructure to receive messages asynchronously.
 Spring AMQP provides a similar feature set for the Advanced Message Queuing Protocol.
 Spring Boot also provides auto-configuration options for <code>RabbitTemplate</code> and RabbitMQ.
@@ -1085,14 +1085,14 @@ Spring Boot also has support for Apache Kafka.</p>
 <h2 translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms"></a>1. JMS</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on"><code>javax.jms.ConnectionFactory</code> 接口提供了一种创建 <code>javax.jms.Connection</code> 以与 JMS 代理交互的标准方法。尽管 Spring 需要 <code>ConnectionFactory</code> 来与 JMS 一起工作，但您通常不需要自己直接使用它，而是可以依赖更高级别的消息传递抽象。 （有关详细信息，请参阅 Spring Framework 参考文档的 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/integration.html#jms">相关部分</a>。）Spring Boot 还自动配置必要的基础设施来发送和接收消息。</p>
+<p translation-result="on"><code>javax.jms.ConnectionFactory</code> 接口提供了一种创建 <code>javax.jms.Connection</code> 以与 JMS 代理交互的标准方法。尽管 Spring 需要 <code>ConnectionFactory</code> 来与 JMS 一起工作，但您通常不需要自己直接使用它，而是可以依赖更高级别的消息传递抽象。（有关详细信息，请参阅 Spring Framework 参考文档的 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/integration.html#jms">相关部分</a>。）Spring Boot 还自动配置必要的基础设施来发送和接收消息。</p>
 <p translation-origin="off">The <code>javax.jms.ConnectionFactory</code> interface provides a standard method of creating a <code>javax.jms.Connection</code> for interacting with a JMS broker.
 Although Spring needs a <code>ConnectionFactory</code> to work with JMS, you generally need not use it directly yourself and can instead rely on higher level messaging abstractions.
 (See the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/integration.html#jms">relevant section</a> of the Spring Framework reference documentation for details.)
 Spring Boot also auto-configures the necessary infrastructure to send and receive messages.</p>
 </div>
 <div class="sect2">
-<h3 id="messaging.jms.activemq" translation-result="on"><a href="messaging.html#messaging.jms.activemq"></a>1.1。 ActiveMQ 支持</h3>
+<h3 id="messaging.jms.activemq" translation-result="on"><a href="messaging.html#messaging.jms.activemq"></a>1.1。ActiveMQ 支持</h3>
 <h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms.activemq"></a>1.1. ActiveMQ Support</h3>
 <div class="paragraph">
 <p translation-result="on">当 <a href="https://activemq.apache.org/">ActiveMQ</a> 在类路径上可用时，Spring Boot 还可以配置 <code>ConnectionFactory</code> 。如果存在代理，则会自动启动和配置嵌入式代理（前提是未通过配置指定代理 URL，并且未在配置中禁用嵌入式代理）。</p>
@@ -1522,16 +1522,16 @@ public class MyBean {
 <h2 translation-origin="off"><a class="anchor" href="messaging.html#messaging.amqp"></a>2. AMQP</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">高级消息队列协议 (AMQP) 是面向消息中间件的平台中立、线路级协议。 Spring AMQP 项目将核心 Spring 概念应用于基于 AMQP 的消息传递解决方案的开发。 Spring Boot 为通过 RabbitMQ 使用 AMQP 提供了多种便利，包括 <code>spring-boot-starter-amqp</code> “Starter”。</p>
+<p translation-result="on">高级消息队列协议 (AMQP) 是面向消息中间件的平台中立、线路级协议。Spring AMQP 项目将核心 Spring 概念应用于基于 AMQP 的消息传递解决方案的开发。Spring Boot 为通过 RabbitMQ 使用 AMQP 提供了多种便利，包括 <code>spring-boot-starter-amqp</code> “Starter”。</p>
 <p translation-origin="off">The Advanced Message Queuing Protocol (AMQP) is a platform-neutral, wire-level protocol for message-oriented middleware.
 The Spring AMQP project applies core Spring concepts to the development of AMQP-based messaging solutions.
 Spring Boot offers several conveniences for working with AMQP through RabbitMQ, including the <code>spring-boot-starter-amqp</code> “Starter”.</p>
 </div>
 <div class="sect2">
-<h3 id="messaging.amqp.rabbitmq" translation-result="on"><a href="messaging.html#messaging.amqp.rabbitmq"></a>2.1。 RabbitMQ 支持</h3>
+<h3 id="messaging.amqp.rabbitmq" translation-result="on"><a href="messaging.html#messaging.amqp.rabbitmq"></a>2.1。RabbitMQ 支持</h3>
 <h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.amqp.rabbitmq"></a>2.1. RabbitMQ support</h3>
 <div class="paragraph">
-<p translation-result="on"><a href="https://www.rabbitmq.com/">RabbitMQ</a> 是基于 AMQP 协议的轻量级、可靠、可扩展、可移植的消息代理。 Spring 使用 <code>RabbitMQ</code> 通过 AMQP 协议进行通信。</p>
+<p translation-result="on"><a href="https://www.rabbitmq.com/">RabbitMQ</a> 是基于 AMQP 协议的轻量级、可靠、可扩展、可移植的消息代理。Spring 使用 <code>RabbitMQ</code> 通过 AMQP 协议进行通信。</p>
 <p translation-origin="off"><a href="https://www.rabbitmq.com/">RabbitMQ</a> is a lightweight, reliable, scalable, and portable message broker based on the AMQP protocol.
 Spring uses <code>RabbitMQ</code> to communicate through the AMQP protocol.</p>
 </div>
@@ -1977,7 +1977,7 @@ public class MyBean {
 Similarly, if a <code>RecordFilterStrategy</code>, <code>ErrorHandler</code>, <code>CommonErrorHandler</code>, <code>AfterRollbackProcessor</code> or <code>ConsumerAwareRebalanceListener</code> bean is defined, it is automatically associated to the default factory.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">根据侦听器类型， <code>RecordMessageConverter</code> 或 <code>BatchMessageConverter</code> bean 与默认工厂相关联。如果批处理侦听器仅存在 <code>RecordMessageConverter</code> bean，则将其包装在 <code>BatchMessageConverter</code> 中。</p>
+<p translation-result="on">根据侦听器类型，<code>RecordMessageConverter</code> 或 <code>BatchMessageConverter</code> bean 与默认工厂相关联。如果批处理侦听器仅存在 <code>RecordMessageConverter</code> bean，则将其包装在 <code>BatchMessageConverter</code> 中。</p>
 <p translation-origin="off">Depending on the listener type, a <code>RecordMessageConverter</code> or <code>BatchMessageConverter</code> bean is associated to the default factory.
 If only a <code>RecordMessageConverter</code> bean is present for a batch listener, it is wrapped in a <code>BatchMessageConverter</code>.</p>
 </div>
@@ -2015,7 +2015,7 @@ The latter can be set globally or specifically overridden only for streams.</p>
 See also <a href="features.html#messaging.kafka.additional-properties">features.html</a> for more information.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">要使用工厂 bean， <code>StreamsBuilder</code> 到您的 <code>@Bean</code> 中，如以下示例所示：</p>
+<p translation-result="on">要使用工厂 bean，<code>StreamsBuilder</code> 到您的 <code>@Bean</code> 中，如以下示例所示：</p>
 <p translation-origin="off">To use the factory bean, wire <code>StreamsBuilder</code> into your <code>@Bean</code> as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -2066,7 +2066,7 @@ Note that, for the most part, these properties (hyphenated or camelCase) map dir
 See the Apache Kafka documentation for details.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">这些属性中的前几个适用于所有组件（生产者、消费者、管理员和流），但如果您希望使用不同的值，可以在组件级别指定。 Apache Kafka 指定具有 HIGH、MEDIUM 或 LOW 重要性的属性。 Spring Boot 自动配置支持所有 HIGH 重要性属性、一些选定的 MEDIUM 和 LOW 属性以及任何没有默认值的属性。</p>
+<p translation-result="on">这些属性中的前几个适用于所有组件（生产者、消费者、管理员和流），但如果您希望使用不同的值，可以在组件级别指定。Apache Kafka 指定具有 HIGH、MEDIUM 或 LOW 重要性的属性。Spring Boot 自动配置支持所有 HIGH 重要性属性、一些选定的 MEDIUM 和 LOW 属性以及任何没有默认值的属性。</p>
 <p translation-origin="off">The first few of these properties apply to all components (producers, consumers, admins, and streams) but can be specified at the component level if you wish to use different values.
 Apache Kafka designates properties with an importance of HIGH, MEDIUM, or LOW.
 Spring Boot auto-configuration supports all HIGH importance properties, some selected MEDIUM and LOW properties, and any properties that do not have a default value.</p>
@@ -2109,7 +2109,7 @@ spring.kafka.streams.properties[prop.five]=fifth</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">这将通用 <code>prop.one</code> Kafka 属性设置为 <code>first</code> （适用于生产者、消费者和管理员）， <code>prop.two</code> 管理属性设置为 <code>second</code> ， <code>prop.three</code> 消费者属性设置为 <code>third</code> ， <code>prop.four</code> 生产者属性设置为 <code>fourth</code> ， <code>prop.five</code> 流属性到 <code>fifth</code> 。</p>
+<p translation-result="on">这将通用 <code>prop.one</code> Kafka 属性设置为 <code>first</code> （适用于生产者、消费者和管理员），<code>prop.two</code> 管理属性设置为 <code>second</code> ，<code>prop.three</code> 消费者属性设置为 <code>third</code> ，<code>prop.four</code> 生产者属性设置为 <code>fourth</code> ，<code>prop.five</code> 流属性到 <code>fifth</code> 。</p>
 <p translation-origin="off">This sets the common <code>prop.one</code> Kafka property to <code>first</code> (applies to producers, consumers and admins), the <code>prop.two</code> admin property to <code>second</code>, the <code>prop.three</code> consumer property to <code>third</code>, the <code>prop.four</code> producer property to <code>fourth</code> and the <code>prop.five</code> streams property to <code>fifth</code>.</p>
 </div>
 <div class="paragraph">
@@ -2268,7 +2268,7 @@ It enables symmetric interaction models through async message passing over a sin
 See the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html#rsocket-spring">RSocket section</a> of the Spring Framework reference for more details, including an overview of the RSocket protocol.</p>
 </div>
 <div class="sect2">
-<h3 id="messaging.rsocket.strategies-auto-configuration" translation-result="on"><a href="messaging.html#messaging.rsocket.strategies-auto-configuration"></a>4.1。 RSocket 策略自动配置</h3>
+<h3 id="messaging.rsocket.strategies-auto-configuration" translation-result="on"><a href="messaging.html#messaging.rsocket.strategies-auto-configuration"></a>4.1。RSocket 策略自动配置</h3>
 <h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.rsocket.strategies-auto-configuration"></a>4.1. RSocket Strategies Auto-configuration</h3>
 <div class="paragraph">
 <p translation-result="on">Spring Boot 自动配置一个 <code>RSocketStrategies</code> bean，该 bean 提供编码和解码 RSocket 有效负载所需的所有基础设施。默认情况下，自动配置将尝试配置以下内容（按顺序）：</p>
@@ -2388,7 +2388,7 @@ Besides the dependency requirements, the only required configuration is to defin
 <p translation-origin="off">Once the <code>RSocket</code> channel is established between server and client, any party can send or receive requests to the other.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">作为服务器，您可以在 RSocket <code>@Controller</code> 的任何处理程序方法上注入 <code>RSocketRequester</code> 实例。作为客户端，首先需要配置并建立 RSocket 连接。 Spring Boot 使用预期的编解码器为这种情况自动配置 <code>RSocketRequester.Builder</code> 并应用任何 <code>RSocketConnectorConfigurer</code> bean。</p>
+<p translation-result="on">作为服务器，您可以在 RSocket <code>@Controller</code> 的任何处理程序方法上注入 <code>RSocketRequester</code> 实例。作为客户端，首先需要配置并建立 RSocket 连接。Spring Boot 使用预期的编解码器为这种情况自动配置 <code>RSocketRequester.Builder</code> 并应用任何 <code>RSocketConnectorConfigurer</code> bean。</p>
 <p translation-origin="off">As a server, you can get injected with an <code>RSocketRequester</code> instance on any handler method of an RSocket <code>@Controller</code>.
 As a client, you need to configure and establish an RSocket connection first.
 Spring Boot auto-configures an <code>RSocketRequester.Builder</code> for such cases with the expected codecs and applies any <code>RSocketConnectorConfigurer</code> bean.</p>
@@ -2434,7 +2434,7 @@ public class MyService {
 <h2 translation-origin="off"><a class="anchor" href="messaging.html#messaging.spring-integration"></a>5. Spring Integration</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot 为使用 <a href="https://spring.io/projects/spring-integration">Spring Integration</a> 提供了多种便利，包括 <code>spring-boot-starter-integration</code> “Starter”。 Spring Integration 提供了对消息传递以及 HTTP、TCP 等其他传输的抽象。如果 Spring Integration 在您的类路径上可用，则通过 <code>@EnableIntegration</code> 注释对其进行初始化。</p>
+<p translation-result="on">Spring Boot 为使用 <a href="https://spring.io/projects/spring-integration">Spring Integration</a> 提供了多种便利，包括 <code>spring-boot-starter-integration</code> “Starter”。Spring Integration 提供了对消息传递以及 HTTP、TCP 等其他传输的抽象。如果 Spring Integration 在您的类路径上可用，则通过 <code>@EnableIntegration</code> 注释对其进行初始化。</p>
 <p translation-origin="off">Spring Boot offers several conveniences for working with <a href="https://spring.io/projects/spring-integration">Spring Integration</a>, including the <code>spring-boot-starter-integration</code> “Starter”.
 Spring Integration provides abstractions over messaging and also other transports such as HTTP, TCP, and others.
 If Spring Integration is available on your classpath, it is initialized through the <code>@EnableIntegration</code> annotation.</p>

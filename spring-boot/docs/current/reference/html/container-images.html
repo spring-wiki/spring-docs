@@ -1055,7 +1055,7 @@ $ java -cp BOOT-INF/classes:BOOT-INF/lib/* com.example.MyApplication</code></pre
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">在应用程序的 main 方法上使用 <code>JarLauncher</code> 具有可预测的类路径顺序的额外好处。 jar 包含一个 <code>classpath.idx</code> 文件， <code>JarLauncher</code> 在构建类路径时使用该文件。</p>
+<p translation-result="on">在应用程序的 main 方法上使用 <code>JarLauncher</code> 具有可预测的类路径顺序的额外好处。jar 包含一个 <code>classpath.idx</code> 文件，<code>JarLauncher</code> 在构建类路径时使用该文件。</p>
 <p translation-origin="off">Using the <code>JarLauncher</code> over the application’s main method has the added benefit of a predictable classpath order.
 The jar contains a <code>classpath.idx</code> file which is used by the <code>JarLauncher</code> when constructing the classpath.</p>
 </td>
@@ -1135,7 +1135,7 @@ For Gradle, see the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradl
 <h2 translation-origin="off"><a class="anchor" href="container-images.html#container-images.dockerfiles"></a>2. Dockerfiles</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">虽然只需 Dockerfile 中的几行代码就可以将 Spring Boot fat jar 转换为 docker 镜像，但我们将使用<a href="container-images.html#container-images.efficient-images.layering">分层功能</a>来创建优化的 docker 镜像。当您创建一个包含层索引文件的 jar 时， <code>spring-boot-jarmode-layertools</code> jar 将作为依赖项添加到您的 jar 中。使用类路径中的这个 jar，您可以在特殊模式下启动应用程序，该模式允许引导代码运行与您的应用程序完全不同的东西，例如，提取层的东西。</p>
+<p translation-result="on">虽然只需 Dockerfile 中的几行代码就可以将 Spring Boot fat jar 转换为 docker 镜像，但我们将使用<a href="container-images.html#container-images.efficient-images.layering">分层功能</a>来创建优化的 docker 镜像。当您创建一个包含层索引文件的 jar 时，<code>spring-boot-jarmode-layertools</code> jar 将作为依赖项添加到您的 jar 中。使用类路径中的这个 jar，您可以在特殊模式下启动应用程序，该模式允许引导代码运行与您的应用程序完全不同的东西，例如，提取层的东西。</p>
 <p translation-origin="off">While it is possible to convert a Spring Boot fat jar into a docker image with just a few lines in the Dockerfile, we will use the <a href="container-images.html#container-images.efficient-images.layering">layering feature</a> to create an optimized docker image.
 When you create a jar containing the layers index file, the <code>spring-boot-jarmode-layertools</code> jar will be added as a dependency to your jar.
 With this jar on the classpath, you can launch your application in a special mode which allows the bootstrap code to run something entirely different from your application, for example, something that extracts the layers.</p>
@@ -1227,7 +1227,7 @@ You can use some combination of <code>unzip</code> and <code>mv</code> to move t
 <h2 translation-origin="off"><a class="anchor" href="container-images.html#container-images.buildpacks"></a>3. Cloud Native Buildpacks</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Dockerfiles 只是构建 docker 镜像的一种方式。构建 docker 镜像的另一种方法是直接从您的 Maven 或 Gradle 插件中使用 buildpacks。如果您曾经使用过 Cloud Foundry 或 Heroku 等应用程序平台，那么您可能使用过 buildpack。 Buildpacks 是平台的一部分，它将您的应用程序转换为平台可以实际运行的东西。例如，Cloud Foundry 的 Java buildpack 会注意到您正在推送 <code>.jar</code> 文件并自动添加相关的 JRE。</p>
+<p translation-result="on">Dockerfiles 只是构建 docker 镜像的一种方式。构建 docker 镜像的另一种方法是直接从您的 Maven 或 Gradle 插件中使用 buildpacks。如果您曾经使用过 Cloud Foundry 或 Heroku 等应用程序平台，那么您可能使用过 buildpack。Buildpacks 是平台的一部分，它将您的应用程序转换为平台可以实际运行的东西。例如，Cloud Foundry 的 Java buildpack 会注意到您正在推送 <code>.jar</code> 文件并自动添加相关的 JRE。</p>
 <p translation-origin="off">Dockerfiles are just one way to build docker images.
 Another way to build docker images is directly from your Maven or Gradle plugin, using buildpacks.
 If you’ve ever used an application platform such as Cloud Foundry or Heroku then you’ve probably used a buildpack.
@@ -1235,7 +1235,7 @@ Buildpacks are the part of the platform that takes your application and converts
 For example, Cloud Foundry’s Java buildpack will notice that you’re pushing a <code>.jar</code> file and automatically add a relevant JRE.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">使用 Cloud Native Buildpacks，您可以创建可以在任何地方运行的 Docker 兼容镜像。 Spring Boot 直接包含对 Maven 和 Gradle 的 buildpack 支持。这意味着您只需键入一个命令，就可以快速将合理的映像放入本地运行的 Docker 守护程序中。</p>
+<p translation-result="on">使用 Cloud Native Buildpacks，您可以创建可以在任何地方运行的 Docker 兼容镜像。Spring Boot 直接包含对 Maven 和 Gradle 的 buildpack 支持。这意味着您只需键入一个命令，就可以快速将合理的映像放入本地运行的 Docker 守护程序中。</p>
 <p translation-origin="off">With Cloud Native Buildpacks, you can create Docker compatible images that you can run anywhere.
 Spring Boot includes buildpack support directly for both Maven and Gradle.
 This means you can just type a single command and quickly get a sensible image into your locally running Docker daemon.</p>
@@ -1264,7 +1264,7 @@ This means you can just type a single command and quickly get a sensible image i
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">为了实现可重现的构建和容器图像缓存，Buildpacks 可以操纵应用程序资源元数据（例如文件“上次修改”信息）。您应该确保您的应用程序在运行时不依赖该元数据。 Spring Boot 在提供静态资源时可以使用该信息，但这可以通过 <code>spring.web.resources.cache.use-last-modified</code> 禁用</p>
+<p translation-result="on">为了实现可重现的构建和容器图像缓存，Buildpacks 可以操纵应用程序资源元数据（例如文件“上次修改”信息）。您应该确保您的应用程序在运行时不依赖该元数据。Spring Boot 在提供静态资源时可以使用该信息，但这可以通过 <code>spring.web.resources.cache.use-last-modified</code> 禁用</p>
 <p translation-origin="off">In order to achieve reproducible builds and container image caching, Buildpacks can manipulate the application resources metadata (such as the file "last modified" information).
 You should ensure that your application does not rely on that metadata at runtime.
 Spring Boot can use that information when serving static resources, but this can be disabled with <code>spring.web.resources.cache.use-last-modified</code></p>

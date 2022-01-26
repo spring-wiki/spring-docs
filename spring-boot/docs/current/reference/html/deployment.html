@@ -985,7 +985,7 @@
   <p><a href="deployment.html#deployment.cloud.kubernetes">1.2. Kubernetes</a></p>
 <ul class="sectlevel3">
 <li>
-  <p translation-result="on"><a href="deployment.html#deployment.cloud.kubernetes.container-lifecycle">1.2.1。 Kubernetes 容器生命周期</a></p>
+  <p translation-result="on"><a href="deployment.html#deployment.cloud.kubernetes.container-lifecycle">1.2.1。Kubernetes 容器生命周期</a></p>
   <p translation-origin="off"><a href="deployment.html#deployment.cloud.kubernetes.container-lifecycle">1.2.1. Kubernetes Container Lifecycle</a></p>
 </li>
 </ul>
@@ -1002,7 +1002,7 @@
   <p translation-origin="off"><a href="deployment.html#deployment.cloud.aws">1.5. Amazon Web Services (AWS)</a></p>
 <ul class="sectlevel3">
 <li>
-  <p translation-result="on"><a href="deployment.html#deployment.cloud.aws.beanstalk">1.5.1。 AWS Elastic Beanstalk</a></p>
+  <p translation-result="on"><a href="deployment.html#deployment.cloud.aws.beanstalk">1.5.1。AWS Elastic Beanstalk</a></p>
   <p translation-origin="off"><a href="deployment.html#deployment.cloud.aws.beanstalk">1.5.1. AWS Elastic Beanstalk</a></p>
 <ul class="sectlevel4">
 <li>
@@ -1115,7 +1115,7 @@ These providers tend to require that you “bring your own container”.
 They manage application processes (not Java applications specifically), so they need an intermediary layer that adapts <em>your</em> application to the <em>cloud’s</em> notion of a running process.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">两个流行的云提供商 Heroku 和 Cloud Foundry 采用“buildpack”方法。 buildpack 将您部署的代码包装在<em>启动</em>应用程序所需的任何内容中。它可能是 JDK 和对 <code>java</code> 的调用、嵌入式 Web 服务器或成熟的应用程序服务器。 buildpack 是可插入的，但理想情况下，您应该能够对它进行尽可能少的定制。这减少了不受您控制的功能的占用。它最大限度地减少了开发和生产环境之间的差异。</p>
+<p translation-result="on">两个流行的云提供商 Heroku 和 Cloud Foundry 采用“buildpack”方法。buildpack 将您部署的代码包装在<em>启动</em>应用程序所需的任何内容中。它可能是 JDK 和对 <code>java</code> 的调用、嵌入式 Web 服务器或成熟的应用程序服务器。buildpack 是可插入的，但理想情况下，您应该能够对它进行尽可能少的定制。这减少了不受您控制的功能的占用。它最大限度地减少了开发和生产环境之间的差异。</p>
 <p translation-origin="off">Two popular cloud providers, Heroku and Cloud Foundry, employ a “buildpack” approach.
 The buildpack wraps your deployed code in whatever is needed to <em>start</em> your application.
 It might be a JDK and a call to <code>java</code>, an embedded web server, or a full-fledged application server.
@@ -1135,7 +1135,7 @@ It minimizes divergence between development and production environments.</p>
 <h3 id="deployment.cloud.cloud-foundry" translation-result="on"><a href="deployment.html#deployment.cloud.cloud-foundry"></a>1.1。云铸造</h3>
 <h3 translation-origin="off"><a class="anchor" href="deployment.html#deployment.cloud.cloud-foundry"></a>1.1. Cloud Foundry</h3>
 <div class="paragraph">
-<p translation-result="on">如果未指定其他构建包，Cloud Foundry 会提供默认构建包。 Cloud Foundry <a href="https://github.com/cloudfoundry/java-buildpack">Java buildpack</a> 对 Spring 应用程序（包括 Spring Boot）具有出色的支持。您可以部署独立的可执行 jar 应用程序以及传统的 <code>.war</code> 打包应用程序。</p>
+<p translation-result="on">如果未指定其他构建包，Cloud Foundry 会提供默认构建包。Cloud Foundry <a href="https://github.com/cloudfoundry/java-buildpack">Java buildpack</a> 对 Spring 应用程序（包括 Spring Boot）具有出色的支持。您可以部署独立的可执行 jar 应用程序以及传统的 <code>.war</code> 打包应用程序。</p>
 <p translation-origin="off">Cloud Foundry provides default buildpacks that come into play if no other buildpack is specified.
 The Cloud Foundry <a href="https://github.com/cloudfoundry/java-buildpack">Java buildpack</a> has excellent support for Spring applications, including Spring Boot.
 You can deploy stand-alone executable jar applications as well as traditional <code>.war</code> packaged applications.</p>
@@ -1170,7 +1170,7 @@ The following line shows using the <code>cf push</code> command to deploy an app
 If there is a Cloud Foundry <a href="https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html"><code>manifest.yml</code></a> file present in the same directory, it is considered.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">此时， <code>cf</code> 开始上传您的应用程序，产生类似于以下示例的输出：</p>
+<p translation-result="on">此时，<code>cf</code> 开始上传您的应用程序，产生类似于以下示例的输出：</p>
 <p translation-origin="off">At this point, <code>cf</code> starts uploading your application, producing output similar to the following example:</p>
 </div>
 <div class="listingblock">
@@ -1292,7 +1292,7 @@ You can override this detection with the <code>spring.main.cloud-platform</code>
 <p translation-origin="off">Spring Boot helps you to <a href="features.html#features.spring-application.application-availability">manage the state of your application</a> and export it with <a href="actuator.html#actuator.endpoints.kubernetes-probes">HTTP Kubernetes Probes using Actuator</a>.</p>
 </div>
 <div class="sect3">
-<h4 id="deployment.cloud.kubernetes.container-lifecycle" translation-result="on"><a href="deployment.html#deployment.cloud.kubernetes.container-lifecycle"></a>1.2.1。 Kubernetes 容器生命周期</h4>
+<h4 id="deployment.cloud.kubernetes.container-lifecycle" translation-result="on"><a href="deployment.html#deployment.cloud.kubernetes.container-lifecycle"></a>1.2.1。Kubernetes 容器生命周期</h4>
 <h4 translation-origin="off"><a class="anchor" href="deployment.html#deployment.cloud.kubernetes.container-lifecycle"></a>1.2.1. Kubernetes Container Lifecycle</h4>
 <div class="paragraph">
 <p translation-result="on">当 Kubernetes 删除一个应用程序实例时，关闭过程会同时涉及多个子系统：关闭钩子、注销服务、从负载均衡器中删除实例……因为这个关闭过程是并行发生的（并且由于分布式系统的性质），有一个窗口可以将流量路由到也已开始其关闭处理的 pod。</p>
@@ -1342,7 +1342,7 @@ If the pod takes longer than 30 seconds to shut down, which could be because you
 <h3 id="deployment.cloud.heroku" translation-result="on"><a href="deployment.html#deployment.cloud.heroku"></a>1.3. Heroku</h3>
 <h3 translation-origin="off"><a class="anchor" href="deployment.html#deployment.cloud.heroku"></a>1.3. Heroku</h3>
 <div class="paragraph">
-<p translation-result="on">Heroku 是另一个流行的 PaaS 平台。要自定义 Heroku 构建，您需要提供一个 <code>Procfile</code> ，它提供部署应用程序所需的咒语。 Heroku 分配一个 <code>port</code> 供 Java 应用程序使用，然后确保到外部 URI 的路由正常工作。</p>
+<p translation-result="on">Heroku 是另一个流行的 PaaS 平台。要自定义 Heroku 构建，您需要提供一个 <code>Procfile</code> ，它提供部署应用程序所需的咒语。Heroku 分配一个 <code>port</code> 供 Java 应用程序使用，然后确保到外部 URI 的路由正常工作。</p>
 <p translation-origin="off">Heroku is another popular PaaS platform.
 To customize Heroku builds, you provide a <code>Procfile</code>, which provides the incantation required to deploy an application.
 Heroku assigns a <code>port</code> for the Java application to use and then ensures that routing to the external URI works.</p>
@@ -1358,13 +1358,13 @@ The following example shows the <code>Procfile</code> for our starter REST appli
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 使 <code>-D</code> 参数可用作可从 Spring <code>Environment</code> 实例访问的属性。 <code>server.port</code> 配置属性被馈送到嵌入式 Tomcat、Jetty 或 Undertow 实例，然后在启动时使用该端口。 <code>$PORT</code> 环境变量由 Heroku PaaS 分配给我们。</p>
+<p translation-result="on">Spring Boot 使 <code>-D</code> 参数可用作可从 Spring <code>Environment</code> 实例访问的属性。<code>server.port</code> 配置属性被馈送到嵌入式 Tomcat、Jetty 或 Undertow 实例，然后在启动时使用该端口。<code>$PORT</code> 环境变量由 Heroku PaaS 分配给我们。</p>
 <p translation-origin="off">Spring Boot makes <code>-D</code> arguments available as properties accessible from a Spring <code>Environment</code> instance.
 The <code>server.port</code> configuration property is fed to the embedded Tomcat, Jetty, or Undertow instance, which then uses the port when it starts up.
 The <code>$PORT</code> environment variable is assigned to us by the Heroku PaaS.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">这应该是你需要的一切。 Heroku 部署最常见的部署工作流程是将代码 <code>git push</code> 送到生产环境，如下例所示：</p>
+<p translation-result="on">这应该是你需要的一切。Heroku 部署最常见的部署工作流程是将代码 <code>git push</code> 送到生产环境，如下例所示：</p>
 <p translation-origin="off">This should be everything you need.
 The most common deployment workflow for Heroku deployments is to <code>git push</code> the code to production, as shown in the following example:</p>
 </div>
@@ -1489,7 +1489,7 @@ The options include:</p>
 In this document, we describe to approach using AWS Elastic Beanstalk.</p>
 </div>
 <div class="sect3">
-<h4 id="deployment.cloud.aws.beanstalk" translation-result="on"><a href="deployment.html#deployment.cloud.aws.beanstalk"></a>1.5.1。 AWS Elastic Beanstalk</h4>
+<h4 id="deployment.cloud.aws.beanstalk" translation-result="on"><a href="deployment.html#deployment.cloud.aws.beanstalk"></a>1.5.1。AWS Elastic Beanstalk</h4>
 <h4 translation-origin="off"><a class="anchor" href="deployment.html#deployment.cloud.aws.beanstalk"></a>1.5.1. AWS Elastic Beanstalk</h4>
 <div class="paragraph">
 <p translation-result="on">如官方 <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Java.html">Elastic Beanstalk Java 指南</a>中所述，部署 Java 应用程序有两个主要选项。您可以使用“Tomcat 平台”或“Java SE 平台”。</p>
@@ -1510,7 +1510,7 @@ You need only follow the official guide.</p>
 <h5 id="deployment.cloud.aws.beanstalk.java-se-platform" translation-result="on"><a href="deployment.html#deployment.cloud.aws.beanstalk.java-se-platform"></a>使用 Java SE 平台</h5>
 <h5 translation-origin="off"><a class="anchor" href="deployment.html#deployment.cloud.aws.beanstalk.java-se-platform"></a>Using the Java SE Platform</h5>
 <div class="paragraph">
-<p translation-result="on">此选项适用于生成 jar 文件并运行嵌入式 Web 容器的 Spring Boot 项目。 Elastic Beanstalk 环境在端口 80 上运行一个 nginx 实例来代理在端口 5000 上运行的实际应用程序。要配置它，请将以下行添加到您的 <code>application.properties</code> 文件中：</p>
+<p translation-result="on">此选项适用于生成 jar 文件并运行嵌入式 Web 容器的 Spring Boot 项目。Elastic Beanstalk 环境在端口 80 上运行一个 nginx 实例来代理在端口 5000 上运行的实际应用程序。要配置它，请将以下行添加到您的 <code>application.properties</code> 文件中：</p>
 <p translation-origin="off">This option applies to Spring Boot projects that produce a jar file and run an embedded web container.
 Elastic Beanstalk environments run an nginx instance on port 80 to proxy the actual application, running on port 5000.
 To configure it, add the following line to your <code>application.properties</code> file:</p>
@@ -1584,7 +1584,7 @@ There is a <a href="https://exampledriven.wordpress.com/2017/01/09/spring-boot-a
 <h3 id="deployment.cloud.boxfuse" translation-result="on"><a href="deployment.html#deployment.cloud.boxfuse"></a>1.6. Boxfuse 和亚马逊网络服务</h3>
 <h3 translation-origin="off"><a class="anchor" href="deployment.html#deployment.cloud.boxfuse"></a>1.6. Boxfuse and Amazon Web Services</h3>
 <div class="paragraph">
-<p translation-result="on"><a href="https://boxfuse.com/">Boxfuse</a> 的工作原理是将您的 Spring Boot 可执行 jar 或 war 转换为最小的 VM 映像，可以在 VirtualBox 或 AWS 上不加改动地部署。 Boxfuse 与 Spring Boot 深度集成，并使用 Spring Boot 配置文件中的信息自动配置端口和健康检查 URL。 Boxfuse 将这些信息用于它生成的图像以及它提供的所有资源（实例、安全组、弹性负载均衡器等）。</p>
+<p translation-result="on"><a href="https://boxfuse.com/">Boxfuse</a> 的工作原理是将您的 Spring Boot 可执行 jar 或 war 转换为最小的 VM 映像，可以在 VirtualBox 或 AWS 上不加改动地部署。Boxfuse 与 Spring Boot 深度集成，并使用 Spring Boot 配置文件中的信息自动配置端口和健康检查 URL。Boxfuse 将这些信息用于它生成的图像以及它提供的所有资源（实例、安全组、弹性负载均衡器等）。</p>
 <p translation-origin="off"><a href="https://boxfuse.com/">Boxfuse</a> works by turning your Spring Boot executable jar or war into a minimal VM image that can be deployed unchanged either on VirtualBox or on AWS.
 Boxfuse comes with deep integration for Spring Boot and uses the information from your Spring Boot configuration file to automatically configure ports and health check URLs.
 Boxfuse leverages this information both for the images it produces as well as for all the resources it provisions (instances, security groups, elastic load balancers, and so on).</p>
@@ -1618,7 +1618,7 @@ If your executable jar or war contains an <a href="https://boxfuse.com/docs/payl
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">此时， <code>boxfuse</code> 会为您的应用程序创建一个图像，将其上传，并在 AWS 上配置和启动必要的资源，产生类似于以下示例的输出：</p>
+<p translation-result="on">此时，<code>boxfuse</code> 会为您的应用程序创建一个图像，将其上传，并在 AWS 上配置和启动必要的资源，产生类似于以下示例的输出：</p>
 <p translation-origin="off">At this point, <code>boxfuse</code> creates an image for your application, uploads it, and configures and starts the necessary resources on AWS, resulting in output similar to the following example:</p>
 </div>
 <div class="listingblock">
@@ -1746,7 +1746,7 @@ This helps when installing and managing Spring Boot applications in common produ
 <i class="fa icon-caution" title="小心"></i>
 </td>
 <td class="content">
-<p translation-result="on">完全可执行的 jar 文件通过在文件前面嵌入一个额外的脚本来工作。目前，一些工具不接受这种格式，因此您可能并不总是能够使用这种技术。例如， <code>jar -xf</code> 可能无法提取已完全可执行的 jar 或 war。建议您仅在打算直接执行时才使 jar 或 war 完全可执行，而不是使用 <code>java -jar</code> 运行它或将其部署到 servlet 容器。</p>
+<p translation-result="on">完全可执行的 jar 文件通过在文件前面嵌入一个额外的脚本来工作。目前，一些工具不接受这种格式，因此您可能并不总是能够使用这种技术。例如，<code>jar -xf</code> 可能无法提取已完全可执行的 jar 或 war。建议您仅在打算直接执行时才使 jar 或 war 完全可执行，而不是使用 <code>java -jar</code> 运行它或将其部署到 servlet 容器。</p>
 <p translation-origin="off">Fully executable jars work by embedding an extra script at the front of the file.
 Currently, some tools do not accept this format, so you may not always be able to use this technique.
 For example, <code>jar -xf</code> may silently fail to extract a jar or war that has been made fully executable.
