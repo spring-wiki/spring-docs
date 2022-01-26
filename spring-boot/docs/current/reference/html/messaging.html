@@ -1337,7 +1337,7 @@ spring.artemis.pool.max-connections=50</code></pre>
 <h3 id="messaging.jms.jndi" translation-result="on"><a href="messaging.html#messaging.jms.jndi"></a>1.3. 使用 JNDI 连接工厂</h3>
 <h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms.jndi"></a>1.3. Using a JNDI ConnectionFactory</h3>
 <div class="paragraph">
-<p translation-result="on">如果你在应用程序服务器中运行应用程序，Spring Boot 会尝试使用 JNDI 定位 JMS <code>ConnectionFactory</code> 。默认情况下，检查 <code>java:/JmsXA</code> 和 <code>java:/XAConnectionFactory</code> 位置。如果需要指定替代位置，可以使用 <code>spring.jms.jndi-name</code> 属性，如以下示例所示：</p>
+<p translation-result="on">如果你在应用程序服务器中运行应用程序，Spring Boot 会尝试使用 JNDI 定位 JMS <code>ConnectionFactory</code> 。默认情况下，检查 <code>java:/JmsXA</code> 和 <code>java:/XAConnectionFactory</code> 位置。如果需要指定替代位置，可以用 <code>spring.jms.jndi-name</code> 属性，如以下示例所示：</p>
 <p translation-origin="off">If you are running your application in an application server, Spring Boot tries to locate a JMS <code>ConnectionFactory</code> by using JNDI.
 By default, the <code>java:/JmsXA</code> and <code>java:/XAConnectionFactory</code> location are checked.
 You can use the <code>spring.jms.jndi-name</code> property if you need to specify an alternative location, as shown in the following example:</p>
@@ -1408,7 +1408,7 @@ If a <code>DestinationResolver</code> or a <code>MessageConverter</code> bean is
 <h3 id="messaging.jms.receiving" translation-result="on"><a href="messaging.html#messaging.jms.receiving"></a>1.5. 接收消息</h3>
 <h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.jms.receiving"></a>1.5. Receiving a Message</h3>
 <div class="paragraph">
-<p translation-result="on">当 JMS 基础设施存在时，可以使用 <code>@JmsListener</code> 注释任何 bean 以创建侦听器端点。如果没有定义 <code>JmsListenerContainerFactory</code> ，则会自动配置一个默认值。如果定义了 <code>DestinationResolver</code> 、 <code>MessageConverter</code> 或 <code>javax.jms.ExceptionListener</code> bean，它们将自动与默认工厂关联。</p>
+<p translation-result="on">当 JMS 基础设施存在时，可以用 <code>@JmsListener</code> 注释任何 bean 以创建侦听器端点。如果没有定义 <code>JmsListenerContainerFactory</code> ，则会自动配置一个默认值。如果定义了 <code>DestinationResolver</code> 、 <code>MessageConverter</code> 或 <code>javax.jms.ExceptionListener</code> bean，它们将自动与默认工厂关联。</p>
 <p translation-origin="off">When the JMS infrastructure is present, any bean can be annotated with <code>@JmsListener</code> to create a listener endpoint.
 If no <code>JmsListenerContainerFactory</code> has been defined, a default one is configured automatically.
 If a <code>DestinationResolver</code>, a <code>MessageConverter</code>, or a <code>javax.jms.ExceptionListener</code> beans are defined, they are associated automatically with the default factory.</p>
@@ -1457,7 +1457,7 @@ public class MyBean {
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你需要创建更多 <code>JmsListenerContainerFactory</code> 实例，或者如果你想要覆盖默认值，Spring Boot 提供了一个 <code>DefaultJmsListenerContainerFactoryConfigurer</code> ，你可以使用它来初始化一个 <code>DefaultJmsListenerContainerFactory</code> ，其设置与自动配置的设置相同。</p>
+<p translation-result="on">如果你需要创建更多 <code>JmsListenerContainerFactory</code> 实例，或者如果你想要覆盖默认值，Spring Boot 提供了一个 <code>DefaultJmsListenerContainerFactoryConfigurer</code> ，你可以用它来初始化一个 <code>DefaultJmsListenerContainerFactory</code> ，其设置与自动配置的设置相同。</p>
 <p translation-origin="off">If you need to create more <code>JmsListenerContainerFactory</code> instances or if you want to override the default, Spring Boot provides a <code>DefaultJmsListenerContainerFactoryConfigurer</code> that you can use to initialize a <code>DefaultJmsListenerContainerFactory</code> with the same settings as the one that is auto-configured.</p>
 </div>
 <div class="paragraph">
@@ -1562,7 +1562,7 @@ spring.rabbitmq.password=secret</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">或者，你可以使用 <code>addresses</code> 属性配置相同的连接：</p>
+<p translation-result="on">或者，你可以用 <code>addresses</code> 属性配置相同的连接：</p>
 <p translation-origin="off">Alternatively, you could configure the same connection using the <code>addresses</code> attribute:</p>
 </div>
 <div class="listingblock primary">
@@ -1703,7 +1703,7 @@ spring.rabbitmq.template.retry.initial-interval=2s</code></pre>
 You can also customize the <code>RetryTemplate</code> programmatically by declaring a <code>RabbitRetryTemplateCustomizer</code> bean.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你需要创建更多 <code>RabbitTemplate</code> 实例或者你想覆盖默认值，Spring Boot 提供了一个 <code>RabbitTemplateConfigurer</code> bean，你可以使用它来初始化一个 <code>RabbitTemplate</code> ，它的设置与自动配置使用的工厂相同。</p>
+<p translation-result="on">如果你需要创建更多 <code>RabbitTemplate</code> 实例或者你想覆盖默认值，Spring Boot 提供了一个 <code>RabbitTemplateConfigurer</code> bean，你可以用它来初始化一个 <code>RabbitTemplate</code> ，它的设置与自动配置使用的工厂相同。</p>
 <p translation-origin="off">If you need to create more <code>RabbitTemplate</code> instances or if you want to override the default, Spring Boot provides a <code>RabbitTemplateConfigurer</code> bean that you can use to initialize a <code>RabbitTemplate</code> with the same settings as the factories used by the auto-configuration.</p>
 </div>
 </div>
@@ -1711,7 +1711,7 @@ You can also customize the <code>RetryTemplate</code> programmatically by declar
 <h3 id="messaging.amqp.receiving" translation-result="on"><a href="messaging.html#messaging.amqp.receiving"></a>2.3. 接收消息</h3>
 <h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.amqp.receiving"></a>2.3. Receiving a Message</h3>
 <div class="paragraph">
-<p translation-result="on">当 Rabbit 基础设施存在时，可以使用 <code>@RabbitListener</code> 注释任何 bean 以创建侦听器端点。如果未定义 <code>RabbitListenerContainerFactory</code> ，则会自动配置默认的 <code>SimpleRabbitListenerContainerFactory</code> ，你可以使用 <code>spring.rabbitmq.listener.type</code> 属性切换到直接容器。如果定义了 <code>MessageConverter</code> 或 <code>MessageRecoverer</code> bean，它会自动与默认工厂关联。</p>
+<p translation-result="on">当 Rabbit 基础设施存在时，可以用 <code>@RabbitListener</code> 注释任何 bean 以创建侦听器端点。如果未定义 <code>RabbitListenerContainerFactory</code> ，则会自动配置默认的 <code>SimpleRabbitListenerContainerFactory</code> ，你可以用 <code>spring.rabbitmq.listener.type</code> 属性切换到直接容器。如果定义了 <code>MessageConverter</code> 或 <code>MessageRecoverer</code> bean，它会自动与默认工厂关联。</p>
 <p translation-origin="off">When the Rabbit infrastructure is present, any bean can be annotated with <code>@RabbitListener</code> to create a listener endpoint.
 If no <code>RabbitListenerContainerFactory</code> has been defined, a default <code>SimpleRabbitListenerContainerFactory</code> is automatically configured and you can switch to a direct container using the <code>spring.rabbitmq.listener.type</code> property.
 If a <code>MessageConverter</code> or a <code>MessageRecoverer</code> bean is defined, it is automatically associated with the default factory.</p>
@@ -1751,7 +1751,7 @@ public class MyBean {
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你需要创建更多的 <code>RabbitListenerContainerFactory</code> 实例或者你想要覆盖默认值，Spring Boot 提供了一个 <code>SimpleRabbitListenerContainerFactoryConfigurer</code> 和一个 <code>DirectRabbitListenerContainerFactoryConfigurer</code> ，你可以使用它们来初始化一个 <code>SimpleRabbitListenerContainerFactory</code> 和一个 <code>DirectRabbitListenerContainerFactory</code> ，它们的设置与自动配置使用的工厂相同。</p>
+<p translation-result="on">如果你需要创建更多的 <code>RabbitListenerContainerFactory</code> 实例或者你想要覆盖默认值，Spring Boot 提供了一个 <code>SimpleRabbitListenerContainerFactoryConfigurer</code> 和一个 <code>DirectRabbitListenerContainerFactoryConfigurer</code> ，你可以用它们来初始化一个 <code>SimpleRabbitListenerContainerFactory</code> 和一个 <code>DirectRabbitListenerContainerFactory</code> ，它们的设置与自动配置使用的工厂相同。</p>
 <p translation-origin="off">If you need to create more <code>RabbitListenerContainerFactory</code> instances or if you want to override the default, Spring Boot provides a <code>SimpleRabbitListenerContainerFactoryConfigurer</code> and a <code>DirectRabbitListenerContainerFactoryConfigurer</code> that you can use to initialize a <code>SimpleRabbitListenerContainerFactory</code> and a <code>DirectRabbitListenerContainerFactory</code> with the same settings as the factories used by the auto-configuration.</p>
 </div>
 <div class="admonitionblock tip">
@@ -1946,7 +1946,7 @@ Also, if a <code>RecordMessageConverter</code> bean is defined, it is automatica
 <h3 id="messaging.kafka.receiving" translation-result="on"><a href="messaging.html#messaging.kafka.receiving"></a>3.2. 接收消息</h3>
 <h3 translation-origin="off"><a class="anchor" href="messaging.html#messaging.kafka.receiving"></a>3.2. Receiving a Message</h3>
 <div class="paragraph">
-<p translation-result="on">当存在 Apache Kafka 基础架构时，可以使用 <code>@KafkaListener</code> 注释任何 bean 以创建侦听器端点。如果没有定义 <code>KafkaListenerContainerFactory</code> ，则会自动使用 <code>spring.kafka.listener.*</code> 中定义的键配置默认值。</p>
+<p translation-result="on">当存在 Apache Kafka 基础架构时，可以用 <code>@KafkaListener</code> 注释任何 bean 以创建侦听器端点。如果没有定义 <code>KafkaListenerContainerFactory</code> ，则会自动使用 <code>spring.kafka.listener.*</code> 中定义的键配置默认值。</p>
 <p translation-origin="off">When the Apache Kafka infrastructure is present, any bean can be annotated with <code>@KafkaListener</code> to create a listener endpoint.
 If no <code>KafkaListenerContainerFactory</code> has been defined, a default one is automatically configured with keys defined in <code>spring.kafka.listener.*</code>.</p>
 </div>
@@ -2004,13 +2004,13 @@ If only a <code>RecordMessageConverter</code> bean is present for a batch listen
 Spring Boot auto-configures the required <code>KafkaStreamsConfiguration</code> bean as long as <code>kafka-streams</code> is on the classpath and Kafka Streams is enabled by the <code>@EnableKafkaStreams</code> annotation.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">启用 Kafka Streams 意味着必须设置应用程序 ID 和引导服务器。前者可以使用 <code>spring.kafka.streams.application-id</code> 配置，如果未设置则默认为 <code>spring.application.name</code> 。后者可以全局设置或仅针对流专门覆盖。</p>
+<p translation-result="on">启用 Kafka Streams 意味着必须设置应用程序 ID 和引导服务器。前者可以用 <code>spring.kafka.streams.application-id</code> 配置，如果未设置则默认为 <code>spring.application.name</code> 。后者可以全局设置或仅针对流专门覆盖。</p>
 <p translation-origin="off">Enabling Kafka Streams means that the application id and bootstrap servers must be set.
 The former can be configured using <code>spring.kafka.streams.application-id</code>, defaulting to <code>spring.application.name</code> if not set.
 The latter can be set globally or specifically overridden only for streams.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">使用专用属性可以使用几个附加属性；可以使用 <code>spring.kafka.streams.properties</code> 命名空间设置其他任意 Kafka 属性。另请参阅 <a href="features.html#messaging.kafka.additional-properties">features.html</a> 了解更多信息。</p>
+<p translation-result="on">使用专用属性可以用几个附加属性；可以用 <code>spring.kafka.streams.properties</code> 命名空间设置其他任意 Kafka 属性。另请参阅 <a href="features.html#messaging.kafka.additional-properties">features.html</a> 了解更多信息。</p>
 <p translation-origin="off">Several additional properties are available using dedicated properties; other arbitrary Kafka properties can be set using the <code>spring.kafka.streams.properties</code> namespace.
 See also <a href="features.html#messaging.kafka.additional-properties">features.html</a> for more information.</p>
 </div>
@@ -2051,7 +2051,7 @@ public class MyKafkaStreamsConfiguration {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，由它创建的 <code>StreamBuilder</code> 对象管理的流是自动启动的。你可以使用 <code>spring.kafka.streams.auto-startup</code> 属性自定义此行为。</p>
+<p translation-result="on">默认情况下，由它创建的 <code>StreamBuilder</code> 对象管理的流是自动启动的。你可以用 <code>spring.kafka.streams.auto-startup</code> 属性自定义此行为。</p>
 <p translation-origin="off">By default, the streams managed by the <code>StreamBuilder</code> object it creates are started automatically.
 You can customize this behavior using the <code>spring.kafka.streams.auto-startup</code> property.</p>
 </div>
@@ -2440,7 +2440,7 @@ Spring Integration provides abstractions over messaging and also other transport
 If Spring Integration is available on your classpath, it is initialized through the <code>@EnableIntegration</code> annotation.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Integration 轮询逻辑依赖<a href="features.html#features.task-execution-and-scheduling">于自动配置的 <code>TaskScheduler</code> </a> 。可以使用 spring.integration.poller <code>spring.integration.poller.*</code> 配置属性自定义默认 <code>PollerMetadata</code> （每秒轮询无限数量的消息）。</p>
+<p translation-result="on">Spring Integration 轮询逻辑依赖<a href="features.html#features.task-execution-and-scheduling">于自动配置的 <code>TaskScheduler</code> </a> 。可以用 spring.integration.poller <code>spring.integration.poller.*</code> 配置属性自定义默认 <code>PollerMetadata</code> （每秒轮询无限数量的消息）。</p>
 <p translation-origin="off">Spring Integration polling logic relies <a href="features.html#features.task-execution-and-scheduling">on the auto-configured <code>TaskScheduler</code></a>.
 The default <code>PollerMetadata</code> (poll unbounded number of messages every second) can be customized with <code>spring.integration.poller.*</code> configuration properties.</p>
 </div>
@@ -2467,12 +2467,12 @@ If <code>spring-integration-jdbc</code> is available, the default database schem
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果 <code>spring-integration-rsocket</code> 可用，开发人员可以使用 <code>"spring.rsocket.server.*"</code> 属性配置 RSocket 服务器，并让它使用 <code>IntegrationRSocketEndpoint</code> 或 <code>RSocketOutboundGateway</code> 组件来处理传入的 RSocket 消息。此基础设施可以处理 Spring Integration RSocket 通道适配器和 <code>@MessageMapping</code> 处理程序（已配置 <code>"spring.integration.rsocket.server.message-mapping-enabled"</code> ）。</p>
+<p translation-result="on">如果 <code>spring-integration-rsocket</code> 可用，开发人员可以用 <code>"spring.rsocket.server.*"</code> 属性配置 RSocket 服务器，并让它使用 <code>IntegrationRSocketEndpoint</code> 或 <code>RSocketOutboundGateway</code> 组件来处理传入的 RSocket 消息。此基础设施可以处理 Spring Integration RSocket 通道适配器和 <code>@MessageMapping</code> 处理程序（已配置 <code>"spring.integration.rsocket.server.message-mapping-enabled"</code> ）。</p>
 <p translation-origin="off">If <code>spring-integration-rsocket</code> is available, developers can configure an RSocket server using <code>"spring.rsocket.server.*"</code> properties and let it use <code>IntegrationRSocketEndpoint</code> or <code>RSocketOutboundGateway</code> components to handle incoming RSocket messages.
 This infrastructure can handle Spring Integration RSocket channel adapters and <code>@MessageMapping</code> handlers (given <code>"spring.integration.rsocket.server.message-mapping-enabled"</code> is configured).</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 还可以使用配置属性自动配置 <code>ClientRSocketConnector</code> ：</p>
+<p translation-result="on">Spring Boot 还可以用配置属性自动配置 <code>ClientRSocketConnector</code> ：</p>
 <p translation-origin="off">Spring Boot can also auto-configure an <code>ClientRSocketConnector</code> using configuration properties:</p>
 </div>
 <div class="listingblock primary">

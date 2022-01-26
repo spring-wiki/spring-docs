@@ -1203,7 +1203,7 @@ App started</pre>
 <p translation-origin="off">Congratulations! The application is now live!</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">应用程序上线后，你可以使用 <code>cf apps</code> 命令验证已部署应用程序的状态，如以下示例所示：</p>
+<p translation-result="on">应用程序上线后，你可以用 <code>cf apps</code> 命令验证已部署应用程序的状态，如以下示例所示：</p>
 <p translation-origin="off">Once your application is live, you can verify the status of the deployed application by using the <code>cf apps</code> command, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -1259,7 +1259,7 @@ public class MyBean implements EnvironmentAware {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">所有 Cloud Foundry 属性都以 <code>vcap</code> 为前缀。你可以使用 <code>vcap</code> 属性来访问应用程序信息（例如应用程序的公共 URL）和服务信息（例如数据库凭据）。有关完整详细信息，请参阅<a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/cloud/CloudFoundryVcapEnvironmentPostProcessor.html">“CloudFoundryVcapEnvironmentPostProcessor”</a> Javadoc。</p>
+<p translation-result="on">所有 Cloud Foundry 属性都以 <code>vcap</code> 为前缀。你可以用 <code>vcap</code> 属性来访问应用程序信息（例如应用程序的公共 URL）和服务信息（例如数据库凭据）。有关完整详细信息，请参阅<a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/cloud/CloudFoundryVcapEnvironmentPostProcessor.html">“CloudFoundryVcapEnvironmentPostProcessor”</a> Javadoc。</p>
 <p translation-origin="off">All Cloud Foundry properties are prefixed with <code>vcap</code>.
 You can use <code>vcap</code> properties to access application information (such as the public URL of the application) and service information (such as database credentials).
 See the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/cloud/CloudFoundryVcapEnvironmentPostProcessor.html">‘CloudFoundryVcapEnvironmentPostProcessor’</a> Javadoc for complete details.</p>
@@ -1283,7 +1283,7 @@ See the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springfra
 <h3 id="deployment.cloud.kubernetes" translation-result="on"><a href="deployment.html#deployment.cloud.kubernetes"></a>1.2. Kubernetes</h3>
 <h3 translation-origin="off"><a class="anchor" href="deployment.html#deployment.cloud.kubernetes"></a>1.2. Kubernetes</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 通过检查 <code>"*_SERVICE_HOST"</code> 和 <code>"*_SERVICE_PORT"</code> 变量的环境来自动检测 Kubernetes 部署环境。你可以使用 <code>spring.main.cloud-platform</code> 配置属性覆盖此检测。</p>
+<p translation-result="on">Spring Boot 通过检查 <code>"*_SERVICE_HOST"</code> 和 <code>"*_SERVICE_PORT"</code> 变量的环境来自动检测 Kubernetes 部署环境。你可以用 <code>spring.main.cloud-platform</code> 配置属性覆盖此检测。</p>
 <p translation-origin="off">Spring Boot auto-detects Kubernetes deployment environments by checking the environment for <code>"*_SERVICE_HOST"</code> and <code>"*_SERVICE_PORT"</code> variables.
 You can override this detection with the <code>spring.main.cloud-platform</code> configuration property.</p>
 </div>
@@ -1300,7 +1300,7 @@ You can override this detection with the <code>spring.main.cloud-platform</code>
 Because this shutdown processing happens in parallel (and due to the nature of distributed systems), there is a window during which traffic can be routed to a pod that has also begun its shutdown processing.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">你可以在 preStop 处理程序中配置睡眠执行，以避免将请求路由到已经开始关闭的 pod。这种休眠应该足够长，以使新请求停止路由到 pod，并且其持续时间因部署而异。可以使用 Pod 配置文件中的 PodSpec 配置 preStop 处理程序，如下所示：</p>
+<p translation-result="on">你可以在 preStop 处理程序中配置睡眠执行，以避免将请求路由到已经开始关闭的 pod。这种休眠应该足够长，以使新请求停止路由到 pod，并且其持续时间因部署而异。可以用 Pod 配置文件中的 PodSpec 配置 preStop 处理程序，如下所示：</p>
 <p translation-origin="off">You can configure a sleep execution in a preStop handler to avoid requests being routed to a pod that has already begun shutting down.
 This sleep should be long enough for new requests to stop being routed to the pod and its duration will vary from deployment to deployment.
 The preStop handler can be configured by using the PodSpec in the pod’s configuration file as follows:</p>
@@ -1492,7 +1492,7 @@ In this document, we describe to approach using AWS Elastic Beanstalk.</p>
 <h4 id="deployment.cloud.aws.beanstalk" translation-result="on"><a href="deployment.html#deployment.cloud.aws.beanstalk"></a>1.5.1.AWS Elastic Beanstalk</h4>
 <h4 translation-origin="off"><a class="anchor" href="deployment.html#deployment.cloud.aws.beanstalk"></a>1.5.1. AWS Elastic Beanstalk</h4>
 <div class="paragraph">
-<p translation-result="on">如官方 <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Java.html">Elastic Beanstalk Java 指南</a>中所述，部署 Java 应用程序有两个主要选项。你可以使用“Tomcat 平台”或“Java SE 平台”。</p>
+<p translation-result="on">如官方 <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Java.html">Elastic Beanstalk Java 指南</a>中所述，部署 Java 应用程序有两个主要选项。你可以用“Tomcat 平台”或“Java SE 平台”。</p>
 <p translation-origin="off">As described in the official <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Java.html">Elastic Beanstalk Java guide</a>, there are two main options to deploy a Java application.
 You can either use the “Tomcat Platform” or the “Java SE platform”.</p>
 </div>
@@ -1553,7 +1553,7 @@ To do so, add lines similar to the following to your <code>.elasticbeanstalk/con
 <td class="content">
 <div class="title">Reduce costs by setting the environment type</div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，Elastic Beanstalk 环境是负载平衡的。负载均衡器的成本很高。为避免该成本，请将环境类型设置为“单实例”，如 <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-create-wizard.html#environments-create-wizard-capacity">Amazon 文档中所述</a>。你还可以使用 CLI 和以下命令创建单实例环境：</p>
+<p translation-result="on">默认情况下，Elastic Beanstalk 环境是负载平衡的。负载均衡器的成本很高。为避免该成本，请将环境类型设置为“单实例”，如 <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-create-wizard.html#environments-create-wizard-capacity">Amazon 文档中所述</a>。你还可以用 CLI 和以下命令创建单实例环境：</p>
 <p translation-origin="off">By default an Elastic Beanstalk environment is load balanced.
 The load balancer has a significant cost.
 To avoid that cost, set the environment type to “Single instance”, as described in <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-create-wizard.html#environments-create-wizard-capacity">the Amazon documentation</a>.
@@ -1590,7 +1590,7 @@ Boxfuse comes with deep integration for Spring Boot and uses the information fro
 Boxfuse leverages this information both for the images it produces as well as for all the resources it provisions (instances, security groups, elastic load balancers, and so on).</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">创建 <a href="https://console.boxfuse.com">Boxfuse 账户</a>后，将其连接到你的 AWS 账户，安装最新版本的 Boxfuse 客户端，并确保应用程序已由 Maven 或 Gradle 构建（例如，使用 <code>mvn clean package</code> ），你可以使用类似于以下的命令将 Spring Boot 应用程序部署到 AWS：</p>
+<p translation-result="on">创建 <a href="https://console.boxfuse.com">Boxfuse 账户</a>后，将其连接到你的 AWS 账户，安装最新版本的 Boxfuse 客户端，并确保应用程序已由 Maven 或 Gradle 构建（例如，使用 <code>mvn clean package</code> ），你可以用类似于以下的命令将 Spring Boot 应用程序部署到 AWS：</p>
 <p translation-origin="off">Once you have created a <a href="https://console.boxfuse.com">Boxfuse account</a>, connected it to your AWS account, installed the latest version of the Boxfuse Client, and ensured that the application has been built by Maven or Gradle (by using, for example, <code>mvn clean package</code>), you can deploy your Spring Boot application to AWS with a command similar to the following:</p>
 </div>
 <div class="listingblock">
@@ -1855,7 +1855,7 @@ To do so, symlink the jar to <code>init.d</code> to support the standard <code>s
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">安装后，你可以按常规方式启动和停止服务。例如，在基于 Debian 的系统上，你可以使用以下命令启动它：</p>
+<p translation-result="on">安装后，你可以按常规方式启动和停止服务。例如，在基于 Debian 的系统上，你可以用以下命令启动它：</p>
 <p translation-origin="off">Once installed, you can start and stop the service in the usual way.
 For example, on a Debian-based system, you could start it with the following command:</p>
 </div>
@@ -1878,7 +1878,7 @@ For example, on a Debian-based system, you could start it with the following com
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">你还可以使用标准操作系统工具将应用程序标记为自动启动。例如，在 Debian 上，你可以使用以下命令：</p>
+<p translation-result="on">你还可以用标准操作系统工具将应用程序标记为自动启动。例如，在 Debian 上，你可以用以下命令：</p>
 <p translation-origin="off">You can also flag the application to start automatically by using your standard operating system tools.
 For example, on Debian, you could use the following command:</p>
 </div>
@@ -1977,7 +1977,7 @@ $ sudo chown root:root your-app.conf</code></pre>
 <h4 id="deployment.installing.nix-services.system-d" translation-result="on"><a href="deployment.html#deployment.installing.nix-services.system-d"></a>2.2.2. 作为 systemd 服务安装</h4>
 <h4 translation-origin="off"><a class="anchor" href="deployment.html#deployment.installing.nix-services.system-d"></a>2.2.2. Installation as a systemd Service</h4>
 <div class="paragraph">
-<p translation-result="on"><code>systemd</code> 是 System V init 系统的继承者，现在被许多现代 Linux 发行版使用。尽管你可以继续将 <code>init.d</code> 脚本与 <code>systemd</code> 一起使用，但也可以使用 <code>systemd</code> 'service' 脚本来启动 Spring Boot 应用程序。</p>
+<p translation-result="on"><code>systemd</code> 是 System V init 系统的继承者，现在被许多现代 Linux 发行版使用。尽管你可以继续将 <code>init.d</code> 脚本与 <code>systemd</code> 一起使用，但也可以用 <code>systemd</code> 'service' 脚本来启动 Spring Boot 应用程序。</p>
 <p translation-origin="off"><code>systemd</code> is the successor of the System V init system and is now being used by many modern Linux distributions.
 Although you can continue to use <code>init.d</code> scripts with <code>systemd</code>, it is also possible to launch Spring Boot applications by using <code>systemd</code> ‘service’ scripts.</p>
 </div>
@@ -2215,7 +2215,7 @@ Only valid for an <code>init.d</code> service</p></td>
 <h5 id="deployment.installing.nix-services.script-customization.when-running" translation-result="on"><a href="deployment.html#deployment.installing.nix-services.script-customization.when-running"></a>在运行时自定义脚本</h5>
 <h5 translation-origin="off"><a class="anchor" href="deployment.html#deployment.installing.nix-services.script-customization.when-running"></a>Customizing a Script When It Runs</h5>
 <div class="paragraph">
-<p translation-result="on">对于 jar 写好<em>后</em>需要自定义的脚本项，可以使用环境变量或者<a href="deployment.html#deployment.installing.nix-services.script-customization.when-running.conf-file">配置文件</a>。</p>
+<p translation-result="on">对于 jar 写好<em>后</em>需要自定义的脚本项，可以用环境变量或者<a href="deployment.html#deployment.installing.nix-services.script-customization.when-running.conf-file">配置文件</a>。</p>
 <p translation-origin="off">For items of the script that need to be customized <em>after</em> the jar has been written, you can use environment variables or a <a href="deployment.html#deployment.installing.nix-services.script-customization.when-running.conf-file">config file</a>.</p>
 </div>
 <div class="paragraph">
@@ -2320,7 +2320,7 @@ See the <a href="https://www.freedesktop.org/software/systemd/man/systemd.servic
 </tbody></table>
 </div>
 <div id="deployment.installing.nix-services.script-customization.when-running.conf-file" class="paragraph">
-<p translation-result="on">除了 <code>JARFILE</code> 和 <code>APP_NAME</code> 之外，上一节中列出的设置可以使用 <code>.conf</code> 文件进行配置。该文件应位于 jar 文件旁边，名称相同，但后缀为 <code>.conf</code> 而不是 <code>.jar</code> 。例如，名为 <code>/var/myapp/myapp.conf</code> 的 jar 使用名为 <code>/var/myapp/myapp.jar</code> 的配置文件，如下例所示：</p>
+<p translation-result="on">除了 <code>JARFILE</code> 和 <code>APP_NAME</code> 之外，上一节中列出的设置可以用 <code>.conf</code> 文件进行配置。该文件应位于 jar 文件旁边，名称相同，但后缀为 <code>.conf</code> 而不是 <code>.jar</code> 。例如，名为 <code>/var/myapp/myapp.conf</code> 的 jar 使用名为 <code>/var/myapp/myapp.jar</code> 的配置文件，如下例所示：</p>
 <p translation-origin="off">With the exception of <code>JARFILE</code> and <code>APP_NAME</code>, the settings listed in the preceding section can be configured by using a <code>.conf</code> file.
 The file is expected to be next to the jar file and have the same name but suffixed with <code>.conf</code> rather than <code>.jar</code>.
 For example, a jar named <code>/var/myapp/myapp.jar</code> uses the configuration file named <code>/var/myapp/myapp.conf</code>, as shown in the following example:</p>
@@ -2356,7 +2356,7 @@ LOG_FOLDER=/custom/log/folder</pre>
 <h3 id="deployment.installing.windows-services" translation-result="on"><a href="deployment.html#deployment.installing.windows-services"></a>2.3. 微软视窗服务</h3>
 <h3 translation-origin="off"><a class="anchor" href="deployment.html#deployment.installing.windows-services"></a>2.3. Microsoft Windows Services</h3>
 <div class="paragraph">
-<p translation-result="on">可以使用<a href="https://github.com/kohsuke/winsw"><code>winsw</code></a>将 Spring Boot 应用程序作为 Windows 服务启动。</p>
+<p translation-result="on">可以用<a href="https://github.com/kohsuke/winsw"><code>winsw</code></a>将 Spring Boot 应用程序作为 Windows 服务启动。</p>
 <p translation-origin="off">A Spring Boot application can be started as a Windows service by using <a href="https://github.com/kohsuke/winsw"><code>winsw</code></a>.</p>
 </div>
 <div class="paragraph">

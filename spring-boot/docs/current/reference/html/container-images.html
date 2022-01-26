@@ -1021,7 +1021,7 @@ If you put jar files in the layer before your application classes, Docker often 
 <h3 id="container-images.efficient-images.unpacking" translation-result="on"><a href="container-images.html#container-images.efficient-images.unpacking"></a>1.1. 打开脂肪罐的包装</h3>
 <h3 translation-origin="off"><a class="anchor" href="container-images.html#container-images.efficient-images.unpacking"></a>1.1. Unpacking the fat jar</h3>
 <div class="paragraph">
-<p translation-result="on">如果你从容器运行应用程序，则可以使用可执行 jar，但分解它并以不同的方式运行它通常也是一个优势。某些 PaaS 实现也可能会选择在运行前解压缩档案。例如，Cloud Foundry 就是这样运作的。运行解压存档的一种方法是启动适当的启动器，如下所示：</p>
+<p translation-result="on">如果你从容器运行应用程序，则可以用可执行 jar，但分解它并以不同的方式运行它通常也是一个优势。某些 PaaS 实现也可能会选择在运行前解压缩档案。例如，Cloud Foundry 就是这样运作的。运行解压存档的一种方法是启动适当的启动器，如下所示：</p>
 <p translation-origin="off">If you are running your application from a container, you can use an executable jar, but it is also often an advantage to explode it and run it in a different way.
 Certain PaaS implementations may also choose to unpack archives before they run.
 For example, Cloud Foundry operates this way.
@@ -1216,7 +1216,7 @@ The builder stage extracts the directories that are needed later.
 Each of the <code>COPY</code> commands relates to the layers extracted by the jarmode.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">当然，不使用 jarmode 也可以编写 Dockerfile。你可以使用 <code>unzip</code> 和 <code>mv</code> 的某种组合将内容移动到正确的层，但 jarmode 简化了这一点。</p>
+<p translation-result="on">当然，不使用 jarmode 也可以编写 Dockerfile。你可以用 <code>unzip</code> 和 <code>mv</code> 的某种组合将内容移动到正确的层，但 jarmode 简化了这一点。</p>
 <p translation-origin="off">Of course, a Dockerfile can be written without using the jarmode.
 You can use some combination of <code>unzip</code> and <code>mv</code> to move things to the right layer but jarmode simplifies that.</p>
 </div>
@@ -1264,7 +1264,7 @@ This means you can just type a single command and quickly get a sensible image i
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">为了实现可重现的构建和容器图像缓存，Buildpacks 可以操纵应用程序资源元数据（例如文件“上次修改”信息）。你应该确保你的应用程序在运行时不依赖该元数据。Spring Boot 在提供静态资源时可以使用该信息，但这可以通过 <code>spring.web.resources.cache.use-last-modified</code> 禁用</p>
+<p translation-result="on">为了实现可重现的构建和容器图像缓存，Buildpacks 可以操纵应用程序资源元数据（例如文件“上次修改”信息）。你应该确保你的应用程序在运行时不依赖该元数据。Spring Boot 在提供静态资源时可以用该信息，但这可以通过 <code>spring.web.resources.cache.use-last-modified</code> 禁用</p>
 <p translation-origin="off">In order to achieve reproducible builds and container image caching, Buildpacks can manipulate the application resources metadata (such as the file "last modified" information).
 You should ensure that your application does not rely on that metadata at runtime.
 Spring Boot can use that information when serving static resources, but this can be disabled with <code>spring.web.resources.cache.use-last-modified</code></p>

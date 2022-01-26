@@ -1216,7 +1216,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot 非常适合 Web 应用程序开发。你可以使用嵌入式 Tomcat、Jetty、Undertow 或 Netty 创建一个自包含的 HTTP 服务器。大多数 Web 应用程序使用 <code>spring-boot-starter-web</code> 模块来快速启动和运行。你还可以选择使用 <code>spring-boot-starter-webflux</code> 模块构建响应式 Web 应用程序。</p>
+<p translation-result="on">Spring Boot 非常适合 Web 应用程序开发。你可以用嵌入式 Tomcat、Jetty、Undertow 或 Netty 创建一个自包含的 HTTP 服务器。大多数 Web 应用程序使用 <code>spring-boot-starter-web</code> 模块来快速启动和运行。你还可以选择使用 <code>spring-boot-starter-webflux</code> 模块构建响应式 Web 应用程序。</p>
 <p translation-origin="off">Spring Boot is well suited for web application development.
 You can create a self-contained HTTP server by using embedded Tomcat, Jetty, Undertow, or Netty.
 Most web applications use the <code>spring-boot-starter-web</code> module to get up and running quickly.
@@ -1384,7 +1384,7 @@ For example, objects can be automatically converted to JSON (by using the Jackso
 By default, strings are encoded in <code>UTF-8</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果需要添加或自定义转换器，可以使用 Spring Boot 的 <code>HttpMessageConverters</code> 类，如下清单所示：</p>
+<p translation-result="on">如果需要添加或自定义转换器，可以用 Spring Boot 的 <code>HttpMessageConverters</code> 类，如下清单所示：</p>
 <p translation-origin="off">If you need to add or customize converters, you can use Spring Boot’s <code>HttpMessageConverters</code> class, as shown in the following listing:</p>
 </div>
 <div class="listingblock">
@@ -1557,7 +1557,7 @@ It uses the <code>ResourceHttpRequestHandler</code> from Spring MVC so that you 
 Most of the time, this does not happen (unless you modify the default MVC configuration), because Spring can always handle requests through the <code>DispatcherServlet</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，资源映射在 <code>/**</code> 上，但你可以使用 <code>spring.mvc.static-path-pattern</code> 属性对其进行调整。例如，将所有资源重定位到 <code>/resources/**</code> 可以如下实现：</p>
+<p translation-result="on">默认情况下，资源映射在 <code>/**</code> 上，但你可以用 <code>spring.mvc.static-path-pattern</code> 属性对其进行调整。例如，将所有资源重定位到 <code>/resources/**</code> 可以如下实现：</p>
 <p translation-origin="off">By default, resources are mapped on <code>/**</code>, but you can tune that with the <code>spring.mvc.static-path-pattern</code> property.
 For instance, relocating all resources to <code>/resources/**</code> can be achieved as follows:</p>
 </div>
@@ -1577,7 +1577,7 @@ For instance, relocating all resources to <code>/resources/**</code> can be achi
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">你还可以使用 <code>spring.web.resources.static-locations</code> 属性自定义静态资源位置（用目录位置列表替换默认值）。根 servlet 上下文路径 <code>"/"</code> 也会自动添加为位置。</p>
+<p translation-result="on">你还可以用 <code>spring.web.resources.static-locations</code> 属性自定义静态资源位置（用目录位置列表替换默认值）。根 servlet 上下文路径 <code>"/"</code> 也会自动添加为位置。</p>
 <p translation-origin="off">You can also customize the static resource locations by using the <code>spring.web.resources.static-locations</code> property (replacing the default values with a list of directory locations).
 The root servlet context path, <code>"/"</code>, is automatically added as a location as well.</p>
 </div>
@@ -1656,7 +1656,7 @@ spring.web.resources.chain.strategy.content.paths=/**</code></pre>
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">由于为 Thymeleaf 和 FreeMarker 自动配置的 <code>ResourceUrlEncodingFilter</code> ，资源链接在运行时在模板中重写。你应该在使用 JSP 时手动声明此过滤器。当前不自动支持其他模板引擎，但可以使用自定义模板宏/帮助器和使用<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/servlet/resource/ResourceUrlProvider.html"><code>ResourceUrlProvider</code></a> 。</p>
+<p translation-result="on">由于为 Thymeleaf 和 FreeMarker 自动配置的 <code>ResourceUrlEncodingFilter</code> ，资源链接在运行时在模板中重写。你应该在使用 JSP 时手动声明此过滤器。当前不自动支持其他模板引擎，但可以用自定义模板宏/帮助器和使用<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/servlet/resource/ResourceUrlProvider.html"><code>ResourceUrlProvider</code></a> 。</p>
 <p translation-origin="off">Links to resources are rewritten in templates at runtime, thanks to a <code>ResourceUrlEncodingFilter</code> that is auto-configured for Thymeleaf and FreeMarker.
 You should manually declare this filter when using JSPs.
 Other template engines are currently not automatically supported but can be with custom template macros/helpers and the use of the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/servlet/resource/ResourceUrlProvider.html"><code>ResourceUrlProvider</code></a>.</p>
@@ -1748,7 +1748,7 @@ This feature was mainly useful in the past for HTTP clients which did not send p
 Nowadays, Content Negotiation is much more reliable.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">还有其他方法可以处理不能始终发送正确的“接受”请求标头的 HTTP 客户端。除了使用后缀匹配，我们可以使用查询参数来确保像 <code>"GET /projects/spring-boot?format=json"</code> 这样的请求将被映射到 <code>@GetMapping("/projects/spring-boot")</code> ：</p>
+<p translation-result="on">还有其他方法可以处理不能始终发送正确的“接受”请求标头的 HTTP 客户端。除了使用后缀匹配，我们可以用查询参数来确保像 <code>"GET /projects/spring-boot?format=json"</code> 这样的请求将被映射到 <code>@GetMapping("/projects/spring-boot")</code> ：</p>
 <p translation-origin="off">There are other ways to deal with HTTP clients that do not consistently send proper "Accept" request headers.
 Instead of using suffix matching, we can use a query parameter to ensure that requests like <code>"GET /projects/spring-boot?format=json"</code> will be mapped to <code>@GetMapping("/projects/spring-boot")</code>:</p>
 </div>
@@ -1916,7 +1916,7 @@ If you create your own <code>ConfigurableWebBindingInitializer</code> <code>@Bea
 <h4 id="web.servlet.spring-mvc.template-engines" translation-result="on"><a href="web.html#web.servlet.spring-mvc.template-engines"></a>1.1.9. 模板引擎</h4>
 <h4 translation-origin="off"><a class="anchor" href="web.html#web.servlet.spring-mvc.template-engines"></a>1.1.9. Template Engines</h4>
 <div class="paragraph">
-<p translation-result="on">除了 REST Web 服务，你还可以使用 Spring MVC 来提供动态 HTML 内容。Spring MVC 支持多种模板技术，包括 Thymeleaf、FreeMarker 和 JSP。此外，许多其他模板引擎包括他们自己的 Spring MVC 集成。</p>
+<p translation-result="on">除了 REST Web 服务，你还可以用 Spring MVC 来提供动态 HTML 内容。Spring MVC 支持多种模板技术，包括 Thymeleaf、FreeMarker 和 JSP。此外，许多其他模板引擎包括他们自己的 Spring MVC 集成。</p>
 <p translation-origin="off">As well as REST web services, you can also use Spring MVC to serve dynamic HTML content.
 Spring MVC supports a variety of templating technologies, including Thymeleaf, FreeMarker, and JSPs.
 Also, many other templating engines include their own Spring MVC integrations.</p>
@@ -2083,7 +2083,7 @@ public class MyController {
 <h5 id="web.servlet.spring-mvc.error-handling.error-pages" translation-result="on"><a href="web.html#web.servlet.spring-mvc.error-handling.error-pages"></a>自定义错误页面</h5>
 <h5 translation-origin="off"><a class="anchor" href="web.html#web.servlet.spring-mvc.error-handling.error-pages"></a>Custom Error Pages</h5>
 <div class="paragraph">
-<p translation-result="on">如果要显示给定状态代码的自定义 HTML 错误页面，可以将文件添加到 <code>/error</code> 目录。错误页面可以是静态 HTML（即添加到任何静态资源目录下），也可以使用模板构建。文件名应该是准确的状态码或序列掩码。</p>
+<p translation-result="on">如果要显示给定状态代码的自定义 HTML 错误页面，可以将文件添加到 <code>/error</code> 目录。错误页面可以是静态 HTML（即添加到任何静态资源目录下），也可以用模板构建。文件名应该是准确的状态码或序列掩码。</p>
 <p translation-origin="off">If you want to display a custom HTML error page for a given status code, you can add a file to an <code>/error</code> directory.
 Error pages can either be static HTML (that is, added under any of the static resource directories) or be built by using templates.
 The name of the file should be the exact status code or a series mask.</p>
@@ -2153,7 +2153,7 @@ import org.springframework.web.servlet.ModelAndView;
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">你还可以使用常规 Spring MVC 功能，例如<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-exceptionhandlers"><code>@ExceptionHandler</code> 方法</a>和<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-ann-controller-advice"><code>@ControllerAdvice</code></a> 。<code>ErrorController</code> 然后拾取任何未处理的异常。</p>
+<p translation-result="on">你还可以用常规 Spring MVC 功能，例如<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-exceptionhandlers"><code>@ExceptionHandler</code> 方法</a>和<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-ann-controller-advice"><code>@ControllerAdvice</code></a> 。<code>ErrorController</code> 然后拾取任何未处理的异常。</p>
 <p translation-origin="off">You can also use regular Spring MVC features such as <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-exceptionhandlers"><code>@ExceptionHandler</code> methods</a> and <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-ann-controller-advice"><code>@ControllerAdvice</code></a>.
 The <code>ErrorController</code> then picks up any unhandled exceptions.</p>
 </div>
@@ -2162,7 +2162,7 @@ The <code>ErrorController</code> then picks up any unhandled exceptions.</p>
 <h5 id="web.servlet.spring-mvc.error-handling.error-pages-without-spring-mvc" translation-result="on"><a href="web.html#web.servlet.spring-mvc.error-handling.error-pages-without-spring-mvc"></a>在 Spring MVC 之外映射错误页面</h5>
 <h5 translation-origin="off"><a class="anchor" href="web.html#web.servlet.spring-mvc.error-handling.error-pages-without-spring-mvc"></a>Mapping Error Pages outside of Spring MVC</h5>
 <div class="paragraph">
-<p translation-result="on">对于不使用 Spring MVC 的应用，可以使用 <code>ErrorPageRegistrar</code> 接口直接注册 <code>ErrorPages</code> 。这种抽象直接与底层嵌入式 servlet 容器一起工作，即使你没有 Spring MVC <code>DispatcherServlet</code> 也可以工作。</p>
+<p translation-result="on">对于不使用 Spring MVC 的应用，可以用 <code>ErrorPageRegistrar</code> 接口直接注册 <code>ErrorPages</code> 。这种抽象直接与底层嵌入式 servlet 容器一起工作，即使你没有 Spring MVC <code>DispatcherServlet</code> 也可以工作。</p>
 <p translation-origin="off">For applications that do not use Spring MVC, you can use the <code>ErrorPageRegistrar</code> interface to directly register <code>ErrorPages</code>.
 This abstraction works directly with the underlying embedded servlet container and works even if you do not have a Spring MVC <code>DispatcherServlet</code>.</p>
 </div>
@@ -2301,7 +2301,7 @@ public class MyCorsConfiguration {
 <h3 id="web.servlet.jersey" translation-result="on"><a href="web.html#web.servlet.jersey"></a>1.2. JAX-RS 和泽西岛</h3>
 <h3 translation-origin="off"><a class="anchor" href="web.html#web.servlet.jersey"></a>1.2. JAX-RS and Jersey</h3>
 <div class="paragraph">
-<p translation-result="on">如果你更喜欢 REST 端点的 JAX-RS 编程模型，则可以使用其中一种可用的实现来代替 Spring MVC。<a href="https://jersey.github.io/">Jersey</a> 和 <a href="https://cxf.apache.org/">Apache CXF</a> 开箱即用，效果很好。CXF 要求你在应用程序上下文中将其 <code>Servlet</code> 或 <code>Filter</code> 注册为 <code>@Bean</code> 。Jersey 有一些原生的 Spring 支持，所以我们还在 Spring Boot 中为它提供了自动配置支持，以及一个 starter。</p>
+<p translation-result="on">如果你更喜欢 REST 端点的 JAX-RS 编程模型，则可以用其中一种可用的实现来代替 Spring MVC。<a href="https://jersey.github.io/">Jersey</a> 和 <a href="https://cxf.apache.org/">Apache CXF</a> 开箱即用，效果很好。CXF 要求你在应用程序上下文中将其 <code>Servlet</code> 或 <code>Filter</code> 注册为 <code>@Bean</code> 。Jersey 有一些原生的 Spring 支持，所以我们还在 Spring Boot 中为它提供了自动配置支持，以及一个 starter。</p>
 <p translation-origin="off">If you prefer the JAX-RS programming model for REST endpoints, you can use one of the available implementations instead of Spring MVC.
 <a href="https://jersey.github.io/">Jersey</a> and <a href="https://cxf.apache.org/">Apache CXF</a> work quite well out of the box.
 CXF requires you to register its <code>Servlet</code> or <code>Filter</code> as a <code>@Bean</code> in your application context.
@@ -2372,13 +2372,13 @@ public class MyEndpoint {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">由于 <code>Endpoint</code> 是 Spring <code>@Component</code> ，它的生命周期由 Spring 管理，你可以使用 <code>@Autowired</code> 注解注入依赖项，并使用 <code>@Value</code> 注解注入外部配置。默认情况下，Jersey servlet 已注册并映射到 <code>/*</code> 。你可以通过将 <code>@ApplicationPath</code> 添加到你的 <code>ResourceConfig</code> 来更改映射。</p>
+<p translation-result="on">由于 <code>Endpoint</code> 是 Spring <code>@Component</code> ，它的生命周期由 Spring 管理，你可以用 <code>@Autowired</code> 注解注入依赖项，并使用 <code>@Value</code> 注解注入外部配置。默认情况下，Jersey servlet 已注册并映射到 <code>/*</code> 。你可以通过将 <code>@ApplicationPath</code> 添加到你的 <code>ResourceConfig</code> 来更改映射。</p>
 <p translation-origin="off">Since the <code>Endpoint</code> is a Spring <code>@Component</code>, its lifecycle is managed by Spring and you can use the <code>@Autowired</code> annotation to inject dependencies and use the <code>@Value</code> annotation to inject external configuration.
 By default, the Jersey servlet is registered and mapped to <code>/*</code>.
 You can change the mapping by adding <code>@ApplicationPath</code> to your <code>ResourceConfig</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，Jersey 在名为 <code>jerseyServletRegistration</code> 的 <code>ServletRegistrationBean</code> 类型的 <code>@Bean</code> 中设置为 servlet。默认情况下，servlet 是延迟初始化的，但你可以通过设置 <code>spring.jersey.servlet.load-on-startup</code> 来自定义该行为。你可以通过创建自己的同名 bean 来禁用或覆盖该 bean。你还可以通过设置 <code>spring.jersey.type=filter</code> 来使用过滤器而不是 servlet（在这种情况下，要替换或覆盖的 <code>@Bean</code> 是 <code>jerseyFilterRegistration</code> ）。过滤器有一个 <code>@Order</code> ，你可以使用 <code>spring.jersey.filter.order</code> 进行设置。当使用 Jersey 作为过滤器时，必须存在一个处理任何未被 Jersey 拦截的请求的 servlet。如果你的应用程序不包含这样的 servlet，你可能希望通过将 <code>server.servlet.register-default-servlet</code> 设置为 <code>true</code> 来启用默认 servlet。通过使用 <code>spring.jersey.init.*</code> 指定属性映射，可以为 servlet 和过滤器注册提供初始化参数。</p>
+<p translation-result="on">默认情况下，Jersey 在名为 <code>jerseyServletRegistration</code> 的 <code>ServletRegistrationBean</code> 类型的 <code>@Bean</code> 中设置为 servlet。默认情况下，servlet 是延迟初始化的，但你可以通过设置 <code>spring.jersey.servlet.load-on-startup</code> 来自定义该行为。你可以通过创建自己的同名 bean 来禁用或覆盖该 bean。你还可以通过设置 <code>spring.jersey.type=filter</code> 来使用过滤器而不是 servlet（在这种情况下，要替换或覆盖的 <code>@Bean</code> 是 <code>jerseyFilterRegistration</code> ）。过滤器有一个 <code>@Order</code> ，你可以用 <code>spring.jersey.filter.order</code> 进行设置。当使用 Jersey 作为过滤器时，必须存在一个处理任何未被 Jersey 拦截的请求的 servlet。如果你的应用程序不包含这样的 servlet，你可能希望通过将 <code>server.servlet.register-default-servlet</code> 设置为 <code>true</code> 来启用默认 servlet。通过使用 <code>spring.jersey.init.*</code> 指定属性映射，可以为 servlet 和过滤器注册提供初始化参数。</p>
 <p translation-origin="off">By default, Jersey is set up as a servlet in a <code>@Bean</code> of type <code>ServletRegistrationBean</code> named <code>jerseyServletRegistration</code>.
 By default, the servlet is initialized lazily, but you can customize that behavior by setting <code>spring.jersey.servlet.load-on-startup</code>.
 You can disable or override that bean by creating one of your own with the same name.
@@ -2402,7 +2402,7 @@ By default, the embedded server listens for HTTP requests on port <code>8080</co
 <h4 id="web.servlet.embedded-container.servlets-filters-listeners" translation-result="on"><a href="web.html#web.servlet.embedded-container.servlets-filters-listeners"></a>1.3.1. Servlet、过滤器和侦听器</h4>
 <h4 translation-origin="off"><a class="anchor" href="web.html#web.servlet.embedded-container.servlets-filters-listeners"></a>1.3.1. Servlets, Filters, and listeners</h4>
 <div class="paragraph">
-<p translation-result="on">使用嵌入式 servlet 容器时，你可以使用 Spring beans 或扫描 servlet 组件从 servlet 规范中注册 servlet、过滤器和所有侦听器（例如 <code>HttpSessionListener</code> ）。</p>
+<p translation-result="on">使用嵌入式 servlet 容器时，你可以用 Spring beans 或扫描 servlet 组件从 servlet 规范中注册 servlet、过滤器和所有侦听器（例如 <code>HttpSessionListener</code> ）。</p>
 <p translation-origin="off">When using an embedded servlet container, you can register servlets, filters, and all the listeners (such as <code>HttpSessionListener</code>) from the servlet spec, either by using Spring beans or by scanning for servlet components.</p>
 </div>
 <div class="sect4">
@@ -2420,7 +2420,7 @@ In the case of multiple servlet beans, the bean name is used as a path prefix.
 Filters map to <code>/*</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果基于约定的映射不够灵活，你可以使用 <code>ServletRegistrationBean</code> 、 <code>FilterRegistrationBean</code> 和 <code>ServletListenerRegistrationBean</code> 类进行完全控制。</p>
+<p translation-result="on">如果基于约定的映射不够灵活，你可以用 <code>ServletRegistrationBean</code> 、 <code>FilterRegistrationBean</code> 和 <code>ServletListenerRegistrationBean</code> 类进行完全控制。</p>
 <p translation-origin="off">If convention-based mapping is not flexible enough, you can use the <code>ServletRegistrationBean</code>, <code>FilterRegistrationBean</code>, and <code>ServletListenerRegistrationBean</code> classes for complete control.</p>
 </div>
 <div class="paragraph">
@@ -2479,7 +2479,7 @@ The single <code>onStartup</code> method provides access to the <code>ServletCon
 <h5 id="web.servlet.embedded-container.context-initializer.scanning" translation-result="on"><a href="web.html#web.servlet.embedded-container.context-initializer.scanning"></a>扫描 Servlet、过滤器和侦听器</h5>
 <h5 translation-origin="off"><a class="anchor" href="web.html#web.servlet.embedded-container.context-initializer.scanning"></a>Scanning for Servlets, Filters, and listeners</h5>
 <div class="paragraph">
-<p translation-result="on">使用嵌入式容器时，可以使用 <code>@ServletComponentScan</code> 启用使用 <code>@WebServlet</code> 、 <code>@WebFilter</code> 和 <code>@WebListener</code> 注释的类的自动注册。</p>
+<p translation-result="on">使用嵌入式容器时，可以用 <code>@ServletComponentScan</code> 启用使用 <code>@WebServlet</code> 、 <code>@WebFilter</code> 和 <code>@WebListener</code> 注释的类的自动注册。</p>
 <p translation-origin="off">When using an embedded container, automatic registration of classes annotated with <code>@WebServlet</code>, <code>@WebFilter</code>, and <code>@WebListener</code> can be enabled by using <code>@ServletComponentScan</code>.</p>
 </div>
 <div class="admonitionblock tip">
@@ -2525,7 +2525,7 @@ Most applications are auto-configured, and the appropriate <code>ApplicationCont
 <h4 id="web.servlet.embedded-container.customizing" translation-result="on"><a href="web.html#web.servlet.embedded-container.customizing"></a>1.3.4. 定制嵌入式 Servlet 容器</h4>
 <h4 translation-origin="off"><a class="anchor" href="web.html#web.servlet.embedded-container.customizing"></a>1.3.4. Customizing Embedded Servlet Containers</h4>
 <div class="paragraph">
-<p translation-result="on">可以使用 Spring <code>Environment</code> 属性配置通用 servlet 容器设置。通常，你会在 <code>application.properties</code> 或 <code>application.yaml</code> 文件中定义属性。</p>
+<p translation-result="on">可以用 Spring <code>Environment</code> 属性配置通用 servlet 容器设置。通常，你会在 <code>application.properties</code> 或 <code>application.yaml</code> 文件中定义属性。</p>
 <p translation-origin="off">Common servlet container settings can be configured by using Spring <code>Environment</code> properties.
 Usually, you would define the properties in your <code>application.properties</code> or <code>application.yaml</code> file.</p>
 </div>
@@ -2557,7 +2557,7 @@ Usually, you would define the properties in your <code>application.properties</c
 </ul>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 尽可能地尝试公开常用设置，但这并不总是可能的。对于这些情况，专用命名空间提供特定于服务器的自定义（请参阅 <code>server.tomcat</code> 和 <code>server.undertow</code> ）。例如，可以使用嵌入式 servlet 容器的特定功能配置<a href="howto.html#howto.webserver.configure-access-logs">访问日志</a>。</p>
+<p translation-result="on">Spring Boot 尽可能地尝试公开常用设置，但这并不总是可能的。对于这些情况，专用命名空间提供特定于服务器的自定义（请参阅 <code>server.tomcat</code> 和 <code>server.undertow</code> ）。例如，可以用嵌入式 servlet 容器的特定功能配置<a href="howto.html#howto.webserver.configure-access-logs">访问日志</a>。</p>
 <p translation-origin="off">Spring Boot tries as much as possible to expose common settings, but this is not always possible.
 For those cases, dedicated namespaces offer server-specific customizations (see <code>server.tomcat</code> and <code>server.undertow</code>).
 For instance, <a href="howto.html#howto.webserver.configure-access-logs">access logs</a> can be configured with specific features of the embedded servlet container.</p>
@@ -2579,12 +2579,12 @@ For instance, <a href="howto.html#howto.webserver.configure-access-logs">access 
 <h5 id="web.servlet.embedded-container.customizing.samesite" translation-result="on"><a href="web.html#web.servlet.embedded-container.customizing.samesite"></a>SameSite Cookie</h5>
 <h5 translation-origin="off"><a class="anchor" href="web.html#web.servlet.embedded-container.customizing.samesite"></a>SameSite Cookies</h5>
 <div class="paragraph">
-<p translation-result="on">Web 浏览器可以使用 <code>SameSite</code> cookie 属性来控制是否以及如何在跨站点请求中提交 cookie。该属性与现代 Web 浏览器特别相关，这些浏览器已开始更改缺少该属性时使用的默认值。</p>
+<p translation-result="on">Web 浏览器可以用 <code>SameSite</code> cookie 属性来控制是否以及如何在跨站点请求中提交 cookie。该属性与现代 Web 浏览器特别相关，这些浏览器已开始更改缺少该属性时使用的默认值。</p>
 <p translation-origin="off">The <code>SameSite</code> cookie attribute can be used by web browsers to control if and how cookies are submitted in cross-site requests.
 The attribute is particularly relevant for modern web browsers which have started to change the default value that is used when the attribute is missing.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果要更改会话 cookie 的 <code>SameSite</code> 属性，可以使用 <code>server.servlet.session.cookie.same-site</code> 属性。自动配置的 Tomcat、Jetty 和 Undertow 服务器支持此属性。它还用于配置基于 Spring Session servlet 的 <code>SessionRepository</code> bean。</p>
+<p translation-result="on">如果要更改会话 cookie 的 <code>SameSite</code> 属性，可以用 <code>server.servlet.session.cookie.same-site</code> 属性。自动配置的 Tomcat、Jetty 和 Undertow 服务器支持此属性。它还用于配置基于 Spring Session servlet 的 <code>SessionRepository</code> bean。</p>
 <p translation-origin="off">If you want to change the <code>SameSite</code> attribute of your session cookie, you can use the <code>server.servlet.session.cookie.same-site</code> property.
 This property is supported by auto-configured Tomcat, Jetty and Undertow servers.
 It is also used to configure Spring Session servlet based <code>SessionRepository</code> beans.</p>
@@ -2611,12 +2611,12 @@ It is also used to configure Spring Session servlet based <code>SessionRepositor
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果要更改添加到 <code>HttpServletResponse</code> 的其他 cookie 的 <code>SameSite</code> 属性，可以使用 <code>CookieSameSiteSupplier</code> 。<code>CookieSameSiteSupplier</code> 被传递一个 <code>Cookie</code> 并且可能返回一个 <code>SameSite</code> 值或 <code>null</code> 。</p>
+<p translation-result="on">如果要更改添加到 <code>HttpServletResponse</code> 的其他 cookie 的 <code>SameSite</code> 属性，可以用 <code>CookieSameSiteSupplier</code> 。<code>CookieSameSiteSupplier</code> 被传递一个 <code>Cookie</code> 并且可能返回一个 <code>SameSite</code> 值或 <code>null</code> 。</p>
 <p translation-origin="off">If you want to change the <code>SameSite</code> attribute on other cookies added to your <code>HttpServletResponse</code>, you can use a <code>CookieSameSiteSupplier</code>.
 The <code>CookieSameSiteSupplier</code> is passed a <code>Cookie</code> and may return a <code>SameSite</code> value, or <code>null</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">你可以使用许多便利工厂和过滤方法来快速匹配特定的 cookie。例如，添加以下 bean 将自动为所有名称与正则表达式 <code>myapp.*</code> 匹配的 cookie 应用 <code>Lax</code> 的 <code>SameSite</code> 。</p>
+<p translation-result="on">你可以用许多便利工厂和过滤方法来快速匹配特定的 cookie。例如，添加以下 bean 将自动为所有名称与正则表达式 <code>myapp.*</code> 匹配的 cookie 应用 <code>Lax</code> 的 <code>SameSite</code> 。</p>
 <p translation-origin="off">There are a number of convenience factory and filter methods that you can use to quickly match specific cookies.
 For example, adding the following bean will automatically apply a <code>SameSite</code> of <code>Lax</code> for all cookies with a name that matches the regular expression <code>myapp.*</code>.</p>
 </div>
@@ -3119,7 +3119,7 @@ For instance, relocating all resources to <code>/resources/**</code> can be achi
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">你还可以使用 <code>spring.web.resources.static-locations</code> 自定义静态资源位置。这样做会将默认值替换为目录位置列表。如果你这样做，默认的欢迎页面检测将切换到你的自定义位置。因此，如果在你启动时的任何位置都有 <code>index.html</code> ，它就是应用程序的主页。</p>
+<p translation-result="on">你还可以用 <code>spring.web.resources.static-locations</code> 自定义静态资源位置。这样做会将默认值替换为目录位置列表。如果你这样做，默认的欢迎页面检测将切换到你的自定义位置。因此，如果在你启动时的任何位置都有 <code>index.html</code> ，它就是应用程序的主页。</p>
 <p translation-origin="off">You can also customize the static resource locations by using <code>spring.web.resources.static-locations</code>.
 Doing so replaces the default values with a list of directory locations.
 If you do so, the default welcome page detection switches to your custom locations.
@@ -3159,7 +3159,7 @@ If either is found, it is automatically used as the welcome page of the applicat
 <h4 id="web.reactive.webflux.template-engines" translation-result="on"><a href="web.html#web.reactive.webflux.template-engines"></a>2.1.5. 模板引擎</h4>
 <h4 translation-origin="off"><a class="anchor" href="web.html#web.reactive.webflux.template-engines"></a>2.1.5. Template Engines</h4>
 <div class="paragraph">
-<p translation-result="on">除了 REST Web 服务，你还可以使用 Spring WebFlux 来提供动态 HTML 内容。Spring WebFlux 支持多种模板技术，包括 Thymeleaf、FreeMarker 和 Mustache。</p>
+<p translation-result="on">除了 REST Web 服务，你还可以用 Spring WebFlux 来提供动态 HTML 内容。Spring WebFlux 支持多种模板技术，包括 Thymeleaf、FreeMarker 和 Mustache。</p>
 <p translation-origin="off">As well as REST web services, you can also use Spring WebFlux to serve dynamic HTML content.
 Spring WebFlux supports a variety of templating technologies, including Thymeleaf, FreeMarker, and Mustache.</p>
 </div>
@@ -3511,7 +3511,7 @@ See the documentation of your IDE for more details.</p>
 <h2 translation-origin="off"><a class="anchor" href="web.html#web.security"></a>4. Spring Security</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">如果 <a href="https://spring.io/projects/spring-security">Spring Security</a> 在类路径上，则默认情况下 Web 应用程序是安全的。Spring Boot 依赖 Spring Security 的内容协商策略来确定是使用 <code>httpBasic</code> 还是 <code>formLogin</code> 。要向 Web 应用程序添加方法级别的安全性，你还可以使用所需的设置添加 <code>@EnableGlobalMethodSecurity</code> 。更多信息可以在 <a href="https://docs.spring.io/spring-security/reference/5.6.1/servlet/authorization/method-security.html">Spring Security Reference Guide</a> 中找到。</p>
+<p translation-result="on">如果 <a href="https://spring.io/projects/spring-security">Spring Security</a> 在类路径上，则默认情况下 Web 应用程序是安全的。Spring Boot 依赖 Spring Security 的内容协商策略来确定是使用 <code>httpBasic</code> 还是 <code>formLogin</code> 。要向 Web 应用程序添加方法级别的安全性，你还可以用所需的设置添加 <code>@EnableGlobalMethodSecurity</code> 。更多信息可以在 <a href="https://docs.spring.io/spring-security/reference/5.6.1/servlet/authorization/method-security.html">Spring Security Reference Guide</a> 中找到。</p>
 <p translation-origin="off">If <a href="https://spring.io/projects/spring-security">Spring Security</a> is on the classpath, then web applications are secured by default.
 Spring Boot relies on Spring Security’s content-negotiation strategy to determine whether to use <code>httpBasic</code> or <code>formLogin</code>.
 To add method-level security to a web application, you can also add <code>@EnableGlobalMethodSecurity</code> with your desired settings.
@@ -3898,7 +3898,7 @@ For JWT configuration, a JWK Set URI or OIDC Issuer URI needs to be specified, a
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果授权服务器不支持 JWK Set URI，你可以为资源服务器配置用于验证 JWT 签名的公钥。这可以使用 <code>spring.security.oauth2.resourceserver.jwt.public-key-location</code> 属性来完成，其中值需要指向包含 PEM 编码 x509 格式的公钥的文件。</p>
+<p translation-result="on">如果授权服务器不支持 JWK Set URI，你可以为资源服务器配置用于验证 JWT 签名的公钥。这可以用 <code>spring.security.oauth2.resourceserver.jwt.public-key-location</code> 属性来完成，其中值需要指向包含 PEM 编码 x509 格式的公钥的文件。</p>
 <p translation-origin="off">If the authorization server does not support a JWK Set URI, you can configure the resource server with the Public Key used for verifying the signature of the JWT.
 This can be done using the <code>spring.security.oauth2.resourceserver.jwt.public-key-location</code> property, where the value needs to point to a file containing the public key in the PEM-encoded x509 format.</p>
 </td>
@@ -3952,7 +3952,7 @@ spring.security.oauth2.resourceserver.opaquetoken.client-secret=my-client-secret
 <h4 id="web.security.oauth2.authorization-server" translation-result="on"><a href="web.html#web.security.oauth2.authorization-server"></a>4.3.3. 授权服务器</h4>
 <h4 translation-origin="off"><a class="anchor" href="web.html#web.security.oauth2.authorization-server"></a>4.3.3. Authorization Server</h4>
 <div class="paragraph">
-<p translation-result="on">目前，Spring Security 不支持实现 OAuth 2.0 授权服务器。但是，此功能可从 <a href="https://spring.io/projects/spring-security-oauth">Spring Security OAuth</a> 项目中获得，该项目最终将被 Spring Security 完全取代。在此之前，你可以使用 <code>spring-security-oauth2-autoconfigure</code> 模块轻松设置 OAuth 2.0 授权服务器；有关说明，请参阅其<a href="https://docs.spring.io/spring-security-oauth2-boot/">文档</a>。</p>
+<p translation-result="on">目前，Spring Security 不支持实现 OAuth 2.0 授权服务器。但是，此功能可从 <a href="https://spring.io/projects/spring-security-oauth">Spring Security OAuth</a> 项目中获得，该项目最终将被 Spring Security 完全取代。在此之前，你可以用 <code>spring-security-oauth2-autoconfigure</code> 模块轻松设置 OAuth 2.0 授权服务器；有关说明，请参阅其<a href="https://docs.spring.io/spring-security-oauth2-boot/">文档</a>。</p>
 <p translation-origin="off">Currently, Spring Security does not provide support for implementing an OAuth 2.0 Authorization Server.
 However, this functionality is available from the <a href="https://spring.io/projects/spring-security-oauth">Spring Security OAuth</a> project, which will eventually be superseded by Spring Security completely.
 Until then, you can use the <code>spring-security-oauth2-autoconfigure</code> module to easily set up an OAuth 2.0 authorization server; see its <a href="https://docs.spring.io/spring-security-oauth2-boot/">documentation</a> for instructions.</p>
@@ -4147,12 +4147,12 @@ For instance, it is possible to customize the name of the table for the JDBC sto
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">要设置会话的超时，你可以使用 <code>spring.session.timeout</code> 属性。如果该属性未使用 servlet Web 应用程序设置，则自动配置将回退到 <code>server.servlet.session.timeout</code> 的值。</p>
+<p translation-result="on">要设置会话的超时，你可以用 <code>spring.session.timeout</code> 属性。如果该属性未使用 servlet Web 应用程序设置，则自动配置将回退到 <code>server.servlet.session.timeout</code> 的值。</p>
 <p translation-origin="off">For setting the timeout of the session you can use the <code>spring.session.timeout</code> property.
 If that property is not set with a servlet web application, the auto-configuration falls back to the value of <code>server.servlet.session.timeout</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">你可以使用 <code>@Enable*HttpSession</code> (servlet) 或 <code>@Enable*WebSession</code> (reactive) 来控制 Spring Session 的配置。这将导致自动配置退出。然后可以使用注解的属性而不是前面描述的配置属性来配置 Spring Session。</p>
+<p translation-result="on">你可以用 <code>@Enable*HttpSession</code> (servlet) 或 <code>@Enable*WebSession</code> (reactive) 来控制 Spring Session 的配置。这将导致自动配置退出。然后可以用注解的属性而不是前面描述的配置属性来配置 Spring Session。</p>
 <p translation-origin="off">You can take control over Spring Session’s configuration using <code>@Enable*HttpSession</code> (servlet) or <code>@Enable*WebSession</code> (reactive).
 This will cause the auto-configuration to back off.
 Spring Session can then be configured using the annotation’s attributes rather than the previously described configuration properties.</p>
@@ -4170,7 +4170,7 @@ The auto-configuration replaces the need to use <code>@EnableHypermediaSupport</
 The <code>ObjectMapper</code> is customized by setting the various <code>spring.jackson.*</code> properties or, if one exists, by a <code>Jackson2ObjectMapperBuilder</code> bean.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">你可以使用 <code>@EnableHypermediaSupport</code> 来控制 Spring HATEOAS 的配置。请注意，这样做会禁用前面描述的 <code>ObjectMapper</code> 自定义。</p>
+<p translation-result="on">你可以用 <code>@EnableHypermediaSupport</code> 来控制 Spring HATEOAS 的配置。请注意，这样做会禁用前面描述的 <code>ObjectMapper</code> 自定义。</p>
 <p translation-origin="off">You can take control of Spring HATEOAS’s configuration by using <code>@EnableHypermediaSupport</code>.
 Note that doing so disables the <code>ObjectMapper</code> customization described earlier.</p>
 </div>

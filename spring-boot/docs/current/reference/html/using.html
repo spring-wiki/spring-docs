@@ -1156,7 +1156,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">本节更详细地介绍了如何使用 Spring Boot。它涵盖了诸如构建系统、自动配置以及如何运行应用程序等主题。我们还介绍了一些 Spring Boot 最佳实践。尽管 Spring Boot 没有什么特别之处（它只是你可以使用的另一个库），但有一些建议可以让你的开发过程更轻松一些。</p>
+<p translation-result="on">本节更详细地介绍了如何使用 Spring Boot。它涵盖了诸如构建系统、自动配置以及如何运行应用程序等主题。我们还介绍了一些 Spring Boot 最佳实践。尽管 Spring Boot 没有什么特别之处（它只是你可以用的另一个库），但有一些建议可以让你的开发过程更轻松一些。</p>
 <p translation-origin="off">This section goes into more detail about how you should use Spring Boot.
 It covers topics such as build systems, auto-configuration, and how to run your applications.
 We also cover some Spring Boot best practices.
@@ -1173,7 +1173,7 @@ Although there is nothing particularly special about Spring Boot (it is just ano
 <h2 translation-origin="off"><a class="anchor" href="using.html#using.build-systems"></a>1. Build Systems</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">强烈建议你选择支持<a href="using.html#using.build-systems.dependency-management"><em>依赖管理</em></a>并且可以使用发布到“Maven Central”存储库的工件的构建系统。我们建议你选择 Maven 或 Gradle。可以让 Spring Boot 与其他构建系统（例如 Ant）一起工作，但它们并没有得到特别好的支持。</p>
+<p translation-result="on">强烈建议你选择支持<a href="using.html#using.build-systems.dependency-management"><em>依赖管理</em></a>并且可以用发布到“Maven Central”存储库的工件的构建系统。我们建议你选择 Maven 或 Gradle。可以让 Spring Boot 与其他构建系统（例如 Ant）一起工作，但它们并没有得到特别好的支持。</p>
 <p translation-origin="off">It is strongly recommended that you choose a build system that supports <a href="using.html#using.build-systems.dependency-management"><em>dependency management</em></a> and that can consume artifacts published to the “Maven Central” repository.
 We would recommend that you choose Maven or Gradle.
 It is possible to get Spring Boot to work with other build systems (Ant, for example), but they are not particularly well supported.</p>
@@ -1262,7 +1262,7 @@ We <strong>highly</strong> recommend that you not specify its version.</p>
 <h3 id="using.build-systems.ant" translation-result="on"><a href="using.html#using.build-systems.ant"></a>1.4. Ant</h3>
 <h3 translation-origin="off"><a class="anchor" href="using.html#using.build-systems.ant"></a>1.4. Ant</h3>
 <div class="paragraph">
-<p translation-result="on">可以使用 Apache Ant+Ivy 构建 Spring Boot 项目。<code>spring-boot-antlib</code> “AntLib” 模块也可用于帮助 Ant 创建可执行的 jar。</p>
+<p translation-result="on">可以用 Apache Ant+Ivy 构建 Spring Boot 项目。<code>spring-boot-antlib</code> “AntLib” 模块也可用于帮助 Ant 创建可执行的 jar。</p>
 <p translation-origin="off">It is possible to build a Spring Boot project using Apache Ant+Ivy.
 The <code>spring-boot-antlib</code> “AntLib” module is also available to help Ant create executable jars.</p>
 </div>
@@ -1606,7 +1606,7 @@ For example, a third-party starter project called <code>thirdpartyproject</code>
 </tbody>
 </table>
 <div class="paragraph">
-<p translation-result="on">最后，Spring Boot 还包括以下启动器，如果你想排除或交换特定的技术方面，可以使用它们：</p>
+<p translation-result="on">最后，Spring Boot 还包括以下启动器，如果你想排除或交换特定的技术方面，可以用它们：</p>
 <p translation-origin="off">Finally, Spring Boot also includes the following starters that can be used if you want to exclude or swap specific technical facets:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
@@ -1723,7 +1723,7 @@ Using a root package also allows component scan to apply only on your project.</
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果你不想使用 <code>@SpringBootApplication</code> ，它导入的 <code>@EnableAutoConfiguration</code> 和 <code>@ComponentScan</code> 注释定义了该行为，因此你也可以使用它们。</p>
+<p translation-result="on">如果你不想使用 <code>@SpringBootApplication</code> ，它导入的 <code>@EnableAutoConfiguration</code> 和 <code>@ComponentScan</code> 注释定义了该行为，因此你也可以用它们。</p>
 <p translation-origin="off">If you do not want to use <code>@SpringBootApplication</code>, the <code>@EnableAutoConfiguration</code> and <code>@ComponentScan</code> annotations that it imports defines that behavior so you can also use those instead.</p>
 </td>
 </tr>
@@ -1805,7 +1805,7 @@ Searching for <code>Enable*</code> annotations can be a good starting point.</p>
 <h3 id="using.configuration-classes.importing-additional-configuration" translation-result="on"><a href="using.html#using.configuration-classes.importing-additional-configuration"></a>3.1. 导入其他配置类</h3>
 <h3 translation-origin="off"><a class="anchor" href="using.html#using.configuration-classes.importing-additional-configuration"></a>3.1. Importing Additional Configuration Classes</h3>
 <div class="paragraph">
-<p translation-result="on">你无需将所有 <code>@Configuration</code> 放入一个类中。<code>@Import</code> 注解可用于导入其他配置类。或者，你可以使用 <code>@ComponentScan</code> 自动获取所有 Spring 组件，包括 <code>@Configuration</code> 类。</p>
+<p translation-result="on">你无需将所有 <code>@Configuration</code> 放入一个类中。<code>@Import</code> 注解可用于导入其他配置类。或者，你可以用 <code>@ComponentScan</code> 自动获取所有 Spring 组件，包括 <code>@Configuration</code> 类。</p>
 <p translation-origin="off">You need not put all your <code>@Configuration</code> into a single class.
 The <code>@Import</code> annotation can be used to import additional configuration classes.
 Alternatively, you can use <code>@ComponentScan</code> to automatically pick up all Spring components, including <code>@Configuration</code> classes.</p>
@@ -1815,7 +1815,7 @@ Alternatively, you can use <code>@ComponentScan</code> to automatically pick up 
 <h3 id="using.configuration-classes.importing-xml-configuration" translation-result="on"><a href="using.html#using.configuration-classes.importing-xml-configuration"></a>3.2. 导入 XML 配置</h3>
 <h3 translation-origin="off"><a class="anchor" href="using.html#using.configuration-classes.importing-xml-configuration"></a>3.2. Importing XML Configuration</h3>
 <div class="paragraph">
-<p translation-result="on">如果你绝对必须使用基于 XML 的配置，我们建议你仍然从 <code>@Configuration</code> 类开始。然后，你可以使用 <code>@ImportResource</code> 注释来加载 XML 配置文件。</p>
+<p translation-result="on">如果你绝对必须使用基于 XML 的配置，我们建议你仍然从 <code>@Configuration</code> 类开始。然后，你可以用 <code>@ImportResource</code> 注释来加载 XML 配置文件。</p>
 <p translation-origin="off">If you absolutely must use XML based configuration, we recommend that you still start with a <code>@Configuration</code> class.
 You can then use an <code>@ImportResource</code> annotation to load XML configuration files.</p>
 </div>
@@ -1868,7 +1868,7 @@ Doing so enables debug logs for a selection of core loggers and logs a condition
 <h3 id="using.auto-configuration.disabling-specific" translation-result="on"><a href="using.html#using.auto-configuration.disabling-specific"></a>4.2. 禁用特定的自动配置类</h3>
 <h3 translation-origin="off"><a class="anchor" href="using.html#using.auto-configuration.disabling-specific"></a>4.2. Disabling Specific Auto-configuration Classes</h3>
 <div class="paragraph">
-<p translation-result="on">如果你发现正在应用你不想要的特定自动配置类，你可以使用 <code>@SpringBootApplication</code> 的 exclude 属性来禁用它们，如下例所示：</p>
+<p translation-result="on">如果你发现正在应用你不想要的特定自动配置类，你可以用 <code>@SpringBootApplication</code> 的 exclude 属性来禁用它们，如下例所示：</p>
 <p translation-origin="off">If you find that specific auto-configuration classes that you do not want are being applied, you can use the exclude attribute of <code>@SpringBootApplication</code> to disable them, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -1884,7 +1884,7 @@ public class MyApplication {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果类不在类路径中，你可以使用注解的 <code>excludeName</code> 属性并指定完全限定名称。如果你更喜欢使用 <code>@EnableAutoConfiguration</code> 而不是 <code>@SpringBootApplication</code> ，则 <code>exclude</code> 和 <code>excludeName</code> 也可用。最后，你还可以使用 <code>spring.autoconfigure.exclude</code> 属性控制要排除的自动配置类列表。</p>
+<p translation-result="on">如果类不在类路径中，你可以用注解的 <code>excludeName</code> 属性并指定完全限定名称。如果你更喜欢使用 <code>@EnableAutoConfiguration</code> 而不是 <code>@SpringBootApplication</code> ，则 <code>exclude</code> 和 <code>excludeName</code> 也可用。最后，你还可以用 <code>spring.autoconfigure.exclude</code> 属性控制要排除的自动配置类列表。</p>
 <p translation-origin="off">If the class is not on the classpath, you can use the <code>excludeName</code> attribute of the annotation and specify the fully qualified name instead.
 If you prefer to use <code>@EnableAutoConfiguration</code> rather than <code>@SpringBootApplication</code>, <code>exclude</code> and <code>excludeName</code> are also available.
 Finally, you can also control the list of auto-configuration classes to exclude by using the <code>spring.autoconfigure.exclude</code> property.</p>
@@ -2140,7 +2140,7 @@ Most IDEs can import Maven projects directly.
 For example, Eclipse users can select <code>Import…​</code> → <code>Existing Maven Projects</code> from the <code>File</code> menu.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你无法直接将项目导入 IDE，则可以使用构建插件生成 IDE 元数据。Maven 包括 <a href="https://maven.apache.org/plugins/maven-eclipse-plugin/">Eclipse</a> 和 <a href="https://maven.apache.org/plugins/maven-idea-plugin/">IDEA</a> 的插件。Gradle 为<a href="https://docs.gradle.org/current/userguide/userguide.html">各种 IDE</a> 提供插件。</p>
+<p translation-result="on">如果你无法直接将项目导入 IDE，则可以用构建插件生成 IDE 元数据。Maven 包括 <a href="https://maven.apache.org/plugins/maven-eclipse-plugin/">Eclipse</a> 和 <a href="https://maven.apache.org/plugins/maven-idea-plugin/">IDEA</a> 的插件。Gradle 为<a href="https://docs.gradle.org/current/userguide/userguide.html">各种 IDE</a> 提供插件。</p>
 <p translation-origin="off">If you cannot directly import your project into your IDE, you may be able to generate IDE metadata by using a build plugin.
 Maven includes plugins for <a href="https://maven.apache.org/plugins/maven-eclipse-plugin/">Eclipse</a> and <a href="https://maven.apache.org/plugins/maven-idea-plugin/">IDEA</a>.
 Gradle offers plugins for <a href="https://docs.gradle.org/current/userguide/userguide.html">various IDEs</a>.</p>
@@ -2152,7 +2152,7 @@ Gradle offers plugins for <a href="https://docs.gradle.org/current/userguide/use
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果你不小心运行了两次 Web 应用程序，你会看到“端口已在使用”错误。Spring Tools 用户可以使用 <code>Relaunch</code> 按钮而不是 <code>Run</code> 按钮来确保关闭任何现有实例。</p>
+<p translation-result="on">如果你不小心运行了两次 Web 应用程序，你会看到“端口已在使用”错误。Spring Tools 用户可以用 <code>Relaunch</code> 按钮而不是 <code>Run</code> 按钮来确保关闭任何现有实例。</p>
 <p translation-origin="off">If you accidentally run a web application twice, you see a “Port already in use” error.
 Spring Tools users can use the <code>Relaunch</code> button rather than the <code>Run</code> button to ensure that any existing instance is closed.</p>
 </td>
@@ -2164,7 +2164,7 @@ Spring Tools users can use the <code>Relaunch</code> button rather than the <cod
 <h3 id="using.running-your-application.as-a-packaged-application" translation-result="on"><a href="using.html#using.running-your-application.as-a-packaged-application"></a>7.2. 作为打包应用程序运行</h3>
 <h3 translation-origin="off"><a class="anchor" href="using.html#using.running-your-application.as-a-packaged-application"></a>7.2. Running as a Packaged Application</h3>
 <div class="paragraph">
-<p translation-result="on">如果你使用 Spring Boot Maven 或 Gradle 插件创建可执行 jar，则可以使用 <code>java -jar</code> 运行你的应用程序，如以下示例所示：</p>
+<p translation-result="on">如果你使用 Spring Boot Maven 或 Gradle 插件创建可执行 jar，则可以用 <code>java -jar</code> 运行你的应用程序，如以下示例所示：</p>
 <p translation-origin="off">If you use the Spring Boot Maven or Gradle plugins to create an executable jar, you can run your application using <code>java -jar</code>, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -2235,7 +2235,7 @@ The <code>bootRun</code> task is added whenever you apply the <code>org.springfr
 <h3 id="using.running-your-application.hot-swapping" translation-result="on"><a href="using.html#using.running-your-application.hot-swapping"></a>7.5. 热插拔</h3>
 <h3 translation-origin="off"><a class="anchor" href="using.html#using.running-your-application.hot-swapping"></a>7.5. Hot Swapping</h3>
 <div class="paragraph">
-<p translation-result="on">由于 Spring Boot 应用程序是普通的 Java 应用程序，因此 JVM 热交换应该开箱即用。JVM 热交换在某种程度上受限于它可以替换的字节码。对于更完整的解决方案，可以使用 <a href="https://www.jrebel.com/products/jrebel">JRebel</a> 。</p>
+<p translation-result="on">由于 Spring Boot 应用程序是普通的 Java 应用程序，因此 JVM 热交换应该开箱即用。JVM 热交换在某种程度上受限于它可以替换的字节码。对于更完整的解决方案，可以用 <a href="https://www.jrebel.com/products/jrebel">JRebel</a> 。</p>
 <p translation-origin="off">Since Spring Boot applications are plain Java applications, JVM hot-swapping should work out of the box.
 JVM hot swapping is somewhat limited with the bytecode that it can replace.
 For a more complete solution, <a href="https://www.jrebel.com/products/jrebel">JRebel</a> can be used.</p>
@@ -2285,7 +2285,7 @@ To include devtools support, add the module dependency to your build, as shown i
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">运行完全打包的应用程序时，开发人员工具会自动禁用。如果你的应用程序是从 <code>java -jar</code> 启动的，或者它是从一个特殊的类加载器启动的，那么它被认为是“生产应用程序”。你可以使用 <code>spring.devtools.restart.enabled</code> 系统属性来控制此行为。要启用 devtools，无论用于启动应用程序的类加载器如何，设置 <code>-Dspring.devtools.restart.enabled=true</code> 系统属性。这不能在运行 devtools 存在安全风险的生产环境中完成。要禁用 devtools，请排除依赖项或设置 <code>-Dspring.devtools.restart.enabled=false</code> 系统属性。</p>
+<p translation-result="on">运行完全打包的应用程序时，开发人员工具会自动禁用。如果你的应用程序是从 <code>java -jar</code> 启动的，或者它是从一个特殊的类加载器启动的，那么它被认为是“生产应用程序”。你可以用 <code>spring.devtools.restart.enabled</code> 系统属性来控制此行为。要启用 devtools，无论用于启动应用程序的类加载器如何，设置 <code>-Dspring.devtools.restart.enabled=true</code> 系统属性。这不能在运行 devtools 存在安全风险的生产环境中完成。要禁用 devtools，请排除依赖项或设置 <code>-Dspring.devtools.restart.enabled=false</code> 系统属性。</p>
 <p translation-origin="off">Developer tools are automatically disabled when running a fully packaged application.
 If your application is launched from <code>java -jar</code> or if it is started from a special classloader, then it is considered a “production application”.
 You can control this behavior by using the <code>spring.devtools.restart.enabled</code> system property.
@@ -2435,7 +2435,7 @@ If you disable forking, the isolated application classloader used by devtools wi
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">与 LiveReload 一起使用时，自动重启效果很好。有关详细信息，<a href="using.html#using.devtools.livereload">请参阅 LiveReload 部分</a>。如果你使用 JRebel，则会禁用自动重新启动以支持动态类重新加载。其他 devtools 功能（例如 LiveReload 和属性覆盖）仍然可以使用。</p>
+<p translation-result="on">与 LiveReload 一起使用时，自动重启效果很好。有关详细信息，<a href="using.html#using.devtools.livereload">请参阅 LiveReload 部分</a>。如果你使用 JRebel，则会禁用自动重新启动以支持动态类重新加载。其他 devtools 功能（例如 LiveReload 和属性覆盖）仍然可以用。</p>
 <p translation-origin="off">Automatic restart works very well when used with LiveReload.
 <a href="using.html#using.devtools.livereload">See the LiveReload section</a> for details.
 If you use JRebel, automatic restarts are disabled in favor of dynamic class reloading.
@@ -2537,7 +2537,7 @@ The report shows the changes to your application’s auto-configuration as you m
 <h4 id="using.devtools.restart.excluding-resources" translation-result="on"><a href="using.html#using.devtools.restart.excluding-resources"></a>8.2.2. 排除资源</h4>
 <h4 translation-origin="off"><a class="anchor" href="using.html#using.devtools.restart.excluding-resources"></a>8.2.2. Excluding Resources</h4>
 <div class="paragraph">
-<p translation-result="on">某些资源在更改时不一定需要触发重新启动。例如，Thymeleaf 模板可以就地编辑。默认情况下，更改 <code>/META-INF/maven</code> 、 <code>/META-INF/resources</code> 、 <code>/resources</code> 、 <code>/static</code> 、 <code>/public</code> 或 <code>/templates</code> 中的资源不会触发重新启动，但会触发<a href="using.html#using.devtools.livereload">实时重新加载</a>。如果要自定义这些排除项，可以使用 <code>spring.devtools.restart.exclude</code> 属性。例如，要仅排除 <code>/static</code> 和 <code>/public</code> ，你将设置以下属性：</p>
+<p translation-result="on">某些资源在更改时不一定需要触发重新启动。例如，Thymeleaf 模板可以就地编辑。默认情况下，更改 <code>/META-INF/maven</code> 、 <code>/META-INF/resources</code> 、 <code>/resources</code> 、 <code>/static</code> 、 <code>/public</code> 或 <code>/templates</code> 中的资源不会触发重新启动，但会触发<a href="using.html#using.devtools.livereload">实时重新加载</a>。如果要自定义这些排除项，可以用 <code>spring.devtools.restart.exclude</code> 属性。例如，要仅排除 <code>/static</code> 和 <code>/public</code> ，你将设置以下属性：</p>
 <p translation-origin="off">Certain resources do not necessarily need to trigger a restart when they are changed.
 For example, Thymeleaf templates can be edited in-place.
 By default, changing resources in <code>/META-INF/maven</code>, <code>/META-INF/resources</code>, <code>/resources</code>, <code>/static</code>, <code>/public</code>, or <code>/templates</code> does not trigger a restart but does trigger a <a href="using.html#using.devtools.livereload">live reload</a>.
@@ -2578,7 +2578,7 @@ For example, to exclude only <code>/static</code> and <code>/public</code> you w
 <h4 id="using.devtools.restart.watching-additional-paths" translation-result="on"><a href="using.html#using.devtools.restart.watching-additional-paths"></a>8.2.3. 观看其他路径</h4>
 <h4 translation-origin="off"><a class="anchor" href="using.html#using.devtools.restart.watching-additional-paths"></a>8.2.3. Watching Additional Paths</h4>
 <div class="paragraph">
-<p translation-result="on">当你对不在类路径上的文件进行更改时，你可能希望重新启动或重新加载你的应用程序。为此，请使用 <code>spring.devtools.restart.additional-paths</code> 属性配置其他路径以监视更改。你可以使用之前<a href="using.html#using.devtools.restart.excluding-resources">描述</a>的 <code>spring.devtools.restart.exclude</code> 属性来控制附加路径下的更改是触发完全重启还是<a href="using.html#using.devtools.livereload">实时重新加载</a>。</p>
+<p translation-result="on">当你对不在类路径上的文件进行更改时，你可能希望重新启动或重新加载你的应用程序。为此，请使用 <code>spring.devtools.restart.additional-paths</code> 属性配置其他路径以监视更改。你可以用之前<a href="using.html#using.devtools.restart.excluding-resources">描述</a>的 <code>spring.devtools.restart.exclude</code> 属性来控制附加路径下的更改是触发完全重启还是<a href="using.html#using.devtools.livereload">实时重新加载</a>。</p>
 <p translation-origin="off">You may want your application to be restarted or reloaded when you make changes to files that are not on the classpath.
 To do so, use the <code>spring.devtools.restart.additional-paths</code> property to configure additional paths to watch for changes.
 You can use the <code>spring.devtools.restart.exclude</code> property <a href="using.html#using.devtools.restart.excluding-resources">described earlier</a> to control whether changes beneath the additional paths trigger a full restart or a <a href="using.html#using.devtools.livereload">live reload</a>.</p>
@@ -2588,7 +2588,7 @@ You can use the <code>spring.devtools.restart.exclude</code> property <a href="u
 <h4 id="using.devtools.restart.disable" translation-result="on"><a href="using.html#using.devtools.restart.disable"></a>8.2.4. 禁用重启</h4>
 <h4 translation-origin="off"><a class="anchor" href="using.html#using.devtools.restart.disable"></a>8.2.4. Disabling Restart</h4>
 <div class="paragraph">
-<p translation-result="on">如果你不想使用重启功能，可以使用 <code>spring.devtools.restart.enabled</code> 属性禁用它。在大多数情况下，你可以在 <code>application.properties</code> 中设置此属性（这样做仍会初始化重新启动类加载器，但它不会监视文件更改）。</p>
+<p translation-result="on">如果你不想使用重启功能，可以用 <code>spring.devtools.restart.enabled</code> 属性禁用它。在大多数情况下，你可以在 <code>application.properties</code> 中设置此属性（这样做仍会初始化重新启动类加载器，但它不会监视文件更改）。</p>
 <p translation-origin="off">If you do not want to use the restart feature, you can disable it by using the <code>spring.devtools.restart.enabled</code> property.
 In most cases, you can set this property in your <code>application.properties</code> (doing so still initializes the restart classloader, but it does not watch for file changes).</p>
 </div>
@@ -2618,7 +2618,7 @@ public class MyApplication {
 <h4 id="using.devtools.restart.triggerfile" translation-result="on"><a href="using.html#using.devtools.restart.triggerfile"></a>8.2.5. 使用触发文件</h4>
 <h4 translation-origin="off"><a class="anchor" href="using.html#using.devtools.restart.triggerfile"></a>8.2.5. Using a Trigger File</h4>
 <div class="paragraph">
-<p translation-result="on">如果你使用持续编译更改文件的 IDE，你可能更愿意仅在特定时间触发重新启动。为此，你可以使用“触发文件”，这是一个特殊文件，当你想要实际触发重新启动检查时必须对其进行修改。</p>
+<p translation-result="on">如果你使用持续编译更改文件的 IDE，你可能更愿意仅在特定时间触发重新启动。为此，你可以用“触发文件”，这是一个特殊文件，当你想要实际触发重新启动检查时必须对其进行修改。</p>
 <p translation-origin="off">If you work with an IDE that continuously compiles changed files, you might prefer to trigger restarts only at specific times.
 To do so, you can use a “trigger file”, which is a special file that must be modified when you want to actually trigger a restart check.</p>
 </div>
@@ -2690,7 +2690,7 @@ The trigger file must appear somewhere on your classpath.</p>
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">某些 IDE 具有使你无需手动更新触发器文件的功能。<a href="https://spring.io/tools">Spring Tools for Eclipse</a> 和 <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA（终极版）</a>都有这样的支持。使用 Spring Tools，你可以使用控制台视图中的“重新加载”按钮（只要你的 <code>trigger-file</code> 名为 <code>.reloadtrigger</code> ）。对于 IntelliJ IDEA，你可以按照<a href="https://www.jetbrains.com/help/idea/spring-boot.html#application-update-policies">其文档中的说明进行操作</a>。</p>
+<p translation-result="on">某些 IDE 具有使你无需手动更新触发器文件的功能。<a href="https://spring.io/tools">Spring Tools for Eclipse</a> 和 <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA（终极版）</a>都有这样的支持。使用 Spring Tools，你可以用控制台视图中的“重新加载”按钮（只要你的 <code>trigger-file</code> 名为 <code>.reloadtrigger</code> ）。对于 IntelliJ IDEA，你可以按照<a href="https://www.jetbrains.com/help/idea/spring-boot.html#application-update-policies">其文档中的说明进行操作</a>。</p>
 <p translation-origin="off">Some IDEs have features that save you from needing to update your trigger file manually.
 <a href="https://spring.io/tools">Spring Tools for Eclipse</a> and <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA (Ultimate Edition)</a> both have such support.
 With Spring Tools, you can use the “reload” button from the console view (as long as your <code>trigger-file</code> is named <code>.reloadtrigger</code>).

@@ -1710,7 +1710,7 @@ There is more than one way to register additional customizations:</p>
 See “<a href="features.html#features.spring-application.application-events-and-listeners">Application Events and Listeners</a>” in the ‘Spring Boot features’ section for a complete list.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">还可以使用 <code>EnvironmentPostProcessor</code> 在刷新应用程序上下文之前自定义 <code>Environment</code> 。每个实现都应该在 <code>META-INF/spring.factories</code> 中注册，如下例所示：</p>
+<p translation-result="on">还可以用 <code>EnvironmentPostProcessor</code> 在刷新应用程序上下文之前自定义 <code>Environment</code> 。每个实现都应该在 <code>META-INF/spring.factories</code> 中注册，如下例所示：</p>
 <p translation-origin="off">It is also possible to customize the <code>Environment</code> before the application context is refreshed by using <code>EnvironmentPostProcessor</code>.
 Each implementation should be registered in <code>META-INF/spring.factories</code>, as shown in the following example:</p>
 </div>
@@ -1798,7 +1798,7 @@ This is too late to configure certain properties such as <code>logging.*</code> 
 <h3 id="howto.application.context-hierarchy" translation-result="on"><a href="howto.html#howto.application.context-hierarchy"></a>1.4. 构建 ApplicationContext 层次结构（添加父上下文或根上下文）</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.application.context-hierarchy"></a>1.4. Build an ApplicationContext Hierarchy (Adding a Parent or Root Context)</h3>
 <div class="paragraph">
-<p translation-result="on">你可以使用 <code>ApplicationBuilder</code> 类来创建父/子 <code>ApplicationContext</code> 层次结构。有关更多信息，请参阅“Spring Boot 特性”部分中的“ <a href="features.html#features.spring-application.fluent-builder-api">features.html</a> ”。</p>
+<p translation-result="on">你可以用 <code>ApplicationBuilder</code> 类来创建父/子 <code>ApplicationContext</code> 层次结构。有关更多信息，请参阅“Spring Boot 特性”部分中的“ <a href="features.html#features.spring-application.fluent-builder-api">features.html</a> ”。</p>
 <p translation-origin="off">You can use the <code>ApplicationBuilder</code> class to create parent/child <code>ApplicationContext</code> hierarchies.
 See “<a href="features.html#features.spring-application.fluent-builder-api">features.html</a>” in the ‘Spring Boot features’ section for more information.</p>
 </div>
@@ -1807,7 +1807,7 @@ See “<a href="features.html#features.spring-application.fluent-builder-api">fe
 <h3 id="howto.application.non-web-application" translation-result="on"><a href="howto.html#howto.application.non-web-application"></a>1.5. 创建非 Web 应用程序</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.application.non-web-application"></a>1.5. Create a Non-web Application</h3>
 <div class="paragraph">
-<p translation-result="on">并非所有 Spring 应用程序都必须是 Web 应用程序（或 Web 服务）。如果你想在 <code>main</code> 方法中执行一些代码，同时还要引导一个 Spring 应用程序来设置要使用的基础设施，你可以使用 Spring Boot 的 <code>SpringApplication</code> 特性。<code>SpringApplication</code> 改变它的 <code>ApplicationContext</code> 类，这取决于它是否认为它需要一个 Web 应用程序。你可以做的第一件事就是将与服务器相关的依赖项（例如 servlet API）从类路径中移除。如果你不能这样做（例如，你从同一代码库运行两个应用程序），那么你可以在 <code>SpringApplication</code> 实例上显式调用 <code>setWebApplicationType(WebApplicationType.NONE)</code> 或设置 <code>applicationContextClass</code> 属性（通过 Java API 或使用外部属性）。你希望作为业务逻辑运行的应用程序代码可以实现为 <code>CommandLineRunner</code> 并作为 <code>@Bean</code> 定义放入上下文中。</p>
+<p translation-result="on">并非所有 Spring 应用程序都必须是 Web 应用程序（或 Web 服务）。如果你想在 <code>main</code> 方法中执行一些代码，同时还要引导一个 Spring 应用程序来设置要使用的基础设施，你可以用 Spring Boot 的 <code>SpringApplication</code> 特性。<code>SpringApplication</code> 改变它的 <code>ApplicationContext</code> 类，这取决于它是否认为它需要一个 Web 应用程序。你可以做的第一件事就是将与服务器相关的依赖项（例如 servlet API）从类路径中移除。如果你不能这样做（例如，你从同一代码库运行两个应用程序），那么你可以在 <code>SpringApplication</code> 实例上显式调用 <code>setWebApplicationType(WebApplicationType.NONE)</code> 或设置 <code>applicationContextClass</code> 属性（通过 Java API 或使用外部属性）。你希望作为业务逻辑运行的应用程序代码可以实现为 <code>CommandLineRunner</code> 并作为 <code>@Bean</code> 定义放入上下文中。</p>
 <p translation-origin="off">Not all Spring applications have to be web applications (or web services).
 If you want to execute some code in a <code>main</code> method but also bootstrap a Spring application to set up the infrastructure to use, you can use the <code>SpringApplication</code> features of Spring Boot.
 A <code>SpringApplication</code> changes its <code>ApplicationContext</code> class, depending on whether it thinks it needs a web application or not.
@@ -1838,7 +1838,7 @@ This is possible in both Maven and Gradle.</p>
 <h4 id="howto.properties-and-configuration.expand-properties.maven" translation-result="on"><a href="howto.html#howto.properties-and-configuration.expand-properties.maven"></a>2.1.1. 使用 Maven 自动扩展属性</h4>
 <h4 translation-origin="off"><a class="anchor" href="howto.html#howto.properties-and-configuration.expand-properties.maven"></a>2.1.1. Automatic Property Expansion Using Maven</h4>
 <div class="paragraph">
-<p translation-result="on">你可以使用资源过滤自动扩展 Maven 项目的属性。如果你使用 <code>spring-boot-starter-parent</code> ，则可以使用 <code>@[email protected]</code> 占位符引用你的 Maven '项目属性'，如下例所示：</p>
+<p translation-result="on">你可以用资源过滤自动扩展 Maven 项目的属性。如果你使用 <code>spring-boot-starter-parent</code> ，则可以用 <code>@[email protected]</code> 占位符引用你的 Maven '项目属性'，如下例所示：</p>
 <p translation-origin="off">You can automatically expand properties from the Maven project by using resource filtering.
 If you use the <code>spring-boot-starter-parent</code>, you can then refer to your Maven ‘project properties’ with <code>@<a href="https://docs.spring.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d0fefe90">[email&nbsp;protected]</a></code> placeholders, as shown in the following example:</p>
 </div>
@@ -1879,7 +1879,7 @@ If you use the <code>spring-boot-starter-parent</code>, you can then refer to yo
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果启用 <code>addResources</code> 标志，<code>spring-boot:run</code> 目标可以将 <code>src/main/resources</code> 直接添加到类路径（用于热重载目的）。这样做会绕过资源过滤和此功能。相反，你可以使用 <code>exec:java</code> 目标或自定义插件的配置。有关更多详细信息，请参阅<a href="https://docs.spring.io/spring-boot/docs/2.6.3/maven-plugin/reference/htmlsingle/#getting-started">插件使用页面</a>。</p>
+<p translation-result="on">如果启用 <code>addResources</code> 标志，<code>spring-boot:run</code> 目标可以将 <code>src/main/resources</code> 直接添加到类路径（用于热重载目的）。这样做会绕过资源过滤和此功能。相反，你可以用 <code>exec:java</code> 目标或自定义插件的配置。有关更多详细信息，请参阅<a href="https://docs.spring.io/spring-boot/docs/2.6.3/maven-plugin/reference/htmlsingle/#getting-started">插件使用页面</a>。</p>
 <p translation-origin="off">If you enable the <code>addResources</code> flag, the <code>spring-boot:run</code> goal can add <code>src/main/resources</code> directly to the classpath (for hot reloading purposes).
 Doing so circumvents the resource filtering and this feature.
 Instead, you can use the <code>exec:java</code> goal or customize the plugin’s configuration.
@@ -1951,7 +1951,7 @@ If that property is not set to <code>false</code>, these may be expanded by the 
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">然后，你可以使用占位符来引用 Gradle 项目的属性，如以下示例所示：</p>
+<p translation-result="on">然后，你可以用占位符来引用 Gradle 项目的属性，如以下示例所示：</p>
 <p translation-origin="off">You can then refer to your Gradle project’s properties by using placeholders, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
@@ -2241,7 +2241,7 @@ server.port=9000</code></pre>
 <h3 id="howto.properties-and-configuration.set-active-spring-profiles" translation-result="on"><a href="howto.html#howto.properties-and-configuration.set-active-spring-profiles"></a>2.6. 设置活动 Spring 配置文件</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.properties-and-configuration.set-active-spring-profiles"></a>2.6. Set the Active Spring Profiles</h3>
 <div class="paragraph">
-<p translation-result="on">Spring <code>Environment</code> 为此提供了一个 API，但你通常会设置系统属性 ( <code>spring.profiles.active</code> ) 或 OS 环境变量 ( <code>SPRING_PROFILES_ACTIVE</code> )。此外，你可以使用 <code>-D</code> 参数启动应用程序（记住将其放在主类或 jar 存档之前），如下所示：</p>
+<p translation-result="on">Spring <code>Environment</code> 为此提供了一个 API，但你通常会设置系统属性 ( <code>spring.profiles.active</code> ) 或 OS 环境变量 ( <code>SPRING_PROFILES_ACTIVE</code> )。此外，你可以用 <code>-D</code> 参数启动应用程序（记住将其放在主类或 jar 存档之前），如下所示：</p>
 <p translation-origin="off">The Spring <code>Environment</code> has an API for this, but you would normally set a System property (<code>spring.profiles.active</code>) or an OS environment variable (<code>SPRING_PROFILES_ACTIVE</code>).
 Also, you can launch your application with a <code>-D</code> argument (remember to put it before the main class or jar archive), as follows:</p>
 </div>
@@ -2283,7 +2283,7 @@ Thus, the latter Java API can be used to augment the profiles without changing t
 <h3 id="howto.properties-and-configuration.set-default-spring-profile-name" translation-result="on"><a href="howto.html#howto.properties-and-configuration.set-default-spring-profile-name"></a>2.7. 设置默认配置文件名称</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.properties-and-configuration.set-default-spring-profile-name"></a>2.7. Set the Default Profile Name</h3>
 <div class="paragraph">
-<p translation-result="on">默认配置文件是在没有配置文件处于活动状态时启用的配置文件。默认情况下，默认配置文件的名称是 <code>default</code> ，但可以使用系统属性 ( <code>spring.profiles.default</code> ) 或操作系统环境变量 ( <code>SPRING_PROFILES_DEFAULT</code> ) 更改它。</p>
+<p translation-result="on">默认配置文件是在没有配置文件处于活动状态时启用的配置文件。默认情况下，默认配置文件的名称是 <code>default</code> ，但可以用系统属性 ( <code>spring.profiles.default</code> ) 或操作系统环境变量 ( <code>SPRING_PROFILES_DEFAULT</code> ) 更改它。</p>
 <p translation-origin="off">The default profile is a profile that is enabled if no profile is active.
 By default, the name of the default profile is <code>default</code>, but it could be changed using a System property (<code>spring.profiles.default</code>) or an OS environment variable (<code>SPRING_PROFILES_DEFAULT</code>).</p>
 </div>
@@ -2419,11 +2419,11 @@ This section answers those questions.</p>
 <div class="ulist">
 <ul>
 <li>
-<p translation-result="on">对于 servlet 堆栈应用程序，<code>spring-boot-starter-web</code> 通过包含 <code>spring-boot-starter-tomcat</code> 来包含 Tomcat，但你可以使用 <code>spring-boot-starter-jetty</code> 或 <code>spring-boot-starter-undertow</code> 代替。</p>
+<p translation-result="on">对于 servlet 堆栈应用程序，<code>spring-boot-starter-web</code> 通过包含 <code>spring-boot-starter-tomcat</code> 来包含 Tomcat，但你可以用 <code>spring-boot-starter-jetty</code> 或 <code>spring-boot-starter-undertow</code> 代替。</p>
 <p translation-origin="off">For servlet stack applications, the <code>spring-boot-starter-web</code> includes Tomcat by including <code>spring-boot-starter-tomcat</code>, but you can use <code>spring-boot-starter-jetty</code> or <code>spring-boot-starter-undertow</code> instead.</p>
 </li>
 <li>
-<p translation-result="on">对于响应式堆栈应用程序，<code>spring-boot-starter-webflux</code> 通过包含 <code>spring-boot-starter-reactor-netty</code> netty 来包含 Reactor Netty，但你可以使用 <code>spring-boot-starter-tomcat</code> 、 <code>spring-boot-starter-jetty</code> 或 <code>spring-boot-starter-undertow</code> 代替。</p>
+<p translation-result="on">对于响应式堆栈应用程序，<code>spring-boot-starter-webflux</code> 通过包含 <code>spring-boot-starter-reactor-netty</code> netty 来包含 Reactor Netty，但你可以用 <code>spring-boot-starter-tomcat</code> 、 <code>spring-boot-starter-jetty</code> 或 <code>spring-boot-starter-undertow</code> 代替。</p>
 <p translation-origin="off">For reactive stack applications, the <code>spring-boot-starter-webflux</code> includes Reactor Netty by including <code>spring-boot-starter-reactor-netty</code>, but you can use <code>spring-boot-starter-tomcat</code>, <code>spring-boot-starter-jetty</code>, or <code>spring-boot-starter-undertow</code> instead.</p>
 </li>
 </ul>
@@ -2533,7 +2533,7 @@ To disable this behavior configure the <code>WebApplicationType</code> in your <
 <h3 id="howto.webserver.change-port" translation-result="on"><a href="howto.html#howto.webserver.change-port"></a>3.3. 更改 HTTP 端口</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.webserver.change-port"></a>3.3. Change the HTTP Port</h3>
 <div class="paragraph">
-<p translation-result="on">在独立应用程序中，主 HTTP 端口默认为 <code>8080</code> ，但可以使用 <code>server.port</code> 设置（例如，在 <code>application.properties</code> 中或作为系统属性）。由于 <code>Environment</code> 值的轻松绑定，你还可以使用 <code>SERVER_PORT</code> （例如，作为 OS 环境变量）。</p>
+<p translation-result="on">在独立应用程序中，主 HTTP 端口默认为 <code>8080</code> ，但可以用 <code>server.port</code> 设置（例如，在 <code>application.properties</code> 中或作为系统属性）。由于 <code>Environment</code> 值的轻松绑定，你还可以用 <code>SERVER_PORT</code> （例如，作为 OS 环境变量）。</p>
 <p translation-origin="off">In a standalone application, the main HTTP port defaults to <code>8080</code> but can be set with <code>server.port</code> (for example, in <code>application.properties</code> or as a System property).
 Thanks to relaxed binding of <code>Environment</code> values, you can also use <code>SERVER_PORT</code> (for example, as an OS environment variable).</p>
 </div>
@@ -2563,7 +2563,7 @@ Thanks to relaxed binding of <code>Environment</code> values, you can also use <
 The best way to get that and be sure it has been initialized is to add a <code>@Bean</code> of type <code>ApplicationListener&lt;WebServerInitializedEvent&gt;</code> and pull the container out of the event when it is published.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">使用 <code>@SpringBootTest(webEnvironment=WebEnvironment.RANDOM_PORT)</code> 的测试也可以使用 <code>@LocalServerPort</code> 注解将实际端口注入到字段中，如下例所示：</p>
+<p translation-result="on">使用 <code>@SpringBootTest(webEnvironment=WebEnvironment.RANDOM_PORT)</code> 的测试也可以用 <code>@LocalServerPort</code> 注解将实际端口注入到字段中，如下例所示：</p>
 <p translation-origin="off">Tests that use <code>@SpringBootTest(webEnvironment=WebEnvironment.RANDOM_PORT)</code> can also inject the actual port into a field by using the <code>@LocalServerPort</code> annotation, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -2713,7 +2713,7 @@ We recommend using <code>application.properties</code> to configure HTTPS, as th
 <h3 id="howto.webserver.configure-http2" translation-result="on"><a href="howto.html#howto.webserver.configure-http2"></a>3.8. 配置 HTTP/2</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.webserver.configure-http2"></a>3.8. Configure HTTP/2</h3>
 <div class="paragraph">
-<p translation-result="on">你可以使用 <code>server.http2.enabled</code> 配置属性在 Spring Boot 应用程序中启用 HTTP/2 支持。支持 <code>h2</code> （基于 TLS 的 HTTP/2）和 <code>h2c</code> （基于 TCP 的 HTTP/2）。要使用 <code>h2</code> ，还必须启用 SSL。未启用 SSL 时，将使用 <code>h2c</code> 。<code>h2</code> 支持的详细信息取决于所选的 Web 服务器和应用程序环境，因为并非所有 JDK 8 版本都支持开箱即用的协议。</p>
+<p translation-result="on">你可以用 <code>server.http2.enabled</code> 配置属性在 Spring Boot 应用程序中启用 HTTP/2 支持。支持 <code>h2</code> （基于 TLS 的 HTTP/2）和 <code>h2c</code> （基于 TCP 的 HTTP/2）。要使用 <code>h2</code> ，还必须启用 SSL。未启用 SSL 时，将使用 <code>h2c</code> 。<code>h2</code> 支持的详细信息取决于所选的 Web 服务器和应用程序环境，因为并非所有 JDK 8 版本都支持开箱即用的协议。</p>
 <p translation-origin="off">You can enable HTTP/2 support in your Spring Boot application with the <code>server.http2.enabled</code> configuration property.
 Both <code>h2</code> (HTTP/2 over TLS) and <code>h2c</code> (HTTP/2 over TCP) are supported.
 To use <code>h2</code>, SSL must also be enabled.
@@ -2729,7 +2729,7 @@ The details of the <code>h2</code> support depend on the chosen web server and t
 Alternatively, <code>h2</code> can be used on JDK 8 if the <code>libtcnative</code> library and its dependencies are installed on the host operating system.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">库目录必须对 JVM 库路径可用（如果还没有的话）。你可以使用 JVM 参数来执行此操作，例如 <code>-Djava.library.path=/usr/local/opt/tomcat-native/lib</code> 。更多信息请参阅 <a href="https://tomcat.apache.org/tomcat-9.0-doc/apr.html">Tomcat 官方文档</a>。</p>
+<p translation-result="on">库目录必须对 JVM 库路径可用（如果还没有的话）。你可以用 JVM 参数来执行此操作，例如 <code>-Djava.library.path=/usr/local/opt/tomcat-native/lib</code> 。更多信息请参阅 <a href="https://tomcat.apache.org/tomcat-9.0-doc/apr.html">Tomcat 官方文档</a>。</p>
 <p translation-origin="off">The library directory must be made available, if not already, to the JVM library path.
 You can do so with a JVM argument such as <code>-Djava.library.path=/usr/local/opt/tomcat-native/lib</code>.
 More on this in the <a href="https://tomcat.apache.org/tomcat-9.0-doc/apr.html">official Tomcat documentation</a>.</p>
@@ -2853,7 +2853,7 @@ Auto-configured <code>WebServerFactoryCustomizer</code> beans have an order of <
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">使用定制器访问 <code>WebServerFactory</code> 后，你可以使用它来配置特定部分，例如连接器、服务器资源或服务器本身——所有这些都使用特定于服务器的 API。</p>
+<p translation-result="on">使用定制器访问 <code>WebServerFactory</code> 后，你可以用它来配置特定部分，例如连接器、服务器资源或服务器本身——所有这些都使用特定于服务器的 API。</p>
 <p translation-origin="off">Once you have got access to a <code>WebServerFactory</code> using the customizer, you can use it to configure specific parts, like connectors, server resources, or the server itself - all using server-specific APIs.</p>
 </div>
 <div class="paragraph">
@@ -3115,7 +3115,7 @@ For more details, see the Jetty documentation.</p>
 Your application may be running on <code>10.10.10.10:8080</code>, but HTTP clients should only see <code>example.org</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><a href="https://tools.ietf.org/html/rfc7239">RFC7239“Forwarded Headers”</a>定义了 <code>Forwarded</code> HTTP 标头；代理可以使用此标头来提供有关原始请求的信息。你可以将应用程序配置为读取这些标头，并在创建链接并将其发送到 HTTP 302 响应、JSON 文档或 HTML 页面中的客户端时自动使用该信息。还有非标准的标头，例如 <code>X-Forwarded-Host</code> 、 <code>X-Forwarded-Port</code> 、 <code>X-Forwarded-Proto</code> 、 <code>X-Forwarded-Ssl</code> 和 <code>X-Forwarded-Prefix</code> 。</p>
+<p translation-result="on"><a href="https://tools.ietf.org/html/rfc7239">RFC7239“Forwarded Headers”</a>定义了 <code>Forwarded</code> HTTP 标头；代理可以用此标头来提供有关原始请求的信息。你可以将应用程序配置为读取这些标头，并在创建链接并将其发送到 HTTP 302 响应、JSON 文档或 HTML 页面中的客户端时自动使用该信息。还有非标准的标头，例如 <code>X-Forwarded-Host</code> 、 <code>X-Forwarded-Port</code> 、 <code>X-Forwarded-Proto</code> 、 <code>X-Forwarded-Ssl</code> 和 <code>X-Forwarded-Prefix</code> 。</p>
 <p translation-origin="off"><a href="https://tools.ietf.org/html/rfc7239">RFC7239 "Forwarded Headers"</a> defines the <code>Forwarded</code> HTTP header; proxies can use this header to provide information about the original request.
 You can configure your application to read those headers and automatically use that information when creating links and sending them to clients in HTTP 302 responses, JSON documents or HTML pages.
 There are also non-standard headers, like <code>X-Forwarded-Host</code>, <code>X-Forwarded-Port</code>, <code>X-Forwarded-Proto</code>, <code>X-Forwarded-Ssl</code>, and <code>X-Forwarded-Prefix</code>.</p>
@@ -3325,7 +3325,7 @@ public class MyLegacyCookieProcessorConfiguration {
 <h3 id="howto.webserver.enable-tomcat-mbean-registry" translation-result="on"><a href="howto.html#howto.webserver.enable-tomcat-mbean-registry"></a>3.15. 启用 Tomcat 的 MBean 注册表</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.webserver.enable-tomcat-mbean-registry"></a>3.15. Enable Tomcat’s MBean Registry</h3>
 <div class="paragraph">
-<p translation-result="on">默认情况下禁用嵌入式 Tomcat 的 MBean 注册表。这最大限度地减少了 Tomcat 的内存占用。例如，如果要使用 Tomcat 的 MBean，以便 Micrometer 可以使用它们来公开指标，则必须使用 <code>server.tomcat.mbeanregistry.enabled</code> 属性来执行此操作，如下例所示：</p>
+<p translation-result="on">默认情况下禁用嵌入式 Tomcat 的 MBean 注册表。这最大限度地减少了 Tomcat 的内存占用。例如，如果要使用 Tomcat 的 MBean，以便 Micrometer 可以用它们来公开指标，则必须使用 <code>server.tomcat.mbeanregistry.enabled</code> 属性来执行此操作，如下例所示：</p>
 <p translation-origin="off">Embedded Tomcat’s MBean registry is disabled by default.
 This minimizes Tomcat’s memory footprint.
 If you want to use Tomcat’s MBeans, for example so that they can be used by Micrometer to expose metrics, you must use the <code>server.tomcat.mbeanregistry.enabled</code> property to do so, as shown in the following example:</p>
@@ -3457,7 +3457,7 @@ Note that, in a browser, you might sometimes see XML responses, because browsers
 <h3 id="howto.spring-mvc.write-xml-rest-service" translation-result="on"><a href="howto.html#howto.spring-mvc.write-xml-rest-service"></a>4.2. 编写 XML REST 服务</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.spring-mvc.write-xml-rest-service"></a>4.2. Write an XML REST Service</h3>
 <div class="paragraph">
-<p translation-result="on">如果类路径上有 Jackson XML 扩展 ( <code>jackson-dataformat-xml</code> )，则可以使用它来呈现 XML 响应。我们之前用于 JSON 的示例可以工作。要使用 Jackson XML 渲染器，请将以下依赖项添加到你的项目中：</p>
+<p translation-result="on">如果类路径上有 Jackson XML 扩展 ( <code>jackson-dataformat-xml</code> )，则可以用它来呈现 XML 响应。我们之前用于 JSON 的示例可以工作。要使用 Jackson XML 渲染器，请将以下依赖项添加到你的项目中：</p>
 <p translation-origin="off">If you have the Jackson XML extension (<code>jackson-dataformat-xml</code>) on the classpath, you can use it to render XML responses.
 The previous example that we used for JSON would work.
 To use the Jackson XML renderer, add the following dependency to your project:</p>
@@ -3557,7 +3557,7 @@ If Jackson is on the classpath, you already get the default converter(s) provide
 <p translation-origin="off">Spring Boot also has some features to make it easier to customize this behavior.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">你可以使用环境配置 <code>ObjectMapper</code> 和 <code>XmlMapper</code> 实例。Jackson 提供了一套广泛的开/关功能，可用于配置其处理的各个方面。这些特性在六个枚举（在 Jackson 中）中描述，它们映射到环境中的属性：</p>
+<p translation-result="on">你可以用环境配置 <code>ObjectMapper</code> 和 <code>XmlMapper</code> 实例。Jackson 提供了一套广泛的开/关功能，可用于配置其处理的各个方面。这些特性在六个枚举（在 Jackson 中）中描述，它们映射到环境中的属性：</p>
 <p translation-origin="off">You can configure the <code>ObjectMapper</code> and <code>XmlMapper</code> instances by using the environment.
 Jackson provides an extensive suite of on/off features that can be used to configure various aspects of its processing.
 These features are described in six enums (in Jackson) that map onto properties in the environment:</p>
@@ -3678,7 +3678,7 @@ Finally, if you opt out of the Spring Boot default MVC configuration by providin
 <h3 id="howto.spring-mvc.multipart-file-uploads" translation-result="on"><a href="howto.html#howto.spring-mvc.multipart-file-uploads"></a>4.5. 处理多部分文件上传</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.spring-mvc.multipart-file-uploads"></a>4.5. Handling Multipart File Uploads</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 包含 servlet 3 <code>javax.servlet.http.Part</code> API 以支持上传文件。默认情况下，Spring Boot 将 Spring MVC 配置为每个文件的最大大小为 1MB，单个请求中的文件数据最大为 10MB。你可以使用 <code>MultipartProperties</code> 类中公开的属性覆盖这些值、存储中间数据的位置（例如，存储到 <code>/tmp</code> 目录）以及数据刷新到磁盘的阈值。例如，如果要指定文件不受限制，请将 <code>spring.servlet.multipart.max-file-size</code> 属性设置为 <code>-1</code> 。</p>
+<p translation-result="on">Spring Boot 包含 servlet 3 <code>javax.servlet.http.Part</code> API 以支持上传文件。默认情况下，Spring Boot 将 Spring MVC 配置为每个文件的最大大小为 1MB，单个请求中的文件数据最大为 10MB。你可以用 <code>MultipartProperties</code> 类中公开的属性覆盖这些值、存储中间数据的位置（例如，存储到 <code>/tmp</code> 目录）以及数据刷新到磁盘的阈值。例如，如果要指定文件不受限制，请将 <code>spring.servlet.multipart.max-file-size</code> 属性设置为 <code>-1</code> 。</p>
 <p translation-origin="off">Spring Boot embraces the servlet 3 <code>javax.servlet.http.Part</code> API to support uploading files.
 By default, Spring Boot configures Spring MVC with a maximum size of 1MB per file and a maximum of 10MB of file data in a single request.
 You may override these values, the location to which intermediate data is stored (for example, to the <code>/tmp</code> directory), and the threshold past which data is flushed to disk by using the properties exposed in the <code>MultipartProperties</code> class.
@@ -3768,7 +3768,7 @@ If you add your own, you have to be aware of the order and in which position you
 <div class="ulist">
 <ul>
 <li>
-<p translation-result="on">一个名为“defaultViewResolver”的 <code>InternalResourceViewResolver</code> 。这个定位可以使用 <code>DefaultServlet</code> 呈现的物理资源（包括静态资源和 JSP 页面，如果你使用它们）。它将前缀和后缀应用于视图名称，然后在 servlet 上下文中查找具有该路径的物理资源（默认均为空，但可通过 <code>spring.mvc.view.prefix</code> 和 <code>spring.mvc.view.suffix</code> ）。你可以通过提供相同类型的 bean 来覆盖它。</p>
+<p translation-result="on">一个名为“defaultViewResolver”的 <code>InternalResourceViewResolver</code> 。这个定位可以用 <code>DefaultServlet</code> 呈现的物理资源（包括静态资源和 JSP 页面，如果你使用它们）。它将前缀和后缀应用于视图名称，然后在 servlet 上下文中查找具有该路径的物理资源（默认均为空，但可通过 <code>spring.mvc.view.prefix</code> 和 <code>spring.mvc.view.suffix</code> ）。你可以通过提供相同类型的 bean 来覆盖它。</p>
 <p translation-origin="off">An <code>InternalResourceViewResolver</code> named ‘defaultViewResolver’.
 This one locates physical resources that can be rendered by using the <code>DefaultServlet</code> (including static resources and JSP pages, if you use those).
 It applies a prefix and a suffix to the view name and then looks for a physical resource with that path in the servlet context (the defaults are both empty but are accessible for external configuration through <code>spring.mvc.view.prefix</code> and <code>spring.mvc.view.suffix</code>).
@@ -4035,11 +4035,11 @@ logging.level.org.hibernate=error</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">你还可以使用 <code>logging.file.name</code> 设置要写入日志的文件的位置（除了控制台）。</p>
+<p translation-result="on">你还可以用 <code>logging.file.name</code> 设置要写入日志的文件的位置（除了控制台）。</p>
 <p translation-origin="off">You can also set the location of a file to which to write the log (in addition to the console) by using <code>logging.file.name</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">要配置日志系统的更细粒度的设置，你需要使用相关 <code>LoggingSystem</code> 支持的本机配置格式。默认情况下，Spring Boot 从系统的默认位置获取本机配置（例如 Logback 的 <code>classpath:logback.xml</code> ），但你可以使用 <code>logging.config</code> 属性设置配置文件的位置。</p>
+<p translation-result="on">要配置日志系统的更细粒度的设置，你需要使用相关 <code>LoggingSystem</code> 支持的本机配置格式。默认情况下，Spring Boot 从系统的默认位置获取本机配置（例如 Logback 的 <code>classpath:logback.xml</code> ），但你可以用 <code>logging.config</code> 属性设置配置文件的位置。</p>
 <p translation-origin="off">To configure the more fine-grained settings of a logging system, you need to use the native configuration format supported by the <code>LoggingSystem</code> in question.
 By default, Spring Boot picks up the native configuration from its default location for the system (such as <code>classpath:logback.xml</code> for Logback), but you can set the location of the config file by using the <code>logging.config</code> property.</p>
 </div>
@@ -4047,7 +4047,7 @@ By default, Spring Boot picks up the native configuration from its default locat
 <h3 id="howto.logging.logback" translation-result="on"><a href="howto.html#howto.logging.logback"></a>7.1. 为日志配置 Logback</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.logging.logback"></a>7.1. Configure Logback for Logging</h3>
 <div class="paragraph">
-<p translation-result="on">如果你需要对 logback 应用超出 <code>application.properties</code> 可以实现的自定义，你将需要添加一个标准的 logback 配置文件。你可以将 <code>logback.xml</code> 文件添加到类路径的根目录以供 logback 查找。如果你想使用 <a href="features.html#features.logging.logback-extensions">Spring Boot Logback 扩展</a>，你也可以使用 <code>logback-spring.xml</code> 。</p>
+<p translation-result="on">如果你需要对 logback 应用超出 <code>application.properties</code> 可以实现的自定义，你将需要添加一个标准的 logback 配置文件。你可以将 <code>logback.xml</code> 文件添加到类路径的根目录以供 logback 查找。如果你想使用 <a href="features.html#features.logging.logback-extensions">Spring Boot Logback 扩展</a>，你也可以用 <code>logback-spring.xml</code> 。</p>
 <p translation-origin="off">If you need to apply customizations to logback beyond those that can be achieved with <code>application.properties</code>, you will need to add a standard logback configuration file.
 You can add a <code>logback.xml</code> file to the root of your classpath for logback to find.
 You can also use <code>logback-spring.xml</code> if you want to use the <a href="features.html#features.logging.logback-extensions">Spring Boot Logback extensions</a>.</p>
@@ -4112,7 +4112,7 @@ These includes are designed to allow certain common Spring Boot conventions to b
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">你的 logback 配置文件还可以使用 <code>LoggingSystem</code> 为你创建的系统属性：</p>
+<p translation-result="on">你的 logback 配置文件还可以用 <code>LoggingSystem</code> 为你创建的系统属性：</p>
 <p translation-origin="off">Your logback configuration file can also make use of System properties that the <code>LoggingSystem</code> takes care of creating for you:</p>
 </div>
 <div class="ulist">
@@ -4145,7 +4145,7 @@ These includes are designed to allow certain common Spring Boot conventions to b
 See the <code>CONSOLE_LOG_PATTERN</code> in the <code>defaults.xml</code> configuration for an example.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果 Groovy 在类路径上，你应该也可以使用 <code>logback.groovy</code> 配置 Logback。如果存在，则优先考虑此设置。</p>
+<p translation-result="on">如果 Groovy 在类路径上，你应该也可以用 <code>logback.groovy</code> 配置 Logback。如果存在，则优先考虑此设置。</p>
 <p translation-origin="off">If Groovy is on the classpath, you should be able to configure Logback with <code>logback.groovy</code> as well.
 If present, this setting is given preference.</p>
 </div>
@@ -4824,7 +4824,7 @@ To get more control, use the <code>@EnableJpaRepositories</code> annotation (fro
 <h3 id="howto.data-access.separate-entity-definitions-from-spring-configuration" translation-result="on"><a href="howto.html#howto.data-access.separate-entity-definitions-from-spring-configuration"></a> 8.4.将 @Entity 定义与 Spring 配置分开</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.data-access.separate-entity-definitions-from-spring-configuration"></a>8.4. Separate @Entity Definitions from Spring Configuration</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 尝试根据它找到的 <code>@EnableAutoConfiguration</code> 来猜测你的 <code>@Entity</code> 定义的位置。要获得更多控制，你可以使用 <code>@EntityScan</code> 注解，如下例所示：</p>
+<p translation-result="on">Spring Boot 尝试根据它找到的 <code>@EnableAutoConfiguration</code> 来猜测你的 <code>@Entity</code> 定义的位置。要获得更多控制，你可以用 <code>@EntityScan</code> 注解，如下例所示：</p>
 <p translation-origin="off">Spring Boot tries to guess the location of your <code>@Entity</code> definitions, based on the <code>@EnableAutoConfiguration</code> it finds.
 To get more control, you can use the <code>@EntityScan</code> annotation, as shown in the following example:</p>
 </div>
@@ -5041,7 +5041,7 @@ public class MyHibernateSecondLevelCacheConfiguration {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">这个定制器会将 Hibernate 配置为使用与应用程序使用的相同的 <code>CacheManager</code> 。也可以使用单独的 <code>CacheManager</code> 实例。有关详细信息，请参阅 <a href="https://docs.jboss.org/hibernate/orm/5.4/userguide/html_single/Hibernate_User_Guide.html#caching-provider-jcache">Hibernate 用户指南</a>。</p>
+<p translation-result="on">这个定制器会将 Hibernate 配置为使用与应用程序使用的相同的 <code>CacheManager</code> 。也可以用单独的 <code>CacheManager</code> 实例。有关详细信息，请参阅 <a href="https://docs.jboss.org/hibernate/orm/5.4/userguide/html_single/Hibernate_User_Guide.html#caching-provider-jcache">Hibernate 用户指南</a>。</p>
 <p translation-origin="off">This customizer will configure Hibernate to use the same <code>CacheManager</code> as the one that the application uses.
 It is also possible to use separate <code>CacheManager</code> instances.
 For details, see <a href="https://docs.jboss.org/hibernate/orm/5.4/userguide/html_single/Hibernate_User_Guide.html#caching-provider-jcache">the Hibernate user guide</a>.</p>
@@ -5051,7 +5051,7 @@ For details, see <a href="https://docs.jboss.org/hibernate/orm/5.4/userguide/htm
 <h3 id="howto.data-access.dependency-injection-in-hibernate-components" translation-result="on"><a href="howto.html#howto.data-access.dependency-injection-in-hibernate-components"></a>8.8. 在 Hibernate 组件中使用依赖注入</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.data-access.dependency-injection-in-hibernate-components"></a>8.8. Use Dependency Injection in Hibernate Components</h3>
 <div class="paragraph">
-<p translation-result="on">默认情况下，Spring Boot 注册一个使用 <code>BeanFactory</code> 的 <code>BeanContainer</code> 实现，以便转换器和实体侦听器可以使用常规依赖注入。</p>
+<p translation-result="on">默认情况下，Spring Boot 注册一个使用 <code>BeanFactory</code> 的 <code>BeanContainer</code> 实现，以便转换器和实体侦听器可以用常规依赖注入。</p>
 <p translation-origin="off">By default, Spring Boot registers a <code>BeanContainer</code> implementation that uses the <code>BeanFactory</code> so that converters and entity listeners can use regular dependency injection.</p>
 </div>
 <div class="paragraph">
@@ -5121,7 +5121,7 @@ public class MyEntityManagerFactoryConfiguration {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">上面的示例使用名为 <code>firstDataSource</code> 的 <code>DataSource</code> bean 创建了一个 <code>EntityManagerFactory</code> 。它扫描与 <code>Order</code> 位于同一包中的实体。可以使用 <code>app.first.jpa</code> 命名空间映射其他 JPA 属性。</p>
+<p translation-result="on">上面的示例使用名为 <code>firstDataSource</code> 的 <code>DataSource</code> bean 创建了一个 <code>EntityManagerFactory</code> 。它扫描与 <code>Order</code> 位于同一包中的实体。可以用 <code>app.first.jpa</code> 命名空间映射其他 JPA 属性。</p>
 <p translation-origin="off">The example above creates an <code>EntityManagerFactory</code> using a <code>DataSource</code> bean named <code>firstDataSource</code>.
 It scans entities located in the same package as <code>Order</code>.
 It is possible to map additional JPA properties using the <code>app.first.jpa</code> namespace.</p>
@@ -5142,7 +5142,7 @@ If you were relying on these properties for configuring things like the naming s
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">你应该为需要 JPA 访问权限的任何其他数据源提供类似的配置。为了完成这幅图，你还需要为每个 <code>EntityManagerFactory</code> 配置一个 <code>JpaTransactionManager</code> 。或者，你可以使用跨越两者的 JTA 事务管理器。</p>
+<p translation-result="on">你应该为需要 JPA 访问权限的任何其他数据源提供类似的配置。为了完成这幅图，你还需要为每个 <code>EntityManagerFactory</code> 配置一个 <code>JpaTransactionManager</code> 。或者，你可以用跨越两者的 JTA 事务管理器。</p>
 <p translation-origin="off">You should provide a similar configuration for any additional data sources for which you need JPA access.
 To complete the picture, you need to configure a <code>JpaTransactionManager</code> for each <code>EntityManagerFactory</code> as well.
 Alternatively, you might be able to use a JTA transaction manager that spans both.</p>
@@ -5259,7 +5259,7 @@ When the component is auto-configured, Spring Boot takes care of this for you.
 For example, when Flyway is auto-configured, Hibernate is configured to depend upon Flyway so that Flyway has a chance to initialize the database before Hibernate tries to use it.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你自己配置组件，则可以使用 <code>EntityManagerFactoryDependsOnPostProcessor</code> 子类作为设置必要依赖项的便捷方式。例如，如果你使用 Hibernate Search 并将 Elasticsearch 作为其索引管理器，则必须将任何 <code>EntityManagerFactory</code> bean 配置为依赖于 <code>elasticsearchClient</code> bean，如下例所示：</p>
+<p translation-result="on">如果你自己配置组件，则可以用 <code>EntityManagerFactoryDependsOnPostProcessor</code> 子类作为设置必要依赖项的便捷方式。例如，如果你使用 Hibernate Search 并将 Elasticsearch 作为其索引管理器，则必须将任何 <code>EntityManagerFactory</code> bean 配置为依赖于 <code>elasticsearchClient</code> bean，如下例所示：</p>
 <p translation-origin="off">If you are configuring a component yourself, you can use an <code>EntityManagerFactoryDependsOnPostProcessor</code> subclass as a convenient way of setting up the necessary dependencies.
 For example, if you use Hibernate Search with Elasticsearch as its index manager, any <code>EntityManagerFactory</code> beans must be configured to depend on the <code>elasticsearchClient</code> bean, as shown in the following example:</p>
 </div>
@@ -5395,7 +5395,7 @@ This means that, if the scripts cause exceptions, the application fails to start
 You can tune that behavior by setting <code>spring.sql.init.continue-on-error</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，在创建任何 JPA <code>EntityManagerFactory</code> bean 之前执行基于脚本的 <code>DataSource</code> 初始化。<code>schema.sql</code> 可用于为 JPA 管理的实体创建模式，而 <code>data.sql</code> 可用于填充它。虽然我们不建议使用多个数据源初始化技术，但如果你希望基于脚本的 <code>DataSource</code> 初始化能够建立在 Hibernate 执行的模式创建之上，请将 <code>spring.jpa.defer-datasource-initialization</code> 设置为 <code>true</code> 。这将推迟数据源初始化，直到创建和初始化任何 <code>EntityManagerFactory</code> bean 之后。然后可以使用 <code>schema.sql</code> 对 Hibernate 执行的任何模式创建进行添加，并且可以使用 <code>data.sql</code> 来填充它。</p>
+<p translation-result="on">默认情况下，在创建任何 JPA <code>EntityManagerFactory</code> bean 之前执行基于脚本的 <code>DataSource</code> 初始化。<code>schema.sql</code> 可用于为 JPA 管理的实体创建模式，而 <code>data.sql</code> 可用于填充它。虽然我们不建议使用多个数据源初始化技术，但如果你希望基于脚本的 <code>DataSource</code> 初始化能够建立在 Hibernate 执行的模式创建之上，请将 <code>spring.jpa.defer-datasource-initialization</code> 设置为 <code>true</code> 。这将推迟数据源初始化，直到创建和初始化任何 <code>EntityManagerFactory</code> bean 之后。然后可以用 <code>schema.sql</code> 对 Hibernate 执行的任何模式创建进行添加，并且可以用 <code>data.sql</code> 来填充它。</p>
 <p translation-origin="off">Script-based <code>DataSource</code> initialization is performed, by default, before any JPA <code>EntityManagerFactory</code> beans are created.
 <code>schema.sql</code> can be used to create the schema for JPA-managed entities and <code>data.sql</code> can be used to populate it.
 While we do not recommend using multiple data source initialization technologies, if you want script-based <code>DataSource</code> initialization to be able to build upon the schema creation performed by Hibernate, set <code>spring.jpa.defer-datasource-initialization</code> to <code>true</code>.
@@ -5534,7 +5534,7 @@ Setting either <code>spring.flyway.url</code> or <code>spring.flyway.user</code>
 If any of the three properties has not been set, the value of its equivalent <code>spring.datasource</code> property will be used.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">你还可以使用 Flyway 为特定场景提供数据。例如，你可以将特定于测试的迁移放在 <code>src/test/resources</code> 中，并且它们仅在你的应用程序开始进行测试时运行。此外，你可以使用特定于配置文件的配置来自定义 <code>spring.flyway.locations</code> 以便某些迁移仅在特定配置文件处于活动状态时运行。例如，在 <code>application-dev.properties</code> 中，你可以指定以下设置：</p>
+<p translation-result="on">你还可以用 Flyway 为特定场景提供数据。例如，你可以将特定于测试的迁移放在 <code>src/test/resources</code> 中，并且它们仅在你的应用程序开始进行测试时运行。此外，你可以用特定于配置文件的配置来自定义 <code>spring.flyway.locations</code> 以便某些迁移仅在特定配置文件处于活动状态时运行。例如，在 <code>application-dev.properties</code> 中，你可以指定以下设置：</p>
 <p translation-origin="off">You can also use Flyway to provide data for specific scenarios.
 For example, you can place test-specific migrations in <code>src/test/resources</code> and they are run only when your application starts for testing.
 Also, you can use profile-specific configuration to customize <code>spring.flyway.locations</code> so that certain migrations run only when a particular profile is active.
@@ -5923,7 +5923,7 @@ For example, for the property <code>myclient.uri=http://user1:<a href="https://d
 <code>http://user1:******@localhost:8081</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>env</code> 和 <code>configprops</code> 端点使用的默认模式可以分别使用 <code>management.endpoint.env.keys-to-sanitize</code> 和 <code>management.endpoint.configprops.keys-to-sanitize</code> 替换。或者，可以使用 <code>management.endpoint.env.additional-keys-to-sanitize</code> 和 <code>management.endpoint.configprops.additional-keys-to-sanitize</code> 配置其他模式。</p>
+<p translation-result="on"><code>env</code> 和 <code>configprops</code> 端点使用的默认模式可以分别使用 <code>management.endpoint.env.keys-to-sanitize</code> 和 <code>management.endpoint.configprops.keys-to-sanitize</code> 替换。或者，可以用 <code>management.endpoint.env.additional-keys-to-sanitize</code> 和 <code>management.endpoint.configprops.additional-keys-to-sanitize</code> 配置其他模式。</p>
 <p translation-origin="off">The default patterns used by the <code>env</code> and <code>configprops</code> endpoints can be replaced using <code>management.endpoint.env.keys-to-sanitize</code> and <code>management.endpoint.configprops.keys-to-sanitize</code> respectively.
 Alternatively, additional patterns can be configured using <code>management.endpoint.env.additional-keys-to-sanitize</code> and <code>management.endpoint.configprops.additional-keys-to-sanitize</code>.</p>
 </div>
@@ -5932,7 +5932,7 @@ Alternatively, additional patterns can be configured using <code>management.endp
 <h3 id="howto.actuator.map-health-indicators-to-metrics" translation-result="on"><a href="howto.html#howto.actuator.map-health-indicators-to-metrics"></a>12.4. 将健康指标映射到千分尺指标</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.actuator.map-health-indicators-to-metrics"></a>12.4. Map Health Indicators to Micrometer Metrics</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 健康指标返回一个 <code>Status</code> 类型来指示整个系统的健康状况。如果你想监控或提醒特定应用程序的健康水平，你可以使用 Micrometer 将这些状态导出为指标。默认情况下，Spring Boot 使用状态码“UP”、“DOWN”、“OUT_OF_SERVICE”和“UNKNOWN”。要导出这些，你需要将这些状态转换为一组数字，以便它们可以与 Micrometer <code>Gauge</code> 一起使用。</p>
+<p translation-result="on">Spring Boot 健康指标返回一个 <code>Status</code> 类型来指示整个系统的健康状况。如果你想监控或提醒特定应用程序的健康水平，你可以用 Micrometer 将这些状态导出为指标。默认情况下，Spring Boot 使用状态码“UP”、“DOWN”、“OUT_OF_SERVICE”和“UNKNOWN”。要导出这些，你需要将这些状态转换为一组数字，以便它们可以与 Micrometer <code>Gauge</code> 一起使用。</p>
 <p translation-origin="off">Spring Boot health indicators return a <code>Status</code> type to indicate the overall system health.
 If you want to monitor or alert on levels of health for a particular application, you can export these statuses as metrics with Micrometer.
 By default, the status codes “UP”, “DOWN”, “OUT_OF_SERVICE” and “UNKNOWN” are used by Spring Boot.
@@ -6004,7 +6004,7 @@ public class MyHealthMetricsExportConfiguration {
 <h3 id="howto.security.change-user-details-service-and-add-user-accounts" translation-result="on"><a href="howto.html#howto.security.change-user-details-service-and-add-user-accounts"></a>13.2. 更改 UserDetailsService 并添加用户帐户</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.security.change-user-details-service-and-add-user-accounts"></a>13.2. Change the UserDetailsService and Add User Accounts</h3>
 <div class="paragraph">
-<p translation-result="on">如果你提供 <code>AuthenticationManager</code> 、 <code>AuthenticationProvider</code> 或 <code>UserDetailsService</code> 类型的 <code>@Bean</code> ，则不会创建 <code>InMemoryUserDetailsManager</code> 的默认 <code>@Bean</code> 。这意味着你可以使用 Spring Security 的完整功能集（例如 <a href="https://docs.spring.io/spring-security/reference/5.6.1/servlet/authentication/index.html">各种身份验证选项</a>）。</p>
+<p translation-result="on">如果你提供 <code>AuthenticationManager</code> 、 <code>AuthenticationProvider</code> 或 <code>UserDetailsService</code> 类型的 <code>@Bean</code> ，则不会创建 <code>InMemoryUserDetailsManager</code> 的默认 <code>@Bean</code> 。这意味着你可以用 Spring Security 的完整功能集（例如 <a href="https://docs.spring.io/spring-security/reference/5.6.1/servlet/authentication/index.html">各种身份验证选项</a>）。</p>
 <p translation-origin="off">If you provide a <code>@Bean</code> of type <code>AuthenticationManager</code>, <code>AuthenticationProvider</code>, or <code>UserDetailsService</code>, the default <code>@Bean</code> for <code>InMemoryUserDetailsManager</code> is not created.
 This means you have the full feature set of Spring Security available (such as <a href="https://docs.spring.io/spring-security/reference/5.6.1/servlet/authentication/index.html">various authentication options</a>).</p>
 </div>
@@ -6409,7 +6409,7 @@ To use it, add the following declaration for the <a href="https://github.com/git
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">Gradle 用户可以使用<a href="https://plugins.gradle.org/plugin/com.gorylenko.gradle-git-properties"><code>gradle-git-properties</code></a>插件实现相同的结果，如下例所示：</p>
+<p translation-result="on">Gradle 用户可以用<a href="https://plugins.gradle.org/plugin/com.gorylenko.gradle-git-properties"><code>gradle-git-properties</code></a>插件实现相同的结果，如下例所示：</p>
 <p translation-origin="off">Gradle users can achieve the same result by using the <a href="https://plugins.gradle.org/plugin/com.gorylenko.gradle-git-properties"><code>gradle-git-properties</code></a> plugin, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -6491,7 +6491,7 @@ If you use the <code>spring-boot-starter-parent</code> POM, you can declare the 
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你不使用父 POM，你仍然可以使用该插件。但是，你必须另外添加 <code>&lt;executions&gt;</code> 部分，如下所示：</p>
+<p translation-result="on">如果你不使用父 POM，你仍然可以用该插件。但是，你必须另外添加 <code>&lt;executions&gt;</code> 部分，如下所示：</p>
 <p translation-origin="off">If you do not use the parent POM, you can still use the plugin.
 However, you must additionally add an <code>&lt;executions&gt;</code> section, as follows:</p>
 </div>
@@ -6541,7 +6541,7 @@ This means that they cannot be found when the executable jar is used as a depend
 This classifier is applied to the name of the executable archive, leaving the default archive for use as a dependency.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">在 Maven 中配置 <code>exec</code> 的分类器，可以使用如下配置：</p>
+<p translation-result="on">在 Maven 中配置 <code>exec</code> 的分类器，可以用如下配置：</p>
 <p translation-origin="off">To configure a classifier of <code>exec</code> in Maven, you can use the following configuration:</p>
 </div>
 <div class="listingblock">
@@ -6659,7 +6659,7 @@ For example, the <code>application.yml</code> configuration file might be exclud
 <h3 id="howto.build.remote-debug-maven" translation-result="on"><a href="howto.html#howto.build.remote-debug-maven"></a>16.8. 远程调试使用 Maven 启动的 Spring Boot 应用程序</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.build.remote-debug-maven"></a>16.8. Remote Debug a Spring Boot Application Started with Maven</h3>
 <div class="paragraph">
-<p translation-result="on">要将远程调试器附加到使用 Maven 启动的 Spring Boot 应用程序，你可以使用 <a href="https://docs.spring.io/spring-boot/docs/2.6.3/maven-plugin/reference/htmlsingle/">maven 插件</a>的 <code>jvmArguments</code> 属性。</p>
+<p translation-result="on">要将远程调试器附加到使用 Maven 启动的 Spring Boot 应用程序，你可以用 <a href="https://docs.spring.io/spring-boot/docs/2.6.3/maven-plugin/reference/htmlsingle/">maven 插件</a>的 <code>jvmArguments</code> 属性。</p>
 <p translation-origin="off">To attach a remote debugger to a Spring Boot application that was started with Maven, you can use the <code>jvmArguments</code> property of the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/maven-plugin/reference/htmlsingle/">maven plugin</a>.</p>
 </div>
 <div class="paragraph">
@@ -6671,7 +6671,7 @@ For example, the <code>application.yml</code> configuration file might be exclud
 <h3 id="howto.build.build-an-executable-archive-with-ant-without-using-spring-boot-antlib" translation-result="on"><a href="howto.html#howto.build.build-an-executable-archive-with-ant-without-using-spring-boot-antlib"></a> 16.9. 在不使用 spring-boot-antlib 的情况下从 Ant 构建可执行存档</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.build.build-an-executable-archive-with-ant-without-using-spring-boot-antlib"></a>16.9. Build an Executable Archive from Ant without Using spring-boot-antlib</h3>
 <div class="paragraph">
-<p translation-result="on">要使用 Ant 构建，你需要获取依赖项、编译，然后创建 jar 或 war 存档。要使其可执行，你可以使用 <code>spring-boot-antlib</code> 模块，也可以按照以下说明进行操作：</p>
+<p translation-result="on">要使用 Ant 构建，你需要获取依赖项、编译，然后创建 jar 或 war 存档。要使其可执行，你可以用 <code>spring-boot-antlib</code> 模块，也可以按照以下说明进行操作：</p>
 <p translation-origin="off">To build with Ant, you need to grab dependencies, compile, and then create a jar or war archive.
 To make it executable, you can either use the <code>spring-boot-antlib</code> module or you can follow these instructions:</p>
 </div>
