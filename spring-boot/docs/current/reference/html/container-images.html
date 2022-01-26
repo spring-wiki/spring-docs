@@ -1039,7 +1039,7 @@ $ java org.springframework.boot.loader.JarLauncher</code></pre>
 At runtime you should not expect any differences.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">解压 jar 文件后，您还可以通过使用其“自然”主方法而不是<code>JarLauncher</code>运行应用程序来获得额外的启动时间。例如：</p>
+<p translation-result="on">解压 jar 文件后，您还可以通过使用其“自然”主方法而不是 <code>JarLauncher</code> 运行应用程序来获得额外的启动时间。例如：</p>
 <p translation-origin="off">Once you have unpacked the jar file, you can also get an extra boost to startup time by running the app with its "natural" main method instead of the <code>JarLauncher</code>. For example:</p>
 </div>
 <div class="listingblock">
@@ -1055,7 +1055,7 @@ $ java -cp BOOT-INF/classes:BOOT-INF/lib/* com.example.MyApplication</code></pre
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">在应用程序的 main 方法上使用<code>JarLauncher</code>具有可预测的类路径顺序的额外好处。 jar 包含一个<code>classpath.idx</code>文件， <code>JarLauncher</code>在构建类路径时使用该文件。</p>
+<p translation-result="on">在应用程序的 main 方法上使用 <code>JarLauncher</code> 具有可预测的类路径顺序的额外好处。 jar 包含一个 <code>classpath.idx</code> 文件， <code>JarLauncher</code> 在构建类路径时使用该文件。</p>
 <p translation-origin="off">Using the <code>JarLauncher</code> over the application’s main method has the added benefit of a predictable classpath order.
 The jar contains a <code>classpath.idx</code> file which is used by the <code>JarLauncher</code> when constructing the classpath.</p>
 </td>
@@ -1080,7 +1080,7 @@ Out-of-the-box, the following layers are supported:</p>
 <p translation-origin="off"><code>dependencies</code> (for regular released dependencies)</p>
 </li>
 <li>
-<p translation-result="on"><code>spring-boot-loader</code> （适用于<code>org/springframework/boot/loader</code>下的所有内容）</p>
+<p translation-result="on"><code>spring-boot-loader</code> （适用于 <code>org/springframework/boot/loader</code> 下的所有内容）</p>
 <p translation-origin="off"><code>spring-boot-loader</code> (for everything under <code>org/springframework/boot/loader</code>)</p>
 </li>
 <li>
@@ -1094,7 +1094,7 @@ Out-of-the-box, the following layers are supported:</p>
 </ul>
 </div>
 <div class="paragraph">
-<p translation-result="on">下面显示了一个<code>layers.idx</code>文件的示例：</p>
+<p translation-result="on">下面显示了一个 <code>layers.idx</code> 文件的示例：</p>
 <p translation-origin="off">The following shows an example of a <code>layers.idx</code> file:</p>
 </div>
 <div class="listingblock">
@@ -1119,7 +1119,7 @@ Library code is less likely to change between builds, so it is placed in its own
 Application code is more likely to change between builds so it is isolated in a separate layer.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 还支持在<code>layers.idx</code>的帮助下对 war 文件进行分层。</p>
+<p translation-result="on">Spring Boot 还支持在 <code>layers.idx</code> 的帮助下对 war 文件进行分层。</p>
 <p translation-origin="off">Spring Boot also supports layering for war files with the help of a <code>layers.idx</code>.</p>
 </div>
 <div class="paragraph">
@@ -1147,7 +1147,7 @@ With this jar on the classpath, you can launch your application in a special mod
 <i class="fa icon-caution" title="小心"></i>
 </td>
 <td class="content">
-<p translation-result="on"><code>layertools</code>模式不能与包含启动脚本的<a href="deployment.html#deployment.installing">完全可执行的 Spring Boot 存档</a>一起使用。在构建旨在与<code>layertools</code>一起使用的 jar 文件时禁用启动脚本配置。</p>
+<p translation-result="on"><code>layertools</code> 模式不能与包含启动脚本的<a href="deployment.html#deployment.installing">完全可执行的 Spring Boot 存档</a>一起使用。在构建旨在与 <code>layertools</code> 一起使用的 jar 文件时禁用启动脚本配置。</p>
 <p translation-origin="off">The <code>layertools</code> mode can not be used with a <a href="deployment.html#deployment.installing">fully executable Spring Boot archive</a> that includes a launch script.
 Disable launch script configuration when building a jar file that is intended to be used with <code>layertools</code>.</p>
 </td>
@@ -1155,7 +1155,7 @@ Disable launch script configuration when building a jar file that is intended to
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">以下是使用<code>layertools</code> jar 模式启动 jar 的方法：</p>
+<p translation-result="on">以下是使用 <code>layertools</code> jar 模式启动 jar 的方法：</p>
 <p translation-origin="off">Here’s how you can launch your jar with a <code>layertools</code> jar mode:</p>
 </div>
 <div class="listingblock">
@@ -1179,7 +1179,7 @@ Available commands:
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>extract</code>命令可用于轻松地将应用程序拆分为要添加到 dockerfile 的层。这是使用<code>jarmode</code>的 Dockerfile 示例。</p>
+<p translation-result="on"><code>extract</code> 命令可用于轻松地将应用程序拆分为要添加到 dockerfile 的层。这是使用 <code>jarmode</code> 的 Dockerfile 示例。</p>
 <p translation-origin="off">The <code>extract</code> command can be used to easily split the application into layers to be added to the dockerfile.
 Here is an example of a Dockerfile using <code>jarmode</code>.</p>
 </div>
@@ -1201,7 +1201,7 @@ ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">假设上面的<code>Dockerfile</code>在当前目录下，你的 docker 镜像可以用<code>docker build .</code> ，或可选地指定应用程序 jar 的路径，如以下示例所示：</p>
+<p translation-result="on">假设上面的 <code>Dockerfile</code> 在当前目录下，你的 docker 镜像可以用 <code>docker build .</code> ，或可选地指定应用程序 jar 的路径，如以下示例所示：</p>
 <p translation-origin="off">Assuming the above <code>Dockerfile</code> is in the current directory, your docker image can be built with <code>docker build .</code>, or optionally specifying the path to your application jar, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -1210,13 +1210,13 @@ ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">这是一个多阶段的 dockerfile。构建器阶段提取稍后需要的目录。每个<code>COPY</code>命令都与 jarmode 提取的层相关。</p>
+<p translation-result="on">这是一个多阶段的 dockerfile。构建器阶段提取稍后需要的目录。每个 <code>COPY</code> 命令都与 jarmode 提取的层相关。</p>
 <p translation-origin="off">This is a multi-stage dockerfile.
 The builder stage extracts the directories that are needed later.
 Each of the <code>COPY</code> commands relates to the layers extracted by the jarmode.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">当然，不使用 jarmode 也可以编写 Dockerfile。您可以使用<code>unzip</code>和<code>mv</code>的某种组合将内容移动到正确的层，但 jarmode 简化了这一点。</p>
+<p translation-result="on">当然，不使用 jarmode 也可以编写 Dockerfile。您可以使用 <code>unzip</code> 和 <code>mv</code> 的某种组合将内容移动到正确的层，但 jarmode 简化了这一点。</p>
 <p translation-origin="off">Of course, a Dockerfile can be written without using the jarmode.
 You can use some combination of <code>unzip</code> and <code>mv</code> to move things to the right layer but jarmode simplifies that.</p>
 </div>
@@ -1227,7 +1227,7 @@ You can use some combination of <code>unzip</code> and <code>mv</code> to move t
 <h2 translation-origin="off"><a class="anchor" href="container-images.html#container-images.buildpacks"></a>3. Cloud Native Buildpacks</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Dockerfiles 只是构建 docker 镜像的一种方式。构建 docker 镜像的另一种方法是直接从您的 Maven 或 Gradle 插件中使用 buildpacks。如果您曾经使用过 Cloud Foundry 或 Heroku 等应用程序平台，那么您可能使用过 buildpack。 Buildpacks 是平台的一部分，它将您的应用程序转换为平台可以实际运行的东西。例如，Cloud Foundry 的 Java buildpack 会注意到您正在推送<code>.jar</code>文件并自动添加相关的 JRE。</p>
+<p translation-result="on">Dockerfiles 只是构建 docker 镜像的一种方式。构建 docker 镜像的另一种方法是直接从您的 Maven 或 Gradle 插件中使用 buildpacks。如果您曾经使用过 Cloud Foundry 或 Heroku 等应用程序平台，那么您可能使用过 buildpack。 Buildpacks 是平台的一部分，它将您的应用程序转换为平台可以实际运行的东西。例如，Cloud Foundry 的 Java buildpack 会注意到您正在推送 <code>.jar</code> 文件并自动添加相关的 JRE。</p>
 <p translation-origin="off">Dockerfiles are just one way to build docker images.
 Another way to build docker images is directly from your Maven or Gradle plugin, using buildpacks.
 If you’ve ever used an application platform such as Cloud Foundry or Heroku then you’ve probably used a buildpack.
@@ -1251,7 +1251,7 @@ This means you can just type a single command and quickly get a sensible image i
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on"><a href="https://github.com/paketo-buildpacks/spring-boot">Paketo Spring Boot buildpack</a>也已更新以支持<code>layers.idx</code>文件，因此应用到它的任何自定义都将反映在 buildpack 创建的映像中。</p>
+<p translation-result="on"><a href="https://github.com/paketo-buildpacks/spring-boot">Paketo Spring Boot buildpack</a>也已更新以支持 <code>layers.idx</code> 文件，因此应用到它的任何自定义都将反映在 buildpack 创建的映像中。</p>
 <p translation-origin="off">The <a href="https://github.com/paketo-buildpacks/spring-boot">Paketo Spring Boot buildpack</a> has also been updated to support the <code>layers.idx</code> file so any customization that is applied to it will be reflected in the image created by the buildpack.</p>
 </td>
 </tr>
@@ -1264,7 +1264,7 @@ This means you can just type a single command and quickly get a sensible image i
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">为了实现可重现的构建和容器图像缓存，Buildpacks 可以操纵应用程序资源元数据（例如文件“上次修改”信息）。您应该确保您的应用程序在运行时不依赖该元数据。 Spring Boot 在提供静态资源时可以使用该信息，但这可以通过<code>spring.web.resources.cache.use-last-modified</code>禁用</p>
+<p translation-result="on">为了实现可重现的构建和容器图像缓存，Buildpacks 可以操纵应用程序资源元数据（例如文件“上次修改”信息）。您应该确保您的应用程序在运行时不依赖该元数据。 Spring Boot 在提供静态资源时可以使用该信息，但这可以通过 <code>spring.web.resources.cache.use-last-modified</code> 禁用</p>
 <p translation-origin="off">In order to achieve reproducible builds and container image caching, Buildpacks can manipulate the application resources metadata (such as the file "last modified" information).
 You should ensure that your application does not rely on that metadata at runtime.
 Spring Boot can use that information when serving static resources, but this can be disabled with <code>spring.web.resources.cache.use-last-modified</code></p>

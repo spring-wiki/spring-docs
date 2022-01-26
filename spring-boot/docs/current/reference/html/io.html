@@ -1120,7 +1120,7 @@ We will also cover calling remote REST or SOAP services and sending email.</p>
 <h2 translation-origin="off"><a class="anchor" href="io.html#io.caching"></a>1. Caching</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring 框架支持透明地向应用程序添加缓存。在其核心，抽象将缓存应用于方法，从而减少基于缓存中可用信息的执行次数。缓存逻辑是透明应用的，对调用者没有任何干扰。只要使用<code>@EnableCaching</code>注解启用缓存支持，Spring Boot 就会自动配置缓存基础结构。</p>
+<p translation-result="on">Spring 框架支持透明地向应用程序添加缓存。在其核心，抽象将缓存应用于方法，从而减少基于缓存中可用信息的执行次数。缓存逻辑是透明应用的，对调用者没有任何干扰。只要使用 <code>@EnableCaching</code> 注解启用缓存支持，Spring Boot 就会自动配置缓存基础结构。</p>
 <p translation-origin="off">The Spring Framework provides support for transparently adding caching to an application.
 At its core, the abstraction applies caching to methods, thus reducing the number of executions based on the information available in the cache.
 The caching logic is applied transparently, without any interference to the invoker.
@@ -1161,7 +1161,7 @@ public class MyMathService {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">此示例演示了在可能代价高昂的操作中使用缓存。在调用<code>computePiDecimal</code>之前，抽象会在<code>piDecimals</code>缓存中查找与<code>i</code>参数匹配的条目。如果找到条目，缓存中的内容会立即返回给调用者，并且不会调用该方法。否则，调用该方法，并在返回值之前更新缓存。</p>
+<p translation-result="on">此示例演示了在可能代价高昂的操作中使用缓存。在调用 <code>computePiDecimal</code> 之前，抽象会在 <code>piDecimals</code> 缓存中查找与 <code>i</code> 参数匹配的条目。如果找到条目，缓存中的内容会立即返回给调用者，并且不会调用该方法。否则，调用该方法，并在返回值之前更新缓存。</p>
 <p translation-origin="off">This example demonstrates the use of caching on a potentially costly operation.
 Before invoking <code>computePiDecimal</code>, the abstraction looks for an entry in the <code>piDecimals</code> cache that matches the <code>i</code> argument.
 If an entry is found, the content in the cache is immediately returned to the caller, and the method is not invoked.
@@ -1174,7 +1174,7 @@ Otherwise, the method is invoked, and the cache is updated before returning the 
 <i class="fa icon-caution" title="小心"></i>
 </td>
 <td class="content">
-<p translation-result="on">您还可以透明地使用标准 JSR-107 (JCache) 注释（例如<code>@CacheResult</code> ）。但是，我们强烈建议您不要混合和匹配 Spring Cache 和 JCache 注释。</p>
+<p translation-result="on">您还可以透明地使用标准 JSR-107 (JCache) 注释（例如 <code>@CacheResult</code> ）。但是，我们强烈建议您不要混合和匹配 Spring Cache 和 JCache 注释。</p>
 <p translation-origin="off">You can also use the standard JSR-107 (JCache) annotations (such as <code>@CacheResult</code>) transparently.
 However, we strongly advise you to not mix and match the Spring Cache and JCache annotations.</p>
 </td>
@@ -1182,7 +1182,7 @@ However, we strongly advise you to not mix and match the Spring Cache and JCache
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果不添加任何特定的缓存库，Spring Boot 会自动配置一个<a href="io.html#io.caching.provider.simple">简单的提供程序</a>，该提供程序在内存中使用并发映射。当需要缓存时（例如前面示例中的<code>piDecimals</code> ），此提供程序会为您创建它。不建议将简单提供程序用于生产用途，但它非常适合入门并确保您了解这些功能。当您决定使用缓存提供程序时，请务必阅读其文档以了解如何配置应用程序使用的缓存。几乎所有提供程序都要求您显式配置您在应用程序中使用的每个缓存。有些提供了一种自定义<code>spring.cache.cache-names</code>属性定义的默认缓存的方法。</p>
+<p translation-result="on">如果不添加任何特定的缓存库，Spring Boot 会自动配置一个<a href="io.html#io.caching.provider.simple">简单的提供程序</a>，该提供程序在内存中使用并发映射。当需要缓存时（例如前面示例中的 <code>piDecimals</code> ），此提供程序会为您创建它。不建议将简单提供程序用于生产用途，但它非常适合入门并确保您了解这些功能。当您决定使用缓存提供程序时，请务必阅读其文档以了解如何配置应用程序使用的缓存。几乎所有提供程序都要求您显式配置您在应用程序中使用的每个缓存。有些提供了一种自定义 <code>spring.cache.cache-names</code> 属性定义的默认缓存的方法。</p>
 <p translation-origin="off">If you do not add any specific cache library, Spring Boot auto-configures a <a href="io.html#io.caching.provider.simple">simple provider</a> that uses concurrent maps in memory.
 When a cache is required (such as <code>piDecimals</code> in the preceding example), this provider creates it for you.
 The simple provider is not really recommended for production usage, but it is great for getting started and making sure that you understand the features.
@@ -1207,11 +1207,11 @@ Some offer a way to customize the default caches defined by the <code>spring.cac
 <h3 id="io.caching.provider" translation-result="on"><a href="io.html#io.caching.provider"></a>1.1。支持的缓存提供程序</h3>
 <h3 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider"></a>1.1. Supported Cache Providers</h3>
 <div class="paragraph">
-<p translation-result="on">缓存抽象不提供实际的存储，它依赖于<code>org.springframework.cache.Cache</code>和<code>org.springframework.cache.CacheManager</code>接口实现的抽象。</p>
+<p translation-result="on">缓存抽象不提供实际的存储，它依赖于 <code>org.springframework.cache.Cache</code> 和 <code>org.springframework.cache.CacheManager</code> 接口实现的抽象。</p>
 <p translation-origin="off">The cache abstraction does not provide an actual store and relies on abstraction materialized by the <code>org.springframework.cache.Cache</code> and <code>org.springframework.cache.CacheManager</code> interfaces.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您尚未定义<code>CacheManager</code>类型的 bean 或名为<code>CacheResolver</code>的<code>cacheResolver</code> （请参阅<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/cache/annotation/CachingConfigurer.html"><code>CachingConfigurer</code></a> ），Spring Boot 会尝试检测以下提供程序（按指示的顺序）：</p>
+<p translation-result="on">如果您尚未定义 <code>CacheManager</code> 类型的 bean 或名为 <code>CacheResolver</code> 的 <code>cacheResolver</code> （请参阅<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/cache/annotation/CachingConfigurer.html"><code>CachingConfigurer</code></a> ），Spring Boot 会尝试检测以下提供程序（按指示的顺序）：</p>
 <p translation-origin="off">If you have not defined a bean of type <code>CacheManager</code> or a <code>CacheResolver</code> named <code>cacheResolver</code> (see <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/cache/annotation/CachingConfigurer.html"><code>CachingConfigurer</code></a>), Spring Boot tries to detect the following providers (in the indicated order):</p>
 </div>
 <div class="olist arabic">
@@ -1260,7 +1260,7 @@ Some offer a way to customize the default caches defined by the <code>spring.cac
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">也可以通过设置<code>spring.cache.type</code>属性来<em>强制</em>使用特定的缓存提供者。如果您需要在某些环境（例如测试）中<a href="io.html#io.caching.provider.none">完全禁用缓存</a>，请使用此属性。</p>
+<p translation-result="on">也可以通过设置 <code>spring.cache.type</code> 属性来<em>强制</em>使用特定的缓存提供者。如果您需要在某些环境（例如测试）中<a href="io.html#io.caching.provider.none">完全禁用缓存</a>，请使用此属性。</p>
 <p translation-origin="off">It is also possible to <em>force</em> a particular cache provider by setting the <code>spring.cache.type</code> property.
 Use this property if you need to <a href="io.html#io.caching.provider.none">disable caching altogether</a> in certain environments (such as tests).</p>
 </td>
@@ -1274,7 +1274,7 @@ Use this property if you need to <a href="io.html#io.caching.provider.none">disa
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">使用<code>spring-boot-starter-cache</code> “Starter” 快速添加基本缓存依赖项。 starter 引入了<code>spring-context-support</code> 。如果您手动添加依赖项，则必须包含<code>spring-context-support</code>才能使用 JCache、EhCache 2.x 或 Caffeine 支持。</p>
+<p translation-result="on">使用 <code>spring-boot-starter-cache</code> “Starter” 快速添加基本缓存依赖项。 starter 引入了 <code>spring-context-support</code> 。如果您手动添加依赖项，则必须包含 <code>spring-context-support</code> 才能使用 JCache、EhCache 2.x 或 Caffeine 支持。</p>
 <p translation-origin="off">Use the <code>spring-boot-starter-cache</code> “Starter” to quickly add basic caching dependencies.
 The starter brings in <code>spring-context-support</code>.
 If you add dependencies manually, you must include <code>spring-context-support</code> in order to use the JCache, EhCache 2.x, or Caffeine support.</p>
@@ -1283,7 +1283,7 @@ If you add dependencies manually, you must include <code>spring-context-support<
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果<code>CacheManager</code>由 Spring Boot 自动配置，您可以在完全初始化之前通过公开实现<code>CacheManagerCustomizer</code>接口的 bean 进一步调整其配置。以下示例设置一个标志，表示不应将<code>null</code>值传递给底层映射：</p>
+<p translation-result="on">如果 <code>CacheManager</code> 由 Spring Boot 自动配置，您可以在完全初始化之前通过公开实现 <code>CacheManagerCustomizer</code> 接口的 bean 进一步调整其配置。以下示例设置一个标志，表示不应将 <code>null</code> 值传递给底层映射：</p>
 <p translation-origin="off">If the <code>CacheManager</code> is auto-configured by Spring Boot, you can further tune its configuration before it is fully initialized by exposing a bean that implements the <code>CacheManagerCustomizer</code> interface.
 The following example sets a flag to say that <code>null</code> values should not be passed down to the underlying map:</p>
 </div>
@@ -1313,7 +1313,7 @@ public class MyCacheManagerConfiguration {
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">在前面的示例中，需要一个自动配置的<code>ConcurrentMapCacheManager</code> 。如果不是这种情况（您提供了自己的配置或自动配置了不同的缓存提供程序），则根本不会调用定制器。您可以拥有任意数量的定制器，也可以使用<code>@Order</code>或<code>Ordered</code>来订购它们。</p>
+<p translation-result="on">在前面的示例中，需要一个自动配置的 <code>ConcurrentMapCacheManager</code> 。如果不是这种情况（您提供了自己的配置或自动配置了不同的缓存提供程序），则根本不会调用定制器。您可以拥有任意数量的定制器，也可以使用 <code>@Order</code> 或 <code>Ordered</code> 来订购它们。</p>
 <p translation-origin="off">In the preceding example, an auto-configured <code>ConcurrentMapCacheManager</code> is expected.
 If that is not the case (either you provided your own config or a different cache provider was auto-configured), the customizer is not invoked at all.
 You can have as many customizers as you want, and you can also order them by using <code>@Order</code> or <code>Ordered</code>.</p>
@@ -1325,7 +1325,7 @@ You can have as many customizers as you want, and you can also order them by usi
 <h4 id="io.caching.provider.generic" translation-result="on"><a href="io.html#io.caching.provider.generic"></a>1.1.1。通用的</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.generic"></a>1.1.1. Generic</h4>
 <div class="paragraph">
-<p translation-result="on">如果上下文定义<em>了至少</em>一个<code>org.springframework.cache.Cache</code> bean，则使用通用缓存。一个<code>CacheManager</code>包装了该类型的所有 bean。</p>
+<p translation-result="on">如果上下文定义<em>了至少</em>一个 <code>org.springframework.cache.Cache</code> bean，则使用通用缓存。一个 <code>CacheManager</code> 包装了该类型的所有 bean。</p>
 <p translation-origin="off">Generic caching is used if the context defines <em>at least</em> one <code>org.springframework.cache.Cache</code> bean.
 A <code>CacheManager</code> wrapping all beans of that type is created.</p>
 </div>
@@ -1334,7 +1334,7 @@ A <code>CacheManager</code> wrapping all beans of that type is created.</p>
 <h4 id="io.caching.provider.jcache" translation-result="on"><a href="io.html#io.caching.provider.jcache"></a>1.1.2。 JCache (JSR-107)</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.jcache"></a>1.1.2. JCache (JSR-107)</h4>
 <div class="paragraph">
-<p translation-result="on"><a href="https://jcp.org/en/jsr/detail?id=107">JCache</a>通过类路径上存在<code>javax.cache.spi.CachingProvider</code>来引导（即类路径上存在符合 JSR-107 的缓存库），而<code>JCacheCacheManager</code>由<code>spring-boot-starter-cache</code>提供起动机”。有各种兼容的库可用，Spring Boot 为 Ehcache 3、Hazelcast 和 Infinispan 提供了依赖管理。也可以添加任何其他兼容的库。</p>
+<p translation-result="on"><a href="https://jcp.org/en/jsr/detail?id=107">JCache</a>通过类路径上存在 <code>javax.cache.spi.CachingProvider</code> 来引导（即类路径上存在符合 JSR-107 的缓存库），而 <code>JCacheCacheManager</code> 由 <code>spring-boot-starter-cache</code> 提供起动机”。有各种兼容的库可用，Spring Boot 为 Ehcache 3、Hazelcast 和 Infinispan 提供了依赖管理。也可以添加任何其他兼容的库。</p>
 <p translation-origin="off"><a href="https://jcp.org/en/jsr/detail?id=107">JCache</a> is bootstrapped through the presence of a <code>javax.cache.spi.CachingProvider</code> on the classpath (that is, a JSR-107 compliant caching library exists on the classpath), and the <code>JCacheCacheManager</code> is provided by the <code>spring-boot-starter-cache</code> “Starter”.
 Various compliant libraries are available, and Spring Boot provides dependency management for Ehcache 3, Hazelcast, and Infinispan.
 Any other compliant library can be added as well.</p>
@@ -1384,7 +1384,7 @@ spring:
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">Spring Boot<a href="io.html#io.hazelcast">对 Hazelcast 具有一般支持</a>。如果单个<code>HazelcastInstance</code>可用，它也会自动被<code>CacheManager</code>重用，除非指定了<code>spring.cache.jcache.config</code>属性。</p>
+<p translation-result="on">Spring Boot<a href="io.html#io.hazelcast">对 Hazelcast 具有一般支持</a>。如果单个 <code>HazelcastInstance</code> 可用，它也会自动被 <code>CacheManager</code> 重用，除非指定了 <code>spring.cache.jcache.config</code> 属性。</p>
 <p translation-origin="off">Spring Boot has <a href="io.html#io.hazelcast">general support for Hazelcast</a>.
 If a single <code>HazelcastInstance</code> is available, it is automatically reused for the <code>CacheManager</code> as well, unless the <code>spring.cache.jcache.config</code> property is specified.</p>
 </td>
@@ -1392,18 +1392,18 @@ If a single <code>HazelcastInstance</code> is available, it is automatically reu
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">有两种方法可以自定义底层<code>javax.cache.cacheManager</code> ：</p>
+<p translation-result="on">有两种方法可以自定义底层 <code>javax.cache.cacheManager</code> ：</p>
 <p translation-origin="off">There are two ways to customize the underlying <code>javax.cache.cacheManager</code>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p translation-result="on">可以通过设置<code>spring.cache.cache-names</code>属性在启动时创建缓存。如果定义了自定义<code>javax.cache.configuration.Configuration</code> bean，则使用它来自定义它们。</p>
+<p translation-result="on">可以通过设置 <code>spring.cache.cache-names</code> 属性在启动时创建缓存。如果定义了自定义 <code>javax.cache.configuration.Configuration</code> bean，则使用它来自定义它们。</p>
 <p translation-origin="off">Caches can be created on startup by setting the <code>spring.cache.cache-names</code> property.
 If a custom <code>javax.cache.configuration.Configuration</code> bean is defined, it is used to customize them.</p>
 </li>
 <li>
-<p translation-result="on"><code>org.springframework.boot.autoconfigure.cache.JCacheManagerCustomizer</code> bean 使用<code>CacheManager</code>的引用调用以进行完全自定义。</p>
+<p translation-result="on"><code>org.springframework.boot.autoconfigure.cache.JCacheManagerCustomizer</code> bean 使用 <code>CacheManager</code> 的引用调用以进行完全自定义。</p>
 <p translation-origin="off"><code>org.springframework.boot.autoconfigure.cache.JCacheManagerCustomizer</code> beans are invoked with the reference of the <code>CacheManager</code> for full customization.</p>
 </li>
 </ul>
@@ -1415,7 +1415,7 @@ If a custom <code>javax.cache.configuration.Configuration</code> bean is defined
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果定义了标准<code>javax.cache.CacheManager</code> bean，它会自动包装在抽象期望的<code>org.springframework.cache.CacheManager</code>实现中。没有对其应用进一步的自定义。</p>
+<p translation-result="on">如果定义了标准 <code>javax.cache.CacheManager</code> bean，它会自动包装在抽象期望的 <code>org.springframework.cache.CacheManager</code> 实现中。没有对其应用进一步的自定义。</p>
 <p translation-origin="off">If a standard <code>javax.cache.CacheManager</code> bean is defined, it is wrapped automatically in an <code>org.springframework.cache.CacheManager</code> implementation that the abstraction expects.
 No further customization is applied to it.</p>
 </td>
@@ -1427,7 +1427,7 @@ No further customization is applied to it.</p>
 <h4 id="io.caching.provider.ehcache2" translation-result="on"><a href="io.html#io.caching.provider.ehcache2"></a>1.1.3。 EhCache 2.x</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.ehcache2"></a>1.1.3. EhCache 2.x</h4>
 <div class="paragraph">
-<p translation-result="on">如果可以在类路径的根目录找到名为<code>ehcache.xml</code>的文件，则使用<a href="https://www.ehcache.org/">EhCache</a> 2.x。如果找到 EhCache 2.x，则使用<code>spring-boot-starter-cache</code> “Starter”提供的<code>EhCacheCacheManager</code>来引导缓存管理器。也可以提供备用配置文件，如以下示例所示：</p>
+<p translation-result="on">如果可以在类路径的根目录找到名为 <code>ehcache.xml</code> 的文件，则使用<a href="https://www.ehcache.org/">EhCache</a> 2.x。如果找到 EhCache 2.x，则使用 <code>spring-boot-starter-cache</code> “Starter”提供的 <code>EhCacheCacheManager</code> 来引导缓存管理器。也可以提供备用配置文件，如以下示例所示：</p>
 <p translation-origin="off"><a href="https://www.ehcache.org/">EhCache</a> 2.x is used if a file named <code>ehcache.xml</code> can be found at the root of the classpath.
 If EhCache 2.x is found, the <code>EhCacheCacheManager</code> provided by the <code>spring-boot-starter-cache</code> “Starter” is used to bootstrap the cache manager.
 An alternate configuration file can be provided as well, as shown in the following example:</p>
@@ -1453,7 +1453,7 @@ An alternate configuration file can be provided as well, as shown in the followi
 <h4 id="io.caching.provider.hazelcast" translation-result="on"><a href="io.html#io.caching.provider.hazelcast"></a>1.1.4。榛树</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.hazelcast"></a>1.1.4. Hazelcast</h4>
 <div class="paragraph">
-<p translation-result="on">Spring Boot<a href="io.html#io.hazelcast">对 Hazelcast 具有一般支持</a>。如果<code>HazelcastInstance</code>已被自动配置，它会自动包装在<code>CacheManager</code>中。</p>
+<p translation-result="on">Spring Boot<a href="io.html#io.hazelcast">对 Hazelcast 具有一般支持</a>。如果 <code>HazelcastInstance</code> 已被自动配置，它会自动包装在 <code>CacheManager</code> 中。</p>
 <p translation-origin="off">Spring Boot has <a href="io.html#io.hazelcast">general support for Hazelcast</a>.
 If a <code>HazelcastInstance</code> has been auto-configured, it is automatically wrapped in a <code>CacheManager</code>.</p>
 </div>
@@ -1483,7 +1483,7 @@ Otherwise, the default bootstrap is used.</p>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">可以通过设置<code>spring.cache.cache-names</code>属性在启动时创建缓存。如果定义了自定义<code>ConfigurationBuilder</code> bean，则它用于自定义缓存。</p>
+<p translation-result="on">可以通过设置 <code>spring.cache.cache-names</code> 属性在启动时创建缓存。如果定义了自定义 <code>ConfigurationBuilder</code> bean，则它用于自定义缓存。</p>
 <p translation-origin="off">Caches can be created on startup by setting the <code>spring.cache.cache-names</code> property.
 If a custom <code>ConfigurationBuilder</code> bean is defined, it is used to customize the caches.</p>
 </div>
@@ -1507,7 +1507,7 @@ See <a href="https://github.com/infinispan/infinispan-spring-boot">Infinispan’
 <h4 id="io.caching.provider.couchbase" translation-result="on"><a href="io.html#io.caching.provider.couchbase"></a>1.1.6。沙发底座</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.couchbase"></a>1.1.6. Couchbase</h4>
 <div class="paragraph">
-<p translation-result="on">如果 Spring Data Couchbase 可用并且 Couchbase 已<a href="data.html#data.nosql.couchbase">配置</a>，则自动配置<code>CouchbaseCacheManager</code> 。可以通过设置<code>spring.cache.cache-names</code>属性在启动时创建额外的缓存，并且可以使用<code>spring.cache.couchbase.*</code>属性配置缓存默认值。例如，以下配置创建<code>cache1</code>和<code>cache2</code>缓存，条目<em>过期</em>时间为 10 分钟：</p>
+<p translation-result="on">如果 Spring Data Couchbase 可用并且 Couchbase 已<a href="data.html#data.nosql.couchbase">配置</a>，则自动配置 <code>CouchbaseCacheManager</code> 。可以通过设置 <code>spring.cache.cache-names</code> 属性在启动时创建额外的缓存，并且可以使用 <code>spring.cache.couchbase.*</code> 属性配置缓存默认值。例如，以下配置创建 <code>cache1</code> 和 <code>cache2</code> 缓存，条目<em>过期</em>时间为 10 分钟：</p>
 <p translation-origin="off">If Spring Data Couchbase is available and Couchbase is <a href="data.html#data.nosql.couchbase">configured</a>, a <code>CouchbaseCacheManager</code> is auto-configured.
 It is possible to create additional caches on startup by setting the <code>spring.cache.cache-names</code> property and cache defaults can be configured by using <code>spring.cache.couchbase.*</code> properties.
 For instance, the following configuration creates <code>cache1</code> and <code>cache2</code> caches with an entry <em>expiration</em> of 10 minutes:</p>
@@ -1531,7 +1531,7 @@ spring.cache.couchbase.expiration=10m</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您需要对配置进行更多控制，请考虑注册一个<code>CouchbaseCacheManagerBuilderCustomizer</code> bean。以下示例显示了为<code>cache1</code>和<code>cache2</code>配置特定条目过期的自定义程序：</p>
+<p translation-result="on">如果您需要对配置进行更多控制，请考虑注册一个 <code>CouchbaseCacheManagerBuilderCustomizer</code> bean。以下示例显示了为 <code>cache1</code> 和 <code>cache2</code> 配置特定条目过期的自定义程序：</p>
 <p translation-origin="off">If you need more control over the configuration, consider registering a <code>CouchbaseCacheManagerBuilderCustomizer</code> bean.
 The following example shows a customizer that configures a specific entry expiration for <code>cache1</code> and <code>cache2</code>:</p>
 </div>
@@ -1566,7 +1566,7 @@ public class MyCouchbaseCacheManagerConfiguration {
 <h4 id="io.caching.provider.redis" translation-result="on"><a href="io.html#io.caching.provider.redis"></a>1.1.7。雷迪斯</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.redis"></a>1.1.7. Redis</h4>
 <div class="paragraph">
-<p translation-result="on">如果<a href="https://redis.io/">Redis</a>可用且已配置，则会自动配置<code>RedisCacheManager</code> 。可以通过设置<code>spring.cache.cache-names</code>属性在启动时创建额外的缓存，并且可以使用<code>spring.cache.redis.*</code>属性配置缓存默认值。例如，以下配置创建<code>cache1</code>和<code>cache2</code>缓存，其<em>生存时间</em>为 10 分钟：</p>
+<p translation-result="on">如果<a href="https://redis.io/">Redis</a>可用且已配置，则会自动配置 <code>RedisCacheManager</code> 。可以通过设置 <code>spring.cache.cache-names</code> 属性在启动时创建额外的缓存，并且可以使用 <code>spring.cache.redis.*</code> 属性配置缓存默认值。例如，以下配置创建 <code>cache1</code> 和 <code>cache2</code> 缓存，其<em>生存时间</em>为 10 分钟：</p>
 <p translation-origin="off">If <a href="https://redis.io/">Redis</a> is available and configured, a <code>RedisCacheManager</code> is auto-configured.
 It is possible to create additional caches on startup by setting the <code>spring.cache.cache-names</code> property and cache defaults can be configured by using <code>spring.cache.redis.*</code> properties.
 For instance, the following configuration creates <code>cache1</code> and <code>cache2</code> caches with a <em>time to live</em> of 10 minutes:</p>
@@ -1596,7 +1596,7 @@ spring.cache.redis.time-to-live=10m</code></pre>
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">默认情况下，会添加一个 key 前缀，这样，如果两个单独的缓存使用相同的 key，Redis 不会有重叠的 key，也不会返回无效值。如果您创建自己的<code>RedisCacheManager</code> ，我们强烈建议保持启用此设置。</p>
+<p translation-result="on">默认情况下，会添加一个 key 前缀，这样，如果两个单独的缓存使用相同的 key，Redis 不会有重叠的 key，也不会返回无效值。如果您创建自己的 <code>RedisCacheManager</code> ，我们强烈建议保持启用此设置。</p>
 <p translation-origin="off">By default, a key prefix is added so that, if two separate caches use the same key, Redis does not have overlapping keys and cannot return invalid values.
 We strongly recommend keeping this setting enabled if you create your own <code>RedisCacheManager</code>.</p>
 </td>
@@ -1610,7 +1610,7 @@ We strongly recommend keeping this setting enabled if you create your own <code>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">您可以通过添加自己的<code>RedisCacheConfiguration</code> <code>@Bean</code>来完全控制默认配置。如果您需要自定义默认序列化策略，这会很有用。</p>
+<p translation-result="on">您可以通过添加自己的 <code>RedisCacheConfiguration</code> <code>@Bean</code> 来完全控制默认配置。如果您需要自定义默认序列化策略，这会很有用。</p>
 <p translation-origin="off">You can take full control of the default configuration by adding a <code>RedisCacheConfiguration</code> <code>@Bean</code> of your own.
 This can be useful if you need to customize the default serialization strategy.</p>
 </td>
@@ -1618,7 +1618,7 @@ This can be useful if you need to customize the default serialization strategy.<
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您需要对配置进行更多控制，请考虑注册<code>RedisCacheManagerBuilderCustomizer</code> bean。以下示例显示了一个自定义程序，它为<code>cache1</code>和<code>cache2</code>配置了特定的生存时间：</p>
+<p translation-result="on">如果您需要对配置进行更多控制，请考虑注册 <code>RedisCacheManagerBuilderCustomizer</code> bean。以下示例显示了一个自定义程序，它为 <code>cache1</code> 和 <code>cache2</code> 配置了特定的生存时间：</p>
 <p translation-origin="off">If you need more control over the configuration, consider registering a <code>RedisCacheManagerBuilderCustomizer</code> bean.
 The following example shows a customizer that configures a specific time to live for <code>cache1</code> and <code>cache2</code>:</p>
 </div>
@@ -1653,7 +1653,7 @@ public class MyRedisCacheManagerConfiguration {
 <h4 id="io.caching.provider.caffeine" translation-result="on"><a href="io.html#io.caching.provider.caffeine"></a>1.1.8。咖啡因</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.caffeine"></a>1.1.8. Caffeine</h4>
 <div class="paragraph">
-<p translation-result="on"><a href="https://github.com/ben-manes/caffeine">Caffeine</a>是 Java 8 对 Guava 缓存的重写，它取代了对 Guava 的支持。如果存在 Caffeine，则自动配置<code>CaffeineCacheManager</code> （由<code>spring-boot-starter-cache</code> “Starter”提供）。可以通过设置<code>spring.cache.cache-names</code>属性在启动时创建缓存，并且可以通过以下之一进行自定义（按指示的顺序）：</p>
+<p translation-result="on"><a href="https://github.com/ben-manes/caffeine">Caffeine</a>是 Java 8 对 Guava 缓存的重写，它取代了对 Guava 的支持。如果存在 Caffeine，则自动配置 <code>CaffeineCacheManager</code> （由 <code>spring-boot-starter-cache</code> “Starter”提供）。可以通过设置 <code>spring.cache.cache-names</code> 属性在启动时创建缓存，并且可以通过以下之一进行自定义（按指示的顺序）：</p>
 <p translation-origin="off"><a href="https://github.com/ben-manes/caffeine">Caffeine</a> is a Java 8 rewrite of Guava’s cache that supersedes support for Guava.
 If Caffeine is present, a <code>CaffeineCacheManager</code> (provided by the <code>spring-boot-starter-cache</code> “Starter”) is auto-configured.
 Caches can be created on startup by setting the <code>spring.cache.cache-names</code> property and can be customized by one of the following (in the indicated order):</p>
@@ -1661,21 +1661,21 @@ Caches can be created on startup by setting the <code>spring.cache.cache-names</
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p translation-result="on"><code>spring.cache.caffeine.spec</code>定义的缓存规范</p>
+<p translation-result="on"><code>spring.cache.caffeine.spec</code> 定义的缓存规范</p>
 <p translation-origin="off">A cache spec defined by <code>spring.cache.caffeine.spec</code></p>
 </li>
 <li>
-<p translation-result="on">定义了一个<code>com.github.benmanes.caffeine.cache.CaffeineSpec</code> bean</p>
+<p translation-result="on">定义了一个 <code>com.github.benmanes.caffeine.cache.CaffeineSpec</code> bean</p>
 <p translation-origin="off">A <code>com.github.benmanes.caffeine.cache.CaffeineSpec</code> bean is defined</p>
 </li>
 <li>
-<p translation-result="on">定义了一个<code>com.github.benmanes.caffeine.cache.Caffeine</code> bean</p>
+<p translation-result="on">定义了一个 <code>com.github.benmanes.caffeine.cache.Caffeine</code> bean</p>
 <p translation-origin="off">A <code>com.github.benmanes.caffeine.cache.Caffeine</code> bean is defined</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p translation-result="on">例如，以下配置创建<code>cache1</code>和<code>cache2</code>缓存，最大大小为 500，<em>生存时间</em>为 10 分钟</p>
+<p translation-result="on">例如，以下配置创建 <code>cache1</code> 和 <code>cache2</code> 缓存，最大大小为 500，<em>生存时间</em>为 10 分钟</p>
 <p translation-origin="off">For instance, the following configuration creates <code>cache1</code> and <code>cache2</code> caches with a maximum size of 500 and a <em>time to live</em> of 10 minutes</p>
 </div>
 <div class="listingblock primary">
@@ -1697,7 +1697,7 @@ spring.cache.caffeine.spec=maximumSize=500,expireAfterAccess=600s</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果定义了<code>com.github.benmanes.caffeine.cache.CacheLoader</code> bean，它会自动关联到<code>CaffeineCacheManager</code> 。由于<code>CacheLoader</code>将与缓存管理器管理的<em>所有</em>缓存相关联，因此必须将其定义为<code>CacheLoader&lt;Object, Object&gt;</code> 。自动配置忽略任何其他泛型类型。</p>
+<p translation-result="on">如果定义了 <code>com.github.benmanes.caffeine.cache.CacheLoader</code> bean，它会自动关联到 <code>CaffeineCacheManager</code> 。由于 <code>CacheLoader</code> 将与缓存管理器管理的<em>所有</em>缓存相关联，因此必须将其定义为 <code>CacheLoader&lt;Object, Object&gt;</code> 。自动配置忽略任何其他泛型类型。</p>
 <p translation-origin="off">If a <code>com.github.benmanes.caffeine.cache.CacheLoader</code> bean is defined, it is automatically associated to the <code>CaffeineCacheManager</code>.
 Since the <code>CacheLoader</code> is going to be associated with <em>all</em> caches managed by the cache manager, it must be defined as <code>CacheLoader&lt;Object, Object&gt;</code>.
 The auto-configuration ignores any other generic type.</p>
@@ -1707,7 +1707,7 @@ The auto-configuration ignores any other generic type.</p>
 <h4 id="io.caching.provider.simple" translation-result="on"><a href="io.html#io.caching.provider.simple"></a>1.1.9。简单的</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.simple"></a>1.1.9. Simple</h4>
 <div class="paragraph">
-<p translation-result="on">如果找不到其他提供程序，则配置使用<code>ConcurrentHashMap</code>作为缓存存储的简单实现。如果您的应用程序中不存在缓存库，则这是默认设置。默认情况下，缓存是根据需要创建的，但您可以通过设置<code>cache-names</code>属性来限制可用缓存的列表。例如，如果您只需要<code>cache1</code>和<code>cache2</code>缓存，请按如下方式设置<code>cache-names</code>属性：</p>
+<p translation-result="on">如果找不到其他提供程序，则配置使用 <code>ConcurrentHashMap</code> 作为缓存存储的简单实现。如果您的应用程序中不存在缓存库，则这是默认设置。默认情况下，缓存是根据需要创建的，但您可以通过设置 <code>cache-names</code> 属性来限制可用缓存的列表。例如，如果您只需要 <code>cache1</code> 和 <code>cache2</code> 缓存，请按如下方式设置 <code>cache-names</code> 属性：</p>
 <p translation-origin="off">If none of the other providers can be found, a simple implementation using a <code>ConcurrentHashMap</code> as the cache store is configured.
 This is the default if no caching library is present in your application.
 By default, caches are created as needed, but you can restrict the list of available caches by setting the <code>cache-names</code> property.
@@ -1738,7 +1738,7 @@ This is similar to the way the "real" cache providers behave if you use an undec
 <h4 id="io.caching.provider.none" translation-result="on"><a href="io.html#io.caching.provider.none"></a>1.1.10。没有任何</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.none"></a>1.1.10. None</h4>
 <div class="paragraph">
-<p translation-result="on">当您的配置中存在<code>@EnableCaching</code>时，也需要合适的缓存配置。如果您需要在某些环境中完全禁用缓存，请强制缓存类型为<code>none</code>以使用无操作实现，如下例所示：</p>
+<p translation-result="on">当您的配置中存在 <code>@EnableCaching</code> 时，也需要合适的缓存配置。如果您需要在某些环境中完全禁用缓存，请强制缓存类型为 <code>none</code> 以使用无操作实现，如下例所示：</p>
 <p translation-origin="off">When <code>@EnableCaching</code> is present in your configuration, a suitable cache configuration is expected as well.
 If you need to disable caching altogether in certain environments, force the cache type to <code>none</code> to use a no-op implementation, as shown in the following example:</p>
 </div>
@@ -1766,7 +1766,7 @@ If you need to disable caching altogether in certain environments, force the cac
 <h2 translation-origin="off"><a class="anchor" href="io.html#io.hazelcast"></a>2. Hazelcast</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">如果<a href="https://hazelcast.com/">Hazelcast</a>在类路径上并且找到了合适的配置，Spring Boot 会自动配置一个<code>HazelcastInstance</code> ，您可以将其注入应用程序中。</p>
+<p translation-result="on">如果<a href="https://hazelcast.com/">Hazelcast</a>在类路径上并且找到了合适的配置，Spring Boot 会自动配置一个 <code>HazelcastInstance</code> ，您可以将其注入应用程序中。</p>
 <p translation-origin="off">If <a href="https://hazelcast.com/">Hazelcast</a> is on the classpath and a suitable configuration is found, Spring Boot auto-configures a <code>HazelcastInstance</code> that you can inject in your application.</p>
 </div>
 <div class="paragraph">
@@ -1780,19 +1780,19 @@ If you need to disable caching altogether in certain environments, force the cac
 <p translation-origin="off">The presence of a <code>com.hazelcast.client.config.ClientConfig</code> bean.</p>
 </li>
 <li>
-<p translation-result="on">由<code>spring.hazelcast.config</code>属性定义的配置文件。</p>
+<p translation-result="on">由 <code>spring.hazelcast.config</code> 属性定义的配置文件。</p>
 <p translation-origin="off">A configuration file defined by the <code>spring.hazelcast.config</code> property.</p>
 </li>
 <li>
-<p translation-result="on"><code>hazelcast.client.config</code>系统属性的存在。</p>
+<p translation-result="on"><code>hazelcast.client.config</code> 系统属性的存在。</p>
 <p translation-origin="off">The presence of the <code>hazelcast.client.config</code> system property.</p>
 </li>
 <li>
-<p translation-result="on">工作目录或类路径根目录中的<code>hazelcast-client.xml</code> 。</p>
+<p translation-result="on">工作目录或类路径根目录中的 <code>hazelcast-client.xml</code> 。</p>
 <p translation-origin="off">A <code>hazelcast-client.xml</code> in the working directory or at the root of the classpath.</p>
 </li>
 <li>
-<p translation-result="on">工作目录或类路径根目录中的<code>hazelcast-client.yaml</code> 。</p>
+<p translation-result="on">工作目录或类路径根目录中的 <code>hazelcast-client.yaml</code> 。</p>
 <p translation-origin="off">A <code>hazelcast-client.yaml</code> in the working directory or at the root of the classpath.</p>
 </li>
 </ul>
@@ -1804,7 +1804,7 @@ If you need to disable caching altogether in certain environments, force the cac
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">Spring Boot 同时支持 Hazelcast 4 和 Hazelcast 3。如果降级到 Hazelcast 3，则应将<code>hazelcast-client</code>添加到类路径以配置客户端。</p>
+<p translation-result="on">Spring Boot 同时支持 Hazelcast 4 和 Hazelcast 3。如果降级到 Hazelcast 3，则应将 <code>hazelcast-client</code> 添加到类路径以配置客户端。</p>
 <p translation-origin="off">Spring Boot supports both Hazelcast 4 and Hazelcast 3.
 If you downgrade to Hazelcast 3, <code>hazelcast-client</code> should be added to the classpath to configure a client.</p>
 </td>
@@ -1812,7 +1812,7 @@ If you downgrade to Hazelcast 3, <code>hazelcast-client</code> should be added t
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果无法创建客户端，Spring Boot 会尝试配置嵌入式服务器。如果你定义一个<code>com.hazelcast.config.Config</code> bean，Spring Boot 会使用它。如果您的配置定义了实例名称，Spring Boot 会尝试定位现有实例而不是创建新实例。</p>
+<p translation-result="on">如果无法创建客户端，Spring Boot 会尝试配置嵌入式服务器。如果你定义一个 <code>com.hazelcast.config.Config</code> bean，Spring Boot 会使用它。如果您的配置定义了实例名称，Spring Boot 会尝试定位现有实例而不是创建新实例。</p>
 <p translation-origin="off">If a client can not be created, Spring Boot attempts to configure an embedded server.
 If you define a <code>com.hazelcast.config.Config</code> bean, Spring Boot uses that.
 If your configuration defines an instance name, Spring Boot tries to locate an existing instance rather than creating a new one.</p>
@@ -1837,7 +1837,7 @@ If your configuration defines an instance name, Spring Boot tries to locate an e
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">否则，Spring Boot 会尝试从默认位置查找<code>hazelcast.xml</code>配置：工作目录或类路径根目录中的 hazelcast.xml，或相同位置的<code>.yaml</code>对应项。我们还检查是否设置了<code>hazelcast.config</code>系统属性。有关更多详细信息，请参阅<a href="https://docs.hazelcast.org/docs/latest/manual/html-single/">Hazelcast 文档</a>。</p>
+<p translation-result="on">否则，Spring Boot 会尝试从默认位置查找 <code>hazelcast.xml</code> 配置：工作目录或类路径根目录中的 hazelcast.xml，或相同位置的 <code>.yaml</code> 对应项。我们还检查是否设置了 <code>hazelcast.config</code> 系统属性。有关更多详细信息，请参阅<a href="https://docs.hazelcast.org/docs/latest/manual/html-single/">Hazelcast 文档</a>。</p>
 <p translation-origin="off">Otherwise, Spring Boot tries to find the Hazelcast configuration from the default locations: <code>hazelcast.xml</code> in the working directory or at the root of the classpath, or a <code>.yaml</code> counterpart in the same locations.
 We also check if the <code>hazelcast.config</code> system property is set.
 See the <a href="https://docs.hazelcast.org/docs/latest/manual/html-single/">Hazelcast documentation</a> for more details.</p>
@@ -1849,7 +1849,7 @@ See the <a href="https://docs.hazelcast.org/docs/latest/manual/html-single/">Haz
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">Spring Boot 还具有<a href="io.html#io.caching.provider.hazelcast">对 Hazelcast 的显式缓存支持</a>。如果启用缓存， <code>HazelcastInstance</code>会自动包装在<code>CacheManager</code>实现中。</p>
+<p translation-result="on">Spring Boot 还具有<a href="io.html#io.caching.provider.hazelcast">对 Hazelcast 的显式缓存支持</a>。如果启用缓存， <code>HazelcastInstance</code> 会自动包装在 <code>CacheManager</code> 实现中。</p>
 <p translation-origin="off">Spring Boot also has <a href="io.html#io.caching.provider.hazelcast">explicit caching support for Hazelcast</a>.
 If caching is enabled, the <code>HazelcastInstance</code> is automatically wrapped in a <code>CacheManager</code> implementation.</p>
 </td>
@@ -1863,18 +1863,18 @@ If caching is enabled, the <code>HazelcastInstance</code> is automatically wrapp
 <h2 translation-origin="off"><a class="anchor" href="io.html#io.quartz"></a>3. Quartz Scheduler</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot 为使用<a href="https://www.quartz-scheduler.org/">Quartz 调度程序</a>提供了多种便利，包括<code>spring-boot-starter-quartz</code> “Starter”。如果 Quartz 可用，则会自动配置<code>SchedulerFactoryBean</code> <code>Scheduler</code> ）。</p>
+<p translation-result="on">Spring Boot 为使用<a href="https://www.quartz-scheduler.org/">Quartz 调度程序</a>提供了多种便利，包括 <code>spring-boot-starter-quartz</code> “Starter”。如果 Quartz 可用，则会自动配置 <code>SchedulerFactoryBean</code> <code>Scheduler</code> ）。</p>
 <p translation-origin="off">Spring Boot offers several conveniences for working with the <a href="https://www.quartz-scheduler.org/">Quartz scheduler</a>, including the <code>spring-boot-starter-quartz</code> “Starter”.
 If Quartz is available, a <code>Scheduler</code> is auto-configured (through the <code>SchedulerFactoryBean</code> abstraction).</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">以下类型的 Bean 会自动拾取并与<code>Scheduler</code>关联：</p>
+<p translation-result="on">以下类型的 Bean 会自动拾取并与 <code>Scheduler</code> 关联：</p>
 <p translation-origin="off">Beans of the following types are automatically picked up and associated with the <code>Scheduler</code>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p translation-result="on"><code>JobDetail</code> : 定义一个特定的 Job。 <code>JobDetail</code>实例可以使用<code>JobBuilder</code> API 构建。</p>
+<p translation-result="on"><code>JobDetail</code> : 定义一个特定的 Job。 <code>JobDetail</code> 实例可以使用 <code>JobBuilder</code> API 构建。</p>
 <p translation-origin="off"><code>JobDetail</code>: defines a particular Job.
 <code>JobDetail</code> instances can be built with the <code>JobBuilder</code> API.</p>
 </li>
@@ -1889,7 +1889,7 @@ If Quartz is available, a <code>Scheduler</code> is auto-configured (through the
 </ul>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，使用内存中的<code>JobStore</code> 。但是，如果<code>DataSource</code> bean 在您的应用程序中可用并且相应地配置了<code>spring.quartz.job-store-type</code>属性，则可以配置基于 JDBC 的存储，如下例所示：</p>
+<p translation-result="on">默认情况下，使用内存中的 <code>JobStore</code> 。但是，如果 <code>DataSource</code> bean 在您的应用程序中可用并且相应地配置了 <code>spring.quartz.job-store-type</code> 属性，则可以配置基于 JDBC 的存储，如下例所示：</p>
 <p translation-origin="off">By default, an in-memory <code>JobStore</code> is used.
 However, it is possible to configure a JDBC-based store if a <code>DataSource</code> bean is available in your application and if the <code>spring.quartz.job-store-type</code> property is configured accordingly, as shown in the following example:</p>
 </div>
@@ -1935,7 +1935,7 @@ However, it is possible to configure a JDBC-based store if a <code>DataSource</c
 <i class="fa icon-warning" title="警告"></i>
 </td>
 <td class="content">
-<p translation-result="on">默认情况下，使用 Quartz 库提供的标准脚本检测和初始化数据库。这些脚本删除现有表，在每次重新启动时删除所有触发器。也可以通过设置<code>spring.quartz.jdbc.schema</code>属性来提供自定义脚本。</p>
+<p translation-result="on">默认情况下，使用 Quartz 库提供的标准脚本检测和初始化数据库。这些脚本删除现有表，在每次重新启动时删除所有触发器。也可以通过设置 <code>spring.quartz.jdbc.schema</code> 属性来提供自定义脚本。</p>
 <p translation-origin="off">By default, the database is detected and initialized by using the standard scripts provided with the Quartz library.
 These scripts drop existing tables, deleting all triggers on every restart.
 It is also possible to provide a custom script by setting the <code>spring.quartz.jdbc.schema</code> property.</p>
@@ -1944,18 +1944,18 @@ It is also possible to provide a custom script by setting the <code>spring.quart
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">要让 Quartz 使用应用程序的主<code>DataSource</code>以外的<code>DataSource</code> ，请声明一个<code>DataSource</code> bean，用<code>@QuartzDataSource</code>注释其<code>@Bean</code>方法。这样做可以确保 Quartz 特定的<code>DataSource</code>被<code>SchedulerFactoryBean</code>和模式初始化所使用。类似地，要让 Quartz 使用除应用程序主<code>TransactionManager</code>之外的<code>TransactionManager</code>声明一个<code>TransactionManager</code> bean，并使用<code>@QuartzTransactionManager</code>注释其<code>@Bean</code>方法。</p>
+<p translation-result="on">要让 Quartz 使用应用程序的主 <code>DataSource</code> 以外的 <code>DataSource</code> ，请声明一个 <code>DataSource</code> bean，用 <code>@QuartzDataSource</code> 注释其 <code>@Bean</code> 方法。这样做可以确保 Quartz 特定的 <code>DataSource</code> 被 <code>SchedulerFactoryBean</code> 和模式初始化所使用。类似地，要让 Quartz 使用除应用程序主 <code>TransactionManager</code> 之外的 <code>TransactionManager</code> 声明一个 <code>TransactionManager</code> bean，并使用 <code>@QuartzTransactionManager</code> 注释其 <code>@Bean</code> 方法。</p>
 <p translation-origin="off">To have Quartz use a <code>DataSource</code> other than the application’s main <code>DataSource</code>, declare a <code>DataSource</code> bean, annotating its <code>@Bean</code> method with <code>@QuartzDataSource</code>.
 Doing so ensures that the Quartz-specific <code>DataSource</code> is used by both the <code>SchedulerFactoryBean</code> and for schema initialization.
 Similarly, to have Quartz use a <code>TransactionManager</code> other than the application’s main <code>TransactionManager</code> declare a <code>TransactionManager</code> bean, annotating its <code>@Bean</code> method with <code>@QuartzTransactionManager</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，配置创建的作业不会覆盖已从持久作业存储中读取的已注册作业。要启用覆盖现有作业定义，请设置<code>spring.quartz.overwrite-existing-jobs</code>属性。</p>
+<p translation-result="on">默认情况下，配置创建的作业不会覆盖已从持久作业存储中读取的已注册作业。要启用覆盖现有作业定义，请设置 <code>spring.quartz.overwrite-existing-jobs</code> 属性。</p>
 <p translation-origin="off">By default, jobs created by configuration will not overwrite already registered jobs that have been read from a persistent job store.
 To enable overwriting existing job definitions set the <code>spring.quartz.overwrite-existing-jobs</code> property.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Quartz Scheduler 配置可以使用<code>spring.quartz</code>属性和<code>SchedulerFactoryBeanCustomizer</code> bean 进行定制，这允许编程的<code>SchedulerFactoryBean</code>定制。可以使用<code>spring.quartz.properties.*</code>自定义高级 Quartz 配置属性。</p>
+<p translation-result="on">Quartz Scheduler 配置可以使用 <code>spring.quartz</code> 属性和 <code>SchedulerFactoryBeanCustomizer</code> bean 进行定制，这允许编程的 <code>SchedulerFactoryBean</code> 定制。可以使用 <code>spring.quartz.properties.*</code> 自定义高级 Quartz 配置属性。</p>
 <p translation-origin="off">Quartz Scheduler configuration can be customized using <code>spring.quartz</code> properties and <code>SchedulerFactoryBeanCustomizer</code> beans, which allow programmatic <code>SchedulerFactoryBean</code> customization.
 Advanced Quartz configuration properties can be customized using <code>spring.quartz.properties.*</code>.</p>
 </div>
@@ -1966,7 +1966,7 @@ Advanced Quartz configuration properties can be customized using <code>spring.qu
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">特别是， <code>Executor</code> bean 不与调度程序关联，因为 Quartz 提供了一种通过<code>spring.quartz.properties</code>配置调度程序的方法。如果需要自定义任务执行器，可以考虑实现<code>SchedulerFactoryBeanCustomizer</code> 。</p>
+<p translation-result="on">特别是， <code>Executor</code> bean 不与调度程序关联，因为 Quartz 提供了一种通过 <code>spring.quartz.properties</code> 配置调度程序的方法。如果需要自定义任务执行器，可以考虑实现 <code>SchedulerFactoryBeanCustomizer</code> 。</p>
 <p translation-origin="off">In particular, an <code>Executor</code> bean is not associated with the scheduler as Quartz offers a way to configure the scheduler through <code>spring.quartz.properties</code>.
 If you need to customize the task executor, consider implementing <code>SchedulerFactoryBeanCustomizer</code>.</p>
 </td>
@@ -2019,7 +2019,7 @@ import org.springframework.scheduling.quartz.QuartzJobBean;
 <h2 translation-origin="off"><a class="anchor" href="io.html#io.email"></a>4. Sending Email</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Framework 提供了使用<code>JavaMailSender</code>接口发送电子邮件的抽象，Spring Boot 为其提供了自动配置以及启动模块。</p>
+<p translation-result="on">Spring Framework 提供了使用 <code>JavaMailSender</code> 接口发送电子邮件的抽象，Spring Boot 为其提供了自动配置以及启动模块。</p>
 <p translation-origin="off">The Spring Framework provides an abstraction for sending email by using the <code>JavaMailSender</code> interface, and Spring Boot provides auto-configuration for it as well as a starter module.</p>
 </div>
 <div class="admonitionblock tip">
@@ -2029,14 +2029,14 @@ import org.springframework.scheduling.quartz.QuartzJobBean;
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">有关如何使用<code>JavaMailSender</code>的详细说明，请参阅 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/integration.html#mail">参考文档</a>。</p>
+<p translation-result="on">有关如何使用 <code>JavaMailSender</code> 的详细说明，请参阅 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/integration.html#mail">参考文档</a>。</p>
 <p translation-origin="off">See the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/integration.html#mail">reference documentation</a> for a detailed explanation of how you can use <code>JavaMailSender</code>.</p>
 </td>
 </tr>
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果<code>spring.mail.host</code>和相关库（由<code>spring-boot-starter-mail</code>定义）可用，则创建默认<code>JavaMailSender</code> （如果不存在）。发件人可以通过<code>spring.mail</code>命名空间中的配置项进一步自定义。有关详细信息，请参阅<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/mail/MailProperties.java"><code>MailProperties</code></a> 。</p>
+<p translation-result="on">如果 <code>spring.mail.host</code> 和相关库（由 <code>spring-boot-starter-mail</code> 定义）可用，则创建默认 <code>JavaMailSender</code> （如果不存在）。发件人可以通过 <code>spring.mail</code> 命名空间中的配置项进一步自定义。有关详细信息，请参阅<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/mail/MailProperties.java"><code>MailProperties</code></a> 。</p>
 <p translation-origin="off">If <code>spring.mail.host</code> and the relevant libraries (as defined by <code>spring-boot-starter-mail</code>) are available, a default <code>JavaMailSender</code> is created if none exists.
 The sender can be further customized by configuration items from the <code>spring.mail</code> namespace.
 See <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/mail/MailProperties.java"><code>MailProperties</code></a> for more details.</p>
@@ -2066,7 +2066,7 @@ spring.mail.properties[mail.smtp.writetimeout]=5000</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">也可以使用来自 JNDI 的现有<code>Session</code>配置<code>JavaMailSender</code> ：</p>
+<p translation-result="on">也可以使用来自 JNDI 的现有 <code>Session</code> 配置 <code>JavaMailSender</code> ：</p>
 <p translation-origin="off">It is also possible to configure a <code>JavaMailSender</code> with an existing <code>Session</code> from JNDI:</p>
 </div>
 <div class="listingblock primary">
@@ -2085,7 +2085,7 @@ spring.mail.properties[mail.smtp.writetimeout]=5000</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">设置<code>jndi-name</code>后，它优先于所有其他与会话相关的设置。</p>
+<p translation-result="on">设置 <code>jndi-name</code> 后，它优先于所有其他与会话相关的设置。</p>
 <p translation-origin="off">When a <code>jndi-name</code> is set, it takes precedence over all other Session-related settings.</p>
 </div>
 </div>
@@ -2095,7 +2095,7 @@ spring.mail.properties[mail.smtp.writetimeout]=5000</code></pre>
 <h2 translation-origin="off"><a class="anchor" href="io.html#io.validation"></a>5. Validation</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">只要类路径上有 JSR-303 实现（例如 Hibernate 验证器），Bean Validation 1.1 支持的方法验证功能就会自动启用。这允许 bean 方法在其参数和/或返回值上使用<code>javax.validation</code>约束进行注释。具有此类注释方法的目标类需要在类型级别使用<code>@Validated</code>注释进行注释，以便在其方法中搜索内联约束注释。</p>
+<p translation-result="on">只要类路径上有 JSR-303 实现（例如 Hibernate 验证器），Bean Validation 1.1 支持的方法验证功能就会自动启用。这允许 bean 方法在其参数和/或返回值上使用 <code>javax.validation</code> 约束进行注释。具有此类注释方法的目标类需要在类型级别使用 <code>@Validated</code> 注释进行注释，以便在其方法中搜索内联约束注释。</p>
 <p translation-origin="off">The method validation feature supported by Bean Validation 1.1 is automatically enabled as long as a JSR-303 implementation (such as Hibernate validator) is on the classpath.
 This lets bean methods be annotated with <code>javax.validation</code> constraints on their parameters and/or on their return value.
 Target classes with such annotated methods need to be annotated with the <code>@Validated</code> annotation at the type level for their methods to be searched for inline constraint annotations.</p>
@@ -2124,7 +2124,7 @@ public class MyBean {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">解析约束消息中的<code>{parameters}</code>时使用应用程序的<code>MessageSource</code> 。这允许您将<a href="features.html#features.internationalization">应用程序的<code>messages.properties</code>文件</a>用于 Bean 验证消息。解析参数后，使用 Bean Validation 的默认插值器完成消息插值。</p>
+<p translation-result="on">解析约束消息中的 <code>{parameters}</code> 时使用应用程序的 <code>MessageSource</code> 。这允许您将<a href="features.html#features.internationalization">应用程序的 <code>messages.properties</code> 文件</a>用于 Bean 验证消息。解析参数后，使用 Bean Validation 的默认插值器完成消息插值。</p>
 <p translation-origin="off">The application’s <code>MessageSource</code> is used when resolving <code>{parameters}</code> in constraint messages.
 This allows you to use <a href="features.html#features.internationalization">your application’s <code>messages.properties</code> files</a> for Bean Validation messages.
 Once the parameters have been resolved, message interpolation is completed using Bean Validation’s default interpolator.</p>
@@ -2136,14 +2136,14 @@ Once the parameters have been resolved, message interpolation is completed using
 <h2 translation-origin="off"><a class="anchor" href="io.html#io.rest-client"></a>6. Calling REST Services</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">如果您的应用程序调用远程 REST 服务，Spring Boot 使用<code>RestTemplate</code>或<code>WebClient</code>会非常方便。</p>
+<p translation-result="on">如果您的应用程序调用远程 REST 服务，Spring Boot 使用 <code>RestTemplate</code> 或 <code>WebClient</code> 会非常方便。</p>
 <p translation-origin="off">If your application calls remote REST services, Spring Boot makes that very convenient using a <code>RestTemplate</code> or a <code>WebClient</code>.</p>
 </div>
 <div class="sect2">
 <h3 id="io.rest-client.resttemplate" translation-result="on"><a href="io.html#io.rest-client.resttemplate"></a>6.1。休息模板</h3>
 <h3 translation-origin="off"><a class="anchor" href="io.html#io.rest-client.resttemplate"></a>6.1. RestTemplate</h3>
 <div class="paragraph">
-<p translation-result="on">如果需要从应用程序调用远程 REST 服务，可以使用 Spring Framework 的<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/client/RestTemplate.html"><code>RestTemplate</code></a>类。由于<code>RestTemplate</code>实例通常需要在使用前进行自定义，因此 Spring Boot 不提供任何单个自动配置的<code>RestTemplate</code> bean。但是，它确实会自动配置一个<code>RestTemplateBuilder</code> ，它可用于在需要时创建<code>RestTemplate</code>实例。自动配置的<code>RestTemplateBuilder</code>确保将合理的<code>HttpMessageConverters</code>应用于<code>RestTemplate</code>实例。</p>
+<p translation-result="on">如果需要从应用程序调用远程 REST 服务，可以使用 Spring Framework 的<a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/client/RestTemplate.html"><code>RestTemplate</code></a>类。由于 <code>RestTemplate</code> 实例通常需要在使用前进行自定义，因此 Spring Boot 不提供任何单个自动配置的 <code>RestTemplate</code> bean。但是，它确实会自动配置一个 <code>RestTemplateBuilder</code> ，它可用于在需要时创建 <code>RestTemplate</code> 实例。自动配置的 <code>RestTemplateBuilder</code> 确保将合理的 <code>HttpMessageConverters</code> 应用于 <code>RestTemplate</code> 实例。</p>
 <p translation-origin="off">If you need to call remote REST services from your application, you can use the Spring Framework’s <a href="https://docs.spring.io/spring-framework/docs/5.3.15/javadoc-api/org/springframework/web/client/RestTemplate.html"><code>RestTemplate</code></a> class.
 Since <code>RestTemplate</code> instances often need to be customized before being used, Spring Boot does not provide any single auto-configured <code>RestTemplate</code> bean.
 It does, however, auto-configure a <code>RestTemplateBuilder</code>, which can be used to create <code>RestTemplate</code> instances when needed.
@@ -2183,7 +2183,7 @@ public class MyService {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on"><code>RestTemplateBuilder</code>包括许多有用的方法，可用于快速配置<code>RestTemplate</code> 。例如，要添加 BASIC 身份验证支持，您可以使用<code>builder.basicAuthentication("user", "password").build()</code> 。</p>
+<p translation-result="on"><code>RestTemplateBuilder</code> 包括许多有用的方法，可用于快速配置 <code>RestTemplate</code> 。例如，要添加 BASIC 身份验证支持，您可以使用 <code>builder.basicAuthentication("user", "password").build()</code> 。</p>
 <p translation-origin="off"><code>RestTemplateBuilder</code> includes a number of useful methods that can be used to quickly configure a <code>RestTemplate</code>.
 For example, to add BASIC auth support, you can use <code>builder.basicAuthentication("user", "password").build()</code>.</p>
 </td>
@@ -2194,21 +2194,21 @@ For example, to add BASIC auth support, you can use <code>builder.basicAuthentic
 <h4 id="io.rest-client.resttemplate.customization" translation-result="on"><a href="io.html#io.rest-client.resttemplate.customization"></a>6.1.1. RestTemplate 自定义</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.rest-client.resttemplate.customization"></a>6.1.1. RestTemplate Customization</h4>
 <div class="paragraph">
-<p translation-result="on"><code>RestTemplate</code>自定义有三种主要方法，具体取决于您希望自定义应用的范围。</p>
+<p translation-result="on"><code>RestTemplate</code> 自定义有三种主要方法，具体取决于您希望自定义应用的范围。</p>
 <p translation-origin="off">There are three main approaches to <code>RestTemplate</code> customization, depending on how broadly you want the customizations to apply.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">要尽可能缩小任何自定义的范围，请注入自动配置的<code>RestTemplateBuilder</code> ，然后根据需要调用其方法。每个方法调用都会返回一个新的<code>RestTemplateBuilder</code>实例，因此自定义只会影响构建器的这种使用。</p>
+<p translation-result="on">要尽可能缩小任何自定义的范围，请注入自动配置的 <code>RestTemplateBuilder</code> ，然后根据需要调用其方法。每个方法调用都会返回一个新的 <code>RestTemplateBuilder</code> 实例，因此自定义只会影响构建器的这种使用。</p>
 <p translation-origin="off">To make the scope of any customizations as narrow as possible, inject the auto-configured <code>RestTemplateBuilder</code> and then call its methods as required.
 Each method call returns a new <code>RestTemplateBuilder</code> instance, so the customizations only affect this use of the builder.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">要进行应用程序范围的附加定制，请使用<code>RestTemplateCustomizer</code> bean。所有此类 bean 都会自动注册到自动配置的<code>RestTemplateBuilder</code>并应用于使用它构建的任何模板。</p>
+<p translation-result="on">要进行应用程序范围的附加定制，请使用 <code>RestTemplateCustomizer</code> bean。所有此类 bean 都会自动注册到自动配置的 <code>RestTemplateBuilder</code> 并应用于使用它构建的任何模板。</p>
 <p translation-origin="off">To make an application-wide, additive customization, use a <code>RestTemplateCustomizer</code> bean.
 All such beans are automatically registered with the auto-configured <code>RestTemplateBuilder</code> and are applied to any templates that are built with it.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">以下示例显示了一个自定义程序，它为除<code>192.168.0.5</code>之外的所有主机配置使用代理：</p>
+<p translation-result="on">以下示例显示了一个自定义程序，它为除 <code>192.168.0.5</code> 之外的所有主机配置使用代理：</p>
 <p translation-origin="off">The following example shows a customizer that configures the use of a proxy for all hosts except <code>192.168.0.5</code>:</p>
 </div>
 <div class="listingblock">
@@ -2256,7 +2256,7 @@ import org.springframework.web.client.RestTemplate;
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">最后，您可以定义自己的<code>RestTemplateBuilder</code> bean。这样做将替换自动配置的构建器。如果您希望将任何<code>RestTemplateCustomizer</code> bean 应用于您的自定义构建器，就像自动配置所做的那样，请使用<code>RestTemplateBuilderConfigurer</code>对其进行配置。以下示例公开了一个与 Spring Boot 的自动配置所做的匹配的<code>RestTemplateBuilder</code> ，除了还指定了自定义连接和读取超时：</p>
+<p translation-result="on">最后，您可以定义自己的 <code>RestTemplateBuilder</code> bean。这样做将替换自动配置的构建器。如果您希望将任何 <code>RestTemplateCustomizer</code> bean 应用于您的自定义构建器，就像自动配置所做的那样，请使用 <code>RestTemplateBuilderConfigurer</code> 对其进行配置。以下示例公开了一个与 Spring Boot 的自动配置所做的匹配的 <code>RestTemplateBuilder</code> ，除了还指定了自定义连接和读取超时：</p>
 <p translation-origin="off">Finally, you can define your own <code>RestTemplateBuilder</code> bean.
 Doing so will replace the auto-configured builder.
 If you want any <code>RestTemplateCustomizer</code> beans to be applied to your custom builder, as the auto-configuration would have done, configure it using a <code>RestTemplateBuilderConfigurer</code>.
@@ -2285,7 +2285,7 @@ public class MyRestTemplateBuilderConfiguration {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">最极端（并且很少使用）的选项是在不使用配置器的情况下创建自己的<code>RestTemplateBuilder</code> bean。除了替换自动配置的构建器之外，这还可以防止使用任何<code>RestTemplateCustomizer</code> bean。</p>
+<p translation-result="on">最极端（并且很少使用）的选项是在不使用配置器的情况下创建自己的 <code>RestTemplateBuilder</code> bean。除了替换自动配置的构建器之外，这还可以防止使用任何 <code>RestTemplateCustomizer</code> bean。</p>
 <p translation-origin="off">The most extreme (and rarely used) option is to create your own <code>RestTemplateBuilder</code> bean without using a configurer.
 In addition to replacing the auto-configured builder, this also prevents any <code>RestTemplateCustomizer</code> beans from being used.</p>
 </div>
@@ -2295,13 +2295,13 @@ In addition to replacing the auto-configured builder, this also prevents any <co
 <h3 id="io.rest-client.webclient" translation-result="on"><a href="io.html#io.rest-client.webclient"></a>6.2.网络客户端</h3>
 <h3 translation-origin="off"><a class="anchor" href="io.html#io.rest-client.webclient"></a>6.2. WebClient</h3>
 <div class="paragraph">
-<p translation-result="on">如果你的类路径上有 Spring WebFlux，你也可以选择使用<code>WebClient</code>来调用远程 REST 服务。与<code>RestTemplate</code>相比，这个客户端有更多的功能感觉并且是完全反应式的。您可以<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html#webflux-client">在 Spring Framework 文档的专用部分中</a>了解有关<code>WebClient</code>的更多信息。</p>
+<p translation-result="on">如果你的类路径上有 Spring WebFlux，你也可以选择使用 <code>WebClient</code> 来调用远程 REST 服务。与 <code>RestTemplate</code> 相比，这个客户端有更多的功能感觉并且是完全反应式的。您可以<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html#webflux-client">在 Spring Framework 文档的专用部分中</a>了解有关 <code>WebClient</code> 的更多信息。</p>
 <p translation-origin="off">If you have Spring WebFlux on your classpath, you can also choose to use <code>WebClient</code> to call remote REST services.
 Compared to <code>RestTemplate</code>, this client has a more functional feel and is fully reactive.
 You can learn more about the <code>WebClient</code> in the dedicated <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html#webflux-client">section in the Spring Framework docs</a>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 为您创建并预配置了<code>WebClient.Builder</code> 。强烈建议将其注入您的组件并使用它来创建<code>WebClient</code>实例。 Spring Boot 正在配置该构建器以共享 HTTP 资源，以与服务器相同的方式反映编解码器设置（请参阅<a href="web.html#web.reactive.webflux.httpcodecs">WebFlux HTTP 编解码器自动配置</a>）等等。</p>
+<p translation-result="on">Spring Boot 为您创建并预配置了 <code>WebClient.Builder</code> 。强烈建议将其注入您的组件并使用它来创建 <code>WebClient</code> 实例。 Spring Boot 正在配置该构建器以共享 HTTP 资源，以与服务器相同的方式反映编解码器设置（请参阅<a href="web.html#web.reactive.webflux.httpcodecs">WebFlux HTTP 编解码器自动配置</a>）等等。</p>
 <p translation-origin="off">Spring Boot creates and pre-configures a <code>WebClient.Builder</code> for you.
 It is strongly advised to inject it in your components and use it to create <code>WebClient</code> instances.
 Spring Boot is configuring that builder to share HTTP resources, reflect codecs setup in the same fashion as the server ones (see <a href="web.html#web.reactive.webflux.httpcodecs">WebFlux HTTP codecs auto-configuration</a>), and more.</p>
@@ -2339,26 +2339,26 @@ public class MyService {
 <h4 id="io.rest-client.webclient.runtime" translation-result="on"><a href="io.html#io.rest-client.webclient.runtime"></a>6.2.1. WebClient 运行时</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.rest-client.webclient.runtime"></a>6.2.1. WebClient Runtime</h4>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 将根据应用程序类路径上可用的库自动检测使用哪个<code>ClientHttpConnector</code>来驱动<code>WebClient</code> 。目前，支持 Reactor Netty 和 Jetty RS 客户端。</p>
+<p translation-result="on">Spring Boot 将根据应用程序类路径上可用的库自动检测使用哪个 <code>ClientHttpConnector</code> 来驱动 <code>WebClient</code> 。目前，支持 Reactor Netty 和 Jetty RS 客户端。</p>
 <p translation-origin="off">Spring Boot will auto-detect which <code>ClientHttpConnector</code> to use to drive <code>WebClient</code>, depending on the libraries available on the application classpath.
 For now, Reactor Netty and Jetty RS client are supported.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>spring-boot-starter-webflux</code>启动器默认依赖<code>io.projectreactor.netty:reactor-netty</code> ，它带来了服务器和客户端的实现。如果您选择使用 Jetty 作为响应式服务器，则应添加对 Jetty Reactive HTTP 客户端库<code>org.eclipse.jetty:jetty-reactive-httpclient</code>的依赖项。对服务器和客户端使用相同的技术有它的优势，因为它会自动在客户端和服务器之间共享 HTTP 资源。</p>
+<p translation-result="on"><code>spring-boot-starter-webflux</code> 启动器默认依赖 <code>io.projectreactor.netty:reactor-netty</code> ，它带来了服务器和客户端的实现。如果您选择使用 Jetty 作为响应式服务器，则应添加对 Jetty Reactive HTTP 客户端库 <code>org.eclipse.jetty:jetty-reactive-httpclient</code> 的依赖项。对服务器和客户端使用相同的技术有它的优势，因为它会自动在客户端和服务器之间共享 HTTP 资源。</p>
 <p translation-origin="off">The <code>spring-boot-starter-webflux</code> starter depends on <code>io.projectreactor.netty:reactor-netty</code> by default, which brings both server and client implementations.
 If you choose to use Jetty as a reactive server instead, you should add a dependency on the Jetty Reactive HTTP client library, <code>org.eclipse.jetty:jetty-reactive-httpclient</code>.
 Using the same technology for server and client has it advantages, as it will automatically share HTTP resources between client and server.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">开发人员可以通过提供自定义<code>ReactorResourceFactory</code>或<code>JettyResourceFactory</code> bean 来覆盖 Jetty 和 Reactor Netty 的资源配置 - 这将应用于客户端和服务器。</p>
+<p translation-result="on">开发人员可以通过提供自定义 <code>ReactorResourceFactory</code> 或 <code>JettyResourceFactory</code> bean 来覆盖 Jetty 和 Reactor Netty 的资源配置 - 这将应用于客户端和服务器。</p>
 <p translation-origin="off">Developers can override the resource configuration for Jetty and Reactor Netty by providing a custom <code>ReactorResourceFactory</code> or <code>JettyResourceFactory</code> bean - this will be applied to both clients and servers.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您希望为客户端覆盖该选择，您可以定义自己的<code>ClientHttpConnector</code> bean 并完全控制客户端配置。</p>
+<p translation-result="on">如果您希望为客户端覆盖该选择，您可以定义自己的 <code>ClientHttpConnector</code> bean 并完全控制客户端配置。</p>
 <p translation-origin="off">If you wish to override that choice for the client, you can define your own <code>ClientHttpConnector</code> bean and have full control over the client configuration.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">您可以<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html#webflux-client-builder">在 Spring Framework 参考文档中了解有关<code>WebClient</code>配置选项的</a>更多信息。</p>
+<p translation-result="on">您可以<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html#webflux-client-builder">在 Spring Framework 参考文档中了解有关 <code>WebClient</code> 配置选项的</a>更多信息。</p>
 <p translation-origin="off">You can learn more about the <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html#webflux-client-builder"><code>WebClient</code> configuration options in the Spring Framework reference documentation</a>.</p>
 </div>
 </div>
@@ -2366,21 +2366,21 @@ Using the same technology for server and client has it advantages, as it will au
 <h4 id="io.rest-client.webclient.customization" translation-result="on"><a href="io.html#io.rest-client.webclient.customization"></a>6.2.2. Web客户端定制</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.rest-client.webclient.customization"></a>6.2.2. WebClient Customization</h4>
 <div class="paragraph">
-<p translation-result="on"><code>WebClient</code>自定义有三种主要方法，具体取决于您希望自定义应用的范围。</p>
+<p translation-result="on"><code>WebClient</code> 自定义有三种主要方法，具体取决于您希望自定义应用的范围。</p>
 <p translation-origin="off">There are three main approaches to <code>WebClient</code> customization, depending on how broadly you want the customizations to apply.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">要尽可能缩小任何自定义的范围，请注入自动配置的<code>WebClient.Builder</code> ，然后根据需要调用其方法。 <code>WebClient.Builder</code>实例是有状态的：对构建器的任何更改都会反映在随后使用它创建的所有客户端中。如果要使用同一个构建器创建多个客户端，还可以考虑使用<code>WebClient.Builder other = builder.clone();</code> .</p>
+<p translation-result="on">要尽可能缩小任何自定义的范围，请注入自动配置的 <code>WebClient.Builder</code> ，然后根据需要调用其方法。 <code>WebClient.Builder</code> 实例是有状态的：对构建器的任何更改都会反映在随后使用它创建的所有客户端中。如果要使用同一个构建器创建多个客户端，还可以考虑使用 <code>WebClient.Builder other = builder.clone();</code> .</p>
 <p translation-origin="off">To make the scope of any customizations as narrow as possible, inject the auto-configured <code>WebClient.Builder</code> and then call its methods as required.
 <code>WebClient.Builder</code> instances are stateful: Any change on the builder is reflected in all clients subsequently created with it.
 If you want to create several clients with the same builder, you can also consider cloning the builder with <code>WebClient.Builder other = builder.clone();</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">要对所有<code>WebClient.Builder</code>实例进行应用程序范围的附加自定义，您可以声明<code>WebClientCustomizer</code> bean 并在注入点本地更改<code>WebClient.Builder</code> 。</p>
+<p translation-result="on">要对所有 <code>WebClient.Builder</code> 实例进行应用程序范围的附加自定义，您可以声明 <code>WebClientCustomizer</code> bean 并在注入点本地更改 <code>WebClient.Builder</code> 。</p>
 <p translation-origin="off">To make an application-wide, additive customization to all <code>WebClient.Builder</code> instances, you can declare <code>WebClientCustomizer</code> beans and change the <code>WebClient.Builder</code> locally at the point of injection.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">最后，您可以回退到原始 API 并使用<code>WebClient.create()</code> 。在这种情况下，不会应用自动配置或<code>WebClientCustomizer</code> 。</p>
+<p translation-result="on">最后，您可以回退到原始 API 并使用 <code>WebClient.create()</code> 。在这种情况下，不会应用自动配置或 <code>WebClientCustomizer</code> 。</p>
 <p translation-origin="off">Finally, you can fall back to the original API and use <code>WebClient.create()</code>.
 In that case, no auto-configuration or <code>WebClientCustomizer</code> is applied.</p>
 </div>
@@ -2393,15 +2393,15 @@ In that case, no auto-configuration or <code>WebClientCustomizer</code> is appli
 <h2 translation-origin="off"><a class="anchor" href="io.html#io.webservices"></a>7. Web Services</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot 提供 Web 服务自动配置，因此您所要做的就是定义<code>Endpoints</code> 。</p>
+<p translation-result="on">Spring Boot 提供 Web 服务自动配置，因此您所要做的就是定义 <code>Endpoints</code> 。</p>
 <p translation-origin="off">Spring Boot provides Web Services auto-configuration so that all you must do is define your <code>Endpoints</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><a href="https://docs.spring.io/spring-ws/docs/3.1.2/reference/html/">Spring Web Services 特性</a>可以通过<code>spring-boot-starter-webservices</code>模块轻松访问。</p>
+<p translation-result="on"><a href="https://docs.spring.io/spring-ws/docs/3.1.2/reference/html/">Spring Web Services 特性</a>可以通过 <code>spring-boot-starter-webservices</code> 模块轻松访问。</p>
 <p translation-origin="off">The <a href="https://docs.spring.io/spring-ws/docs/3.1.2/reference/html/">Spring Web Services features</a> can be easily accessed with the <code>spring-boot-starter-webservices</code> module.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">可以分别为您的 WSDL 和 XSD 自动创建<code>SimpleWsdl11Definition</code>和<code>SimpleXsdSchema</code> bean。为此，请配置它们的位置，如以下示例所示：</p>
+<p translation-result="on">可以分别为您的 WSDL 和 XSD 自动创建 <code>SimpleWsdl11Definition</code> 和 <code>SimpleXsdSchema</code> bean。为此，请配置它们的位置，如以下示例所示：</p>
 <p translation-origin="off"><code>SimpleWsdl11Definition</code> and <code>SimpleXsdSchema</code> beans can be automatically created for your WSDLs and XSDs respectively.
 To do so, configure their location, as shown in the following example:</p>
 </div>
@@ -2424,7 +2424,7 @@ To do so, configure their location, as shown in the following example:</p>
 <h3 id="io.webservices.template" translation-result="on"><a href="io.html#io.webservices.template"></a>7.1。使用 WebServiceTemplate 调用 Web 服务</h3>
 <h3 translation-origin="off"><a class="anchor" href="io.html#io.webservices.template"></a>7.1. Calling Web Services with WebServiceTemplate</h3>
 <div class="paragraph">
-<p translation-result="on">如果需要从应用程序调用远程 Web 服务，可以使用<a href="https://docs.spring.io/spring-ws/docs/3.1.2/reference/html/#client-web-service-template"><code>WebServiceTemplate</code></a>类。由于<code>WebServiceTemplate</code>实例通常需要在使用前进行自定义，因此 Spring Boot 不提供任何单个自动配置的<code>WebServiceTemplate</code> bean。但是，它确实会自动配置一个<code>WebServiceTemplateBuilder</code> ，它可用于在需要时创建<code>WebServiceTemplate</code>实例。</p>
+<p translation-result="on">如果需要从应用程序调用远程 Web 服务，可以使用<a href="https://docs.spring.io/spring-ws/docs/3.1.2/reference/html/#client-web-service-template"><code>WebServiceTemplate</code></a>类。由于 <code>WebServiceTemplate</code> 实例通常需要在使用前进行自定义，因此 Spring Boot 不提供任何单个自动配置的 <code>WebServiceTemplate</code> bean。但是，它确实会自动配置一个 <code>WebServiceTemplateBuilder</code> ，它可用于在需要时创建 <code>WebServiceTemplate</code> 实例。</p>
 <p translation-origin="off">If you need to call remote Web services from your application, you can use the <a href="https://docs.spring.io/spring-ws/docs/3.1.2/reference/html/#client-web-service-template"><code>WebServiceTemplate</code></a> class.
 Since <code>WebServiceTemplate</code> instances often need to be customized before being used, Spring Boot does not provide any single auto-configured <code>WebServiceTemplate</code> bean.
 It does, however, auto-configure a <code>WebServiceTemplateBuilder</code>, which can be used to create <code>WebServiceTemplate</code> instances when needed.</p>
@@ -2459,7 +2459,7 @@ public class MyService {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下， <code>WebServiceTemplateBuilder</code>使用类路径上可用的 HTTP 客户端库检测合适的基于 HTTP 的<code>WebServiceMessageSender</code> 。您还可以自定义读取和连接超时，如下所示：</p>
+<p translation-result="on">默认情况下， <code>WebServiceTemplateBuilder</code> 使用类路径上可用的 HTTP 客户端库检测合适的基于 HTTP 的 <code>WebServiceMessageSender</code> 。您还可以自定义读取和连接超时，如下所示：</p>
 <p translation-origin="off">By default, <code>WebServiceTemplateBuilder</code> detects a suitable HTTP-based <code>WebServiceMessageSender</code> using the available HTTP client libraries on the classpath.
 You can also customize read and connection timeouts as follows:</p>
 </div>
@@ -2503,7 +2503,7 @@ public class MyWebServiceTemplateConfiguration {
 JTA transactions are also supported when deploying to a suitable Java EE Application Server.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">当检测到 JTA 环境时，使用 Spring 的<code>JtaTransactionManager</code>来管理事务。自动配置的 JMS、DataSource 和 JPA bean 已升级为支持 XA 事务。您可以使用标准 Spring 习惯用法，例如<code>@Transactional</code>来参与分布式事务。如果您在 JTA 环境中并且仍想使用本地事务，则可以将<code>spring.jta.enabled</code>属性设置为<code>false</code>以禁用 JTA 自动配置。</p>
+<p translation-result="on">当检测到 JTA 环境时，使用 Spring 的 <code>JtaTransactionManager</code> 来管理事务。自动配置的 JMS、DataSource 和 JPA bean 已升级为支持 XA 事务。您可以使用标准 Spring 习惯用法，例如 <code>@Transactional</code> 来参与分布式事务。如果您在 JTA 环境中并且仍想使用本地事务，则可以将 <code>spring.jta.enabled</code> 属性设置为 <code>false</code> 以禁用 JTA 自动配置。</p>
 <p translation-origin="off">When a JTA environment is detected, Spring’s <code>JtaTransactionManager</code> is used to manage transactions.
 Auto-configured JMS, DataSource, and JPA beans are upgraded to support XA transactions.
 You can use standard Spring idioms, such as <code>@Transactional</code>, to participate in a distributed transaction.
@@ -2513,13 +2513,13 @@ If you are within a JTA environment and still want to use local transactions, yo
 <h3 id="io.jta.atomikos" translation-result="on"><a href="io.html#io.jta.atomikos"></a>8.1。使用 Atomikos 事务管理器</h3>
 <h3 translation-origin="off"><a class="anchor" href="io.html#io.jta.atomikos"></a>8.1. Using an Atomikos Transaction Manager</h3>
 <div class="paragraph">
-<p translation-result="on"><a href="https://www.atomikos.com/">Atomikos</a>是一种流行的开源事务管理器，可以嵌入到您的 Spring Boot 应用程序中。您可以使用<code>spring-boot-starter-jta-atomikos</code>启动器来拉入适当的 Atomikos 库。 Spring Boot 自动配置 Atomikos 并确保将适当<code>depends-on</code>设置应用于您的 Spring bean 以实现正确的启动和关闭顺序。</p>
+<p translation-result="on"><a href="https://www.atomikos.com/">Atomikos</a>是一种流行的开源事务管理器，可以嵌入到您的 Spring Boot 应用程序中。您可以使用 <code>spring-boot-starter-jta-atomikos</code> 启动器来拉入适当的 Atomikos 库。 Spring Boot 自动配置 Atomikos 并确保将适当 <code>depends-on</code> 设置应用于您的 Spring bean 以实现正确的启动和关闭顺序。</p>
 <p translation-origin="off"><a href="https://www.atomikos.com/">Atomikos</a> is a popular open source transaction manager which can be embedded into your Spring Boot application.
 You can use the <code>spring-boot-starter-jta-atomikos</code> starter to pull in the appropriate Atomikos libraries.
 Spring Boot auto-configures Atomikos and ensures that appropriate <code>depends-on</code> settings are applied to your Spring beans for correct startup and shutdown ordering.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，Atomikos 事务日志被写入应用程序主目录（应用程序 jar 文件所在的目录）中的<code>transaction-logs</code>目录。您可以通过在<code>application.properties</code>文件中设置<code>spring.jta.log-dir</code>属性来自定义此目录的位置。以<code>spring.jta.atomikos.properties</code>开头的属性也可用于自定义 Atomikos <code>UserTransactionServiceImp</code> 。有关完整的详细信息，请参阅<a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/jta/atomikos/AtomikosProperties.html"><code>AtomikosProperties</code> Javadoc</a> 。</p>
+<p translation-result="on">默认情况下，Atomikos 事务日志被写入应用程序主目录（应用程序 jar 文件所在的目录）中的 <code>transaction-logs</code> 目录。您可以通过在 <code>application.properties</code> 文件中设置 <code>spring.jta.log-dir</code> 属性来自定义此目录的位置。以 <code>spring.jta.atomikos.properties</code> 开头的属性也可用于自定义 Atomikos <code>UserTransactionServiceImp</code> 。有关完整的详细信息，请参阅<a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springframework/boot/jta/atomikos/AtomikosProperties.html"><code>AtomikosProperties</code> Javadoc</a> 。</p>
 <p translation-origin="off">By default, Atomikos transaction logs are written to a <code>transaction-logs</code> directory in your application’s home directory (the directory in which your application jar file resides).
 You can customize the location of this directory by setting a <code>spring.jta.log-dir</code> property in your <code>application.properties</code> file.
 Properties starting with <code>spring.jta.atomikos.properties</code> can also be used to customize the Atomikos <code>UserTransactionServiceImp</code>.
@@ -2532,7 +2532,7 @@ See the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/api/org/springfra
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">为了确保多个事务管理器可以安全地协调相同的资源管理器，每个 Atomikos 实例都必须配置一个唯一的 ID。默认情况下，此 ID 是运行 Atomikos 的机器的 IP 地址。为了确保生产中的唯一性，您应该为应用程序的每个实例配置<code>spring.jta.transaction-manager-id</code>属性具有不同的值。</p>
+<p translation-result="on">为了确保多个事务管理器可以安全地协调相同的资源管理器，每个 Atomikos 实例都必须配置一个唯一的 ID。默认情况下，此 ID 是运行 Atomikos 的机器的 IP 地址。为了确保生产中的唯一性，您应该为应用程序的每个实例配置 <code>spring.jta.transaction-manager-id</code> 属性具有不同的值。</p>
 <p translation-origin="off">To ensure that multiple transaction managers can safely coordinate the same resource managers, each Atomikos instance must be configured with a unique ID.
 By default, this ID is the IP address of the machine on which Atomikos is running.
 To ensure uniqueness in production, you should configure the <code>spring.jta.transaction-manager-id</code> property with a different value for each instance of your application.</p>
@@ -2545,7 +2545,7 @@ To ensure uniqueness in production, you should configure the <code>spring.jta.tr
 <h3 id="io.jta.javaee" translation-result="on"><a href="io.html#io.jta.javaee"></a>8.2.使用 Java EE 托管事务管理器</h3>
 <h3 translation-origin="off"><a class="anchor" href="io.html#io.jta.javaee"></a>8.2. Using a Java EE Managed Transaction Manager</h3>
 <div class="paragraph">
-<p translation-result="on">如果将 Spring Boot 应用程序打包为<code>war</code>或<code>ear</code>文件并将其部署到 Java EE 应用程序服务器，则可以使用应用程序服务器的内置事务管理器。 Spring Boot 尝试通过查看常见的 JNDI 位置（ <code>java:comp/UserTransaction</code> 、 <code>java:comp/TransactionManager</code>等）来自动配置事务管理器。如果您使用应用服务器提供的事务服务，您通常还希望确保所有资源都由服务器管理并通过 JNDI 公开。 Spring Boot 尝试通过在 JNDI 路径（ <code>java:/JmsXA</code>或<code>java:/XAConnectionFactory</code> ）中查找<code>ConnectionFactory</code>来自动配置 JMS，您可以使用<a href="data.html#data.sql.datasource.jndi"><code>spring.datasource.jndi-name</code>属性</a>来配置<code>DataSource</code> 。</p>
+<p translation-result="on">如果将 Spring Boot 应用程序打包为 <code>war</code> 或 <code>ear</code> 文件并将其部署到 Java EE 应用程序服务器，则可以使用应用程序服务器的内置事务管理器。 Spring Boot 尝试通过查看常见的 JNDI 位置（ <code>java:comp/UserTransaction</code> 、 <code>java:comp/TransactionManager</code> 等）来自动配置事务管理器。如果您使用应用服务器提供的事务服务，您通常还希望确保所有资源都由服务器管理并通过 JNDI 公开。 Spring Boot 尝试通过在 JNDI 路径（ <code>java:/JmsXA</code> 或 <code>java:/XAConnectionFactory</code> ）中查找 <code>ConnectionFactory</code> 来自动配置 JMS，您可以使用<a href="data.html#data.sql.datasource.jndi"><code>spring.datasource.jndi-name</code> 属性</a>来配置 <code>DataSource</code> 。</p>
 <p translation-origin="off">If you package your Spring Boot application as a <code>war</code> or <code>ear</code> file and deploy it to a Java EE application server, you can use your application server’s built-in transaction manager.
 Spring Boot tries to auto-configure a transaction manager by looking at common JNDI locations (<code>java:comp/UserTransaction</code>, <code>java:comp/TransactionManager</code>, and so on).
 If you use a transaction service provided by your application server, you generally also want to ensure that all resources are managed by the server and exposed over JNDI.
@@ -2556,7 +2556,7 @@ Spring Boot tries to auto-configure JMS by looking for a <code>ConnectionFactory
 <h3 id="io.jta.mixing-xa-and-non-xa-connections" translation-result="on"><a href="io.html#io.jta.mixing-xa-and-non-xa-connections"></a>8.3.混合 XA 和非 XA JMS 连接</h3>
 <h3 translation-origin="off"><a class="anchor" href="io.html#io.jta.mixing-xa-and-non-xa-connections"></a>8.3. Mixing XA and Non-XA JMS Connections</h3>
 <div class="paragraph">
-<p translation-result="on">使用 JTA 时，主要的 JMS <code>ConnectionFactory</code> bean 是 XA 感知的并参与分布式事务。您无需使用任何<code>@Qualifier</code>即可注入您的 bean：</p>
+<p translation-result="on">使用 JTA 时，主要的 JMS <code>ConnectionFactory</code> bean 是 XA 感知的并参与分布式事务。您无需使用任何 <code>@Qualifier</code> 即可注入您的 bean：</p>
 <p translation-origin="off">When using JTA, the primary JMS <code>ConnectionFactory</code> bean is XA-aware and participates in distributed transactions.
 You can inject into your bean without needing to use any <code>@Qualifier</code>:</p>
 </div>
@@ -2569,12 +2569,12 @@ You can inject into your bean without needing to use any <code>@Qualifier</code>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">在某些情况下，您可能希望使用非 XA <code>ConnectionFactory</code>来处理某些 JMS 消息。例如，您的 JMS 处理逻辑可能需要比 XA 超时更长的时间。</p>
+<p translation-result="on">在某些情况下，您可能希望使用非 XA <code>ConnectionFactory</code> 来处理某些 JMS 消息。例如，您的 JMS 处理逻辑可能需要比 XA 超时更长的时间。</p>
 <p translation-origin="off">In some situations, you might want to process certain JMS messages by using a non-XA <code>ConnectionFactory</code>.
 For example, your JMS processing logic might take longer than the XA timeout.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果您想使用非 XA <code>ConnectionFactory</code> ，您可以使用<code>nonXaJmsConnectionFactory</code> bean：</p>
+<p translation-result="on">如果您想使用非 XA <code>ConnectionFactory</code> ，您可以使用 <code>nonXaJmsConnectionFactory</code> bean：</p>
 <p translation-origin="off">If you want to use a non-XA <code>ConnectionFactory</code>, you can the <code>nonXaJmsConnectionFactory</code> bean:</p>
 </div>
 <div class="listingblock">
@@ -2586,7 +2586,7 @@ For example, your JMS processing logic might take longer than the XA timeout.</p
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">为了保持一致性， <code>jmsConnectionFactory</code> bean 也通过使用 bean 别名<code>xaJmsConnectionFactory</code>来提供：</p>
+<p translation-result="on">为了保持一致性， <code>jmsConnectionFactory</code> bean 也通过使用 bean 别名 <code>xaJmsConnectionFactory</code> 来提供：</p>
 <p translation-origin="off">For consistency, the <code>jmsConnectionFactory</code> bean is also provided by using the bean alias <code>xaJmsConnectionFactory</code>:</p>
 </div>
 <div class="listingblock">
@@ -2602,7 +2602,7 @@ For example, your JMS processing logic might take longer than the XA timeout.</p
 <h3 id="io.jta.supporting-alternative-embedded-transaction-manager" translation-result="on"><a href="io.html#io.jta.supporting-alternative-embedded-transaction-manager"></a>8.4.支持替代嵌入式事务管理器</h3>
 <h3 translation-origin="off"><a class="anchor" href="io.html#io.jta.supporting-alternative-embedded-transaction-manager"></a>8.4. Supporting an Alternative Embedded Transaction Manager</h3>
 <div class="paragraph">
-<p translation-result="on"><a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jms/XAConnectionFactoryWrapper.java"><code>XAConnectionFactoryWrapper</code></a>和<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jdbc/XADataSourceWrapper.java"><code>XADataSourceWrapper</code></a>接口可用于支持替代的嵌入式事务管理器。这些接口负责包装<code>XAConnectionFactory</code>和<code>XADataSource</code> bean 并将它们公开为常规<code>ConnectionFactory</code>和<code>DataSource</code> bean，它们透明地注册到分布式事务中。 DataSource 和 JMS 自动配置使用 JTA 变体，前提是您在<code>ApplicationContext</code>中注册了<code>JtaTransactionManager</code> bean 和适当的 XA 包装器 bean。</p>
+<p translation-result="on"><a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jms/XAConnectionFactoryWrapper.java"><code>XAConnectionFactoryWrapper</code></a>和<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jdbc/XADataSourceWrapper.java"><code>XADataSourceWrapper</code></a>接口可用于支持替代的嵌入式事务管理器。这些接口负责包装 <code>XAConnectionFactory</code> 和 <code>XADataSource</code> bean 并将它们公开为常规 <code>ConnectionFactory</code> 和 <code>DataSource</code> bean，它们透明地注册到分布式事务中。 DataSource 和 JMS 自动配置使用 JTA 变体，前提是您在 <code>ApplicationContext</code> 中注册了 <code>JtaTransactionManager</code> bean 和适当的 XA 包装器 bean。</p>
 <p translation-origin="off">The <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jms/XAConnectionFactoryWrapper.java"><code>XAConnectionFactoryWrapper</code></a> and <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/jdbc/XADataSourceWrapper.java"><code>XADataSourceWrapper</code></a> interfaces can be used to support alternative embedded transaction managers.
 The interfaces are responsible for wrapping <code>XAConnectionFactory</code> and <code>XADataSource</code> beans and exposing them as regular <code>ConnectionFactory</code> and <code>DataSource</code> beans, which transparently enroll in the distributed transaction.
 DataSource and JMS auto-configuration use JTA variants, provided you have a <code>JtaTransactionManager</code> bean and appropriate XA wrapper beans registered within your <code>ApplicationContext</code>.</p>
