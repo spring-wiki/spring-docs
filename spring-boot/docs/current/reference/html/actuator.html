@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.12">
-<title>生产功能</title>
+<title>生产特性</title>
 <link rel="stylesheet" href="css/site.css">
 <script src="js/setup.js"></script><script defer="" src="js/site.js"></script>
 <script type="application/json" id="anchor-rewrite">
@@ -962,13 +962,13 @@
 <div id="main" class="contained">
 <div id="doc" class="doc">
 <div id="header">
-<h1 translation-result="on">生产就绪功能</h1>
+<h1 translation-result="on">生产就绪特性</h1>
 <h1 translation-origin="off">Production-ready Features</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">目录</div>
 <span id="back-to-index"><a href="index.html">返回索引页</a></span><ul class="sectlevel1">
 <li>
-  <p translation-result="on"><a href="actuator.html#actuator.enabling">1. 启用生产就绪功能</a></p>
+  <p translation-result="on"><a href="actuator.html#actuator.enabling">1. 启用生产就绪特性</a></p>
   <p translation-origin="off"><a href="actuator.html#actuator.enabling">1. Enabling Production-ready Features</a></p>
 </li>
 <li>
@@ -1493,7 +1493,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Spring Boot 包含许多附加功能，可帮助你在将应用程序推送到生产环境时对其进行监控和管理。你可以选择使用 HTTP 端点或 JMX 来管理和监视你的应用程序。审计、健康和度量收集也可以自动应用于你的应用程序。</p>
+<p translation-result="on">Spring Boot 包含许多附加特性，可帮助你在将应用程序推送到生产环境时对其进行监控和管理。你可以选择使用 HTTP 端点或 JMX 来管理和监视你的应用程序。审计、健康和度量收集也可以自动应用于你的应用程序。</p>
 <p translation-origin="off">Spring Boot includes a number of additional features to help you monitor and manage your application when you push it to production.
 You can choose to manage and monitor your application by using HTTP endpoints or with JMX.
 Auditing, health, and metrics gathering can also be automatically applied to your application.</p>
@@ -1501,11 +1501,11 @@ Auditing, health, and metrics gathering can also be automatically applied to you
 </div>
 </div>
 <div class="sect1">
-<h2 id="actuator.enabling" translation-result="on"><a href="actuator.html#actuator.enabling"></a>1. 启用生产就绪功能</h2>
+<h2 id="actuator.enabling" translation-result="on"><a href="actuator.html#actuator.enabling"></a>1. 启用生产就绪特性</h2>
 <h2 translation-origin="off"><a class="anchor" href="actuator.html#actuator.enabling"></a>1. Enabling Production-ready Features</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on"><a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator"><code>spring-boot-actuator</code></a>模块提供了 Spring Boot 的所有生产就绪功能。启用这些功能的推荐方法是添加对 <code>spring-boot-starter-actuator</code> “Starter”的依赖。</p>
+<p translation-result="on"><a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator"><code>spring-boot-actuator</code></a>模块提供了 Spring Boot 的所有生产就绪特性。启用这些特性的推荐方法是添加对 <code>spring-boot-starter-actuator</code> “Starter”的依赖。</p>
 <p translation-origin="off">The <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator"><code>spring-boot-actuator</code></a> module provides all of Spring Boot’s production-ready features.
 The recommended way to enable the features is to add a dependency on the <code>spring-boot-starter-actuator</code> “Starter”.</p>
 </div>
@@ -2396,7 +2396,7 @@ For example, <code>@WebEndpoint</code> is exposed only over HTTP and not over JM
 These annotations let you provide technology-specific operations to augment an existing endpoint.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">最后，如果你需要访问特定于 Web 框架的功能，你可以实现 servlet 或 Spring <code>@Controller</code> 和 <code>@RestController</code> 端点，但代价是它们无法通过 JMX 或使用不同的 Web 框架获得。</p>
+<p translation-result="on">最后，如果你需要访问特定于 Web 框架的特性，你可以实现 servlet 或 Spring <code>@Controller</code> 和 <code>@RestController</code> 端点，但代价是它们无法通过 JMX 或使用不同的 Web 框架获得。</p>
 <p translation-origin="off">Finally, if you need access to web-framework-specific functionality, you can implement servlet or Spring <code>@Controller</code> and <code>@RestController</code> endpoints at the cost of them not being available over JMX or when using a different web framework.</p>
 </div>
 <div class="sect3">
@@ -3459,7 +3459,7 @@ This can be done by setting the following property:</p>
 <h4 id="actuator.endpoints.kubernetes-probes.external-state" translation-result="on"><a href="actuator.html#actuator.endpoints.kubernetes-probes.external-state"></a>2.9.1. 使用 Kubernetes 探针检查外部状态</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.kubernetes-probes.external-state"></a>2.9.1. Checking External State with Kubernetes Probes</h4>
 <div class="paragraph">
-<p translation-result="on">Actuator 将“liveness”和“readiness”探针配置为 Health Groups。这意味着他们可以用所有<a href="actuator.html#actuator.endpoints.health.groups">健康组功能</a>。例如，你可以配置其他运行状况度量：</p>
+<p translation-result="on">Actuator 将“liveness”和“readiness”探针配置为 Health Groups。这意味着他们可以用所有<a href="actuator.html#actuator.endpoints.health.groups">健康组特性</a>。例如，你可以配置其他运行状况度量：</p>
 <p translation-origin="off">Actuator configures the “liveness” and “readiness” probes as Health Groups.
 This means that all the <a href="actuator.html#actuator.endpoints.health.groups">health groups features</a> are available for them.
 You can, for example, configure additional Health Indicators:</p>
@@ -3835,7 +3835,7 @@ info.app.java.target=11</code></pre>
 <h4 id="actuator.endpoints.info.git-commit-information" translation-result="on"><a href="actuator.html#actuator.endpoints.info.git-commit-information"></a>2.10.3. Git 提交信息</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.endpoints.info.git-commit-information"></a>2.10.3. Git Commit Information</h4>
 <div class="paragraph">
-<p translation-result="on"><code>info</code> 端点的另一个有用功能是它能够在项目构建时发布有关 <code>git</code> 源代码存储库状态的信息。如果 <code>GitProperties</code> bean 可用，你可以用 <code>info</code> 端点来公开这些属性。</p>
+<p translation-result="on"><code>info</code> 端点的另一个有用特性是它能够在项目构建时发布有关 <code>git</code> 源代码存储库状态的信息。如果 <code>GitProperties</code> bean 可用，你可以用 <code>info</code> 端点来公开这些属性。</p>
 <p translation-origin="off">Another useful feature of the <code>info</code> endpoint is its ability to publish information about the state of your <code>git</code> source code repository when the project was built.
 If a <code>GitProperties</code> bean is available, you can use the <code>info</code> endpoint to expose these properties.</p>
 </div>
@@ -4292,7 +4292,7 @@ management.server.address=127.0.0.1</code></pre>
 <h2 translation-origin="off"><a class="anchor" href="actuator.html#actuator.jmx"></a>4. Monitoring and Management over JMX</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">Java 管理扩展 (JMX) 提供了一种标准机制来监视和管理应用程序。默认情况下，此功能未启用。你可以通过将 <code>spring.jmx.enabled</code> 配置属性设置为 <code>true</code> 来打开它。Spring Boot 将最合适的 <code>MBeanServer</code> 公开为 ID 为 <code>mbeanServer</code> 的 bean。使用 Spring JMX 注解（@ <code>@ManagedOperation</code> <code>@ManagedAttribute</code> <code>@ManagedResource</code> 的任何 bean 都会暴露给它。</p>
+<p translation-result="on">Java 管理扩展 (JMX) 提供了一种标准机制来监视和管理应用程序。默认情况下，此特性未启用。你可以通过将 <code>spring.jmx.enabled</code> 配置属性设置为 <code>true</code> 来打开它。Spring Boot 将最合适的 <code>MBeanServer</code> 公开为 ID 为 <code>mbeanServer</code> 的 bean。使用 Spring JMX 注解（@ <code>@ManagedOperation</code> <code>@ManagedAttribute</code> <code>@ManagedResource</code> 的任何 bean 都会暴露给它。</p>
 <p translation-origin="off">Java Management Extensions (JMX) provide a standard mechanism to monitor and manage applications.
 By default, this feature is not enabled.
 You can turn it on by setting the <code>spring.jmx.enabled</code> configuration property to <code>true</code>.
@@ -4630,7 +4630,7 @@ These levels can be one of:</p>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">要了解有关 Micrometer 功能的更多信息，请参阅其<a href="https://micrometer.io/docs">参考文档</a>，尤其是<a href="https://micrometer.io/docs/concepts">概念部分</a>。</p>
+<p translation-result="on">要了解有关 Micrometer 特性的更多信息，请参阅其<a href="https://micrometer.io/docs">参考文档</a>，尤其是<a href="https://micrometer.io/docs/concepts">概念部分</a>。</p>
 <p translation-origin="off">To learn more about Micrometer’s capabilities, see its <a href="https://micrometer.io/docs">reference documentation</a>, in particular the <a href="https://micrometer.io/docs/concepts">concepts section</a>.</p>
 </td>
 </tr>
@@ -4944,7 +4944,7 @@ management.metrics.export.dynatrace.api-token=YOUR_TOKEN</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">使用 Dynatrace v2 API 时，可以用以下可选功能：</p>
+<p translation-result="on">使用 Dynatrace v2 API 时，可以用以下可选特性：</p>
 <p translation-origin="off">When using the Dynatrace v2 API, the following optional features are available:</p>
 </div>
 <div class="ulist">
@@ -5883,7 +5883,7 @@ Metrics are tagged by the name of the executor, which is derived from the bean n
 <h4 id="actuator.metrics.supported.spring-mvc" translation-result="on"><a href="actuator.html#actuator.metrics.supported.spring-mvc"></a>6.3.6. Spring MVC 度量</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.supported.spring-mvc"></a>6.3.6. Spring MVC Metrics</h4>
 <div class="paragraph">
-<p translation-result="on">自动配置启用对 Spring MVC 控制器和功能处理程序处理的所有请求的检测。默认情况下，生成的度量名称为 <code>http.server.requests</code> 。你可以通过设置 <code>management.metrics.web.server.request.metric-name</code> 属性来自定义名称。</p>
+<p translation-result="on">自动配置启用对 Spring MVC 控制器和特性处理程序处理的所有请求的检测。默认情况下，生成的度量名称为 <code>http.server.requests</code> 。你可以通过设置 <code>management.metrics.web.server.request.metric-name</code> 属性来自定义名称。</p>
 <p translation-origin="off">Auto-configuration enables the instrumentation of all requests handled by Spring MVC controllers and functional handlers.
 By default, metrics are generated with the name, <code>http.server.requests</code>.
 You can customized the name by setting the <code>management.metrics.web.server.request.metric-name</code> property.</p>
@@ -5962,7 +5962,7 @@ Applications can opt in and record exceptions by <a href="web.html#web.servlet.s
 <h4 id="actuator.metrics.supported.spring-webflux" translation-result="on"><a href="actuator.html#actuator.metrics.supported.spring-webflux"></a>6.3.7. Spring WebFlux 度量</h4>
 <h4 translation-origin="off"><a class="anchor" href="actuator.html#actuator.metrics.supported.spring-webflux"></a>6.3.7. Spring WebFlux Metrics</h4>
 <div class="paragraph">
-<p translation-result="on">自动配置支持对 Spring WebFlux 控制器和功能处理程序处理的所有请求进行检测。默认情况下，生成的度量名称为 <code>http.server.requests</code> 。你可以通过设置 <code>management.metrics.web.server.request.metric-name</code> 属性来自定义名称。</p>
+<p translation-result="on">自动配置支持对 Spring WebFlux 控制器和特性处理程序处理的所有请求进行检测。默认情况下，生成的度量名称为 <code>http.server.requests</code> 。你可以通过设置 <code>management.metrics.web.server.request.metric-name</code> 属性来自定义名称。</p>
 <p translation-origin="off">Auto-configuration enables the instrumentation of all requests handled by Spring WebFlux controllers and functional handlers.
 By default, metrics are generated with the name, <code>http.server.requests</code>.
 You can customize the name by setting the <code>management.metrics.web.server.request.metric-name</code> property.</p>
@@ -7044,12 +7044,12 @@ If you wanted to see only the maximum size for the “Metaspace”, you could ad
 <h2 translation-origin="off"><a class="anchor" href="actuator.html#actuator.auditing"></a>7. Auditing</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">一旦 Spring Security 发挥作用，Spring Boot Actuator 就会有一个灵活的审计框架来发布事件（默认情况下，“身份验证成功”、“失败”和“访问被拒绝”异常）。此功能对于报告和实施基于身份验证失败的锁定策略非常有用。</p>
+<p translation-result="on">一旦 Spring Security 发挥作用，Spring Boot Actuator 就会有一个灵活的审计框架来发布事件（默认情况下，“身份验证成功”、“失败”和“访问被拒绝”异常）。此特性对于报告和实施基于身份验证失败的锁定策略非常有用。</p>
 <p translation-origin="off">Once Spring Security is in play, Spring Boot Actuator has a flexible audit framework that publishes events (by default, “authentication success”, “failure” and “access denied” exceptions).
 This feature can be very useful for reporting and for implementing a lock-out policy based on authentication failures.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">你可以通过在应用程序的配置中提供 <code>AuditEventRepository</code> 类型的 bean 来启用审计。为方便起见，Spring Boot 提供了一个 <code>InMemoryAuditEventRepository</code> 。<code>InMemoryAuditEventRepository</code> 的功能有限，我们建议仅将其用于开发环境。对于生产环境，请考虑创建你自己的替代 <code>AuditEventRepository</code> 实现。</p>
+<p translation-result="on">你可以通过在应用程序的配置中提供 <code>AuditEventRepository</code> 类型的 bean 来启用审计。为方便起见，Spring Boot 提供了一个 <code>InMemoryAuditEventRepository</code> 。<code>InMemoryAuditEventRepository</code> 的特性有限，我们建议仅将其用于开发环境。对于生产环境，请考虑创建你自己的替代 <code>AuditEventRepository</code> 实现。</p>
 <p translation-origin="off">You can enable auditing by providing a bean of type <code>AuditEventRepository</code> in your application’s configuration.
 For convenience, Spring Boot offers an <code>InMemoryAuditEventRepository</code>.
 <code>InMemoryAuditEventRepository</code> has limited capabilities, and we recommend using it only for development environments.

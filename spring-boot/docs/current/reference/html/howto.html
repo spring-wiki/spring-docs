@@ -1636,7 +1636,7 @@ com.example.ProjectConstraintViolationFailureAnalyzer</code></pre>
 <p translation-origin="off">The Spring Boot auto-configuration tries its best to “do the right thing”, but sometimes things fail, and it can be hard to tell why.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">在任何 Spring Boot <code>ApplicationContext</code> 中都有一个非常有用的 <code>ConditionEvaluationReport</code> 可用。如果启用 <code>DEBUG</code> 日志输出，你可以看到它。如果你使用 <code>spring-boot-actuator</code> （请参阅 <a href="actuator.html#actuator">Actuator 章节</a>），还有一个 <code>conditions</code> 端点以 JSON 格式呈现报告。使用该端点来调试应用程序，并查看 Spring Boot 在运行时添加了哪些功能（哪些还没有添加）。</p>
+<p translation-result="on">在任何 Spring Boot <code>ApplicationContext</code> 中都有一个非常有用的 <code>ConditionEvaluationReport</code> 可用。如果启用 <code>DEBUG</code> 日志输出，你可以看到它。如果你使用 <code>spring-boot-actuator</code> （请参阅 <a href="actuator.html#actuator">Actuator 章节</a>），还有一个 <code>conditions</code> 端点以 JSON 格式呈现报告。使用该端点来调试应用程序，并查看 Spring Boot 在运行时添加了哪些特性（哪些还没有添加）。</p>
 <p translation-origin="off">There is a really useful <code>ConditionEvaluationReport</code> available in any Spring Boot <code>ApplicationContext</code>.
 You can see it if you enable <code>DEBUG</code> logging output.
 If you use the <code>spring-boot-actuator</code> (see <a href="actuator.html#actuator">the Actuator chapter</a>), there is also a <code>conditions</code> endpoint that renders the report in JSON.
@@ -1650,7 +1650,7 @@ When reading the code, remember the following rules of thumb:</p>
 <div class="ulist">
 <ul>
 <li>
-<p translation-result="on">查找名为 <code>*AutoConfiguration</code> 的类并阅读它们的源代码。请特别注意 <code>@Conditional*</code> 注解，以了解它们启用了哪些功能以及何时启用。将 <code>--debug</code> 添加到命令行或系统属性 <code>-Ddebug</code> 以在控制台上获取在你的应用程序中做出的所有自动配置决策的日志。在启用了执行器的正在运行的应用程序中，查看 <code>conditions</code> 端点（ <code>/actuator/conditions</code> 或 JMX 等效项）以获取相同的信息。</p>
+<p translation-result="on">查找名为 <code>*AutoConfiguration</code> 的类并阅读它们的源代码。请特别注意 <code>@Conditional*</code> 注解，以了解它们启用了哪些特性以及何时启用。将 <code>--debug</code> 添加到命令行或系统属性 <code>-Ddebug</code> 以在控制台上获取在你的应用程序中做出的所有自动配置决策的日志。在启用了执行器的正在运行的应用程序中，查看 <code>conditions</code> 端点（ <code>/actuator/conditions</code> 或 JMX 等效项）以获取相同的信息。</p>
 <p translation-origin="off">Look for classes called <code>*AutoConfiguration</code> and read their sources.
 Pay special attention to the <code>@Conditional*</code> annotations to find out what features they enable and when.
 Add <code>--debug</code> to the command line or a System property <code>-Ddebug</code> to get a log on the console of all the auto-configuration decisions that were made in your app.
@@ -1673,7 +1673,7 @@ It is often used with a prefix.</p>
 <p translation-origin="off">Look for <code>@Value</code> annotations that bind directly to the <code>Environment</code>.</p>
 </li>
 <li>
-<p translation-result="on">查找 <code>@ConditionalOnExpression</code> 注解，这些注解会根据 SpEL 表达式打开和关闭功能，通常使用从 <code>Environment</code> 解析的占位符进行估算。</p>
+<p translation-result="on">查找 <code>@ConditionalOnExpression</code> 注解，这些注解会根据 SpEL 表达式打开和关闭特性，通常使用从 <code>Environment</code> 解析的占位符进行估算。</p>
 <p translation-origin="off">Look for <code>@ConditionalOnExpression</code> annotations that switch features on and off in response to SpEL expressions, normally evaluated with placeholders resolved from the <code>Environment</code>.</p>
 </li>
 </ul>
@@ -1879,7 +1879,7 @@ If you use the <code>spring-boot-starter-parent</code>, you can then refer to yo
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果启用 <code>addResources</code> 标志，<code>spring-boot:run</code> 目标可以将 <code>src/main/resources</code> 直接添加到类路径（用于热重载目的）。这样做会绕过资源过滤和此功能。相反，你可以用 <code>exec:java</code> 目标或自定义插件的配置。有关更多详细信息，请参阅<a href="https://docs.spring.io/spring-boot/docs/2.6.3/maven-plugin/reference/htmlsingle/#getting-started">插件使用页面</a>。</p>
+<p translation-result="on">如果启用 <code>addResources</code> 标志，<code>spring-boot:run</code> 目标可以将 <code>src/main/resources</code> 直接添加到类路径（用于热重载目的）。这样做会绕过资源过滤和此特性。相反，你可以用 <code>exec:java</code> 目标或自定义插件的配置。有关更多详细信息，请参阅<a href="https://docs.spring.io/spring-boot/docs/2.6.3/maven-plugin/reference/htmlsingle/#getting-started">插件使用页面</a>。</p>
 <p translation-origin="off">If you enable the <code>addResources</code> flag, the <code>spring-boot:run</code> goal can add <code>src/main/resources</code> directly to the classpath (for hot reloading purposes).
 Doing so circumvents the resource filtering and this feature.
 Instead, you can use the <code>exec:java</code> goal or customize the plugin’s configuration.
@@ -2233,7 +2233,7 @@ server.port=9000</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">有关 YAML 的更多信息，请参阅“Spring Boot 功能”部分中的“ <a href="features.html#features.external-config.yaml">features.html</a> ”。</p>
+<p translation-result="on">有关 YAML 的更多信息，请参阅“Spring Boot 特性”部分中的“ <a href="features.html#features.external-config.yaml">features.html</a> ”。</p>
 <p translation-origin="off">See “<a href="features.html#features.external-config.yaml">features.html</a>” in the ‘Spring Boot features’ section for more information about YAML.</p>
 </div>
 </div>
@@ -2387,7 +2387,7 @@ Later values override earlier values.</p>
 There is not (and technically cannot be) an exhaustive list of all supported properties in a single location, because contributions can come from additional jar files on your classpath.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">具有 Actuator 功能的正在运行的应用程序具有一个 <code>configprops</code> 端点，该端点显示通过 <code>@ConfigurationProperties</code> 可用的所有绑定和可绑定属性。</p>
+<p translation-result="on">具有 Actuator 特性的正在运行的应用程序具有一个 <code>configprops</code> 端点，该端点显示通过 <code>@ConfigurationProperties</code> 可用的所有绑定和可绑定属性。</p>
 <p translation-origin="off">A running application with the Actuator features has a <code>configprops</code> endpoint that shows all the bound and bindable properties available through <code>@ConfigurationProperties</code>.</p>
 </div>
 <div class="paragraph">
@@ -2404,7 +2404,7 @@ For more about the exact ordering of loading properties, see "<a href="features.
 <h2 translation-origin="off"><a class="anchor" href="howto.html#howto.webserver"></a>3. Embedded Web Servers</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">每个 Spring Boot Web 应用程序都包含一个嵌入式 Web 服务器。此功能会导致许多操作方法问题，包括如何更改嵌入式服务器以及如何配置嵌入式服务器。本节回答了这些问题。</p>
+<p translation-result="on">每个 Spring Boot Web 应用程序都包含一个嵌入式 Web 服务器。此特性会导致许多操作方法问题，包括如何更改嵌入式服务器以及如何配置嵌入式服务器。本节回答了这些问题。</p>
 <p translation-origin="off">Each Spring Boot web application includes an embedded web server.
 This feature leads to a number of how-to questions, including how to change the embedded server and how to configure the embedded server.
 This section answers those questions.</p>
@@ -2804,7 +2804,7 @@ Developers can choose to import only the required dependencies using a classifie
 <h3 id="howto.webserver.configure" translation-result="on"><a href="howto.html#howto.webserver.configure"></a>3.9. 配置 Web 服务器</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.webserver.configure"></a>3.9. Configure the Web Server</h3>
 <div class="paragraph">
-<p translation-result="on">通常，你应该首先考虑使用许多可用配置键之一，并通过在 <code>application.properties</code> 或 <code>application.yml</code> 文件中添加新条目来自定义你的 Web 服务器。请参阅“ <a href="howto.html#howto.properties-and-configuration.discover-build-in-options-for-external-properties">发现外部属性的内置选项</a>”）。<code>server.*</code> 命名空间在这里非常有用，它包括 <code>server.tomcat.*</code> 、 <code>server.jetty.*</code> 等命名空间，用于特定于服务器的功能。请参阅 <a href="application-properties.html#application-properties">application-properties.html</a> 列表。</p>
+<p translation-result="on">通常，你应该首先考虑使用许多可用配置键之一，并通过在 <code>application.properties</code> 或 <code>application.yml</code> 文件中添加新条目来自定义你的 Web 服务器。请参阅“ <a href="howto.html#howto.properties-and-configuration.discover-build-in-options-for-external-properties">发现外部属性的内置选项</a>”）。<code>server.*</code> 命名空间在这里非常有用，它包括 <code>server.tomcat.*</code> 、 <code>server.jetty.*</code> 等命名空间，用于特定于服务器的特性。请参阅 <a href="application-properties.html#application-properties">application-properties.html</a> 列表。</p>
 <p translation-origin="off">Generally, you should first consider using one of the many available configuration keys and customize your web server by adding new entries in your <code>application.properties</code> or <code>application.yml</code> file.
 See “<a href="howto.html#howto.properties-and-configuration.discover-build-in-options-for-external-properties">Discover Built-in Options for External Properties</a>”).
 The <code>server.*</code> namespace is quite useful here, and it includes namespaces like <code>server.tomcat.*</code>, <code>server.jetty.*</code> and others, for server-specific features.
@@ -3553,11 +3553,11 @@ If Jackson is on the classpath, you already get the default converter(s) provide
 </ul>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 还具有一些功能，可以更轻松地自定义此行为。</p>
+<p translation-result="on">Spring Boot 还具有一些特性，可以更轻松地自定义此行为。</p>
 <p translation-origin="off">Spring Boot also has some features to make it easier to customize this behavior.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">你可以用环境配置 <code>ObjectMapper</code> 和 <code>XmlMapper</code> 实例。Jackson 提供了一套广泛的开/关功能，可用于配置其处理的各个方面。这些特性在六个枚举（在 Jackson 中）中描述，它们映射到环境中的属性：</p>
+<p translation-result="on">你可以用环境配置 <code>ObjectMapper</code> 和 <code>XmlMapper</code> 实例。Jackson 提供了一套广泛的开/关特性，可用于配置其处理的各个方面。这些特性在六个枚举（在 Jackson 中）中描述，它们映射到环境中的属性：</p>
 <p translation-origin="off">You can configure the <code>ObjectMapper</code> and <code>XmlMapper</code> instances by using the environment.
 Jackson provides an extensive suite of on/off features that can be used to configure various aspects of its processing.
 These features are described in six enums (in Jackson) that map onto properties in the environment:</p>
@@ -3632,7 +3632,7 @@ Note that, thanks to the use of <a href="features.html#features.external-config.
 Such customizer beans can be ordered (Boot’s own customizer has an order of 0), letting additional customization be applied both before and after Boot’s customization.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on"><code>com.fasterxml.jackson.databind.Module</code> 类型的任何 bean 都会自动注册到自动配置的 <code>Jackson2ObjectMapperBuilder</code> 并应用于它创建的任何 <code>ObjectMapper</code> 实例。当你向应用程序添加新功能时，这提供了一种用于贡献自定义模块的全局机制。</p>
+<p translation-result="on"><code>com.fasterxml.jackson.databind.Module</code> 类型的任何 bean 都会自动注册到自动配置的 <code>Jackson2ObjectMapperBuilder</code> 并应用于它创建的任何 <code>ObjectMapper</code> 实例。当你向应用程序添加新特性时，这提供了一种用于贡献自定义模块的全局机制。</p>
 <p translation-origin="off">Any beans of type <code>com.fasterxml.jackson.databind.Module</code> are automatically registered with the auto-configured <code>Jackson2ObjectMapperBuilder</code> and are applied to any <code>ObjectMapper</code> instances that it creates.
 This provides a global mechanism for contributing custom modules when you add new features to your application.</p>
 </div>
@@ -4645,7 +4645,7 @@ In practice, the builder is initialized with whatever value you might set there 
 You must, however, mark one of the <code>DataSource</code> instances as <code>@Primary</code>, because various auto-configurations down the road expect to be able to get one by type.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你创建自己的 <code>DataSource</code> ，则自动配置会退出。在以下示例中，我们提供了与自动配置在主数据源上提供的<em>完全相同的</em>功能集：</p>
+<p translation-result="on">如果你创建自己的 <code>DataSource</code> ，则自动配置会退出。在以下示例中，我们提供了与自动配置在主数据源上提供的<em>完全相同的</em>特性集：</p>
 <p translation-origin="off">If you create your own <code>DataSource</code>, the auto-configuration backs off.
 In the following example, we provide the <em>exact</em> same feature set as the auto-configuration provides on the primary data source:</p>
 </div>
@@ -4695,7 +4695,7 @@ public class MyDataSourcesConfiguration {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on"><code>firstDataSourceProperties</code> 必须标记为 <code>@Primary</code> 以便数据库初始化程序功能使用你的副本（如果你使用初始化程序）。</p>
+<p translation-result="on"><code>firstDataSourceProperties</code> 必须标记为 <code>@Primary</code> 以便数据库初始化程序特性使用你的副本（如果你使用初始化程序）。</p>
 <p translation-origin="off"><code>firstDataSourceProperties</code> has to be flagged as <code>@Primary</code> so that the database initializer feature uses your copy (if you use the initializer).</p>
 </td>
 </tr>
@@ -5206,7 +5206,7 @@ The most explicit way to do that is to use the standard Spring Data <code>@Enabl
 Doing so is useful, for instance, in case you want to switch off the Mongo repositories and still use the auto-configured <code>MongoTemplate</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">其他自动配置的 Spring Data 存储库类型（Elasticsearch、Solr 等）存在相同的障碍和相同的功能。要使用它们，请相应地更改注解和标志的名称。</p>
+<p translation-result="on">其他自动配置的 Spring Data 存储库类型（Elasticsearch、Solr 等）存在相同的障碍和相同的特性。要使用它们，请相应地更改注解和标志的名称。</p>
 <p translation-origin="off">The same obstacle and the same features exist for other auto-configured Spring Data repository types (Elasticsearch, Solr, and others).
 To work with them, change the names of the annotations and flags accordingly.</p>
 </div>
@@ -5302,7 +5302,7 @@ See <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-b
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">特别是，可以重用 <code>JooqExceptionTranslator</code> 和 <code>SpringTransactionProvider</code> 以提供与自动配置对单个 <code>DataSource</code> 所做的类似的功能。</p>
+<p translation-result="on">特别是，可以重用 <code>JooqExceptionTranslator</code> 和 <code>SpringTransactionProvider</code> 以提供与自动配置对单个 <code>DataSource</code> 所做的类似的特性。</p>
 <p translation-origin="off">In particular, <code>JooqExceptionTranslator</code> and <code>SpringTransactionProvider</code> can be reused to provide similar features to what the auto-configuration does with a single <code>DataSource</code>.</p>
 </td>
 </tr>
@@ -5325,18 +5325,18 @@ It is recommended to use a single mechanism for schema generation.</p>
 <h3 id="howto.data-initialization.using-jpa" translation-result="on"><a href="howto.html#howto.data-initialization.using-jpa"></a>9.1. 使用 JPA 初始化数据库</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.data-initialization.using-jpa"></a>9.1. Initialize a Database Using JPA</h3>
 <div class="paragraph">
-<p translation-result="on">JPA 具有用于 DDL 生成的功能，这些功能可以设置为在启动时针对数据库运行。这是通过两个外部属性控制的：</p>
+<p translation-result="on">JPA 具有用于 DDL 生成的特性，这些特性可以设置为在启动时针对数据库运行。这是通过两个外部属性控制的：</p>
 <p translation-origin="off">JPA has features for DDL generation, and these can be set up to run on startup against the database.
 This is controlled through two external properties:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p translation-result="on"><code>spring.jpa.generate-ddl</code> (boolean) 打开和关闭功能，并且独立于供应商。</p>
+<p translation-result="on"><code>spring.jpa.generate-ddl</code> (boolean) 打开和关闭特性，并且独立于供应商。</p>
 <p translation-origin="off"><code>spring.jpa.generate-ddl</code> (boolean) switches the feature on and off and is vendor independent.</p>
 </li>
 <li>
-<p translation-result="on"><code>spring.jpa.hibernate.ddl-auto</code> (enum) 是一个 Hibernate 特性，它以更细粒度的方式控制行为。本指南稍后将更详细地介绍此功能。</p>
+<p translation-result="on"><code>spring.jpa.hibernate.ddl-auto</code> (enum) 是一个 Hibernate 特性，它以更细粒度的方式控制行为。本指南稍后将更详细地介绍此特性。</p>
 <p translation-origin="off"><code>spring.jpa.hibernate.ddl-auto</code> (enum) is a Hibernate feature that controls the behavior in a more fine-grained way.
 This feature is described in more detail later in this guide.</p>
 </li>
@@ -5841,7 +5841,7 @@ To make the application listen on a different port, set the external property: <
 To listen on a completely different network address (such as when you have an internal network for management and an external one for user applications), you can also set <code>management.server.address</code> to a valid IP address to which the server is able to bind.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">有关更多详细信息，请参阅“生产就绪功能”部分中的<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/web/server/ManagementServerProperties.java"><code>ManagementServerProperties</code></a>源代码和“ <a href="actuator.html#actuator.monitoring.customizing-management-server-port">actuator.html</a> ”。</p>
+<p translation-result="on">有关更多详细信息，请参阅“生产就绪特性”部分中的<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/web/server/ManagementServerProperties.java"><code>ManagementServerProperties</code></a>源代码和“ <a href="actuator.html#actuator.monitoring.customizing-management-server-port">actuator.html</a> ”。</p>
 <p translation-origin="off">For more detail, see the <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/web/server/ManagementServerProperties.java"><code>ManagementServerProperties</code></a> source code and “<a href="actuator.html#actuator.monitoring.customizing-management-server-port">actuator.html</a>” in the “Production-ready features” section.</p>
 </div>
 </div>
@@ -6004,7 +6004,7 @@ public class MyHealthMetricsExportConfiguration {
 <h3 id="howto.security.change-user-details-service-and-add-user-accounts" translation-result="on"><a href="howto.html#howto.security.change-user-details-service-and-add-user-accounts"></a>13.2. 更改 UserDetailsService 并添加用户帐户</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.security.change-user-details-service-and-add-user-accounts"></a>13.2. Change the UserDetailsService and Add User Accounts</h3>
 <div class="paragraph">
-<p translation-result="on">如果你提供 <code>AuthenticationManager</code> 、 <code>AuthenticationProvider</code> 或 <code>UserDetailsService</code> 类型的 <code>@Bean</code> ，则不会创建 <code>InMemoryUserDetailsManager</code> 的默认 <code>@Bean</code> 。这意味着你可以用 Spring Security 的完整功能集（例如 <a href="https://docs.spring.io/spring-security/reference/5.6.1/servlet/authentication/index.html">各种身份验证选项</a>）。</p>
+<p translation-result="on">如果你提供 <code>AuthenticationManager</code> 、 <code>AuthenticationProvider</code> 或 <code>UserDetailsService</code> 类型的 <code>@Bean</code> ，则不会创建 <code>InMemoryUserDetailsManager</code> 的默认 <code>@Bean</code> 。这意味着你可以用 Spring Security 的完整特性集（例如 <a href="https://docs.spring.io/spring-security/reference/5.6.1/servlet/authentication/index.html">各种身份验证选项</a>）。</p>
 <p translation-origin="off">If you provide a <code>@Bean</code> of type <code>AuthenticationManager</code>, <code>AuthenticationProvider</code>, or <code>UserDetailsService</code>, the default <code>@Bean</code> for <code>InMemoryUserDetailsManager</code> is not created.
 This means you have the full feature set of Spring Security available (such as <a href="https://docs.spring.io/spring-security/reference/5.6.1/servlet/authentication/index.html">various authentication options</a>).</p>
 </div>
@@ -6910,7 +6910,7 @@ There might be some beans you can remove later and let Spring Boot provide its o
 The same applies to <code>messages.properties</code> (which Spring Boot automatically detects in the root of the classpath).</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring <code>DispatcherServlet</code> 和 Spring Security 的普通用法应该不需要进一步的更改。如果你的应用程序中有其他功能（例如，使用其他 servlet 或过滤器），你可能需要通过替换 <code>web.xml</code> 中的这些元素来向你的 <code>Application</code> 上下文添加一些配置，如下所示：</p>
+<p translation-result="on">Spring <code>DispatcherServlet</code> 和 Spring Security 的普通用法应该不需要进一步的更改。如果你的应用程序中有其他特性（例如，使用其他 servlet 或过滤器），你可能需要通过替换 <code>web.xml</code> 中的这些元素来向你的 <code>Application</code> 上下文添加一些配置，如下所示：</p>
 <p translation-origin="off">Vanilla usage of Spring <code>DispatcherServlet</code> and Spring Security should require no further changes.
 If you have other features in your application (for instance, using other servlets or filters), you may need to add some configuration to your <code>Application</code> context, by replacing those elements from the <code>web.xml</code>, as follows:</p>
 </div>
@@ -7014,7 +7014,7 @@ public class MyApplication extends SpringBootServletInitializer {
 <p translation-origin="off">All of these should be amenable to translation, but each might require slightly different techniques.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果 Servlet 3.0+ 应用程序已经使用 Spring Servlet 3.0+ 初始化器支持类，它们可能会很容易转换。通常，现有 <code>WebApplicationInitializer</code> 中的所有代码都可以移动到 <code>SpringBootServletInitializer</code> 中。如果你现有的应用程序有多个 <code>ApplicationContext</code> （例如，如果它使用 <code>AbstractDispatcherServletInitializer</code> ），那么你可以将所有上下文源合并到一个 <code>SpringApplication</code> 中。你可能遇到的主要复杂情况是如果组合不起作用并且你需要维护上下文层次结构。有关示例，请参阅<a href="howto.html#howto.application.context-hierarchy">有关构建层次结构的条目</a>。包含 Web 特定功能的现有父上下文通常需要分解，以便所有 <code>ServletContextAware</code> 组件都在子上下文中。</p>
+<p translation-result="on">如果 Servlet 3.0+ 应用程序已经使用 Spring Servlet 3.0+ 初始化器支持类，它们可能会很容易转换。通常，现有 <code>WebApplicationInitializer</code> 中的所有代码都可以移动到 <code>SpringBootServletInitializer</code> 中。如果你现有的应用程序有多个 <code>ApplicationContext</code> （例如，如果它使用 <code>AbstractDispatcherServletInitializer</code> ），那么你可以将所有上下文源合并到一个 <code>SpringApplication</code> 中。你可能遇到的主要复杂情况是如果组合不起作用并且你需要维护上下文层次结构。有关示例，请参阅<a href="howto.html#howto.application.context-hierarchy">有关构建层次结构的条目</a>。包含 Web 特定特性的现有父上下文通常需要分解，以便所有 <code>ServletContextAware</code> 组件都在子上下文中。</p>
 <p translation-origin="off">Servlet 3.0+ applications might translate pretty easily if they already use the Spring Servlet 3.0+ initializer support classes.
 Normally, all the code from an existing <code>WebApplicationInitializer</code> can be moved into a <code>SpringBootServletInitializer</code>.
 If your existing application has more than one <code>ApplicationContext</code> (for example, if it uses <code>AbstractDispatcherServletInitializer</code>) then you might be able to combine all your context sources into a single <code>SpringApplication</code>.

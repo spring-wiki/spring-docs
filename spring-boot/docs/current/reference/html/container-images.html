@@ -1135,7 +1135,7 @@ For Gradle, see the <a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradl
 <h2 translation-origin="off"><a class="anchor" href="container-images.html#container-images.dockerfiles"></a>2. Dockerfiles</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">虽然只需 Dockerfile 中的几行代码就可以将 Spring Boot fat jar 转换为 docker 镜像，但我们将使用<a href="container-images.html#container-images.efficient-images.layering">分层功能</a>来创建优化的 docker 镜像。当你创建一个包含层索引文件的 jar 时，<code>spring-boot-jarmode-layertools</code> jar 将作为依赖项添加到你的 jar 中。使用类路径中的这个 jar，你可以在特殊模式下启动应用程序，该模式允许引导代码运行与你的应用程序完全不同的东西，例如，提取层的东西。</p>
+<p translation-result="on">虽然只需 Dockerfile 中的几行代码就可以将 Spring Boot fat jar 转换为 docker 镜像，但我们将使用<a href="container-images.html#container-images.efficient-images.layering">分层特性</a>来创建优化的 docker 镜像。当你创建一个包含层索引文件的 jar 时，<code>spring-boot-jarmode-layertools</code> jar 将作为依赖项添加到你的 jar 中。使用类路径中的这个 jar，你可以在特殊模式下启动应用程序，该模式允许引导代码运行与你的应用程序完全不同的东西，例如，提取层的东西。</p>
 <p translation-origin="off">While it is possible to convert a Spring Boot fat jar into a docker image with just a few lines in the Dockerfile, we will use the <a href="container-images.html#container-images.efficient-images.layering">layering feature</a> to create an optimized docker image.
 When you create a jar containing the layers index file, the <code>spring-boot-jarmode-layertools</code> jar will be added as a dependency to your jar.
 With this jar on the classpath, you can launch your application in a special mode which allows the bootstrap code to run something entirely different from your application, for example, something that extracts the layers.</p>

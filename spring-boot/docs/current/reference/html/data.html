@@ -1247,7 +1247,7 @@
 <h2 translation-origin="off"><a class="anchor" href="data.html#data.sql"></a>1. SQL Databases</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on"><a href="https://spring.io/projects/spring-framework">Spring Framework</a> 为使用 SQL 数据库提供了广泛的支持，从使用 <code>JdbcTemplate</code> 的直接 JDBC 访问到完整的“对象关系映射”技术，如 Hibernate。<a href="https://spring.io/projects/spring-data">Spring Data</a> 提供了额外级别的功能：直接从接口创建 <code>Repository</code> 实现并使用约定从你的方法名称生成查询。</p>
+<p translation-result="on"><a href="https://spring.io/projects/spring-framework">Spring Framework</a> 为使用 SQL 数据库提供了广泛的支持，从使用 <code>JdbcTemplate</code> 的直接 JDBC 访问到完整的“对象关系映射”技术，如 Hibernate。<a href="https://spring.io/projects/spring-data">Spring Data</a> 提供了额外级别的特性：直接从接口创建 <code>Repository</code> 实现并使用约定从你的方法名称生成查询。</p>
 <p translation-origin="off">The <a href="https://spring.io/projects/spring-framework">Spring Framework</a> provides extensive support for working with SQL databases, from direct JDBC access using <code>JdbcTemplate</code> to complete “object relational mapping” technologies such as Hibernate.
 <a href="https://spring.io/projects/spring-data">Spring Data</a> provides an additional level of functionality: creating <code>Repository</code> implementations directly from interfaces and using conventions to generate queries from your method names.</p>
 </div>
@@ -1310,7 +1310,7 @@ Setting the property to <code>none</code> disables auto-configuration of an embe
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">如果你在测试中使用此功能，你可能会注意到，无论你使用多少应用程序上下文，整个测试套件都会重用同一个数据库。如果要确保每个上下文都有一个单独的嵌入式数据库，则应将 <code>spring.datasource.generate-unique-name</code> 设置为 <code>true</code> 。</p>
+<p translation-result="on">如果你在测试中使用此特性，你可能会注意到，无论你使用多少应用程序上下文，整个测试套件都会重用同一个数据库。如果要确保每个上下文都有一个单独的嵌入式数据库，则应将 <code>spring.datasource.generate-unique-name</code> 设置为 <code>true</code> 。</p>
 <p translation-origin="off">If you are using this feature in your tests, you may notice that the same database is reused by your whole test suite regardless of the number of application contexts that you use.
 If you want to make sure that each context has a separate embedded database, you should set <code>spring.datasource.generate-unique-name</code> to <code>true</code>.</p>
 </div>
@@ -1566,7 +1566,7 @@ The following connection pools are supported by <code>DataSourceBuilder</code>:<
 <h4 id="data.sql.datasource.jndi" translation-result="on"><a href="data.html#data.sql.datasource.jndi"></a>1.1.5. 连接到 JNDI 数据源</h4>
 <h4 translation-origin="off"><a class="anchor" href="data.html#data.sql.datasource.jndi"></a>1.1.5. Connection to a JNDI DataSource</h4>
 <div class="paragraph">
-<p translation-result="on">如果你将 Spring Boot 应用程序部署到 Application Server，你可能希望使用 Application Server 的内置功能配置和管理 DataSource，并使用 JNDI 访问它。</p>
+<p translation-result="on">如果你将 Spring Boot 应用程序部署到 Application Server，你可能希望使用 Application Server 的内置特性配置和管理 DataSource，并使用 JNDI 访问它。</p>
 <p translation-origin="off">If you deploy your Spring Boot application to an Application Server, you might want to configure and manage your DataSource by using your Application Server’s built-in features and access it by using JNDI.</p>
 </div>
 <div class="paragraph">
@@ -2357,7 +2357,7 @@ You need only include a build dependency to the embedded database that you want 
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">如果你在测试中使用此功能，你可能会注意到，无论你使用多少应用程序上下文，整个测试套件都会重用同一个数据库。如果要确保每个上下文都有一个单独的嵌入式数据库，则应将 <code>spring.r2dbc.generate-unique-name</code> 设置为 <code>true</code> 。</p>
+<p translation-result="on">如果你在测试中使用此特性，你可能会注意到，无论你使用多少应用程序上下文，整个测试套件都会重用同一个数据库。如果要确保每个上下文都有一个单独的嵌入式数据库，则应将 <code>spring.r2dbc.generate-unique-name</code> 设置为 <code>true</code> 。</p>
 <p translation-origin="off">If you are using this feature in your tests, you may notice that the same database is reused by your whole test suite regardless of the number of application contexts that you use.
 If you want to make sure that each context has a separate embedded database, you should set <code>spring.r2dbc.generate-unique-name</code> to <code>true</code>.</p>
 </div>
@@ -2506,7 +2506,7 @@ See the appropriate reference documentation at <a href="https://spring.io/projec
 <h3 id="data.nosql.redis" translation-result="on"><a href="data.html#data.nosql.redis"></a>2.1. 雷迪斯</h3>
 <h3 translation-origin="off"><a class="anchor" href="data.html#data.nosql.redis"></a>2.1. Redis</h3>
 <div class="paragraph">
-<p translation-result="on"><a href="https://redis.io/">Redis</a> 是一个缓存、消息代理和功能丰富的键值存储。Spring Boot 为 <a href="https://github.com/lettuce-io/lettuce-core/">Lettuce</a> 和 <a href="https://github.com/xetorthio/jedis/">Jedis</a> 客户端库以及 <a href="https://github.com/spring-projects/spring-data-redis">Spring Data Redis</a> 提供的抽象提供了基本的自动配置。</p>
+<p translation-result="on"><a href="https://redis.io/">Redis</a> 是一个缓存、消息代理和特性丰富的键值存储。Spring Boot 为 <a href="https://github.com/lettuce-io/lettuce-core/">Lettuce</a> 和 <a href="https://github.com/xetorthio/jedis/">Jedis</a> 客户端库以及 <a href="https://github.com/spring-projects/spring-data-redis">Spring Data Redis</a> 提供的抽象提供了基本的自动配置。</p>
 <p translation-origin="off"><a href="https://redis.io/">Redis</a> is a cache, message broker, and richly-featured key-value store.
 Spring Boot offers basic auto-configuration for the <a href="https://github.com/lettuce-io/lettuce-core/">Lettuce</a> and <a href="https://github.com/xetorthio/jedis/">Jedis</a> client libraries and the abstractions on top of them provided by <a href="https://github.com/spring-projects/spring-data-redis">Spring Data Redis</a>.</p>
 </div>

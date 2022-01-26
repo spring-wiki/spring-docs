@@ -1340,7 +1340,7 @@ There are also several guides that cover Spring MVC available at <a href="https:
 </ul>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你想保留这些 Spring Boot MVC 自定义并进行更多 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc">MVC 自定义</a>（拦截器、格式化程序、视图控制器和其他功能），你可以添加自己的 <code>WebMvcConfigurer</code> 类型的 <code>@Configuration</code> 类，但<strong>不</strong><code>@EnableWebMvc</code> 。</p>
+<p translation-result="on">如果你想保留这些 Spring Boot MVC 自定义并进行更多 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc">MVC 自定义</a>（拦截器、格式化程序、视图控制器和其他特性），你可以添加自己的 <code>WebMvcConfigurer</code> 类型的 <code>@Configuration</code> 类，但<strong>不</strong><code>@EnableWebMvc</code> 。</p>
 <p translation-origin="off">If you want to keep those Spring Boot MVC customizations and make more <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc">MVC customizations</a> (interceptors, formatters, view controllers, and other features), you can add your own <code>@Configuration</code> class of type <code>WebMvcConfigurer</code> but <strong>without</strong> <code>@EnableWebMvc</code>.</p>
 </div>
 <div class="paragraph">
@@ -1601,7 +1601,7 @@ Although this directory is a common standard, it works <strong>only</strong> wit
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 还支持 Spring MVC 提供的高级资源处理功能，允许使用诸如缓存清除静态资源或为 Webjar 使用与版本无关的 URL 等用例。</p>
+<p translation-result="on">Spring Boot 还支持 Spring MVC 提供的高级资源处理特性，允许使用诸如缓存清除静态资源或为 Webjar 使用与版本无关的 URL 等用例。</p>
 <p translation-origin="off">Spring Boot also supports the advanced resource handling features provided by Spring MVC, allowing use cases such as cache-busting static resources or using version agnostic URLs for Webjars.</p>
 </div>
 <div class="paragraph">
@@ -1714,7 +1714,7 @@ spring.web.resources.chain.strategy.fixed.version=v12</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">此功能已在专门的<a href="https://spring.io/blog/2014/07/24/spring-framework-4-1-handling-static-web-resources">博客文章</a>和 Spring Framework 的<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-config-static-resources">参考文档</a>中进行了详细描述。</p>
+<p translation-result="on">此特性已在专门的<a href="https://spring.io/blog/2014/07/24/spring-framework-4-1-handling-static-web-resources">博客文章</a>和 Spring Framework 的<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-config-static-resources">参考文档</a>中进行了详细描述。</p>
 <p translation-origin="off">This feature has been thoroughly described in a dedicated <a href="https://spring.io/blog/2014/07/24/spring-framework-4-1-handling-static-web-resources">blog post</a> and in Spring Framework’s <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-config-static-resources">reference documentation</a>.</p>
 </div>
 </td>
@@ -1741,7 +1741,7 @@ If either is found, it is automatically used as the welcome page of the applicat
 <p translation-origin="off">Spring MVC can map incoming HTTP requests to handlers by looking at the request path and matching it to the mappings defined in your application (for example, <code>@GetMapping</code> annotations on Controller methods).</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 默认选择禁用后缀模式匹配，这意味着像 <code>"GET /projects/spring-boot.json"</code> 这样的请求不会匹配到 <code>@GetMapping("/projects/spring-boot")</code> 映射。这被认为是 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-ann-requestmapping-suffix-pattern-match">Spring MVC 应用程序的最佳实践</a>。过去，此功能主要对未发送正确“Accept”请求标头的 HTTP 客户端有用；我们需要确保向客户端发送正确的内容类型。如今，内容协商更加可靠。</p>
+<p translation-result="on">Spring Boot 默认选择禁用后缀模式匹配，这意味着像 <code>"GET /projects/spring-boot.json"</code> 这样的请求不会匹配到 <code>@GetMapping("/projects/spring-boot")</code> 映射。这被认为是 <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-ann-requestmapping-suffix-pattern-match">Spring MVC 应用程序的最佳实践</a>。过去，此特性主要对未发送正确“Accept”请求标头的 HTTP 客户端有用；我们需要确保向客户端发送正确的内容类型。如今，内容协商更加可靠。</p>
 <p translation-origin="off">Spring Boot chooses to disable suffix pattern matching by default, which means that requests like <code>"GET /projects/spring-boot.json"</code> will not be matched to <code>@GetMapping("/projects/spring-boot")</code> mappings.
 This is considered as a <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-ann-requestmapping-suffix-pattern-match">best practice for Spring MVC applications</a>.
 This feature was mainly useful in the past for HTTP clients which did not send proper "Accept" request headers; we needed to make sure to send the correct Content Type to the client.
@@ -2153,7 +2153,7 @@ import org.springframework.web.servlet.ModelAndView;
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">你还可以用常规 Spring MVC 功能，例如<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-exceptionhandlers"><code>@ExceptionHandler</code> 方法</a>和<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-ann-controller-advice"><code>@ControllerAdvice</code></a> 。<code>ErrorController</code> 然后拾取任何未处理的异常。</p>
+<p translation-result="on">你还可以用常规 Spring MVC 特性，例如<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-exceptionhandlers"><code>@ExceptionHandler</code> 方法</a>和<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-ann-controller-advice"><code>@ControllerAdvice</code></a> 。<code>ErrorController</code> 然后拾取任何未处理的异常。</p>
 <p translation-origin="off">You can also use regular Spring MVC features such as <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-exceptionhandlers"><code>@ExceptionHandler</code> methods</a> and <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web.html#mvc-ann-controller-advice"><code>@ControllerAdvice</code></a>.
 The <code>ErrorController</code> then picks up any unhandled exceptions.</p>
 </div>
@@ -2557,7 +2557,7 @@ Usually, you would define the properties in your <code>application.properties</c
 </ul>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 尽可能地尝试公开常用设置，但这并不总是可能的。对于这些情况，专用命名空间提供特定于服务器的自定义（请参阅 <code>server.tomcat</code> 和 <code>server.undertow</code> ）。例如，可以用嵌入式 servlet 容器的特定功能配置<a href="howto.html#howto.webserver.configure-access-logs">访问日志</a>。</p>
+<p translation-result="on">Spring Boot 尽可能地尝试公开常用设置，但这并不总是可能的。对于这些情况，专用命名空间提供特定于服务器的自定义（请参阅 <code>server.tomcat</code> 和 <code>server.undertow</code> ）。例如，可以用嵌入式 servlet 容器的特定特性配置<a href="howto.html#howto.webserver.configure-access-logs">访问日志</a>。</p>
 <p translation-origin="off">Spring Boot tries as much as possible to expose common settings, but this is not always possible.
 For those cases, dedicated namespaces offer server-specific customizations (see <code>server.tomcat</code> and <code>server.undertow</code>).
 For instance, <a href="howto.html#howto.webserver.configure-access-logs">access logs</a> can be configured with specific features of the embedded servlet container.</p>
@@ -2815,7 +2815,7 @@ public class MyRestController {
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">功能变体“WebFlux.fn”将路由配置与请求的实际处理分开，如下例所示：</p>
+<p translation-result="on">特性变体“WebFlux.fn”将路由配置与请求的实际处理分开，如下例所示：</p>
 <p translation-origin="off">“WebFlux.fn”, the functional variant, separates the routing configuration from the actual handling of the requests, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -2914,7 +2914,7 @@ You can still enforce your choice by setting the chosen application type to <cod
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">功能变体“WebFlux.fn”将路由配置与请求的实际处理分开，如下例所示：</p>
+<p translation-result="on">特性变体“WebFlux.fn”将路由配置与请求的实际处理分开，如下例所示：</p>
 <p translation-origin="off">“WebFlux.fn”, the functional variant, separates the routing configuration from the actual handling of the requests, as shown in the following example:</p>
 </div>
 <div class="listingblock">
@@ -3200,7 +3200,7 @@ For browser clients, there is a “whitelabel” error handler that renders the 
 You can also provide your own HTML templates to display errors (see the <a href="web.html#web.reactive.webflux.error-handling.error-pages">next section</a>).</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">自定义此功能的第一步通常涉及使用现有机制但替换或增加错误内容。为此，你可以添加一个 <code>ErrorAttributes</code> 类型的 bean。</p>
+<p translation-result="on">自定义此特性的第一步通常涉及使用现有机制但替换或增加错误内容。为此，你可以添加一个 <code>ErrorAttributes</code> 类型的 bean。</p>
 <p translation-origin="off">The first step to customizing this feature often involves using the existing mechanism but replacing or augmenting the error contents.
 For that, you can add a bean of type <code>ErrorAttributes</code>.</p>
 </div>
@@ -3258,7 +3258,7 @@ public class MyErrorWebExceptionHandler extends AbstractErrorWebExceptionHandler
 <p translation-origin="off">For a more complete picture, you can also subclass <code>DefaultErrorWebExceptionHandler</code> directly and override specific methods.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">在某些情况下，在控制器或处理程序功能级别处理的错误不会被<a href="actuator.html#actuator.metrics.supported.spring-webflux">度量基础设施</a>记录。应用程序可以通过将处理的异常设置为请求属性来确保将此类异常与请求度量一起记录：</p>
+<p translation-result="on">在某些情况下，在控制器或处理程序特性级别处理的错误不会被<a href="actuator.html#actuator.metrics.supported.spring-webflux">度量基础设施</a>记录。应用程序可以通过将处理的异常设置为请求属性来确保将此类异常与请求度量一起记录：</p>
 <p translation-origin="off">In some cases, errors handled at the controller or handler function level are not recorded by the <a href="actuator.html#actuator.metrics.supported.spring-webflux">metrics infrastructure</a>.
 Applications can ensure that such exceptions are recorded with the request metrics by setting the handled exception as a request attribute:</p>
 </div>
@@ -3546,7 +3546,7 @@ Otherwise, the default password is not printed.</p>
 <p translation-origin="off">You can change the username and password by providing a <code>spring.security.user.name</code> and <code>spring.security.user.password</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">默认情况下，你在 Web 应用程序中获得的基本功能是：</p>
+<p translation-result="on">默认情况下，你在 Web 应用程序中获得的基本特性是：</p>
 <p translation-origin="off">The basic features you get by default in a web application are:</p>
 </div>
 <div class="ulist">
@@ -3793,7 +3793,7 @@ public class MyOAuthClientConfiguration {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">Spring Boot 自动配置一个 <code>InMemoryOAuth2AuthorizedClientService</code> ，Spring Security 使用它来管理客户端注册。<code>InMemoryOAuth2AuthorizedClientService</code> 功能有限，我们建议仅将其用于开发环境。对于生产环境，请考虑使用 <code>JdbcOAuth2AuthorizedClientService</code> 或创建你自己的 <code>OAuth2AuthorizedClientService</code> 实现。</p>
+<p translation-result="on">Spring Boot 自动配置一个 <code>InMemoryOAuth2AuthorizedClientService</code> ，Spring Security 使用它来管理客户端注册。<code>InMemoryOAuth2AuthorizedClientService</code> 特性有限，我们建议仅将其用于开发环境。对于生产环境，请考虑使用 <code>JdbcOAuth2AuthorizedClientService</code> 或创建你自己的 <code>OAuth2AuthorizedClientService</code> 实现。</p>
 <p translation-origin="off">Spring Boot auto-configures an <code>InMemoryOAuth2AuthorizedClientService</code> which is used by Spring Security for the management of client registrations.
 The <code>InMemoryOAuth2AuthorizedClientService</code> has limited capabilities and we recommend using it only for development environments.
 For production environments, consider using a <code>JdbcOAuth2AuthorizedClientService</code> or creating your own implementation of <code>OAuth2AuthorizedClientService</code>.</p>
@@ -3952,7 +3952,7 @@ spring.security.oauth2.resourceserver.opaquetoken.client-secret=my-client-secret
 <h4 id="web.security.oauth2.authorization-server" translation-result="on"><a href="web.html#web.security.oauth2.authorization-server"></a>4.3.3. 授权服务器</h4>
 <h4 translation-origin="off"><a class="anchor" href="web.html#web.security.oauth2.authorization-server"></a>4.3.3. Authorization Server</h4>
 <div class="paragraph">
-<p translation-result="on">目前，Spring Security 不支持实现 OAuth 2.0 授权服务器。但是，此功能可从 <a href="https://spring.io/projects/spring-security-oauth">Spring Security OAuth</a> 项目中获得，该项目最终将被 Spring Security 完全取代。在此之前，你可以用 <code>spring-security-oauth2-autoconfigure</code> 模块轻松设置 OAuth 2.0 授权服务器；有关说明，请参阅其<a href="https://docs.spring.io/spring-security-oauth2-boot/">文档</a>。</p>
+<p translation-result="on">目前，Spring Security 不支持实现 OAuth 2.0 授权服务器。但是，此特性可从 <a href="https://spring.io/projects/spring-security-oauth">Spring Security OAuth</a> 项目中获得，该项目最终将被 Spring Security 完全取代。在此之前，你可以用 <code>spring-security-oauth2-autoconfigure</code> 模块轻松设置 OAuth 2.0 授权服务器；有关说明，请参阅其<a href="https://docs.spring.io/spring-security-oauth2-boot/">文档</a>。</p>
 <p translation-origin="off">Currently, Spring Security does not provide support for implementing an OAuth 2.0 Authorization Server.
 However, this functionality is available from the <a href="https://spring.io/projects/spring-security-oauth">Spring Security OAuth</a> project, which will eventually be superseded by Spring Security completely.
 Until then, you can use the <code>spring-security-oauth2-autoconfigure</code> module to easily set up an OAuth 2.0 authorization server; see its <a href="https://docs.spring.io/spring-security-oauth2-boot/">documentation</a> for instructions.</p>
@@ -4195,7 +4195,7 @@ In order to use Spring HATEOAS with Spring WebFlux, you can add a direct depende
 <h2 translation-origin="off"><a class="anchor" href="web.html#web.whats-next"></a>7. What to Read Next</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">你现在应该对如何使用 Spring Boot 开发 Web 应用程序有了很好的了解。接下来的几节描述 Spring Boot 如何与各种<a href="data.html#data">数据技术</a>、<a href="messaging.html#messaging">消息系统</a>和其他 IO 功能集成。你可以根据应用程序的需要选择其中的任何一个。</p>
+<p translation-result="on">你现在应该对如何使用 Spring Boot 开发 Web 应用程序有了很好的了解。接下来的几节描述 Spring Boot 如何与各种<a href="data.html#data">数据技术</a>、<a href="messaging.html#messaging">消息系统</a>和其他 IO 特性集成。你可以根据应用程序的需要选择其中的任何一个。</p>
 <p translation-origin="off">You should now have a good understanding of how to develop web applications with Spring Boot.
 The next few sections describe how Spring Boot integrates with various <a href="data.html#data">data technologies</a>, <a href="messaging.html#messaging">messaging systems</a>, and other IO capabilities.
 You can pick any of these based on your application’s needs.</p>

@@ -1107,7 +1107,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">大多数应用程序在某些时候需要处理输入和输出问题。Spring Boot 提供实用程序和与一系列技术的集成，以在你需要 IO 功能时提供帮助。本节涵盖标准 IO 功能（例如缓存和验证）以及更高级的主题（例如调度和分布式事务）。我们还将介绍调用远程 REST 或 SOAP 服务以及发送电子邮件。</p>
+<p translation-result="on">大多数应用程序在某些时候需要处理输入和输出问题。Spring Boot 提供实用程序和与一系列技术的集成，以在你需要 IO 特性时提供帮助。本节涵盖标准 IO 特性（例如缓存和验证）以及更高级的主题（例如调度和分布式事务）。我们还将介绍调用远程 REST 或 SOAP 服务以及发送电子邮件。</p>
 <p translation-origin="off">Most applications will need to deal with input and output concerns at some point.
 Spring Boot provides utilities and integrations with a range of technologies to help when you need IO capabilities.
 This section covers standard IO features such as caching and validation as well as more advanced topics such as scheduling and distributed transactions.
@@ -1182,7 +1182,7 @@ However, we strongly advise you to not mix and match the Spring Cache and JCache
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果不添加任何特定的缓存库，Spring Boot 会自动配置一个<a href="io.html#io.caching.provider.simple">简单的提供程序</a>，该提供程序在内存中使用并发映射。当需要缓存时（例如前面示例中的 <code>piDecimals</code> ），此提供程序会为你创建它。不建议将简单提供程序用于生产用途，但它非常适合入门并确保你了解这些功能。当你决定使用缓存提供程序时，请务必阅读其文档以了解如何配置应用程序使用的缓存。几乎所有提供程序都要求你显式配置你在应用程序中使用的每个缓存。有些提供了一种自定义 <code>spring.cache.cache-names</code> 属性定义的默认缓存的方法。</p>
+<p translation-result="on">如果不添加任何特定的缓存库，Spring Boot 会自动配置一个<a href="io.html#io.caching.provider.simple">简单的提供程序</a>，该提供程序在内存中使用并发映射。当需要缓存时（例如前面示例中的 <code>piDecimals</code> ），此提供程序会为你创建它。不建议将简单提供程序用于生产用途，但它非常适合入门并确保你了解这些特性。当你决定使用缓存提供程序时，请务必阅读其文档以了解如何配置应用程序使用的缓存。几乎所有提供程序都要求你显式配置你在应用程序中使用的每个缓存。有些提供了一种自定义 <code>spring.cache.cache-names</code> 属性定义的默认缓存的方法。</p>
 <p translation-origin="off">If you do not add any specific cache library, Spring Boot auto-configures a <a href="io.html#io.caching.provider.simple">simple provider</a> that uses concurrent maps in memory.
 When a cache is required (such as <code>piDecimals</code> in the preceding example), this provider creates it for you.
 The simple provider is not really recommended for production usage, but it is great for getting started and making sure that you understand the features.
@@ -1371,7 +1371,7 @@ spring:
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">当缓存库同时提供本机实现和 JSR-107 支持时，Spring Boot 更喜欢 JSR-107 支持，因此如果你切换到不同的 JSR-107 实现，则可以用相同的功能。</p>
+<p translation-result="on">当缓存库同时提供本机实现和 JSR-107 支持时，Spring Boot 更喜欢 JSR-107 支持，因此如果你切换到不同的 JSR-107 实现，则可以用相同的特性。</p>
 <p translation-origin="off">When a cache library offers both a native implementation and JSR-107 support, Spring Boot prefers the JSR-107 support, so that the same features are available if you switch to a different JSR-107 implementation.</p>
 </td>
 </tr>
@@ -2095,7 +2095,7 @@ spring.mail.properties[mail.smtp.writetimeout]=5000</code></pre>
 <h2 translation-origin="off"><a class="anchor" href="io.html#io.validation"></a>5. Validation</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">只要类路径上有 JSR-303 实现（例如 Hibernate 验证器），Bean Validation 1.1 支持的方法验证功能就会自动启用。这允许 bean 方法在其参数和/或返回值上使用 <code>javax.validation</code> 约束进行注解。具有此类注解方法的目标类需要在类型级别使用 <code>@Validated</code> 注解进行注解，以便在其方法中搜索内联约束注解。</p>
+<p translation-result="on">只要类路径上有 JSR-303 实现（例如 Hibernate 验证器），Bean Validation 1.1 支持的方法验证特性就会自动启用。这允许 bean 方法在其参数和/或返回值上使用 <code>javax.validation</code> 约束进行注解。具有此类注解方法的目标类需要在类型级别使用 <code>@Validated</code> 注解进行注解，以便在其方法中搜索内联约束注解。</p>
 <p translation-origin="off">The method validation feature supported by Bean Validation 1.1 is automatically enabled as long as a JSR-303 implementation (such as Hibernate validator) is on the classpath.
 This lets bean methods be annotated with <code>javax.validation</code> constraints on their parameters and/or on their return value.
 Target classes with such annotated methods need to be annotated with the <code>@Validated</code> annotation at the type level for their methods to be searched for inline constraint annotations.</p>
@@ -2295,7 +2295,7 @@ In addition to replacing the auto-configured builder, this also prevents any <co
 <h3 id="io.rest-client.webclient" translation-result="on"><a href="io.html#io.rest-client.webclient"></a>6.2. 网络客户端</h3>
 <h3 translation-origin="off"><a class="anchor" href="io.html#io.rest-client.webclient"></a>6.2. WebClient</h3>
 <div class="paragraph">
-<p translation-result="on">如果你的类路径上有 Spring WebFlux，你也可以选择使用 <code>WebClient</code> 来调用远程 REST 服务。与 <code>RestTemplate</code> 相比，这个客户端有更多的功能感觉并且是完全响应式的。你可以<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html#webflux-client">在 Spring Framework 文档的专用部分中</a>了解有关 <code>WebClient</code> 的更多信息。</p>
+<p translation-result="on">如果你的类路径上有 Spring WebFlux，你也可以选择使用 <code>WebClient</code> 来调用远程 REST 服务。与 <code>RestTemplate</code> 相比，这个客户端有更多的特性感觉并且是完全响应式的。你可以<a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html#webflux-client">在 Spring Framework 文档的专用部分中</a>了解有关 <code>WebClient</code> 的更多信息。</p>
 <p translation-origin="off">If you have Spring WebFlux on your classpath, you can also choose to use <code>WebClient</code> to call remote REST services.
 Compared to <code>RestTemplate</code>, this client has a more functional feel and is fully reactive.
 You can learn more about the <code>WebClient</code> in the dedicated <a href="https://docs.spring.io/spring-framework/docs/5.3.15/reference/html/web-reactive.html#webflux-client">section in the Spring Framework docs</a>.</p>
@@ -2623,7 +2623,7 @@ DataSource and JMS auto-configuration use JTA variants, provided you have a <cod
 <p translation-origin="off">You should now have a good understanding of Spring Boot’s <a href="features.html#features">core features</a> and the various technologies that Spring Boot provides support for via auto-configuration.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">接下来的几节将详细介绍如何将应用程序部署到云平台。你可以在下一节中阅读有关<a href="container-images.html#container-images">构建容器映像</a>的内容或跳到<a href="actuator.html#actuator">生产就绪功能</a>部分。</p>
+<p translation-result="on">接下来的几节将详细介绍如何将应用程序部署到云平台。你可以在下一节中阅读有关<a href="container-images.html#container-images">构建容器映像</a>的内容或跳到<a href="actuator.html#actuator">生产就绪特性</a>部分。</p>
 <p translation-origin="off">The next few sections go into detail about deploying applications to cloud platforms.
 You can read about <a href="container-images.html#container-images">building container images</a> in the next section or skip to the <a href="actuator.html#actuator">production-ready features</a> section.</p>
 </div>

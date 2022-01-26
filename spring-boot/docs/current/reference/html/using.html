@@ -1528,7 +1528,7 @@ For example, a third-party starter project called <code>thirdpartyproject</code>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><code>spring-boot-starter-oauth2-client</code></p><p class="tableblock" translation-origin="off"><a id="spring-boot-starter-oauth2-client"></a><code>spring-boot-starter-oauth2-client</code></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">使用 Spring Security 的 OAuth2/OpenID Connect 客户端功能的入门者</p><p class="tableblock" translation-origin="off">Starter for using Spring Security’s OAuth2/OpenID Connect client features</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">使用 Spring Security 的 OAuth2/OpenID Connect 客户端特性的入门者</p><p class="tableblock" translation-origin="off">Starter for using Spring Security’s OAuth2/OpenID Connect client features</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><code>spring-boot-starter-oauth2-resource-server</code></p><p class="tableblock" translation-origin="off"><a id="spring-boot-starter-oauth2-resource-server"></a><code>spring-boot-starter-oauth2-resource-server</code></p></td>
@@ -1577,7 +1577,7 @@ For example, a third-party starter project called <code>thirdpartyproject</code>
 </tbody>
 </table>
 <div class="paragraph">
-<p translation-result="on">除了应用程序启动器之外，以下启动器可用于添加<em><a href="actuator.html#actuator">生产就绪</a></em>功能：</p>
+<p translation-result="on">除了应用程序启动器之外，以下启动器可用于添加<em><a href="actuator.html#actuator">生产就绪</a></em>特性：</p>
 <p translation-origin="off">In addition to the application starters, the following starters can be used to add <em><a href="actuator.html#actuator">production ready</a></em> features:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
@@ -2011,7 +2011,7 @@ public class MyAccountService implements AccountService {
 <h2 translation-origin="off"><a class="anchor" href="using.html#using.using-the-springbootapplication-annotation"></a>6. Using the @SpringBootApplication Annotation</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">许多 Spring Boot 开发人员喜欢他们的应用程序使用自动配置、组件扫描并能够在他们的“应用程序类”上定义额外的配置。单个 <code>@SpringBootApplication</code> 注解可用于启用这三个功能，即：</p>
+<p translation-result="on">许多 Spring Boot 开发人员喜欢他们的应用程序使用自动配置、组件扫描并能够在他们的“应用程序类”上定义额外的配置。单个 <code>@SpringBootApplication</code> 注解可用于启用这三个特性，即：</p>
 <p translation-origin="off">Many Spring Boot developers like their apps to use auto-configuration, component scan and be able to define extra configuration on their "application class".
 A single <code>@SpringBootApplication</code> annotation can be used to enable those three features, that is:</p>
 </div>
@@ -2070,7 +2070,7 @@ public class MyApplication {
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">这些功能都不是强制性的，你可以选择将此单个注解替换为它启用的任何功能。例如，你可能不想在应用程序中使用组件扫描或配置属性扫描：</p>
+<p translation-result="on">这些特性都不是强制性的，你可以选择将此单个注解替换为它启用的任何特性。例如，你可能不想在应用程序中使用组件扫描或配置属性扫描：</p>
 <p translation-origin="off">None of these features are mandatory and you may choose to replace this single annotation by any of the features that it enables.
 For instance, you may not want to use component scan or configuration properties scan in your application:</p>
 </div>
@@ -2316,7 +2316,7 @@ To disable devtools, exclude the dependency or set the <code>-Dspring.devtools.r
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">默认情况下，重新打包的存档不包含 devtools。如果你想使用<a href="using.html#using.devtools.remote-applications">某个远程 devtools 功能</a>，你需要包含它。使用 Maven 插件时，将 <code>excludeDevtools</code> 属性设置为 <code>false</code> 。使用 Gradle 插件时，<a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/reference/htmlsingle/#packaging-executable-configuring-including-development-only-dependencies">配置任务的类路径以包含 <code>developmentOnly</code> 配置</a>。</p>
+<p translation-result="on">默认情况下，重新打包的存档不包含 devtools。如果你想使用<a href="using.html#using.devtools.remote-applications">某个远程 devtools 特性</a>，你需要包含它。使用 Maven 插件时，将 <code>excludeDevtools</code> 属性设置为 <code>false</code> 。使用 Gradle 插件时，<a href="https://docs.spring.io/spring-boot/docs/2.6.3/gradle-plugin/reference/htmlsingle/#packaging-executable-configuring-including-development-only-dependencies">配置任务的类路径以包含 <code>developmentOnly</code> 配置</a>。</p>
 <p translation-origin="off">Repackaged archives do not contain devtools by default.
 If you want to use a <a href="using.html#using.devtools.remote-applications">certain remote devtools feature</a>, you need to include it.
 When using the Maven plugin, set the <code>excludeDevtools</code> property to <code>false</code>.
@@ -2382,7 +2382,7 @@ If you wish to log all request details (including potentially sensitive informat
 <h3 id="using.devtools.restart" translation-result="on"><a href="using.html#using.devtools.restart"></a>8.2. 自动重启</h3>
 <h3 translation-origin="off"><a class="anchor" href="using.html#using.devtools.restart"></a>8.2. Automatic Restart</h3>
 <div class="paragraph">
-<p translation-result="on">每当类路径上的文件更改时，使用 <code>spring-boot-devtools</code> 应用程序会自动重新启动。在 IDE 中工作时，这可能是一个有用的功能，因为它为代码更改提供了一个非常快速的反馈循环。默认情况下，类路径上指向目录的任何条目都会被监视更改。请注意，某些资源，例如静态资产和视图模板，<a href="using.html#using.devtools.restart.excluding-resources">不需要重新启动应用程序</a>。</p>
+<p translation-result="on">每当类路径上的文件更改时，使用 <code>spring-boot-devtools</code> 应用程序会自动重新启动。在 IDE 中工作时，这可能是一个有用的特性，因为它为代码更改提供了一个非常快速的反馈循环。默认情况下，类路径上指向目录的任何条目都会被监视更改。请注意，某些资源，例如静态资产和视图模板，<a href="using.html#using.devtools.restart.excluding-resources">不需要重新启动应用程序</a>。</p>
 <p translation-origin="off">Applications that use <code>spring-boot-devtools</code> automatically restart whenever files on the classpath change.
 This can be a useful feature when working in an IDE, as it gives a very fast feedback loop for code changes.
 By default, any entry on the classpath that points to a directory is monitored for changes.
@@ -2435,7 +2435,7 @@ If you disable forking, the isolated application classloader used by devtools wi
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">与 LiveReload 一起使用时，自动重启效果很好。有关详细信息，<a href="using.html#using.devtools.livereload">请参阅 LiveReload 部分</a>。如果你使用 JRebel，则会禁用自动重新启动以支持动态类重新加载。其他 devtools 功能（例如 LiveReload 和属性覆盖）仍然可以用。</p>
+<p translation-result="on">与 LiveReload 一起使用时，自动重启效果很好。有关详细信息，<a href="using.html#using.devtools.livereload">请参阅 LiveReload 部分</a>。如果你使用 JRebel，则会禁用自动重新启动以支持动态类重新加载。其他 devtools 特性（例如 LiveReload 和属性覆盖）仍然可以用。</p>
 <p translation-origin="off">Automatic restart works very well when used with LiveReload.
 <a href="using.html#using.devtools.livereload">See the LiveReload section</a> for details.
 If you use JRebel, automatic restarts are disabled in favor of dynamic class reloading.
@@ -2588,7 +2588,7 @@ You can use the <code>spring.devtools.restart.exclude</code> property <a href="u
 <h4 id="using.devtools.restart.disable" translation-result="on"><a href="using.html#using.devtools.restart.disable"></a>8.2.4. 禁用重启</h4>
 <h4 translation-origin="off"><a class="anchor" href="using.html#using.devtools.restart.disable"></a>8.2.4. Disabling Restart</h4>
 <div class="paragraph">
-<p translation-result="on">如果你不想使用重启功能，可以用 <code>spring.devtools.restart.enabled</code> 属性禁用它。在大多数情况下，你可以在 <code>application.properties</code> 中设置此属性（这样做仍会初始化重新启动类加载器，但它不会监视文件更改）。</p>
+<p translation-result="on">如果你不想使用重启特性，可以用 <code>spring.devtools.restart.enabled</code> 属性禁用它。在大多数情况下，你可以在 <code>application.properties</code> 中设置此属性（这样做仍会初始化重新启动类加载器，但它不会监视文件更改）。</p>
 <p translation-origin="off">If you do not want to use the restart feature, you can disable it by using the <code>spring.devtools.restart.enabled</code> property.
 In most cases, you can set this property in your <code>application.properties</code> (doing so still initializes the restart classloader, but it does not watch for file changes).</p>
 </div>
@@ -2690,7 +2690,7 @@ The trigger file must appear somewhere on your classpath.</p>
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">某些 IDE 具有使你无需手动更新触发器文件的功能。<a href="https://spring.io/tools">Spring Tools for Eclipse</a> 和 <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA（终极版）</a>都有这样的支持。使用 Spring Tools，你可以用控制台视图中的“重新加载”按钮（只要你的 <code>trigger-file</code> 名为 <code>.reloadtrigger</code> ）。对于 IntelliJ IDEA，你可以按照<a href="https://www.jetbrains.com/help/idea/spring-boot.html#application-update-policies">其文档中的说明进行操作</a>。</p>
+<p translation-result="on">某些 IDE 具有使你无需手动更新触发器文件的特性。<a href="https://spring.io/tools">Spring Tools for Eclipse</a> 和 <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA（终极版）</a>都有这样的支持。使用 Spring Tools，你可以用控制台视图中的“重新加载”按钮（只要你的 <code>trigger-file</code> 名为 <code>.reloadtrigger</code> ）。对于 IntelliJ IDEA，你可以按照<a href="https://www.jetbrains.com/help/idea/spring-boot.html#application-update-policies">其文档中的说明进行操作</a>。</p>
 <p translation-origin="off">Some IDEs have features that save you from needing to update your trigger file manually.
 <a href="https://spring.io/tools">Spring Tools for Eclipse</a> and <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA (Ultimate Edition)</a> both have such support.
 With Spring Tools, you can use the “reload” button from the console view (as long as your <code>trigger-file</code> is named <code>.reloadtrigger</code>).
@@ -2701,7 +2701,7 @@ For IntelliJ IDEA, you can follow the <a href="https://www.jetbrains.com/help/id
 <h4 id="using.devtools.restart.customizing-the-classload" translation-result="on"><a href="using.html#using.devtools.restart.customizing-the-classload"></a>8.2.6. 自定义重启类加载器</h4>
 <h4 translation-origin="off"><a class="anchor" href="using.html#using.devtools.restart.customizing-the-classload"></a>8.2.6. Customizing the Restart Classloader</h4>
 <div class="paragraph">
-<p translation-result="on">正如前面在 <a href="using.html#using.devtools.restart.restart-vs-reload">Restart vs Reload</a> 部分中所描述的，重启功能是通过使用两个类加载器来实现的。对于大多数应用程序，这种方法效果很好。但是，它有时会导致类加载问题。</p>
+<p translation-result="on">正如前面在 <a href="using.html#using.devtools.restart.restart-vs-reload">Restart vs Reload</a> 部分中所描述的，重启特性是通过使用两个类加载器来实现的。对于大多数应用程序，这种方法效果很好。但是，它有时会导致类加载问题。</p>
 <p translation-origin="off">As described earlier in the <a href="using.html#using.devtools.restart.restart-vs-reload">Restart vs Reload</a> section, restart functionality is implemented by using two classloaders.
 For most applications, this approach works well.
 However, it can sometimes cause classloading issues.</p>
@@ -2769,7 +2769,7 @@ You can package files inside your project, or in the libraries that the project 
 <h4 id="using.devtools.restart.limitations" translation-result="on"><a href="using.html#using.devtools.restart.limitations"></a>8.2.7. 已知限制</h4>
 <h4 translation-origin="off"><a class="anchor" href="using.html#using.devtools.restart.limitations"></a>8.2.7. Known Limitations</h4>
 <div class="paragraph">
-<p translation-result="on">重新启动功能不适用于使用标准 <code>ObjectInputStream</code> 反序列化的对象。如果需要反序列化数据，可能需要结合使用 Spring 的 <code>ConfigurableObjectInputStream</code> 和 <code>Thread.currentThread().getContextClassLoader()</code> 。</p>
+<p translation-result="on">重新启动特性不适用于使用标准 <code>ObjectInputStream</code> 反序列化的对象。如果需要反序列化数据，可能需要结合使用 Spring 的 <code>ConfigurableObjectInputStream</code> 和 <code>Thread.currentThread().getContextClassLoader()</code> 。</p>
 <p translation-origin="off">Restart functionality does not work well with objects that are deserialized by using a standard <code>ObjectInputStream</code>.
 If you need to deserialize data, you may need to use Spring’s <code>ConfigurableObjectInputStream</code> in combination with <code>Thread.currentThread().getContextClassLoader()</code>.</p>
 </div>
@@ -2938,7 +2938,7 @@ spring.devtools.restart.quiet-period=1s</code></pre>
 <h3 id="using.devtools.remote-applications" translation-result="on"><a href="using.html#using.devtools.remote-applications"></a>8.5. 远程应用程序</h3>
 <h3 translation-origin="off"><a class="anchor" href="using.html#using.devtools.remote-applications"></a>8.5. Remote Applications</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 开发者工具不仅限于本地开发。你还可以在远程运行应用程序时使用多种功能。远程支持是可选的，因为启用它可能会带来安全风险。只有在受信任的网络上运行或使用 SSL 保护时才应启用它。如果你无法使用这些选项，则不应使用 DevTools 的远程支持。你永远不应该在生产部署中启用支持。</p>
+<p translation-result="on">Spring Boot 开发者工具不仅限于本地开发。你还可以在远程运行应用程序时使用多种特性。远程支持是可选的，因为启用它可能会带来安全风险。只有在受信任的网络上运行或使用 SSL 保护时才应启用它。如果你无法使用这些选项，则不应使用 DevTools 的远程支持。你永远不应该在生产部署中启用支持。</p>
 <p translation-origin="off">The Spring Boot developer tools are not limited to local development.
 You can also use several features when running applications remotely.
 Remote support is opt-in as enabling it can be a security risk.
@@ -3092,7 +3092,7 @@ This is how the <code>spring.devtools.remote.secret</code> property is read and 
 <h4 id="using.devtools.remote-applications.update" translation-result="on"><a href="using.html#using.devtools.remote-applications.update"></a>8.5.2. 远程更新</h4>
 <h4 translation-origin="off"><a class="anchor" href="using.html#using.devtools.remote-applications.update"></a>8.5.2. Remote Update</h4>
 <div class="paragraph">
-<p translation-result="on">远程客户端以与<a href="using.html#using.devtools.restart">本地重新启动</a>相同的方式监视你的应用程序类路径的更改。任何更新的资源都会被推送到远程应用程序并（<em>如果需要</em>）触发重新启动。如果你迭代使用本地没有的云服务的功能，这会很有帮助。通常，远程更新和重新启动比完整的重建和部署周期快得多。</p>
+<p translation-result="on">远程客户端以与<a href="using.html#using.devtools.restart">本地重新启动</a>相同的方式监视你的应用程序类路径的更改。任何更新的资源都会被推送到远程应用程序并（<em>如果需要</em>）触发重新启动。如果你迭代使用本地没有的云服务的特性，这会很有帮助。通常，远程更新和重新启动比完整的重建和部署周期快得多。</p>
 <p translation-origin="off">The remote client monitors your application classpath for changes in the same way as the <a href="using.html#using.devtools.restart">local restart</a>.
 Any updated resource is pushed to the remote application and (<em>if required</em>) triggers a restart.
 This can be helpful if you iterate on a feature that uses a cloud service that you do not have locally.
@@ -3139,7 +3139,7 @@ If you change a file before starting the remote client, it is not pushed to the 
 As they are self-contained, they are also ideally suited for cloud-based deployment.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">对于其他“生产就绪”功能，例如运行状况、审计和度量 REST 或 JMX 端点，请考虑添加 <code>spring-boot-actuator</code> 。有关详细信息，请参见<em><a href="actuator.html#actuator">actuator.html</a></em> 。</p>
+<p translation-result="on">对于其他“生产就绪”特性，例如运行状况、审计和度量 REST 或 JMX 端点，请考虑添加 <code>spring-boot-actuator</code> 。有关详细信息，请参见<em><a href="actuator.html#actuator">actuator.html</a></em> 。</p>
 <p translation-origin="off">For additional “production ready” features, such as health, auditing, and metric REST or JMX end-points, consider adding <code>spring-boot-actuator</code>.
 See <em><a href="actuator.html#actuator">actuator.html</a></em> for details.</p>
 </div>
@@ -3150,7 +3150,7 @@ See <em><a href="actuator.html#actuator">actuator.html</a></em> for details.</p>
 <h2 translation-origin="off"><a class="anchor" href="using.html#using.whats-next"></a>10. What to Read Next</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">你现在应该了解如何使用 Spring Boot 以及应该遵循的一些最佳实践。你现在可以继续深入了解特定的<em><a href="features.html#features">Spring Boot 功能</a></em>，或者你可以跳过并阅读有关 Spring Boot 的“<a href="actuator.html#actuator">生产就绪</a>”方面的内容。</p>
+<p translation-result="on">你现在应该了解如何使用 Spring Boot 以及应该遵循的一些最佳实践。你现在可以继续深入了解特定的<em><a href="features.html#features">Spring Boot 特性</a></em>，或者你可以跳过并阅读有关 Spring Boot 的“<a href="actuator.html#actuator">生产就绪</a>”方面的内容。</p>
 <p translation-origin="off">You should now understand how you can use Spring Boot and some best practices that you should follow.
 You can now go on to learn about specific <em><a href="features.html#features">Spring Boot features</a></em> in depth, or you could skip ahead and read about the “<a href="actuator.html#actuator">production ready</a>” aspects of Spring Boot.</p>
 </div>

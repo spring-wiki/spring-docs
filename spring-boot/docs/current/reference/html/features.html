@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.12">
-<title>核心功能</title>
+<title>核心特性</title>
 <link rel="stylesheet" href="css/site.css">
 <script src="js/setup.js"></script><script defer="" src="js/site.js"></script>
 <script type="application/json" id="anchor-rewrite">
@@ -962,7 +962,7 @@
 <div id="main" class="contained">
 <div id="doc" class="doc">
 <div id="header">
-<h1 translation-result="on">核心功能</h1>
+<h1 translation-result="on">核心特性</h1>
 <h1 translation-origin="off">Core Features</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">目录</div>
@@ -1029,7 +1029,7 @@
   <p translation-origin="off"><a href="features.html#features.spring-application.application-exit">1.11. Application Exit</a></p>
 </li>
 <li>
-  <p translation-result="on"><a href="features.html#features.spring-application.admin">1.12. 管理员功能</a></p>
+  <p translation-result="on"><a href="features.html#features.spring-application.admin">1.12. 管理员特性</a></p>
   <p translation-origin="off"><a href="features.html#features.spring-application.admin">1.12. Admin Features</a></p>
 </li>
 <li>
@@ -1619,7 +1619,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p translation-result="on">本节深入探讨 Spring Boot 的细节。在这里，你可以了解你可能想要使用和自定义的主要功能。如果你还没有这样做，你可能需要阅读“ <a href="getting-started.html#getting-started">getting-started.html</a> ”和“ <a href="using.html#using">using.html</a> ”部分，这样你就有了良好的基础知识。</p>
+<p translation-result="on">本节深入探讨 Spring Boot 的细节。在这里，你可以了解你可能想要使用和自定义的主要特性。如果你还没有这样做，你可能需要阅读“ <a href="getting-started.html#getting-started">getting-started.html</a> ”和“ <a href="using.html#using">using.html</a> ”部分，这样你就有了良好的基础知识。</p>
 <p translation-origin="off">This section dives into the details of Spring Boot.
 Here you can learn about the key features that you may want to use and customize.
 If you have not already done so, you might want to read the "<a href="getting-started.html#getting-started">getting-started.html</a>" and "<a href="using.html#using">using.html</a>" sections, so that you have a good grounding of the basics.</p>
@@ -2462,10 +2462,10 @@ When such an exception is encountered, Spring Boot returns the exit code provide
 </div>
 </div>
 <div class="sect2">
-<h3 id="features.spring-application.admin" translation-result="on"><a href="features.html#features.spring-application.admin"></a>1.12. 管理员功能</h3>
+<h3 id="features.spring-application.admin" translation-result="on"><a href="features.html#features.spring-application.admin"></a>1.12. 管理员特性</h3>
 <h3 translation-origin="off"><a class="anchor" href="features.html#features.spring-application.admin"></a>1.12. Admin Features</h3>
 <div class="paragraph">
-<p translation-result="on">可以通过指定 <code>spring.application.admin.enabled</code> 属性为应用程序启用与管理相关的功能。这会在平台 <code>MBeanServer</code> 上公开<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/admin/SpringApplicationAdminMXBean.java"><code>SpringApplicationAdminMXBean</code></a> 。你可以用此功能远程管理你的 Spring Boot 应用程序。此功能也可用于任何服务包装器实现。</p>
+<p translation-result="on">可以通过指定 <code>spring.application.admin.enabled</code> 属性为应用程序启用与管理相关的特性。这会在平台 <code>MBeanServer</code> 上公开<a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/admin/SpringApplicationAdminMXBean.java"><code>SpringApplicationAdminMXBean</code></a> 。你可以用此特性远程管理你的 Spring Boot 应用程序。此特性也可用于任何服务包装器实现。</p>
 <p translation-origin="off">It is possible to enable admin-related features for the application by specifying the <code>spring.application.admin.enabled</code> property.
 This exposes the <a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/admin/SpringApplicationAdminMXBean.java"><code>SpringApplicationAdminMXBean</code></a> on the platform <code>MBeanServer</code>.
 You could use this feature to administer your Spring Boot application remotely.
@@ -2695,7 +2695,7 @@ For one-off testing, you can launch with a specific command line switch (for exa
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on"><code>env</code> 和 <code>configprops</code> 端点可用于确定属性为何具有特定值。你可以用这两个端点来诊断意外的属性值。有关详细信息，请参阅“<a href="actuator.html#actuator.endpoints">生产就绪功能</a>”部分。</p>
+<p translation-result="on"><code>env</code> 和 <code>configprops</code> 端点可用于确定属性为何具有特定值。你可以用这两个端点来诊断意外的属性值。有关详细信息，请参阅“<a href="actuator.html#actuator.endpoints">生产就绪特性</a>”部分。</p>
 <p translation-origin="off">The <code>env</code> and <code>configprops</code> endpoints can be useful in determining why a property has a particular value.
 You can use these two endpoints to diagnose unexpected property values.
 See the "<a href="actuator.html#actuator.endpoints">Production ready features</a>" section for details.</p>
@@ -4367,7 +4367,7 @@ public class MyService {
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">使用 <code>@ConfigurationProperties</code> 还可以让你生成元数据文件，IDE 可以用这些文件为你自己的密钥提供自动完成功能。详情见<a href="configuration-metadata.html#configuration-metadata">附录</a>。</p>
+<p translation-result="on">使用 <code>@ConfigurationProperties</code> 还可以让你生成元数据文件，IDE 可以用这些文件为你自己的密钥提供自动完成特性。详情见<a href="configuration-metadata.html#configuration-metadata">附录</a>。</p>
 <p translation-origin="off">Using <code>@ConfigurationProperties</code> also lets you generate metadata files that can be used by IDEs to offer auto-completion for your own keys.
 See the <a href="configuration-metadata.html#configuration-metadata">appendix</a> for details.</p>
 </td>
@@ -5397,7 +5397,7 @@ Doing so avoids any problems that may be caused by early instantiation.</p>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on"><code>spring-boot-actuator</code> 模块包括一个暴露所有 <code>@ConfigurationProperties</code> bean 的端点。将你的 Web 浏览器指向 <code>/actuator/configprops</code> 或使用等效的 JMX 端点。有关详细信息，请参阅“<a href="actuator.html#actuator.endpoints">生产就绪功能</a>”部分。</p>
+<p translation-result="on"><code>spring-boot-actuator</code> 模块包括一个暴露所有 <code>@ConfigurationProperties</code> bean 的端点。将你的 Web 浏览器指向 <code>/actuator/configprops</code> 或使用等效的 JMX 端点。有关详细信息，请参阅“<a href="actuator.html#actuator.endpoints">生产就绪特性</a>”部分。</p>
 <p translation-origin="off">The <code>spring-boot-actuator</code> module includes an endpoint that exposes all <code>@ConfigurationProperties</code> beans.
 Point your web browser to <code>/actuator/configprops</code> or use the equivalent JMX endpoint.
 See the "<a href="actuator.html#actuator.endpoints">Production ready features</a>" section for details.</p>
@@ -5410,7 +5410,7 @@ See the "<a href="actuator.html#actuator.endpoints">Production ready features</a
 <h4 id="features.external-config.typesafe-configuration-properties.vs-value-annotation" translation-result="on"><a href="features.html#features.external-config.typesafe-configuration-properties.vs-value-annotation"></a> 2.8.10.  @ConfigurationProperties 与 @Value</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.external-config.typesafe-configuration-properties.vs-value-annotation"></a>2.8.10. @ConfigurationProperties vs. @Value</h4>
 <div class="paragraph">
-<p translation-result="on"><code>@Value</code> 注解是一个核心容器特性，它不提供与类型安全配置属性相同的特性。下表总结了 <code>@ConfigurationProperties</code> 和 <code>@Value</code> 支持的功能：</p>
+<p translation-result="on"><code>@Value</code> 注解是一个核心容器特性，它不提供与类型安全配置属性相同的特性。下表总结了 <code>@ConfigurationProperties</code> 和 <code>@Value</code> 支持的特性：</p>
 <p translation-origin="off">The <code>@Value</code> annotation is a core container feature, and it does not provide the same features as type-safe configuration properties.
 The following table summarizes the features that are supported by <code>@ConfigurationProperties</code> and <code>@Value</code>:</p>
 </div>
@@ -5586,7 +5586,7 @@ Profile groups, which are described in the <a href="features.html#features.profi
 <h3 id="features.profiles.groups" translation-result="on"><a href="features.html#features.profiles.groups"></a>3.2. 配置文件组</h3>
 <h3 translation-origin="off"><a class="anchor" href="features.html#features.profiles.groups"></a>3.2. Profile Groups</h3>
 <div class="paragraph">
-<p translation-result="on">有时，你在应用程序中定义和使用的配置文件过于细化，使用起来很麻烦。例如，你可能拥有用于独立启用数据库和消息传递功能的 <code>proddb</code> 和 <code>prodmq</code> 配置文件。</p>
+<p translation-result="on">有时，你在应用程序中定义和使用的配置文件过于细化，使用起来很麻烦。例如，你可能拥有用于独立启用数据库和消息传递特性的 <code>proddb</code> 和 <code>prodmq</code> 配置文件。</p>
 <p translation-origin="off">Occasionally the profiles that you define and use in your application are too fine-grained and become cumbersome to use.
 For example, you might have <code>proddb</code> and <code>prodmq</code> profiles that you use to enable database and messaging features independently.</p>
 </div>
@@ -6932,14 +6932,14 @@ You can declare a dependency directly to <code>org.springframework:spring-test</
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">仅当你使用 <code>SpringApplication</code> 创建时，Spring Boot 的外部属性、日志记录和其他功能才会默认安装在上下文中。</p>
+<p translation-result="on">仅当你使用 <code>SpringApplication</code> 创建时，Spring Boot 的外部属性、日志记录和其他特性才会默认安装在上下文中。</p>
 <p translation-origin="off">External properties, logging, and other features of Spring Boot are installed in the context by default only if you use <code>SpringApplication</code> to create it.</p>
 </td>
 </tr>
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 提供了一个 <code>@SpringBootTest</code> 注解，当你需要 Spring Boot 功能时，可以将其用作标准 <code>spring-test</code> <code>@ContextConfiguration</code> 注解的替代品。注解<a href="features.html#features.testing.spring-boot-applications.detecting-configuration">通过 <code>SpringApplication</code> 创建测试中使用的 <code>ApplicationContext</code> 来工作</a>。除了 <code>@SpringBootTest</code> 之外，还提供了许多其他注解来<a href="features.html#features.testing.spring-boot-applications.autoconfigured-tests">测试应用程序的更具体的切片</a>。</p>
+<p translation-result="on">Spring Boot 提供了一个 <code>@SpringBootTest</code> 注解，当你需要 Spring Boot 特性时，可以将其用作标准 <code>spring-test</code> <code>@ContextConfiguration</code> 注解的替代品。注解<a href="features.html#features.testing.spring-boot-applications.detecting-configuration">通过 <code>SpringApplication</code> 创建测试中使用的 <code>ApplicationContext</code> 来工作</a>。除了 <code>@SpringBootTest</code> 之外，还提供了许多其他注解来<a href="features.html#features.testing.spring-boot-applications.autoconfigured-tests">测试应用程序的更具体的切片</a>。</p>
 <p translation-origin="off">Spring Boot provides a <code>@SpringBootTest</code> annotation, which can be used as an alternative to the standard <code>spring-test</code> <code>@ContextConfiguration</code> annotation when you need Spring Boot features.
 The annotation works by <a href="features.html#features.testing.spring-boot-applications.detecting-configuration">creating the <code>ApplicationContext</code> used in your tests through <code>SpringApplication</code></a>.
 In addition to <code>@SpringBootTest</code> a number of other annotations are also provided for <a href="features.html#features.testing.spring-boot-applications.autoconfigured-tests">testing more specific slices</a> of an application.</p>
@@ -7465,7 +7465,7 @@ Mock beans are automatically reset after each test method.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p translation-result="on">如果你的测试使用 Spring Boot 的测试注解之一（例如 <code>@SpringBootTest</code> ），则会自动启用此功能。要以不同的排列方式使用此功能，必须显式添加侦听器，如以下示例所示：</p>
+<p translation-result="on">如果你的测试使用 Spring Boot 的测试注解之一（例如 <code>@SpringBootTest</code> ），则会自动启用此特性。要以不同的排列方式使用此特性，必须显式添加侦听器，如以下示例所示：</p>
 <p translation-origin="off">If your test uses one of Spring Boot’s test annotations (such as <code>@SpringBootTest</code>), this feature is automatically enabled.
 To use this feature with a different arrangement, listeners must be explicitly added, as shown in the following example:</p>
 </div>
@@ -8083,7 +8083,7 @@ class MyControllerTests {
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on"><code>@WebFluxTest</code> 无法检测通过功能 Web 框架注册的路由。要在上下文中测试 <code>RouterFunction</code> bean，请考虑使用 <code>@Import</code> 或使用 <code>RouterFunction</code> 自己导入 <code>@SpringBootTest</code> 。</p>
+<p translation-result="on"><code>@WebFluxTest</code> 无法检测通过特性 Web 框架注册的路由。要在上下文中测试 <code>RouterFunction</code> bean，请考虑使用 <code>@Import</code> 或使用 <code>RouterFunction</code> 自己导入 <code>@SpringBootTest</code> 。</p>
 <p translation-origin="off"><code>@WebFluxTest</code> cannot detect routes registered through the functional web framework.
 For testing <code>RouterFunction</code> beans in the context, consider importing your <code>RouterFunction</code> yourself by using <code>@Import</code> or by using <code>@SpringBootTest</code>.</p>
 </td>
@@ -9193,7 +9193,7 @@ class MyJdbcTests {
 <p translation-origin="off">If you <a href="using.html#using.structuring-your-code">structure your code</a> in a sensible way, your <code>@SpringBootApplication</code> class is <a href="features.html#features.testing.spring-boot-applications.detecting-configuration">used by default</a> as the configuration of your tests.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">然后，重要的是不要在应用程序的主类中乱扔特定于其功能特定区域的配置设置。</p>
+<p translation-result="on">然后，重要的是不要在应用程序的主类中乱扔特定于其特性特定区域的配置设置。</p>
 <p translation-origin="off">It then becomes important not to litter the application’s main class with configuration settings that are specific to a particular area of its functionality.</p>
 </div>
 <div class="paragraph">
@@ -9358,7 +9358,7 @@ See <a href="https://spockframework.org/spock/docs/2.0/modules.html#_spring_modu
 <h4 id="features.testing.utilities.config-data-application-context-initializer" translation-result="on"><a href="features.html#features.testing.utilities.config-data-application-context-initializer"></a> 8.4.1. ConfigDataApplicationContextInitializer</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.testing.utilities.config-data-application-context-initializer"></a>8.4.1. ConfigDataApplicationContextInitializer</h4>
 <div class="paragraph">
-<p translation-result="on"><code>ConfigDataApplicationContextInitializer</code> 是一个 <code>ApplicationContextInitializer</code> ，你可以将其应用于测试以加载 Spring Boot <code>application.properties</code> 文件。当你不需要 <code>@SpringBootTest</code> 提供的全套功能时，可以用它，如下例所示：</p>
+<p translation-result="on"><code>ConfigDataApplicationContextInitializer</code> 是一个 <code>ApplicationContextInitializer</code> ，你可以将其应用于测试以加载 Spring Boot <code>application.properties</code> 文件。当你不需要 <code>@SpringBootTest</code> 提供的全套特性时，可以用它，如下例所示：</p>
 <p translation-origin="off"><code>ConfigDataApplicationContextInitializer</code> is an <code>ApplicationContextInitializer</code> that you can apply to your tests to load Spring Boot <code>application.properties</code> files.
 You can use it when you do not need the full set of features provided by <code>@SpringBootTest</code>, as shown in the following example:</p>
 </div>
@@ -9481,7 +9481,7 @@ It provides a fluent API for assertions, unlike <code>TestRestTemplate</code>.</
 </tbody></table>
 </div>
 <div class="paragraph">
-<p translation-result="on">建议使用 Apache HTTP 客户端（版本 4.3.2 或更高版本），但不是强制性的。如果你的类路径中有它，<code>TestRestTemplate</code> 通过适当地配置客户端来响应。如果你确实使用 Apache 的 HTTP 客户端，则会启用一些额外的测试友好功能：</p>
+<p translation-result="on">建议使用 Apache HTTP 客户端（版本 4.3.2 或更高版本），但不是强制性的。如果你的类路径中有它，<code>TestRestTemplate</code> 通过适当地配置客户端来响应。如果你确实使用 Apache 的 HTTP 客户端，则会启用一些额外的测试友好特性：</p>
 <p translation-origin="off">It is recommended, but not mandatory, to use the Apache HTTP Client (version 4.3.2 or better).
 If you have that on your classpath, the <code>TestRestTemplate</code> responds by configuring the client appropriately.
 If you do use Apache’s HTTP client, some additional test-friendly features are enabled:</p>
@@ -10056,14 +10056,14 @@ In a nutshell, adding the starter should provide everything needed to start usin
 </ul>
 </div>
 <div class="paragraph">
-<p translation-result="on">两个模块中的这种分离绝不是必要的。如果“acme”有多种风格、选项或可选功能，那么最好将自动配置分开，因为你可以清楚地表达某些功能是可选的事实。此外，你还可以制作一个启动器来提供有关这些可选依赖项的意见。同时，其他人只能依靠 <code>autoconfigure</code> 模块，制作自己的不同意见的启动器。</p>
+<p translation-result="on">两个模块中的这种分离绝不是必要的。如果“acme”有多种风格、选项或可选特性，那么最好将自动配置分开，因为你可以清楚地表达某些特性是可选的事实。此外，你还可以制作一个启动器来提供有关这些可选依赖项的意见。同时，其他人只能依靠 <code>autoconfigure</code> 模块，制作自己的不同意见的启动器。</p>
 <p translation-origin="off">This separation in two modules is in no way necessary.
 If "acme" has several flavors, options or optional features, then it is better to separate the auto-configuration as you can clearly express the fact some features are optional.
 Besides, you have the ability to craft a starter that provides an opinion about those optional dependencies.
 At the same time, others can rely only on the <code>autoconfigure</code> module and craft their own starter with different opinions.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果自动配置相对简单并且没有可选功能，那么在启动器中合并两个模块绝对是一种选择。</p>
+<p translation-result="on">如果自动配置相对简单并且没有可选特性，那么在启动器中合并两个模块绝对是一种选择。</p>
 <p translation-origin="off">If the auto-configuration is relatively straightforward and does not have optional feature, merging the two modules in the starter is definitely an option.</p>
 </div>
 <div class="sect3">
@@ -10294,7 +10294,7 @@ In other words, you should not include optional dependencies.</p>
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">无论哪种方式，你的启动器都必须直接或间接引用核心 Spring Boot 启动器（ <code>spring-boot-starter</code> ）（如果你的启动器依赖于另一个启动器，则无需添加它）。如果仅使用你的自定义启动器创建项目，则 Spring Boot 的核心功能将因核心启动器的存在而受到尊重。</p>
+<p translation-result="on">无论哪种方式，你的启动器都必须直接或间接引用核心 Spring Boot 启动器（ <code>spring-boot-starter</code> ）（如果你的启动器依赖于另一个启动器，则无需添加它）。如果仅使用你的自定义启动器创建项目，则 Spring Boot 的核心特性将因核心启动器的存在而受到尊重。</p>
 <p translation-origin="off">Either way, your starter must reference the core Spring Boot starter (<code>spring-boot-starter</code>) directly or indirectly (there is no need to add it if your starter relies on another starter).
 If a project is created with only your custom starter, Spring Boot’s core features will be honoured by the presence of the core starter.</p>
 </td>
@@ -10361,7 +10361,7 @@ A warning message is logged if Jackson and Kotlin are present but the Jackson Ko
 <h3 id="features.kotlin.null-safety" translation-result="on"><a href="features.html#features.kotlin.null-safety"></a>10.2. 零安全</h3>
 <h3 translation-origin="off"><a class="anchor" href="features.html#features.kotlin.null-safety"></a>10.2. Null-safety</h3>
 <div class="paragraph">
-<p translation-result="on">Kotlin 的主要功能之一是 <a href="https://kotlinlang.org/docs/reference/null-safety.html">null-safety</a> 。它在编译时处理 <code>null</code> 值，而不是将问题推迟到运行时并遇到 <code>NullPointerException</code> 。这有助于消除常见的错误来源，而无需支付像 <code>Optional</code> 这样的包装器的成本。Kotlin 还允许使用具有可为空值的函数构造，如本 <a href="https://www.baeldung.com/kotlin-null-safety">Kotlin 中空安全综合指南中</a>所述。</p>
+<p translation-result="on">Kotlin 的主要特性之一是 <a href="https://kotlinlang.org/docs/reference/null-safety.html">null-safety</a> 。它在编译时处理 <code>null</code> 值，而不是将问题推迟到运行时并遇到 <code>NullPointerException</code> 。这有助于消除常见的错误来源，而无需支付像 <code>Optional</code> 这样的包装器的成本。Kotlin 还允许使用具有可为空值的函数构造，如本 <a href="https://www.baeldung.com/kotlin-null-safety">Kotlin 中空安全综合指南中</a>所述。</p>
 <p translation-origin="off">One of Kotlin’s key features is <a href="https://kotlinlang.org/docs/reference/null-safety.html">null-safety</a>.
 It deals with <code>null</code> values at compile time rather than deferring the problem to runtime and encountering a <code>NullPointerException</code>.
 This helps to eliminate a common source of bugs without paying the cost of wrappers like <code>Optional</code>.
@@ -10435,7 +10435,7 @@ It also allows customization of the application as shown in the following exampl
 <h4 id="features.kotlin.api.extensions" translation-result="on"><a href="features.html#features.kotlin.api.extensions"></a>10.3.2. 扩展</h4>
 <h4 translation-origin="off"><a class="anchor" href="features.html#features.kotlin.api.extensions"></a>10.3.2. Extensions</h4>
 <div class="paragraph">
-<p translation-result="on">Kotlin<a href="https://kotlinlang.org/docs/reference/extensions.html">扩展</a>提供了使用附加功能扩展现有类的能力。Spring Boot Kotlin API 利用这些扩展为现有 API 添加新的 Kotlin 特定便利。</p>
+<p translation-result="on">Kotlin<a href="https://kotlinlang.org/docs/reference/extensions.html">扩展</a>提供了使用附加特性扩展现有类的能力。Spring Boot Kotlin API 利用这些扩展为现有 API 添加新的 Kotlin 特定便利。</p>
 <p translation-origin="off">Kotlin <a href="https://kotlinlang.org/docs/reference/extensions.html">extensions</a> provide the ability to extend existing classes with additional functionality.
 The Spring Boot Kotlin API makes use of these extensions to add new Kotlin specific conveniences to existing APIs.</p>
 </div>
@@ -10507,7 +10507,7 @@ data class KotlinExampleProperties(
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">要使用注解处理器生成<a href="configuration-metadata.html#configuration-metadata.annotation-processor">你自己的元数据</a>，<a href="https://kotlinlang.org/docs/reference/kapt.html"><code>kapt</code></a>使用 <code>spring-boot-configuration-processor</code> 依赖项配置 kapt。请注意，由于 kapt 提供的模型的限制，某些功能（例如检测默认值或不推荐使用的项目）无法正常工作。</p>
+<p translation-result="on">要使用注解处理器生成<a href="configuration-metadata.html#configuration-metadata.annotation-processor">你自己的元数据</a>，<a href="https://kotlinlang.org/docs/reference/kapt.html"><code>kapt</code></a>使用 <code>spring-boot-configuration-processor</code> 依赖项配置 kapt。请注意，由于 kapt 提供的模型的限制，某些特性（例如检测默认值或不推荐使用的项目）无法正常工作。</p>
 <p translation-origin="off">To generate <a href="configuration-metadata.html#configuration-metadata.annotation-processor">your own metadata</a> using the annotation processor, <a href="https://kotlinlang.org/docs/reference/kapt.html"><code>kapt</code> should be configured</a> with the <code>spring-boot-configuration-processor</code> dependency.
 Note that some features (such as detecting the default value or deprecated items) are not working due to limitations in the model kapt provides.</p>
 </td>
@@ -10630,7 +10630,7 @@ If you need the <code>Mockk</code> equivalent of the Mockito specific <a href="f
 If you have specific questions, see the <a href="howto.html#howto">how-to</a> section.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果你对 Spring Boot 的核心功能感到满意，你可以继续阅读有关<a href="actuator.html#actuator">生产就绪功能的</a>信息。</p>
+<p translation-result="on">如果你对 Spring Boot 的核心特性感到满意，你可以继续阅读有关<a href="actuator.html#actuator">生产就绪特性的</a>信息。</p>
 <p translation-origin="off">If you are comfortable with Spring Boot’s core features, you can continue on and read about <a href="actuator.html#actuator">production-ready features</a>.</p>
 </div>
 </div>
