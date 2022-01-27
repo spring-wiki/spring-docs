@@ -1120,7 +1120,7 @@ Also, you can define your own properties.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="application-properties.html#application-properties.core.logging.config"><code>logging.config</code></a></p><p class="tableblock" translation-origin="off"><a id="application-properties.core.logging.config"></a><a href="application-properties.html#application-properties.core.logging.config"><code>logging.config</code></a></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">日志记录配置文件的位置。例如，用于 Logback 的 `classpath:logback.xml`。</p><p class="tableblock" translation-origin="off">Location of the logging configuration file. For instance, `classpath:logback.xml` for Logback.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">日志记录环境配置文件的位置。例如，用于 Logback 的 `classpath:logback.xml`。</p><p class="tableblock" translation-origin="off">Location of the logging configuration file. For instance, `classpath:logback.xml` for Logback.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
@@ -1150,7 +1150,7 @@ Also, you can define your own properties.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="application-properties.html#application-properties.core.logging.log4j2.config.override"><code>logging.log4j2.config.override</code></a></p><p class="tableblock" translation-origin="off"><a id="application-properties.core.logging.log4j2.config.override"></a><a href="application-properties.html#application-properties.core.logging.log4j2.config.override"><code>logging.log4j2.config.override</code></a></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">覆盖用于创建复合配置的配置文件。</p><p class="tableblock" translation-origin="off">Overriding configuration files used to create a composite configuration.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">覆盖用于创建复合配置的环境配置文件。</p><p class="tableblock" translation-origin="off">Overriding configuration files used to create a composite configuration.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
@@ -1300,12 +1300,12 @@ Also, you can define your own properties.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="application-properties.html#application-properties.core.spring.config.activate.on-profile"><code>spring.config.activate.on-profile</code></a></p><p class="tableblock" translation-origin="off"><a id="application-properties.core.spring.config.activate.on-profile"></a><a href="application-properties.html#application-properties.core.spring.config.activate.on-profile"><code>spring.config.activate.on-profile</code></a></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">应该与要包含的文档匹配的配置文件表达式。</p><p class="tableblock" translation-origin="off">Profile expressions that should match for the document to be included.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">应该与要包含的文档匹配的环境配置文件表达式。</p><p class="tableblock" translation-origin="off">Profile expressions that should match for the document to be included.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="application-properties.html#application-properties.core.spring.config.additional-location"><code>spring.config.additional-location</code></a></p><p class="tableblock" translation-origin="off"><a id="application-properties.core.spring.config.additional-location"></a><a href="application-properties.html#application-properties.core.spring.config.additional-location"><code>spring.config.additional-location</code></a></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">除了默认值外，还使用了配置文件位置。</p><p class="tableblock" translation-origin="off">Config file locations used in addition to the defaults.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">除了默认值外，还使用了环境配置文件位置。</p><p class="tableblock" translation-origin="off">Config file locations used in addition to the defaults.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
@@ -1320,7 +1320,7 @@ Also, you can define your own properties.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="application-properties.html#application-properties.core.spring.config.name"><code>spring.config.name</code></a></p><p class="tableblock" translation-origin="off"><a id="application-properties.core.spring.config.name"></a><a href="application-properties.html#application-properties.core.spring.config.name"><code>spring.config.name</code></a></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">配置文件名。</p><p class="tableblock" translation-origin="off">Config file name.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">环境配置文件名。</p><p class="tableblock" translation-origin="off">Config file name.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>application</code></p></td>
 </tr>
 <tr>
@@ -1470,22 +1470,22 @@ Also, you can define your own properties.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="application-properties.html#application-properties.core.spring.profiles.active"><code>spring.profiles.active</code></a></p><p class="tableblock" translation-origin="off"><a id="application-properties.core.spring.profiles.active"></a><a href="application-properties.html#application-properties.core.spring.profiles.active"><code>spring.profiles.active</code></a></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">活动配置文件的逗号分隔列表。可以被命令行开关覆盖。</p><p class="tableblock" translation-origin="off">Comma-separated list of active profiles. Can be overridden by a command line switch.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">活动环境配置文件的逗号分隔列表。可以被命令行开关覆盖。</p><p class="tableblock" translation-origin="off">Comma-separated list of active profiles. Can be overridden by a command line switch.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="application-properties.html#application-properties.core.spring.profiles.default"><code>spring.profiles.default</code></a></p><p class="tableblock" translation-origin="off"><a id="application-properties.core.spring.profiles.default"></a><a href="application-properties.html#application-properties.core.spring.profiles.default"><code>spring.profiles.default</code></a></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">如果没有配置文件处于活动状态，则要启用的配置文件的名称。</p><p class="tableblock" translation-origin="off">Name of the profile to enable if no profile is active.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">如果没有环境配置文件处于活动状态，则要启用的环境配置文件的名称。</p><p class="tableblock" translation-origin="off">Name of the profile to enable if no profile is active.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>default</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="application-properties.html#application-properties.core.spring.profiles.group"><code>spring.profiles.group.*</code></a></p><p class="tableblock" translation-origin="off"><a id="application-properties.core.spring.profiles.group"></a><a href="application-properties.html#application-properties.core.spring.profiles.group"><code>spring.profiles.group.*</code></a></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">配置文件组为相关的配置文件组定义逻辑名称。</p><p class="tableblock" translation-origin="off">Profile groups to define a logical name for a related group of profiles.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">环境配置文件组为相关的环境配置文件组定义逻辑名称。</p><p class="tableblock" translation-origin="off">Profile groups to define a logical name for a related group of profiles.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="application-properties.html#application-properties.core.spring.profiles.include"><code>spring.profiles.include</code></a></p><p class="tableblock" translation-origin="off"><a id="application-properties.core.spring.profiles.include"></a><a href="application-properties.html#application-properties.core.spring.profiles.include"><code>spring.profiles.include</code></a></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">无条件地激活指定的以逗号分隔的配置文件列表（如果使用 YAML，则激活配置文件列表）。</p><p class="tableblock" translation-origin="off">Unconditionally activate the specified comma-separated list of profiles (or list of profiles if using YAML).</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">无条件地激活指定的以逗号分隔的环境配置文件列表（如果使用 YAML，则激活环境配置文件列表）。</p><p class="tableblock" translation-origin="off">Unconditionally activate the specified comma-separated list of profiles (or list of profiles if using YAML).</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
@@ -1661,17 +1661,17 @@ Also, you can define your own properties.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="application-properties.html#application-properties.cache.spring.cache.ehcache.config"><code>spring.cache.ehcache.config</code></a></p><p class="tableblock" translation-origin="off"><a id="application-properties.cache.spring.cache.ehcache.config"></a><a href="application-properties.html#application-properties.cache.spring.cache.ehcache.config"><code>spring.cache.ehcache.config</code></a></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">用于初始化 EhCache 的配置文件的位置。</p><p class="tableblock" translation-origin="off">The location of the configuration file to use to initialize EhCache.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">用于初始化 EhCache 的环境配置文件的位置。</p><p class="tableblock" translation-origin="off">The location of the configuration file to use to initialize EhCache.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="application-properties.html#application-properties.cache.spring.cache.infinispan.config"><code>spring.cache.infinispan.config</code></a></p><p class="tableblock" translation-origin="off"><a id="application-properties.cache.spring.cache.infinispan.config"></a><a href="application-properties.html#application-properties.cache.spring.cache.infinispan.config"><code>spring.cache.infinispan.config</code></a></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">用于初始化 Infinispan 的配置文件的位置。</p><p class="tableblock" translation-origin="off">The location of the configuration file to use to initialize Infinispan.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">用于初始化 Infinispan 的环境配置文件的位置。</p><p class="tableblock" translation-origin="off">The location of the configuration file to use to initialize Infinispan.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="application-properties.html#application-properties.cache.spring.cache.jcache.config"><code>spring.cache.jcache.config</code></a></p><p class="tableblock" translation-origin="off"><a id="application-properties.cache.spring.cache.jcache.config"></a><a href="application-properties.html#application-properties.cache.spring.cache.jcache.config"><code>spring.cache.jcache.config</code></a></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">用于初始化缓存管理器的配置文件的位置。配置文件依赖于底层缓存实现。</p><p class="tableblock" translation-origin="off">The location of the configuration file to use to initialize the cache manager. The configuration file is dependent of the underlying cache implementation.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">用于初始化缓存管理器的环境配置文件的位置。环境配置文件依赖于底层缓存实现。</p><p class="tableblock" translation-origin="off">The location of the configuration file to use to initialize the cache manager. The configuration file is dependent of the underlying cache implementation.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
@@ -2084,7 +2084,7 @@ Also, you can define your own properties.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="application-properties.html#application-properties.data.spring.data.cassandra.config"><code>spring.data.cassandra.config</code></a></p><p class="tableblock" translation-origin="off"><a id="application-properties.data.spring.data.cassandra.config"></a><a href="application-properties.html#application-properties.data.spring.data.cassandra.config"><code>spring.data.cassandra.config</code></a></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">要使用的配置文件的位置。</p><p class="tableblock" translation-origin="off">Location of the configuration file to use.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">要使用的环境配置文件的位置。</p><p class="tableblock" translation-origin="off">Location of the configuration file to use.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
@@ -3903,7 +3903,7 @@ Also, you can define your own properties.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="application-properties.html#application-properties.data-migration.spring.flyway.kerberos-config-file"><code>spring.flyway.kerberos-config-file</code></a></p><p class="tableblock" translation-origin="off"><a id="application-properties.data-migration.spring.flyway.kerberos-config-file"></a><a href="application-properties.html#application-properties.data-migration.spring.flyway.kerberos-config-file"><code>spring.flyway.kerberos-config-file</code></a></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">Kerberos 配置文件的路径。需要 Flyway 团队。</p><p class="tableblock" translation-origin="off">Path of the Kerberos config file. Requires Flyway Teams.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">Kerberos 环境配置文件的路径。需要 Flyway 团队。</p><p class="tableblock" translation-origin="off">Path of the Kerberos config file. Requires Flyway Teams.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
@@ -4459,7 +4459,7 @@ Also, you can define your own properties.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p translation-result="on"><a href="application-properties.html#application-properties.integration.spring.hazelcast.config"><code>spring.hazelcast.config</code></a></p><p class="tableblock" translation-origin="off"><a id="application-properties.integration.spring.hazelcast.config"></a><a href="application-properties.html#application-properties.integration.spring.hazelcast.config"><code>spring.hazelcast.config</code></a></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">用于初始化 Hazelcast 的配置文件的位置。</p><p class="tableblock" translation-origin="off">The location of the configuration file to use to initialize Hazelcast.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">用于初始化 Hazelcast 的环境配置文件的位置。</p><p class="tableblock" translation-origin="off">The location of the configuration file to use to initialize Hazelcast.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>

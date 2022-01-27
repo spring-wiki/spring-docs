@@ -1028,11 +1028,11 @@
   <p translation-origin="off"><a href="howto.html#howto.properties-and-configuration.yaml">2.5. Use YAML for External Properties</a></p>
 </li>
 <li>
-  <p translation-result="on"><a href="howto.html#howto.properties-and-configuration.set-active-spring-profiles">2.6. 设置活动 Spring 配置文件</a></p>
+  <p translation-result="on"><a href="howto.html#howto.properties-and-configuration.set-active-spring-profiles">2.6. 设置活动 Spring 环境配置文件</a></p>
   <p translation-origin="off"><a href="howto.html#howto.properties-and-configuration.set-active-spring-profiles">2.6. Set the Active Spring Profiles</a></p>
 </li>
 <li>
-  <p translation-result="on"><a href="howto.html#howto.properties-and-configuration.set-default-spring-profile-name">2.7. 设置默认配置文件名称</a></p>
+  <p translation-result="on"><a href="howto.html#howto.properties-and-configuration.set-default-spring-profile-name">2.7. 设置默认环境配置文件名称</a></p>
   <p translation-origin="off"><a href="howto.html#howto.properties-and-configuration.set-default-spring-profile-name">2.7. Set the Default Profile Name</a></p>
 </li>
 <li>
@@ -1720,7 +1720,7 @@ Each implementation should be registered in <code>META-INF/spring.factories</cod
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">该实现可以加载任意文件并将它们添加到 <code>Environment</code> 。例如，以下示例从类路径加载 YAML 配置文件：</p>
+<p translation-result="on">该实现可以加载任意文件并将它们添加到 <code>Environment</code> 。例如，以下示例从类路径加载 YAML 环境配置文件：</p>
 <p translation-origin="off">The implementation can load arbitrary files and add them to the <code>Environment</code>.
 For instance, the following example loads a YAML configuration file from the classpath:</p>
 </div>
@@ -2136,7 +2136,7 @@ A separate <code>Environment</code> property source is set up for this document 
 By default, if YAML is used, then files with the ‘.yml’ extension are also added to the list.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 记录在 <code>DEBUG</code> 级别加载的配置文件以及在 <code>TRACE</code> 级别未找到的候选文件。</p>
+<p translation-result="on">Spring Boot 记录在 <code>DEBUG</code> 级别加载的环境配置文件以及在 <code>TRACE</code> 级别未找到的候选文件。</p>
 <p translation-origin="off">Spring Boot logs the configuration files that are loaded at the <code>DEBUG</code> level and the candidates it has not found at <code>TRACE</code> level.</p>
 </div>
 <div class="paragraph">
@@ -2238,7 +2238,7 @@ server.port=9000</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="howto.properties-and-configuration.set-active-spring-profiles" translation-result="on"><a href="howto.html#howto.properties-and-configuration.set-active-spring-profiles"></a>2.6. 设置活动 Spring 配置文件</h3>
+<h3 id="howto.properties-and-configuration.set-active-spring-profiles" translation-result="on"><a href="howto.html#howto.properties-and-configuration.set-active-spring-profiles"></a>2.6. 设置活动 Spring 环境配置文件</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.properties-and-configuration.set-active-spring-profiles"></a>2.6. Set the Active Spring Profiles</h3>
 <div class="paragraph">
 <p translation-result="on">Spring <code>Environment</code> 为此提供了一个 API，但你通常会设置系统属性 ( <code>spring.profiles.active</code> ) 或 OS 环境变量 ( <code>SPRING_PROFILES_ACTIVE</code> )。此外，你可以用 <code>-D</code> 参数启动应用程序（记住将其放在主类或 jar 存档之前），如下所示：</p>
@@ -2251,7 +2251,7 @@ Also, you can launch your application with a <code>-D</code> argument (remember 
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">在 Spring Boot 中，你还可以在 <code>application.properties</code> 中设置活动配置文件，如下例所示：</p>
+<p translation-result="on">在 Spring Boot 中，你还可以在 <code>application.properties</code> 中设置活动环境配置文件，如下例所示：</p>
 <p translation-origin="off">In Spring Boot, you can also set the active profile in <code>application.properties</code>, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
@@ -2270,7 +2270,7 @@ Also, you can launch your application with a <code>-D</code> argument (remember 
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">以这种方式设置的值将被系统属性或环境变量设置替换，但不会被 <code>SpringApplicationBuilder.profiles()</code> 方法替换。因此，后一种 Java API 可用于在不更改默认值的情况下扩充配置文件。</p>
+<p translation-result="on">以这种方式设置的值将被系统属性或环境变量设置替换，但不会被 <code>SpringApplicationBuilder.profiles()</code> 方法替换。因此，后一种 Java API 可用于在不更改默认值的情况下扩充环境配置文件。</p>
 <p translation-origin="off">A value set this way is replaced by the System property or environment variable setting but not by the <code>SpringApplicationBuilder.profiles()</code> method.
 Thus, the latter Java API can be used to augment the profiles without changing the defaults.</p>
 </div>
@@ -2280,15 +2280,15 @@ Thus, the latter Java API can be used to augment the profiles without changing t
 </div>
 </div>
 <div class="sect2">
-<h3 id="howto.properties-and-configuration.set-default-spring-profile-name" translation-result="on"><a href="howto.html#howto.properties-and-configuration.set-default-spring-profile-name"></a>2.7. 设置默认配置文件名称</h3>
+<h3 id="howto.properties-and-configuration.set-default-spring-profile-name" translation-result="on"><a href="howto.html#howto.properties-and-configuration.set-default-spring-profile-name"></a>2.7. 设置默认环境配置文件名称</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.properties-and-configuration.set-default-spring-profile-name"></a>2.7. Set the Default Profile Name</h3>
 <div class="paragraph">
-<p translation-result="on">默认配置文件是在没有配置文件处于活动状态时启用的配置文件。默认情况下，默认配置文件的名称是 <code>default</code> ，但可以用系统属性 ( <code>spring.profiles.default</code> ) 或操作系统环境变量 ( <code>SPRING_PROFILES_DEFAULT</code> ) 更改它。</p>
+<p translation-result="on">默认环境配置文件是在没有环境配置文件处于活动状态时启用的环境配置文件。默认情况下，默认环境配置文件的名称是 <code>default</code> ，但可以用系统属性 ( <code>spring.profiles.default</code> ) 或操作系统环境变量 ( <code>SPRING_PROFILES_DEFAULT</code> ) 更改它。</p>
 <p translation-origin="off">The default profile is a profile that is enabled if no profile is active.
 By default, the name of the default profile is <code>default</code>, but it could be changed using a System property (<code>spring.profiles.default</code>) or an OS environment variable (<code>SPRING_PROFILES_DEFAULT</code>).</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">在 Spring Boot 中，你还可以在 <code>application.properties</code> 中设置默认配置文件名称，如下例所示：</p>
+<p translation-result="on">在 Spring Boot 中，你还可以在 <code>application.properties</code> 中设置默认环境配置文件名称，如下例所示：</p>
 <p translation-origin="off">In Spring Boot, you can also set the default profile name in <code>application.properties</code>, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">
@@ -2315,11 +2315,11 @@ By default, the name of the default profile is <code>default</code>, but it coul
 <h3 id="howto.properties-and-configuration.change-configuration-depending-on-the-environment" translation-result="on"><a href="howto.html#howto.properties-and-configuration.change-configuration-depending-on-the-environment"></a> 2.8.根据环境更改配置</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.properties-and-configuration.change-configuration-depending-on-the-environment"></a>2.8. Change Configuration Depending on the Environment</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 支持多文档 YAML 和 Properties 文件（有关详细信息，请参阅 <a href="features.html#features.external-config.files.multi-document">features.html</a> ），这些文件可以根据活动配置文件有条件地激活。</p>
+<p translation-result="on">Spring Boot 支持多文档 YAML 和 Properties 文件（有关详细信息，请参阅 <a href="features.html#features.external-config.files.multi-document">features.html</a> ），这些文件可以根据活动环境配置文件有条件地激活。</p>
 <p translation-origin="off">Spring Boot supports multi-document YAML and Properties files (see <a href="features.html#features.external-config.files.multi-document">features.html</a> for details) which can be activated conditionally based on the active profiles.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">如果文档包含 <code>spring.config.activate.on-profile</code> 键，则将配置文件值（以逗号分隔的配置文件列表或配置文件表达式）输入 Spring <code>Environment.acceptsProfiles()</code> 方法。如果配置文件表达式匹配，则该文档将包含在最终合并中（否则不包含），如以下示例所示：</p>
+<p translation-result="on">如果文档包含 <code>spring.config.activate.on-profile</code> 键，则将环境配置文件值（以逗号分隔的环境配置文件列表或环境配置文件表达式）输入 Spring <code>Environment.acceptsProfiles()</code> 方法。如果环境配置文件表达式匹配，则该文档将包含在最终合并中（否则不包含），如以下示例所示：</p>
 <p translation-origin="off">If a document contains a <code>spring.config.activate.on-profile</code> key, then the profiles value (a comma-separated list of profiles or a profile expression) is fed into the Spring <code>Environment.acceptsProfiles()</code> method.
 If the profile expression matches then that document is included in the final merge (otherwise, it is not), as shown in the following example:</p>
 </div>
@@ -2358,7 +2358,7 @@ server:
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">在前面的示例中，默认端口为 9000。但是，如果名为“开发”的 Spring 配置文件处于活动状态，则端口为 9001。如果“生产”处于活动状态，则端口为 0。</p>
+<p translation-result="on">在前面的示例中，默认端口为 9000。但是，如果名为“开发”的 Spring 环境配置文件处于活动状态，则端口为 9001。如果“生产”处于活动状态，则端口为 0。</p>
 <p translation-origin="off">In the preceding example, the default port is 9000.
 However, if the Spring profile called ‘development’ is active, then the port is 9001.
 If ‘production’ is active, then the port is 0.</p>
@@ -4039,7 +4039,7 @@ logging.level.org.hibernate=error</code></pre>
 <p translation-origin="off">You can also set the location of a file to which to write the log (in addition to the console) by using <code>logging.file.name</code>.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">要配置日志系统的更细粒度的设置，你需要使用相关 <code>LoggingSystem</code> 支持的本机配置格式。默认情况下，Spring Boot 从系统的默认位置获取本机配置（例如 Logback 的 <code>classpath:logback.xml</code> ），但你可以用 <code>logging.config</code> 属性设置配置文件的位置。</p>
+<p translation-result="on">要配置日志系统的更细粒度的设置，你需要使用相关 <code>LoggingSystem</code> 支持的本机配置格式。默认情况下，Spring Boot 从系统的默认位置获取本机配置（例如 Logback 的 <code>classpath:logback.xml</code> ），但你可以用 <code>logging.config</code> 属性设置环境配置文件的位置。</p>
 <p translation-origin="off">To configure the more fine-grained settings of a logging system, you need to use the native configuration format supported by the <code>LoggingSystem</code> in question.
 By default, Spring Boot picks up the native configuration from its default location for the system (such as <code>classpath:logback.xml</code> for Logback), but you can set the location of the config file by using the <code>logging.config</code> property.</p>
 </div>
@@ -4047,7 +4047,7 @@ By default, Spring Boot picks up the native configuration from its default locat
 <h3 id="howto.logging.logback" translation-result="on"><a href="howto.html#howto.logging.logback"></a>7.1. 为日志配置 Logback</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.logging.logback"></a>7.1. Configure Logback for Logging</h3>
 <div class="paragraph">
-<p translation-result="on">如果你需要对 logback 应用超出 <code>application.properties</code> 可以实现的自定义，你将需要添加一个标准的 logback 配置文件。你可以将 <code>logback.xml</code> 文件添加到类路径的根目录以供 logback 查找。如果你想使用 <a href="features.html#features.logging.logback-extensions">Spring Boot Logback 扩展</a>，你也可以用 <code>logback-spring.xml</code> 。</p>
+<p translation-result="on">如果你需要对 logback 应用超出 <code>application.properties</code> 可以实现的自定义，你将需要添加一个标准的 logback 环境配置文件。你可以将 <code>logback.xml</code> 文件添加到类路径的根目录以供 logback 查找。如果你想使用 <a href="features.html#features.logging.logback-extensions">Spring Boot Logback 扩展</a>，你也可以用 <code>logback-spring.xml</code> 。</p>
 <p translation-origin="off">If you need to apply customizations to logback beyond those that can be achieved with <code>application.properties</code>, you will need to add a standard logback configuration file.
 You can add a <code>logback.xml</code> file to the root of your classpath for logback to find.
 You can also use <code>logback-spring.xml</code> if you want to use the <a href="features.html#features.logging.logback-extensions">Spring Boot Logback extensions</a>.</p>
@@ -4112,7 +4112,7 @@ These includes are designed to allow certain common Spring Boot conventions to b
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">你的 logback 配置文件还可以用 <code>LoggingSystem</code> 为你创建的系统属性：</p>
+<p translation-result="on">你的 logback 环境配置文件还可以用 <code>LoggingSystem</code> 为你创建的系统属性：</p>
 <p translation-origin="off">Your logback configuration file can also make use of System properties that the <code>LoggingSystem</code> takes care of creating for you:</p>
 </div>
 <div class="ulist">
@@ -4288,7 +4288,7 @@ To do so, declare a dependency on the Log4j 2 starter and tell Gradle that any o
 <h4 id="howto.logging.log4j.yaml-or-json-config" translation-result="on"><a href="howto.html#howto.logging.log4j.yaml-or-json-config"></a>7.2.1. 使用 YAML 或 JSON 配置 Log4j 2</h4>
 <h4 translation-origin="off"><a class="anchor" href="howto.html#howto.logging.log4j.yaml-or-json-config"></a>7.2.1. Use YAML or JSON to Configure Log4j 2</h4>
 <div class="paragraph">
-<p translation-result="on">除了默认的 XML 配置格式，Log4j 2 还支持 YAML 和 JSON 配置文件。要将 Log4j 2 配置为使用替代配置文件格式，请将适当的依赖项添加到类路径并命名配置文件以匹配你选择的文件格式，如以下示例所示：</p>
+<p translation-result="on">除了默认的 XML 配置格式，Log4j 2 还支持 YAML 和 JSON 环境配置文件。要将 Log4j 2 配置为使用替代环境配置文件格式，请将适当的依赖项添加到类路径并命名环境配置文件以匹配你选择的文件格式，如以下示例所示：</p>
 <p translation-origin="off">In addition to its default XML configuration format, Log4j 2 also supports YAML and JSON configuration files.
 To configure Log4j 2 to use an alternative configuration file format, add the appropriate dependencies to the classpath and name your configuration files to match your chosen file format, as shown in the following example:</p>
 </div>
@@ -4340,7 +4340,7 @@ To configure Log4j 2 to use an alternative configuration file format, add the ap
 <h4 id="howto.logging.log4j.composite-configuration" translation-result="on"><a href="howto.html#howto.logging.log4j.composite-configuration"></a>7.2.2. 使用复合配置来配置 Log4j 2</h4>
 <h4 translation-origin="off"><a class="anchor" href="howto.html#howto.logging.log4j.composite-configuration"></a>7.2.2. Use Composite Configuration to Configure Log4j 2</h4>
 <div class="paragraph">
-<p translation-result="on">Log4j 2 支持将多个配置文件组合成一个复合配置。要在 Spring Boot 中使用此支持，请使用一个或多个辅助配置文件的位置配置 <code>logging.log4j2.config.override</code> 。辅助配置文件将与主配置合并，无论主配置的源是 Spring Boot 的默认值、标准位置（如 <code>log4j.xml</code> 还是 <code>logging.config</code> 属性配置的位置）。</p>
+<p translation-result="on">Log4j 2 支持将多个环境配置文件组合成一个复合配置。要在 Spring Boot 中使用此支持，请使用一个或多个辅助环境配置文件的位置配置 <code>logging.log4j2.config.override</code> 。辅助环境配置文件将与主配置合并，无论主配置的源是 Spring Boot 的默认值、标准位置（如 <code>log4j.xml</code> 还是 <code>logging.config</code> 属性配置的位置）。</p>
 <p translation-origin="off">Log4j 2 has support for combining multiple configuration files into a single composite configuration.
 To use this support in Spring Boot, configure <code>logging.log4j2.config.override</code> with the locations of one or more secondary configuration files.
 The secondary configuration files will be merged with the primary configuration, whether the primary’s source is Spring Boot’s defaults, a standard location such as <code>log4j.xml</code>, or the location configured by the <code>logging.config</code> property.</p>
@@ -5534,7 +5534,7 @@ Setting either <code>spring.flyway.url</code> or <code>spring.flyway.user</code>
 If any of the three properties has not been set, the value of its equivalent <code>spring.datasource</code> property will be used.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">你还可以用 Flyway 为特定场景提供数据。例如，你可以将特定于测试的迁移放在 <code>src/test/resources</code> 中，并且它们仅在你的应用程序开始进行测试时运行。此外，你可以用特定于配置文件的配置来自定义 <code>spring.flyway.locations</code> 以便某些迁移仅在特定配置文件处于活动状态时运行。例如，在 <code>application-dev.properties</code> 中，你可以指定以下设置：</p>
+<p translation-result="on">你还可以用 Flyway 为特定场景提供数据。例如，你可以将特定于测试的迁移放在 <code>src/test/resources</code> 中，并且它们仅在你的应用程序开始进行测试时运行。此外，你可以用特定于环境配置文件的配置来自定义 <code>spring.flyway.locations</code> 以便某些迁移仅在特定环境配置文件处于活动状态时运行。例如，在 <code>application-dev.properties</code> 中，你可以指定以下设置：</p>
 <p translation-origin="off">You can also use Flyway to provide data for specific scenarios.
 For example, you can place test-specific migrations in <code>src/test/resources</code> and they are run only when your application starts for testing.
 Also, you can use profile-specific configuration to customize <code>spring.flyway.locations</code> so that certain migrations run only when a particular profile is active.
@@ -5556,7 +5556,7 @@ For example, in <code>application-dev.properties</code>, you might specify the f
 </div>
 </div>
 <div class="paragraph">
-<p translation-result="on">使用该设置，<code>dev/db/migration</code> 中的迁移仅在 <code>dev</code> 配置文件处于活动状态时运行。</p>
+<p translation-result="on">使用该设置，<code>dev/db/migration</code> 中的迁移仅在 <code>dev</code> 环境配置文件处于活动状态时运行。</p>
 <p translation-origin="off">With that setup, migrations in <code>dev/db/migration</code> run only when the <code>dev</code> profile is active.</p>
 </div>
 </div>
@@ -6616,7 +6616,7 @@ Such nested jars are written beneath the temporary directory identified by the <
 <h3 id="howto.build.create-a-nonexecutable-jar" translation-result="on"><a href="howto.html#howto.build.create-a-nonexecutable-jar"></a>16.7. 创建具有排除项的不可执行 JAR</h3>
 <h3 translation-origin="off"><a class="anchor" href="howto.html#howto.build.create-a-nonexecutable-jar"></a>16.7. Create a Non-executable JAR with Exclusions</h3>
 <div class="paragraph">
-<p translation-result="on">通常，如果你将可执行文件和不可执行 jar 作为两个单独的构建产品，则可执行版本具有库 jar 中不需要的附加配置文件。例如，<code>application.yml</code> 配置文件可能会从不可执行的 JAR 中排除。</p>
+<p translation-result="on">通常，如果你将可执行文件和不可执行 jar 作为两个单独的构建产品，则可执行版本具有库 jar 中不需要的附加环境配置文件。例如，<code>application.yml</code> 环境配置文件可能会从不可执行的 JAR 中排除。</p>
 <p translation-origin="off">Often, if you have an executable and a non-executable jar as two separate build products, the executable version has additional configuration files that are not needed in a library jar.
 For example, the <code>application.yml</code> configuration file might be excluded from the non-executable JAR.</p>
 </div>

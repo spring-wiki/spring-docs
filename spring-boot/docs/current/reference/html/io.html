@@ -1340,7 +1340,7 @@ Various compliant libraries are available, and Spring Boot provides dependency m
 Any other compliant library can be added as well.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">可能存在多个提供者，在这种情况下必须明确指定提供者。即使 JSR-107 标准没有强制使用标准化的方式来定义配置文件的位置，Spring Boot 也会尽最大努力适应使用实现细节设置缓存，如下面的示例所示：</p>
+<p translation-result="on">可能存在多个提供者，在这种情况下必须明确指定提供者。即使 JSR-107 标准没有强制使用标准化的方式来定义环境配置文件的位置，Spring Boot 也会尽最大努力适应使用实现细节设置缓存，如下面的示例所示：</p>
 <p translation-origin="off">It might happen that more than one provider is present, in which case the provider must be explicitly specified.
 Even if the JSR-107 standard does not enforce a standardized way to define the location of the configuration file, Spring Boot does its best to accommodate setting a cache with implementation details, as shown in the following example:</p>
 </div>
@@ -1427,7 +1427,7 @@ No further customization is applied to it.</p>
 <h4 id="io.caching.provider.ehcache2" translation-result="on"><a href="io.html#io.caching.provider.ehcache2"></a>1.1.3.EhCache 2.x</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.ehcache2"></a>1.1.3. EhCache 2.x</h4>
 <div class="paragraph">
-<p translation-result="on">如果可以在类路径的根目录找到名为 <code>ehcache.xml</code> 的文件，则使用 <a href="https://www.ehcache.org/">EhCache</a> 2.x。如果找到 EhCache 2.x，则使用 <code>spring-boot-starter-cache</code> “Starter”提供的 <code>EhCacheCacheManager</code> 来引导缓存管理器。也可以提供备用配置文件，如以下示例所示：</p>
+<p translation-result="on">如果可以在类路径的根目录找到名为 <code>ehcache.xml</code> 的文件，则使用 <a href="https://www.ehcache.org/">EhCache</a> 2.x。如果找到 EhCache 2.x，则使用 <code>spring-boot-starter-cache</code> “Starter”提供的 <code>EhCacheCacheManager</code> 来引导缓存管理器。也可以提供备用环境配置文件，如以下示例所示：</p>
 <p translation-origin="off"><a href="https://www.ehcache.org/">EhCache</a> 2.x is used if a file named <code>ehcache.xml</code> can be found at the root of the classpath.
 If EhCache 2.x is found, the <code>EhCacheCacheManager</code> provided by the <code>spring-boot-starter-cache</code> “Starter” is used to bootstrap the cache manager.
 An alternate configuration file can be provided as well, as shown in the following example:</p>
@@ -1462,7 +1462,7 @@ If a <code>HazelcastInstance</code> has been auto-configured, it is automaticall
 <h4 id="io.caching.provider.infinispan" translation-result="on"><a href="io.html#io.caching.provider.infinispan"></a>1.1.5. 英菲尼斯潘</h4>
 <h4 translation-origin="off"><a class="anchor" href="io.html#io.caching.provider.infinispan"></a>1.1.5. Infinispan</h4>
 <div class="paragraph">
-<p translation-result="on"><a href="https://infinispan.org/">Infinispan</a> 没有默认配置文件位置，因此必须明确指定。否则，将使用默认引导程序。</p>
+<p translation-result="on"><a href="https://infinispan.org/">Infinispan</a> 没有默认环境配置文件位置，因此必须明确指定。否则，将使用默认引导程序。</p>
 <p translation-origin="off"><a href="https://infinispan.org/">Infinispan</a> has no default configuration file location, so it must be specified explicitly.
 Otherwise, the default bootstrap is used.</p>
 </div>
@@ -1780,7 +1780,7 @@ If you need to disable caching altogether in certain environments, force the cac
 <p translation-origin="off">The presence of a <code>com.hazelcast.client.config.ClientConfig</code> bean.</p>
 </li>
 <li>
-<p translation-result="on">由 <code>spring.hazelcast.config</code> 属性定义的配置文件。</p>
+<p translation-result="on">由 <code>spring.hazelcast.config</code> 属性定义的环境配置文件。</p>
 <p translation-origin="off">A configuration file defined by the <code>spring.hazelcast.config</code> property.</p>
 </li>
 <li>
@@ -1818,7 +1818,7 @@ If you define a <code>com.hazelcast.config.Config</code> bean, Spring Boot uses 
 If your configuration defines an instance name, Spring Boot tries to locate an existing instance rather than creating a new one.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">你还可以通过配置指定要使用的 Hazelcast 配置文件，如下例所示：</p>
+<p translation-result="on">你还可以通过配置指定要使用的 Hazelcast 环境配置文件，如下例所示：</p>
 <p translation-origin="off">You could also specify the Hazelcast configuration file to use through configuration, as shown in the following example:</p>
 </div>
 <div class="listingblock primary">

@@ -3427,7 +3427,7 @@ If you need to configure the port, use <code>spring.data.cassandra.port</code>.<
 <p translation-origin="off">The Cassandra driver has its own configuration infrastructure that loads an <code>application.conf</code> at the root of the classpath.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 默认不查找这样的文件，但可以用 <code>spring.data.cassandra.config</code> 加载一个。如果 <code>spring.data.cassandra.*</code> 和配置文件中都存在属性，则 spring.data.cassandra. <code>spring.data.cassandra.*</code> 中的值优先。</p>
+<p translation-result="on">Spring Boot 默认不查找这样的文件，但可以用 <code>spring.data.cassandra.config</code> 加载一个。如果 <code>spring.data.cassandra.*</code> 和环境配置文件中都存在属性，则 spring.data.cassandra. <code>spring.data.cassandra.*</code> 中的值优先。</p>
 <p translation-origin="off">Spring Boot does not look for such a file by default but can load one using <code>spring.data.cassandra.config</code>.
 If a property is both present in <code>spring.data.cassandra.*</code> and the configuration file, the value in <code>spring.data.cassandra.*</code> takes precedence.</p>
 </div>

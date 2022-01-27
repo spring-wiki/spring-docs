@@ -1022,7 +1022,7 @@
   <p translation-origin="off"><a href="configuration-metadata.html#configuration-metadata.manual-hints.value-providers.spring-bean-reference">2.2.5. Spring Bean Reference</a></p>
 </li>
 <li>
-  <p translation-result="on"><a href="configuration-metadata.html#configuration-metadata.manual-hints.value-providers.spring-profile-name">2.2.6. Spring 配置文件名称</a></p>
+  <p translation-result="on"><a href="configuration-metadata.html#configuration-metadata.manual-hints.value-providers.spring-profile-name">2.2.6. Spring 环境配置文件名称</a></p>
   <p translation-origin="off"><a href="configuration-metadata.html#configuration-metadata.manual-hints.value-providers.spring-profile-name">2.2.6. Spring Profile Name</a></p>
 </li>
 </ul>
@@ -1777,7 +1777,7 @@ Usually constrained by a base class that is specified by the <code>target</code>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring-profile-name</code></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">自动完成项目中可用的 Spring 配置文件名称。</p><p class="tableblock" translation-origin="off">Auto-completes the available Spring profile names in the project.</p></td>
+<td class="tableblock halign-left valign-top"><p translation-result="on">自动完成项目中可用的 Spring 环境配置文件名称。</p><p class="tableblock" translation-origin="off">Auto-completes the available Spring profile names in the project.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2227,14 +2227,14 @@ If you provide that hint, you still need to transform the bean name into an actu
 </div>
 </div>
 <div class="sect3">
-<h4 id="configuration-metadata.manual-hints.value-providers.spring-profile-name" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.manual-hints.value-providers.spring-profile-name"></a> 2.2.6. Spring 配置文件名称</h4>
+<h4 id="configuration-metadata.manual-hints.value-providers.spring-profile-name" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.manual-hints.value-providers.spring-profile-name"></a> 2.2.6. Spring 环境配置文件名称</h4>
 <h4 translation-origin="off"><a class="anchor" href="configuration-metadata.html#configuration-metadata.manual-hints.value-providers.spring-profile-name"></a>2.2.6. Spring Profile Name</h4>
 <div class="paragraph">
-<p translation-result="on"><strong>spring-profile-name</strong>提供程序自动完成在当前项目的配置中定义的 Spring 配置文件。</p>
+<p translation-result="on"><strong>spring-profile-name</strong>提供程序自动完成在当前项目的配置中定义的 Spring 环境配置文件。</p>
 <p translation-origin="off">The <strong>spring-profile-name</strong> provider auto-completes the Spring profiles that are defined in the configuration of the current project.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">以下元数据片段对应于标准 <code>spring.profiles.active</code> 属性，该属性定义要启用的 Spring 配置文件的名称：</p>
+<p translation-result="on">以下元数据片段对应于标准 <code>spring.profiles.active</code> 属性，该属性定义要启用的 Spring 环境配置文件的名称：</p>
 <p translation-origin="off">The following metadata snippet corresponds to the standard <code>spring.profiles.active</code> property that defines the name of the Spring profile(s) to enable:</p>
 </div>
 <div class="listingblock">
@@ -2602,7 +2602,7 @@ You can use the <code>@NestedConfigurationProperty</code> annotation on a field 
 <h3 id="configuration-metadata.annotation-processor.adding-additional-metadata" translation-result="on"><a href="configuration-metadata.html#configuration-metadata.annotation-processor.adding-additional-metadata"></a> 3.3.添加其他元数据</h3>
 <h3 translation-origin="off"><a class="anchor" href="configuration-metadata.html#configuration-metadata.annotation-processor.adding-additional-metadata"></a>3.3. Adding Additional Metadata</h3>
 <div class="paragraph">
-<p translation-result="on">Spring Boot 的配置文件处理非常灵活，通常情况下可能存在未绑定到 <code>@ConfigurationProperties</code> bean 的属性。你可能还需要调整现有密钥的某些属性。为了支持这种情况并让你提供自定义“提示”，注解处理器自动将 <code>META-INF/additional-spring-configuration-metadata.json</code> 中的项目合并到主元数据文件中。</p>
+<p translation-result="on">Spring Boot 的环境配置文件处理非常灵活，通常情况下可能存在未绑定到 <code>@ConfigurationProperties</code> bean 的属性。你可能还需要调整现有密钥的某些属性。为了支持这种情况并让你提供自定义“提示”，注解处理器自动将 <code>META-INF/additional-spring-configuration-metadata.json</code> 中的项目合并到主元数据文件中。</p>
 <p translation-origin="off">Spring Boot’s configuration file handling is quite flexible, and it is often the case that properties may exist that are not bound to a <code>@ConfigurationProperties</code> bean.
 You may also need to tune some attributes of an existing key.
 To support such cases and let you provide custom "hints", the annotation processor automatically merges items from <code>META-INF/additional-spring-configuration-metadata.json</code> into the main metadata file.</p>

@@ -1120,7 +1120,7 @@
   <p translation-origin="off"><a href="using.html#using.devtools.globalsettings">8.4. Global Settings</a></p>
 <ul class="sectlevel3">
 <li>
-  <p translation-result="on"><a href="using.html#using.devtools.globalsettings.configuring-file-system-watcher">8.4.1. 配置文件系统观察程序</a></p>
+  <p translation-result="on"><a href="using.html#using.devtools.globalsettings.configuring-file-system-watcher">8.4.1. 环境配置文件系统观察程序</a></p>
   <p translation-origin="off"><a href="using.html#using.devtools.globalsettings.configuring-file-system-watcher">8.4.1. Configuring File System Watcher</a></p>
 </li>
 </ul>
@@ -1815,7 +1815,7 @@ Alternatively, you can use <code>@ComponentScan</code> to automatically pick up 
 <h3 id="using.configuration-classes.importing-xml-configuration" translation-result="on"><a href="using.html#using.configuration-classes.importing-xml-configuration"></a>3.2. 导入 XML 配置</h3>
 <h3 translation-origin="off"><a class="anchor" href="using.html#using.configuration-classes.importing-xml-configuration"></a>3.2. Importing XML Configuration</h3>
 <div class="paragraph">
-<p translation-result="on">如果你绝对必须使用基于 XML 的配置，我们建议你仍然从 <code>@Configuration</code> 类开始。然后，你可以用 <code>@ImportResource</code> 注解来加载 XML 配置文件。</p>
+<p translation-result="on">如果你绝对必须使用基于 XML 的配置，我们建议你仍然从 <code>@Configuration</code> 类开始。然后，你可以用 <code>@ImportResource</code> 注解来加载 XML 环境配置文件。</p>
 <p translation-origin="off">If you absolutely must use XML based configuration, we recommend that you still start with a <code>@Configuration</code> class.
 You can then use an <code>@ImportResource</code> annotation to load XML configuration files.</p>
 </div>
@@ -2874,7 +2874,7 @@ To customize this location, set the <code>SPRING_DEVTOOLS_HOME</code> environmen
 <i class="fa icon-note" title="注意"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果在 <code>$HOME/.config/spring-boot</code> 中找不到 devtools 配置文件，则会在 <code>$HOME</code> 目录的根目录中搜索 <code>.spring-boot-devtools.properties</code> 文件。这允许你与不支持 <code>$HOME/.config/spring-boot</code> 位置的旧版 Spring Boot 上的应用程序共享 devtools 全局配置。</p>
+<p translation-result="on">如果在 <code>$HOME/.config/spring-boot</code> 中找不到 devtools 环境配置文件，则会在 <code>$HOME</code> 目录的根目录中搜索 <code>.spring-boot-devtools.properties</code> 文件。这允许你与不支持 <code>$HOME/.config/spring-boot</code> 位置的旧版 Spring Boot 上的应用程序共享 devtools 全局配置。</p>
 <p translation-origin="off">If devtools configuration files are not found in <code>$HOME/.config/spring-boot</code>, the root of the <code>$HOME</code> directory is searched for the presence of a <code>.spring-boot-devtools.properties</code> file.
 This allows you to share the devtools global configuration with applications that are on an older version of Spring Boot that does not support the <code>$HOME/.config/spring-boot</code> location.</p>
 </td>
@@ -2902,7 +2902,7 @@ Profile specific filenames (of the form <code>spring-boot-devtools-&lt;profile&g
 </tbody></table>
 </div>
 <div class="sect3">
-<h4 id="using.devtools.globalsettings.configuring-file-system-watcher" translation-result="on"><a href="using.html#using.devtools.globalsettings.configuring-file-system-watcher"></a>8.4.1. 配置文件系统观察程序</h4>
+<h4 id="using.devtools.globalsettings.configuring-file-system-watcher" translation-result="on"><a href="using.html#using.devtools.globalsettings.configuring-file-system-watcher"></a>8.4.1. 环境配置文件系统观察程序</h4>
 <h4 translation-origin="off"><a class="anchor" href="using.html#using.devtools.globalsettings.configuring-file-system-watcher"></a>8.4.1. Configuring File System Watcher</h4>
 <div class="paragraph">
 <p translation-result="on"><a href="https://github.com/spring-projects/spring-boot/tree/v2.6.3/spring-boot-project/spring-boot-devtools/src/main/java/org/springframework/boot/devtools/filewatch/FileSystemWatcher.java">FileSystemWatcher</a> 的工作原理是按特定时间间隔轮询类更改，然后等待预定义的静默期以确保没有更多更改。由于 Spring Boot 完全依赖 IDE 来编译文件并将其复制到 Spring Boot 可以读取它们的位置，因此你可能会发现有时某些更改在 devtools 重新启动应用程序时不会反映出来。如果你经常观察到此类问题，请尝试将 <code>spring.devtools.restart.poll-interval</code> 和 <code>spring.devtools.restart.quiet-period</code> 参数增加到适合你的开发环境的值：</p>
@@ -3105,7 +3105,7 @@ The server is restarted after the first batch of class changes is uploaded.
 The next batch can’t be sent to the application, since the server is restarting.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">这通常表现为 <code>RemoteSpringApplication</code> 日志中有关未能上传某些类的警告，以及随后的重试。但这也可能导致应用程序代码不一致，在第一批更改上传后无法重启。如果你经常观察到此类问题，请尝试将 <code>spring.devtools.restart.poll-interval</code> 和 <code>spring.devtools.restart.quiet-period</code> 参数增加到适合你的开发环境的值。请参阅<a href="using.html#using.devtools.globalsettings.configuring-file-system-watcher">配置文件系统观察</a>程序部分以配置这些属性。</p>
+<p translation-result="on">这通常表现为 <code>RemoteSpringApplication</code> 日志中有关未能上传某些类的警告，以及随后的重试。但这也可能导致应用程序代码不一致，在第一批更改上传后无法重启。如果你经常观察到此类问题，请尝试将 <code>spring.devtools.restart.poll-interval</code> 和 <code>spring.devtools.restart.quiet-period</code> 参数增加到适合你的开发环境的值。请参阅<a href="using.html#using.devtools.globalsettings.configuring-file-system-watcher">环境配置文件系统观察</a>程序部分以配置这些属性。</p>
 <p translation-origin="off">This is typically manifested by a warning in the <code>RemoteSpringApplication</code> logs about failing to upload some of the classes, and a consequent retry.
 But it may also lead to application code inconsistency and failure to restart after the first batch of changes is uploaded.
 If you observe such problems constantly, try increasing the <code>spring.devtools.restart.poll-interval</code> and <code>spring.devtools.restart.quiet-period</code> parameters to the values that fit your development environment.

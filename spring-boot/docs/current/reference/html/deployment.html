@@ -1300,7 +1300,7 @@ You can override this detection with the <code>spring.main.cloud-platform</code>
 Because this shutdown processing happens in parallel (and due to the nature of distributed systems), there is a window during which traffic can be routed to a pod that has also begun its shutdown processing.</p>
 </div>
 <div class="paragraph">
-<p translation-result="on">你可以在 preStop 处理程序中配置睡眠执行，以避免将请求路由到已经开始关闭的 pod。这种休眠应该足够长，以使新请求停止路由到 pod，并且其持续时间因部署而异。可以用 Pod 配置文件中的 PodSpec 配置 preStop 处理程序，如下所示：</p>
+<p translation-result="on">你可以在 preStop 处理程序中配置睡眠执行，以避免将请求路由到已经开始关闭的 pod。这种休眠应该足够长，以使新请求停止路由到 pod，并且其持续时间因部署而异。可以用 Pod 环境配置文件中的 PodSpec 配置 preStop 处理程序，如下所示：</p>
 <p translation-origin="off">You can configure a sleep execution in a preStop handler to avoid requests being routed to a pod that has already begun shutting down.
 This sleep should be long enough for new requests to stop being routed to the pod and its duration will vary from deployment to deployment.
 The preStop handler can be configured by using the PodSpec in the pod’s configuration file as follows:</p>
@@ -1584,7 +1584,7 @@ There is a <a href="https://exampledriven.wordpress.com/2017/01/09/spring-boot-a
 <h3 id="deployment.cloud.boxfuse" translation-result="on"><a href="deployment.html#deployment.cloud.boxfuse"></a>1.6. Boxfuse 和亚马逊网络服务</h3>
 <h3 translation-origin="off"><a class="anchor" href="deployment.html#deployment.cloud.boxfuse"></a>1.6. Boxfuse and Amazon Web Services</h3>
 <div class="paragraph">
-<p translation-result="on"><a href="https://boxfuse.com/">Boxfuse</a> 的工作原理是将你的 Spring Boot 可执行 jar 或 war 转换为最小的 VM 映像，可以在 VirtualBox 或 AWS 上不加改动地部署。Boxfuse 与 Spring Boot 深度集成，并使用 Spring Boot 配置文件中的信息自动配置端口和健康检查 URL。Boxfuse 将这些信息用于它生成的图像以及它提供的所有资源（实例、安全组、弹性负载均衡器等）。</p>
+<p translation-result="on"><a href="https://boxfuse.com/">Boxfuse</a> 的工作原理是将你的 Spring Boot 可执行 jar 或 war 转换为最小的 VM 映像，可以在 VirtualBox 或 AWS 上不加改动地部署。Boxfuse 与 Spring Boot 深度集成，并使用 Spring Boot 环境配置文件中的信息自动配置端口和健康检查 URL。Boxfuse 将这些信息用于它生成的图像以及它提供的所有资源（实例、安全组、弹性负载均衡器等）。</p>
 <p translation-origin="off"><a href="https://boxfuse.com/">Boxfuse</a> works by turning your Spring Boot executable jar or war into a minimal VM image that can be deployed unchanged either on VirtualBox or on AWS.
 Boxfuse comes with deep integration for Spring Boot and uses the information from your Spring Boot configuration file to automatically configure ports and health check URLs.
 Boxfuse leverages this information both for the images it produces as well as for all the resources it provisions (instances, security groups, elastic load balancers, and so on).</p>
@@ -1610,7 +1610,7 @@ If there is a <a href="https://boxfuse.com/docs/commandline/#configuration"><cod
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">默认情况下，Boxfuse 在启动时激活名为 <code>boxfuse</code> 的 Spring 配置文件。如果你的可执行 jar 或 war 包含<a href="https://boxfuse.com/docs/payloads/springboot.html#configuration"><code>application-boxfuse.properties</code></a>文件，Boxfuse 会根据其包含的属性进行配置。</p>
+<p translation-result="on">默认情况下，Boxfuse 在启动时激活名为 <code>boxfuse</code> 的 Spring 环境配置文件。如果你的可执行 jar 或 war 包含<a href="https://boxfuse.com/docs/payloads/springboot.html#configuration"><code>application-boxfuse.properties</code></a>文件，Boxfuse 会根据其包含的属性进行配置。</p>
 <p translation-origin="off">By default, Boxfuse activates a Spring profile named <code>boxfuse</code> on startup.
 If your executable jar or war contains an <a href="https://boxfuse.com/docs/payloads/springboot.html#configuration"><code>application-boxfuse.properties</code></a> file, Boxfuse bases its configuration on the properties it contains.</p>
 </td>
@@ -2162,7 +2162,7 @@ Since you know the description up front (and it need not change), you may as wel
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>inlinedConfScript</code></p></td>
-<td class="tableblock halign-left valign-top"><p translation-result="on">对应在默认启动脚本中内联的文件脚本的引用。这可用于在加载任何外部配置文件之前设置环境变量，例如 <code>JAVA_OPTS</code> </p><p class="tableblock" translation-origin="off">Reference to a file script that should be inlined in the default launch script.
+<td class="tableblock halign-left valign-top"><p translation-result="on">对应在默认启动脚本中内联的文件脚本的引用。这可用于在加载任何外部环境配置文件之前设置环境变量，例如 <code>JAVA_OPTS</code> </p><p class="tableblock" translation-origin="off">Reference to a file script that should be inlined in the default launch script.
 This can be used to set environmental variables such as <code>JAVA_OPTS</code> before any external config files are loaded</p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -2215,7 +2215,7 @@ Only valid for an <code>init.d</code> service</p></td>
 <h5 id="deployment.installing.nix-services.script-customization.when-running" translation-result="on"><a href="deployment.html#deployment.installing.nix-services.script-customization.when-running"></a>在运行时自定义脚本</h5>
 <h5 translation-origin="off"><a class="anchor" href="deployment.html#deployment.installing.nix-services.script-customization.when-running"></a>Customizing a Script When It Runs</h5>
 <div class="paragraph">
-<p translation-result="on">对于 jar 写好<em>后</em>需要自定义的脚本项，可以用环境变量或者<a href="deployment.html#deployment.installing.nix-services.script-customization.when-running.conf-file">配置文件</a>。</p>
+<p translation-result="on">对于 jar 写好<em>后</em>需要自定义的脚本项，可以用环境变量或者<a href="deployment.html#deployment.installing.nix-services.script-customization.when-running.conf-file">环境配置文件</a>。</p>
 <p translation-origin="off">For items of the script that need to be customized <em>after</em> the jar has been written, you can use environment variables or a <a href="deployment.html#deployment.installing.nix-services.script-customization.when-running.conf-file">config file</a>.</p>
 </div>
 <div class="paragraph">
@@ -2320,7 +2320,7 @@ See the <a href="https://www.freedesktop.org/software/systemd/man/systemd.servic
 </tbody></table>
 </div>
 <div id="deployment.installing.nix-services.script-customization.when-running.conf-file" class="paragraph">
-<p translation-result="on">除了 <code>JARFILE</code> 和 <code>APP_NAME</code> 之外，上一节中列出的设置可以用 <code>.conf</code> 文件进行配置。该文件应位于 jar 文件旁边，名称相同，但后缀为 <code>.conf</code> 而不是 <code>.jar</code> 。例如，名为 <code>/var/myapp/myapp.conf</code> 的 jar 使用名为 <code>/var/myapp/myapp.jar</code> 的配置文件，如下例所示：</p>
+<p translation-result="on">除了 <code>JARFILE</code> 和 <code>APP_NAME</code> 之外，上一节中列出的设置可以用 <code>.conf</code> 文件进行配置。该文件应位于 jar 文件旁边，名称相同，但后缀为 <code>.conf</code> 而不是 <code>.jar</code> 。例如，名为 <code>/var/myapp/myapp.conf</code> 的 jar 使用名为 <code>/var/myapp/myapp.jar</code> 的环境配置文件，如下例所示：</p>
 <p translation-origin="off">With the exception of <code>JARFILE</code> and <code>APP_NAME</code>, the settings listed in the preceding section can be configured by using a <code>.conf</code> file.
 The file is expected to be next to the jar file and have the same name but suffixed with <code>.conf</code> rather than <code>.jar</code>.
 For example, a jar named <code>/var/myapp/myapp.jar</code> uses the configuration file named <code>/var/myapp/myapp.conf</code>, as shown in the following example:</p>
@@ -2339,7 +2339,7 @@ LOG_FOLDER=/custom/log/folder</pre>
 <i class="fa icon-tip" title="提示"></i>
 </td>
 <td class="content">
-<p translation-result="on">如果你不喜欢 jar 文件旁边有配置文件，你可以设置一个 <code>CONF_FOLDER</code> 环境变量来自定义配置文件的位置。</p>
+<p translation-result="on">如果你不喜欢 jar 文件旁边有环境配置文件，你可以设置一个 <code>CONF_FOLDER</code> 环境变量来自定义环境配置文件的位置。</p>
 <p translation-origin="off">If you do not like having the config file next to the jar file, you can set a <code>CONF_FOLDER</code> environment variable to customize the location of the config file.</p>
 </td>
 </tr>
